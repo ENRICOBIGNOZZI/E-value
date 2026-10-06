@@ -1,0 +1,39 @@
+name: Official JKP US daily data
+on:
+  push:
+    paths:
+      - '.github/workflows/jkp-daily.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Download official daily JKP files
+        shell: bash
+        run: |
+          mkdir -p jkp-daily
+          python - <<'PY'
+          import urllib.request, pathlib, hashlib, json, datetime
+          out=pathlib.Path('jkp-daily')
+          base='https://jkpfactors-data.s3.amazonaws.com/public/'
+          files={
+            'all_factors_daily.zip':base+'%5Busa%5D_%5Ball_factors%5D_%5Bdaily%5D_%5Bvw_cap%5D.zip',
+            'mkt_daily.zip':base+'%5Busa%5D_%5Bmkt%5D_%5Bdaily%5D_%5Bvw_cap%5D.zip'
+          }
+          rows=[]
+          for name,url in files.items():
+              req=urllib.request.Request(url,headers={'User-Agent':'E-value academic replication'})
+              with urllib.request.urlopen(req,timeout=120) as r: b=r.read()
+              (out/name).write_bytes(b)
+              rows.append({'name':name,'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+              print(name,len(b))
+          (out/'manifest.json').write_text(json.dumps({'retrieved_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'files':rows},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jkp-us-daily
+          path: jkp-daily/
+          retention-days: 7
