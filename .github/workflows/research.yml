@@ -6,6 +6,7 @@ on:
       - 'src/**'
       - 'experiments/**'
       - 'tests/**'
+      - 'paper/**'
       - 'pyproject.toml'
       - '.github/workflows/research.yml'
   workflow_dispatch:
@@ -28,14 +29,14 @@ jobs:
         run: python -m pip install -e '.[test]'
       - name: Run complete simulation and official JKP replay
         run: python experiments/reproduce.py --download
-      - name: Install manuscript compiler
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+      - name: Install manuscript compiler and scalable T1 fonts
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended cm-super
       - name: Compile manuscript
         working-directory: paper
         run: |
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
-      - name: Retain results and manuscript, never raw source data
+      - name: Retain research package, never raw source data
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -45,6 +46,15 @@ jobs:
             figures/
             paper/main.tex
             paper/main.pdf
+            paper/sections/
             paper/tables/
+            src/
+            experiments/
+            tests/
+            configs/
+            docs/
+            README.md
+            pyproject.toml
+            data/README.md
             data/source_manifest_20261006.json
           retention-days: 30
