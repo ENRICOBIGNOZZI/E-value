@@ -1,0 +1,62 @@
+\section{Introduction}
+The decision to stop funding an investment strategy is distinct from the decision to reject a zero-alpha hypothesis. Capital is allocated to a book, strategies interact through covariance, and a temporarily unattractive strategy may recover. This paper treats retirement as a reversible allocation decision rather than an irreversible declaration that an economic effect has disappeared.
+
+The central object is the difference in realized utility between two portfolios that could both have been specified before observing the next return: one maintains a candidate allocation and the other replaces that allocation with cash. Their difference automatically includes the candidate's interaction with the rest of the book. When the candidate is parked, its return remains observable in a shadow portfolio. The same comparison therefore supports subsequent reactivation.
+
+This construction requires two qualifications. First, an optional asset cannot reduce the population optimum when its weight may be set to zero. A negative contribution must refer to an implemented allocation, a constrained policy, or a genuine cost of maintaining access. We use fixed capital slots, so that parking a strategy changes an actual feasible decision. Second, continuous monitoring does not make inference about arbitrarily changing future conditional means possible. Our statistical guarantee is an episode-wise false-alarm guarantee, not a certificate that every switch is economically correct at the instant it occurs.
+
+Our methodological contribution is a complete, auditable specification of this decision problem. The elementary betting factors, mixtures, and maximal-inequality arguments are not claimed as new statistical devices. We combine them with paired portfolio comparisons, reversible monitoring, explicit spending across strategies and episodes, and safe finite-memory implementation. This yields a transparent baseline on which stronger economic and statistical designs can be assessed.
+
+The executed evidence is mixed. A negative-return diversifier remains active under the certified rule, while standalone rolling criteria repeatedly remove it. Strong mean deterioration is detected and revival improves utility relative to permanent retirement. However, the key correlation-only revival experiment exposes a large delay cost. The reference certified rule loses 3.38 units of $10^{-4}$ utility per period relative to always on, whereas the portfolio rolling comparator gains 20.65. In the historical JKP replay the certified policies never switch. We report these outcomes rather than treating nonrejection as successful active management.
+
+\subsection{Relation to existing work}
+Time-uniform confidence sequences formalize inference at data-dependent stopping times \citep{howard2021}. Betting constructions provide practical inference for bounded observations \citep{waudby2024}. Our score transformation deliberately enters this bounded setting. This route does not require exchangeable conformal ranks, but it does require a conditional moment restriction under the null.
+
+Restarted evidence also appears in sequential change detection. \citet{shin2022} construct e-detectors and control average run length. A unit-capital mixture controlling the probability of ever crossing a boundary is a different error criterion; the two guarantees must not be interchanged. \citet{bhattacharyya2026} study optimal conformal change detection for independent observations with unknown pre- and post-change laws. We do not transfer their minimax conclusion to financial returns or to our reversible policy.
+
+Return-to-baseline monitoring \citep{regis2026} and sequential tradeability testing \citep{stephan2026} are closely related to recovery and deployment decisions. More importantly, \citet{bonacorsi2026} explicitly studies how certification time consumes a decaying alpha's remaining economic capacity. Therefore, neither statistical certification of alpha nor the economic cost of waiting is a first contribution here. The specific object is the reversible value of an allocation relative to a changing portfolio, with a complete paired-book experiment.
+
+Our empirical source is the factor library of \citet{jkp2023}. The current official portal supplies signed factor returns and theme aggregates \citep{jkpdata}. These are suitable for a reproducible historical replay, but a contemporary retrospective library cannot by itself establish historical investability of every included signal.
+
+\section{The economic object: a policy, not an opportunity set}\label{sec:economy}
+Let $\F_{t-1}$ contain all observations and decisions available before period $t$. There is a core return $R_{0,t}$ and $M$ candidate strategy returns $R_{1,t},\ldots,R_{M,t}$. All returns are measured relative to cash. A state $a_{j,t}\in\{0,1\}$ is chosen using $\F_{t-1}$, with one denoting an active allocation. Candidate $j$ receives a fixed slot $q_j>0$. The reference experiment uses $w_0=0.8$ and $q_j=0.2/M$. Parked capital remains in cash; other strategies are not scaled up.
+
+With a predictable recurring deduction $f_{j,t}$, define
+\begin{equation}
+ A_{j,t}=q_j(R_{j,t}-f_{j,t}),\qquad
+ B_{j,t}=w_0R_{0,t}+\sum_{i\ne j}a_{i,t}A_{i,t}.
+\end{equation}
+The paired books are $R^{(+j)}_t=B_{j,t}+A_{j,t}$ and $R^{(-j)}_t=B_{j,t}$. They share all other positions and use the same realized return vector. The incremental realized utility is
+\begin{equation}\label{eq:paired}
+ D_{j,t}=u_\gamma(B_{j,t}+A_{j,t})-u_\gamma(B_{j,t}),
+ \qquad u_\gamma(r)=r-\frac{\gamma}{2}r^2.
+\end{equation}
+This is expected quadratic utility, not exactly the mean--variance certainty equivalent. Specifically, $\E u_\gamma(R)=\E R-\gamma\Var(R)/2-\gamma(\E R)^2/2$. We report certainty equivalents separately where appropriate.
+
+\begin{proposition}[Exact marginal utility]\label{prop:marginal}
+Let conditional second moments exist. Write $m_A=\E[A_{j,t}\mid\F_{t-1}]$, $m_B=\E[B_{j,t}\mid\F_{t-1}]$, and $v_A=\Var(A_{j,t}\mid\F_{t-1})$. Then
+\begin{equation}\label{eq:conditionalvalue}
+ \E[D_{j,t}\mid\F_{t-1}]
+ =m_A-\gamma\left\{m_Am_B+\Cov(A_{j,t},B_{j,t}\mid\F_{t-1})
+       +\tfrac12(v_A+m_A^2)\right\}.
+\end{equation}
+Consequently, $m_A<0$ is compatible with positive incremental utility.
+\end{proposition}
+
+The covariance term is the reason a standalone return test is insufficient. A negative covariance can compensate for a modestly negative mean. A positively correlated allocation can instead have negative incremental utility despite a positive mean. Neither statement implies that the asset itself should be excluded from an unconstrained investment opportunity set.
+
+\begin{proposition}[Optional-asset monotonicity]\label{prop:optional}
+If feasible portfolios without strategy $j$ are contained in the feasible set with access to $j$, and access has no unavoidable cost, then the supremum of expected utility with access is no smaller than the supremum without access.
+\end{proposition}
+
+For this reason, our simulation label ``positive redundant'' refers to a positive-return \emph{fixed allocation} that is costly in utility terms. It does not claim negative value for the option of trading that strategy. A leave-one-out optimizer that allows zero weights would require a different estimand, such as the value of a fitted finite-sample policy including estimation and maintenance costs.
+
+\subsection{Trading costs and observation}
+The actually funded book deducts a switching charge
+\begin{equation}
+ C_t^{\rm sw}=c_{\rm sw}\sum_jq_j|a_{j,t}-a_{j,t-1}|.
+\end{equation}
+The paired scores include recurring costs but not the full future cost of switching and possible switching back. Hysteresis is a friction-control heuristic, not a solved optimal stopping problem. A cash opportunity cost can be added to $f_{j,t}$ when returns are not already relative to the relevant alternative.
+
+Shadow returns must remain observable without placing real orders. Factor return panels meet this accounting requirement, but not the stronger requirement that hypothetical fills, borrow availability, or price impact equal real execution. Our empirical analysis does not make that stronger identification claim.
+

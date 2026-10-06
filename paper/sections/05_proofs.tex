@@ -1,0 +1,113 @@
+\clearpage\appendix
+\section{Proofs}\label{app:proofs}
+All proofs in this manuscript are collected in this appendix. The main text contains statements, interpretations, and experimental results only.
+
+\subsection{Proof of Proposition~\ref{prop:marginal}}
+\begin{proof}
+Expanding the quadratic utility gives
+\[
+ u_\gamma(B+A)-u_\gamma(B)=A-\gamma BA-\tfrac\gamma2 A^2.
+\]
+Take conditional expectations and substitute
+$\E[BA\mid\F]=m_Bm_A+\Cov(B,A\mid\F)$ and
+$\E[A^2\mid\F]=v_A+m_A^2$ to obtain \eqref{eq:conditionalvalue}.
+The covariance can be negative and sufficiently large in magnitude for the right-hand side to be positive when $m_A<0$.
+For a concrete feasible covariance structure, consider the Gaussian negative-hedge design with $q=0.2$, $w_0=0.8$, $\gamma=8$, $\mu_0=0.006$, $\mu_j=-0.003$, $f=0.0005$, variance $0.08^2$, and correlation $-0.75$. Then $m_A=-0.0007$, $m_B=0.0048$, $v_A=0.000256$, and $\Cov(A,B)=-0.000768$. Substitution gives $\E D=0.00444492>0$. This calculation includes the recurring deduction and does not rely on an unconstrained optimization argument.
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{prop:optional}}
+\begin{proof}
+Let $\mathcal W_-$ and $\mathcal W_+$ be the feasible sets without and with access. By assumption $\mathcal W_-\subseteq\mathcal W_+$. Hence
+$\sup_{w\in\mathcal W_+}\E u(R(w))\ge\sup_{w\in\mathcal W_-}\E u(R(w))$.
+The comparison uses the same objective and does not introduce an unavoidable access cost. If such a cost exists, it must appear explicitly in the objective and the nesting comparison no longer has the stated form.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{thm:valid}}
+\begin{proof}
+Fix a strategy and episode, condition on its start-time information, and write $X_t$ for its directional evidence. Under its null,
+\[
+ \E[1+\lambda_tX_t\mid\F_{t-1}]
+ =1+\lambda_t\E[X_t\mid\F_{t-1}]\le1,
+\]
+where predictability and $0\le\lambda_t<1$ ensure nonnegativity and admissibility. Thus each launched component, initialized to one and held constant before launch, is a nonnegative supermartingale until the null fails.
+
+For the mixture, keep the mass $\pi_\ell p_\lambda$ in a dormant account before its predictable launch and then invest it in the corresponding component. The total initial capital is
+$\sum_{\ell\ge1}\pi_\ell\sum_\lambda p_\lambda=1$ because
+$1/[\ell(\ell+1)]=1/\ell-1/(\ell+1)$.
+After $L_t$ launches the dormant account is $1/(L_t+1)$. Nonnegative mixtures preserve the conditional supermartingale property by monotone convergence. Expiry removes nonnegative capital and therefore adds only a downward jump. The resulting process is precisely \eqref{eq:mixture}, with initial value one.
+
+Let $\nu$ be the first time $\E[X_t\mid\F_{t-1}]>0$. This conditional expectation is $\F_{t-1}$-measurable. Stop updating just before that first violation, and freeze the process thereafter. Equivalently, include only updates for which all conditional null restrictions through that update are satisfied. This predictable stopping convention produces a nonnegative supermartingale on the entire horizon. Before $\nu$, it agrees with the actually monitored process. The conditional maximal inequality consequently gives
+\[
+ \Prob\left(\exists t<\nu:E_t\ge1/\alpha_{j,k}\mid\F_{\sigma_{j,k}-1}\right)
+ \le\alpha_{j,k}.
+\]
+If an episode never begins, its crossing event is empty. If it begins at a data-dependent time, the same calculation applies conditional on the information available at that start. A fresh test is funded by its designated budget, not by recycling the previous budget.
+
+An accepted switch before $\nu_{j,k}$ is a subset of the corresponding crossing event. The atomic rule can suppress or defer a switch but cannot enlarge that event. Taking expectations and applying a countable union bound over strategies and episodes gives
+\[
+ \Prob\left(\bigcup_{j=1}^M\bigcup_{k\ge1}
+       \{\text{accepted switch before }\nu_{j,k}\}\right)
+ \le\sum_j\sum_k\frac{\delta}{Mk(k+1)}=\delta.
+\]
+No independence across these events is used. The proof ceases to apply to a ``false switch'' definition that includes a later economically reversed state after the same episode's null has already failed. That distinction is why the valid-prefix qualification is part of the theorem.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{thm:delay}}
+\begin{proof}
+Consider the selected component and suppress its indices. Since $\lambda\le\Delta/2\le1/2$ and $|X_t|\le1$, the inequality $\log(1+y)\ge y-y^2$ for $|y|\le1/2$ yields
+\[
+ \E[\log(1+\lambda X_t)\mid\F_{t-1}]
+ \ge\lambda\Delta-\lambda^2
+ \ge\frac{3\Delta^2}{16}.
+\]
+The last inequality follows by minimizing $\lambda\Delta-\lambda^2$ over $[\Delta/4,\Delta/2]$.
+The range of a log increment has length
+$\log[(1+\lambda)/(1-\lambda)]\le4\lambda$.
+The martingale Hoeffding bound therefore implies, with probability at least $1-\beta$,
+\[
+ \log K_n\ge\frac{3n\Delta^2}{16}
+            -2\lambda\sqrt{2n\log(1/\beta)}
+ \ge\frac{3n\Delta^2}{16}
+            -\Delta\sqrt{2n\log(1/\beta)}.
+\]
+Under the stated sample-size condition, $n\ge128\Delta^{-2}\log(1/\beta)$, so the second term is at most $n\Delta^2/8$. Consequently
+$\log K_n\ge n\Delta^2/16\ge A$.
+Because the component has mixture mass $\pi_\ell p_\lambda$, this implies
+$\pi_\ell p_\lambda K_n\ge1/\alpha_{j,k}$, hence the full nonnegative mixture crosses the same boundary.
+
+If a switch has already occurred, the stated conclusion is satisfied. Formally, the drift argument may be extended after an earlier switch by artificial bounded positive-drift variables; the event of no earlier switch is unaffected. Component expiry or numerical truncation before the needed evidence is accumulated would break this lower-bound argument, which is why the theorem excludes those cases. Competing accepted switches may defer the candidate's actual allocation change even after its evidence crosses; the theorem explicitly distinguishes crossing from acceptance.
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{prop:lower}}
+\begin{proof}
+Let $A$ denote the event of a positive decision by observation $n$. A rule that stops earlier is still measurable with respect to the full $n$-observation experiment. Independence and the chain rule imply
+\[
+ \KL(P_\Delta^{\otimes n}\Vert P_0^{\otimes n})
+ =n\KL(P_\Delta\Vert P_0).
+\]
+The data-processing inequality for the map sending the data to $\ind_A$ gives a lower bound of
+$\kl(P_\Delta(A),P_0(A))$.
+Since $P_\Delta(A)\ge1-\beta>\alpha\ge P_0(A)$, monotonicity of binary relative entropy in this region gives
+$n\KL(P_\Delta\Vert P_0)\ge\kl(1-\beta,\alpha)$.
+Here
+\[
+ d(\Delta)=\KL(P_\Delta\Vert P_0)
+ =\frac{1+\Delta}{2}\log(1+\Delta)
+  +\frac{1-\Delta}{2}\log(1-\Delta).
+\]
+Its derivative is $d'(x)=\operatorname{atanh}(x)\le x/(1-x^2)\le4x/3$ on $[0,1/2]$. Integrating from zero yields $d(\Delta)\le2\Delta^2/3\le\Delta^2$, sufficient for the second inequality.
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{prop:clip}}
+\begin{proof}
+The pointwise identity
+$|D-s\clip(D/s,-1,1)|=(|D|-s)_+$
+and conditional Jensen's inequality give the first bound. For $|D|>s$,
+$(|D|-s)_+\le |D|\le |D|^{1+\eta}/s^\eta$; the same upper bound also holds on the complement. Conditional expectation gives the stated remainder bound. A sign conclusion requires the retained signal to exceed this remainder, which is not imposed in the empirical experiment.
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{prop:impossibility}}
+\begin{proof}
+Let $p$ be the probability of choosing active. Since the two laws agree on the information used by the decision, $p$ is the same under both, including when the rule uses independent randomization. Under the law with positive next-period incremental utility the error probability is $1-p$; under the law with negative incremental utility it is $p$. Their maximum is at least $1/2$. Neither past predictive success nor an optional-stopping argument changes the common-information premise.
+\end{proof}
+

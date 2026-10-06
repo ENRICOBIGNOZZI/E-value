@@ -1,0 +1,104 @@
+\section{Bounded evidence and reversible decisions}\label{sec:method}
+Choose a strictly positive, predictable scale $s_{j,t}$ and define
+\begin{equation}\label{eq:score}
+ Z_{j,t}=\clip\left(D_{j,t}/s_{j,t},-1,1\right),\qquad
+ m_{j,t}=\E[Z_{j,t}\mid\F_{t-1}].
+\end{equation}
+The reference scale is fixed after 60 burn-in observations:
+$s_{j,t}=q_j\max(\widehat\sigma_{j,\rm burn},0.005)$.
+Thus future returns cannot enter normalization. Clipping controls tail influence but changes the statistical target. A scale estimated from the same period's return would violate the stated predictability requirement.
+
+Let $h\in[0,1)$ be a symmetric indifference band. During an active episode the null is $m_{j,t}\ge-h$; during a parked episode it is $m_{j,t}\le h$. The respective evidence inputs are
+\begin{equation}\label{eq:input}
+ X^-_{j,t}=\frac{-Z_{j,t}-h}{1+h},\qquad
+ X^+_{j,t}=\frac{Z_{j,t}-h}{1+h}.
+\end{equation}
+They lie in $[-1,1]$ and have nonpositive conditional mean under the corresponding null. The band avoids demanding a reversal whenever a noisy score crosses zero. It does not imply a fixed dollar cost threshold because the scale maps utility into normalized units.
+
+\subsection{Directional betting and restart mixture}
+For $0<\lambda<1$, $1+\lambda X_{j,t}$ is nonnegative and has conditional expectation at most one under the episode null. A process launched at time $s_\ell$ is
+\begin{equation}
+ K_{\ell,\lambda,t}=\prod_{v=s_\ell}^{t}(1+\lambda X_{j,v}).
+\end{equation}
+All starts are predictable. We launch every $d=24$ observations within an episode and mix seven fractions
+$\Lambda=\{1/32,1/16,1/8,1/4,1/2,3/4,0.9\}$ with masses $p_\lambda=1/7$.
+Start $\ell$ has mass $\pi_\ell=1/[\ell(\ell+1)]$. If $L_t$ starts have occurred, the evidence is
+\begin{equation}\label{eq:mixture}
+ E_{j,t}=\underbrace{\frac{1}{L_t+1}}_{\text{unstarted capital}}
+ +\sum_{\substack{\ell\le L_t:\ t-s_\ell<H}}
+       \pi_\ell\sum_{\lambda\in\Lambda}p_\lambda K_{\ell,\lambda,t},
+ \qquad H=720.
+\end{equation}
+Expired components are discarded, not redistributed. The unstarted capital is essential: omitting it and interpreting a truncated sum as a unit-initial-capital martingale changes the accounting. Discarding old wealth reduces evidence and is safe for false-alarm control, although it can be costly for power.
+
+\subsection{Error spending across strategies and episodes}
+Number each strategy's episodes $k=1,2,\ldots$, including both active and parked states. Allocate
+\begin{equation}\label{eq:spending}
+ \alpha_{j,k}=\frac{\delta}{M k(k+1)},\qquad
+ \sum_{j=1}^{M}\sum_{k=1}^{\infty}\alpha_{j,k}=\delta.
+\end{equation}
+The decision threshold is $1/\alpha_{j,k}$. A fresh state begins with a fresh unit-capital process and a \emph{smaller} error budget. Resetting to a 5\% test after every switch would not give a 5\% lifetime family-wise guarantee.
+
+At most one candidate is switched per book per period: among candidates crossing their boundary, accept the largest evidence-to-threshold ratio. Implement that switch at $t+1$, not at $t$. Its new direction then begins a new episode. Other tests continue with the resulting predictable book. The latter convention means their target is an adaptive reference-book comparison, not a fixed intrinsic property of a factor. Atomic switching avoids applying mutually inconsistent simultaneous leave-one-out recommendations; it is not an optimization theorem.
+
+\subsection{Operational algorithm}
+\begin{enumerate}[leftmargin=1.5em,itemsep=1pt]
+\item Before observing returns, store the active set, paired allocation rules, score scales, and applicable error budgets.
+\item Observe all strategy returns, including shadow returns for parked strategies. Compute the paired utilities in \eqref{eq:paired} and the bounded scores in \eqref{eq:score}.
+\item Update directional evidence using \eqref{eq:input}--\eqref{eq:mixture}. Log recurring deductions, actual switching charges, and unclipped utility separately.
+\item Accept at most one threshold-crossing decision, change its state for the next period, and increment that strategy's episode counter. Otherwise keep the current book.
+\end{enumerate}
+No fitted covariance matrix, return-forecasting network, or latent-state estimator is required by this reference implementation. Such models may specify predictable comparators or betting fractions, but they cannot turn a violated conditional null into a valid one.
+
+\section{What is guaranteed---and what is not}\label{sec:theory}
+\begin{assumption}[Predictability and bounded evidence]\label{ass:bounded}
+For each episode, paired portfolio rules, scales, starts, and betting fractions are predictable. Observed evidence inputs lie in $[-1,1]$. Before the first violation of that episode's null, $\E[X_{j,t}\mid\F_{t-1}]\le0$.
+\end{assumption}
+This formulation permits heteroskedasticity, serial dependence, and cross-strategy dependence. It does not say that arbitrary dependent financial returns satisfy the null. The restriction is conditional on the \emph{full} information set, not merely that the unconditional mean is nonpositive. No independence or mixing claim is needed for validity once the stated conditional restriction holds.
+
+\begin{theorem}[Lifetime false-alarm control on valid prefixes]\label{thm:valid}
+Under Assumption~\ref{ass:bounded}, let $\sigma_{j,k}$ be the start of episode $k$ for strategy $j$, and let $\nu_{j,k}$ be the first time in that episode at which its directional conditional-mean null fails. Set $\nu_{j,k}=\infty$ if it never fails. With \eqref{eq:mixture}--\eqref{eq:spending},
+\begin{equation}\label{eq:fwer}
+ \Prob\left(\text{at least one accepted switch in an episode }(j,k)
+                  \text{ at a time }t<\nu_{j,k}\right)\le\delta.
+\end{equation}
+The result allows data-dependent episode starts and arbitrary dependence across strategies. Discarding expired wealth or limiting accepted switches can only reduce this crossing event.
+\end{theorem}
+An episode that previously experienced a null violation can contain stale evidence. If its economic environment reverses before a delayed alarm, \eqref{eq:fwer} does not count that alarm as a false alarm on an uninterrupted valid prefix. In particular, \emph{it is incorrect to restate this theorem as a 95\% guarantee that every retirement or revival matches the current sign of economic value}. The distinction is material in the correlation-revival experiment.
+
+\begin{theorem}[Persistent-signal sufficient delay]\label{thm:delay}
+Consider one episode and an available restart time $s_\ell$. Suppose that until an accepted switch or for the next $n$ observations, whichever is earlier,
+$\E[X_{j,t}\mid\F_{t-1}]\ge\Delta>0$.
+Assume there is a grid fraction $\lambda\in[\Delta/4,\Delta/2]$, the component is not expired during these observations, and no numerical saturation prevents its boundary crossing. Write
+\begin{equation}
+ A=\log\frac{1}{\alpha_{j,k}\pi_\ell p_\lambda},\qquad
+ n\ge\frac{128}{\Delta^2}\left(A+\log\frac1\beta\right),\qquad 0<\beta<1.
+\end{equation}
+Then its evidence crosses $1/\alpha_{j,k}$ by the end of these $n$ observations with probability at least $1-\beta$, unless that strategy has already switched. For an isolated strategy this implies an accepted switch. With competing threshold crossings, acceptance additionally requires that the atomic decision rule does not defer the strategy.
+\end{theorem}
+This is a conservative sufficient bound, not an asymptotic equality, an unconditional expected-delay bound, or a claim of minimax optimality. It requires a sufficiently long regime and $n\le H$. An unknown onset can add up to $d-1$ observations to reach the next scheduled start. Because $A$ includes the restart and episode budgets, late changes and repeated decisions become more expensive to certify. A fixed finite grid also limits small-signal adaptation; the stated interval need not contain a grid point for arbitrarily small $\Delta$.
+
+\begin{proposition}[A canonical information obstruction]\label{prop:lower}
+For independent observations in $\{-1,1\}$, let $P_0(X=1)=1/2$ and $P_\Delta(X=1)=(1+\Delta)/2$, where $0<\Delta\le1/2$. If a decision based on at most $n$ observations has null probability at most $\alpha$ and power at least $1-\beta>\alpha$, then
+\begin{equation}
+ n\ge\frac{\kl(1-\beta,\alpha)}{\KL(P_\Delta\Vert P_0)}
+ \ge\frac{\kl(1-\beta,\alpha)}{\Delta^2}.
+\end{equation}
+\end{proposition}
+This lower bound concerns a canonical fixed-horizon subproblem. It does not prove a matching lower bound for the unknown-change, many-strategy, reversible policy with transaction costs.
+
+\begin{proposition}[Clipping changes the target]\label{prop:clip}
+For a predictable $s>0$, $Z=\clip(D/s,-1,1)$, and conditional integrability,
+\begin{equation}
+ |\E[D\mid\F]-s\E[Z\mid\F]|
+ \le\E[(|D|-s)_+\mid\F].
+\end{equation}
+If additionally $\E[|D|^{1+\eta}\mid\F]\le V$ for some $\eta>0$, then the right side is at most $V/s^\eta$.
+\end{proposition}
+A raw-utility sign statement requires control of this remainder. Our empirical implementation does not assume a known financial tail-moment bound and therefore makes no such conversion.
+
+\begin{proposition}[No unrestricted instantaneous future classifier]\label{prop:impossibility}
+Suppose two admissible data laws agree on $\F_t$ but assign opposite signs to the next-period conditional incremental utility. For any binary $\F_t$-measurable allocation decision, the larger of its two misclassification probabilities is at least $1/2$.
+\end{proposition}
+Persistence, predictability restrictions on future regimes, abstention, or an explicit decision-theoretic loss are necessary to strengthen the interpretation. The paper's guarantees do not solve that separate problem.
+

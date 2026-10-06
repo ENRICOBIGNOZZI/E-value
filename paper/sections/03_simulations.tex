@@ -1,0 +1,76 @@
+\section{Executed simulation study}\label{sec:sim}
+\subsection{Design and estimands}
+All policies see the same return paths within each simulation setting. The common-factor construction is
+\begin{align}
+ R_{0,t}&=0.006+s_tF_t,\\
+ R_{j,t}&=\mu_{j,t}+s_t\{\rho_{j,t}F_t+(1-\rho_{j,t}^2)^{1/2}\varepsilon_{j,t}\}.
+\end{align}
+For the Gaussian reference design, $s_t=0.08$ and all innovations are independent standard normals. This construction gives a positive-semidefinite covariance matrix for every regime. Conditional means and covariances are known to the evaluator but not to the competing algorithms.
+
+Seven designs cover permanent mean death; mean death and revival; a negative-return hedge; a positive-return redundant allocation; a constant-mean correlation reversal; gradual correlation changes; and repeated correlation cycles. Exact parameters are in Appendix~\ref{app:dgp}. The main design has 1,800 observations, 60 burn-in observations, one candidate strategy, 200 paths per scenario, and both Gaussian and standardized Student-$t_5$ innovations. These periods are simulation units, not a claim of 150 years of realistic monthly returns. In particular, the $\pm4.5\%$ mean-change designs are strong-signal diagnostics, not JKP calibrations.
+
+Separate stress tests use GARCH volatility and an autoregressive common factor. Scaling experiments use $M\in\{20,50,100,150\}$ with heterogeneous regime phases. An additional weak-correlation design reduces correlation magnitudes by a factor of four. A dedicated delay study uses 500 paths per setting. Null calibration is conducted separately on bounded scores with known conditional symmetry, rather than assuming that economic labels imply the clipped-score null.
+
+The reference parameters are $\gamma=8$, $\delta=0.05$, $h=0.02$, a recurring deduction of 5 basis points per unit allocation per period, and a switching charge of 10 basis points per unit allocation changed. These are pre-specified demonstration costs, not empirical estimates.
+
+\subsection{Comparators and fairness}
+Eight policies are evaluated: always on; a 60-period standalone-score rule; a 60-period paired-portfolio-score rule; a fixed CUSUM heuristic; a fixed two-state HMM filter; a cumulative e-process without restarts; restart-based permanent retirement; and restart-based retirement plus revival. All share allocation accounting and costs. The CUSUM and HMM are transparent heuristics, not fitted oracles. Their thresholds and the rolling rules are \emph{not matched to the certified policy's lifetime false-alarm rate}. Consequently, faster adaptation by a heuristic is economically relevant but not a like-for-like statistical efficiency comparison.
+
+We do not present the current implementation as an empirical state-of-the-art comparison against optimized conformal detectors, online multiple-testing procedures, or optimal switching policies. Such a claim would require faithful implementations, matched error objectives, and tuning on disjoint simulations. The included benchmarks establish the mechanism and diagnose the reference policy, not a universal ranking.
+
+\subsection{Performance measures}
+The primary economic statistic is the path-level paired difference
+\begin{equation}
+ \widehat G=\frac{1}{T-T_0}\sum_{t>T_0}
+       \{u_\gamma(R_t^{\rm policy})-u_\gamma(R_t^{\rm always})\}.
+\end{equation}
+Monte Carlo standard errors are calculated from independent path replications within a setting, not from individual serially dependent returns. The package also records actual returns, turnover through switch counts, mean activity, drawdown diagnostics, and conditional expected utility.
+
+For $M=1$, a one-period conditional oracle chooses the better current state knowing true conditional moments, with the same previous state and switching cost. Its nonnegative gap to the method is a \emph{local opportunity-loss diagnostic}. It is not the regret to a globally optimal clairvoyant switching policy. No combinatorial oracle is fabricated for $M>1$.
+
+Delay tables report the first correct state after a regime onset. A path already in the correct state has delay zero; undetected paths are right-censored at the regime end and assigned that cap. Detection fractions are reported beside capped means. These are economic state-adaptation diagnostics based on raw conditional utility, not empirical estimates of the theorem's bounded-score false-alarm event.
+
+\subsection{False-alarm calibration}
+\begin{table}[htbp]\centering\small
+\caption{Executed null calibration: any switch over 720 periods and five strategies. The global budget is 5\%. Intervals are exact binomial 95\% intervals across 2,000 paths per null.}\label{tab:null}
+\input{tables/null.tex}
+\end{table}
+The certified procedure switches on 7 of 2,000 bounded-independent paths and 4 of 2,000 predictable-volatility paths. Thus its observed rates, 0.35\% and 0.20\%, are well below the nominal upper bound. This supports implementation-level validity in these experiments and also reveals conservatism. It does not prove exact size or validate unrestricted real-return assumptions. A repeated unadjusted two-sided $z$ statistic produces approximately 91\% paths with at least one crossing when repeatedly examined across five strategies. That statistic is an intentionally invalid negative control, not a fair competing detector.
+
+\begin{figure}[htbp]\centering\includegraphics[width=.77\linewidth]{../figures/null_control.pdf}
+\caption{Lifetime false-alarm calibration. Error bars are exact binomial intervals; the dashed line is the upper bound, not a target frequency of profitable decisions.}\label{fig:null}
+\end{figure}
+
+\subsection{Economic results and the cost of waiting}
+\begin{table}[htbp]\centering\scriptsize
+\caption{Gaussian simulations: mean utility gain over always on, multiplied by $10^4$. Parentheses contain paired Monte Carlo standard errors. There are 200 paths per scenario. Positive numbers favor the policy.}\label{tab:main}
+\resizebox{\linewidth}{!}{\input{tables/main_gaussian.tex}}
+\end{table}
+
+The negative-return hedge provides the clearest portfolio-awareness check. The certified method never removes it in the reference Gaussian experiment. Standalone rolling decisions instead lose 27.20 units of $10^{-4}$ utility per period. Even a portfolio rolling rule incurs a smaller loss because noisy repeated switching is not free. This is evidence that the chosen policy score captures economically relevant covariance; it is not a claim that all negative-return factors should be held.
+
+In the strong mean-revival scenario, irreversible retirement gains 14.97 units relative to always on, whereas reversible retirement gains 27.88. The ability to redeploy therefore matters economically. The rolling portfolio comparator gains 37.32, showing that valid certification still imposes a substantial delay cost.
+
+The correlation-only scenario is a more demanding and less favorable result. Mean returns do not change. The candidate loses and regains value through its covariance with the core. The certified reversible rule loses 3.38 utility units relative to always on, although permanent retirement loses 8.45. Revival reduces damage but does not make the method profitable relative to the passive comparator. The portfolio rolling rule gains 20.65. This result rejects a simple deployment narrative in which portfolio awareness plus an e-process is automatically sufficient.
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{../figures/simulation_utility.pdf}
+\caption{Economic comparison across Gaussian designs. Error bars show 1.96 Monte Carlo standard errors, not confidence in real-world profitability. The correlation-revival loss is retained.}\label{fig:sim}
+\end{figure}
+
+\begin{table}[htbp]\centering\small
+\caption{Correlation-revival adaptation, 500 additional paths. Each regime lasts 600 observations. Capped delay includes nondetections; already-correct states have delay zero. ``Adapted'' means the desired state is reached before regime end, not that it is maintained.}\label{tab:delay}
+\input{tables/delay.tex}
+\end{table}
+The delay study explains the utility loss. The certified rule's mean capped retirement delay is about 329 observations, versus about 30 for the portfolio rolling rule. Revival is even slower. A recovery that is shorter than the evidence-collection interval can be economically over before certification is available. Counting only successful detections would conceal this failure mode, which is why the denominator and censoring convention are explicit.
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{../figures/correlation_path.pdf}
+\caption{State paths in replication zero, selected by index rather than by appearance. Within each row, the lower level is parked and the upper level is active. Vertical markers denote covariance regime changes.}\label{fig:path}
+\end{figure}
+
+\subsection{Dependence, scale, and weak signals}
+Student-$t_5$ results are retained in the full CSV output alongside Gaussian results. GARCH and autoregressive common-factor experiments use exact predictable moments for evaluation. They stress performance rather than claiming that the raw-return economic label always coincides with the certified conditional-score null.
+
+At $M=150$, the reference correlation-revival scaling experiment has only 30 paths and is therefore a diagnostic, not high-precision evidence. The certified policy averages 14.5 switches over 840 evaluation periods and keeps about 97.5\% of slots active. Its utility difference from always on is negative. The factor-count penalty and the one-switch-per-period convention both matter; computational scalability does not imply statistical power.
+
+In the weak-correlation design the certified rule averages 0.005 switches per path. Its practical behavior is almost identical to always on. This is the expected danger of a stringent lifetime objective when marginal signals are small. We retain weak-signal, dependence, and scaling results in the reproducibility package and report selected tables in Appendix~\ref{app:results}.
+

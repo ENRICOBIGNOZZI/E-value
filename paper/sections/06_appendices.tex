@@ -1,0 +1,72 @@
+\section{Exact simulation specification}\label{app:dgp}
+The core drift is 0.006, base standard deviation 0.08, risk-aversion coefficient 8, and reference candidate allocation $q=0.2/M$. For the one-candidate 1,800-observation experiment, change dates are 600 and 1,200. Values apply before the recurring deduction.
+\begin{center}\small
+\begin{tabular}{lcc}
+\toprule Design & Candidate mean & Common-factor loading \\\midrule
+Permanent death & $0.045\to-0.045$ & $0.2$ \\
+Mean revival & $0.045\to-0.045\to0.045$ & $0.2$ \\
+Negative-return hedge & $-0.003$ & $-0.75$ \\
+Positive redundant & $0.006$ & $0.9$ \\
+Correlation revival & $0.003$ & $-0.8\to0.8\to-0.8$ \\
+Gradual correlation & $0.003$ & $-0.8\cos(2\pi t/T)$ \\
+Repeated correlation & $0.003$ & Six alternating blocks of $\pm0.8$ \\\bottomrule
+\end{tabular}
+\end{center}
+For multiple candidates, candidate $j$'s loading and drift arrays are shifted by $(j\bmod4)\lfloor T/12\rfloor$ positions. The resulting four phase groups produce cross-sectional dependence through the common shock and idiosyncratic shocks within each candidate. This is a designed regime system, not a fitted JKP factor structure.
+
+Student innovations are independent $t_5\sqrt{3/5}$, giving unit variance. For GARCH stress tests the common predictable multiplier obeys
+$h_{t+1}=0.05+0.08h_t\varepsilon_{0,t}^2+0.87h_t$, starting at one, with $s_t=0.08\sqrt{h_t}$. The autoregressive stress test instead uses
+$F_t=0.25F_{t-1}+\sqrt{1-0.25^2}\varepsilon_{0,t}$.
+The evaluator conditions on $F_{t-1}$, so predictable means and variances are correct rather than treating autocorrelation as independent noise.
+
+The null experiments simulate scores directly. In the independent design,
+\[Z_{j,t}=\tanh(0.6\varepsilon_{0,t}+0.8\varepsilon_{j,t}).\]
+In the predictable-volatility design, the argument is multiplied by
+$\clip(0.4+0.8|Z_{j,t-1}|,0.25,2)$.
+Both have conditional mean zero by symmetry and therefore satisfy the directional nulls with the indifference band. The paths share a common shock across strategies, so the family-wise check is not an independence calculation.
+
+\subsection{Implementation conventions}
+The code uses a ring of $H/d=30$ restart slots and seven betting fractions, with vectorization across Monte Carlo paths and candidate strategies. The minimum memory is proportional to $M(H/d)|\Lambda|$. A restart overwrites expired wealth without normalization. Large component wealth is capped at $10^{100}$ as a downward numerical operation; the false-alarm proof survives, while the delay statement requires that this cap not prevent the relevant crossing.
+
+The CUSUM heuristic updates $C_t=\max(0,C_{t-1}+X_t-0.05)$ and switches at eight. The HMM heuristic uses a 2\% symmetric transition probability, score emission means $\pm0.20$, score standard deviation $0.60$, and posterior threshold 0.95. It is a fixed diagnostic filter, not estimated from the simulated latent regime or tuned on evaluation results. Rolling rules average 60 scores and use the same $h=0.02$ directional threshold. Rolling buffers are not cleared after switches, a source of possible chattering that is retained in the stated comparator.
+
+\subsection{Executed run ledger}
+\begin{center}\small
+\begin{tabular}{lrrl}
+\toprule Suite & Scenario-path evaluations & Periods & Purpose \\\midrule
+Main & 2,800 & 1,800 & 7 designs, 2 innovation laws, 200 paths each \\
+Null & 4,000 & 720 & 2 known-null designs, 2,000 paths each \\
+Dependence & 800 & 1,200 & 4 designs, GARCH and AR, 100 paths each \\
+Scaling & 120 & 900 & 4 strategy counts, 30 paths each \\
+Weak signal & 200 & 720 & Correlation magnitude divided by four \\
+Delay & 1,500 & 1,800 & 3 designs, 500 paths each \\\bottomrule
+\end{tabular}
+\end{center}
+The ledger sums to 9,420 scenario-path evaluations. Some suite specifications share base random seeds and common random numbers; the total must not be interpreted as 9,420 mutually independent financial worlds. Independent-replication standard errors apply within each reported setting. Each suite has a manifest with executed flags, parameters, seeds, and software information. Raw method-level records and deterministic replication-zero traces are retained.
+
+\section{Additional executed results}\label{app:results}
+\begin{table}[htbp]\centering\small
+\caption{JKP reference paired-block intervals. Utility differences are annualized and multiplied by $10^4$. Circular 12-month blocks, 2,000 resamples. These are descriptive replay intervals, not anytime-valid confidence sequences.}
+\input{tables/jkp_ci.tex}
+\end{table}
+\begin{table}[htbp]\centering\scriptsize
+\caption{Dependence stress tests. Utility gain over always on and its Monte Carlo standard error, both multiplied by $10^4$; 100 paths per design.}
+\input{tables/dependence.tex}
+\end{table}
+\begin{table}[htbp]\centering\small
+\caption{Scaling diagnostic for correlation revival. Utility differences and MC standard errors are multiplied by $10^4$; 30 paths per strategy count. This is not a global-oracle regret comparison.}
+\input{tables/scaling.tex}
+\end{table}
+\begin{table}[htbp]\centering\scriptsize
+\caption{Exploratory JKP book-architecture checks added after the reference replay. Utility gain is relative to always on within each design. All results, including zero certified switches, are retained.}
+\resizebox{\linewidth}{!}{\input{tables/diagnostics.tex}}
+\end{table}
+\clearpage
+\section{Reproducibility and audit protocol}\label{app:reproduce}
+The source package is organized as \texttt{src/alpha\_lifecycle} for portfolio accounting and monitors; \texttt{experiments} for Monte Carlo, delay, JKP replay, diagnostics, and reporting; \texttt{tests} for implementation checks; \texttt{results} for executed outputs; and \texttt{paper} for this manuscript. A single reproduction script executes the documented suites and rebuilds all tables and figures. The official JKP download is kept separate from the raw-data-free public repository.
+
+The audit preserves four distinctions. Simulated returns are labeled simulated and are never described as JKP calibration. Historical JKP results use actual official return archives and have source hashes. Statistical null calibration uses data-generating processes for which the conditional-score null is known. Economic labels and delay diagnostics use the simulator's true raw conditional moments and do not inherit a bounded-score error guarantee by implication.
+
+Implementation checks cover dormant-capital accounting, episode spending, paired costs and fixed-slot weights, covariance consistency, negative-return hedges, positive-return redundant allocations, prefix invariance, and atomic switching. A strong-signal threshold-crossing test checks that the implementation can act rather than being identically inert. Unit tests and Monte Carlo results complement but do not replace the mathematical proofs.
+
+The current empirical evidence does not justify a publication-ready claim of profitable lifecycle timing. In particular, the code supplies no synthetic placeholder ``JKP result,'' no fabricated certified revival events, and no hindsight-selected representative simulation path. Tables and figures are generated from the stored executed results. Any later tuning should create a new manifest and preserve the current adverse results as a baseline.

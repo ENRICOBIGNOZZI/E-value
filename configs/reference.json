@@ -1,0 +1,15 @@
+{
+  "delta": 0.05,
+  "gamma": 8.0,
+  "core_weight": 0.8,
+  "satellite_weight": 0.2,
+  "fee": 0.0005,
+  "switch_cost": 0.001,
+  "hysteresis": 0.02,
+  "stride": 24,
+  "max_age": 720,
+  "window": 60,
+  "scale_mult": 1.0,
+  "warmup": 60,
+  "bets": [0.03125, 0.0625, 0.125, 0.25, 0.5, 0.75, 0.9]
+}

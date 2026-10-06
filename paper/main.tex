@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=0.92in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,graphicx,natbib,enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Portfolio-aware alpha retirement and revival}\fancyhead[R]{\small Working paper}\fancyfoot[C]{\thepage}
+\setlength{\emergencystretch}{1.5em}
+\setlength{\headheight}{14pt}\setlength{\parskip}{3pt}
+\newtheorem{assumption}{Assumption}\newtheorem{theorem}{Theorem}\newtheorem{proposition}{Proposition}\newtheorem{corollary}{Corollary}
+\newcommand{\E}{\mathbb E}\newcommand{\Prob}{\mathbb P}\newcommand{\F}{\mathcal F}\newcommand{\ind}{\mathbf 1}\newcommand{\clip}{\operatorname{clip}}\newcommand{\Cov}{\operatorname{Cov}}\newcommand{\Var}{\operatorname{Var}}\newcommand{\KL}{\operatorname{KL}}\newcommand{\kl}{\operatorname{kl}}
+\title{\vspace{-1.2cm}When Should I Kill---and Revive---an Alpha?\\[0.3em]\large Portfolio-Aware Sequential Evidence and the Cost of Certification}
+\author{Enrico Bignozzi}
+\date{6 October 2026\\\small Research draft with executed simulations and JKP historical replay}
+\begin{document}
+\maketitle\thispagestyle{empty}
+\begin{abstract}
+A strategy can have a negative expected return and still improve a portfolio through diversification. Conversely, a profitable strategy can reduce the utility of a particular allocation. We study reversible decisions to park and reactivate fixed strategy allocations using paired, predictable portfolio comparisons. Bounded utility-difference scores feed directional betting processes, restart mixtures, and an explicit error budget across strategies and decision episodes. The resulting control concerns false alarms while an episode's conditional-mean null remains true; it does not certify the instantaneous sign of future economic value. We establish this guarantee, a persistent-signal delay bound, a canonical information lower bound, and the relation between clipped and raw utility targets. All proofs appear in the appendix. Executed simulations distinguish economic gains from statistical conservatism. The method preserves negative-return hedges and benefits from revival after strong mean deterioration, but it reacts too slowly in a correlation-only revival design and underperforms an always-on policy there. A JKP-only replay of 153 US factors from January 2000 through December 2025 produces no certified switches under the reference specification. These negative results identify the main obstacle to deployment: demanding lifetime error control can exhaust the economic opportunity before sufficient evidence accumulates. The package provides an auditable research baseline, not evidence of a state-of-the-art profitable allocator.
+\end{abstract}
+\noindent\textbf{Keywords:} portfolio choice; sequential testing; e-processes; strategy lifecycle; shadow portfolios; nonstationarity.\par
+\noindent\textbf{JEL:} C12, C14, C58, G11.
+\vspace{0.5em}
+\noindent\textbf{Scope.} No orders are submitted. JKP costs are transparent sensitivity assumptions, not estimated stock-level execution costs. The historical replay respects observation timing but does not reconstruct historical publication dates or data vintages.
+\newpage
+
+\input{sections/01_economy.tex}
+\input{sections/02_method.tex}
+\input{sections/03_simulations.tex}
+\input{sections/04_empirical.tex}
+\input{sections/05_proofs.tex}
+\input{sections/06_appendices.tex}
+\end{document}

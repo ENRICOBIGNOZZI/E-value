@@ -1,0 +1,11 @@
+{
+  "retrieved_utc": "2026-10-06T17:11:17.489371+00:00",
+  "license": "CC BY-NC 4.0; noncommercial research only",
+  "citation": "Jensen, Kelly and Pedersen (2023), Journal of Finance 78(5), 2465-2518",
+  "files": [
+    {"name":"availability.json","url":"https://jkpfactors-data.s3.amazonaws.com/public/availability.json","bytes":287565,"sha256":"3a5647ad2c053c88410b4cdcddd0377405bb2cb30c3e3932905064d7ba322ca2"},
+    {"name":"all_factors.zip","url":"https://jkpfactors-data.s3.amazonaws.com/public/%5Busa%5D_%5Ball_factors%5D_%5Bmonthly%5D_%5Bvw_cap%5D.zip","bytes":2674337,"sha256":"f766aa2c7db1f97594f79f9063275161b7038e936db9ea960eac6eb7ec27ca80"},
+    {"name":"mkt.zip","url":"https://jkpfactors-data.s3.amazonaws.com/public/%5Busa%5D_%5Bmkt%5D_%5Bmonthly%5D_%5Bvw_cap%5D.zip","bytes":19714,"sha256":"a90c1f2c8e89bf5cc45219d8f678696458412f19380769448bbaa2c9cc567752"},
+    {"name":"all_themes.zip","url":"https://jkpfactors-data.s3.amazonaws.com/public/%5Busa%5D_%5Ball_themes%5D_%5Bmonthly%5D_%5Bvw_cap%5D.zip","bytes":204444,"sha256":"9cf3bfa2a2941846e1ec5872dc5b613c9b40a0eed4b3fbc95e2979355ef93c53"}
+  ]
+}

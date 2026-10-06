@@ -1,0 +1,57 @@
+\section{JKP-only historical experiment}\label{sec:jkp}
+\subsection{Source, timing, and construction}
+We downloaded the official USA, monthly, capped-value-weighted JKP factor archive and its market and theme archives on 6 October 2026. The factor file contains 153 distinct names and returns through December 2025. The source manifest records original URLs, byte counts, SHA-256 hashes, and the portal's noncommercial research license. Raw files are not committed to the public repository.
+
+January 1995--December 1999 supplies the 60-month burn-in. Factors are eligible if they have complete returns in that burn-in, without filtering on subsequent performance. All 153 are eligible, and their evaluation panel has no missing factor-months through December 2025. A future missing observation would stop the loader rather than trigger retrospective factor deletion or silent zero filling. Returns are decimal, already signed as supplied; the direction field is not multiplied a second time.
+
+Decisions are evaluated from January 2000 through December 2025, giving 312 months. Every decision uses returns observed no later than that month and affects only the next month. Burn-in scales remain fixed. The source's current library, historical revisions, and possibly ex-post research selection remain limitations. We therefore call the exercise an \emph{out-of-sample-in-time historical replay}, not a fully point-in-time investment backtest. Factor-level data also do not identify real stock-level fills, capacity, borrow costs, or slippage.
+
+\subsection{Reference replay}
+The reference book has 80\% exposure to the JKP market and 20\% spread equally across the factor slots. This anchor makes diversification relative to a broad core visible, but market exposure dominates total volatility. Unallocated factor slots remain cash. The recurring deduction is 5 basis points per unit factor exposure per month and a change costs 10 basis points per unit exposure. Zero-cost and higher-cost assumptions are reported as sensitivities, not optimized.
+
+\begin{table}[htbp]\centering\small
+\caption{JKP reference replay, January 2000--December 2025. Annualized statistics are based on monthly excess-return accounting with modeled deductions. Utility gains are annualized quadratic-utility differences from always on. Switches are implemented changes, excluding a final-month decision that would require an unobserved next month.}\label{tab:jkp}
+\resizebox{\linewidth}{!}{\input{tables/jkp.tex}}
+\end{table}
+
+The certified cumulative, retirement-only, and reversible rules make zero switches. They exactly reproduce always-on returns under each of the three cost specifications. The reference always-on Sharpe proxy is 0.475, with 6.59\% annualized mean and 13.88\% volatility. These are properties of the chosen anchored book, not evidence that the lifecycle algorithm generates incremental alpha. The certified rule's zero utility difference has a degenerate paired interval because the realized policies are identical, not because its latent economic value is known without uncertainty.
+
+Rolling rules implement roughly 250 changes; CUSUM implements 61 and the HMM heuristic 174. Their utility differences are small. Paired circular-block intervals use 2,000 resamples of 12-month blocks of the synchronized realized utility differences. They do not rerun model selection, correct for searching across policies, or provide anytime-valid inference. In the reference replay all nonzero-policy intervals include zero.
+
+\begin{figure}[htbp]\centering\includegraphics[width=.95\linewidth]{../figures/jkp_activity.pdf}
+\caption{Active factor counts in the JKP reference replay. The certified rule remains at 153. A flat line is a substantive result, not a plotting omission.}\label{fig:activity}
+\end{figure}
+\begin{figure}[htbp]\centering\includegraphics[width=.95\linewidth]{../figures/jkp_utility.pdf}
+\caption{Cumulative quadratic-utility differences from always on. These curves use historical factor-return proxies with modeled deductions. The certified rule has no incremental performance because it never changes allocation.}\label{fig:jkp}
+\end{figure}
+
+\subsection{Exploratory architecture diagnostics}
+After observing the zero-switch reference result, we added three explicitly exploratory diagnostics: a 153-factor-only book; a 13-theme-only book; and a market-anchored 13-theme book. Their provenance is recorded in a separate manifest. No specification is selected because it performs well. These checks address whether the market anchor or large factor count alone explains inactivity.
+
+The certified rules also make zero switches in these designs. The factor-only always-on book has an annualized Sharpe proxy of 0.466; the theme-only book has 0.573. Retirement plus revival exactly matches those benchmarks. Thus reducing the book to 13 themes does not by itself solve the power problem. The results do not support an empirical event study of certified revivals because no such events occur. Producing one from selected heuristic events and labeling it as the proposed method would be misleading.
+
+\section{Interpretation and research implications}
+The financial object is well-defined, the false-alarm accounting is explicit, and the software reproduces the economic distinction between a standalone return and a portfolio contribution. However, a valid reference method is not yet a useful active allocator in every relevant regime. Three barriers are visible in the executed evidence.
+
+First, lifetime family-wise error control across a large strategy book is expensive. Lower-cost criteria, such as an error-rate objective tailored to repeated capital decisions, may permit more timely action, but they require a different theorem and cannot be advertised as the same 5\% lifetime guarantee. Second, clipping and fixed normalization discard economically relevant information. More efficient predictable betting and a carefully justified unbounded-score construction are natural methodological directions, not results established here. Third, an evidence threshold and a capital decision are different objects. A future economic decision layer may use uncertainty, transition persistence, and switching costs to choose fractional exposure while maintaining a separate certification layer.
+
+A strong next experiment would compare such extensions at a \emph{matched statistical objective} and on held-out simulation designs. The current package already supplies the paired-book accounting, source audit, and adverse test cases needed for that comparison. No current result establishes minimax-optimal reversible decisions, a global regret bound, faithful counterfactual market impact, or superiority over the frontier of sequential inference.
+
+\section{Conclusion}
+An alpha's relevant state is its usefulness to a specified portfolio allocation, not merely the sign of its standalone expected return. Shadow observation makes retirement reversible, and conditional betting processes make continuous evidence collection auditable. The guarantees have precise limits: they control alarms before a directional null is violated, not arbitrary future state errors or economic regret.
+
+The experiments show both the mechanism and its weakness. Portfolio-aware evidence can preserve a negative-return hedge and recover value after strong mean revival. It can also arrive too late to exploit covariance recovery. On 153 JKP factors the reference policy does not switch at all. The resulting research artifact is a reproducible starting point with proved statements and observed failures. Turning it into a deployable allocator requires addressing the cost of certification, not merely adding a more favorable title or a more complex prediction model.
+
+\bigskip
+\begin{thebibliography}{99}\small
+\bibitem[Bhattacharyya and Ramdas(2026)]{bhattacharyya2026} Bhattacharyya, S. and A. Ramdas (2026). Change detection with conformal martingales: new optimal constructions, and suboptimality of existing methods. arXiv:2609.27179v1. \url{https://arxiv.org/abs/2609.27179}.
+\bibitem[Bonacorsi(2026)]{bonacorsi2026} Bonacorsi, N. (2026). Certified Alpha Capacity: Statistical Arbitrage When Learning Takes Time. arXiv:2610.01115v2, revised 4 October 2026. \url{https://arxiv.org/abs/2610.01115v2}.
+\bibitem[Howard et al.(2021)]{howard2021} Howard, S. R., A. Ramdas, J. McAuliffe, and J. Sekhon (2021). Time-uniform, nonparametric, nonasymptotic confidence sequences. \emph{Annals of Statistics} 49(2), 1055--1080. doi:10.1214/20-AOS1991.
+\bibitem[Jensen et al.(2023)]{jkp2023} Jensen, T. I., B. Kelly, and L. H. Pedersen (2023). Is There a Replication Crisis in Finance? \emph{Journal of Finance} 78(5), 2465--2518. doi:10.1111/jofi.13249.
+\bibitem[JKP Data Portal(2026)]{jkpdata} JKP Data Portal (2026). Official factor, market, and theme data; USA monthly capped-value-weighted files. Retrieved 6 October 2026. \url{https://jkpfactors.com/data}. Exact archived file hashes are in the accompanying source manifest.
+\bibitem[Regis and Serra(2026)]{regis2026} Regis, M. and P. Serra (2026). Return-to-Baseline Testing via Empirically Calibrated e-processes. arXiv:2606.01960. \url{https://arxiv.org/abs/2606.01960}. Preprint.
+\bibitem[Shin et al.(2022)]{shin2022} Shin, J., A. Ramdas, and A. Rinaldo (2022; revised 2023). E-detectors: a nonparametric framework for sequential change detection. arXiv:2203.03532v4. \url{https://arxiv.org/abs/2203.03532}.
+\bibitem[Stephan(2026)]{stephan2026} Stephan, R. (2026). Sequential Tradeability Testing for Alpha Signals. SSRN working paper 6922558. \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6922558}. Citation identifies the related preprint; no priority ranking is inferred from author affiliation.
+\bibitem[Waudby-Smith and Ramdas(2024)]{waudby2024} Waudby-Smith, I. and A. Ramdas (2024). Estimating means of bounded random variables by betting. \emph{Journal of the Royal Statistical Society, Series B} 86(1), 1--27. Preprint: arXiv:2010.09686. \url{https://arxiv.org/abs/2010.09686}.
+\end{thebibliography}
+
