@@ -10,27 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Retrieve licensed public research files
+      - name: Retrieve public research files
         run: |
           mkdir -p jkp-data
           python - <<'PY'
           import urllib.request, pathlib, hashlib, json, datetime
           out=pathlib.Path('jkp-data'); base='https://jkpfactors-data.s3.amazonaws.com'
           urls={'availability.json':base+'/public/availability.json'}
-          for theme in ('all_factors','market','all_themes'):
+          for theme in ('all_factors','mkt','all_themes'):
               urls[theme+'.zip']=base+'/public/%5Busa%5D_%5B'+theme+'%5D_%5Bmonthly%5D_%5Bvw_cap%5D.zip'
           manifest={'retrieved_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'license':'CC BY-NC 4.0; noncommercial research only','citation':'Jensen, Kelly and Pedersen (2023), Journal of Finance 78(5), 2465-2518','files':[]}
           for name,url in urls.items():
-              try:
-                  with urllib.request.urlopen(url,timeout=60) as r:b=r.read()
-                  (out/name).write_bytes(b)
-                  manifest['files'].append({'name':name,'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
-                  print('DOWNLOADED',name,len(b),flush=True)
-                  if name=='availability.json':print(b.decode()[:12000])
-              except Exception as e:
-                  manifest['files'].append({'name':name,'url':url,'error':str(e)});print('UNAVAILABLE',name,str(e),flush=True)
+              with urllib.request.urlopen(url,timeout=60) as r:b=r.read()
+              (out/name).write_bytes(b)
+              manifest['files'].append({'name':name,'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+              print('DOWNLOADED',name,len(b),flush=True)
           (out/'source_manifest.json').write_text(json.dumps(manifest,indent=2))
-          assert (out/'all_factors.zip').exists(), 'Required official JKP factor file was not obtained.'
           PY
       - uses: actions/upload-artifact@v4
         if: always()
