@@ -1,67 +1,53 @@
 # When Should I Kill—and Revive—an Alpha?
 
-**Portfolio-aware sequential evidence and the cost of certification.**
-Research implementation, manuscript, and executed results. All proofs are in the manuscript appendix. Empirical data are **JKP only**. Nothing places orders or manages real money.
+**Portfolio-aware sequential monitoring and the cost of certification.**
 
-## Actual status — October 6, 2026
+V4 research status, 6 October 2026.
 
-- Full English manuscript in `paper/main.tex`, with all mathematical proofs in Appendix A.
-- **9,420 scenario-path evaluations** across main, null, dependence, scaling, weak-signal, and delay studies. Some designs share common random numbers; this is not a count of mutually independent worlds.
-- Eight transparent policies in the main Monte Carlo and JKP replay.
-- Real official **153-factor USA monthly JKP replay, January 2000–December 2025 (312 months)**; 1995–1999 burn-in. Three cost specifications and explicitly exploratory factor-only / 13-theme architecture checks.
-- Unit tests, path-level simulation results, source hashes, paired uncertainty estimates, and generated paper tables/figures.
+## Core idea
 
-## The results are mixed, not a SOTA claim
+A strategy is monitored by its conditional marginal contribution to portfolio utility, not its standalone mean return. Capital can move reversibly between **ACTIVE** and **PARKED** states; parked strategies continue in shadow mode and may later be revived.
 
-The portfolio score preserves a negative-return hedge that standalone screening removes. Retirement plus revival improves on permanent retirement after strong mean recovery. But the certified rule reacts too slowly in the correlation-only revival experiment and **underperforms always on** there. In the primary JKP replay, **all certified policies make zero switches** and exactly reproduce always on. This is an identified power limitation, not a missing result.
+Two policies are kept distinct:
 
-The recorded false-alarm rates are 7/2,000 (0.35%) and 4/2,000 (0.20%) for the two bounded-score null designs, under a 5% lifetime upper bound. Very low size is not evidence of good trading decisions.
+- **SAFE:** lifetime-valid certification benchmark; intentionally conservative.
+- **FAST:** 31-component bounded-mean mixture e-CUSUM + e-d-BH, using finite-patience / error-over-patience control.
 
-## Reproduce
+The statistical primitives are attributed to the modern e-detector literature. The finance contribution is the portfolio-relative target, reversible lifecycle decision, economic indifference region, and the mapping from information-theoretic detection delay into unavoidable portfolio regret.
 
-Requires Python >=3.10 and NumPy, pandas, SciPy, matplotlib, pytest. Install from the project directory:
+## V4 theory
 
-```bash
-python -m pip install -e '.[test]'
-python -m pytest -q
-python experiments/reproduce.py --download --pdf
-```
+The manuscript establishes or applies:
 
-`--download` retrieves official JKP archives with TLS verification. `--pdf` requires `pdflatex` and standard packages: amsmath, amssymb, amsthm, mathtools, booktabs, graphicx, natbib, enumitem, hyperref, microtype, fancyhdr, and geometry. Omit `--pdf` to run all empirical/simulation experiments without TeX.
+1. exact portfolio-value characterization under quadratic utility;
+2. e-CUSUM validity under a global-filtration conditional-mean null;
+3. multi-alpha EOP control via e-d-BH;
+4. a finite-sample bounded-mean delay bound;
+5. sharp first-order single-stream information limits from existing quickest-detection theory;
+6. first-order **economic delay-regret** optimality;
+7. repeated PARK/REVIVE true-change regret decomposition;
+8. a cost-weighted economic-error-over-patience extension.
 
-Original JKP source hashes are recorded in `data/source_manifest_20261006.json`. The public provider can revise files; a new download is not guaranteed to reproduce the exact archived vintage. Raw licensed data are not tracked in Git. There is no synthetic fallback if the empirical download fails.
+All proofs are placed in the manuscript appendix. The complete V4 source and research outputs are kept in the current research deliverable; the repository will retain reproducible scripts rather than raw licensed JKP archives.
 
-Individual commands:
+## Simulation result
 
-```bash
-python experiments/run.py --name main --reps 200 --periods 1800 --noises gaussian,student
-python experiments/run.py --task null --name null --reps 2000 --periods 720 --m 5
-python experiments/delay.py
-python experiments/empirical.py
-python experiments/empirical_diagnostics.py
-python experiments/report.py
-```
+The final suite uses 150 common-random-number replications × 900 observations for six economic scenarios under Gaussian, Student-t, GARCH, and AR noise.
 
-A small smoke test is `python experiments/run.py --name smoke --reps 5 --periods 240 --scenarios revival --noises gaussian --methods always_on,e_restart`.
+FAST is materially faster than SAFE at a finite-patience operating point, preserves the negative-return hedge, and reacts to death/revival and covariance-only state changes. It does **not** uniformly dominate rolling or HMM heuristics, which do not provide the same sequential guarantee.
 
-## What the method certifies
+A matched-strictness experiment is intentionally retained. When FAST is calibrated to approximately SAFE's very low false-switch frequency, the advantage becomes modest and is not uniform. The main operational gain therefore comes from using a finite-patience error criterion appropriate for capital allocation, not from a free statistical improvement.
 
-Before observing a return vector, specify paired fixed-slot books with and without candidate j. Parked capital goes to cash; survivors are **not renormalized**. Compute quadratic-utility difference D, normalize by a burn-in scale, and clip to [-1,1]. Two directional betting rules support PARK and REVIVE with hysteresis. Restart mixtures keep unstarted capital, safely discard expired wealth, and spend delta/[M*k*(k+1)] in episode k. At most one strategy changes state per book per period, effective next period.
+## Information experiment
 
-The guarantee concerns any false alarm **before an episode's directional conditional-mean null has ever failed**. It does **not** guarantee that every switch matches the current economic state after arbitrary reversals. The certified target is the conditional mean of the **clipped utility difference**, not an unrestricted expected return. No independence is needed once the conditional moment null is assumed; arbitrary financial dependence does not automatically satisfy that assumption.
+A least-favourable Bernoulli bounded-mean experiment uses 3,000 paths per design point. Observed delay divided by `log(A)/KL` moves toward one as patience grows, consistent with the first-order information frontier.
 
-Optional assets cannot lower population-optimal utility if zero weight remains feasible. Negative contribution here means negative value of a **specified allocation**, not negative value of access to an asset. Switching charges are evaluated in realized returns; the hysteresis rule is not a solved optimal-switching problem.
+## JKP validation
 
-## Experiments and limitations
+The public validation uses 153 official U.S. daily value-weighted JKP factors, a 252-trading-day pre-2000 burn-in, daily evidence updates, and month-end allocation decisions through 2025.
 
-`results/*/replications.csv` holds method/path-level records. `summary.csv` holds paired Monte Carlo means and standard errors; `first_path.csv` fixes the illustrative path to replication zero rather than selecting a favorable trajectory. Manifests identify seeds, dimensions, assumptions, and execution. Binary generated plots and the built PDF are distributed with the research bundle or regenerated locally.
+This is a retrospective factor-library validation, **not** a historical-publication-date point-in-time backtest. The factor-only results show only modest descriptive improvement for some pre-specified patience values; post-PARK event evidence is mixed and moderate-patience runs contain little revival evidence. No profitability claim is made.
 
-The JKP replay is past-only in its observation and trading clock, but the library and data vintage are retrospective. This is **not a historical-publication-date point-in-time backtest**. Costs are stated deductions, not estimates of underlying stock turnover, impact, or borrow fees. All 153 factors qualify using only the 60-month pre-launch history; missing post-launch returns cause an error, not hindsight deletion.
+## Reproducibility
 
-CUSUM/HMM/rolling comparators are fixed transparent heuristics, not error-rate-matched SOTA implementations. The one-alpha oracle is a **one-period conditional opportunity-loss diagnostic**, not global optimal-switching regret. Null calibration and raw-utility state adaptation are evaluated separately. The paper makes no minimax claim for the reversible financial policy.
-
-## Data attribution and access
-
-Jensen, T. I., Kelly, B., and Pedersen, L. H. (2023), *Is There a Replication Crisis in Finance?*, Journal of Finance 78(5), 2465–2518, DOI 10.1111/jofi.13249. Official portal: https://jkpfactors.com/data.
-
-JKP data are provided under **CC BY-NC 4.0**, not a blanket license for hedge-fund commercial use. Raw archives stay outside Git. Data-derived experimental outputs are research outputs subject to the source's terms. No credentials, portfolio holdings, or user-local datasets are included.
+The V4 build passes **27 unit tests**. Raw JKP data are not committed. Generated performance claims must be traceable to path-level results and manifests; no synthetic empirical fallback is allowed.
