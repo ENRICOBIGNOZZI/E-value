@@ -1,0 +1,34 @@
+{
+  "financial_replications": 0,
+  "kind": "analytic interpretation examples; no empirical application",
+  "parameters": {
+    "gamma": 5.0,
+    "c": 0.0001,
+    "eta": 0.0001,
+    "H": 252
+  },
+  "parking": {
+    "sigma": 0.002,
+    "initial_weight": 0.5,
+    "reference_target": 0.5,
+    "first_period_gain": -6e-05,
+    "holding_period_gain": 0.0005674999999999999,
+    "break_even_horizon": 25.000000000000004,
+    "cumulative_state_matched_regret_reference": 0.0,
+    "cumulative_state_matched_regret_parked": 6e-05
+  },
+  "entry": {
+    "mu": 5e-05,
+    "sigma": 0.01,
+    "raw_second_moment": 0.0001000025,
+    "myopic_target": 0.0,
+    "horizon_constant_target": 0.09912520028246719,
+    "horizon_constant_value": 0.0006195325017654199,
+    "qp_target": 0.09912519791032867
+  },
+  "limits": [
+    "No terminal liquidation charge.",
+    "Constant-position entry value is not the general dynamic optimum.",
+    "Known stationary moments, not a claim that episode evidence certifies future returns."
+  ]
+}

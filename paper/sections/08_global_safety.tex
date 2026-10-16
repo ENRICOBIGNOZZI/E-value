@@ -1,0 +1,51 @@
+\subsection{What a search-wide guarantee would cost}
+\label{sec:global-budget}
+The experiments above use an individual level of $0.05$. A global budget is
+possible, but it changes the decision rule and its waiting cost. The following
+is a standard spending argument, included to make that distinction explicit.
+
+\begin{proposition}[Episode spending]
+Enumerate adaptively opened episodes by $k\ge1$, assign deterministic budgets
+$a_k>0$ with $\sum_k a_k\le\alpha$, and reject episode $k$ only when its
+capital reaches $1/a_k$. Fix a data-generating law $P$ and a set $I_0$ of episode
+indices whose conditional null and moment assumptions hold $P$-almost surely
+throughout their active dates. An unopened episode is never rejected. Then
+\[
+ P\{\text{some episode in }I_0\text{ is rejected}\}\le\alpha.
+\]
+The claim holds for either of the valid capital constructions in this paper,
+including adaptive opening, stopping and closing of comparisons.
+\end{proposition}
+\begin{proof}
+Conditional Ville's inequality at the opening time bounds the rejection
+probability of each valid null episode by $a_k$. Stopping its capital at
+closure preserves this bound. Taking expectations and a countable union bound
+gives $\sum_{k\in I_0}a_k\le\alpha$. Restricting rejections further by the
+positive-history filter or annual priority rule can only reduce this event.
+No independence between episodes is required.
+\end{proof}
+
+This controls rejection of valid episode nulls, not selection of a policy with
+negative gain on the current date. The latter remains outside T1, as the
+earlier sign-change counterexample shows. In particular, an ex post negative
+annual gain is not by itself a label for membership in $I_0$.
+
+For illustration, reserve half the total budget for the initial 100 episodes,
+so each receives $a_k=\alpha/200$, and allocate the other half summably to all
+later episodes. The first-entry threshold becomes $200/\alpha=4000$, or
+$\log E\ge8.294$, rather than $\log E\ge2.996$. This illustration was examined
+after the mechanism study; it is not a predeclared simulated comparator.
+The largest annual log capital in that complete fixed-reference study is
+4.918. Consequently none of its 20 markets would produce a first entry under
+this particular spending rule. Until the first entry, the fixed-empty-reference
+policies and scores are unchanged, so this is an exact replay implication and
+does not require a counterfactual post-entry fund path. Other allocations can
+give different results; this example is not an optimal-budget theorem.
+
+In the stationary power certificates, replacing $\alpha$ by $a_k$ increases
+the required log evidence by $\log(\alpha/a_k)$. The rare-loss necessary
+horizon similarly replaces $\log\{(1-\beta)/\alpha\}$ by
+$\log\{(1-\beta)/a_k\}$. These identities explain a further information cost
+of protecting a search. They do not quantify actual delay in the changing
+financial DGP or establish that the uncorrected search has global error
+exactly equal to its nominal individual level.

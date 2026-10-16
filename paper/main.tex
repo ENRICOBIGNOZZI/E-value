@@ -16,7 +16,7 @@
 \newcommand{\F}{\mathcal F}\newcommand{\G}{\mathcal G}\newcommand{\W}{\mathcal W}
 \newcommand{\norm}[1]{\lVert#1\rVert}\newcommand{\pos}[1]{[#1]_+}
 \newcommand{\supp}{\operatorname{supp}}\newcommand{\op}{\mathrm{op}}
-\title{PARK/REVIVE:\\Sequential Validation of Investment Policies\\with Estimation Error and Trading Costs}
+\title{Sequential Validation of Investment Policies:\\Trading Costs, Moment Information, and the Cost of Waiting}
 \author{Enrico Bignozzi}
 \date{Working draft --- 16 October 2026}
 \begin{document}
@@ -40,8 +40,8 @@ decision bottleneck can make validation economically slow. We report executed
 diagnostics without presuming superiority, global error control or a theorem
 of adaptation to changing regimes. A declared extension combines observable
 policy geometry with bias-corrected tail betting under eighth return moments;
-new first-entry experiments distinguish feasible certification from useful
-investment timing.
+fixed-reference and full-fund experiments distinguish feasible certification
+from its economic waiting costs.
 \end{abstract}
 \noindent\textbf{Keywords:} sequential inference; investment signals; e-processes;
 transaction costs; portfolio estimation; simulation.
@@ -63,6 +63,8 @@ heavy-tail-robust e-process. An annual search proposes additions, removals and
 a restricted set of swaps; the test evaluates those proposals. This separation
 allows one to ask both whether the statistical comparison is valid and whether
 waiting for its evidence is worthwhile.
+We call the annual add--remove--swap implementation PARK/REVIVE; its name
+describes available actions, not a guarantee of adaptation to a new regime.
 
 The analysis has four parts. First, a conditional supermartingale argument
 establishes validity for an individual adaptive episode. Second, a stationary
@@ -80,13 +82,29 @@ score differences. Our T1 uses the datewise conditional-mean null stated
 below. It does not establish validity for that broader weak null. All sleeve
 returns are observed, so the present setting permits full-information
 counterfactual score calculation rather than requiring off-policy importance
-weights. The economic additions concern estimated constrained portfolios,
+weights. We specialize these comparisons to estimated constrained portfolios,
 separate trading states and explicit moment certificates.
 The economic optimization uses the convex trading perspective of
 \cite{boyd}. The present contribution is the explicit connection of these
 components to comparisons of estimated investment policies with separately
 accounted trading states. We do not claim a new general e-process construction
 or a new general Schur-complement identity.
+
+Portfolio evaluation of characteristics with risk and trading costs already
+appears in \cite{demiguel}; its stock-level trading-netting mechanism is outside
+our sleeve-turnover cost model. \cite{carrasco} develops GMM inference for
+transaction-cost effects under recursive utility. E-process applications in
+finance include risk-forecast backtesting \cite{eback} and comparative
+risk-measure backtests \cite{comparativeback}. These precedents preclude a
+claim that either economic signal evaluation or sequential financial comparison
+is new. The contribution studied here is their specialization to observable
+policy-pair scores with separate allocation states, explicit public moment
+certificates and an assessment of the cost of waiting. General instance log
+optimality and rejection-time theory for portfolio-based e-processes are
+developed in \cite{instance}; the portfolios there allocate statistical betting
+capital. Our investible portfolios generate utility scores, and T2 below is
+only a bound on a quadratic growth certificate, not an instance optimality
+result.
 
 Multiple testing remains a separate issue. The financial significance of
 searching among many predictors is emphasized by \cite{hlz}. Our specified
@@ -101,10 +119,15 @@ filter while the current gain is negative.
 
 \section{The economic object}
 Let $A_{t+1}\in\mathbb R^p$ be next-period gross returns of observable signal
-sleeves. The information $\F_t$ contains characteristics, realized returns,
-published risk caps, policy states and all past algorithmic decisions, but no
-future shocks or simulator labels. An allocation $w_t$ and its previous target
-$b_t$ are $\F_t$-measurable. Define
+sleeves. Investor information $\G_t$ contains observed characteristics and
+returns, published risk caps, policy states and past algorithmic decisions,
+but no supplied hidden market state or future shock. Allocations $w_t$,
+previous targets $b_t$ and bets are $\G_t$-measurable. In the mathematical
+results, $\F_t\supseteq\G_t$ denotes the specified pre-return conditioning
+filtration; it may equal $\G_t$. The simulation evaluator uses an enlarged
+filtration also containing current latent coefficients and the current regime,
+but no future innovations. Its state-conditioned oracle moments need not equal
+the learner's conditional moments given $\G_t$. Define
 \begin{align}
  C_t(w,b)&=c\norm{w-b}_1+\frac\eta2(w-b)'\Lambda_t(w-b),\\
  U_{t+1}(w;b)&=w'A_{t+1}-\frac\gamma2(w'A_{t+1})^2-C_t(w,b),\label{eq:utility}\\
@@ -117,6 +140,11 @@ and $\Lambda_t\succeq0$. Whenever the expectations exist,
  \E[U_{t+1}(w;b)\mid\F_t]=J_t(w;b).
 \end{equation}
 This follows by conditional linearity and the raw-second-moment identity.
+The conditional null and moment assumptions below must hold for the same
+chosen filtration. The analytic public envelopes hold also for the enlarged
+simulation filtration and therefore, by the tower property, for the investor
+filtration. Economic event labels use the former; they do not establish the
+truth or falsity of the investor-filtration episode null.
 
 The raw second moment is essential: $M_t=\Sigma_t+\mu_t\mu_t'$.
 Replacing $M_t$ by covariance removes the term
@@ -463,6 +491,23 @@ For known costs and $\norm w_2\le L$,
 If $\Lambda$ is estimated, add
 $\eta(L+L_b)^2\norm{\widehat\Lambda-\Lambda}_{\op}/2$.
 
+The same uniform event separates estimation error from the cost of restricting
+the portfolio. At the fund's actual state $b$, let
+$\widehat G=\widehat V([p];b)-\widehat V(S;b)\ge0$ and
+$R=V([p];b)-J(\widehat w(S;b);b)$. Then
+\begin{equation}
+ |R-\widehat G|\le2\varepsilon.
+\end{equation}
+Indeed, $|V([p];b)-\widehat V([p];b)|\le\varepsilon$ and
+$|J(\widehat w(S;b);b)-\widehat V(S;b)|\le\varepsilon$.
+For waiting in cash, $S=\varnothing$ and $b=0$, the latter difference is exactly
+zero, so the bound improves to $\varepsilon$. This does not make
+$\widehat G$ an observable confidence bound: the uniform event still needs
+justification. It shows how support restriction and waiting can dominate even
+when estimation error is small. The comparator uses the fund's same current
+state; comparing two entire traded paths requires accounting for their
+different states as well.
+
 For the link to a common state, assume $\norm w_2,\norm b_2,\norm{b'}_2\le L$
 and $\norm\Lambda_{\op}\le\bar\Lambda$. Then
 \begin{equation}
@@ -489,6 +534,8 @@ In fixed-dimensional independent data with finite fourth moments and no
 persistent moment bias, expected squared moment errors are $O(n^{-1})$.
 Neither that rate nor consistency follows from expanding estimation under
 unrestricted drift.
+
+\input{sections/06_horizon.tex}
 
 \section{An auditable annual selection rule}
 All methods use initial training $n_0=h=252$, expanding sample moments and
@@ -559,8 +606,9 @@ the common sleeve weights are
  \qquad A_{t+1}=P_t'R^e_{t+1}.
 \end{equation}
 Each sleeve is dollar neutral and has gross leverage at most one. Sleeves are
-not fully factor neutralized. Investible algorithms see realized sleeve
-returns and public risk caps; labels, coefficients, regimes and exact
+not fully factor neutralized. All investible algorithms receive realized sleeve
+returns and public risk caps; the extension additionally uses current public
+function values and sleeve exposures. Realized coefficients, regimes and exact
 conditional moments are confined to the evaluator and oracle.
 
 \subsection{A public conditional moment certificate}
@@ -622,6 +670,8 @@ This draft contains no executed-result claim. Numeric output must first be
 generated and linked to this section by the reproducible paper-building script.}
 
 \input{sections/07_certified_tails.tex}
+\input{sections/08_global_safety.tex}
+\input{sections/09_full_strategy.tex}
 
 \section{Discussion}
 The central economic distinction is between a direction that can help an
@@ -634,8 +684,9 @@ These questions remain distinct even when their calculations share data.
 Several obstacles remain before a strong publication claim is warranted.
 The baseline moment certificate prevents entry in the executed pilot; the
 declared higher-moment extension makes first certification feasible in new
-markets but still requires substantial waiting and has no verified full-strategy
-performance result. The annual
+markets but still requires substantial waiting. The separate full-strategy
+study measures post-entry performance and opportunity costs; a small executed
+pilot does not establish practical superiority. The annual
 calendar restricts the number of experiments that can become positions, and
 the episode null does not directly express a current-regime profitability
 claim. No multiplicity guarantee protects the whole selection process. A
@@ -644,6 +695,7 @@ claiming either practical superiority or methodological novelty. Empirical
 applications are outside this paper's current scope.
 
 \appendix
+\begingroup\small
 \section{Conditional moments used only by the evaluator}
 Let $x=\mu_x+h_x'\zeta$ and $y=\mu_y+h_y'\zeta$, where the components of
 $\zeta$ are independent, symmetric, variance one and fourth moment six.
@@ -671,15 +723,12 @@ conditional Monte Carlo sample. Identical policies and states give exactly
 $Y=0$, a separate cancellation check.
 
 \section{Reproducibility and numerical conventions}
-The archived starting commit is
-\texttt{db5c37ab3e23a7818869d32ba35f22d51c3a89b2}.
-The rebuilt package is isolated from the removed legacy implementation.
-Frozen JSON configurations record economic units and simulation parameters;
-source hashes, installed versions, seed manifests and annual checkpoints
-identify each run. The learner is deterministic given its observed history.
-The DGP, statistical diagnostics and independent moment-check samples use
-distinct random streams. Checkpoint resumption reproduces OOS observations
-without counting an observation twice.
+Versioned configurations, source hashes, installed versions and seed manifests
+identify each run. Unfinished runs resume at atomic annual checkpoints without
+counting a score twice; completed weight, score and event ledgers are retained.
+The learner is deterministic given its observed history. The market,
+statistical diagnostics and independent moment checks use distinct random
+streams. Original input provenance is preserved in the accompanying repository.
 
 The optimizer solves a convex quadratic program with epigraph variables for
 turnover and gross leverage. It records primal and dual residuals and the
@@ -689,7 +738,10 @@ future-data perturbations. Stable identifiers govern tie breaking, and the
 candidate shortlist is tested under a consistent permutation of columns.
 No old empirical or simulated result enters this manuscript.
 
-\begin{thebibliography}{9}
+\endgroup
+\begingroup\small
+\begin{thebibliography}{99}
+\setlength{\itemsep}{0pt}
 \bibitem{wr} Wang, H., and A. Ramdas (2023).
 Catoni-style confidence sequences for heavy-tailed mean estimation.
 \emph{Stochastic Processes and their Applications} 163, 168--202.
@@ -719,5 +771,25 @@ Published correction: \url{https://doi.org/10.1093/biomet/asac043}.
 \bibitem{choe} Choe, Y. J., and A. Ramdas.
 Comparing Sequential Forecasters.
 Author version: \url{https://arxiv.org/abs/2110.00115}.
+\bibitem{demiguel} DeMiguel, V., A. Mart\'in-Utrera, F. J. Nogales,
+and R. Uppal (2020).
+A Transaction-Cost Perspective on the Multitude of Firm Characteristics.
+\emph{Review of Financial Studies} 33(5), 2180--2222.
+\url{https://doi.org/10.1093/rfs/hhz085}.
+\bibitem{carrasco} Carrasco, M., and N. Kon\'e (2024).
+Test for Trading Costs Effect in a Portfolio Selection Problem with Recursive Utility.
+\emph{Journal of Financial Econometrics} 22(4), 908--953.
+\url{https://doi.org/10.1093/jjfinec/nbad015}.
+\bibitem{eback} Wang, Q., R. Wang, and J. Ziegel (2026).
+E-backtesting. \emph{Management Science} 72(6), 4952--4973.
+\url{https://doi.org/10.1287/mnsc.2023.01659}.
+\bibitem{comparativeback} Jiao, Z., Q. Wang, and Y. Zhao.
+Comparative e-backtests for general risk measures.
+Author version, revised March 2026: \url{https://arxiv.org/abs/2511.05840}.
+\bibitem{instance} Waudby-Smith, I., R. J. Sandoval, and M. I. Jordan.
+Instance-Log-Optimality of Portfolio-Based E-Processes and their Sequential
+Hypothesis Tests. Author version, revised September 2026:
+\url{https://arxiv.org/abs/2504.02818}.
 \end{thebibliography}
+\endgroup
 \end{document}

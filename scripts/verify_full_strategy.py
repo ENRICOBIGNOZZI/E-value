@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Replay scores, costs, evidence and ghost labels without checkpoint/process state."""
 import argparse
+import hashlib
 import json
 from math import comb,factorial
 from pathlib import Path
@@ -57,6 +58,12 @@ def replay_caps(d,s,features,dc,cfg):
     d8=moment(md,vd,8);s8=moment(ms,vs,8)
     return ((np.sqrt(d2)+cfg.gamma/2*(d4*s4)**.25+np.abs(dc))**2,
             (d4**.25+cfg.gamma/2*(d8*s8)**.125+np.abs(dc))**4)
+
+
+def input_digest(directory):
+    files={str(p.relative_to(directory)):hashlib.sha256(p.read_bytes()).hexdigest()
+           for p in sorted(directory.rglob('*')) if p.is_file() and not p.name.startswith('checkpoint')}
+    return hashlib.sha256(json.dumps(files,sort_keys=True).encode()).hexdigest()
 
 
 def verify_seed(directory,allow_incomplete=False):
@@ -223,6 +230,9 @@ def verify_seed(directory,allow_incomplete=False):
                 if mean<=cfg.economic_tolerance:raise AssertionError('Unstable ghost entered stable risk set')
     return dict(seed=seed,checks=checks,max_absolute_errors=max_error,
                 ghost_pairs_checked=len(ghost_means),complete=status['complete'],
+                scientific_source_hash=status['source_hash'],config_hash=cfg.digest,
+                verifier_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                input_digest=input_digest(directory),
                 scope='arithmetic replay; no optimizer optimality or global type-I claim')
 
 
@@ -230,12 +240,23 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--allow-incomplete',action='store_true')
+    parser.add_argument('--seeds',type=int,nargs='+')
+    parser.add_argument('--resume',action='store_true',help='Reuse complete checks only when verifier and every input byte match')
     args=parser.parse_args()
-    results=[]
+    path=args.output/'arithmetic_verification.json'
+    results={r['seed']:r for r in json.loads(path.read_text())} if path.exists() else {}
+    verifier_hash=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     for directory in sorted(args.output.glob('seed_*')):
-        result=verify_seed(directory,args.allow_incomplete);results.append(result)
+        seed=int(directory.name.split('_')[-1])
+        if args.seeds is not None and seed not in args.seeds:continue
+        cached=results.get(seed,{})
+        if (args.resume and cached.get('complete') and cached.get('verifier_sha256')==verifier_hash
+                and cached.get('input_digest')==input_digest(directory)):
+            print(f'reused complete arithmetic check seed={seed}',flush=True);continue
+        result=verify_seed(directory,args.allow_incomplete);results[seed]=result
         print(json.dumps(result),flush=True)
-    (args.output/'arithmetic_verification.json').write_text(json.dumps(results,indent=2)+'\n')
+        temporary=path.with_suffix('.tmp')
+        temporary.write_text(json.dumps([results[k] for k in sorted(results)],indent=2)+'\n');temporary.replace(path)
 
 
 if __name__=='__main__':main()

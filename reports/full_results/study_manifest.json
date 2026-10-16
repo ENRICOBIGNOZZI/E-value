@@ -1,0 +1,27 @@
+{
+  "seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010
+  ],
+  "requested_snapshot_seeds": [],
+  "n_complete": 10,
+  "incomplete": [],
+  "source_hash": "3f7e2ee49857703087a3cc7326a43f2e4d036411ccc98fd2494cae4e59916071",
+  "config_sha256": "1e67a398553db47fae4b2087cdc873d8ca7afb89c48606582555a797217eab11",
+  "completed_seeds_with_arithmetic_audit": 10,
+  "detailed_tables": "/Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v2/pilot/aggregate",
+  "limits": [
+    "Pilot uncertainty intervals use independent markets, not dependent episode counts.",
+    "Opportunity populations depend on each method; fractions are descriptive.",
+    "No multiple-comparison correction; HAC and e-tests have unmatched global error.",
+    "Terminal decisions have no executed fund performance."
+  ]
+}

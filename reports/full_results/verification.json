@@ -1,0 +1,41 @@
+{
+  "scientific_source_commit": "234e4f9",
+  "scientific_source_hash": "3f7e2ee49857703087a3cc7326a43f2e4d036411ccc98fd2494cae4e59916071",
+  "tests_passed": 44,
+  "reported_seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010
+  ],
+  "scalar_arithmetic_checks": 88285790,
+  "ghost_pairs_checked": 1265,
+  "max_log_e_replay_error": 1.7763568394002505e-15,
+  "pdf_pages": 25,
+  "pdf_sha256": "2b7e1bb7e0da6dd3407a071a73d1fd7e666d54fe993956036e4fa5c5b1437957",
+  "pdf_visual_qa": "All 25 pages rendered and reviewed as contact sheets; pages 9,20,22,25 inspected individually at larger resolution. No clipping/overlap; bibliography fits; no overfull or undefined-reference log entries.",
+  "manuscript_inputs": {
+    "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
+    "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
+    "paper/figures/equity_quantiles.png": "f48e28ce8693bde8a976b1e75eaa948e536a9c4c2fb023d4b4e5f714f9525474",
+    "paper/figures/first_entry_feasibility.png": "bb5b10592855396a64074f45b5c693057d9fe000343f79ff2595e507c255afb6",
+    "paper/figures/full_strategy_evidence.png": "ebd4891d95d13526f517f34181932d0f4922977db76d798e4cb6d5ca62dbf0c9",
+    "paper/figures/full_strategy_paths.png": "f203fb710e83d24c45f7056484b8e8a0d25775606d3eec48b87442478674c596",
+    "paper/figures/stationary_power.png": "c3d3ddbca49df76adf908452b855613d662ca235e446cc3f6f8dc25ad3263518",
+    "paper/generated_full_results.tex": "dc409f6ecbfa0fc4e7fd74532d9058d446a1343eb5a91ef46af04e3557cceb15",
+    "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
+    "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
+    "paper/main.tex": "a67875c7e54b7c14187ce13126557867cd33bd35d81b21996518749fe898879c",
+    "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
+    "paper/sections/07_certified_tails.tex": "497f2f7fdf5c9ad6c938663ec6efaf6802c9cc1edccc79cfeec670ef0011a400",
+    "paper/sections/08_global_safety.tex": "e2f994168ba37ca326f44a1ffe0dcb3afce2d21321a098dfbc954fb0eda2b0b1",
+    "paper/sections/09_full_strategy.tex": "31cce11fdd66c552c62145a2fb163d5b059da0a1e9d8f1b8d3b0a1019eabccba"
+  },
+  "scope": "First-ten v2 pilot snapshot only. Expanded pilot stopped at seed 50020 after 19 completed markets. Final study 0/500. Unintegrated research note excluded."
+}

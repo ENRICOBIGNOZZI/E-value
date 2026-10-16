@@ -1,0 +1,116 @@
+{
+  "version": "full-strategy-v2",
+  "failure_seed": 50020,
+  "completed_blocks": 3,
+  "failure_stage": "annual shortlist refresh at start of OOS block 4",
+  "source_hash": "3f7e2ee49857703087a3cc7326a43f2e4d036411ccc98fd2494cae4e59916071",
+  "completed_seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50018,
+    50019
+  ],
+  "failed_seed_retained": true,
+  "final_seeds_executed": 0,
+  "economic_parameters_retuned": false,
+  "diagnosis": "OSQP solved inaccurate after both 30000 and 300000 iterations; strict status guard stopped the stage.",
+  "diagnostic_attempts": [
+    {
+      "status": "solved inaccurate",
+      "status_val": 2,
+      "status_polish": 0,
+      "obj_val": -2.8894486174208288e-05,
+      "dual_obj_val": -2.8894486207786283e-05,
+      "prim_res": 4.265694464322678e-10,
+      "dual_res": 2.8870683290608557e-15,
+      "duality_gap": 3.357799575123479e-14,
+      "iter": 30000,
+      "rho_updates": 1,
+      "rho_estimate": 4.043406930064088,
+      "setup_time": 2.775e-05,
+      "solve_time": 0.015228625,
+      "update_time": 5.41e-07,
+      "polish_time": 0.0,
+      "run_time": 0.015256375,
+      "primdual_int": 0.0009113310520294058,
+      "rel_kkt_error": 4.265694464322678e-10
+    },
+    {
+      "status": "solved inaccurate",
+      "status_val": 2,
+      "status_polish": 0,
+      "obj_val": -2.8894486173221305e-05,
+      "dual_obj_val": -2.889448620722954e-05,
+      "prim_res": 4.101250450361249e-10,
+      "dual_res": 5.524789501315729e-15,
+      "duality_gap": 3.4008233295864814e-14,
+      "iter": 300000,
+      "rho_updates": 0,
+      "rho_estimate": 2.8660343249047395,
+      "setup_time": 2.775e-05,
+      "solve_time": 0.132533291,
+      "update_time": 1.5e-06,
+      "polish_time": 0.0,
+      "run_time": 0.13253479099999999,
+      "primdual_int": 0.0009113314809582271,
+      "rel_kkt_error": 4.101250450361249e-10
+    }
+  ],
+  "preconditioning_diagnostic": [
+    {
+      "scale": 1.0,
+      "status": "solved inaccurate",
+      "primal": 4.262450392644723e-10,
+      "dual_original": 2.887107876587708e-15,
+      "gap_original": 3.357798586435308e-14,
+      "iterations": 300000,
+      "weights": [
+        0.7398766332526995,
+        7.0132183373604165e-15
+      ],
+      "value": 2.8894486206826626e-05
+    },
+    {
+      "scale": 100.0,
+      "status": "solved",
+      "primal": 2.0291879287981374e-10,
+      "dual_original": 2.0544149249416567e-15,
+      "gap_original": 1.3069399728458756e-14,
+      "iterations": 275,
+      "weights": [
+        0.7398766332587668,
+        3.7949387987861706e-16
+      ],
+      "value": 2.88944862068272e-05
+    },
+    {
+      "scale": 10000.0,
+      "status": "solved",
+      "primal": 4.0282666091684405e-11,
+      "dual_original": 3.463626450075092e-15,
+      "gap_original": -3.9473363218663146e-15,
+      "iterations": 75,
+      "weights": [
+        0.7398766332338478,
+        -4.073304920581428e-15
+      ],
+      "value": 2.8894486206826744e-05
+    }
+  ],
+  "scope": "Current paper retains the first ten prespecified, independently audited v2 seeds as a pilot snapshot. The 100-seed stage is incomplete. A numerical correction will require a new source freeze and replay, with no seed exclusion."
+}

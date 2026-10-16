@@ -1,0 +1,78 @@
+\subsection{Optimization horizon and the economic meaning of a move}
+The distinction between a one-period objective and a policy's holding value
+matters even with known moments. The following scalar examples specialize
+standard cost-aware trading calculations \cite{boyd} to the comparisons being
+tested; they are not new solutions to the general dynamic trading problem.
+There is no terminal liquidation charge in either example, matching the
+simulation's horizon accounting.
+
+\begin{proposition}[Parking can overcome myopic inertia]
+Let returns be iid with mean zero, variance $\sigma^2>0$ and a finite fourth
+moment. An incumbent
+allocation $0<b\le L$ satisfies $\gamma\sigma^2b\le c$. With known moments,
+the one-period optimizer on the full scalar support keeps $b$ forever.
+Comparing immediate parking at zero with that continuing policy, the expected
+sum of utility differences over $H$ periods is
+\begin{equation}
+ H\frac{\gamma\sigma^2b^2}{2}-cb-\frac\eta2b^2.
+ \label{eq:park-horizon}
+\end{equation}
+The first-period gain is negative, while the holding-period gain is positive
+if $H>2c/(\gamma\sigma^2b)+\eta/(\gamma\sigma^2)$.
+\end{proposition}
+\begin{proof}
+At the unchanged target, the smooth marginal is $-\gamma\sigma^2b$, within
+the proportional-cost subgradient band. Concavity therefore makes $b$ optimal
+for the one-period problem. Repeating that rule preserves its state. Parking
+pays $cb+\eta b^2/2$ once and then has zero utility; continuing at $b$ has no
+turnover cost and mean utility $-\gamma\sigma^2b^2/2$ each period. Subtraction
+gives \eqref{eq:park-horizon}. Its first-period value is at most
+$-cb/2-\eta b^2/2<0$ under the stated condition.
+\end{proof}
+
+For $\gamma=5$, $c=\eta=10^{-4}$, $\sigma=.002$, $b=.5$ and $H=252$,
+the deployment-day gain is $-.600$ basis points of utility, while the expected
+holding-period gain is $5.675$ basis points. Thus a negative deployment-day
+diagnostic is compatible with useful parking. This does not contradict support
+monotonicity: the comparison is with a repeatedly myopic policy. A dynamically
+optimized full-support policy could itself choose to liquidate. The two shadow
+states also differ after parking, exactly the distinction retained in
+\eqref{eq:bridge}. Stationarity here supplies the future holding calculation;
+an episode rejection alone does not supply it.
+The continuing rule has zero state-matched one-period oracle regret at every
+date. Parking has positive regret $cb+\eta b^2/2-\gamma\sigma^2b^2/2$ on
+deployment and zero thereafter, yet has higher expected cumulative utility
+when \eqref{eq:park-horizon} is positive. State-matched regret measures local
+implementation efficiency; it cannot replace full-path performance or turn
+the one-period Oracle into an upper bound on cumulative policy value.
+
+\begin{proposition}[A profitable horizon trade can be absent from the tested pair]
+Let iid returns with a finite fourth moment have $0<\mu\le c$ and raw second
+moment $M>0$. Starting at
+zero, the known-moment one-period optimizer remains at zero, so adding the
+scalar support leaves both comparison policies identically in cash. Yet, if
+$H\mu>c$, a positive constant position held for $H$ periods can have positive
+expected cumulative utility after its initial entry cost. Within the class of
+constant nonnegative positions, its optimum is
+\begin{equation}
+ b_H=\min\left\{L,\frac{(H\mu-c)_+}{H\gamma M+\eta}\right\}>0.
+ \label{eq:horizon-entry}
+\end{equation}
+\end{proposition}
+\begin{proof}
+The one-period gradient at zero is $\mu\le c$, so the proportional-cost band
+prevents entry and the state remains zero. A constant position has expected
+cumulative utility $(H\mu-c)b-(H\gamma M+\eta)b^2/2$. Maximizing this concave
+quadratic on $[0,L]$ yields \eqref{eq:horizon-entry}; its positive right
+derivative at zero ensures a positive value when $H\mu>c$.
+\end{proof}
+
+With $\mu=.00005$, return standard deviation $.01$ and the same $\gamma,c,
+\eta,H$ as above, $M=.0001000025$, $b_H=.099125$ and the constant-position
+value is $6.195$ basis points of cumulative utility. The one-period comparison
+still has $Y=0$. The horizon trade belongs to a different policy rule; valid
+inference for this zero-score pair does not certify that other rule's value.
+Horizon-aware candidate construction is compatible with T1 when
+it is predictable and costs are correctly accounted for, but it would change
+the financial experiment and is not silently substituted in the reported
+one-period design.

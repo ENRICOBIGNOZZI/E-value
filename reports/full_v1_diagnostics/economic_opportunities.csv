@@ -1,0 +1,1026 @@
+seed,method,comparison_id,start,move,lifecycle,added,removed,reference_support,candidate_support,event_index,onset_day,event_kind,confirmation_day,criterion_day,selected_day,termination_day,termination_reason,criterion_detected,selected,criterion_delay_days,selection_delay_days
+50001,Greedy,Greedy:000001:252,252,forward,ENTRY,0,-1,[],[0],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000005:252,252,forward,ENTRY,4,-1,[],[4],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,504,504,504,selected,True,True,0,0
+50001,Greedy,Greedy:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000036:252,252,forward,ENTRY,35,-1,[],[35],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000086:252,252,forward,ENTRY,85,-1,[],[85],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000001:252,252,forward,ENTRY,0,-1,[],[0],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000005:252,252,forward,ENTRY,4,-1,[],[4],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50001,HAC,HAC:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,504,504,504,selected,True,True,0,0
+50001,HAC,HAC:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000036:252,252,forward,ENTRY,35,-1,[],[35],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50001,HAC,HAC:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000086:252,252,forward,ENTRY,85,-1,[],[85],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,HAC,HAC:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50001,Catoni,Catoni:000001:252,252,forward,ENTRY,0,-1,[],[0],1,504,inception_positive,756,-1,-1,1512,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000001:252,252,forward,ENTRY,0,-1,[],[0],2,2268,sign_change_positive,2520,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000005:252,252,forward,ENTRY,4,-1,[],[4],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000008:252,252,forward,ENTRY,7,-1,[],[7],1,756,sign_change_positive,1008,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000013:252,252,forward,ENTRY,12,-1,[],[12],1,1764,sign_change_positive,2016,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000019:252,252,forward,ENTRY,18,-1,[],[18],1,756,sign_change_positive,1008,-1,-1,1512,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000019:252,252,forward,ENTRY,18,-1,[],[18],2,2016,sign_change_positive,2268,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000033:252,252,forward,ENTRY,32,-1,[],[32],1,1260,sign_change_positive,1512,-1,-1,2268,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000036:252,252,forward,ENTRY,35,-1,[],[35],1,504,inception_positive,756,-1,-1,1764,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000036:252,252,forward,ENTRY,35,-1,[],[35],2,2016,sign_change_positive,2268,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000041:252,252,forward,ENTRY,40,-1,[],[40],1,2016,sign_change_positive,2268,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000048:252,252,forward,ENTRY,47,-1,[],[47],1,2016,sign_change_positive,2268,-1,-1,3276,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000054:252,252,forward,ENTRY,53,-1,[],[53],1,2520,sign_change_positive,2772,-1,-1,3276,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000069:252,252,forward,ENTRY,68,-1,[],[68],1,2016,sign_change_positive,2268,-1,-1,3276,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000081:252,252,forward,ENTRY,80,-1,[],[80],1,2016,sign_change_positive,2268,-1,-1,3276,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000086:252,252,forward,ENTRY,85,-1,[],[85],1,504,inception_positive,756,-1,-1,1512,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000086:252,252,forward,ENTRY,85,-1,[],[85],2,2268,sign_change_positive,2520,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000088:252,252,forward,ENTRY,87,-1,[],[87],1,1008,sign_change_positive,1260,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000090:252,252,forward,ENTRY,89,-1,[],[89],1,1764,sign_change_positive,2016,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000092:252,252,forward,ENTRY,91,-1,[],[91],1,756,sign_change_positive,1008,-1,-1,1512,sign_reversal,False,False,-1,-1
+50001,Catoni,Catoni:000092:252,252,forward,ENTRY,91,-1,[],[91],2,2016,sign_change_positive,2268,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Catoni,Catoni:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50001,Tail,Tail:000001:252,252,forward,ENTRY,0,-1,[],[0],1,504,inception_positive,756,-1,-1,1512,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000001:252,252,forward,ENTRY,0,-1,[],[0],2,2268,sign_change_positive,2520,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000005:252,252,forward,ENTRY,4,-1,[],[4],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000008:252,252,forward,ENTRY,7,-1,[],[7],1,756,sign_change_positive,1008,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,3528,-1,3528,competing_move,True,False,3024,-1
+50001,Tail,Tail:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000013:252,252,forward,ENTRY,12,-1,[],[12],1,1764,sign_change_positive,2016,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000019:252,252,forward,ENTRY,18,-1,[],[18],1,756,sign_change_positive,1008,-1,-1,1512,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000019:252,252,forward,ENTRY,18,-1,[],[18],2,2016,sign_change_positive,2268,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,3528,3528,3528,selected,True,True,3024,3024
+50001,Tail,Tail:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000033:252,252,forward,ENTRY,32,-1,[],[32],1,1260,sign_change_positive,1512,-1,-1,2268,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000036:252,252,forward,ENTRY,35,-1,[],[35],1,504,inception_positive,756,-1,-1,1764,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000036:252,252,forward,ENTRY,35,-1,[],[35],2,2016,sign_change_positive,2268,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000041:252,252,forward,ENTRY,40,-1,[],[40],1,2016,sign_change_positive,2268,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000048:252,252,forward,ENTRY,47,-1,[],[47],1,2016,sign_change_positive,2268,-1,-1,3276,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000054:252,252,forward,ENTRY,53,-1,[],[53],1,2520,sign_change_positive,2772,-1,-1,3276,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000069:252,252,forward,ENTRY,68,-1,[],[68],1,2016,sign_change_positive,2268,-1,-1,3276,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000081:252,252,forward,ENTRY,80,-1,[],[80],1,2016,sign_change_positive,2268,-1,-1,3276,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000086:252,252,forward,ENTRY,85,-1,[],[85],1,504,inception_positive,756,-1,-1,1512,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000086:252,252,forward,ENTRY,85,-1,[],[85],2,2268,sign_change_positive,2520,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000088:252,252,forward,ENTRY,87,-1,[],[87],1,1008,sign_change_positive,1260,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000090:252,252,forward,ENTRY,89,-1,[],[89],1,1764,sign_change_positive,2016,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000092:252,252,forward,ENTRY,91,-1,[],[91],1,756,sign_change_positive,1008,-1,-1,1512,sign_reversal,False,False,-1,-1
+50001,Tail,Tail:000092:252,252,forward,ENTRY,91,-1,[],[91],2,2016,sign_change_positive,2268,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,3528,-1,3528,competing_move,True,False,3024,-1
+50001,Tail,Tail:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Tail,Tail:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,-1,-1,3528,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000104:504,504,forward,ENTRY,3,-1,[29],"[3, 29]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000128:504,504,forward,ENTRY,27,-1,[29],"[27, 29]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000186:504,504,forward,ENTRY,86,-1,[29],"[29, 86]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000194:504,504,forward,ENTRY,94,-1,[29],"[29, 94]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000203:504,504,swap,SWAP,27,29,[29],[27],1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000207:504,504,swap,SWAP,94,29,[29],[94],1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50001,HAC,HAC:000103:504,504,forward,ENTRY,2,-1,[29],"[2, 29]",1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000104:504,504,forward,ENTRY,3,-1,[29],"[3, 29]",1,756,inception_positive,1008,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000106:504,504,forward,ENTRY,5,-1,[29],"[5, 29]",1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000109:504,504,forward,ENTRY,8,-1,[29],"[8, 29]",1,1260,sign_change_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50001,HAC,HAC:000114:504,504,forward,ENTRY,13,-1,[29],"[13, 29]",1,1008,sign_change_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000120:504,504,forward,ENTRY,19,-1,[29],"[19, 29]",1,1008,sign_change_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000121:504,504,forward,ENTRY,20,-1,[29],"[20, 29]",1,1008,sign_change_positive,1260,1260,-1,1260,competing_move,True,False,252,-1
+50001,HAC,HAC:000122:504,504,forward,ENTRY,21,-1,[29],"[21, 29]",1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000127:504,504,forward,ENTRY,26,-1,[29],"[26, 29]",1,1008,sign_change_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000128:504,504,forward,ENTRY,27,-1,[29],"[27, 29]",1,756,inception_positive,1008,1260,1260,1260,selected,True,True,504,504
+50001,HAC,HAC:000137:504,504,forward,ENTRY,37,-1,[29],"[29, 37]",1,1008,sign_change_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000138:504,504,forward,ENTRY,38,-1,[29],"[29, 38]",1,1008,sign_change_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000139:504,504,forward,ENTRY,39,-1,[29],"[29, 39]",1,1008,sign_change_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000144:504,504,forward,ENTRY,44,-1,[29],"[29, 44]",1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000186:504,504,forward,ENTRY,86,-1,[29],"[29, 86]",1,756,inception_positive,1008,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000192:504,504,forward,ENTRY,92,-1,[29],"[29, 92]",1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000194:504,504,forward,ENTRY,94,-1,[29],"[29, 94]",1,756,inception_positive,1008,1260,-1,1260,competing_move,True,False,504,-1
+50001,HAC,HAC:000198:504,504,forward,ENTRY,98,-1,[29],"[29, 98]",1,1008,sign_change_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000203:504,504,swap,SWAP,27,29,[29],[27],1,756,inception_positive,1008,-1,-1,756,shortlist_withdrawal,False,False,-1,-1
+50001,HAC,HAC:000207:504,504,swap,SWAP,94,29,[29],[94],1,756,inception_positive,1008,-1,-1,756,shortlist_withdrawal,False,False,-1,-1
+50001,HAC,HAC:000208:504,504,swap,SWAP,5,29,[29],[5],1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000209:504,504,swap,SWAP,2,29,[29],[2],1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000320:756,756,backward,PARK,-1,29,"[26, 29]",[26],1,1008,inception_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000321:756,756,swap,SWAP,0,29,"[26, 29]","[0, 26]",1,1008,inception_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000322:756,756,swap,SWAP,1,29,"[26, 29]","[1, 26]",1,1008,inception_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000323:756,756,swap,SWAP,2,29,"[26, 29]","[2, 26]",1,1260,sign_change_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000324:756,756,swap,SWAP,3,29,"[26, 29]","[3, 26]",1,1008,inception_positive,1260,1260,-1,1260,competing_move,True,False,252,-1
+50001,Greedy,Greedy:000325:756,756,swap,SWAP,4,29,"[26, 29]","[4, 26]",1,1008,inception_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000326:756,756,swap,SWAP,5,29,"[26, 29]","[5, 26]",1,1008,inception_positive,1260,1260,-1,1260,competing_move,True,False,252,-1
+50001,Greedy,Greedy:000327:756,756,swap,SWAP,6,29,"[26, 29]","[6, 26]",1,1008,inception_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000328:756,756,swap,SWAP,7,29,"[26, 29]","[7, 26]",1,1008,inception_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000329:756,756,swap,SWAP,8,29,"[26, 29]","[8, 26]",1,1260,sign_change_positive,1512,1260,1260,1260,selected,True,True,0,0
+50001,Greedy,Greedy:000330:756,756,swap,SWAP,9,29,"[26, 29]","[9, 26]",1,1008,inception_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000213:756,756,swap,SWAP,3,29,[29],[3],1,1008,inception_positive,1260,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000214:756,756,swap,SWAP,4,29,[29],[4],1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000216:756,756,swap,SWAP,7,29,[29],[7],1,1260,sign_change_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50001,HAC,HAC:000217:756,756,swap,SWAP,8,29,[29],[8],1,1260,sign_change_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000333:1260,1260,forward,ENTRY,2,-1,"[8, 26]","[2, 8, 26]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000336:1260,1260,forward,ENTRY,5,-1,"[8, 26]","[5, 8, 26]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000340:1260,1260,forward,ENTRY,10,-1,"[8, 26]","[8, 10, 26]",1,1512,inception_positive,1764,1512,1512,1512,selected,True,True,0,0
+50001,Greedy,Greedy:000341:1260,1260,forward,ENTRY,11,-1,"[8, 26]","[8, 11, 26]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000343:1260,1260,forward,ENTRY,13,-1,"[8, 26]","[8, 13, 26]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000349:1260,1260,forward,ENTRY,19,-1,"[8, 26]","[8, 19, 26]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000356:1260,1260,forward,ENTRY,27,-1,"[8, 26]","[8, 26, 27]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000366:1260,1260,forward,ENTRY,37,-1,"[8, 26]","[8, 26, 37]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000368:1260,1260,forward,ENTRY,39,-1,"[8, 26]","[8, 26, 39]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000423:1260,1260,forward,ENTRY,94,-1,"[8, 26]","[8, 26, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000427:1260,1260,forward,ENTRY,98,-1,"[8, 26]","[8, 26, 98]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000431:1260,1260,swap,SWAP,27,8,"[8, 26]","[26, 27]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000432:1260,1260,swap,SWAP,94,8,"[8, 26]","[26, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000438:1260,1260,swap,SWAP,13,8,"[8, 26]","[13, 26]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000439:1260,1260,swap,SWAP,10,8,"[8, 26]","[10, 26]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000440:1260,1260,backward,PARK,-1,26,"[8, 26]",[8],1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000442:1260,1260,swap,SWAP,27,26,"[8, 26]","[8, 27]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000443:1260,1260,swap,SWAP,94,26,"[8, 26]","[8, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000445:1260,1260,swap,SWAP,37,26,"[8, 26]","[8, 37]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000447:1260,1260,swap,SWAP,5,26,"[8, 26]","[5, 8]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000448:1260,1260,swap,SWAP,2,26,"[8, 26]","[2, 8]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000449:1260,1260,swap,SWAP,13,26,"[8, 26]","[8, 13]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000450:1260,1260,swap,SWAP,10,26,"[8, 26]","[8, 10]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50001,HAC,HAC:000328:1260,1260,backward,PARK,-1,29,"[27, 29]",[27],1,1512,inception_positive,1764,1764,1764,1764,selected,True,True,252,252
+50001,HAC,HAC:000329:1260,1260,swap,SWAP,0,29,"[27, 29]","[0, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,HAC,HAC:000330:1260,1260,swap,SWAP,1,29,"[27, 29]","[1, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,HAC,HAC:000331:1260,1260,swap,SWAP,2,29,"[27, 29]","[2, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,HAC,HAC:000332:1260,1260,swap,SWAP,3,29,"[27, 29]","[3, 27]",1,1512,inception_positive,1764,-1,-1,1764,competing_move,False,False,-1,-1
+50001,HAC,HAC:000333:1260,1260,swap,SWAP,4,29,"[27, 29]","[4, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,HAC,HAC:000334:1260,1260,swap,SWAP,5,29,"[27, 29]","[5, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,HAC,HAC:000335:1260,1260,swap,SWAP,6,29,"[27, 29]","[6, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,HAC,HAC:000336:1260,1260,swap,SWAP,7,29,"[27, 29]","[7, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,HAC,HAC:000337:1260,1260,swap,SWAP,8,29,"[27, 29]","[8, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,HAC,HAC:000338:1260,1260,swap,SWAP,9,29,"[27, 29]","[9, 27]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50001,Greedy,Greedy:000548:1512,1512,backward,PARK,-1,8,"[8, 10, 26]","[10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000549:1512,1512,swap,SWAP,0,8,"[8, 10, 26]","[0, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000550:1512,1512,swap,SWAP,1,8,"[8, 10, 26]","[1, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000551:1512,1512,swap,SWAP,2,8,"[8, 10, 26]","[2, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000552:1512,1512,swap,SWAP,3,8,"[8, 10, 26]","[3, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000553:1512,1512,swap,SWAP,4,8,"[8, 10, 26]","[4, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000554:1512,1512,swap,SWAP,5,8,"[8, 10, 26]","[5, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000555:1512,1512,swap,SWAP,6,8,"[8, 10, 26]","[6, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000556:1512,1512,swap,SWAP,7,8,"[8, 10, 26]","[7, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000557:1512,1512,swap,SWAP,9,8,"[8, 10, 26]","[9, 10, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000558:1512,1512,swap,SWAP,11,8,"[8, 10, 26]","[10, 11, 26]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000570:1512,1512,backward,PARK,-1,26,"[8, 10, 26]","[8, 10]",1,1764,inception_positive,2016,1764,1764,1764,selected,True,True,0,0
+50001,Greedy,Greedy:000571:1512,1512,swap,SWAP,0,26,"[8, 10, 26]","[0, 8, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000572:1512,1512,swap,SWAP,1,26,"[8, 10, 26]","[1, 8, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000573:1512,1512,swap,SWAP,2,26,"[8, 10, 26]","[2, 8, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000574:1512,1512,swap,SWAP,3,26,"[8, 10, 26]","[3, 8, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000575:1512,1512,swap,SWAP,4,26,"[8, 10, 26]","[4, 8, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000576:1512,1512,swap,SWAP,5,26,"[8, 10, 26]","[5, 8, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000577:1512,1512,swap,SWAP,6,26,"[8, 10, 26]","[6, 8, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000578:1512,1512,swap,SWAP,7,26,"[8, 10, 26]","[7, 8, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000579:1512,1512,swap,SWAP,9,26,"[8, 10, 26]","[8, 9, 10]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000580:1512,1512,swap,SWAP,11,26,"[8, 10, 26]","[8, 10, 11]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000606:1764,1764,forward,ENTRY,27,-1,"[8, 10]","[8, 10, 27]",1,2016,inception_positive,2268,-1,-1,2016,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000673:1764,1764,forward,ENTRY,94,-1,"[8, 10]","[8, 10, 94]",1,2016,inception_positive,2268,-1,-1,2016,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000679:1764,1764,backward,PARK,-1,8,"[8, 10]",[10],1,2016,inception_positive,2268,2016,2016,2016,selected,True,True,0,0
+50001,Greedy,Greedy:000680:1764,1764,swap,SWAP,26,8,"[8, 10]","[10, 26]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000681:1764,1764,swap,SWAP,27,8,"[8, 10]","[10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000682:1764,1764,swap,SWAP,94,8,"[8, 10]","[10, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000683:1764,1764,swap,SWAP,0,8,"[8, 10]","[0, 10]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000684:1764,1764,swap,SWAP,1,8,"[8, 10]","[1, 10]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000685:1764,1764,swap,SWAP,2,8,"[8, 10]","[2, 10]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000686:1764,1764,swap,SWAP,3,8,"[8, 10]","[3, 10]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000687:1764,1764,swap,SWAP,4,8,"[8, 10]","[4, 10]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000688:1764,1764,swap,SWAP,5,8,"[8, 10]","[5, 10]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000689:1764,1764,swap,SWAP,6,8,"[8, 10]","[6, 10]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50001,Greedy,Greedy:000692:1764,1764,swap,SWAP,27,10,"[8, 10]","[8, 27]",1,2016,inception_positive,2268,-1,-1,2016,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000693:1764,1764,swap,SWAP,94,10,"[8, 10]","[8, 94]",1,2016,inception_positive,2268,-1,-1,2016,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000727:2016,2016,forward,ENTRY,27,-1,[10],"[10, 27]",1,2268,inception_positive,2520,-1,-1,2268,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000794:2016,2016,forward,ENTRY,94,-1,[10],"[10, 94]",1,2268,inception_positive,2520,-1,-1,2268,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000802:2016,2016,swap,SWAP,27,10,[10],[27],1,2268,inception_positive,2520,-1,-1,2268,competing_move,False,False,-1,-1
+50001,Greedy,Greedy:000803:2016,2016,swap,SWAP,94,10,[10],[94],1,2268,inception_positive,2520,-1,-1,2268,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,504,504,504,selected,True,True,0,0
+50002,HAC,HAC:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50002,HAC,HAC:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50002,HAC,HAC:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,504,504,504,selected,True,True,0,0
+50002,Catoni,Catoni:000001:252,252,forward,ENTRY,0,-1,[],[0],1,756,sign_change_positive,1008,-1,-1,1260,sign_reversal,False,False,-1,-1
+50002,Catoni,Catoni:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000005:252,252,forward,ENTRY,4,-1,[],[4],1,1008,sign_change_positive,1260,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000010:252,252,forward,ENTRY,9,-1,[],[9],1,3528,sign_change_positive,3780,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000017:252,252,forward,ENTRY,16,-1,[],[16],1,3528,sign_change_positive,3780,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000019:252,252,forward,ENTRY,18,-1,[],[18],1,756,sign_change_positive,1008,-1,-1,1260,sign_reversal,False,False,-1,-1
+50002,Catoni,Catoni:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000023:252,252,forward,ENTRY,22,-1,[],[22],1,756,sign_change_positive,1008,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000024:252,252,forward,ENTRY,23,-1,[],[23],1,1260,sign_change_positive,1512,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,1764,sign_reversal,False,False,-1,-1
+50002,Catoni,Catoni:000031:252,252,forward,ENTRY,30,-1,[],[30],2,2016,sign_change_positive,2268,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000032:252,252,forward,ENTRY,31,-1,[],[31],1,1512,sign_change_positive,1764,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000037:252,252,forward,ENTRY,36,-1,[],[36],1,1512,sign_change_positive,1764,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000041:252,252,forward,ENTRY,40,-1,[],[40],1,1008,sign_change_positive,1260,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000086:252,252,forward,ENTRY,85,-1,[],[85],1,756,sign_change_positive,1008,-1,-1,1260,sign_reversal,False,False,-1,-1
+50002,Catoni,Catoni:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000089:252,252,forward,ENTRY,88,-1,[],[88],1,3528,sign_change_positive,3780,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000092:252,252,forward,ENTRY,91,-1,[],[91],1,756,sign_change_positive,1008,-1,-1,1260,sign_reversal,False,False,-1,-1
+50002,Catoni,Catoni:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,1764,sign_reversal,False,False,-1,-1
+50002,Catoni,Catoni:000096:252,252,forward,ENTRY,95,-1,[],[95],2,2016,sign_change_positive,2268,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000098:252,252,forward,ENTRY,97,-1,[],[97],1,2016,sign_change_positive,2268,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Catoni,Catoni:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,Tail,Tail:000001:252,252,forward,ENTRY,0,-1,[],[0],1,756,sign_change_positive,1008,-1,-1,1260,sign_reversal,False,False,-1,-1
+50002,Tail,Tail:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000005:252,252,forward,ENTRY,4,-1,[],[4],1,1008,sign_change_positive,1260,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000019:252,252,forward,ENTRY,18,-1,[],[18],1,756,sign_change_positive,1008,-1,-1,1260,sign_reversal,False,False,-1,-1
+50002,Tail,Tail:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000023:252,252,forward,ENTRY,22,-1,[],[22],1,756,sign_change_positive,1008,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000024:252,252,forward,ENTRY,23,-1,[],[23],1,1260,sign_change_positive,1512,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,3024,3024,3024,selected,True,True,2520,2520
+50002,Tail,Tail:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,1764,sign_reversal,False,False,-1,-1
+50002,Tail,Tail:000031:252,252,forward,ENTRY,30,-1,[],[30],2,2016,sign_change_positive,2268,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000032:252,252,forward,ENTRY,31,-1,[],[31],1,1512,sign_change_positive,1764,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000037:252,252,forward,ENTRY,36,-1,[],[36],1,1512,sign_change_positive,1764,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000041:252,252,forward,ENTRY,40,-1,[],[40],1,1008,sign_change_positive,1260,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000086:252,252,forward,ENTRY,85,-1,[],[85],1,756,sign_change_positive,1008,-1,-1,1260,sign_reversal,False,False,-1,-1
+50002,Tail,Tail:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000092:252,252,forward,ENTRY,91,-1,[],[91],1,756,sign_change_positive,1008,-1,-1,1260,sign_reversal,False,False,-1,-1
+50002,Tail,Tail:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,3024,-1,3024,competing_move,True,False,2520,-1
+50002,Tail,Tail:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,1764,sign_reversal,False,False,-1,-1
+50002,Tail,Tail:000096:252,252,forward,ENTRY,95,-1,[],[95],2,2016,sign_change_positive,2268,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000098:252,252,forward,ENTRY,97,-1,[],[97],1,2016,sign_change_positive,2268,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Tail,Tail:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000111:504,504,forward,ENTRY,10,-1,[98],"[10, 98]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000128:504,504,forward,ENTRY,27,-1,[98],"[27, 98]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000140:504,504,forward,ENTRY,39,-1,[98],"[39, 98]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000195:504,504,forward,ENTRY,94,-1,[98],"[94, 98]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000203:504,504,swap,SWAP,94,98,[98],[94],1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000204:504,504,swap,SWAP,27,98,[98],[27],1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000205:504,504,swap,SWAP,39,98,[98],[39],1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000206:504,504,swap,SWAP,10,98,[98],[10],1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50002,HAC,HAC:000108:504,504,forward,ENTRY,7,-1,[98],"[7, 98]",1,1008,sign_change_positive,1260,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000111:504,504,forward,ENTRY,10,-1,[98],"[10, 98]",1,756,inception_positive,1008,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000113:504,504,forward,ENTRY,12,-1,[98],"[12, 98]",1,1008,sign_change_positive,1260,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000114:504,504,forward,ENTRY,13,-1,[98],"[13, 98]",1,1008,sign_change_positive,1260,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000120:504,504,forward,ENTRY,19,-1,[98],"[19, 98]",1,1008,sign_change_positive,1260,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000128:504,504,forward,ENTRY,27,-1,[98],"[27, 98]",1,756,inception_positive,1008,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000140:504,504,forward,ENTRY,39,-1,[98],"[39, 98]",1,756,inception_positive,1008,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000190:504,504,forward,ENTRY,89,-1,[98],"[89, 98]",1,1008,sign_change_positive,1260,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000195:504,504,forward,ENTRY,94,-1,[98],"[94, 98]",1,756,inception_positive,1008,-1,-1,1008,competing_move,False,False,-1,-1
+50002,HAC,HAC:000203:504,504,swap,SWAP,94,98,[98],[94],1,756,inception_positive,1008,-1,-1,756,shortlist_withdrawal,False,False,-1,-1
+50002,HAC,HAC:000204:504,504,swap,SWAP,27,98,[98],[27],1,756,inception_positive,1008,-1,-1,756,shortlist_withdrawal,False,False,-1,-1
+50002,HAC,HAC:000205:504,504,swap,SWAP,39,98,[98],[39],1,756,inception_positive,1008,-1,-1,756,shortlist_withdrawal,False,False,-1,-1
+50002,HAC,HAC:000206:504,504,swap,SWAP,10,98,[98],[10],1,756,inception_positive,1008,-1,-1,756,shortlist_withdrawal,False,False,-1,-1
+50002,Greedy,Greedy:000330:756,756,swap,SWAP,10,98,"[8, 98]","[8, 10]",1,1008,inception_positive,1260,1008,1008,1008,selected,True,True,0,0
+50002,HAC,HAC:000217:756,756,swap,SWAP,7,98,[98],[7],1,1008,inception_positive,1260,-1,-1,1008,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000341:1008,1008,forward,ENTRY,12,-1,"[8, 10]","[8, 10, 12]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000342:1008,1008,forward,ENTRY,13,-1,"[8, 10]","[8, 10, 13]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000356:1008,1008,forward,ENTRY,27,-1,"[8, 10]","[8, 10, 27]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000418:1008,1008,forward,ENTRY,89,-1,"[8, 10]","[8, 10, 89]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000423:1008,1008,forward,ENTRY,94,-1,"[8, 10]","[8, 10, 94]",1,1260,inception_positive,1512,1260,1260,1260,selected,True,True,0,0
+50002,Greedy,Greedy:000429:1008,1008,backward,PARK,-1,8,"[8, 10]",[10],1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000432:1008,1008,swap,SWAP,94,8,"[8, 10]","[10, 94]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000433:1008,1008,swap,SWAP,27,8,"[8, 10]","[10, 27]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000435:1008,1008,swap,SWAP,12,8,"[8, 10]","[10, 12]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000438:1008,1008,swap,SWAP,89,8,"[8, 10]","[10, 89]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,HAC,HAC:000222:1008,1008,forward,ENTRY,2,-1,[5],"[2, 5]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000224:1008,1008,forward,ENTRY,4,-1,[5],"[4, 5]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,HAC,HAC:000226:1008,1008,forward,ENTRY,7,-1,[5],"[5, 7]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000227:1008,1008,forward,ENTRY,8,-1,[5],"[5, 8]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000229:1008,1008,forward,ENTRY,10,-1,[5],"[5, 10]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000230:1008,1008,forward,ENTRY,11,-1,[5],"[5, 11]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000231:1008,1008,forward,ENTRY,12,-1,[5],"[5, 12]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000232:1008,1008,forward,ENTRY,13,-1,[5],"[5, 13]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,HAC,HAC:000238:1008,1008,forward,ENTRY,19,-1,[5],"[5, 19]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000246:1008,1008,forward,ENTRY,27,-1,[5],"[5, 27]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,HAC,HAC:000256:1008,1008,forward,ENTRY,37,-1,[5],"[5, 37]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000258:1008,1008,forward,ENTRY,39,-1,[5],"[5, 39]",1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,HAC,HAC:000259:1008,1008,forward,ENTRY,40,-1,[5],"[5, 40]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000308:1008,1008,forward,ENTRY,89,-1,[5],"[5, 89]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000313:1008,1008,forward,ENTRY,94,-1,[5],"[5, 94]",1,1260,inception_positive,1512,1260,1260,1260,selected,True,True,0,0
+50002,HAC,HAC:000317:1008,1008,forward,REVIVE,98,-1,[5],"[5, 98]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000320:1008,1008,swap,SWAP,98,5,[5],[98],1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000321:1008,1008,swap,SWAP,10,5,[5],[10],1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000322:1008,1008,swap,SWAP,94,5,[5],[94],1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,HAC,HAC:000323:1008,1008,swap,SWAP,27,5,[5],[27],1,1260,inception_positive,1512,1260,-1,1260,competing_move,True,False,0,-1
+50002,HAC,HAC:000324:1008,1008,swap,SWAP,2,5,[5],[2],1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000325:1008,1008,swap,SWAP,12,5,[5],[12],1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000326:1008,1008,swap,SWAP,89,5,[5],[89],1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,HAC,HAC:000327:1008,1008,swap,SWAP,39,5,[5],[39],1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000548:1260,1260,backward,PARK,-1,8,"[8, 10, 94]","[10, 94]",1,1512,inception_positive,1764,1512,1512,1512,selected,True,True,0,0
+50002,Greedy,Greedy:000549:1260,1260,swap,SWAP,0,8,"[8, 10, 94]","[0, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000550:1260,1260,swap,SWAP,1,8,"[8, 10, 94]","[1, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000551:1260,1260,swap,SWAP,2,8,"[8, 10, 94]","[2, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000552:1260,1260,swap,SWAP,3,8,"[8, 10, 94]","[3, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000553:1260,1260,swap,SWAP,4,8,"[8, 10, 94]","[4, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000554:1260,1260,swap,SWAP,5,8,"[8, 10, 94]","[5, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000555:1260,1260,swap,SWAP,6,8,"[8, 10, 94]","[6, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000556:1260,1260,swap,SWAP,7,8,"[8, 10, 94]","[7, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000557:1260,1260,swap,SWAP,9,8,"[8, 10, 94]","[9, 10, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000558:1260,1260,swap,SWAP,11,8,"[8, 10, 94]","[10, 11, 94]",1,1512,inception_positive,1764,1512,-1,1512,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000559:1260,1260,backward,PARK,-1,10,"[8, 10, 94]","[8, 94]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000560:1260,1260,swap,SWAP,0,10,"[8, 10, 94]","[0, 8, 94]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000561:1260,1260,swap,SWAP,1,10,"[8, 10, 94]","[1, 8, 94]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000563:1260,1260,swap,SWAP,3,10,"[8, 10, 94]","[3, 8, 94]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000566:1260,1260,swap,SWAP,6,10,"[8, 10, 94]","[6, 8, 94]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000567:1260,1260,swap,SWAP,7,10,"[8, 10, 94]","[7, 8, 94]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000568:1260,1260,swap,SWAP,9,10,"[8, 10, 94]","[8, 9, 94]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000569:1260,1260,swap,SWAP,11,10,"[8, 10, 94]","[8, 11, 94]",1,1512,inception_positive,1764,-1,-1,1512,competing_move,False,False,-1,-1
+50002,HAC,HAC:000428:1260,1260,backward,PARK,-1,5,"[5, 94]",[94],1,1512,inception_positive,1764,1764,1764,1764,selected,True,True,252,252
+50002,HAC,HAC:000429:1260,1260,swap,SWAP,0,5,"[5, 94]","[0, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000430:1260,1260,swap,SWAP,1,5,"[5, 94]","[1, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000431:1260,1260,swap,SWAP,2,5,"[5, 94]","[2, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000432:1260,1260,swap,SWAP,3,5,"[5, 94]","[3, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000433:1260,1260,swap,SWAP,4,5,"[5, 94]","[4, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000434:1260,1260,swap,SWAP,6,5,"[5, 94]","[6, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000435:1260,1260,swap,SWAP,7,5,"[5, 94]","[7, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000436:1260,1260,swap,SWAP,8,5,"[5, 94]","[8, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000437:1260,1260,swap,SWAP,9,5,"[5, 94]","[9, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,HAC,HAC:000438:1260,1260,swap,SWAP,10,5,"[5, 94]","[10, 94]",1,1512,inception_positive,1764,1764,-1,1764,competing_move,True,False,252,-1
+50002,Greedy,Greedy:000607:1512,1512,forward,ENTRY,27,-1,"[10, 94]","[10, 27, 94]",1,1764,inception_positive,2016,1764,1764,1764,selected,True,True,0,0
+50002,Greedy,Greedy:000679:1512,1512,backward,PARK,-1,10,"[10, 94]",[94],1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000681:1512,1512,swap,SWAP,27,10,"[10, 94]","[27, 94]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000682:1512,1512,swap,SWAP,0,10,"[10, 94]","[0, 94]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000683:1512,1512,swap,SWAP,1,10,"[10, 94]","[1, 94]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000685:1512,1512,swap,SWAP,3,10,"[10, 94]","[3, 94]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000688:1512,1512,swap,SWAP,6,10,"[10, 94]","[6, 94]",1,1764,inception_positive,2016,1764,-1,1764,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000692:1512,1512,swap,SWAP,27,94,"[10, 94]","[10, 27]",1,1764,inception_positive,2016,-1,-1,1764,competing_move,False,False,-1,-1
+50002,Greedy,Greedy:000798:1764,1764,backward,PARK,-1,10,"[10, 27, 94]","[27, 94]",1,2016,inception_positive,2268,2016,2016,2016,selected,True,True,0,0
+50002,Greedy,Greedy:000799:1764,1764,swap,SWAP,0,10,"[10, 27, 94]","[0, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000800:1764,1764,swap,SWAP,1,10,"[10, 27, 94]","[1, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000801:1764,1764,swap,SWAP,2,10,"[10, 27, 94]","[2, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000802:1764,1764,swap,SWAP,3,10,"[10, 27, 94]","[3, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000803:1764,1764,swap,SWAP,4,10,"[10, 27, 94]","[4, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000804:1764,1764,swap,SWAP,5,10,"[10, 27, 94]","[5, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000805:1764,1764,swap,SWAP,6,10,"[10, 27, 94]","[6, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000806:1764,1764,swap,SWAP,7,10,"[10, 27, 94]","[7, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000807:1764,1764,swap,SWAP,8,10,"[10, 27, 94]","[8, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000808:1764,1764,swap,SWAP,9,10,"[10, 27, 94]","[9, 27, 94]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000820:1764,1764,backward,PARK,-1,94,"[10, 27, 94]","[10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000821:1764,1764,swap,SWAP,0,94,"[10, 27, 94]","[0, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000822:1764,1764,swap,SWAP,1,94,"[10, 27, 94]","[1, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000823:1764,1764,swap,SWAP,2,94,"[10, 27, 94]","[2, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000824:1764,1764,swap,SWAP,3,94,"[10, 27, 94]","[3, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000825:1764,1764,swap,SWAP,4,94,"[10, 27, 94]","[4, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000826:1764,1764,swap,SWAP,5,94,"[10, 27, 94]","[5, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000827:1764,1764,swap,SWAP,6,94,"[10, 27, 94]","[6, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000828:1764,1764,swap,SWAP,7,94,"[10, 27, 94]","[7, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000829:1764,1764,swap,SWAP,8,94,"[10, 27, 94]","[8, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,Greedy,Greedy:000830:1764,1764,swap,SWAP,9,94,"[10, 27, 94]","[9, 10, 27]",1,2016,inception_positive,2268,2016,-1,2016,competing_move,True,False,0,-1
+50002,HAC,HAC:000477:1764,1764,forward,ENTRY,27,-1,[94],"[27, 94]",1,2016,inception_positive,2268,2520,2520,2520,selected,True,True,504,504
+50002,HAC,HAC:000551:1764,1764,swap,SWAP,27,94,[94],[27],1,2016,inception_positive,2268,-1,-1,2016,shortlist_withdrawal,False,False,-1,-1
+50002,HAC,HAC:000676:2520,2520,backward,PARK,-1,94,"[27, 94]",[27],1,3024,sign_change_positive,3276,-1,-1,3528,sign_reversal,False,False,-1,-1
+50002,HAC,HAC:000676:2520,2520,backward,PARK,-1,94,"[27, 94]",[27],2,3780,sign_change_positive,4032,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,HAC,HAC:000677:2520,2520,swap,SWAP,0,94,"[27, 94]","[0, 27]",1,3024,sign_change_positive,3276,-1,-1,3528,sign_reversal,False,False,-1,-1
+50002,HAC,HAC:000677:2520,2520,swap,SWAP,0,94,"[27, 94]","[0, 27]",2,3780,sign_change_positive,4032,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,HAC,HAC:000678:2520,2520,swap,SWAP,1,94,"[27, 94]","[1, 27]",1,3024,sign_change_positive,3276,-1,-1,3528,sign_reversal,False,False,-1,-1
+50002,HAC,HAC:000678:2520,2520,swap,SWAP,1,94,"[27, 94]","[1, 27]",2,3780,sign_change_positive,4032,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,HAC,HAC:000680:2520,2520,swap,SWAP,3,94,"[27, 94]","[3, 27]",1,3024,sign_change_positive,3276,-1,-1,3528,sign_reversal,False,False,-1,-1
+50002,HAC,HAC:000680:2520,2520,swap,SWAP,3,94,"[27, 94]","[3, 27]",2,3780,sign_change_positive,4032,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,HAC,HAC:000683:2520,2520,swap,SWAP,6,94,"[27, 94]","[6, 27]",1,3024,sign_change_positive,3276,-1,-1,3528,sign_reversal,False,False,-1,-1
+50002,HAC,HAC:000683:2520,2520,swap,SWAP,6,94,"[27, 94]","[6, 27]",2,3780,sign_change_positive,4032,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,HAC,HAC:000685:2520,2520,swap,SWAP,8,94,"[27, 94]","[8, 27]",1,3024,sign_change_positive,3276,-1,-1,3528,sign_reversal,False,False,-1,-1
+50002,HAC,HAC:000685:2520,2520,swap,SWAP,8,94,"[27, 94]","[8, 27]",2,3780,sign_change_positive,4032,-1,-1,3780,administrative_end,False,False,-1,-1
+50002,HAC,HAC:000686:2520,2520,swap,SWAP,9,94,"[27, 94]","[9, 27]",1,3024,sign_change_positive,3276,-1,-1,3528,sign_reversal,False,False,-1,-1
+50002,HAC,HAC:000686:2520,2520,swap,SWAP,9,94,"[27, 94]","[9, 27]",2,3780,sign_change_positive,4032,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Greedy,Greedy:000001:252,252,forward,ENTRY,0,-1,[],[0],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000019:252,252,forward,ENTRY,18,-1,[],[18],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,504,504,504,selected,True,True,0,0
+50003,Greedy,Greedy:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,Greedy,Greedy:000086:252,252,forward,ENTRY,85,-1,[],[85],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000092:252,252,forward,ENTRY,91,-1,[],[91],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Greedy,Greedy:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000001:252,252,forward,ENTRY,0,-1,[],[0],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000019:252,252,forward,ENTRY,18,-1,[],[18],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,504,504,504,selected,True,True,0,0
+50003,HAC,HAC:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000086:252,252,forward,ENTRY,85,-1,[],[85],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000092:252,252,forward,ENTRY,91,-1,[],[91],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,HAC,HAC:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50003,HAC,HAC:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50003,Catoni,Catoni:000001:252,252,forward,ENTRY,0,-1,[],[0],1,504,inception_positive,756,-1,-1,1512,sign_reversal,False,False,-1,-1
+50003,Catoni,Catoni:000001:252,252,forward,ENTRY,0,-1,[],[0],2,2016,sign_change_positive,2268,-1,-1,3528,sign_reversal,False,False,-1,-1
+50003,Catoni,Catoni:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000005:252,252,forward,ENTRY,4,-1,[],[4],1,1512,sign_change_positive,1764,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000007:252,252,forward,ENTRY,6,-1,[],[6],1,756,sign_change_positive,1008,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000019:252,252,forward,ENTRY,18,-1,[],[18],1,504,inception_positive,756,-1,-1,1260,sign_reversal,False,False,-1,-1
+50003,Catoni,Catoni:000019:252,252,forward,ENTRY,18,-1,[],[18],2,2016,sign_change_positive,2268,-1,-1,3528,sign_reversal,False,False,-1,-1
+50003,Catoni,Catoni:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000032:252,252,forward,ENTRY,31,-1,[],[31],1,1764,sign_change_positive,2016,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000041:252,252,forward,ENTRY,40,-1,[],[40],1,1764,sign_change_positive,2016,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000086:252,252,forward,ENTRY,85,-1,[],[85],1,504,inception_positive,756,-1,-1,1512,sign_reversal,False,False,-1,-1
+50003,Catoni,Catoni:000086:252,252,forward,ENTRY,85,-1,[],[85],2,2016,sign_change_positive,2268,-1,-1,3528,sign_reversal,False,False,-1,-1
+50003,Catoni,Catoni:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000088:252,252,forward,ENTRY,87,-1,[],[87],1,756,sign_change_positive,1008,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000092:252,252,forward,ENTRY,91,-1,[],[91],1,504,inception_positive,756,-1,-1,1260,sign_reversal,False,False,-1,-1
+50003,Catoni,Catoni:000092:252,252,forward,ENTRY,91,-1,[],[91],2,2016,sign_change_positive,2268,-1,-1,3528,sign_reversal,False,False,-1,-1
+50003,Catoni,Catoni:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Catoni,Catoni:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50003,Tail,Tail:000001:252,252,forward,ENTRY,0,-1,[],[0],1,504,inception_positive,756,-1,-1,1512,sign_reversal,False,False,-1,-1
+50003,Tail,Tail:000001:252,252,forward,ENTRY,0,-1,[],[0],2,2016,sign_change_positive,2268,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000005:252,252,forward,ENTRY,4,-1,[],[4],1,1512,sign_change_positive,1764,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000007:252,252,forward,ENTRY,6,-1,[],[6],1,756,sign_change_positive,1008,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000019:252,252,forward,ENTRY,18,-1,[],[18],1,504,inception_positive,756,-1,-1,1260,sign_reversal,False,False,-1,-1
+50003,Tail,Tail:000019:252,252,forward,ENTRY,18,-1,[],[18],2,2016,sign_change_positive,2268,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,3024,3024,3024,selected,True,True,2520,2520
+50003,Tail,Tail:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000032:252,252,forward,ENTRY,31,-1,[],[31],1,1764,sign_change_positive,2016,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000039:252,252,forward,ENTRY,38,-1,[],[38],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000041:252,252,forward,ENTRY,40,-1,[],[40],1,1764,sign_change_positive,2016,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000086:252,252,forward,ENTRY,85,-1,[],[85],1,504,inception_positive,756,-1,-1,1512,sign_reversal,False,False,-1,-1
+50003,Tail,Tail:000086:252,252,forward,ENTRY,85,-1,[],[85],2,2016,sign_change_positive,2268,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000088:252,252,forward,ENTRY,87,-1,[],[87],1,756,sign_change_positive,1008,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000092:252,252,forward,ENTRY,91,-1,[],[91],1,504,inception_positive,756,-1,-1,1260,sign_reversal,False,False,-1,-1
+50003,Tail,Tail:000092:252,252,forward,ENTRY,91,-1,[],[91],2,2016,sign_change_positive,2268,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,3024,-1,3024,competing_move,True,False,2520,-1
+50003,Tail,Tail:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50003,Tail,Tail:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,-1,-1,3024,competing_move,False,False,-1,-1
+50004,Greedy,Greedy:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000005:252,252,forward,ENTRY,4,-1,[],[4],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000007:252,252,forward,ENTRY,6,-1,[],[6],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,504,504,504,selected,True,True,0,0
+50004,Greedy,Greedy:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000025:252,252,forward,ENTRY,24,-1,[],[24],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000032:252,252,forward,ENTRY,31,-1,[],[31],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000041:252,252,forward,ENTRY,40,-1,[],[40],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000088:252,252,forward,ENTRY,87,-1,[],[87],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000094:252,252,forward,ENTRY,93,-1,[],[93],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50004,HAC,HAC:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000005:252,252,forward,ENTRY,4,-1,[],[4],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000007:252,252,forward,ENTRY,6,-1,[],[6],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,504,504,504,selected,True,True,0,0
+50004,HAC,HAC:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50004,HAC,HAC:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000025:252,252,forward,ENTRY,24,-1,[],[24],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50004,HAC,HAC:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50004,HAC,HAC:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000032:252,252,forward,ENTRY,31,-1,[],[31],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000041:252,252,forward,ENTRY,40,-1,[],[40],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000088:252,252,forward,ENTRY,87,-1,[],[87],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000094:252,252,forward,ENTRY,93,-1,[],[93],1,504,inception_positive,756,-1,-1,504,competing_move,False,False,-1,-1
+50004,HAC,HAC:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,HAC,HAC:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,504,-1,504,competing_move,True,False,0,-1
+50004,Catoni,Catoni:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000005:252,252,forward,ENTRY,4,-1,[],[4],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000007:252,252,forward,ENTRY,6,-1,[],[6],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000010:252,252,forward,ENTRY,9,-1,[],[9],1,1512,sign_change_positive,1764,-1,-1,2520,sign_reversal,False,False,-1,-1
+50004,Catoni,Catoni:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000017:252,252,forward,ENTRY,16,-1,[],[16],1,1008,sign_change_positive,1260,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000025:252,252,forward,ENTRY,24,-1,[],[24],1,504,inception_positive,756,-1,-1,2016,sign_reversal,False,False,-1,-1
+50004,Catoni,Catoni:000025:252,252,forward,ENTRY,24,-1,[],[24],2,2268,sign_change_positive,2520,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000029:252,252,forward,ENTRY,28,-1,[],[28],1,1764,sign_change_positive,2016,-1,-1,2268,sign_reversal,False,False,-1,-1
+50004,Catoni,Catoni:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000032:252,252,forward,ENTRY,31,-1,[],[31],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000039:252,252,forward,ENTRY,38,-1,[],[38],1,1008,sign_change_positive,1260,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000041:252,252,forward,ENTRY,40,-1,[],[40],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000088:252,252,forward,ENTRY,87,-1,[],[87],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000089:252,252,forward,ENTRY,88,-1,[],[88],1,1512,sign_change_positive,1764,-1,-1,2520,sign_reversal,False,False,-1,-1
+50004,Catoni,Catoni:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000094:252,252,forward,ENTRY,93,-1,[],[93],1,504,inception_positive,756,-1,-1,2016,sign_reversal,False,False,-1,-1
+50004,Catoni,Catoni:000094:252,252,forward,ENTRY,93,-1,[],[93],2,2268,sign_change_positive,2520,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Catoni,Catoni:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,-1,-1,3780,administrative_end,False,False,-1,-1
+50004,Tail,Tail:000003:252,252,forward,ENTRY,2,-1,[],[2],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000004:252,252,forward,ENTRY,3,-1,[],[3],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000005:252,252,forward,ENTRY,4,-1,[],[4],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000006:252,252,forward,ENTRY,5,-1,[],[5],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000007:252,252,forward,ENTRY,6,-1,[],[6],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000008:252,252,forward,ENTRY,7,-1,[],[7],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000009:252,252,forward,ENTRY,8,-1,[],[8],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000010:252,252,forward,ENTRY,9,-1,[],[9],1,1512,sign_change_positive,1764,-1,-1,2520,sign_reversal,False,False,-1,-1
+50004,Tail,Tail:000011:252,252,forward,ENTRY,10,-1,[],[10],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000012:252,252,forward,ENTRY,11,-1,[],[11],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000013:252,252,forward,ENTRY,12,-1,[],[12],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000014:252,252,forward,ENTRY,13,-1,[],[13],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000015:252,252,forward,ENTRY,14,-1,[],[14],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000016:252,252,forward,ENTRY,15,-1,[],[15],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000017:252,252,forward,ENTRY,16,-1,[],[16],1,1008,sign_change_positive,1260,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000020:252,252,forward,ENTRY,19,-1,[],[19],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000021:252,252,forward,ENTRY,20,-1,[],[20],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000022:252,252,forward,ENTRY,21,-1,[],[21],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000023:252,252,forward,ENTRY,22,-1,[],[22],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000024:252,252,forward,ENTRY,23,-1,[],[23],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000025:252,252,forward,ENTRY,24,-1,[],[24],1,504,inception_positive,756,-1,-1,2016,sign_reversal,False,False,-1,-1
+50004,Tail,Tail:000025:252,252,forward,ENTRY,24,-1,[],[24],2,2268,sign_change_positive,2520,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000026:252,252,forward,ENTRY,25,-1,[],[25],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000027:252,252,forward,ENTRY,26,-1,[],[26],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000028:252,252,forward,ENTRY,27,-1,[],[27],1,504,inception_positive,756,2772,2772,2772,selected,True,True,2268,2268
+50004,Tail,Tail:000029:252,252,forward,ENTRY,28,-1,[],[28],1,1764,sign_change_positive,2016,-1,-1,2268,sign_reversal,False,False,-1,-1
+50004,Tail,Tail:000030:252,252,forward,ENTRY,29,-1,[],[29],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000031:252,252,forward,ENTRY,30,-1,[],[30],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000032:252,252,forward,ENTRY,31,-1,[],[31],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000034:252,252,forward,ENTRY,33,-1,[],[33],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000038:252,252,forward,ENTRY,37,-1,[],[37],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000039:252,252,forward,ENTRY,38,-1,[],[38],1,1008,sign_change_positive,1260,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000040:252,252,forward,ENTRY,39,-1,[],[39],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000041:252,252,forward,ENTRY,40,-1,[],[40],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000042:252,252,forward,ENTRY,41,-1,[],[41],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000045:252,252,forward,ENTRY,44,-1,[],[44],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000087:252,252,forward,ENTRY,86,-1,[],[86],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000088:252,252,forward,ENTRY,87,-1,[],[87],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000089:252,252,forward,ENTRY,88,-1,[],[88],1,1512,sign_change_positive,1764,-1,-1,2520,sign_reversal,False,False,-1,-1
+50004,Tail,Tail:000090:252,252,forward,ENTRY,89,-1,[],[89],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000091:252,252,forward,ENTRY,90,-1,[],[90],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000093:252,252,forward,ENTRY,92,-1,[],[92],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000094:252,252,forward,ENTRY,93,-1,[],[93],1,504,inception_positive,756,-1,-1,2016,sign_reversal,False,False,-1,-1
+50004,Tail,Tail:000094:252,252,forward,ENTRY,93,-1,[],[93],2,2268,sign_change_positive,2520,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000095:252,252,forward,ENTRY,94,-1,[],[94],1,504,inception_positive,756,2772,-1,2772,competing_move,True,False,2268,-1
+50004,Tail,Tail:000096:252,252,forward,ENTRY,95,-1,[],[95],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000097:252,252,forward,ENTRY,96,-1,[],[96],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Tail,Tail:000099:252,252,forward,ENTRY,98,-1,[],[98],1,504,inception_positive,756,-1,-1,2772,competing_move,False,False,-1,-1
+50004,Greedy,Greedy:000106:504,504,forward,ENTRY,5,-1,[8],"[5, 8]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000110:504,504,forward,ENTRY,10,-1,[8],"[8, 10]",1,756,inception_positive,1008,756,756,756,selected,True,True,0,0
+50004,Greedy,Greedy:000112:504,504,forward,ENTRY,12,-1,[8],"[8, 12]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000113:504,504,forward,ENTRY,13,-1,[8],"[8, 13]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000115:504,504,forward,ENTRY,15,-1,[8],"[8, 15]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000119:504,504,forward,ENTRY,19,-1,[8],"[8, 19]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000125:504,504,forward,ENTRY,25,-1,[8],"[8, 25]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000127:504,504,forward,ENTRY,27,-1,[8],"[8, 27]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000137:504,504,forward,ENTRY,37,-1,[8],"[8, 37]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000139:504,504,forward,ENTRY,39,-1,[8],"[8, 39]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000141:504,504,forward,ENTRY,41,-1,[8],"[8, 41]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000189:504,504,forward,ENTRY,89,-1,[8],"[8, 89]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000190:504,504,forward,ENTRY,90,-1,[8],"[8, 90]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000194:504,504,forward,ENTRY,94,-1,[8],"[8, 94]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000198:504,504,forward,ENTRY,98,-1,[8],"[8, 98]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000201:504,504,swap,SWAP,27,8,[8],[27],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000202:504,504,swap,SWAP,94,8,[8],[94],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000203:504,504,swap,SWAP,10,8,[8],[10],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000207:504,504,swap,SWAP,39,8,[8],[39],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000208:504,504,swap,SWAP,98,8,[8],[98],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000210:504,504,swap,SWAP,13,8,[8],[13],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000106:504,504,forward,ENTRY,5,-1,[8],"[5, 8]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50004,HAC,HAC:000110:504,504,forward,ENTRY,10,-1,[8],"[8, 10]",1,756,inception_positive,1008,756,756,756,selected,True,True,0,0
+50004,HAC,HAC:000112:504,504,forward,ENTRY,12,-1,[8],"[8, 12]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000113:504,504,forward,ENTRY,13,-1,[8],"[8, 13]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000115:504,504,forward,ENTRY,15,-1,[8],"[8, 15]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000119:504,504,forward,ENTRY,19,-1,[8],"[8, 19]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000125:504,504,forward,ENTRY,25,-1,[8],"[8, 25]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000127:504,504,forward,ENTRY,27,-1,[8],"[8, 27]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000137:504,504,forward,ENTRY,37,-1,[8],"[8, 37]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000139:504,504,forward,ENTRY,39,-1,[8],"[8, 39]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000141:504,504,forward,ENTRY,41,-1,[8],"[8, 41]",1,756,inception_positive,1008,-1,-1,756,competing_move,False,False,-1,-1
+50004,HAC,HAC:000189:504,504,forward,ENTRY,89,-1,[8],"[8, 89]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000190:504,504,forward,ENTRY,90,-1,[8],"[8, 90]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000194:504,504,forward,ENTRY,94,-1,[8],"[8, 94]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000198:504,504,forward,ENTRY,98,-1,[8],"[8, 98]",1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000201:504,504,swap,SWAP,27,8,[8],[27],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000202:504,504,swap,SWAP,94,8,[8],[94],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000203:504,504,swap,SWAP,10,8,[8],[10],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000207:504,504,swap,SWAP,39,8,[8],[39],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000208:504,504,swap,SWAP,98,8,[8],[98],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,HAC,HAC:000210:504,504,swap,SWAP,13,8,[8],[13],1,756,inception_positive,1008,756,-1,756,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000309:756,756,backward,PARK,-1,8,"[8, 10]",[10],1,1008,inception_positive,1260,1008,1008,1008,selected,True,True,0,0
+50004,Greedy,Greedy:000310:756,756,swap,SWAP,0,8,"[8, 10]","[0, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000311:756,756,swap,SWAP,1,8,"[8, 10]","[1, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000312:756,756,swap,SWAP,2,8,"[8, 10]","[2, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000313:756,756,swap,SWAP,3,8,"[8, 10]","[3, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000314:756,756,swap,SWAP,4,8,"[8, 10]","[4, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000315:756,756,swap,SWAP,5,8,"[8, 10]","[5, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000316:756,756,swap,SWAP,6,8,"[8, 10]","[6, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000317:756,756,swap,SWAP,7,8,"[8, 10]","[7, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000318:756,756,swap,SWAP,9,8,"[8, 10]","[9, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000319:756,756,swap,SWAP,11,8,"[8, 10]","[10, 11]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000309:756,756,backward,PARK,-1,8,"[8, 10]",[10],1,1008,inception_positive,1260,1008,1008,1008,selected,True,True,0,0
+50004,HAC,HAC:000310:756,756,swap,SWAP,0,8,"[8, 10]","[0, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000311:756,756,swap,SWAP,1,8,"[8, 10]","[1, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000312:756,756,swap,SWAP,2,8,"[8, 10]","[2, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000313:756,756,swap,SWAP,3,8,"[8, 10]","[3, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000314:756,756,swap,SWAP,4,8,"[8, 10]","[4, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000315:756,756,swap,SWAP,5,8,"[8, 10]","[5, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000316:756,756,swap,SWAP,6,8,"[8, 10]","[6, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000317:756,756,swap,SWAP,7,8,"[8, 10]","[7, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000318:756,756,swap,SWAP,9,8,"[8, 10]","[9, 10]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,HAC,HAC:000319:756,756,swap,SWAP,11,8,"[8, 10]","[10, 11]",1,1008,inception_positive,1260,1008,-1,1008,competing_move,True,False,0,-1
+50004,Greedy,Greedy:000357:1008,1008,forward,ENTRY,27,-1,[10],"[10, 27]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50004,Greedy,Greedy:000424:1008,1008,forward,ENTRY,94,-1,[10],"[10, 94]",1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50004,Greedy,Greedy:000432:1008,1008,swap,SWAP,27,10,[10],[27],1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50004,Greedy,Greedy:000433:1008,1008,swap,SWAP,94,10,[10],[94],1,1260,inception_positive,1512,-1,-1,1260,competing_move,False,False,-1,-1
+50004,HAC,HAC:000357:1008,1008,forward,ENTRY,27,-1,[10],"[10, 27]",1,1260,inception_positive,1512,2016,2016,2016,selected,True,True,756,756
+50004,HAC,HAC:000424:1008,1008,forward,ENTRY,94,-1,[10],"[10, 94]",1,1260,inception_positive,1512,-1,-1,2016,competing_move,False,False,-1,-1
+50004,HAC,HAC:000432:1008,1008,swap,SWAP,27,10,[10],[27],1,1260,inception_positive,1512,-1,-1,1260,shortlist_withdrawal,False,False,-1,-1
+50004,HAC,HAC:000433:1008,1008,swap,SWAP,94,10,[10],[94],1,1260,inception_positive,1512,-1,-1,1260,shortlist_withdrawal,False,False,-1,-1
+50004,HAC,HAC:000548:2016,2016,backward,PARK,-1,10,"[10, 27]",[27],1,2268,inception_positive,2520,3276,3276,3276,selected,True,True,1008,1008
+50004,HAC,HAC:000549:2016,2016,swap,SWAP,0,10,"[10, 27]","[0, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000550:2016,2016,swap,SWAP,1,10,"[10, 27]","[1, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000551:2016,2016,swap,SWAP,2,10,"[10, 27]","[2, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000552:2016,2016,swap,SWAP,3,10,"[10, 27]","[3, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000553:2016,2016,swap,SWAP,4,10,"[10, 27]","[4, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000554:2016,2016,swap,SWAP,5,10,"[10, 27]","[5, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000555:2016,2016,swap,SWAP,6,10,"[10, 27]","[6, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000556:2016,2016,swap,SWAP,7,10,"[10, 27]","[7, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000557:2016,2016,swap,SWAP,8,10,"[10, 27]","[8, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1
+50004,HAC,HAC:000558:2016,2016,swap,SWAP,9,10,"[10, 27]","[9, 27]",1,2268,inception_positive,2520,3276,-1,3276,competing_move,True,False,1008,-1

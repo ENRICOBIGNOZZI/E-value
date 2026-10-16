@@ -163,3 +163,23 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strat
 # Final pool: specified, not a statement of completed execution.
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_main.json --output outputs/park_revive_full_v2/main --start-seed 60001 --count 500 --workers 2 --resume
 ```
+
+
+For larger stages, the staged runner executes and independently verifies batches
+before releasing their regenerable checkpoint caches. All score, weight,
+return and event ledgers stay available; empirical inputs are never touched.
+Cached replay checks are reused only when the verifier and every relevant
+input byte still match.
+
+```sh
+.venv/bin/python scripts/run_full_study.py pilot --workers 2 --batch-size 10 --compact-verified-checkpoints
+# Run the separate final stage only after assessing the completed pilot.
+.venv/bin/python scripts/run_full_study.py main --workers 2 --batch-size 10 --compact-verified-checkpoints
+.venv/bin/python scripts/audit_horizon_examples.py
+.venv/bin/python scripts/audit_search_budget.py
+```
+
+The manuscript title now emphasizes trading costs, moment information and the
+cost of waiting. PARK/REVIVE remains the implementation name. Mathematical
+research notes under `paper/notes/` are explicitly excluded from the manuscript
+until separately audited; they are not reported theorems or simulation results.

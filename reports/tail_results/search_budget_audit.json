@@ -1,0 +1,161 @@
+{
+  "post_hoc": true,
+  "original_protocol_unchanged": true,
+  "alpha": 0.05,
+  "initial_episodes": 100,
+  "first_wave_total_budget": 0.025,
+  "first_wave_budget_per_episode": 0.00025,
+  "remaining_budget": 0.025,
+  "remaining_episode_rule": "a_(100+l)=alpha/[2*l*(l+1)], l>=1",
+  "individual_threshold": 20,
+  "spending_threshold": 4000,
+  "spending_log_threshold": 8.294049640102028,
+  "seeds": 20,
+  "individual_markets_with_crossing": 19,
+  "spending_markets_with_crossing": 0,
+  "scope": "Exact initial fixed-reference replay implication; no global error or optimal-spending empirical claim.",
+  "rows": [
+    {
+      "seed": 40001,
+      "max_annual_log_e": 4.918173058832393,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40002,
+      "max_annual_log_e": 4.21005508194726,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40003,
+      "max_annual_log_e": 3.756461802358978,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40004,
+      "max_annual_log_e": 4.461535269804305,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40005,
+      "max_annual_log_e": 3.9333808550136657,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40006,
+      "max_annual_log_e": 3.1569600799067197,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40007,
+      "max_annual_log_e": 4.678826302075789,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40008,
+      "max_annual_log_e": 3.9608722786746617,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40009,
+      "max_annual_log_e": 3.956064906108382,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40010,
+      "max_annual_log_e": 4.0315733333726715,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40011,
+      "max_annual_log_e": 4.8608544361952735,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40012,
+      "max_annual_log_e": 3.489576879065645,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40013,
+      "max_annual_log_e": 2.974062894921602,
+      "individual_crossing": false,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40014,
+      "max_annual_log_e": 3.993833827771414,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40015,
+      "max_annual_log_e": 4.7170755827952995,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40016,
+      "max_annual_log_e": 3.6684566764093662,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40017,
+      "max_annual_log_e": 3.68060005908918,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40018,
+      "max_annual_log_e": 3.674664088910208,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40019,
+      "max_annual_log_e": 3.9105151316269455,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    },
+    {
+      "seed": 40020,
+      "max_annual_log_e": 4.266253893284658,
+      "individual_crossing": true,
+      "first_wave_spending_crossing": false
+    }
+  ],
+  "input_sha256": {
+    "outputs/park_revive_tail_v1/first_entry/seed_40001/annual_events.csv": "a322e2d72da7e3424b91deb9b3625fe29553b3c0467e5d6fd98017bac74e0e35",
+    "outputs/park_revive_tail_v1/first_entry/seed_40002/annual_events.csv": "f84eefc4c2854ec6e7092bf9347076e9c8581c8c5db0fea4658fef912fe5d1c3",
+    "outputs/park_revive_tail_v1/first_entry/seed_40003/annual_events.csv": "92d264f0a9542bf61fd981dd6a46a4af055f1af50523d299326ea12316111b72",
+    "outputs/park_revive_tail_v1/first_entry/seed_40004/annual_events.csv": "f061d30d5b2f786cdba62368d2edd35c6aeafab6207c9ba6d3247402d7b084ff",
+    "outputs/park_revive_tail_v1/first_entry/seed_40005/annual_events.csv": "7e787c994f8b22d45fae0942cc6ada2864141e9d85ca4548e7f7d73648b8c1a1",
+    "outputs/park_revive_tail_v1/first_entry/seed_40006/annual_events.csv": "84a105b6606567e6dd084fafdf4036e5bbf8586b1cd6eb9a14425c2030b4b76d",
+    "outputs/park_revive_tail_v1/first_entry/seed_40007/annual_events.csv": "3bf098f9a3f0b41be96c01543a5a0fc4e8a0578f71f395de7a33edfa18f8d2e2",
+    "outputs/park_revive_tail_v1/first_entry/seed_40008/annual_events.csv": "78a353daac6a0531ecd921ff3baff525aba9a3982f132b92d44d3701e1f53d32",
+    "outputs/park_revive_tail_v1/first_entry/seed_40009/annual_events.csv": "d272116e9c7cc04b304100c4e4c87da968a77e291dc62c034098d743007f95e6",
+    "outputs/park_revive_tail_v1/first_entry/seed_40010/annual_events.csv": "1ccb3dd7a627c2f1a8b006095bb0fff563dea7cda998d3132d898b9d83255f0c",
+    "outputs/park_revive_tail_v1/first_entry/seed_40011/annual_events.csv": "f6a845d92463ec228a055e0f80f80da314ba346cb7407c3eeb3442c6f7814053",
+    "outputs/park_revive_tail_v1/first_entry/seed_40012/annual_events.csv": "8c6a65b43a09247d7bc1f4ca05bff2910154a96245cef4c2387d83e8c571a830",
+    "outputs/park_revive_tail_v1/first_entry/seed_40013/annual_events.csv": "4f083b3eabda0fee2fdd6a8be69ea373baf23e2bd49c21dafd0be29d50d68bfa",
+    "outputs/park_revive_tail_v1/first_entry/seed_40014/annual_events.csv": "3bc6a1a586140f01426972688030ab38ad859089e5d486703af8117002ef6efb",
+    "outputs/park_revive_tail_v1/first_entry/seed_40015/annual_events.csv": "be0f2783610b27376ca0a44f8e608fc69061ea0246a3ffe3940c90315b710ec2",
+    "outputs/park_revive_tail_v1/first_entry/seed_40016/annual_events.csv": "36794686f17861dc1f3913ef6a310a832967aeb1222f942d691ffb06ee151966",
+    "outputs/park_revive_tail_v1/first_entry/seed_40017/annual_events.csv": "68be3f843b6bdaccbeb534de8f190259a7bb6457621ea398e5089f1b0410af06",
+    "outputs/park_revive_tail_v1/first_entry/seed_40018/annual_events.csv": "2c4db7770293ec72f3c07f2d1934931249ce9e4d069d3d8df1358b95149f4c1c",
+    "outputs/park_revive_tail_v1/first_entry/seed_40019/annual_events.csv": "641a9f0b88f16274f37f063011d7d3a287545a47229d5196b5e56ae62541b9b7",
+    "outputs/park_revive_tail_v1/first_entry/seed_40020/annual_events.csv": "4005a6c41ba8363751b9e54752fa7d9fdebc042641319b951f4f82c7d5b1f6e1"
+  }
+}

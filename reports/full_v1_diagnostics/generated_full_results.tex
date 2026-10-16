@@ -1,0 +1,111 @@
+The completed full-strategy pilot currently contains 4 independent markets (3 started markets remain incomplete). Each has 500 stocks, 100 signals, one training year and 14 out-of-sample years. These are pilot observations; the separate 500-market final study is not asserted to be complete. Earlier baseline and fixed-reference markets are not added to this count.
+
+\begin{table}[H]\centering\small
+
+\begin{tabular}{lrrrr}
+
+\toprule
+
+Method & $252\bar U$ (MC SE) & Mean wealth & Inactive & Mean moves \\
+
+\midrule
+
+All Signals & 0.04997 (0.00705) & 2.050 & 0.000 & 0.00 \\
+
+Greedy & 0.05068 (0.00448) & 2.056 & 0.071 & 5.25 \\
+
+HAC & 0.05042 (0.00447) & 2.049 & 0.071 & 3.50 \\
+
+Catoni & 0.00000 (0.00000) & 1.000 & 1.000 & 0.00 \\
+
+Tail & 0.01263 (0.00302) & 1.198 & 0.804 & 1.00 \\
+
+Oracle & 0.06027 (0.00338) & 2.343 & 0.000 & 0.00 \\
+
+\bottomrule\end{tabular}
+
+\caption{Full-strategy pilot means. Utility is daily utility rescaled by 252, not an annual certainty equivalent. MC SE uses independent markets. Wealth includes waiting in cash and all modeled actual fund costs. Moves include terminal choices, which create no post-choice fund return.}\end{table}
+
+\begin{table}[H]\centering\small
+
+\begin{tabular}{lrr}
+
+\toprule
+
+Tail minus reference & Mean $252\bar U$ difference & 95\% MC interval \\
+
+\midrule
+
+All Signals & -0.03733 & [-0.06027, -0.01440] \\
+
+Catoni & 0.01263 & [0.00302, 0.02224] \\
+
+Greedy & -0.03805 & [-0.05114, -0.02496] \\
+
+HAC & -0.03779 & [-0.04982, -0.02576] \\
+
+Oracle & -0.04764 & [-0.05132, -0.04395] \\
+
+\bottomrule\end{tabular}
+
+\caption{Paired differences on the same completed markets. Student intervals describe Monte Carlo uncertainty, are exploratory and unadjusted across comparisons, and are not guarantees for a new financial law. The Oracle has information unavailable to the learner.}\end{table}
+
+Tail makes 4 choices (ENTRY: 4, PARK: 0, REVIVE: 0, SWAP: 0), of which 4 are executed before the horizon. Its mean inactive fraction is 0.804. Successful initial certification therefore must be assessed alongside the returns foregone during waiting. The lifecycle counts delimit what this pilot can say about parking and revival.
+
+\begin{table}[H]\centering\small
+
+\begin{tabular}{lrrr}
+
+\toprule
+
+Method & Eligible stable events & Criterion within year & Selected within year \\
+
+\midrule
+
+Greedy & 334 & 276 & 15 \\
+
+HAC & 291 & 188 & 9 \\
+
+Catoni & 198 & 0 & 0 \\
+
+Tail & 195 & 0 & 0 \\
+
+\bottomrule\end{tabular}
+
+\caption{Response-independent stable-event cohorts with a full year of calendar follow-up. Each row has its own endogenous reference policies and event population; raw counts do not identify causal cross-method detection performance. Dependent events are not treated as independent replications.}\end{table}
+
+\begin{table}[H]\centering\small
+
+\begin{tabular}{lrrrr}
+
+\toprule
+
+Method & Executed & Positive gain & Mean gain (bp) & Entry cost (bp) \\
+
+\midrule
+
+Greedy & 21 & 0.190 & -0.474 & 1.035 \\
+
+HAC & 14 & 0.286 & -0.642 & 1.500 \\
+
+Tail & 4 & 1.000 & 0.827 & 1.500 \\
+
+\bottomrule\end{tabular}
+
+\caption{Evaluator-only next-period gains from the actual previous allocation, including modeled transition costs. These descriptive outcomes concern executed decisions, exclude terminal certifications, and are not quantities certified by a historical episode rejection.}\end{table}
+
+\begin{figure}[H]\centering
+
+\includegraphics[width=.96\linewidth]{figures/full_strategy_paths.png}
+
+\caption{Actual net wealth and selected support size in the completed full-strategy pilot. Wealth bands are the 10th and 90th market percentiles; they are descriptive quantiles, not confidence intervals.}
+
+\end{figure}
+
+\begin{figure}[H]\centering
+
+\includegraphics[width=.96\linewidth]{figures/full_strategy_evidence.png}
+
+\caption{Mean across completed markets of the largest currently open annual log capital. Closed comparisons are not carried forward. The dashed line is the individual threshold; it does not protect the entire search.}
+
+\end{figure}

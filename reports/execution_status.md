@@ -1,3 +1,36 @@
+# Latest full-strategy status — 16 October 2026
+
+The manuscript now has **25 pages**. Its full-strategy table is a fixed snapshot
+of seeds **50001–50010**, each independently replayed: **88,285,790 scalar checks**
+and **1,265 counterfactual ghost pairs**; maximum log-evidence discrepancy
+1.78e-15. The scientific source is frozen at `234e4f9`; **44 tests passed**.
+Tail makes ten executed ENTRY choices but spends a mean 80% of OOS dates in
+cash. Its mean annual-scaled utility is 0.01272 versus 0.04526 for All Signals
+and 0.05206 for Greedy. These observations do not establish economic superiority.
+
+The extended v2 pilot completed seeds 50001–50019 and stopped at seed 50020,
+at the start of its fourth OOS block, because OSQP returned `solved inaccurate`
+after the declared refinement. The failure and its source/checkpoint remain
+preserved. There are **no simulation workers running**; an independent replay
+of completed seeds 50011–50019 is in progress. The final pool is **0/500**.
+See `full_v2_failure_audit.json`. No failed seed is dropped, and no parameter,
+threshold or seed will be chosen by economic performance. A further numerical
+correction must be frozen and replay the same pilot pool before final evaluation.
+
+New theory distinguishes one-period optimization from holding-period value,
+and gives two exactly checked examples. A standard countable error-spending
+argument delimits search-wide safety; a labeled post-hoc budget illustration
+eliminates all twenty earlier first entries under that particular allocation.
+The new full-strategy event audit retains fast responses but has method-specific
+populations, so it does not identify a causal ranking of detector delays.
+The exploratory vanishing-gain note is **excluded from the manuscript** pending
+proof and novelty review. The overall paper goal remains active and incomplete.
+
+Earlier milestones follow as historical records; their page/test counts and
+execution claims apply to their own snapshots.
+
+---
+
 # Full-strategy continuation — implementation frozen before pilot markets
 
 The isolated `research/park_revive_full` implementation adds actual post-entry

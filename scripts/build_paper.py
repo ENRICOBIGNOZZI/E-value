@@ -52,6 +52,8 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--results',default='outputs/park_revive_v1/frozen_pilot')
     parser.add_argument('--tail-results',default='outputs/park_revive_tail_v1/first_entry')
+    parser.add_argument('--full-results',default='outputs/park_revive_full_v2/pilot')
+    parser.add_argument('--full-pilot-count',type=int,help='Freeze the reported snapshot to this predeclared prefix starting at 50001')
     args=parser.parse_args();root=Path(__file__).resolve().parents[1]
     results=(root/args.results).resolve()
     cfg=json.loads((results/'config_frozen.json').read_text())
@@ -106,6 +108,11 @@ def main():
     if (tail_results/'entry_summary.csv').exists():
         from build_tail_results import generate
         generate(root,tail_results)
+    full_results=(root/args.full_results).resolve()
+    if any(json.loads(p.read_text()).get('complete') for p in full_results.glob('seed_*/status.json')):
+        from build_full_results import summarize
+        snapshot=range(50001,50001+args.full_pilot_count) if args.full_pilot_count is not None else None
+        summarize(full_results,root/'reports/full_results',root/'paper',snapshot)
     engine=shutil.which('tectonic') or '/opt/homebrew/bin/tectonic'
     subprocess.run([engine,'--keep-logs','main.tex'],cwd=root/'paper',check=True)
     print(root/'paper/main.pdf')

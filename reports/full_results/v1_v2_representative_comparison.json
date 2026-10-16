@@ -1,0 +1,13 @@
+{
+  "seed": 50001,
+  "max_absolute_fund_errors": {
+    "net": 0.0,
+    "utility": 0.0,
+    "equity": 0.0,
+    "turnover": 0.0,
+    "linear_cost": 0.0,
+    "impact_cost": 0.0
+  },
+  "max_absolute_weight_error": 0.0,
+  "scope": "Regression comparison for the representative completed v1 market; not additional independent evidence."
+}

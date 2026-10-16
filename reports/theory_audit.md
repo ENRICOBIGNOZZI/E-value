@@ -106,3 +106,52 @@ The original T2b/c constant-mean, constant-bound results are not assigned to
 the variable-bound extension. The first-entry experiment has no actual fund
 performance or PARK/REVIVE delay claim. The legacy detection-risk-set defect
 is documented in `reports/detection_audit.md`.
+
+
+## Conditioning and search-wide safety
+
+Investor information is G; F denotes the chosen pre-return conditioning
+filtration and can be the enlarged simulator filtration. Evaluator state means
+under current latent coefficients/regimes need not equal investor conditional
+means. Uniform public envelopes hold pointwise for the enlarged filtration and
+hence by the tower property for G. Null/moment assumptions in each theorem must
+refer to the same filtration. Economic event labels do not establish the
+investor-filtration episode null.
+
+A standard countable spending proposition gives FWER over valid episode nulls
+when deterministic episode budgets sum to alpha. It does not protect current
+profitability and is not the rule implemented by the primary financial arms.
+A post-hoc first-wave allocation (alpha/2 across 100 initial episodes, the rest
+summably) raises the initial threshold to 4000. Exact fixed-reference replay
+shows zero first crossings among all 20 mechanism markets, compared with 19 at
+the individual threshold. This is an illustrative budget cost, not an optimal
+allocation result or an additional predeclared performance arm.
+
+The v1 full-strategy cancellation failure and v2 difference-first correction
+are recorded in `full_v1_failure_audit.json`. Exact symbolic identities do not
+justify subtracting nearly identical floating-point projections; the regression
+now checks preservation of a 1.64445e-18 allocation contrast.
+
+
+The uniform-error event also bounds state-matched regret R around the estimated
+full-universe versus selected-support value gap Ghat: |R-Ghat| <= 2 epsilon.
+For an empty portfolio from a zero allocation, the width is epsilon because
+both cash objectives are exactly zero. This is a deterministic implication of
+the stated uniform event, not an observable confidence bound under drift, and
+it does not compare different full fund-state paths without further accounting.
+
+
+## Optimization-horizon interpretation
+
+Two scalar known-moment examples now separate one-period implementation value
+from holding-period value, with the same proportional and quadratic initial
+costs. Parking a mean-zero incumbent inside the myopic no-trade band can have
+a negative deployment-day gain but positive H-period gain after amortizing the
+one-off liquidation cost. This uses different subsequent states and does not
+violate full-support value monotonicity for a genuinely dynamic optimizer.
+Conversely, when 0 < mu <= c < H*mu, one-period candidates remain in cash even
+though a feasible constant H-period position has positive cumulative value.
+The tested zero-score pair cannot reveal that other policy's value. These are
+interpretation examples specializing standard cost-aware trading, not novel
+dynamic-optimization algorithms. An independent QP verifies the reported
+closed-form numbers in `horizon_examples.json`.

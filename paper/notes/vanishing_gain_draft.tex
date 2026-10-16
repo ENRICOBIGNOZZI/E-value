@@ -1,0 +1,339 @@
+% RESEARCH DRAFT ONLY. Not included by main.tex and not an executed result.
+% Needs a separate proof audit, primary-source novelty review and controlled
+% numerical check before promotion into the manuscript. No primary financial
+% configuration, method or seed is changed by this note.
+
+\section*{Candidate result: vanishing implementation gains}
+This note asks whether the fourth-return-moment Catoni construction can
+eventually validate a PARK improvement that shrinks as estimation becomes
+accurate. It is a stationary scalar, costless example, not a theorem for the
+financial DGP or changing regimes. Standard martingale and quadratic-strong-law
+arguments must not be advertised as new general probability principles.
+
+Let $A_t$ have public conditional raw-moment bounds $M_2>0$ and $M_4<\infty$.
+The reference has a predictable scalar target $|w_t|\le L$, while its candidate
+is cash. Set $c=\eta=0$ and
+\[
+ Y_t=-w_tA_t+\frac\gamma2w_t^2A_t^2,\qquad
+ v_t^2=w_t^2\left(\sqrt{M_2}+\frac\gamma2|w_t|\sqrt{M_4}\right)^2,
+ \quad \nu^2=L^2\left(\sqrt{M_2}+\frac\gamma2L\sqrt{M_4}\right)^2.
+\]
+Conditional Minkowski proves $\mathbb E_{t-1}Y_t^2\le v_t^2\le\nu^2$.
+The moment contract permits unknown nonzero means and nonempty episode nulls;
+it does not reveal the zero-mean alternative used below. Both uniform and
+geometric Catoni capitals are therefore valid for the original conditional
+null under the common moment contract.
+
+Suppose under the alternative that $A_t$ is iid, mean zero, variance
+$\sigma^2>0$, with a finite fourth moment. Let $w_t\to0$ and
+$S_n=\sum_{t\le n}w_t^2\to\infty$ almost surely. For a fixed
+$0<\lambda<\gamma\sigma^2/M_2$, the candidate limit is
+\[
+ \frac{\sum_{t\le n}\{\phi(\lambda Y_t)-\lambda^2v_t^2/2\}}{S_n}
+ \longrightarrow \frac{\lambda\gamma\sigma^2-\lambda^2M_2}{2}>0
+ \quad\hbox{almost surely}.
+\]
+Thus its threshold-crossing time is finite almost surely for each fixed
+individual level. With the same fixed bet but the constant bound $\nu^2$,
+log capital divided by $n$ tends to $-\lambda^2\nu^2/2$. That endpoint limit
+alone says nothing about possible earlier threshold crossings.
+
+\paragraph{Proof route.}
+The Catoni function obeys $|\phi(x)|\le|x|$,
+$|\phi(x)-x|\le x^2/2$ and $\phi(x)-x=o(x^2)$ as $x\to0$.
+The first follows from $e^x\ge1+x+x^2/2$ for $x\ge0$ and oddness;
+the second follows from the two envelope inequalities, and the third from
+the expansion at zero. Under the iid alternative,
+$\mathbb E_{t-1}Y_t=\gamma\sigma^2w_t^2/2$.
+For fixed $\lambda$, dominated convergence gives
+\[
+ \mathbb E_{t-1}\phi(\lambda Y_t)
+   =\lambda\gamma\sigma^2w_t^2/2+o(w_t^2),
+\]
+since $Y_t^2/w_t^2\le2A_t^2+\gamma^2L^2 A_t^4/2$ and this majorant is
+integrable. The centered transformed increments have conditional variance
+at most $\lambda^2\nu^2 w_t^2/L^2$. Divide their martingale by $1+S_n$:
+the sum of its conditional variances is bounded because
+$\sum w_t^2/(1+S_t)^2\le1$. Martingale convergence and Kronecker's lemma
+yield $M_n/S_n\to0$. Weighted Cesaro gives the claimed drift limit because
+$v_t^2/w_t^2\to M_2$. Also $S_n/n\to0$, proving the fixed-uniform endpoint
+limit. Zero-weight dates have exactly zero score and zero geometric update.
+
+\paragraph{Estimated-policy specialization requiring audit.}
+After finite initial training, take
+$w_t=\operatorname{clip}\{\overline A_{t-1}/(\gamma M_2),[-L,L]\}$.
+This is the one-period estimated mean--quadratic optimizer with conservative
+second-moment input $M_2$. The anticipated quadratic strong law is
+\[
+ S_n/\log n\longrightarrow\sigma^2/(\gamma^2M_2^2)\quad\hbox{a.s.}
+\]
+A self-contained finite-fourth-moment proof is available: for
+$B_i=\sum_{t\le i}A_t$ and $i\le j$,
+\[
+ \operatorname{Cov}(B_i^2,B_j^2)=2i^2\sigma^4+i\kappa_4.
+\]
+Hence $T_n=\sum_{i\le n}B_i^2/i^2$ has mean $\sigma^2\log n+O(1)$ and
+variance $O(\log n)$. Chebyshev and Borel--Cantelli along
+$n_k=\lfloor e^{k^2}\rfloor$, followed by monotone interpolation, give
+$T_n/\log n\to\sigma^2$. The ordinary strong law makes clipping inactive
+eventually. At the oracle fixed bet $\lambda=\gamma\sigma^2/(2M_2)$, the
+geometric log capital divided by $\log n$ consequently tends to
+$\sigma^6/(8M_2^3)$; here $\sigma^6=(\sigma^2)^3$.
+For a tight second-moment contract $M_2=\sigma^2$, the rate is $1/8$.
+This is a log-capital rate, not a claimed expected rejection time.
+
+\paragraph{Past-mean uniform betting: stronger candidate separation.}
+Use the original bounded, past-only positive episode-mean bet, held fixed in
+blocks of any fixed length $h$: apart from a finite initial block,
+$\lambda_t=\min\{[\overline Y_{\mathrm{past}}]_+/(2\nu^2),
+1/(2\sqrt{\nu^2})\}$. The same martingale normalization applied directly to
+$Y_t$ gives
+$\sum_{s\le n}Y_s/S_n\to\gamma\sigma^2/2$. The quadratic strong law therefore
+implies $\lambda_t=O(\log t/t)$ almost surely. In particular,
+$\sum\lambda_t^2<\infty$ almost surely. Moreover,
+\[
+ \sum_t\frac{\log(t+1)}t\,w_t^2<\infty\quad\hbox{a.s.},
+\]
+because its expectation is finite using
+$\mathbb Ew_t^2\le\sigma^2/\{\gamma^2M_2^2(t-1)\}$ after training.
+Thus $\sum\lambda_t\mathbb E_{t-1}Y_t<\infty$.
+The bound $|\phi(x)-x|\le x^2/2$ makes the conditional transformed drift
+absolutely summable. Conditional martingale variance is bounded by
+$\lambda_t^2\nu^2$ and has a finite sum almost surely; localization gives
+martingale convergence. The uniform plug-in log capital then converges to
+a finite real random variable. Its path supremum is finite almost surely,
+so its infinite-horizon crossing probability tends to zero as
+$\alpha\downarrow0$. This does not assert zero power at each fixed level.
+The geometric fixed-bet test crosses almost surely at every fixed level.
+
+\paragraph{Possible controlled check, not yet declared or run.}
+An alternative-only scalar study can use iid unit-variance Laplace returns,
+the clipped sample-mean rule, and fixed/public $M_2=1,M_4=6$.
+For a genuinely datewise-null calibration with noisy observations, a separate
+predictable-feedback law can set
+$A_t=.3\operatorname{sign}(w_t)+.5\zeta_t$, using sign $+1$ at zero.
+It has raw second moment $.34$ and fourth moment $.5181$, and at $L=1$
+$\mathbb E_{t-1}Y_t=-.3|w_t|+.17w_t^2\le0$.
+Calling iid positive-mean noisy returns a conditional null would be incorrect:
+the estimated target can have the wrong sign on some histories. All proposed
+new simulations need a frozen protocol, untouched seeds and explicit labels
+as controlled diagnostics, not extra full financial markets.
+
+\section*{Further candidate: a sharp Gaussian confidence exponent}
+This is a potentially stronger specialization to audit before publication.
+The claim concerns one costless comparison with no fixed minimum-effect
+selection floor. It is not an asymptotic theorem for the full strategy,
+which uses a positive numerical/economic mean floor, or for the Laplace
+financial DGP. In particular it must not be advertised as a general minimax
+rate merely because the following Gaussian instance is sharp.
+
+Take iid $P$-alternative returns $A_t\sim N(0,\sigma^2)$ and public raw-moment
+bounds $M_2=\sigma^2$, $M_4=6\sigma^4$ (the public contract does not assume
+Gaussianity or reveal a zero mean). Let $0<L\le1/(2\gamma\sigma)$ and use
+the clipped sample-mean target $w_t$ above with risk input $M_2$.
+Use the geometric bound and the fixed, public bet $\lambda=\gamma/2$.
+The earlier calculation predicts
+\[
+ \log E_n/\log n\to1/8\quad P\hbox{-a.s.}
+\]
+The fourth-moment bound enters the finite remainder, not this leading rate.
+
+An admissible null law $Q$ can match the training law and then use
+\[
+ A_t\mid\mathcal F_{t-1}\sim
+ N(\mu_t,\sigma^2-\mu_t^2),\qquad \mu_t=\gamma\sigma^2w_t/2.
+\]
+The leverage restriction bounds $|\mu_t|/\sigma$ by $1/4$ and keeps the
+conditional variance uniformly positive. Under $Q$, the raw second moment
+is exactly $\sigma^2$, the raw fourth moment is
+$3\sigma^4-2\mu_t^4\le M_4$, and
+$\mathbb E_Q[Y_t\mid\mathcal F_{t-1}]=0$ at every date. Thus the null is
+nonempty and this particular adaptive Gaussian law lies inside it. The null
+class is conditional and permits dependence; it is not an iid-only null.
+
+For $R_n=dP/dQ|_{\mathcal F_n}$, set $a_t=\mu_t/\sigma$ and $Z_t=A_t/\sigma$.
+Its log increment under $P$ is exactly
+\[
+ \ell_t=\tfrac12\log(1-a_t^2)
+       +\frac{a_t^2(Z_t^2+1)-2a_t Z_t}{2(1-a_t^2)}.
+\]
+Its conditional mean is $a_t^2/(1-a_t^2)+\tfrac12\log(1-a_t^2)
+=a_t^2/2+O(a_t^4)$ and its conditional variance is
+$(a_t^2+a_t^4/2)/(1-a_t^2)^2=O(w_t^2)$.
+The same martingale strong law then gives
+$\log R_n/\log n\to1/8$ almost surely.
+
+For any $Q$-valid e-process $F_n$, change of measure at bounded stopping
+times makes $F_n/R_n$ a $P$-valid e-process. Ville bounds its path supremum
+almost surely. Hence $\limsup\log F_n/\log n\le1/8$ almost surely.
+The geometric construction attains the admissible-null upper rate. This uses
+a particular null law for a matching bound, not a claim that this law is the
+exact finite-horizon information projection.
+
+An even stronger finite-remainder argument may hold: the exact identity
+$|\phi(x)-x|\le|x|^3/6$ follows by differentiating
+$x^3/6-x+\log(1+x+x^2/2)$ for $x\ge0$ and using oddness.
+Gaussian sample-mean weights have $\sum\mathbb E|w_t|^3<\infty$.
+The geometric correction beyond $\sigma^2w_t^2$ is summable, as are the
+Taylor remainders in $\ell_t$. Consequently
+\[
+ \log E_n-\log R_n
+  =\frac{\gamma^2}{8}\sum_{t\le n}w_t^2(A_t^2-\sigma^2)
+       +\hbox{a convergent remainder}.
+\]
+The displayed martingale converges because $\sum\mathbb Ew_t^4<\infty$.
+This would give a finite almost-sure log difference (possibly bounded
+expected log regret as well; verify the required absolute expectations).
+
+If the $1/8$ log-growth result is confirmed, threshold times of this single
+fixed capital obey
+\[
+ \frac{\log\tau_\alpha}{\log(1/\alpha)}\to8\quad\hbox{a.s. as }\alpha\downarrow0.
+\]
+For any family of level-$\alpha$ tests, including tests depending on $\alpha$,
+bounded-time change of measure gives, for $0<\epsilon<8$,
+\[
+ P\{\tau_\alpha\le\alpha^{-(8-\epsilon)}\}
+ \le\alpha^{\epsilon/16}
+   +P\!\left\{\max_{t\le\alpha^{-(8-\epsilon)}}\log R_t
+                   >(1-\epsilon/16)\log(1/\alpha)\right\}\to0.
+\]
+The geometric test reaches $\alpha^{-(8+\epsilon)}$ with probability tending
+to one. This is a sharp confidence exponent in this example, not an expected
+stopping-time result. No finite expectation of $\tau_\alpha$ is asserted.
+
+Finally the cumulative conditional benefit of cash versus the noisy reference
+obeys $C_n=\gamma\sigma^2 S_n/2\sim\log n/(2\gamma)$.
+Thus $C_{\tau_\alpha}/\log(1/\alpha)\to4/\gamma$ almost surely for the
+geometric test; the corresponding lower bound for arbitrary test families
+is in probability. Do not replace either assertion by an expected-cost
+equivalence without uniform integrability. The uniform plug-in capital has
+an almost-sure finite supremum, so as confidence increases it eventually
+fails to cross on almost every path and its infinite-horizon noncrossing
+probability tends to one.
+
+\paragraph{Possible extension to estimated risk inputs.}
+If $\widehat M_t$ is the past sample raw second moment plus a fixed ridge $r$,
+then under the Gaussian alternative it tends to $m=\sigma^2+r$.
+Weighted quadratic strong laws suggest $S_n/\log n\to\sigma^2/(\gamma^2m^2)$,
+giving geometric and admissible-null log-growth coefficient
+$\sigma^4/(8m^2)$ and confidence exponent $8m^2/\sigma^4$.
+The conditional utility-cost coefficient still cancels to $4/\gamma$.
+For zero ridge and $k>3$ past Gaussian observations,
+\[
+ \mathbb E(\overline A_k/\widehat M_k)^2=1/\{\sigma^2(k-2)\},\qquad
+ \mathbb E|\overline A_k/\widehat M_k|^3
+ =\frac{2\sqrt2\,k^{3/2}}
+ {\sqrt\pi\,\sigma^3(k-3)(k-1)(k+1)}.
+\]
+These follow by radial/angular independence of a Gaussian vector and provide
+summability bounds; clipping and a nonnegative ridge only reduce absolute
+targets. This extension needs a separate complete audit before inclusion.
+
+\paragraph{Prior-art checks still required.}
+Compare with Choe--Ramdas sequential forecast comparison, Waudby-Smith--
+Sandoval--Jordan instance log optimality, prequential Gaussian prediction
+regret, and \emph{Testing the mean and variance by e-processes}
+(\texttt{https://academic.oup.com/biomet/article/112/1/asae049/7796539}).
+An explicit economic specialization may be valuable even if the probability
+principles are established. Do not claim a first generic log-optimality theorem.
+
+\section*{Stronger structural route: one-sided PARK and contraction scores}
+This is another draft route, not included in the manuscript. The underlying
+linear-betting construction is standard; the proposed specialization uses the
+quadratic utility's economic upper bound and needs its own scope/novelty audit.
+
+Since $r-\gamma r^2/2\le1/(2\gamma)$, comparing cash with a risky policy has
+$Y\ge-1/(2\gamma)-D$, where $D=C_B-C_S$ is predictable. If
+$|D|\le C_{\max}$, the fixed choice
+\[
+ \lambda=\frac1{4\{1/(2\gamma)+C_{\max}\}}
+         =\frac{\gamma}{2(1+2\gamma C_{\max})}
+\]
+makes $1+\lambda Y\ge3/4$. Under $\mathbb E_{t-1}Y_t\le0$ its product is
+a nonnegative supermartingale without a certified fourth/eighth return
+moment. The score's null expectation/integrability still has to be meaningful.
+This applies to full liquidation, including a single remaining sleeve, not
+to arbitrary individually optimized signal removals.
+
+More generally let the candidate be the fixed nonnegative contraction
+$w_B=k w_S$ with $0\le k<1$. Writing $r=w_S'A$,
+\[
+ Y=-(1-k)r+\frac\gamma2(1-k^2)r^2-D
+ \ge -B_k-D,\qquad B_k=\frac{1-k}{2\gamma(1+k)}.
+\]
+Thus a fixed quarter-bound bet $1/\{4(B_k+C_{\max})\}$ is safe. Fixed bets
+(or fixed initial mixtures) also give an e-process under the weak cumulative
+null $\sum_{s\le t}\mathbb E_{s-1}Y_s\le0$ for every $t$: multiply the capital
+by $\exp\{-\lambda\sum\mathbb E_{s-1}Y_s\}$ to obtain a dominating
+supermartingale, using $(1+\lambda\delta)e^{-\lambda\delta}\le1$.
+Variable bets instead require the corresponding weighted-null condition or
+the stronger datewise null. This must not be retroactively attributed to the
+reported variable-bet financial methods.
+
+At zero costs define $h_k=\gamma(1+k)/2$ and
+$\lambda_k=h_k/(1-k)=1/(4B_k)$. The observable factor is exactly
+\[
+ 1+\lambda_kY_t=1-h_k w_tA_t+h_k^2 w_t^2A_t^2\ge3/4.
+\]
+It uses only $\gamma,k$ and observable policy outcomes. No certified variance
+is needed for validity or for this choice of bet.
+
+\paragraph{A globally defined Gaussian null for a sharp example.}
+Under the iid $N(0,\sigma^2)$ alternative, set $a_t=h_k\sigma w_t$.
+An admissible conditional Gaussian null, with no small-leverage restriction,
+is
+\[
+ Q:\quad \mu_t=\frac{a_t\sigma}{1+a_t^2},\qquad
+ \operatorname{Var}_{t-1}A_t=\frac{\sigma^2}{(1+a_t^2)^2}.
+\]
+Its raw second moment is $\sigma^2/(1+a_t^2)$ and
+$\mu_t=h_kw_t\mathbb E_Q[A_t^2\mid\mathcal F_{t-1}]$, so its conditional
+score mean is exactly zero. Its fourth moment is
+$\sigma^4(3+6a_t^2+a_t^4)/(1+a_t^2)^4\le3\sigma^4$.
+This null belongs even to the public moment contract above, as well as to
+the broader no-certified-moment null class of the linear test.
+
+The exact Gaussian log likelihood-ratio increment under $P$ is
+\[
+ \ell_t=-\log(1+a_t^2)
+       +\tfrac12\{((1+a_t^2)Z_t-a_t)^2-Z_t^2\},
+ \quad Z_t=A_t/\sigma.
+\]
+Its conditional mean is $-\log(1+a_t^2)+3a_t^2/2+a_t^4/2
+=a_t^2/2+O(a_t^4)$ and variance is $O(w_t^2)$ for bounded targets.
+The linear factor's log is $-a_tZ_t+a_t^2Z_t^2/2+O(|a_tZ_t|^3)$.
+The difference from $\ell_t$ is
+$-a_t^2(Z_t^2-1)/2$ plus absolutely summable remainders for Gaussian
+sample-mean targets. Thus its log capital differs from this admissible-null
+likelihood ratio by a finite almost-sure limit. With the moment summability
+above, bounded expected absolute log regret should also follow; audit it.
+
+For reference risk input converging to $m$, the candidate log-growth rate is
+\[
+ c_k=\frac{(1+k)^2\sigma^4}{8m^2}.
+\]
+It should be sharp among valid single-episode tests by the same change-of-
+measure argument. At $m=\sigma^2$ the sharp confidence exponent becomes
+$8/(1+k)^2$. The candidate waiting-utility coefficient is
+\[
+ \frac{C_{\tau_\alpha}}{\log(1/\alpha)}
+ \longrightarrow\frac{4(1-k)}{\gamma(1+k)}.
+\]
+The latter cancels $m$ even with a ridge; prove the stated almost-sure or
+in-probability mode before using it. These compare different fixed policy
+questions as $k$ varies, not tests with a common null. The limit $k\uparrow1$
+cannot be substituted for $k=1$, where the score is identically zero, or
+combined with $\alpha\downarrow0$ without a separate uniform argument.
+Fixed review spacing changes neither confidence exponent asymptotically,
+but competing comparison closures and a positive minimum-effect filter do.
+
+\paragraph{Connection back to constant-mean betting assumptions.}
+For these shrinking targets, a historical episode mean is of order
+$\log n/n$, while the current gain is of order $1/n$. Dividing that
+historical mean by a shrinking current second-moment certificate can overbet
+(roughly $\lambda_n\asymp\log n$), so geometry alone does not justify the
+stationary plug-in rule. The fixed-fraction, score-scale tail grid can also
+have unsuitable stakes/bias for vanishing gains. Neither observation should
+be called a proved inconsistency theorem without its own complete argument.
+The fixed economic-curvature bet above is a clean, analyzable alternative.

@@ -25,6 +25,10 @@
     },
     "ghost_pairs_checked": 102,
     "complete": true,
+    "scientific_source_hash": "3f7e2ee49857703087a3cc7326a43f2e4d036411ccc98fd2494cae4e59916071",
+    "config_hash": "b682b0ea2b924a82d7ca440eff1c59f27697eab83f7f01166130373473ec360b",
+    "verifier_sha256": "ac46a1d6768d959ed1c331975185eec9ae342d6190b83d88e97ccffbd786065d",
+    "input_digest": "f5f80fe0ca13d6721316392246ce43b63c871e5149bec9d5f15b77ea52bb54c3",
     "scope": "arithmetic replay; no optimizer optimality or global type-I claim"
   },
   {
@@ -53,6 +57,10 @@
     },
     "ghost_pairs_checked": 40,
     "complete": true,
+    "scientific_source_hash": "3f7e2ee49857703087a3cc7326a43f2e4d036411ccc98fd2494cae4e59916071",
+    "config_hash": "b682b0ea2b924a82d7ca440eff1c59f27697eab83f7f01166130373473ec360b",
+    "verifier_sha256": "ac46a1d6768d959ed1c331975185eec9ae342d6190b83d88e97ccffbd786065d",
+    "input_digest": "77f8b76e51d0247ef0947d3c6820223943bbf95ce624f2e33c17f39abb6b8bf7",
     "scope": "arithmetic replay; no optimizer optimality or global type-I claim"
   },
   {
@@ -81,6 +89,10 @@
     },
     "ghost_pairs_checked": 134,
     "complete": true,
+    "scientific_source_hash": "3f7e2ee49857703087a3cc7326a43f2e4d036411ccc98fd2494cae4e59916071",
+    "config_hash": "b682b0ea2b924a82d7ca440eff1c59f27697eab83f7f01166130373473ec360b",
+    "verifier_sha256": "ac46a1d6768d959ed1c331975185eec9ae342d6190b83d88e97ccffbd786065d",
+    "input_digest": "789cda550c529d45a153656caf83b8652cbc3d00cfb923a980af593d9799f7dc",
     "scope": "arithmetic replay; no optimizer optimality or global type-I claim"
   }
 ]

@@ -25,12 +25,15 @@
     40020
   ],
   "tests_passed": 34,
-  "pdf_pages": 19,
   "max_true_second_over_certificate": 0.46094346577646556,
   "max_true_fourth_over_certificate": 0.10975734176887597,
   "independent_annual_values_replayed": 112000,
   "maximum_replay_error": 1.9539925233402755e-14,
-  "final_pdf_sha256": "af243bcebbd3ec3f809fd5a1b41f10253ac3b48bdd215562576c3de1c7f5388c",
-  "final_pdf_pages": 19,
-  "final_pdf_visual_qa": "All pages rendered; new results, tables and final pages inspected"
+  "historical_pdf_snapshot": {
+    "pdf_pages": 19,
+    "final_pdf_sha256": "af243bcebbd3ec3f809fd5a1b41f10253ac3b48bdd215562576c3de1c7f5388c",
+    "final_pdf_pages": 19,
+    "final_pdf_visual_qa": "All pages rendered; new results, tables and final pages inspected"
+  },
+  "current_manuscript_verification": "../full_results/verification.json"
 }

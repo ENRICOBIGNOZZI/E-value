@@ -1,0 +1,25 @@
+[
+  {
+    "seed": 50001,
+    "checks": 7270704,
+    "max_absolute_errors": {
+      "fund_gross": 0.0,
+      "fund_net": 2.168404344971009e-19,
+      "fund_utility": 0.0,
+      "score": 0.0,
+      "cost_difference": 0.0,
+      "conditional_score_mean": 0.0,
+      "log_e": 8.881784197001252e-16,
+      "catoni_predictable_bet": 1.734723475976807e-17,
+      "second_cap": 0.0,
+      "fourth_cap": 0.0,
+      "ghost_cost_difference": 0.0,
+      "ghost_conditional_mean": 1.0842021724855044e-19,
+      "terminal_ghost_cost_difference": 0.0,
+      "terminal_ghost_conditional_mean": 0.0
+    },
+    "ghost_pairs_checked": 170,
+    "complete": true,
+    "scope": "arithmetic replay; no optimizer optimality or global type-I claim"
+  }
+]
