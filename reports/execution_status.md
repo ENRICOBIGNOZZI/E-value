@@ -1,4 +1,41 @@
-# Current continuation — v3 numerical recovery verified
+# Current continuation — lambda selected for deadline power
+
+The manuscript has **30 pages**, including a separate controlled comparison of
+predictable Catoni bets targeting rejection by a deadline. The original choice
+maximizes a quadratic power certificate; it does not maximize actual crossing
+probability. A standard Bellman recursion instead uses current log evidence
+and remaining review blocks under a fixed working score law. Predictability
+retains individual validity under the actual null/moment contract even when
+the working law is wrong. Numerical optimality is limited to the declared
+working model and grid, not an unknown-law or financial optimum.
+
+The corrected full replay, source freeze **bbd619f**, uses 20,000 paths under
+each of four Gaussian score laws and the same 100-observation calendar for
+all methods. At design mean .1, primary horizon power at 400 observations is
+**37.48% versus 11.41%** for the original past-mean certificate. The paired
+gain is 26.08 percentage points, Monte Carlo 95% interval [25.47,26.68].
+Both methods have individual nominal 5% validity bounds; their actual null
+rates are 1.42% and .11%, respectively. This is not a matched-actual-size
+comparison or financial performance result. All six model-power calibration
+checks pass. Independent replay checks 12,331,336 scalar values, reconstructing
+every horizon-policy/fixed stake and every first crossing; direct score-factor
+multiplication covers sixteen paths per law. **53 repository tests pass**.
+See `lambda_power_v2_results/interpretation.md` and its protocol for the
+near-threshold lookup correction and whole-pool replay counting rule.
+
+The financial scientific source is unchanged. Its v3 pilot has generated the
+first ten markets plus the previously failed seed 50020; the entire first ten
+have now passed independent replay and the next batch is running. The PDF
+keeps its explicitly labeled first-ten **v2** financial snapshot, and final
+evaluation remains **0/500**. Both contact sheets of the 30-page PDF and its
+four new section pages were visually reviewed; no clipping/overlap or unresolved
+references were found. The overall goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
+# V3 numerical recovery verified
 
 The failed market 50020 now completes under source freeze **482aa70**. The
 47-test financial suite passes, including the preserved failing QP, independent

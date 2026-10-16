@@ -212,3 +212,27 @@ These research notes are not included in the main manuscript yet.
 # Re-render the retained report without repeating simulation or arithmetic replay.
 .venv/bin/python scripts/audit_vanishing_gain.py --plot-only
 ```
+
+## Selecting lambda for a rejection horizon
+
+The manuscript now distinguishes maximizing a lower power certificate, exact
+working-model log growth, and rejection probability by a fixed deadline.
+A predictable Bellman policy targets the third objective. In the controlled
+Gaussian score study, its 400-observation power is 37.48% versus 11.41% for the
+original past-mean certificate rule. Both have individual nominal 5% bounds;
+actual null rates differ. This does not establish financial outperformance.
+See [`reports/lambda_power_v2_results/interpretation.md`](reports/lambda_power_v2_results/interpretation.md)
+and the version-correction record in
+[`reports/lambda_power_protocol.md`](reports/lambda_power_protocol.md).
+
+```sh
+# Fresh checkout only: generate the separately frozen controlled experiment.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/lambda_power_study.py build
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/lambda_power_study.py evaluate
+# Independent replay of its retained paths and stakes.
+.venv/bin/python scripts/audit_lambda_power.py
+# Rebuild only table and figure from the retained small report.
+.venv/bin/python scripts/build_lambda_results.py
+# Rebuild the manuscript while keeping the financial snapshot at ten v2 seeds.
+.venv/bin/python scripts/build_paper.py --full-pilot-count 10
+```

@@ -29,7 +29,9 @@ proportional turnover costs and quadratic market impact. A Catoni
 supermartingale validates a single adaptive comparison with a certified
 conditional second-moment bound. Under a constant positive conditional mean,
 past-only blockwise betting incurs logarithmic expected regret in a quadratic
-growth certificate and admits a finite-sample power bound. Convex analysis
+growth certificate and admits a finite-sample power bound. We distinguish this
+certificate-optimal bet from log-growth and horizon-power optimization, and
+execute a separate predictable Bellman betting experiment. Convex analysis
 characterizes the population value of adding a signal, while a uniform
 perturbation argument connects that value to estimated policies with separate
 trading states. A single simulated market combines persistent, weak, decaying
@@ -66,13 +68,17 @@ waiting for its evidence is worthwhile.
 We call the annual add--remove--swap implementation PARK/REVIVE; its name
 describes available actions, not a guarantee of adaptation to a new regime.
 
-The analysis has four parts. First, a conditional supermartingale argument
+The core analysis has four parts. First, a conditional supermartingale argument
 establishes validity for an individual adaptive episode. Second, a stationary
 alternative yields an oracle lower bound on power and a logarithmic cost for
 estimating the bet. Third, a residual marginal utility and a Schur complement
 bound the population benefit of entry under trading costs. Fourth, objective
 perturbations control the gap between population values and estimated-policy
 comparisons, including the effect of different previous allocations.
+We then distinguish optimizing a power certificate, expected log growth and
+actual working-model rejection probability by a fixed review horizon.
+The last criterion gives a predictable Bellman rule tested separately on fresh
+controlled score paths; it does not silently replace the financial methods.
 
 The statistical ingredients build on Catoni-style confidence sequences
 \cite{wr} and the broader theory of safe anytime-valid inference \cite{savi}.
@@ -105,6 +111,13 @@ developed in \cite{instance}; the portfolios there allocate statistical betting
 capital. Our investible portfolios generate utility scores, and T2 below is
 only a bound on a quadratic growth certificate, not an instance optimality
 result.
+
+Estimation noise in comparisons of nested forecasting models is already
+analyzed by \cite{clarkmccracken,clarkwest}. In particular, fitting redundant
+parameters can worsen an estimated forecast even when the population models
+coincide. We retain such estimation effects when they change traded utility:
+our inferential target is an implemented policy comparison, rather than an
+estimation-noise-adjusted test of population predictive content.
 
 Multiple testing remains a separate issue. The financial significance of
 searching among many predictors is emphasized by \cite{hlz}. Our specified
@@ -398,6 +411,8 @@ the realized log-capital difference from the fixed-bet oracle. In the changing
 market below, neither a constant effect nor a constant conditional mean is
 available. T1 still applies when its null is true, but T2b--c cannot be
 transferred to regime adaptation.
+
+\input{sections/10_lambda_power.tex}
 
 \section{The economic value of an additional signal}
 Fix a date and a common previous state $b$. In this section only, remove the
@@ -694,6 +709,13 @@ complete final simulation and a broader prior-art review are necessary before
 claiming either practical superiority or methodological novelty. Empirical
 applications are outside this paper's current scope.
 
+The separate horizon-betting experiment improves rejection probability under
+its declared stationary design law while retaining individual validity.
+Its working score model and one-dimensional evidence state do not describe
+the evolving financial policy pairs. Its power gain therefore does not
+establish better financial decisions or remove the cost of a conservative
+public risk envelope, a positive minimum-effect floor or changing regimes.
+
 \appendix
 \begingroup\small
 \section{Conditional moments used only by the evaluator}
@@ -790,6 +812,17 @@ Author version, revised March 2026: \url{https://arxiv.org/abs/2511.05840}.
 Instance-Log-Optimality of Portfolio-Based E-Processes and their Sequential
 Hypothesis Tests. Author version, revised September 2026:
 \url{https://arxiv.org/abs/2504.02818}.
+\bibitem{reachability} Chatterjee, D., E. Cinquemani, and J. Lygeros (2009).
+Maximizing the probability of attaining a target prior to extinction.
+Author version: \url{https://arxiv.org/abs/0904.4143}.
+\bibitem{clarkmccracken} Clark, T. E., and M. W. McCracken (2001).
+Tests of equal forecast accuracy and encompassing for nested models.
+\emph{Journal of Econometrics} 105(1), 85--110.
+Author version: \url{https://www.kansascityfed.org/documents/5266/pdf-rwp99-11.pdf}.
+\bibitem{clarkwest} Clark, T. E., and K. D. West (2007).
+Approximately normal tests for equal predictive accuracy in nested models.
+\emph{Journal of Econometrics} 138(1), 291--311.
+Author version: \url{https://www.kansascityfed.org/documents/5368/pdf-RWP05-05.pdf}.
 \end{thebibliography}
 \endgroup
 \end{document}

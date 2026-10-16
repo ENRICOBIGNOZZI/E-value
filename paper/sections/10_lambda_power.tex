@@ -1,0 +1,124 @@
+\section{Selecting bets for a rejection horizon}
+\label{sec:lambda-power}
+The optimizer $\delta/(2\nu^2)$ in T2 maximizes its inverse-capital power
+certificate. It need not maximize actual crossing probability. Two other
+objectives are expected log-evidence growth and rejection before a specified
+deadline. They generally select different bets. The capital in this section
+is statistical evidence, not investible fund wealth.
+
+\subsection{Expected log growth has a different optimizer}
+For a fixed conditional score law with mean $\delta$ and
+$\E Y^2\le\nu^2$, write
+\[
+ g_{\log}(\lambda)=\E\phi(\lambda Y)-\lambda^2\nu^2/2.
+\]
+\begin{proposition}[A strictly concave log-growth objective]
+The function $g_{\log}$ is strictly concave on $[0,\infty)$, with
+\[
+ -\frac54\nu^2\le g_{\log}''(\lambda)\le-\frac34\nu^2.
+\]
+If $\delta\le0$, its nonnegative maximizer is zero. If $\delta>0$, its
+unconstrained maximizer is the unique solution of
+\begin{equation}
+ \E\!\left[Y\frac{1+\lambda|Y|}
+ {1+\lambda|Y|+\lambda^2Y^2/2}\right]=\lambda\nu^2,
+ \qquad
+ \frac{4\delta}{5\nu^2}\le\lambda_{\log}^*
+ \le\frac{4\delta}{3\nu^2}.\label{eq:log-optimal-bet}
+\end{equation}
+A finite upper cap clips this maximizer.
+\end{proposition}
+\begin{proof}
+Differentiating the specified Catoni function gives
+\[
+ \phi'(x)=\frac{1+|x|}{1+|x|+x^2/2},\qquad
+ \phi''(x)=-\operatorname{sign}(x)
+ \frac{|x|+x^2/2}{(1+|x|+x^2/2)^2}.
+\]
+The second derivative extends continuously by zero at the origin.
+Setting $u=1+|x|$ shows that $|\phi''(x)|$ is bounded by the maximum of
+$2(u^2-1)/(u^2+1)^2$, namely $1/4$. Finite $\E Y^2$ permits dominated
+differentiation. Thus $g_{\log}''=\E[Y^2\phi''(\lambda Y)]-\nu^2$ has the
+stated bounds. Its derivative at zero is $\delta$ and decreases strictly
+to a negative value. Integrating the derivative bounds proves
+\eqref{eq:log-optimal-bet} and the capped result.
+\end{proof}
+
+For small transformed scores, $\lambda_{\log}^*$ is near
+$\delta/\nu^2$, rather than $\delta/(2\nu^2)$. Optimizing a fitted law
+therefore targets \emph{predicted} log growth; it does not establish optimal
+growth under an unknown true law. Nor does log-growth optimization solve a
+finite-deadline power problem. These distinctions are compatible with the
+existing general betting and log-optimality literature \cite{instance}.
+
+\subsection{Targeting power directly}
+Fix a working law for future score blocks, a finite action set
+$\mathcal A\subset[0,\lambda_{\max}]$ containing zero, and
+$b_\alpha=\log(1/\alpha)$. A constant bet within a block of $h$ scores has
+working log-capital increment
+\[
+ Z_\lambda=\sum_{i=1}^h\phi(\lambda Y_i)-h\lambda^2\nu^2/2,
+ \qquad Z_\lambda\sim Q_\lambda.
+\]
+Suppose the next block has this conditional working distribution given the
+chosen action, independently of earlier blocks. Set
+\begin{equation}
+ V_0(\ell)=\mathbf1\{\ell\ge b_\alpha\},\qquad
+ V_k(\ell)=
+ \begin{cases}
+ 1,&\ell\ge b_\alpha,\\
+ \displaystyle\max_{\lambda\in\mathcal A}
+       \int V_{k-1}(\ell+z)Q_\lambda(dz),&\ell<b_\alpha.
+ \end{cases}\label{eq:power-bellman}
+\end{equation}
+\begin{proposition}[Working-model horizon power]
+The recursion gives the largest probability, under the specified working
+model and action class, of crossing at a review within $k$ remaining blocks.
+A maximizing action chosen from the current log capital and remaining time
+is predictable. Under the \emph{real} datewise null and real public moment
+bound, the resulting process retains T1's individual type-I guarantee even
+when the working power model is misspecified.
+\end{proposition}
+\begin{proof}
+At zero remaining blocks the claim is the definition of crossing. At an
+uncrossed state, condition on the next action and increment. The induction
+hypothesis makes the conditional continuation value at most
+$V_{k-1}(\ell+z)$; maximizing its integral gives the upper bound. Selecting a
+maximizer and then the inductively optimal continuation attains it. The
+finite action set permits measurable tie breaking. Each selected action uses
+only pre-block information, so T1 applies separately to the real score law.
+\end{proof}
+This is a standard finite-horizon target-reachability calculation
+\cite{reachability}, specialized to the specified evidence process. The
+computed implementation also discretizes log capital; its numerical maximum
+is not asserted to be a continuous-control global optimum. A full financial
+score model would also need the evolving estimation and allocation states.
+The scalar stationary calculation below does not supply that model.
+
+\subsection{A separately frozen controlled comparison}
+We fix the working score law at $N(.1,1)$, $\nu^2=1.09$,
+$\alpha=.05$, and the common cap $1/(2\sqrt{1.09})$. Every rule keeps its bet
+for 100 observations and can reject only at the same 100-observation reviews.
+The declared deadlines are 400, 800 and 1600 observations. The fixed
+certificate bet is $.0458716$ and the exact working-model log-growth bet is
+$.0908020$. The horizon rule also uses its current capital and remaining
+blocks; it is not a single larger constant bet.
+
+Exact Gaussian CDF bins and FFT convolution give block-increment distributions.
+The primary log-capital spacing is $.01$ with 129 regular actions; a refinement
+uses $.005$, 257 actions and a wider lower boundary. Both include the fixed
+comparison bets. Their predicted initial powers differ by at most $.000396$.
+An initial nearest-grid implementation could round a real subthreshold capital
+into the absorbing threshold state. The corrected lookup prevents this, and
+the entire declared random stream is replayed without changing the numerical
+grids, design alternative, cap or deadlines. Initial outputs remain diagnostics.
+
+The evaluation uses 20,000 independent paths at each actual score mean
+$0,.1,.2,.3$, all with variance one. All four laws satisfy the common public
+moment bound. The actual mean determines only the generated scores; bets use
+the fixed working law, pre-block capital and past scores. Mean zero checks the
+boundary null; the other two non-design alternatives assess misspecification.
+The following results concern this controlled score experiment, not additional
+financial markets or a revised primary fund strategy.
+
+\input{generated_lambda_results.tex}

@@ -113,6 +113,9 @@ def main():
         from build_full_results import summarize
         snapshot=range(50001,50001+args.full_pilot_count) if args.full_pilot_count is not None else None
         summarize(full_results,root/'reports/full_results',root/'paper',snapshot)
+    if (root/'reports/lambda_power_v2_results/verification.json').exists():
+        from build_lambda_results import generate as generate_lambda
+        generate_lambda(root)
     engine=shutil.which('tectonic') or '/opt/homebrew/bin/tectonic'
     subprocess.run([engine,'--keep-logs','main.tex'],cwd=root/'paper',check=True)
     print(root/'paper/main.pdf')

@@ -1,0 +1,22 @@
+{
+  "study_source_matches_freeze": true,
+  "scalar_checks": 12331336,
+  "max_prefix_log_capital_error": 6.17284001691587e-14,
+  "all_stake_bounds_checked": true,
+  "all_DP_and_fixed_stakes_reconstructed": true,
+  "all_first_crossings_replayed": true,
+  "multiplicative_score_replay_paths_per_law": 16,
+  "all_model_calibrations_pass": true,
+  "inputs": {
+    "model_refinement.npz": "43c1db3ff739e6f81683308f54c79f9829170f9268671f7e2ede60171396dca9",
+    "summary.csv": "8d67dc06aa592e0e43d6e44ea0898b63445901f0e916cfc0fd2aafd2cd422e03",
+    "model_primary.npz": "db28becd173022bc40416ee648fcea6ea2506f3437084cea32a9a6c21320e6bb",
+    "mean_0.npz": "190c785f1faab85f27c4e5e07489f89f7a54d3a65892fb80e5369080ee06d7b3",
+    "mean_0.2.npz": "eb4dfc43be8e7b4e73316de187afbc6c111158a70523300875bf07a42a7efb95",
+    "mean_0.3.npz": "87d7b24e3b8dbc78fc35f088f7a4563509387a4ac883f0b6bc74f108d90523d1",
+    "mean_0.1.npz": "8299ebe6547489fa904a22009943190ddaad1fdb20f9c3a9f23dabbc23b0b08e",
+    "status.json": "3a3606f5b38026a6c94aff11c349a0031f76bb576ebcbe59cc020b64292028b8",
+    "model_manifest.json": "d7551262da5e7eba0ad79dac1896aee8962302eaea02f742a9cbe91230c3f004"
+  },
+  "scope": "Every DP/fixed stake and first crossing checked. Score multiplication and past-mean stake checks cover the declared sixteen-path prefix per law, not every score path. Each rule has individual nominal 5% validity; actual null crossing rates differ. No financial performance claim."
+}

@@ -60,6 +60,19 @@ Additional close primary sources checked for the full-strategy continuation:
   portfolios generate the scores being tested. We claim neither a new general
   regret principle nor instance optimality/minimaxity of the proposed fund.
 
+Additional sources for the lambda and nested-model sections:
+
+- Chatterjee, Cinquemani and Lygeros, [author version](https://arxiv.org/html/0904.4143):
+  finite-horizon target-reaching probabilities and their Bellman recursion are
+  standard control tools. The manuscript applies that objective to predictable
+  Catoni bets; it does not claim to invent dynamic programming or global power
+  optimization under an unknown law.
+- Clark and McCracken, [author version](https://www.kansascityfed.org/documents/5266/pdf-rwp99-11.pdf),
+  and Clark and West, [author version](https://www.kansascityfed.org/documents/5368/pdf-RWP05-05.pdf):
+  nested-model forecast tests and estimation-noise adjustments precede this
+  work. Our implemented-policy utility comparison retains that estimation loss
+  rather than adjusting it away to infer population predictive content.
+
 The defensible contribution currently consists of explicit economic/state
 accounting, a public label-free policy-geometry moment envelope, a corrected-tail
 specialization with stronger moment assumptions, and transparent feasibility

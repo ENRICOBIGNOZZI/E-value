@@ -17,9 +17,9 @@
   "scalar_arithmetic_checks": 88285790,
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
-  "pdf_pages": 25,
-  "pdf_sha256": "2b7e1bb7e0da6dd3407a071a73d1fd7e666d54fe993956036e4fa5c5b1437957",
-  "pdf_visual_qa": "Final 25-page file re-rendered in full; both contact sheets reviewed. Pages 9,20,22,25 also inspected individually at larger resolution. No clipping/overlap; bibliography fits; no overfull or undefined-reference log entries.",
+  "pdf_pages": 30,
+  "pdf_sha256": "b6eff435b7b20b6649edcb818d0192aeafd76b545bb29cd0d2de1f66c570e622",
+  "pdf_visual_qa": "All 30 pages re-rendered and reviewed on two contact sheets; new section pages 7\u201310 inspected individually. Figure inspected at full resolution. No clipping/overlap, unresolved references or overfull log entries.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -27,15 +27,28 @@
     "paper/figures/first_entry_feasibility.png": "bb5b10592855396a64074f45b5c693057d9fe000343f79ff2595e507c255afb6",
     "paper/figures/full_strategy_evidence.png": "ebd4891d95d13526f517f34181932d0f4922977db76d798e4cb6d5ca62dbf0c9",
     "paper/figures/full_strategy_paths.png": "f203fb710e83d24c45f7056484b8e8a0d25775606d3eec48b87442478674c596",
+    "paper/figures/lambda_power.png": "c5030e099196b343f006ec60b143e0398f6cd6e6780d8f53a0a49906eff5dba8",
     "paper/figures/stationary_power.png": "c3d3ddbca49df76adf908452b855613d662ca235e446cc3f6f8dc25ad3263518",
     "paper/generated_full_results.tex": "dc409f6ecbfa0fc4e7fd74532d9058d446a1343eb5a91ef46af04e3557cceb15",
+    "paper/generated_lambda_results.tex": "fa06e81cfe2c9f05066059009c5d59eef4e7bd9d83a862435bec89aa75afe9cb",
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
-    "paper/main.tex": "a67875c7e54b7c14187ce13126557867cd33bd35d81b21996518749fe898879c",
+    "paper/main.tex": "32945a6733a682b1c509abeb0f632241e94eb36bafa72e4a13d089dc296f8d66",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "497f2f7fdf5c9ad6c938663ec6efaf6802c9cc1edccc79cfeec670ef0011a400",
     "paper/sections/08_global_safety.tex": "e2f994168ba37ca326f44a1ffe0dcb3afce2d21321a098dfbc954fb0eda2b0b1",
-    "paper/sections/09_full_strategy.tex": "31cce11fdd66c552c62145a2fb163d5b059da0a1e9d8f1b8d3b0a1019eabccba"
+    "paper/sections/09_full_strategy.tex": "6e3e08ddc21806a3758040679b27d5e16e1358b1e0a966e25805e4b1eb4a171e",
+    "paper/sections/10_lambda_power.tex": "40cda4f5378f7a51c57e9ef4fca332f669ba8f6254c50a2a761b2d8b46070acf"
   },
-  "scope": "First-ten v2 pilot snapshot only. Expanded pilot stopped at seed 50020 after 19 completed markets. Final study 0/500. Unintegrated research note excluded."
+  "scope": "Financial results remain first-ten v2 pilot snapshot only. V3 same-pool pilot replay running; final 0/500. Separate corrected lambda score study included. Vanishing-gain research note excluded pending integration/presentation review.",
+  "current_repository_tests_passed": 53,
+  "current_repository_test_report": "reports/full_test_results_with_lambda.txt",
+  "tests_passed_scope": "Historical 44-test financial v2 snapshot; current repository additionally includes vanishing-gain, numerical-recovery and lambda-selection checks.",
+  "lambda_power_study": {
+    "source_freeze_commit": "bbd619f",
+    "source_hash": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
+    "audit": "reports/lambda_power_v2_results/verification.json",
+    "scalar_checks": 12331336,
+    "scope": "Separate controlled Gaussian score study; not extra financial markets or financial performance."
+  }
 }

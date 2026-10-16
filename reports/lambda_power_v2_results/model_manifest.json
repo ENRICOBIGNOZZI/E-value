@@ -1,0 +1,72 @@
+{
+  "config": {
+    "label": "catoni-finite-horizon-power-v2",
+    "seed": 440001,
+    "replications": 20000,
+    "alpha": 0.05,
+    "block": 100,
+    "horizon_blocks": [
+      4,
+      8,
+      16
+    ],
+    "score_means": [
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "score_sd": 1.0,
+    "public_second": 1.09,
+    "design_mean": 0.1,
+    "initial_gain": 0.1,
+    "cap_multiplier": 0.5,
+    "increment_range": 64.0,
+    "gaussian_tail_sd": 12.0,
+    "numerical_power_tolerance": 0.005,
+    "models": {
+      "primary": {
+        "step": 0.01,
+        "lower": -18.0,
+        "actions": 129
+      },
+      "refinement": {
+        "step": 0.005,
+        "lower": -24.0,
+        "actions": 257
+      }
+    },
+    "audit_path_prefix": 16
+  },
+  "source_sha256": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
+  "audits": {
+    "primary": {
+      "daily_radius": 328,
+      "block_radius": 6400,
+      "maximum_daily_tail": 0.0,
+      "maximum_block_tail": 3.909353511253965e-13,
+      "maximum_mass_error": 1.1435297153639112e-14
+    },
+    "refinement": {
+      "daily_radius": 654,
+      "block_radius": 12800,
+      "maximum_daily_tail": 0.0,
+      "maximum_block_tail": 5.421286716843427e-13,
+      "maximum_mass_error": 2.1538326677728037e-14
+    }
+  },
+  "initial_power": {
+    "primary": {
+      "400": 0.37272983454188224,
+      "800": 0.7299628100778027,
+      "1600": 0.9693617832916998
+    },
+    "refinement": {
+      "400": 0.37233467952386273,
+      "800": 0.7298788029341311,
+      "1600": 0.9695286163497531
+    }
+  },
+  "max_refinement_difference": 0.0003951550180195107,
+  "log_growth_bet": 0.09080199172897861
+}

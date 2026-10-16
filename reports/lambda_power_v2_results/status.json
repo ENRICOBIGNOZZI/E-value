@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "config": {
+    "label": "catoni-finite-horizon-power-v2",
+    "seed": 440001,
+    "replications": 20000,
+    "alpha": 0.05,
+    "block": 100,
+    "horizon_blocks": [
+      4,
+      8,
+      16
+    ],
+    "score_means": [
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "score_sd": 1.0,
+    "public_second": 1.09,
+    "design_mean": 0.1,
+    "initial_gain": 0.1,
+    "cap_multiplier": 0.5,
+    "increment_range": 64.0,
+    "gaussian_tail_sd": 12.0,
+    "numerical_power_tolerance": 0.005,
+    "models": {
+      "primary": {
+        "step": 0.01,
+        "lower": -18.0,
+        "actions": 129
+      },
+      "refinement": {
+        "step": 0.005,
+        "lower": -24.0,
+        "actions": 257
+      }
+    },
+    "audit_path_prefix": 16
+  },
+  "source_sha256": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
+  "seconds": 34.328135333023965,
+  "scope": "Controlled Gaussian score study. Each bet uses a predeclared working alternative and pre-block capital/past scores. Bellman optimization is for the declared discretized model, not globally optimal power under every law or financial outperformance."
+}

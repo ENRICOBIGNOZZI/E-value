@@ -1,7 +1,9 @@
 # Proof audit: costless cash-PARK with vanishing estimation error
 
-Status: mathematical research audit, **excluded from the main manuscript** until
-the controlled study and presentation review are complete. No claim of a first
+Status: mathematical research audit, **excluded from the main manuscript** pending
+presentation and broader novelty review. The controlled scalar study is complete;
+its very low finite-horizon power is reported in `vanishing_gain_results/`.
+No claim of a first
 general betting, likelihood-optimality or prequential-regret theorem is made.
 The financial configuration and its positive comparison-mean floor are unchanged.
 
@@ -198,6 +200,13 @@ superior full-fund performance in the main financial simulation.
   [Grünwald and Kotłowski](https://arxiv.org/abs/1002.0757): logarithmic losses
   of prequential plug-in predictions are established. Quadratic strong laws
   and Gaussian mean-estimation log losses must be treated as known tools.
+- [Clark and McCracken, author version](https://www.kansascityfed.org/documents/5266/pdf-rwp99-11.pdf)
+  and [Clark and West, author version](https://www.kansascityfed.org/documents/5368/pdf-RWP05-05.pdf):
+  nested forecast comparison already accounts for estimated extra coefficients
+  producing noise and smaller-model prediction advantages. Our cash-PARK
+  comparison retains the implemented policy's estimation loss in its utility
+  target; it does not introduce the general phenomenon of nested-model noise
+  or replace their predictive-content tests.
 
 The potentially useful contribution is the explicit cash-PARK example:
 vanishing estimation-error gains, failure of a particular uniform-bound
