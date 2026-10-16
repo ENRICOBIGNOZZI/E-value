@@ -9,6 +9,13 @@ Two initial waiting observers were replaced during development to harden
 transient process observations and pin the entire committed analysis plan;
 neither had launched a final market. Only the final tested controller remains.
 
+The first **40** pilot markets now have complete independent arithmetic
+replays. A read-only integrity revalidation confirms all forty current input
+digests still match those replay records after checkpoint-cache compaction.
+The existing replay counts are summarized in
+`full_v3_results/pilot40_replay_milestone.json`; the integrity check adds no
+new arithmetic replay or market replication. The next batch is generating.
+
 The continuation requires exact completion membership, unchanged scientific
 source/configurations and the original analysis-plan bytes committed at
 **c7f7275**. After independent pilot replay/sealing and report audit/assessment,
