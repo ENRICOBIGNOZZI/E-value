@@ -3,7 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern,microtype,amsmath,amssymb,amsthm,mathtools,bm}
 \usepackage[margin=27mm]{geometry}
-\usepackage{graphicx,booktabs,array,enumitem,xcolor,hyperref}
+\usepackage{graphicx,booktabs,array,enumitem,xcolor,placeins,float}
+\usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black}
 \setlength{\emergencystretch}{3em}
 \newtheorem{theorem}{Theorem}
@@ -37,7 +38,10 @@ protocol explicitly separates individual-test validity, economic decision
 quality and portfolio performance. Its uniform risk certificate and annual
 decision bottleneck can make validation economically slow. We report executed
 diagnostics without presuming superiority, global error control or a theorem
-of adaptation to changing regimes.
+of adaptation to changing regimes. A declared extension combines observable
+policy geometry with bias-corrected tail betting under eighth return moments;
+new first-entry experiments distinguish feasible certification from useful
+investment timing.
 \end{abstract}
 \noindent\textbf{Keywords:} sequential inference; investment signals; e-processes;
 transaction costs; portfolio estimation; simulation.
@@ -70,6 +74,14 @@ comparisons, including the effect of different previous allocations.
 
 The statistical ingredients build on Catoni-style confidence sequences
 \cite{wr} and the broader theory of safe anytime-valid inference \cite{savi}.
+Sequential comparison of forecast scores is developed by \cite{henzi} and
+\cite{choe}; the latter also treats a weak null about average conditional
+score differences. Our T1 uses the datewise conditional-mean null stated
+below. It does not establish validity for that broader weak null. All sleeve
+returns are observed, so the present setting permits full-information
+counterfactual score calculation rather than requiring off-policy importance
+weights. The economic additions concern estimated constrained portfolios,
+separate trading states and explicit moment certificates.
 The economic optimization uses the convex trading perspective of
 \cite{boyd}. The present contribution is the explicit connection of these
 components to comparisons of estimated investment policies with separately
@@ -589,9 +601,14 @@ conventional and HAC-adjusted Sharpe, drawdown, costs, turnover, inactivity and
 selected support size. A variance-zero Sharpe is undefined. Net wealth is
 absorbed at zero on insolvency; failed paths are retained. Structural discovery
 and conditional economic quality are reported separately. Two consecutive
-favorable annual economic comparisons define evaluator-only detection events;
-undetected events are right-censored. These path-based labels do not define
-an ex ante type-I-error calibration experiment.
+favorable annual economic comparisons define exploratory evaluator events.
+Those legacy event logs condition on survival of an unchanged comparison;
+rapid accepted moves can close the comparison before a second block exists.
+They therefore do not identify comparable detection-delay distributions and
+are not used as evidence of detection performance. A future delay study must
+continue the relevant counterfactual policies after their comparisons close.
+These path-based labels also do not define an ex ante type-I-error calibration
+experiment.
 
 All methods share each simulated market. Uncertainty about performance uses
 independent paired seeds, not individual daily observations. Smoke runs test
@@ -604,6 +621,8 @@ Execution status is reported explicitly below.
 This draft contains no executed-result claim. Numeric output must first be
 generated and linked to this section by the reproducible paper-building script.}
 
+\input{sections/07_certified_tails.tex}
+
 \section{Discussion}
 The central economic distinction is between a direction that can help an
 informed optimizer and a policy that helps when estimated and traded. T3
@@ -613,7 +632,10 @@ utility differences justify rejecting an episode-wide conditional null.
 These questions remain distinct even when their calculations share data.
 
 Several obstacles remain before a strong publication claim is warranted.
-The conservative moment certificate may prevent meaningful entry, the annual
+The baseline moment certificate prevents entry in the executed pilot; the
+declared higher-moment extension makes first certification feasible in new
+markets but still requires substantial waiting and has no verified full-strategy
+performance result. The annual
 calendar restricts the number of experiments that can become positions, and
 the episode null does not directly express a current-regime profitability
 claim. No multiplicity guarantee protects the whole selection process. A
@@ -684,5 +706,18 @@ P. Nystrup, and J. Speth (2017). Multi-Period Trading via Convex Optimization.
 \ldots\ and the Cross-Section of Expected Returns.
 \emph{Review of Financial Studies} 29(1), 5--68.
 Working paper: \url{https://www.nber.org/papers/w20592}.
+\bibitem{boundedbet} Waudby-Smith, I., and A. Ramdas.
+Estimating means of bounded random variables by betting.
+Author version: \url{https://arxiv.org/abs/2010.09686}.
+\bibitem{heavysurvey} Lugosi, G., and S. Mendelson (2019).
+Mean estimation and regression under heavy-tailed distributions---a survey.
+\url{https://arxiv.org/abs/1906.04280}.
+\bibitem{henzi} Henzi, A., and J. F. Ziegel.
+Valid sequential inference on probability forecast performance.
+Author version: \url{https://arxiv.org/abs/2103.08402}.
+Published correction: \url{https://doi.org/10.1093/biomet/asac043}.
+\bibitem{choe} Choe, Y. J., and A. Ramdas.
+Comparing Sequential Forecasters.
+Author version: \url{https://arxiv.org/abs/2110.00115}.
 \end{thebibliography}
 \end{document}

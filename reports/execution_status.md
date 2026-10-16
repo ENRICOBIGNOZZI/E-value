@@ -1,3 +1,69 @@
+# Latest research continuation — 16 October 2026
+
+Scope remains **theory and simulations only**. The baseline package and original
+financial results are unchanged. The active paper goal is not yet complete.
+
+- Current manuscript: **19 pages**, with a separately declared higher-moment extension.
+- Current tests: **34 passed** (23 original checks and 11 extension checks).
+- Extension numerical implementation: commit `b9edb2c`; every executed module hash
+  and the controlled-study script hash match that committed snapshot.
+- Fresh mechanism markets: **20/20 completed**, seeds 40001–40020, N=500,
+  p=100, h=252 and 15 years. They follow 100 fixed empty-reference comparisons,
+  not a complete post-entry Forward–Backward–Swap strategy.
+- Corrected tail + geometry: **19/20** markets obtain an annual eligible first
+  entry; **18/20** have observations remaining after that date. One first
+  certification is terminal; one market never crosses. No seed was removed.
+- Median first-entry time among the 19 crossings: **12 OOS years**. The Wilson
+  95% interval for the 19/20 market-level fraction is [0.764,0.991]. This is not
+  individual-test power and there is no global 5% guarantee over 100 candidates.
+- The other three first-entry arms produce 0/20 entries. These arms share the
+  exact same score series. The combined improvement is statistical feasibility,
+  not demonstrated economic superiority.
+- Conditional moment coverage: maximum true/certified second moment 0.460944;
+  fourth moment 0.109758 over all executed candidates/dates. The proof supplies
+  validity; these calculations independently audit the implementation.
+- New skew-null diagnostics: 10,000 paths per case, 2,000 observations; corrected
+  null crossing 0.0068, deliberately invalid clipping-without-correction control
+  0.9966. The latter is an invalid negative control, not a trading benchmark.
+- Independent artifact replay verifies **112,000 annual evidence values**, every
+  first crossing and censoring outcome, without oracle columns or checkpoint
+  objects. Maximum absolute log-evidence discrepancy is 1.96e-14.
+- A separately labeled post-hoc action audit exactly replays every selected
+  history and reoptimizes from the fund's real zero state. All 18 nonterminal
+  hypothetical entries have positive next-period conditional utility after
+  costs; mean actual-entry utility is 0.957 basis points versus 2.457 for the
+  continuing shadow, with a 1.500-basis-point entry cost. No next return is drawn
+  and no post-entry fund path or current-profitability guarantee is claimed.
+- Additional theory: bias-corrected conditional betting proof; public policy
+  geometry; Laplace moments through order eight; a local rare-loss information
+  bound, matching local order at a deterministic design alternative and a
+  single-gate costless opportunity-cost corollary.
+- The legacy detection logs have a reproduced risk-set defect: immediate
+  responses can be excluded from eligibility. They are not used as evidence of
+  comparative detection delays; see `reports/detection_audit.md` and its explicit
+  counterexample. Returns, costs and the original inactive-baseline result are
+  unaffected.
+
+The extension was locally frozen after the original pilot and before its fresh
+markets. It was not externally preregistered. Its fourth-score-moment route
+requires **eighth return moments**, beyond the baseline Catoni assumption.
+No sample moments, true coefficients or hidden regimes are substituted for the
+public risk envelope. Published claims remain restricted to individual episodes.
+
+Artifacts: `paper/main.pdf`, `paper/sections/07_certified_tails.tex`,
+`reports/tail_results/` (small numeric/provenance snapshots), and
+`outputs/park_revive_tail_v1/first_entry/` (complete annual/daily ledgers).
+Reproduce with `scripts/run_first_entry.py`, `scripts/tail_study.py` and
+`scripts/build_paper.py`; exact commands are in the README.
+
+Still required for the full paper: a validated full-strategy extension on fresh
+markets, an economic assessment of its long waiting period, unbiased economic
+PARK/REVIVE risk sets, broader prior-art validation and a final frozen large
+simulation. The old 100-seed baseline pilot remains at 3/100 and final study at
+0/500. The new twenty mechanism markets do not fill either count.
+
+---
+
 # Execution status — 16 October 2026
 
 The repository was rebuilt for **theory and simulations only**. The manuscript is
@@ -26,7 +92,7 @@ an executed working draft, not a completed publication or a claimed 10/10 paper.
   separately. The learner never consumes those truth files.
 - Recorded maximum primal residual = 2.13e-8, dual residual < 1.00e-8, and solver
   duality gap < 9.62e-9 across reported actual policies.
-- PDF compiled with Tectonic; all 13 pages rendered for visual inspection;
+- PDF compiled with Tectonic; the current 19-page version rendered for visual inspection;
   references resolve and the log has no overfull boxes.
 
 ## Actually executed
@@ -66,7 +132,7 @@ under unrestricted nonstationarity. Neither is claimed as a new general theorem.
 
 ## Artifacts
 
-- Manuscript: `paper/main.tex`, `paper/main.pdf` (13 pages).
+- Manuscript: `paper/main.tex`, `paper/main.pdf` (now 19 pages; latest continuation above).
 - Small numeric snapshots and provenance: `reports/results/`.
 - Frozen full ledgers, score histories, truth and figures: `outputs/park_revive_v1/frozen_pilot/`.
 - Frozen smoke output: `outputs/park_revive_v1/frozen_smoke/`.
@@ -94,5 +160,5 @@ under unrestricted nonstationarity. Neither is claimed as a new general theorem.
 Scientifically, a much larger unchanged experiment cannot by itself repair the
 observed feasibility problem. The next research work is a tighter genuinely
 certified comparison-level envelope and an explicit target for regime-changing
-benefits. No replacement design was silently introduced; it would require new
-assumptions, proofs, named configuration and fresh evaluation seeds.
+benefits. The separately declared extension above supplies a candidate with stronger moment
+assumptions and fresh mechanism seeds. Full-strategy evidence remains outstanding.

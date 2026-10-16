@@ -1,0 +1,12 @@
+{
+  "kind": "post-hoc descriptive conditional action valuation",
+  "inputs_sha256": "72c5ee8cad4a6b056696022caa9a6d4332daaa4a380cefc875d7c7812de03169",
+  "future_returns_drawn": false,
+  "full_fund_path_simulated": false,
+  "terminal_rows_excluded_from_within_horizon_summaries": true,
+  "real_fund_previous_state": "zero allocation",
+  "original_true_current_mean_semantics": "conditional gain of last evaluated pre-return shadow pair, not next-period deployment gain",
+  "all_reported_entries_included": 19,
+  "source_commit": "b9edb2c for the frozen simulator",
+  "evaluator_sha256": "880a6d18778e926b96b087b298f6fbae312d5fc8d79014d013abc312fbb5dc1c"
+}

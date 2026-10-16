@@ -51,6 +51,7 @@ def tex_escape(s):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--results',default='outputs/park_revive_v1/frozen_pilot')
+    parser.add_argument('--tail-results',default='outputs/park_revive_tail_v1/first_entry')
     args=parser.parse_args();root=Path(__file__).resolve().parents[1]
     results=(root/args.results).resolve()
     cfg=json.loads((results/'config_frozen.json').read_text())
@@ -62,7 +63,7 @@ def main():
         f'$N={cfg["n_assets"]}$, $p=100$, $h={cfg["block"]}$ and {cfg["years"]} years per seed. '
         'These are pilot results, not the planned 500-seed final evaluation. '
         'Three separate reduced-dimension smoke seeds exercise the software only.',
-        r'\begin{table}[ht]\centering\small',r'\begin{tabular}{lrrrr}',r'\toprule',
+        r'\begin{table}[H]\centering\small',r'\begin{tabular}{lrrrr}',r'\toprule',
         r'Method & Utility$\times h$ & Net Sharpe & Moves & Inactive \\',r'\midrule']
     summary=metrics.groupby('method',sort=False).agg(u=('annual_scaled_utility','mean'),sr=('sharpe','mean'),moves=('moves','mean'),idle=('inactive_fraction','mean'))
     for name,r in summary.iterrows():
@@ -95,12 +96,16 @@ def main():
             destination=root/'paper/figures';destination.mkdir(exist_ok=True)
             shutil.copy2(results/'figures'/f'{filename}.png',destination/f'{filename}.png')
             rel=Path('figures')/f'{filename}.png'
-            lines += [r'\begin{figure}[ht]\centering',f'\\includegraphics[width=.97\\linewidth]{{{rel}}}',f'\\caption{{{caption}}}',r'\end{figure}']
-    lines += [r'\clearpage']
+            lines += [r'\begin{figure}[H]\centering',f'\\includegraphics[width=.97\\linewidth]{{{rel}}}',f'\\caption{{{caption}}}',r'\end{figure}']
+    lines += [r'\FloatBarrier']
     (root/'paper/generated_results.tex').write_text('\n\n'.join(lines)+'\n')
     snapshots=root/'reports/results';snapshots.mkdir(exist_ok=True)
     for name in ('metrics_by_seed.csv','paired_comparisons.csv','statistical_study.csv','config_frozen.json','seed_manifest.json','provenance.json'):
         if (results/name).exists():shutil.copy2(results/name,snapshots/name)
+    tail_results=(root/args.tail_results).resolve()
+    if (tail_results/'entry_summary.csv').exists():
+        from build_tail_results import generate
+        generate(root,tail_results)
     engine=shutil.which('tectonic') or '/opt/homebrew/bin/tectonic'
     subprocess.run([engine,'--keep-logs','main.tex'],cwd=root/'paper',check=True)
     print(root/'paper/main.pdf')

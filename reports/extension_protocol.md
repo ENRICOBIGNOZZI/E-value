@@ -71,3 +71,22 @@ Controlled statistical diagnostics are separately fixed at seed 420001,
 The cases have conditional means 0, .02 and .05 under a predictable skewed
 two-point law. Omitting the clipping correction is an explicitly invalid
 negative control, never an investment-method comparator.
+Specifically, this deliberately invalid control is a single bettor with
+B_t=V4_t^(1/4) and betting fraction .75. It is an invalidity example, not a
+matched hyperparameter or power comparison with the nine-component mixture.
+
+## Post-hoc field clarification and action valuation
+
+The event field `true_current_mean` is the conditional gain on the **last
+evaluated pre-return shadow pair**. It is not a certificate about the next
+period's gain or deployment from the real fund state. This semantic
+clarification changes none of the test inputs or decisions.
+
+After the frozen experiment, a separately labeled descriptive audit replays
+the histories of every selected first entry. It refits from available past
+returns and reoptimizes the candidate from the fund's real zero allocation,
+then uses the simulator's current conditional moments only for valuation.
+No next-period return is drawn and no result feeds the test or signal choice.
+Terminal entries remain in the file and are excluded from within-horizon
+action summaries. This is not a full fund backtest or confirmatory evidence
+of current-profitability inference.

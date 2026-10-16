@@ -15,7 +15,7 @@ and theory/simulation scope govern this reconstruction.
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-tested.txt
-.venv/bin/python -m pip install -e '.[test]'
+.venv/bin/python -m pip install '.[test]'
 .venv/bin/python -m pytest -q
 .venv/bin/python -m park_revive.cli audit
 .venv/bin/python -m park_revive.cli simulate --config configs/smoke.json --stage smoke --seeds 101 102 103 --output outputs/park_revive_v1/frozen_smoke
@@ -89,3 +89,36 @@ adjacent `../E-value-pre-rebuild-20261016.zip`. SHA-256 inventory and exact clea
 list are in `reports/data_preservation_manifest.json` and
 `reports/legacy_cleanup_plan.md`. The rebuild uses branch
 `codex/park-revive-20261016`; no push, merge or history rewrite is implicit.
+
+## Declared higher-moment extension
+
+`src/park_revive_extensions/` adds a separately declared corrected-tail test
+and observable policy-moment certificates. It leaves the frozen baseline
+package unchanged. The fourth score moment requires eighth return moments;
+this is stronger information than the original Catoni test requires.
+
+The first-entry mechanism study uses fresh seeds 40001–40020, fixed empty
+reference portfolios and identical candidate score series for all four arms.
+It measures whether entry can be certified at all, without claiming post-entry
+portfolio performance. The protocol was fixed before these new markets:
+[`reports/extension_protocol.md`](reports/extension_protocol.md).
+
+```sh
+# Use the source tree explicitly during development.
+PYTHONPATH=src .venv/bin/python -m pytest -q
+.venv/bin/python scripts/run_first_entry.py --count 20
+.venv/bin/python scripts/tail_study.py controlled
+.venv/bin/python scripts/tail_study.py report
+.venv/bin/python scripts/verify_first_entry.py
+.venv/bin/python scripts/audit_deployment.py
+.venv/bin/python scripts/build_paper.py
+```
+
+The legacy `detection.csv` denominators are conditioned on comparison survival.
+They cannot support cross-method delay rankings; see
+[`reports/detection_audit.md`](reports/detection_audit.md). The new fixed-reference
+study follows all comparisons to the common horizon, including after crossing.
+The original `true_current_mean` event field describes the last evaluated
+pre-return shadow gain. A separate post-hoc deployment audit values the next
+action from the real zero allocation, pays its entry cost and draws no next
+return; it is not a post-entry fund performance result.

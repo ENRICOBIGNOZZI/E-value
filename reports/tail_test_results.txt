@@ -1,0 +1,5 @@
+Python 3.13.3
+Command: PYTHONPATH=src .venv/bin/python -m pytest -q
+Result: 34 passed in 17.14s
+
+Baseline package unchanged. Extension tests cover independent LP support functions, Laplace moment convolution, sharp clipping bounds, asymmetric conditional null factors, scale invariance, zero moments, exact one-coordinate QP equivalence, independent Monte Carlo score fourth moments, identical checkpoint resumption and future-data causality.

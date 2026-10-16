@@ -1,0 +1,5 @@
+arm,seeds,nonterminal_entry_markets,terminal_first_entries,censored_test_entries
+Catoni-baseline,20,0,0,20
+Catoni-geometry,20,0,0,20
+Tail-uniform,20,0,0,20
+Tail-geometry,20,18,1,1

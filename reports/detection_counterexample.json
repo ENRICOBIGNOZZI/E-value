@@ -1,0 +1,19 @@
+{
+  "description": "Same initial positive economic gain; fast response closes the comparison, slow response leaves two annual rows.",
+  "eligible_events": {
+    "fast": 0,
+    "slow": 1
+  },
+  "reported": [
+    {
+      "seed": 1,
+      "method": "slow",
+      "signal": 0,
+      "direction": "entry_or_REVIVE",
+      "event_day": 504,
+      "detected": true,
+      "delay_days": 252,
+      "censor_day": 756
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "annual_evidence_values": 112000,
+  "maximum_absolute_error": 1.9539925233402755e-14,
+  "oracle_columns_used": false,
+  "checkpoint_objects_used": false,
+  "first_crossings_and_censoring_verified": true,
+  "verifier_sha256": "ba95b3cc3d73e43acea60bd746cb61144865b99a973988c47c649a4007703f87",
+  "update_implementation": "independent vectorized block arithmetic"
+}

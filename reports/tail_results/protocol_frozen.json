@@ -1,0 +1,113 @@
+{
+  "kind": "first-entry-mechanism-only",
+  "arms": [
+    "Catoni-baseline",
+    "Catoni-geometry",
+    "Tail-uniform",
+    "Tail-geometry"
+  ],
+  "mixture_scales": [
+    2,
+    4,
+    8
+  ],
+  "fractions": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "representative_seed": 40001,
+  "seed_pool": [
+    40001,
+    40002,
+    40003,
+    40004,
+    40005,
+    40006,
+    40007,
+    40008,
+    40009,
+    40010,
+    40011,
+    40012,
+    40013,
+    40014,
+    40015,
+    40016,
+    40017,
+    40018,
+    40019,
+    40020
+  ],
+  "risk": {
+    "coefficient_cap": 0.0004,
+    "coefficient_budget": 0.015000000000000001,
+    "beta_centers": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "beta_radii": [
+      0.5,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "factor_scales_max": [
+      0.013499999999999998,
+      0.006,
+      0.006,
+      0.006
+    ],
+    "idio_scale_max": 0.018000000000000002
+  },
+  "baseline_commit": "971510b",
+  "config": {
+    "n_assets": 500,
+    "n_features": 30,
+    "n_signals": 100,
+    "block": 252,
+    "years": 15,
+    "gamma": 5.0,
+    "proportional": 0.0001,
+    "impact": 0.0001,
+    "leverage": 1.0,
+    "shrinkage": 0.1,
+    "ridge": 1e-08,
+    "alpha": 0.05,
+    "delta0": 0.0001,
+    "base_theta": 0.0002,
+    "theta_cap_multiple": 2.0,
+    "revive_low_fraction": 0.05,
+    "feature_rho": 0.97,
+    "feature_correlation": 0.6,
+    "coefficient_half_life": 126.0,
+    "transition_probability": 0.000992063492063492,
+    "factor_scales": [
+      0.009,
+      0.004,
+      0.004,
+      0.004
+    ],
+    "idio_scale": 0.012,
+    "stress_multiplier": 1.5,
+    "beta_bounds": [
+      1.5,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "design_seed": 74021,
+    "swap_top": 10,
+    "solver_tolerance": 1e-08,
+    "economic_tolerance": 1e-08,
+    "state_matched_oracle": true,
+    "label": "main-design"
+  },
+  "config_hash": "362e86c5de8fb20ff844380eec8d2bb42b9b422c75a646685c4e047d7c6f88f4",
+  "implementation_hash": "0d22d6eb6ab6d3677b5ff278edbbb2c08a1b53c8af970a1e20177162dfb620a5",
+  "individual_alpha": 0.05,
+  "no_global_multiple_testing_control": true,
+  "no_post_entry_performance": true
+}

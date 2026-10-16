@@ -74,3 +74,35 @@ rejection and a positive historical score mean can coexist with a negative
 current conditional gain. This establishes an interpretation limit, not a new
 type-I-error failure. See `reports/design_assessment.md` for its numerical values
 and the conservative sufficient-horizon calculations.
+
+## Declared higher-moment extension
+
+The baseline package is unchanged. `park_revive_extensions` adds a separate
+research design with public function/holding geometry and analytic score
+moments through order four, hence return moments through order eight.
+
+- Public mean caps solve a support-function LP over a uniform coefficient
+  cap and total budget, with no true support labels. Tests compare against an
+  independent linear-program solver and verify permutation invariance.
+- Loading intervals and maximum normal/stress scales bound conditional
+  variance; independent Laplace cumulants supply exact evaluator moments.
+  Moment envelopes are derived algebraically and tested against convolution
+  formulas and an independent conditional Monte Carlo sample.
+- The sharp tail inequality gives a bias correction for lower winsorization.
+  Predictable nonnegative linear factors and a fixed nine-component mixture
+  preserve individual-episode validity for the original utility null.
+  The correction is essential; the skew-null negative control verifies that
+  omitting it can make rejection almost certain under a true null.
+- A two-point null gives a local information bound at a deterministic positive
+  alternative. Corrected-tail betting with a predeclared design effect attains
+  the corresponding local moment-order rate. This is not global minimax
+  optimality, a lower bound for the fixed Laplace DGP, or an optimality claim
+  for the implemented nine-component mixture.
+- A single-gate costless corollary translates waiting into cumulative utility
+  opportunity cost. It does not bound the uncorrected 100-candidate search or
+  substitute for stateful trading-cost accounting.
+
+The original T2b/c constant-mean, constant-bound results are not assigned to
+the variable-bound extension. The first-entry experiment has no actual fund
+performance or PARK/REVIVE delay claim. The legacy detection-risk-set defect
+is documented in `reports/detection_audit.md`.

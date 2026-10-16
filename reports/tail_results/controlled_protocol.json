@@ -1,0 +1,15 @@
+{
+  "seed": 420001,
+  "replications": 10000,
+  "steps": 2000,
+  "looks_every": 100,
+  "deltas": [
+    0.0,
+    0.02,
+    0.05
+  ],
+  "individual_alpha": 0.05,
+  "null": "predictable skewed two-point law with conditional mean zero",
+  "negative_control": "lower-winsorized linear bettor WITHOUT bias correction: intentionally invalid",
+  "script_sha256": "91458c2b831c193d65f29a1cc43159876408106c2be70a634b5e5452b0946ad7"
+}
