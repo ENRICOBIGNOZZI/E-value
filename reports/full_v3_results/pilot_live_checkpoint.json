@@ -1,7 +1,60 @@
 {
-  "captured_at": "2026-10-17T00:51:42.979985+02:00",
-  "confirmed_live_process": "64355 01:54:52   0:00.10 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T01:04:54.213114+02:00",
+  "confirmed_live_process": "64355 02:08:04   0:00.11 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
   "completed_pilot_seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50018,
+    50019,
+    50020,
+    50021,
+    50022,
+    50023,
+    50024,
+    50025,
+    50026,
+    50027,
+    50028,
+    50029,
+    50030,
+    50031,
+    50032,
+    50034
+  ],
+  "unfinished_seed_status_files": [
+    {
+      "seed": 50033,
+      "completed_blocks": 13,
+      "total_blocks": 14,
+      "complete": false,
+      "source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
+      "elapsed_seconds": 357.95599325199146
+    },
+    {
+      "seed": 50035,
+      "completed_blocks": 9,
+      "total_blocks": 14,
+      "complete": false,
+      "source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
+      "elapsed_seconds": 118.50801679107826
+    }
+  ],
+  "recorded_independent_replay_complete_seeds": [
     50001,
     50002,
     50003,
@@ -33,46 +86,16 @@
     50029,
     50030
   ],
-  "unfinished_seed_status_files": [],
-  "recorded_independent_replay_complete_seeds": [
-    50001,
-    50002,
-    50003,
-    50004,
-    50005,
-    50006,
-    50007,
-    50008,
-    50009,
-    50010,
-    50011,
-    50012,
-    50013,
-    50014,
-    50015,
-    50016,
-    50017,
-    50018,
-    50019,
-    50020,
-    50021,
-    50022,
-    50023,
-    50024,
-    50025,
-    50026,
-    50027
-  ],
   "completed_source_hashes": [
     "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3"
   ],
   "stage_progress": {
     "stage": "pilot",
     "requested_count": 100,
-    "prefix_completed_and_replayed": 20,
+    "prefix_completed_and_replayed": 30,
     "batch_size": 10
   },
   "completed_final_seeds": [],
-  "manuscript_snapshot": "First-ten v2 financial table retained; neither repeated pilot snapshots nor software fixtures add replications.",
-  "scope": "Read-only live process checkpoint, not full-pilot completion or a new arithmetic replay."
+  "manuscript_snapshot": "First-ten v2 financial table retained; repeated pilot snapshots and scalar summaries add no independent market replications.",
+  "scope": "Read-only live execution checkpoint; not pilot/final completion."
 }

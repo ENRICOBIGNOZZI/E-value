@@ -1,3 +1,46 @@
+# Current continuation — realized utility cost of waiting
+
+The costless Gaussian cash-PARK result now explicitly covers **realized
+cumulative utility**, not only its predictable conditional benefit. For
+J_n=sum Y_t and C_n=sum E(Y_t|past), the Gaussian variance formula and a
+predictable martingale normalization prove J_n/C_n -> 1 almost surely.
+The same attained 4/gamma high-confidence coefficient and arbitrary-valid-test
+family lower bound in probability therefore hold for J. No monotonicity of J
+is assumed. Finite realized sums can be negative. This proves no expected
+stopping-time/benefit equivalence or compounded wealth claim.
+
+A post-hoc summary reads the already saved original **4096 paths/law**, with
+all raw archive hashes still matching the earlier independent audit. At the
+fixed unstopped horizon 65536 under the Gaussian alternative, mean realized
+benefit is **3.871292** (MC SE 0.015831), versus conditional benefit **3.854828**
+(MC SE 0.041735). Fourteen realized sums are negative. The paired difference
+is 0.016464 (MC SE 0.044965). These are toy cumulative utility units, not
+financial returns or stopped-cost estimates. Full scope and boundary-null
+numbers are in `vanishing_gain_results/realized_benefit_interpretation.md`.
+No new paths or extension of the original eight-path/law score replay is
+claimed. Existing crossing counts remain unchanged.
+
+The current theory audit has **156 deterministic checks**, adding Gaussian
+score means/variances to the preceding identities. Maximum identity error is
+3.39e-13, apart from the separately labeled local-rate approximations. These
+checks do not prove the asymptotic statements. The complete proof is in the
+manuscript. Its **40 pages** were compiled, rendered and visually inspected;
+the final appendix layout has also been polished. The unchanged full software
+suite's latest run remains **81 passing tests**.
+
+The existing pilot is live, with exact completed/replayed counts retained in
+`full_v3_results/pilot_live_checkpoint.json`. Concurrency remains two simulation
+workers after observing an 8GB-memory host with substantial swap use; no
+additional worker, thread setting or duplicate market job was launched. The
+financial source/configurations and original controlled sources remain frozen.
+The manuscript retains its first-ten v2 financial table; the final study is
+still **0/500**. Preserved empirical-input hashes remain unchanged.
+The overall paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — economic analysis frozen before final observations
 
 The new executable analysis is bound to `final_analysis_plan.json` before any

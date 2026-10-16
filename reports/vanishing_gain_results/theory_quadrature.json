@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "deterministic_scalar_checks": 66,
+  "deterministic_scalar_checks": 156,
   "maximum_identity_error_excluding_local_rate_approximations": 3.381739333008227e-13,
   "checks": [
     {
@@ -388,6 +388,546 @@
       "absolute_error": 1.4077687583366472e-18
     },
     {
+      "identity": "P cash utility mean gamma=0.5 sigma=0.5 w=-0.5",
+      "observed": 0.015624999999999993,
+      "expected": 0.015625,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=0.5 w=-0.5",
+      "observed": 0.06298828125000001,
+      "expected": 0.06298828125,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=0.5 w=-0.05",
+      "observed": 0.0001562499999999975,
+      "expected": 0.00015625000000000003,
+      "absolute_error": 2.520770051028798e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=0.5 w=-0.05",
+      "observed": 0.000625048828125,
+      "expected": 0.0006250488281250001,
+      "absolute_error": 1.0842021724855044e-19
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=0.5 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=0.5 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=0.5 w=0.05",
+      "observed": 0.0001562499999999975,
+      "expected": 0.00015625000000000003,
+      "absolute_error": 2.520770051028798e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=0.5 w=0.05",
+      "observed": 0.000625048828125,
+      "expected": 0.0006250488281250001,
+      "absolute_error": 1.0842021724855044e-19
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=0.5 w=0.5",
+      "observed": 0.015624999999999993,
+      "expected": 0.015625,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=0.5 w=0.5",
+      "observed": 0.06298828125000001,
+      "expected": 0.06298828125,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=1.0 w=-0.5",
+      "observed": 0.06249999999999995,
+      "expected": 0.0625,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=1.0 w=-0.5",
+      "observed": 0.25781250000000006,
+      "expected": 0.2578125,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=1.0 w=-0.05",
+      "observed": 0.0006249999999999971,
+      "expected": 0.0006250000000000001,
+      "absolute_error": 3.0357660829594124e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=1.0 w=-0.05",
+      "observed": 0.002500781250000001,
+      "expected": 0.0025007812500000004,
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=1.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=1.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=1.0 w=0.05",
+      "observed": 0.0006249999999999971,
+      "expected": 0.0006250000000000001,
+      "absolute_error": 3.0357660829594124e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=1.0 w=0.05",
+      "observed": 0.002500781250000001,
+      "expected": 0.0025007812500000004,
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=1.0 w=0.5",
+      "observed": 0.06249999999999995,
+      "expected": 0.0625,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=1.0 w=0.5",
+      "observed": 0.25781250000000006,
+      "expected": 0.2578125,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=2.0 w=-0.5",
+      "observed": 0.24999999999999997,
+      "expected": 0.25,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=2.0 w=-0.5",
+      "observed": 1.1249999999999998,
+      "expected": 1.125,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=2.0 w=-0.05",
+      "observed": 0.0025000000000000022,
+      "expected": 0.0025000000000000005,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=2.0 w=-0.05",
+      "observed": 0.010012500000000002,
+      "expected": 0.010012500000000002,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=2.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=2.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=2.0 w=0.05",
+      "observed": 0.0025000000000000022,
+      "expected": 0.0025000000000000005,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=2.0 w=0.05",
+      "observed": 0.010012500000000002,
+      "expected": 0.010012500000000002,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=0.5 sigma=2.0 w=0.5",
+      "observed": 0.24999999999999997,
+      "expected": 0.25,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=0.5 sigma=2.0 w=0.5",
+      "observed": 1.1249999999999998,
+      "expected": 1.125,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=0.5 w=-0.5",
+      "observed": 0.031249999999999976,
+      "expected": 0.03125,
+      "absolute_error": 2.42861286636753e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=0.5 w=-0.5",
+      "observed": 0.06445312500000001,
+      "expected": 0.064453125,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=0.5 w=-0.05",
+      "observed": 0.00031249999999999854,
+      "expected": 0.00031250000000000006,
+      "absolute_error": 1.5178830414797062e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=0.5 w=-0.05",
+      "observed": 0.0006251953125000002,
+      "expected": 0.0006251953125000001,
+      "absolute_error": 1.0842021724855044e-19
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=0.5 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=0.5 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=0.5 w=0.05",
+      "observed": 0.00031249999999999854,
+      "expected": 0.00031250000000000006,
+      "absolute_error": 1.5178830414797062e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=0.5 w=0.05",
+      "observed": 0.0006251953125000002,
+      "expected": 0.0006251953125000001,
+      "absolute_error": 1.0842021724855044e-19
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=0.5 w=0.5",
+      "observed": 0.031249999999999976,
+      "expected": 0.03125,
+      "absolute_error": 2.42861286636753e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=0.5 w=0.5",
+      "observed": 0.06445312500000001,
+      "expected": 0.064453125,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=1.0 w=-0.5",
+      "observed": 0.12499999999999999,
+      "expected": 0.125,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=1.0 w=-0.5",
+      "observed": 0.28124999999999994,
+      "expected": 0.28125,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=1.0 w=-0.05",
+      "observed": 0.0012500000000000011,
+      "expected": 0.0012500000000000002,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=1.0 w=-0.05",
+      "observed": 0.0025031250000000006,
+      "expected": 0.0025031250000000006,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=1.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=1.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=1.0 w=0.05",
+      "observed": 0.0012500000000000011,
+      "expected": 0.0012500000000000002,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=1.0 w=0.05",
+      "observed": 0.0025031250000000006,
+      "expected": 0.0025031250000000006,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=1.0 w=0.5",
+      "observed": 0.12499999999999999,
+      "expected": 0.125,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=1.0 w=0.5",
+      "observed": 0.28124999999999994,
+      "expected": 0.28125,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=2.0 w=-0.5",
+      "observed": 0.49999999999999994,
+      "expected": 0.5,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=2.0 w=-0.5",
+      "observed": 1.5000000000000004,
+      "expected": 1.5,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=2.0 w=-0.05",
+      "observed": 0.004999999999999997,
+      "expected": 0.005000000000000001,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=2.0 w=-0.05",
+      "observed": 0.010050000000000003,
+      "expected": 0.010050000000000002,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=2.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=2.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=2.0 w=0.05",
+      "observed": 0.004999999999999997,
+      "expected": 0.005000000000000001,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=2.0 w=0.05",
+      "observed": 0.010050000000000003,
+      "expected": 0.010050000000000002,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "identity": "P cash utility mean gamma=1.0 sigma=2.0 w=0.5",
+      "observed": 0.49999999999999994,
+      "expected": 0.5,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=1.0 sigma=2.0 w=0.5",
+      "observed": 1.5000000000000004,
+      "expected": 1.5,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=0.5 w=-0.5",
+      "observed": 0.15624999999999997,
+      "expected": 0.15625,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=0.5 w=-0.5",
+      "observed": 0.11132812500000001,
+      "expected": 0.111328125,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=0.5 w=-0.05",
+      "observed": 0.0015624999999999994,
+      "expected": 0.0015625,
+      "absolute_error": 6.505213034913027e-19
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=0.5 w=-0.05",
+      "observed": 0.0006298828125000001,
+      "expected": 0.0006298828125000001,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=0.5 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=0.5 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=0.5 w=0.05",
+      "observed": 0.0015624999999999994,
+      "expected": 0.0015625,
+      "absolute_error": 6.505213034913027e-19
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=0.5 w=0.05",
+      "observed": 0.0006298828125000001,
+      "expected": 0.0006298828125000001,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=0.5 w=0.5",
+      "observed": 0.15624999999999997,
+      "expected": 0.15625,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=0.5 w=0.5",
+      "observed": 0.11132812500000001,
+      "expected": 0.111328125,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=1.0 w=-0.5",
+      "observed": 0.625,
+      "expected": 0.625,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=1.0 w=-0.5",
+      "observed": 1.03125,
+      "expected": 1.03125,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=1.0 w=-0.05",
+      "observed": 0.006249999999999997,
+      "expected": 0.00625,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=1.0 w=-0.05",
+      "observed": 0.002578125,
+      "expected": 0.0025781250000000006,
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=1.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=1.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=1.0 w=0.05",
+      "observed": 0.006249999999999997,
+      "expected": 0.00625,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=1.0 w=0.05",
+      "observed": 0.002578125,
+      "expected": 0.0025781250000000006,
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=1.0 w=0.5",
+      "observed": 0.625,
+      "expected": 0.625,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=1.0 w=0.5",
+      "observed": 1.03125,
+      "expected": 1.03125,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=2.0 w=-0.5",
+      "observed": 2.5000000000000004,
+      "expected": 2.5,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=2.0 w=-0.5",
+      "observed": 13.5,
+      "expected": 13.5,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=2.0 w=-0.05",
+      "observed": 0.024999999999999994,
+      "expected": 0.025,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=2.0 w=-0.05",
+      "observed": 0.011250000000000003,
+      "expected": 0.011250000000000003,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=2.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=2.0 w=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=2.0 w=0.05",
+      "observed": 0.024999999999999994,
+      "expected": 0.025,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=2.0 w=0.05",
+      "observed": 0.011250000000000003,
+      "expected": 0.011250000000000003,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P cash utility mean gamma=5.0 sigma=2.0 w=0.5",
+      "observed": 2.5000000000000004,
+      "expected": 2.5,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "P centered utility variance gamma=5.0 sigma=2.0 w=0.5",
+      "observed": 13.5,
+      "expected": 13.5,
+      "absolute_error": 0.0
+    },
+    {
       "identity": "Local linear growth / a^2",
       "observed": 0.500000007499952,
       "expected": 0.5,
@@ -401,10 +941,10 @@
     }
   ],
   "source_sha256": {
-    "paper/sections/11_vanishing_gains.tex": "ba648a494769c5c9eb3cfa51732abdfd4c1db3e6e344099d1c8ae2d30d5be38b",
-    "paper/sections/12_vanishing_proofs.tex": "3cd300f0f6fed7c381c27ab0be5c17013077d4852d5d057ea774fdf037e4dd32",
+    "paper/sections/11_vanishing_gains.tex": "3dbcf9fb0d0d8ba0608dfe6951571b5ee9c6b64a855095f977485da27c20e81e",
+    "paper/sections/12_vanishing_proofs.tex": "890ba5d1a03ac87f674bd6bb846367ce90029964eb57f0098ef1c4dedd8caf40",
     "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
-    "scripts/audit_vanishing_theory.py": "d2548fb17c94ea547d0244c768df2a16cf060dc5cfe3029992b21c1c7caf4385"
+    "scripts/audit_vanishing_theory.py": "b92a19338f956402d2133809b587460e696432a57504911560e586093bbc30fd"
   },
   "scope": "Deterministic quadrature of Gaussian null moments, log-density ratios, inverse-risk moments and local growth coefficients. Finite numerical checks do not prove asymptotics, optimality or stopping-time claims."
 }

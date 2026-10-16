@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "scientific_source_freeze": "57752eb",
+  "summary_source_sha256": "3b034d7e73fd7574a61b81ddd29b27c97e60ab1de5ad12fd7af3c8c562c5610b",
+  "input_sha256": {
+    "gaussian_alternative.npz": "93ae7028a9c779c350a20d94143a75e823b03f9928625cee6039d96e4f3c3c4c",
+    "gaussian_feedback_null.npz": "69a80e6029737a0a11885c3e364a0a93de1c0eb686208b1b509f08ee8778021e"
+  },
+  "summary_sha256": "ef84e5fddd523de79c57367d47f222d7202a993e1c37a621344df9d77bf29025",
+  "original_saved_paths_unchanged": true,
+  "scope": "Post-hoc deterministic summary of saved fixed-horizon conditional and realized utility on the original 4096 paths/law. No new paths, stopping-cost estimate, asymptotic verification or extension of the original eight-path/law independent score replay."
+}

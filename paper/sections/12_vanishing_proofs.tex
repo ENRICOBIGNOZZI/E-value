@@ -6,6 +6,7 @@ in the filtration at evaluated time zero. It has the same distribution under
 $P$ and the null constructed below, so the initial density ratio is one.
 
 \subsection{Integrated estimation error and useful moment bounds}
+\label{app:vanishing-normalization}
 For centered iid observations with finite fourth moment, write
 $B_i=\sum_{j\le i}A_j$ and $\kappa_4=\E A_1^4-3\sigma^4$. For $i\le j$,
 independent future increments give
@@ -51,7 +52,8 @@ $M_n$ satisfies $M_n/I_n\to0$ almost surely. Indeed $I_t$ is predictable and
  \sum_t\frac{w_t^2}{(1+I_t)^2}
  \le\int_0^\infty\frac{dx}{(1+x)^2}=1.
 \]
-The martingale of normalized increments converges; the pathwise Kronecker
+For constant $K$, the martingale of normalized increments is bounded in
+$L^2$ and converges; the pathwise Kronecker
 lemma then gives the assertion. Localization suffices when the predictable
 variance bound is only almost surely summable.
 
@@ -70,9 +72,9 @@ so $\E_Q(Y_t\mid\mathcal F_{t-1})=0$. Its fourth moment is
 \[
  \sigma^4\frac{3+6a_t^2+a_t^4}{(1+a_t^2)^4}\le3\sigma^4.
 \]
-These strictly positive-variance kernels define a law with mutual absolute
-continuity with $P$ on every finite horizon. No small-leverage restriction is
-needed. For $R_n=dP/dQ|_{\mathcal F_n}$ and $Z_t=A_t/\sigma$, its log increment is
+These nondegenerate kernels give mutual absolute continuity on every finite
+horizon without a small-leverage restriction. Put $R_n=dP/dQ|_{\mathcal F_n}$
+and $Z_t=A_t/\sigma$. Its log increment is
 \begin{align}
  \ell_t&=-\log(1+a_t^2)
   +\tfrac12\{[(1+a_t^2)Z_t-a_t]^2-Z_t^2\}\notag\\
@@ -142,11 +144,25 @@ normalization. Finally $C_n/\log n\to\sigma^4/(2\gamma m^2)$, so composition
 at $\tau_\alpha$ gives $4/\gamma$. For arbitrary families, monotonicity of
 $C_n$ and the bound at $N_\alpha$ give every lower coefficient
 $d\sigma^4/(2\gamma m^2)$; let $d\uparrow\kappa^{-1}$. This proves the
-probability lower bound and completes Theorem~\ref{thm:vanishing}.
+probability lower bound for $C$.
+
+For realized benefits, let $M_n=J_n-C_n$. Gaussian moments give
+\[
+ \E_{t-1}(Y_t-\delta_t)^2
+ =\sigma^2w_t^2+\frac{\gamma^2\sigma^4}{2}w_t^4\le K w_t^2,
+ \qquad K=\sigma^2+\gamma^2\sigma^4L^2/2.
+\]
+The predictable normalization proved in Section~\ref{app:vanishing-normalization}
+gives $M_n/I_n\to0$, and therefore $J_n/C_n\to1$, almost surely.
+Composition at $\tau_\alpha$ proves the attained realized-benefit coefficient.
+For arbitrary valid families, the preceding time lower bound implies
+$T_\alpha\to\infty$ in probability. The eventual pathwise ratio then transfers
+the probability lower bound from $C_{T_\alpha}$ to $J_{T_\alpha}$; it does
+not require monotonicity of $J$. This completes Theorem~\ref{thm:vanishing}.
 
 \subsection{Proof of Proposition~\ref{prop:vanishing-uniform}}
 The score's conditional mean is $\gamma\sigma^2w_t^2/2$ and its conditional
-variance is at most $K w_t^2$. Martingale normalization gives
+variance is at most $K w_t^2$. The normalization just proved gives
 $\sum_{t\le n}Y_t/I_n\to\gamma\sigma^2/2$, and hence the blockwise
 past-mean bet is $\lambda_t=O(\log t/t)$ almost surely. Thus
 $\sum_t\lambda_t^2<\infty$. Moreover,

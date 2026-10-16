@@ -69,6 +69,25 @@ def generate(root):
     error = max(item['max_absolute_error'] for item in verification['replay'].values())
     linear = alt[alt.method.eq('Linear cash-PARK')].iloc[0]
     geometry = alt[alt.method.eq('Catoni geometry fixed')].iloc[0]
+    realized_path = results/'realized_benefit_summary.csv'
+    if realized_path.exists():
+        realized_audit = json.loads((results/'realized_benefit_verification.json').read_text())
+        if hashlib.sha256(realized_path.read_bytes()).hexdigest() != realized_audit['summary_sha256']:
+            raise ValueError('Saved realized-utility summary changed after verification')
+        if realized_audit['input_sha256'] != {name:verification['input_sha256'][name]
+                                              for name in realized_audit['input_sha256']}:
+            raise ValueError('Realized-utility summary uses a different saved path archive')
+        realized = pd.read_csv(realized_path)
+        realized = realized[realized.law.eq('gaussian_alternative')].iloc[0]
+        if (realized.paths != cfg['replications'] or realized.observations != cfg['observations']
+                or abs(realized.mean_conditional_benefit-linear.mean_conditional_benefit)>1e-10):
+            raise ValueError('Realized utility does not refer to the reported scalar horizon')
+        lines.append(f'A subsequent summary of the same saved paths gives mean realized cumulative '
+            f'cash advantage $J_n={realized.mean_realized_benefit:.5f}$ '
+            f'(MC SE {realized.mc_se_realized_benefit:.5f}); '
+            f'{int(realized.negative_realized_paths)} of {int(realized.paths):,} realized sums are negative. '
+            'This is a post-hoc fixed-horizon description, not another experiment, '
+            'a stopped-cost estimate or a verification of the almost-sure limit.')
     lines += [
         f'The linear crossing fraction is {linear.crossing_fraction:.6f} '
         f'(Wilson 95\\% interval [{linear.wilson_low:.6f}, {linear.wilson_high:.6f}]); '

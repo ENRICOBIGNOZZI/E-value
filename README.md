@@ -302,6 +302,7 @@ and refuses to overwrite prior seals. The current repository suite has
 **81 passing tests**, including fourteen reporting-gate controls and twelve
 final-assessment checks.
 
+
 ```sh
 # Recalculate summaries independently from the original twenty seed CSVs.
 .venv/bin/python scripts/audit_full_snapshot.py \
@@ -333,3 +334,19 @@ The explicit pilot diagnostic at
 the same analysis on previously observed data; it is not final evidence or an
 additional experiment. Software fixtures with synthetic 500-row market IDs
 exercise membership and arithmetic gates only and are never simulation results.
+
+## Realized utility in the scalar waiting example
+
+The costless scalar waiting theorem also covers **realized cumulative utility**,
+via a complete martingale-normalization argument. Its post-hoc summary reads
+the originally saved `realized_benefit` fields and adds no paths:
+
+```sh
+.venv/bin/python scripts/summarize_realized_vanishing.py
+.venv/bin/python scripts/audit_vanishing_theory.py
+```
+
+See `reports/vanishing_gain_results/realized_benefit_interpretation.md` for the
+fixed-horizon numbers and the distinction from expected stopped costs. The
+updated theory audit has 156 finite deterministic checks; it is not an
+asymptotic proof or a new Monte Carlo study.

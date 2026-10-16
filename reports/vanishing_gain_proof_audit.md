@@ -6,7 +6,7 @@ proof are now integrated in `paper/sections/11_vanishing_gains.tex` and
 in `paper/sections/13_directional_information.tex`; their equation labels and
 mathematical meaning are unchanged. The controlled study's very low
 finite-horizon power is reported alongside them. Historical notes remain
-excluded. Sixty-six deterministic quadrature checks support the identities;
+excluded. The current 156 deterministic quadrature checks support the identities;
 they do not prove the asymptotics or stopping-time statements. No claim of a
 first general betting, likelihood-optimality or prequential-regret theorem is made.
 The financial configuration and its positive comparison-mean floor are unchanged.
@@ -154,6 +154,17 @@ reference is C_n=gamma*sigma²*S_n/2, so for the linear stopping time
 
 For arbitrary valid test families the same coefficient is a lower bound in
 probability, using monotonicity of C_n and the preceding time lower bound.
+For realized cumulative utility J_n=sum Y_t, set M_n=J_n-C_n. Gaussian
+moments give Var(Y_t|past)=sigma²*w_t²+gamma²*sigma⁴*w_t⁴/2<=K*w_t².
+The predictable normalizer 1+S_t satisfies
+sum w_t²/(1+S_t)²<=integral_0^infinity (1+x)^(-2) dx=1. Thus the weighted
+martingale series is L²-bounded and converges almost surely. Kronecker's lemma
+gives M_n/S_n->0, hence J_n/C_n->1 almost surely. The attained coefficient
+4/gamma and the arbitrary-test-family probability lower bound therefore hold
+for J as well. For the latter, T_alpha tends to infinity in probability by
+the time lower bound, so the eventual pathwise ratio transfers the bound;
+J itself need not be monotone. Finite realized cumulative advantages can be
+negative. These are cumulative utility sums, not compounded investment wealth.
 It does not mean E C_tau_alpha is asymptotically that value. Uniform
 integrability and finite expected stopping times have not been established.
 Fixed annual review spacing leaves the exponent unchanged by the same growth

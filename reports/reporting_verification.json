@@ -18,14 +18,15 @@
   },
   "report_source_sha256": {
     "scripts/build_lambda_results.py": "e2ae74d27bf24928f9a70abdc8ceb5904b55ae1141cc3a18fbf04f8698f0f454",
-    "scripts/build_vanishing_results.py": "83c6718ddb6f027411d24cc1c2ce72b0f6d734d4e361ce5841062a300b1fc0ab",
+    "scripts/build_vanishing_results.py": "228a9d1db6764ce8a8be60a18c86f88cd28894c15370de150cdf7d2aad98b4ef",
     "scripts/build_lambda_constant_results.py": "13c3319d60c964277bd4be222c2984e08317d4ac79bd824e664a6cd66bb65e3d",
     "scripts/plot_directional_frontier.py": "a3dba049635f3e98e1135882a8b13088961d528ec068bc75476d396c1f4d939f",
     "scripts/build_paper.py": "c266dc6ae688f9b953d46b084456e1bae99f031c45c997ae461609c485496ac5",
     "scripts/build_full_results.py": "db80e4db2fb848dc0f620c56e70e4abc82b2972ab3c278039acd7099a23fb926",
     "scripts/seal_full_snapshot.py": "e9568ad528011b6c47351141102c8e2796a00e73ddcefc86ecf49372826d6ded",
     "scripts/audit_full_snapshot.py": "2a0bdeedb7f29c99329b0b728b75feaf2c0361922bff963dbc5eda2a38aa1f13",
-    "scripts/assess_final_study.py": "76bf367a572881183a504d3bce83fd0411bfc2db0221bd13baccd4afec0241cc"
+    "scripts/assess_final_study.py": "76bf367a572881183a504d3bce83fd0411bfc2db0221bd13baccd4afec0241cc",
+    "scripts/summarize_realized_vanishing.py": "3b034d7e73fd7574a61b81ddd29b27c97e60ab1de5ad12fd7af3c8c562c5610b"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
@@ -51,5 +52,10 @@
     "checks": 25,
     "maximum_absolute_error": 1.0408340855860843e-17,
     "scope": "The five frozen utility contrasts reproduce the retained twenty-market pilot table. No new markets, final outcomes or independent pathwise replay."
+  },
+  "realized_scalar_utility": {
+    "summary": "reports/vanishing_gain_results/realized_benefit_summary.csv",
+    "verification": "reports/vanishing_gain_results/realized_benefit_verification.json",
+    "scope": "Same 4096 saved paths/law, endpoint 65536; no new scientific draws, all-path score replay or stopped-benefit estimate."
   }
 }

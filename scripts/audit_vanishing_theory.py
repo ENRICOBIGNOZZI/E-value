@@ -60,6 +60,23 @@ def main():
                     exact = 3*k/(sigma**4*(k-4)*(k-2)*(k+2))
                 compare(f'Inverse-risk moment k={k} p={p} sigma={sigma}', moment, exact)
 
+    # The realized-minus-conditional utility is a martingale. Integrate its
+    # mean and variance independently of the proof's Gaussian moment formula.
+    for gamma in (.5, 1., 5.):
+        for sigma in (.5, 1., 2.):
+            for weight in (-.5, -.05, 0., .05, .5):
+                delta = gamma*sigma*sigma*weight*weight/2
+                def score(z):
+                    return -weight*sigma*z+gamma*weight*weight*sigma*sigma*z*z/2
+                mean = quad(lambda z: score(z)*norm.pdf(z), -12, 12,
+                            epsabs=1e-12, epsrel=1e-11)[0]
+                variance = quad(lambda z: (score(z)-delta)**2*norm.pdf(z), -12, 12,
+                                epsabs=1e-12, epsrel=1e-11)[0]
+                compare(f'P cash utility mean gamma={gamma} sigma={sigma} w={weight}',
+                        mean, delta)
+                compare(f'P centered utility variance gamma={gamma} sigma={sigma} w={weight}',
+                        variance, sigma*sigma*weight*weight+gamma*gamma*sigma**4*weight**4/2)
+
     # Second-order rates via symmetric quadrature, avoiding cancellation of
     # odd terms. These are local numerical checks, not asymptotic proofs.
     a = 1e-4
