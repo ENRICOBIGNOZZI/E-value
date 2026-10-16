@@ -1,0 +1,409 @@
+{
+  "complete": true,
+  "deterministic_scalar_checks": 66,
+  "maximum_identity_error_excluding_local_rate_approximations": 3.381739333008227e-13,
+  "checks": [
+    {
+      "identity": "Q second moment a=-3.0",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Q fourth moment a=-3.0",
+      "observed": 0.0138,
+      "expected": 0.0138,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Q linear factor mean a=-3.0",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P/Q expected log ratio a=-3.0",
+      "observed": 51.69741490700596,
+      "expected": 51.69741490700595,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "identity": "Q second moment a=-0.5",
+      "observed": 0.8000000000000003,
+      "expected": 0.8,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "Q fourth moment a=-0.5",
+      "observed": 1.8688000000000007,
+      "expected": 1.8688,
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "identity": "Q linear factor mean a=-0.5",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P/Q expected log ratio a=-0.5",
+      "observed": 0.1831064486857902,
+      "expected": 0.18310644868579024,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "Q second moment a=-0.01",
+      "observed": 0.9999000099990003,
+      "expected": 0.9999000099990001,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "Q fourth moment a=-0.01",
+      "observed": 2.9994000699959997,
+      "expected": 2.9994000699959997,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Q linear factor mean a=-0.01",
+      "observed": 1.0000000000000002,
+      "expected": 1.0,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "P/Q expected log ratio a=-0.01",
+      "observed": 5.000999966673787e-05,
+      "expected": 5.0009999666691645e-05,
+      "absolute_error": 4.6227670129350695e-17
+    },
+    {
+      "identity": "Q second moment a=0.0",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Q fourth moment a=0.0",
+      "observed": 3.0000000000000004,
+      "expected": 3.0,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "Q linear factor mean a=0.0",
+      "observed": 1.0000000000000002,
+      "expected": 1.0,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "P/Q expected log ratio a=0.0",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Q second moment a=0.01",
+      "observed": 0.9999000099990003,
+      "expected": 0.9999000099990001,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "Q fourth moment a=0.01",
+      "observed": 2.9994000699959997,
+      "expected": 2.9994000699959997,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Q linear factor mean a=0.01",
+      "observed": 1.0000000000000002,
+      "expected": 1.0,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "P/Q expected log ratio a=0.01",
+      "observed": 5.000999966673787e-05,
+      "expected": 5.0009999666691645e-05,
+      "absolute_error": 4.6227670129350695e-17
+    },
+    {
+      "identity": "Q second moment a=0.5",
+      "observed": 0.8000000000000003,
+      "expected": 0.8,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "Q fourth moment a=0.5",
+      "observed": 1.8688000000000007,
+      "expected": 1.8688,
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "identity": "Q linear factor mean a=0.5",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P/Q expected log ratio a=0.5",
+      "observed": 0.1831064486857902,
+      "expected": 0.18310644868579024,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "Q second moment a=3.0",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Q fourth moment a=3.0",
+      "observed": 0.0138,
+      "expected": 0.0138,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Q linear factor mean a=3.0",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P/Q expected log ratio a=3.0",
+      "observed": 51.69741490700596,
+      "expected": 51.69741490700595,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=2 sigma=0.5",
+      "observed": 1.333333333333334,
+      "expected": 1.3333333333333333,
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=2 sigma=1.0",
+      "observed": 0.3333333333333335,
+      "expected": 0.3333333333333333,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=2 sigma=2.0",
+      "observed": 0.08333333333333337,
+      "expected": 0.08333333333333333,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=3 sigma=0.5",
+      "observed": 2.973540193587952,
+      "expected": 2.973540193587952,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=3 sigma=1.0",
+      "observed": 0.371692524198494,
+      "expected": 0.371692524198494,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=3 sigma=2.0",
+      "observed": 0.04646156552481175,
+      "expected": 0.04646156552481175,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=4 sigma=0.5",
+      "observed": 11.428571428571429,
+      "expected": 11.428571428571429,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=4 sigma=1.0",
+      "observed": 0.7142857142857143,
+      "expected": 0.7142857142857143,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Inverse-risk moment k=5 p=4 sigma=2.0",
+      "observed": 0.044642857142857144,
+      "expected": 0.044642857142857144,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=2 sigma=0.5",
+      "observed": 0.6666666666666216,
+      "expected": 0.6666666666666666,
+      "absolute_error": 4.5075054799781356e-14
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=2 sigma=1.0",
+      "observed": 0.1666666666666554,
+      "expected": 0.16666666666666666,
+      "absolute_error": 1.1268763699945339e-14
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=2 sigma=2.0",
+      "observed": 0.04166666666666385,
+      "expected": 0.041666666666666664,
+      "absolute_error": 2.8171909249863347e-15
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=3 sigma=0.5",
+      "observed": 0.917031958020366,
+      "expected": 0.9170319580204803,
+      "absolute_error": 1.1435297153639112e-13
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=3 sigma=1.0",
+      "observed": 0.11462899475254575,
+      "expected": 0.11462899475256004,
+      "absolute_error": 1.429412144204889e-14
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=3 sigma=2.0",
+      "observed": 0.014328624344068218,
+      "expected": 0.014328624344070005,
+      "absolute_error": 1.7867651802561113e-15
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=4 sigma=0.5",
+      "observed": 1.599999999999662,
+      "expected": 1.6,
+      "absolute_error": 3.381739333008227e-13
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=4 sigma=1.0",
+      "observed": 0.09999999999997887,
+      "expected": 0.1,
+      "absolute_error": 2.1135870831301418e-14
+    },
+    {
+      "identity": "Inverse-risk moment k=8 p=4 sigma=2.0",
+      "observed": 0.006249999999998679,
+      "expected": 0.00625,
+      "absolute_error": 1.3209919269563386e-15
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=2 sigma=0.5",
+      "observed": 0.13333333333333286,
+      "expected": 0.13333333333333333,
+      "absolute_error": 4.718447854656915e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=2 sigma=1.0",
+      "observed": 0.033333333333333215,
+      "expected": 0.03333333333333333,
+      "absolute_error": 1.1796119636642288e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=2 sigma=2.0",
+      "observed": 0.008333333333333304,
+      "expected": 0.008333333333333333,
+      "absolute_error": 2.949029909160572e-17
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=3 sigma=0.5",
+      "observed": 0.07789532255407065,
+      "expected": 0.07789532255407053,
+      "absolute_error": 1.249000902703301e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=3 sigma=1.0",
+      "observed": 0.009736915319258832,
+      "expected": 0.009736915319258816,
+      "absolute_error": 1.5612511283791264e-17
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=3 sigma=2.0",
+      "observed": 0.001217114414907354,
+      "expected": 0.001217114414907352,
+      "absolute_error": 1.951563910473908e-18
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=4 sigma=0.5",
+      "observed": 0.0537815126050453,
+      "expected": 0.05378151260504202,
+      "absolute_error": 3.282096816548119e-15
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=4 sigma=1.0",
+      "observed": 0.0033613445378153314,
+      "expected": 0.0033613445378151263,
+      "absolute_error": 2.0513105103425744e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=32 p=4 sigma=2.0",
+      "observed": 0.0002100840336134582,
+      "expected": 0.0002100840336134454,
+      "absolute_error": 1.282069068964109e-17
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=2 sigma=0.5",
+      "observed": 0.031746031746033666,
+      "expected": 0.031746031746031744,
+      "absolute_error": 1.9220736113823023e-15
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=2 sigma=1.0",
+      "observed": 0.007936507936508417,
+      "expected": 0.007936507936507936,
+      "absolute_error": 4.805184028455756e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=2 sigma=2.0",
+      "observed": 0.001984126984127104,
+      "expected": 0.001984126984126984,
+      "absolute_error": 1.201296007113939e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=3 sigma=0.5",
+      "observed": 0.009027584336785424,
+      "expected": 0.00902758433678466,
+      "absolute_error": 7.650130529057719e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=3 sigma=1.0",
+      "observed": 0.001128448042098178,
+      "expected": 0.0011284480420980824,
+      "absolute_error": 9.562663161322149e-17
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=3 sigma=2.0",
+      "observed": 0.00014105600526227225,
+      "expected": 0.0001410560052622603,
+      "absolute_error": 1.1953328951652686e-17
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=4 sigma=0.5",
+      "observed": 0.003024932057190482,
+      "expected": 0.0030249320571901217,
+      "absolute_error": 3.6038880213418167e-16
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=4 sigma=1.0",
+      "observed": 0.00018905825357440513,
+      "expected": 0.0001890582535743826,
+      "absolute_error": 2.2524300133386355e-17
+    },
+    {
+      "identity": "Inverse-risk moment k=128 p=4 sigma=2.0",
+      "observed": 1.181614084840032e-05,
+      "expected": 1.1816140848398913e-05,
+      "absolute_error": 1.4077687583366472e-18
+    },
+    {
+      "identity": "Local linear growth / a^2",
+      "observed": 0.500000007499952,
+      "expected": 0.5,
+      "absolute_error": 7.499951992784304e-09
+    },
+    {
+      "identity": "Local geometric Catoni growth / a^2",
+      "observed": 0.4997550060289131,
+      "expected": 0.5,
+      "absolute_error": 0.00024499397108690424
+    }
+  ],
+  "source_sha256": {
+    "paper/sections/11_vanishing_gains.tex": "f81c066b0ab4b200ded2f16f177b0cf7b9b42f7f39a20c2db54f843a6e2bb60e",
+    "paper/sections/12_vanishing_proofs.tex": "3cd300f0f6fed7c381c27ab0be5c17013077d4852d5d057ea774fdf037e4dd32",
+    "scripts/audit_vanishing_theory.py": "df4a12bdb7b6e4e23c2466dda48b8a4c588dd2be4fa8b85bea9b6179f08f2730"
+  },
+  "scope": "Deterministic quadrature of Gaussian null moments, log-density ratios, inverse-risk moments and local growth coefficients. Finite numerical checks do not prove asymptotics, optimality or stopping-time claims."
+}

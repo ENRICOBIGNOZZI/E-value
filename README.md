@@ -202,7 +202,11 @@ The proof audit and completed results are in
 [`reports/vanishing_gain_results/interpretation.md`](reports/vanishing_gain_results/interpretation.md).
 Only three alternative paths cross the 5% threshold under linear betting;
 asymptotic information growth does not imply useful finite-horizon power.
-These research notes are not included in the main manuscript yet.
+The audited cash-PARK theorem and its complete proof are now included in the
+main manuscript, together with this low-power diagnostic. Historical derivation
+notes remain separate. The sharp confidence exponent concerns this particular
+costless instance; it is not an expected stopping-time theorem or a claim of
+financial superiority.
 
 ```sh
 # Fresh checkout: generate the declared scalar streams once.
@@ -211,6 +215,10 @@ These research notes are not included in the main manuscript yet.
 .venv/bin/python scripts/audit_vanishing_gain.py
 # Re-render the retained report without repeating simulation or arithmetic replay.
 .venv/bin/python scripts/audit_vanishing_gain.py --plot-only
+# Deterministic quadrature checks of identities used in the proof.
+.venv/bin/python scripts/audit_vanishing_theory.py
+# Rebuild the manuscript table from the retained audited report.
+.venv/bin/python scripts/build_vanishing_results.py
 ```
 
 ## Selecting lambda for a rejection horizon

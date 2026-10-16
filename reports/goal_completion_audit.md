@@ -11,6 +11,7 @@ the full objective is complete.
 | Economic objective and costs consistent | Shared cost/utility implementation; independent optimization tests; manuscript identities | Verified for reported designs |
 | T1–T4 assumptions/proofs and scope | Theory audit, full proofs, statistical and numerical checks | Verified within explicit assumptions; no general novelty claim |
 | Lambda selection targeting deadline power | Separately frozen controlled score experiment; Bellman argument; corrected whole-pool replay and independent audit | Implemented and reported; 37.48% vs 11.41% power at 400 observations; working-model optimum, no financial dominance claim |
+| Vanishing estimation gains and cost of waiting | Complete cash-PARK proof and adaptive boundary null; 66 deterministic identity checks; separately frozen finite-horizon scalar diagnostic | Integrated with explicit Gaussian/costless scope; high-confidence coefficient is not an expected stopped-cost result |
 | Separate stronger-moment extension | Public envelopes, clipping proof, new namespace and frozen protocol | Implemented and individually valid under stronger assumptions |
 | Fresh experiment without favorable-seed selection | All seeds 40001–40020 completed with identical committed source hashes | Complete mechanism study |
 | Reproducible numerical evidence | Saved score/certificate ledgers, independent vectorized replay, checkpoints, source/configuration hashes | Audited separately from proof validity |
@@ -23,9 +24,10 @@ the full objective is complete.
 The QP convergence failure at seed 50020 is corrected and independently audited.
 The next work is to finish the same entire 100-market v3 pilot replay and then
 the separate final study. The first ten v2 markets remain a labeled pilot snapshot.
-The costless vanishing-gain theory and separate scalar diagnostics require
-manuscript integration and broader novelty review; they do not add financial markets.
-The 30-page draft now includes the separate lambda-selection study. Its
+The costless vanishing-gain theory, complete proof and scalar diagnostics are
+now integrated. Broader publication-level novelty assessment remains open;
+the draft makes no unqualified priority claim. These paths do not add financial markets.
+The 35-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
 53 passing tests. The numerical boundary correction replays the same pool,

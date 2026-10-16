@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "lambda_figure_ambient_settings_check": {
+    "settings_1": {
+      "font.family": "serif",
+      "font.size": 23,
+      "xtick.labelsize": 19,
+      "axes.titlesize": 29
+    },
+    "settings_2": {
+      "font.family": "monospace",
+      "font.size": 7,
+      "xtick.labelsize": 5,
+      "axes.titlesize": 11
+    },
+    "pngs_bitwise_identical": true,
+    "png_sha256": "c5030e099196b343f006ec60b143e0398f6cd6e6780d8f53a0a49906eff5dba8"
+  },
+  "report_source_sha256": {
+    "scripts/build_lambda_results.py": "e2ae74d27bf24928f9a70abdc8ceb5904b55ae1141cc3a18fbf04f8698f0f454",
+    "scripts/build_vanishing_results.py": "83c6718ddb6f027411d24cc1c2ce72b0f6d734d4e361ce5841062a300b1fc0ab"
+  },
+  "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations."
+}

@@ -1,0 +1,127 @@
+\section{Waiting for a vanishing implementation gain}
+\label{sec:vanishing}
+The stationary power bounds above assume a positive effect bounded away from
+zero. Estimation can instead make an implemented policy's disadvantage shrink
+over time. This section isolates that mechanism in one costless scalar
+cash-PARK comparison. It gives a sharp high-confidence exponent for this
+instance, while the executed experiment below shows extremely low power at
+a finite horizon. It does not change the financial experiment.
+
+\subsection{A directional economic bound}
+Let $U(r)=r-\gamma r^2/2$, and compare cash with a predictable target
+$w_t\in[-L,L]$ in a scalar return $A_t$, with $c=\eta=0$. The gain is
+\begin{equation}
+ Y_t=-w_tA_t+\frac\gamma2w_t^2A_t^2
+     =\frac\gamma2(w_tA_t-\gamma^{-1})^2-\frac1{2\gamma}.
+ \label{eq:cash-score}
+\end{equation}
+Consequently the ordinary linear betting process
+\begin{equation}
+ G_n=\prod_{t=1}^n(1+\gamma Y_t/2)
+ \label{eq:cash-linear}
+\end{equation}
+has factors at least $3/4$. Under every law with finite conditional score
+expectations and $\E_{t-1}Y_t\le0$, it is a test supermartingale. This requires
+no supplied fourth- or eighth-return-moment cap: it uses a one-sided economic
+bound and the conditional-null integrability assumption. It is a specialization
+of standard safe linear betting \cite{savi,boundedbet}, rather than a new
+general e-process construction. The directional bound concerns cash versus
+this reference; arbitrary reoptimized ENTRY, deletion and swap scores need
+not have it.
+
+\subsection{A stationary estimated-policy instance}
+Under a law $P$, let returns, including $n_0\ge5$ training observations, be
+iid $N(0,\sigma^2)$, with $\sigma>0$. At evaluated date $t$, compute the
+historical mean $\bar A_{t-1}$ and raw second moment $\widehat M_{t-1}$ from
+all $n_0+t-1$ past returns, and set
+\begin{equation}
+ w_t=\operatorname{clip}\!\left\{
+ \frac{\bar A_{t-1}}{\gamma(\widehat M_{t-1}+r)},[-L,L]\right\},
+ \quad r\ge0,\quad L>0,\quad m=\sigma^2+r.
+ \label{eq:vanishing-policy}
+\end{equation}
+Use target zero if the denominator vanishes. This makes the rule defined on
+every history, including laws with degenerate training returns.
+It is the estimated mean--quadratic one-period optimizer. Although the
+population optimum is cash, its nonzero fitted targets generate a positive
+conditional cash-PARK benefit $\delta_t=\gamma\sigma^2w_t^2/2$.
+Write $I_n=\sum_{t\le n}w_t^2$ and
+$C_n=\sum_{t\le n}\delta_t=\gamma\sigma^2I_n/2$.
+
+\begin{theorem}[A sharp cash-PARK confidence exponent]
+\label{thm:vanishing}
+For \eqref{eq:vanishing-policy}, under $P$,
+\begin{equation}
+ \frac{I_n}{\log n}\longrightarrow\frac{\sigma^2}{\gamma^2m^2},
+ \qquad
+ \frac{\log G_n}{\log n}\longrightarrow
+ \kappa=\frac{\sigma^4}{8m^2}>0
+ \quad\hbox{almost surely}.
+ \label{eq:vanishing-rate}
+\end{equation}
+There is a law $Q$ satisfying the datewise conditional cash-PARK null such
+that every fixed $Q$-valid e-process $F$ obeys
+$\limsup_n\log F_n/\log n\le\kappa$, $P$-almost surely.
+For $\tau_\alpha=\inf\{n:G_n\ge1/\alpha\}$,
+\begin{equation}
+ \frac{\log\tau_\alpha}{\log(1/\alpha)}\longrightarrow\kappa^{-1},
+ \qquad
+ \frac{C_{\tau_\alpha}}{\log(1/\alpha)}\longrightarrow\frac4\gamma
+ \quad\hbox{almost surely as }\alpha\downarrow0.
+ \label{eq:vanishing-cost}
+\end{equation}
+For any family of stopping times $T_\alpha$ satisfying
+$Q(T_\alpha<\infty)\le\alpha$ and any $0<d<\kappa^{-1}$,
+$P(T_\alpha\le\alpha^{-d})\to0$. Also, for every $\epsilon>0$,
+\[
+ P\!\left\{\frac{C_{T_\alpha}}{\log(1/\alpha)}
+                   <\frac4\gamma-\epsilon\right\}\longrightarrow0,
+ \qquad C_\infty=\infty.
+\]
+These are almost-sure limits and probability lower bounds, not assertions
+about expected stopping times or expected stopped benefits.
+\end{theorem}
+
+The proof in Appendix~\ref{app:vanishing} constructs the null and establishes
+a finite almost-sure log discrepancy between $G$ and $dP/dQ$, with uniformly
+bounded expected absolute discrepancy. Thus sharpness is against this
+particular estimated-policy alternative and a conditional null permitting
+dependence. It is not a minimax theorem over investment DGPs. The same null
+has conditional raw moments at most $\sigma^2$ and $3\sigma^4$; the upper bound
+therefore also applies if these public moment contracts are imposed.
+With $M_2=\sigma^2$ and finite $M_4\ge3\sigma^4$, geometric Catoni using
+$v_t^2=w_t^2(\sigma+\gamma|w_t|\sqrt{M_4}/2)^2$ and fixed bet $\gamma/2$
+attains the same $\kappa$. A looser $M_2$ need not retain that coefficient.
+Reviewing only every fixed number of dates preserves the exponent, but a
+daily threshold crossing need not persist to the next review.
+
+\begin{proposition}[A uniform-bound plug-in can cease accumulating evidence]
+\label{prop:vanishing-uniform}
+In the same instance, let
+$\nu^2=L^2(\sigma+\gamma L\sqrt{M_4}/2)^2$ be a constant valid bound.
+After any finite initial block, use the capped positive past score mean
+divided by $2\nu^2$, held fixed in blocks of a fixed length. Its uniform-bound
+Catoni log capital converges to a finite real random variable, $P$-almost
+surely. Its probability of ever crossing $1/\alpha$ tends to zero as
+$\alpha\downarrow0$, whereas \eqref{eq:cash-linear} crosses almost surely
+at every fixed level. This does not assert zero power at an individual level.
+\end{proposition}
+
+The statistical loss here combines a shrinking effect and a constant public
+penalty; it is distinct from choosing a poor fixed bet in the stationary
+constant-effect experiment of Section~\ref{sec:lambda-power}. A fixed positive minimum-effect floor
+eventually excludes these vanishing gains. Costs, competing closures and
+changing regimes are absent. Neither theorem transfers to the full financial
+PARK/REVIVE rule.
+
+Estimation noise in nested forecasts and logarithmic prequential estimation
+loss are established phenomena \cite{clarkmccracken,clarkwest,prequential}.
+General e-process log-optimality and rejection-time results already exist
+\cite{instance}. Here the score factors are dependent through the fitted
+policy, the admissible null is adaptive, and the information scale is
+$\log n$. The explicit cash comparison supplies the exponent and conditional
+benefit coefficient; likelihood-ratio comparison and quadratic strong laws
+are proof tools, not new general principles.
+
+\subsection{Executed finite-horizon diagnostic}
+\input{generated_vanishing_results.tex}

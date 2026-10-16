@@ -53,7 +53,9 @@ The proof audit establishes a sharp confidence exponent and conditional-benefit
 coefficient for this particular costless estimated-policy example. It establishes
 no expected rejection time, useful finite-horizon power, changing-regime result,
 or improvement in the frozen full financial strategy. The main financial
-minimum-effect floor is absent here. Broader prior-art review, including nested
-forecast comparisons and their vanishing estimation-error effects, and manuscript
-integration remain outstanding. No scientific horizon, bet, bound or seed was
+minimum-effect floor is absent here. The audited theorem and complete proof are
+now integrated in the manuscript. Prior-art discussion includes nested forecasts,
+prequential log losses, sequential model confidence sets and scoring-rule
+selection; no unqualified novelty claim is made. A broader publication-level
+assessment remains necessary. No scientific horizon, bet, bound or seed was
 retuned after observing this low crossing power.

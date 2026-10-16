@@ -78,3 +78,23 @@ accounting, a public label-free policy-geometry moment envelope, a corrected-tai
 specialization with stronger moment assumptions, and transparent feasibility
 experiments. A complete independent prior-art review and full-strategy evidence
 are still needed before a strong publication or novelty claim.
+
+Further primary sources checked for integration of the cash-PARK example:
+
+- Arnold, Gavrilopoulos, Schulz and Ziegel,
+  [Sequential model confidence sets](https://arxiv.org/html/2404.18678),
+  author version v4, January 2026, published DOI
+  [10.1093/jrsssb/qkag066](https://doi.org/10.1093/jrsssb/qkag066).
+  Simultaneous time-uniform inference for superior forecasters is established.
+  The reported financial strategy does not implement that coverage guarantee.
+- Frazier and Poskitt,
+  [Sequential Scoring Rule Evaluation for Forecast Method Selection](https://arxiv.org/html/2505.09090v1).
+  Sequential comparisons of estimated forecast methods via exponentiated scores
+  and change of measure are close prior work. Their conditional-factor and
+  moment assumptions must not be identified with our raw-score mean null.
+- Grünwald and de Rooij,
+  [Asymptotic Log-loss of Prequential Maximum Likelihood Codes](https://arxiv.org/abs/cs/0502004).
+  Logarithmic estimation losses of plug-in sequential predictors are known.
+  The cash-PARK example retains that policy loss in its utility target and
+  specializes standard likelihood comparison to an adaptive boundary null;
+  it does not introduce logarithmic prequential regret as a general principle.

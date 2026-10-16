@@ -1,10 +1,12 @@
 # Proof audit: costless cash-PARK with vanishing estimation error
 
-Status: mathematical research audit, **excluded from the main manuscript** pending
-presentation and broader novelty review. The controlled scalar study is complete;
-its very low finite-horizon power is reported in `vanishing_gain_results/`.
-No claim of a first
-general betting, likelihood-optimality or prequential-regret theorem is made.
+Status: the costless scalar theorem, uniform plug-in separation and complete
+proof are now integrated in `paper/sections/11_vanishing_gains.tex` and
+`paper/sections/12_vanishing_proofs.tex`. The controlled study's very low
+finite-horizon power is reported alongside them. Historical notes remain
+excluded. Sixty-six deterministic quadrature checks support the identities;
+they do not prove the asymptotics or stopping-time statements. No claim of a
+first general betting, likelihood-optimality or prequential-regret theorem is made.
 The financial configuration and its positive comparison-mean floor are unchanged.
 
 ## 1. Validity requires no separately certified high return moment
@@ -213,4 +215,5 @@ vanishing estimation-error gains, failure of a particular uniform-bound
 plug-in rule, an attainable conditional-null confidence exponent, and its
 economic waiting-utility coefficient. The controlled experiment is a check
 of finite-horizon behavior, not a substitute for these proofs. A broader
-novelty search and manuscript integration decision remain necessary.
+publication-level novelty assessment remains necessary. The current manuscript
+presents the explicit example and proofs without an unqualified priority claim.

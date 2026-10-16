@@ -116,6 +116,9 @@ def main():
     if (root/'reports/lambda_power_v2_results/verification.json').exists():
         from build_lambda_results import generate as generate_lambda
         generate_lambda(root)
+    if (root/'reports/vanishing_gain_results/verification.json').exists():
+        from build_vanishing_results import generate as generate_vanishing
+        generate_vanishing(root)
     engine=shutil.which('tectonic') or '/opt/homebrew/bin/tectonic'
     subprocess.run([engine,'--keep-logs','main.tex'],cwd=root/'paper',check=True)
     print(root/'paper/main.pdf')

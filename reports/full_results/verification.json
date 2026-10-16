@@ -17,9 +17,9 @@
   "scalar_arithmetic_checks": 88285790,
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
-  "pdf_pages": 30,
-  "pdf_sha256": "b6eff435b7b20b6649edcb818d0192aeafd76b545bb29cd0d2de1f66c570e622",
-  "pdf_visual_qa": "All 30 pages re-rendered and reviewed on two contact sheets; new section pages 7\u201310 inspected individually. Figure inspected at full resolution. No clipping/overlap, unresolved references or overfull log entries.",
+  "pdf_pages": 35,
+  "pdf_sha256": "a1d76c66632406d933756f067f193e58af508f219d7af0fa4493d4697a963f00",
+  "pdf_visual_qa": "All 35 pages rendered and reviewed on contact sheets; new theorem/study pages 24\u201326 and proof pages 32\u201334 inspected individually. Final edit re-rendered and inspected. No clipping, overlap, overfull boxes, multiply defined labels or unresolved references.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -29,18 +29,22 @@
     "paper/figures/full_strategy_paths.png": "f203fb710e83d24c45f7056484b8e8a0d25775606d3eec48b87442478674c596",
     "paper/figures/lambda_power.png": "c5030e099196b343f006ec60b143e0398f6cd6e6780d8f53a0a49906eff5dba8",
     "paper/figures/stationary_power.png": "c3d3ddbca49df76adf908452b855613d662ca235e446cc3f6f8dc25ad3263518",
+    "paper/figures/vanishing_gain.png": "fd4c516f652fa85b04d9c90cad2870121caecc25b6fb325310ae560d23e7dccc",
     "paper/generated_full_results.tex": "dc409f6ecbfa0fc4e7fd74532d9058d446a1343eb5a91ef46af04e3557cceb15",
     "paper/generated_lambda_results.tex": "fa06e81cfe2c9f05066059009c5d59eef4e7bd9d83a862435bec89aa75afe9cb",
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
-    "paper/main.tex": "32945a6733a682b1c509abeb0f632241e94eb36bafa72e4a13d089dc296f8d66",
+    "paper/generated_vanishing_results.tex": "b073cc0f7c17d32f117a7a4aa76e20fd48a2691539762012e5e7b25f5401c4e6",
+    "paper/main.tex": "fc5fab65dd1491037aacc077941cd60d61810a0d191eceed4215d65552ea0fd8",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "497f2f7fdf5c9ad6c938663ec6efaf6802c9cc1edccc79cfeec670ef0011a400",
-    "paper/sections/08_global_safety.tex": "e2f994168ba37ca326f44a1ffe0dcb3afce2d21321a098dfbc954fb0eda2b0b1",
+    "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
     "paper/sections/09_full_strategy.tex": "6e3e08ddc21806a3758040679b27d5e16e1358b1e0a966e25805e4b1eb4a171e",
-    "paper/sections/10_lambda_power.tex": "40cda4f5378f7a51c57e9ef4fca332f669ba8f6254c50a2a761b2d8b46070acf"
+    "paper/sections/10_lambda_power.tex": "40cda4f5378f7a51c57e9ef4fca332f669ba8f6254c50a2a761b2d8b46070acf",
+    "paper/sections/11_vanishing_gains.tex": "f81c066b0ab4b200ded2f16f177b0cf7b9b42f7f39a20c2db54f843a6e2bb60e",
+    "paper/sections/12_vanishing_proofs.tex": "3cd300f0f6fed7c381c27ab0be5c17013077d4852d5d057ea774fdf037e4dd32"
   },
-  "scope": "Financial results remain first-ten v2 pilot snapshot only. V3 same-pool pilot replay running; final 0/500. Separate corrected lambda score study included. Vanishing-gain research note excluded pending integration/presentation review.",
+  "scope": "Financial results remain first-ten v2 pilot snapshot only. V3 same-pool pilot replay running; final 0/500. Separate corrected lambda score study and audited costless vanishing-gain theorem/diagnostic included. Historical research derivations remain excluded.",
   "current_repository_tests_passed": 53,
   "current_repository_test_report": "reports/full_test_results_with_lambda.txt",
   "tests_passed_scope": "Historical 44-test financial v2 snapshot; current repository additionally includes vanishing-gain, numerical-recovery and lambda-selection checks.",
@@ -50,5 +54,14 @@
     "audit": "reports/lambda_power_v2_results/verification.json",
     "scalar_checks": 12331336,
     "scope": "Separate controlled Gaussian score study; not extra financial markets or financial performance."
+  },
+  "vanishing_gain_study": {
+    "scientific_source_freeze_commit": "57752eb",
+    "audit": "reports/vanishing_gain_results/verification.json",
+    "theory_audit": "reports/vanishing_gain_results/theory_quadrature.json",
+    "deterministic_identity_checks": 66,
+    "independent_score_replay_scope": "Eight-path prefix per law; 39888 scalar checkpoint values.",
+    "integration_tests": "Six relevant tests passed in 4.62 seconds.",
+    "scope": "Costless scalar Gaussian example and original frozen controlled paths; no new financial markets, parameter tuning or expected stopping-time result."
   }
 }

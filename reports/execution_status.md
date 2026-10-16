@@ -1,4 +1,41 @@
-# Current continuation — lambda selected for deadline power
+# Current continuation — sharp vanishing-gain example integrated
+
+The manuscript has **35 pages**. The audited costless cash-PARK example now
+appears with its complete proof, conditional-benefit coefficient and executed
+finite-horizon diagnostic. Under the stated Gaussian estimated-policy law,
+integrated squared targets and log evidence grow as log n; an explicit
+admissible adaptive null yields a matching confidence exponent. The coefficient
+4/gamma concerns cumulative conditional benefit in the high-confidence limit,
+not expected stopping time or expected stopped cost. A constant-envelope
+past-mean Catoni rule instead has an almost-sure finite log-capital limit.
+No general betting or quadratic-strong-law priority claim is made.
+
+The low-power experiment is reported without retuning: only 3/4096 alternative
+paths cross at 5% for linear cash-PARK, 1/4096 for geometric fixed Catoni, and
+zero for the two uniform-bound rules by 65,536 observations. Three versus one
+does not establish a finite-sample ranking. The controlled study and financial
+sources are unchanged. Six relevant statistical tests pass; the unchanged full
+suite's latest run has 53 passing tests. An additional **66 deterministic
+quadrature checks** validate finite identities, with maximum identity error
+3.39e-13, excluding the separately labeled local-rate approximations. These
+checks do not prove the asymptotic theorems. Existing scalar replay remains an
+eight-path prefix per law, not every path.
+
+Primary-source review adds sequential model confidence sets and sequential
+scoring-rule selection. The paper distinguishes its economic/state target
+from these existing methods. The new table/figure build uses retained audited
+CSVs; horizon-betting figure output is verified byte-identical under deliberately
+different ambient plotting settings. The financial v3 pilot remains active:
+13 markets completed, 11 independently replayed at this checkpoint. The paper
+keeps the fixed first-ten v2 financial snapshot; final evaluation is **0/500**.
+Preserved empirical inputs still match their original SHA-256 hashes.
+The overall paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
+# Lambda selected for deadline power
 
 The manuscript has **30 pages**, including a separate controlled comparison of
 predictable Catoni bets targeting rejection by a deadline. The original choice

@@ -34,7 +34,10 @@ certificate-optimal bet from log-growth and horizon-power optimization, and
 execute a separate predictable Bellman betting experiment. Convex analysis
 characterizes the population value of adding a signal, while a uniform
 perturbation argument connects that value to estimated policies with separate
-trading states. A single simulated market combines persistent, weak, decaying
+trading states. A costless scalar example yields a sharp confidence exponent
+and a conditional waiting-benefit coefficient for a vanishing estimated-policy
+gain, alongside very low executed finite-horizon power.
+A single simulated market combines persistent, weak, decaying
 and reviving predictors with structural noise and correlated proxies. The
 protocol explicitly separates individual-test validity, economic decision
 quality and portfolio performance. Its uniform risk certificate and annual
@@ -90,6 +93,10 @@ returns are observed, so the present setting permits full-information
 counterfactual score calculation rather than requiring off-policy importance
 weights. We specialize these comparisons to estimated constrained portfolios,
 separate trading states and explicit moment certificates.
+Sequential scoring-rule selection with exponentiated score products is also
+studied in \cite{ssre}, under its stated conditional-factor and moment
+assumptions. Sequential selection between estimated forecasting methods is
+therefore an existing research problem.
 The economic optimization uses the convex trading perspective of
 \cite{boyd}. The present contribution is the explicit connection of these
 components to comparisons of estimated investment policies with separately
@@ -120,7 +127,9 @@ our inferential target is an implemented policy comparison, rather than an
 estimation-noise-adjusted test of population predictive content.
 
 Multiple testing remains a separate issue. The financial significance of
-searching among many predictors is emphasized by \cite{hlz}. Our specified
+searching among many predictors is emphasized by \cite{hlz}. Sequential model
+confidence sets already provide simultaneous time-uniform coverage for
+superior forecasters \cite{smcs}. Our specified
 algorithm deliberately applies no correction across candidates or episodes;
 its individual 5\% guarantee is therefore not a 5\% guarantee for the entire
 search. Nor does an episode rejection certify that a previously profitable
@@ -685,6 +694,7 @@ This draft contains no executed-result claim. Numeric output must first be
 generated and linked to this section by the reproducible paper-building script.}
 
 \input{sections/07_certified_tails.tex}
+\input{sections/11_vanishing_gains.tex}
 \input{sections/08_global_safety.tex}
 \input{sections/09_full_strategy.tex}
 
@@ -715,6 +725,11 @@ Its working score model and one-dimensional evidence state do not describe
 the evolving financial policy pairs. Its power gain therefore does not
 establish better financial decisions or remove the cost of a conservative
 public risk envelope, a positive minimum-effect floor or changing regimes.
+The costless Gaussian example isolates a different limit: estimation can
+leave only logarithmically growing information. Its sharp confidence exponent
+does not ensure useful finite-horizon power, as its controlled experiment
+demonstrates. Its conditional-benefit coefficient is not an expected stopped
+cost or a theorem for the stateful financial fund.
 
 \appendix
 \begingroup\small
@@ -743,6 +758,8 @@ each independent centered shock. With $D=C_B-C_S$, $L=x-y$, $Q=x^2-y^2$,
 The implementation verifies these expressions against an independent
 conditional Monte Carlo sample. Identical policies and states give exactly
 $Y=0$, a separate cancellation check.
+
+\input{sections/12_vanishing_proofs.tex}
 
 \section{Reproducibility and numerical conventions}
 Versioned configurations, source hashes, installed versions and seed manifests
@@ -823,6 +840,17 @@ Author version: \url{https://www.kansascityfed.org/documents/5266/pdf-rwp99-11.p
 Approximately normal tests for equal predictive accuracy in nested models.
 \emph{Journal of Econometrics} 138(1), 291--311.
 Author version: \url{https://www.kansascityfed.org/documents/5368/pdf-RWP05-05.pdf}.
+\bibitem{prequential} Gr\"unwald, P., and S. de Rooij (2005).
+Asymptotic Log-loss of Prequential Maximum Likelihood Codes.
+Author version: \url{https://arxiv.org/abs/cs/0502004}.
+\bibitem{smcs} Arnold, S., G. Gavrilopoulos, B. Schulz, and J. Ziegel.
+Sequential model confidence sets.
+\emph{Journal of the Royal Statistical Society Series B} (2026).
+\url{https://doi.org/10.1093/jrsssb/qkag066}.
+Author version: \url{https://arxiv.org/abs/2404.18678}.
+\bibitem{ssre} Frazier, D. T., and D. S. Poskitt (2025).
+Sequential Scoring Rule Evaluation for Forecast Method Selection.
+Author version: \url{https://arxiv.org/abs/2505.09090}.
 \end{thebibliography}
 \endgroup
 \end{document}

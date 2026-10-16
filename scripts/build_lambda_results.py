@@ -59,6 +59,12 @@ def plot(data,cfg,destination,methods,row):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
+    with matplotlib.rc_context():
+        matplotlib.rcdefaults()
+        _plot(data,cfg,destination,methods,row,plt)
+
+
+def _plot(data,cfg,destination,methods,row,plt):
     plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False})
     fig=plt.figure(figsize=(8.3,7.2));grid=fig.add_gridspec(2,2,height_ratios=[1,1.1])
     axes=[fig.add_subplot(grid[0,0]),fig.add_subplot(grid[0,1])];heat=fig.add_subplot(grid[1,:])

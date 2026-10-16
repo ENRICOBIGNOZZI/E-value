@@ -1,0 +1,163 @@
+\section{Proofs for the vanishing-gain instance}
+\label{app:vanishing}
+All expectations and almost-sure statements in this appendix, except where
+marked $Q$, are under the iid Gaussian alternative $P$. Training is included
+in the filtration at evaluated time zero. It has the same distribution under
+$P$ and the null constructed below, so the initial density ratio is one.
+
+\subsection{Integrated estimation error and useful moment bounds}
+For centered iid observations with finite fourth moment, write
+$B_i=\sum_{j\le i}A_j$ and $\kappa_4=\E A_1^4-3\sigma^4$. For $i\le j$,
+independent future increments give
+\[
+ \operatorname{Cov}(B_i^2,B_j^2)=2i^2\sigma^4+i\kappa_4.
+\]
+Thus $H_n=\sum_{i\le n}B_i^2/i^2$ has
+$\E H_n=\sigma^2\log n+O(1)$ and $\operatorname{Var}H_n=O(\log n)$:
+for the leading covariance term the inner sum over $i\le j$ contributes
+$O(j)/j^2$, and the fourth-cumulant term contributes $O(\log j)/j^2$.
+Chebyshev's inequality is summable along
+$n_k=\lfloor\exp(k^2)\rfloor$. Borel--Cantelli gives
+$H_{n_k}/\log n_k\to\sigma^2$. Positivity of the summands and
+$\log n_{k+1}/\log n_k\to1$ interpolate to all $n$.
+The ordinary strong laws make clipping eventually inactive and the risk
+denominator converge to $m>0$. Weighted Cesaro and removal of a finite
+initial prefix yield the first limit in \eqref{eq:vanishing-rate}.
+
+With $k$ past Gaussian observations, radial/angular independence gives
+\begin{align*}
+ \E(\bar A_k/\widehat M_k)^2
+   &=\frac1{\sigma^2(k-2)},\\
+ \E|\bar A_k/\widehat M_k|^3
+   &=\frac{2\sqrt2\,k^{3/2}}
+       {\sqrt\pi\,\sigma^3(k-3)(k-1)(k+1)},\\
+ \E(\bar A_k/\widehat M_k)^4
+   &=\frac{3k}{\sigma^4(k-4)(k-2)(k+2)}.
+\end{align*}
+For example, rotate the Gaussian vector so its first coordinate is
+$\sqrt{k}\bar A_k/\sigma$, and use its independent length and uniform
+direction. These formulas apply for $k>4$. Clipping and $r\ge0$ decrease
+absolute targets, hence
+\begin{equation}
+ \E w_t^2=O(t^{-1}),\qquad
+ \sum_t\E|w_t|^3<\infty,\qquad \sum_t\E w_t^4<\infty.
+ \label{eq:vanishing-moments}
+\end{equation}
+
+We repeatedly use the following martingale normalization. If a centered
+adapted increment has conditional variance at most $K w_t^2$, its sum
+$M_n$ satisfies $M_n/I_n\to0$ almost surely. Indeed $I_t$ is predictable and
+\[
+ \sum_t\frac{w_t^2}{(1+I_t)^2}
+ \le\int_0^\infty\frac{dx}{(1+x)^2}=1.
+\]
+The martingale of normalized increments converges; the pathwise Kronecker
+lemma then gives the assertion. Localization suffices when the predictable
+variance bound is only almost surely summable.
+
+\subsection{A boundary null and the attainable information rate}
+Let $a_t=\gamma\sigma w_t/2$. Define $Q$ to agree with $P$ during training
+and thereafter use the sequential Gaussian kernels
+\begin{equation}
+ A_t\mid\mathcal F_{t-1}\sim
+ N\!\left(\frac{a_t\sigma}{1+a_t^2},
+           \frac{\sigma^2}{(1+a_t^2)^2}\right).
+ \label{eq:vanishing-null}
+\end{equation}
+Here $w_t$ is exactly the same measurable rule on the observed past under
+both laws. The conditional raw second moment is $\sigma^2/(1+a_t^2)$,
+so $\E_Q(Y_t\mid\mathcal F_{t-1})=0$. Its fourth moment is
+\[
+ \sigma^4\frac{3+6a_t^2+a_t^4}{(1+a_t^2)^4}\le3\sigma^4.
+\]
+These strictly positive-variance kernels define a law with mutual absolute
+continuity with $P$ on every finite horizon. No small-leverage restriction is
+needed. For $R_n=dP/dQ|_{\mathcal F_n}$ and $Z_t=A_t/\sigma$, its log increment is
+\begin{align}
+ \ell_t&=-\log(1+a_t^2)
+  +\tfrac12\{[(1+a_t^2)Z_t-a_t]^2-Z_t^2\}\notag\\
+ &=-\log(1+a_t^2)+(a_t^2+a_t^4/2)Z_t^2
+          -a_t(1+a_t^2)Z_t+a_t^2/2.
+ \label{eq:vanishing-lr}
+\end{align}
+Its conditional mean is $a_t^2/2+O(a_t^4)$ and its conditional variance is
+$O(w_t^2)$, uniformly over bounded targets. Martingale normalization,
+\eqref{eq:vanishing-moments} and the integrated-error limit give
+$\log R_n/\log n\to\kappa$.
+
+The linear factor in \eqref{eq:cash-linear} is $1-a_tZ_t+a_t^2Z_t^2$.
+There is a finite numerical constant $K$ such that, for all real $x$,
+\[
+ |\log(1-x+x^2)+x-x^2/2|\le K|x|^3.
+\]
+Taylor expansion proves this near zero; positivity of the quadratic and its
+logarithmic growth prove it away from zero. Subtracting
+\eqref{eq:vanishing-lr} and expanding $\log(1+a_t^2)$ yields
+\begin{equation}
+ \log G_n-\log R_n
+   =-\tfrac12\sum_{t\le n}a_t^2(Z_t^2-1)+\sum_{t\le n}\rho_t,
+ \qquad \sum_t\E|\rho_t|<\infty.
+ \label{eq:vanishing-remainder}
+\end{equation}
+The expectation bound follows from the Gaussian moments, bounded targets,
+and \eqref{eq:vanishing-moments}. The displayed martingale is bounded in
+$L^2$ since $\sum_t\E a_t^4<\infty$. Therefore the discrepancy converges
+almost surely and $\sup_n\E|\log G_n-\log R_n|<\infty$, proving the second
+limit in \eqref{eq:vanishing-rate}.
+
+For the geometric Catoni assertion, $|\phi(x)-x|\le K|x|^3$ for all real
+$x$, and $v_t^2-\sigma^2w_t^2=O(|w_t|^3+w_t^4)$. Substituting
+$x=(\gamma/2)Y_t=-a_tZ_t+a_t^2Z_t^2$ gives, after summable remainders,
+the leading log increment $-a_tZ_t+a_t^2(Z_t^2-1/2)$ of
+\eqref{eq:vanishing-lr}. Its difference from $\log R_n$ thus has an
+absolutely summable expected remainder, establishing the same rate.
+
+\subsection{Upper bounds, confidence exponents and conditional benefit}
+For a fixed $Q$-valid e-process $F$, any bounded stopping time $T$ satisfies
+$\E_P(F_T/R_T)=\E_Q F_T\le1$. Thus $F/R$ is a $P$-valid e-process.
+Its path supremum is finite almost surely by Ville's inequality, whence
+$\limsup_n\log F_n/\log n\le\kappa$. The bound concerns fixed processes;
+an additional argument is needed for families depending on $\alpha$.
+
+Since $\log G_n/\log n\to\kappa>0$, first-crossing times tend to infinity
+as the threshold grows, and the eventual pathwise bounds
+$(\kappa-\epsilon)\log n\le\log G_n\le(\kappa+\epsilon)\log n$
+sandwich their logarithms. This proves the first limit in
+\eqref{eq:vanishing-cost}. The same argument along fixed-spaced review dates
+proves the review-grid claim without assuming that daily crossings persist.
+
+For an arbitrary level-$\alpha$ family $T_\alpha$, take
+$N_\alpha=\lfloor\alpha^{-d}\rfloor$, $d<\kappa^{-1}$, and choose
+$\eta>0$ with $\kappa d<1-\eta$. Changing measure at the bounded stopped
+time gives
+\begin{align*}
+ P(T_\alpha\le N_\alpha)
+ &\le \alpha^{\eta}
+ +P\!\left\{\max_{t\le N_\alpha}\log R_t
+                      >(1-\eta)\log(1/\alpha)\right\}\longrightarrow0.
+\end{align*}
+The maximum divided by $\log N$ tends to $\kappa$ almost surely, directly
+from $\log R_n/\log n\to\kappa$; a finite initial prefix disappears in this
+normalization. Finally $C_n/\log n\to\sigma^4/(2\gamma m^2)$, so composition
+at $\tau_\alpha$ gives $4/\gamma$. For arbitrary families, monotonicity of
+$C_n$ and the bound at $N_\alpha$ give every lower coefficient
+$d\sigma^4/(2\gamma m^2)$; let $d\uparrow\kappa^{-1}$. This proves the
+probability lower bound and completes Theorem~\ref{thm:vanishing}.
+
+\subsection{Proof of Proposition~\ref{prop:vanishing-uniform}}
+The score's conditional mean is $\gamma\sigma^2w_t^2/2$ and its conditional
+variance is at most $K w_t^2$. Martingale normalization gives
+$\sum_{t\le n}Y_t/I_n\to\gamma\sigma^2/2$, and hence the blockwise
+past-mean bet is $\lambda_t=O(\log t/t)$ almost surely. Thus
+$\sum_t\lambda_t^2<\infty$. Moreover,
+\[
+ \E\sum_{t\ge1}\frac{\log(t+1)}t w_t^2<\infty
+\]
+by \eqref{eq:vanishing-moments}. The same series is finite almost surely,
+which implies $\sum_t\lambda_t\delta_t<\infty$. The elementary Catoni bound
+$|\phi(x)-x|\le x^2/2$ makes the conditional transformed drift absolutely
+summable, using $\E_{t-1}Y_t^2\le\nu^2$. The centered transformed increments
+have conditional variance at most $\lambda_t^2\nu^2$, so their martingale
+converges by localization. The penalty sum is finite as well. The log capital
+therefore converges to a finite real limit. Its supremum is finite almost
+surely, which proves the asserted high-confidence crossing limit.
