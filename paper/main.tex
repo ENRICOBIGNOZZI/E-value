@@ -1,34 +1,646 @@
-\documentclass[11pt]{article}
+\documentclass[11pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[a4paper,margin=0.92in]{geometry}
-\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,graphicx,natbib,enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{microtype}
-\usepackage{fancyhdr}
-\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Portfolio-aware alpha retirement and revival}\fancyhead[R]{\small Working paper}\fancyfoot[C]{\thepage}
-\setlength{\emergencystretch}{1.5em}
-\setlength{\headheight}{14pt}\setlength{\parskip}{3pt}
-\newtheorem{assumption}{Assumption}\newtheorem{theorem}{Theorem}\newtheorem{proposition}{Proposition}\newtheorem{corollary}{Corollary}
-\newcommand{\E}{\mathbb E}\newcommand{\Prob}{\mathbb P}\newcommand{\F}{\mathcal F}\newcommand{\ind}{\mathbf 1}\newcommand{\clip}{\operatorname{clip}}\newcommand{\Cov}{\operatorname{Cov}}\newcommand{\Var}{\operatorname{Var}}\newcommand{\KL}{\operatorname{KL}}\newcommand{\kl}{\operatorname{kl}}
-\title{\vspace{-1.2cm}When Should I Kill---and Revive---an Alpha?\\[0.3em]\large Portfolio-Aware Sequential Evidence and the Cost of Certification}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage[margin=27mm]{geometry}
+\usepackage{graphicx,booktabs,array,enumitem,xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\E}{\mathbb E}\newcommand{\Prb}{\mathbb P}
+\newcommand{\F}{\mathcal F}\newcommand{\G}{\mathcal G}\newcommand{\W}{\mathcal W}
+\newcommand{\norm}[1]{\lVert#1\rVert}\newcommand{\pos}[1]{[#1]_+}
+\newcommand{\supp}{\operatorname{supp}}\newcommand{\op}{\mathrm{op}}
+\title{PARK/REVIVE:\\Sequential Validation of Investment Policies\\with Estimation Error and Trading Costs}
 \author{Enrico Bignozzi}
-\date{6 October 2026\\\small Research draft with executed simulations and JKP historical replay}
+\date{Working draft --- 16 October 2026}
 \begin{document}
-\maketitle\thispagestyle{empty}
+\maketitle
 \begin{abstract}
-A strategy can have a negative expected return and still improve a portfolio through diversification. Conversely, a profitable strategy can reduce the utility of a particular allocation. We study reversible decisions to park and reactivate fixed strategy allocations using paired, predictable portfolio comparisons. Bounded utility-difference scores feed directional betting processes, restart mixtures, and an explicit error budget across strategies and decision episodes. The resulting control concerns false alarms while an episode's conditional-mean null remains true; it does not certify the instantaneous sign of future economic value. We establish this guarantee, a persistent-signal delay bound, a canonical information lower bound, and the relation between clipped and raw utility targets. All proofs appear in the appendix. Executed simulations distinguish economic gains from statistical conservatism. The method preserves negative-return hedges and benefits from revival after strong mean deterioration, but it reacts too slowly in a correlation-only revival design and underperforms an always-on policy there. A JKP-only replay of 153 US factors from January 2000 through December 2025 produces no certified switches under the reference specification. These negative results identify the main obstacle to deployment: demanding lifetime error control can exhaust the economic opportunity before sufficient evidence accumulates. The package provides an auditable research baseline, not evidence of a state-of-the-art profitable allocator.
+An investment signal should be evaluated through the portfolio it changes,
+including estimation error and the cost of reaching that portfolio. We study
+sequential comparisons between implementable policies under quadratic utility,
+proportional turnover costs and quadratic market impact. A Catoni
+supermartingale validates a single adaptive comparison with a certified
+conditional second-moment bound. Under a constant positive conditional mean,
+past-only blockwise betting incurs logarithmic expected regret in a quadratic
+growth certificate and admits a finite-sample power bound. Convex analysis
+characterizes the population value of adding a signal, while a uniform
+perturbation argument connects that value to estimated policies with separate
+trading states. A single simulated market combines persistent, weak, decaying
+and reviving predictors with structural noise and correlated proxies. The
+protocol explicitly separates individual-test validity, economic decision
+quality and portfolio performance. Its uniform risk certificate and annual
+decision bottleneck can make validation economically slow. We report executed
+diagnostics without presuming superiority, global error control or a theorem
+of adaptation to changing regimes.
 \end{abstract}
-\noindent\textbf{Keywords:} portfolio choice; sequential testing; e-processes; strategy lifecycle; shadow portfolios; nonstationarity.\par
-\noindent\textbf{JEL:} C12, C14, C58, G11.
-\vspace{0.5em}
-\noindent\textbf{Scope.} No orders are submitted. JKP costs are transparent sensitivity assumptions, not estimated stock-level execution costs. The historical replay respects observation timing but does not reconstruct historical publication dates or data vintages.
-\newpage
+\noindent\textbf{Keywords:} sequential inference; investment signals; e-processes;
+transaction costs; portfolio estimation; simulation.
 
-\input{sections/01_economy.tex}
-\input{sections/02_method.tex}
-\input{sections/03_simulations.tex}
-\input{sections/04_empirical.tex}
-\input{sections/05_proofs.tex}
-\input{sections/06_appendices.tex}
+\section{Introduction}
+A portfolio manager faces three related decisions: whether to add a signal,
+park an incumbent signal, or replace one signal with another. The economically
+relevant object is the change in a feasible investment policy. A predictor's
+own coefficient, its standalone performance and its contribution to a
+portfolio are different quantities. A signal without a direct predictive
+coefficient may hedge an incumbent exposure or proxy another characteristic.
+Conversely, an authentic predictor may worsen a portfolio when estimated
+weights and trading costs are taken into account.
+
+We formulate these decisions as comparisons of two policies constructed before
+the returns used to evaluate them. Each policy pays its own trading costs and
+keeps its own allocation state. Their observable utility difference feeds a
+heavy-tail-robust e-process. An annual search proposes additions, removals and
+a restricted set of swaps; the test evaluates those proposals. This separation
+allows one to ask both whether the statistical comparison is valid and whether
+waiting for its evidence is worthwhile.
+
+The analysis has four parts. First, a conditional supermartingale argument
+establishes validity for an individual adaptive episode. Second, a stationary
+alternative yields an oracle lower bound on power and a logarithmic cost for
+estimating the bet. Third, a residual marginal utility and a Schur complement
+bound the population benefit of entry under trading costs. Fourth, objective
+perturbations control the gap between population values and estimated-policy
+comparisons, including the effect of different previous allocations.
+
+The statistical ingredients build on Catoni-style confidence sequences
+\cite{wr} and the broader theory of safe anytime-valid inference \cite{savi}.
+The economic optimization uses the convex trading perspective of
+\cite{boyd}. The present contribution is the explicit connection of these
+components to comparisons of estimated investment policies with separately
+accounted trading states. We do not claim a new general e-process construction
+or a new general Schur-complement identity.
+
+Multiple testing remains a separate issue. The financial significance of
+searching among many predictors is emphasized by \cite{hlz}. Our specified
+algorithm deliberately applies no correction across candidates or episodes;
+its individual 5\% guarantee is therefore not a 5\% guarantee for the entire
+search. Nor does an episode rejection certify that a previously profitable
+signal remains profitable in the current regime.
+
+\section{The economic object}
+Let $A_{t+1}\in\mathbb R^p$ be next-period gross returns of observable signal
+sleeves. The information $\F_t$ contains characteristics, realized returns,
+published risk caps, policy states and all past algorithmic decisions, but no
+future shocks or simulator labels. An allocation $w_t$ and its previous target
+$b_t$ are $\F_t$-measurable. Define
+\begin{align}
+ C_t(w,b)&=c\norm{w-b}_1+\frac\eta2(w-b)'\Lambda_t(w-b),\\
+ U_{t+1}(w;b)&=w'A_{t+1}-\frac\gamma2(w'A_{t+1})^2-C_t(w,b),\label{eq:utility}\\
+ J_t(w;b)&=w'\mu_t-\frac\gamma2w'M_tw-C_t(w,b),\label{eq:objective}
+\end{align}
+where $\mu_t=\E[A_{t+1}\mid\F_t]$ and
+$M_t=\E[A_{t+1}A_{t+1}'\mid\F_t]$. We require $\gamma>0$, $c,\eta\ge0$
+and $\Lambda_t\succeq0$. Whenever the expectations exist,
+\begin{equation}
+ \E[U_{t+1}(w;b)\mid\F_t]=J_t(w;b).
+\end{equation}
+This follows by conditional linearity and the raw-second-moment identity.
+
+The raw second moment is essential: $M_t=\Sigma_t+\mu_t\mu_t'$.
+Replacing $M_t$ by covariance removes the term
+$\gamma(w'\mu_t)^2/2$ and changes the objective. Trading costs are subtracted
+after applying the quadratic score to gross returns. Squaring net returns
+would also define another objective. Quadratic utility is a scoring criterion;
+it is not globally increasing over unbounded returns.
+
+For a support $S\subseteq[p]$, let
+\begin{equation}
+ \W(S)=\{w:\supp(w)\subseteq S,\ \norm w_1\le L\},\qquad
+ V_t(S;b)=\max_{w\in\W(S)}J_t(w;b).
+\end{equation}
+The empty support permits only $w=0$. Thus $V_t(\varnothing;0)=0$, whereas
+$V_t(\varnothing;b)=-C_t(0,b)$: liquidation is not free. For $S\subseteq B$,
+feasible-set inclusion gives $V_t(B;b)\ge V_t(S;b)$ at the same state.
+This does not imply that an estimated policy with additional signals improves
+realized or conditional utility.
+
+The implementation uses $b_t=w_{t-1}$, previous target allocations across
+sleeves. This stylized allocator-turnover model does not reconstruct trades
+inside each sleeve. Its net return for wealth and Sharpe calculations is
+$r^{net}_{t+1}=w_t'A_{t+1}-C_t(w_t,b_t)$; its utility remains
+\eqref{eq:utility}. Daily returns are decimals, $c$ is utility per unit of
+gross allocation change, $\eta\Lambda_t$ is quadratic cost curvature and
+$\gamma$ is quadratic return curvature.
+
+\section{Comparison episodes and the information protocol}
+An episode is identified by its start $\tau$, reference support $S$, candidate
+support $B$, learning rule, cost parameters and state convention. A forward
+move sets $B=S\cup\{j\}$; a removal sets $B=S\setminus\{j\}$; a swap sets
+$B=(S\setminus\{i\})\cup\{j\}$. All use the same orientation,
+\begin{equation}
+ Y_{t+1}=U_{t+1}(B)-U_{t+1}(S).\label{eq:score}
+\end{equation}
+The removal candidate is the policy without the incumbent signal.
+
+At episode inception, the two shadow policies start from the fund's same
+actual allocation. Thereafter, each shadow keeps its own previous target and
+pays its own turnover and impact. Selecting a candidate changes the fund's
+support; its next target is recomputed from the fund's actual previous
+allocation. The shadow's accumulated positions are not transferred to the fund.
+
+Estimation uses expanding observations and is refreshed annually. Evidence
+uses only utility scores realized after the episode starts. A routine refit of
+a predeclared adaptive policy does not rewrite its old scores. Changing the
+reference support closes its comparisons and opens new episodes, initialized
+at one, on future observations. Expanding estimation and accumulating test
+evidence are distinct operations.
+
+\section{Individual sequential validity}
+We test the episode null
+\begin{equation}
+ H_0:\quad\E[Y_t\mid\F_{t-1}]\le0\quad\text{at every episode date}.\label{eq:null}
+\end{equation}
+This is stronger than a statement about the unconditional historical average.
+Let $v_t^2>0$ be predictable with
+$\E[Y_t^2\mid\F_{t-1}]\le v_t^2$. Define the odd Catoni function
+\begin{equation}
+ \phi(x)=\operatorname{sign}(x)\log(1+|x|+x^2/2).
+\end{equation}
+It satisfies, for all real $x$,
+\begin{equation}
+ e^{\phi(x)}\le1+x+x^2/2,\quad
+ e^{-\phi(x)}\le1-x+x^2/2,\quad
+ \phi(x)\ge x-x^2/2.\label{eq:phi}
+\end{equation}
+Indeed $(1+x+x^2/2)(1-x+x^2/2)=1+x^4/4\ge1$; the first two inequalities
+follow by considering the sign of $x$. The last follows from
+$\phi(x)\ge-\log(1-x+x^2/2)\ge x-x^2/2$.
+
+For predictable $\lambda_t\ge0$, set
+\begin{equation}
+ L_{\tau,t}=\sum_{s=\tau+1}^t\{\phi(\lambda_sY_s)-\lambda_s^2v_s^2/2\},
+ \qquad E_{\tau,t}=\exp(L_{\tau,t}).\label{eq:eprocess}
+\end{equation}
+The implementation stores $L$ and compares it with $\log(1/\alpha)$.
+
+\begin{theorem}[T1: conditional episode validity]
+Let $\tau$ be an almost surely finite stopping time and let the comparison rule
+be chosen using $\F_\tau$. Under \eqref{eq:null} and the stated conditional
+second-moment bound, $E_{\tau,t}$ is a nonnegative supermartingale starting at
+one. For $0<\alpha<1$,
+\begin{equation}
+ \Prb\!\left(\sup_{t\ge\tau}E_{\tau,t}\ge1/\alpha\mid\F_\tau\right)\le\alpha.
+\end{equation}
+The bound also holds when decisions are restricted to annual revisions.
+\end{theorem}
+\begin{proof}
+For $Q_t=\exp\{\phi(\lambda_tY_t)-\lambda_t^2v_t^2/2\}$,
+\begin{align*}
+ \E[Q_t\mid\F_{t-1}]
+ &\le e^{-\lambda_t^2v_t^2/2}
+ \{1+\lambda_t\E[Y_t\mid\F_{t-1}]+\lambda_t^2\E[Y_t^2\mid\F_{t-1}]/2\}\\
+ &\le e^{-\lambda_t^2v_t^2/2}(1+\lambda_t^2v_t^2/2)\le1.
+\end{align*}
+Multiplying by past capital proves the supermartingale property. Stop at the
+first threshold crossing or a finite horizon. Conditional expectation of
+stopped capital is at most one, and crossing requires capital at least
+$1/\alpha$. Conditional Markov and then monotone convergence of the crossing
+events prove the result. Annual crossings form a subset of all crossings.
+\end{proof}
+
+The theorem permits past-based candidate choice, annual refitting and estimated
+bets. It does not combine validity across different comparisons or restarts.
+A useful anytime p-value for the same episode is
+$\min\{1,1/\max_{s\le t}E_{\tau,s}\}$. Thus the relevant contrast with the
+benchmark is sequentially valid inference versus repeated uncorrected
+fixed-time inference, rather than e-values versus every possible p-value
+procedure. The operational decision uses current annual evidence, not a stale
+historical maximum.
+
+\section{Power and predictable betting}
+Work in local episode time with blocks of $h$ observations and constant bound
+$\nu^2$. For the fixed-bet result, assume
+\begin{equation}
+ \E[Y_t\mid\F_{t-1}]\ge\delta>0,\qquad
+ \E[Y_t^2\mid\F_{t-1}]\le\nu^2.\label{eq:alt}
+\end{equation}
+Write $g(\lambda)=\lambda\delta-\lambda^2\nu^2$ and
+$\pi_K=\Prb(\max_{k\le K}E_{hk}\ge1/\alpha)$.
+
+\begin{theorem}[T2a: a fixed-bet power certificate]
+For any constant $\lambda\ge0$,
+\begin{equation}
+ \pi_K(\lambda)\ge\pos{1-\alpha^{-1}e^{-hK g(\lambda)}}.
+\end{equation}
+The exponent is maximized at
+$\lambda^*=\delta/(2\nu^2)$ with $g^*=\delta^2/(4\nu^2)$.
+A sufficient horizon for power at least $1-\beta$ is
+\begin{equation}
+ hK\ge \frac{4\nu^2}{\delta^2}\log\frac1{\alpha\beta}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+By \eqref{eq:phi} and \eqref{eq:alt},
+\begin{align*}
+ \E[e^{-\phi(\lambda Y_t)+\lambda^2\nu^2/2}\mid\F_{t-1}]
+ &\le e^{\lambda^2\nu^2/2}(1-\lambda\delta+\lambda^2\nu^2/2)\\
+ &\le e^{-\lambda\delta+\lambda^2\nu^2}=e^{-g(\lambda)}.
+\end{align*}
+Iteration gives $\E E_{hK}^{-1}\le e^{-hKg(\lambda)}$. No annual crossing
+implies $E_{hK}<1/\alpha$; Markov bounds this probability by
+$\alpha^{-1}e^{-hKg(\lambda)}$. Maximizing the concave quadratic and solving
+the inequality for $hK$ finish the proof.
+\end{proof}
+
+This maximizes the stated lower certificate, not exact power over all tests.
+For $g(\lambda)>0$, the same argument bounds the first annual crossing index
+$T_h$ by $\Prb(T_h>k)\le\min\{1,\alpha^{-1}e^{-hkg(\lambda)}\}$.
+Consequently, with $k_0=\lceil\log(1/\alpha)/(h g(\lambda))\rceil$,
+$\E[hT_h]\le hk_0+h/(1-e^{-hg(\lambda)})$. This is not a post-change
+detection-delay guarantee.
+
+For adaptive bets, strengthen the mean assumption to
+$\E[Y_t\mid\F_{t-1}]=\delta$ at every date. Let
+\begin{equation}
+ \widehat\lambda_k=\Pi_{[0,1/(2\nu)]}
+ \left(\frac{\pos{\widehat\delta_{k-1}}}{2\nu^2}\right),\qquad
+ \widehat\delta_{k-1}=\frac{\sum_{t\le h(k-1)}Y_t}{h(k-1)},\quad k\ge2.
+\end{equation}
+Set $\lambda_1=\delta_0/(2\nu^2)$ using a predeclared $0<\delta_0\le\nu$.
+Define
+\begin{equation}
+ R_K=h\nu^2\sum_{k=1}^K(\widehat\lambda_k-\lambda^*)^2,\qquad
+ C_K=h\nu^2(\lambda_1-\lambda^*)^2+\frac14\sum_{k=1}^{K-1}\frac1k.
+\end{equation}
+
+\begin{theorem}[T2b--c: estimation cost and adaptive power]
+Under the constant-conditional-mean assumption,
+\begin{equation}
+ \E R_K\le C_K,\qquad
+ \E\log E_{hK}\ge A_K-C_K,\qquad A_K=\frac{hK\delta^2}{4\nu^2}.
+\end{equation}
+For every $r>0$,
+\begin{equation}
+ \pi_K(\widehat\lambda)\ge
+ \pos{1-C_K/r-\alpha^{-1}e^{-A_K+r}}.\label{eq:adaptivepower}
+\end{equation}
+Taking $r=A_K/2$ yields consistency for fixed $\delta>0$.
+\end{theorem}
+\begin{proof}
+$Y_t-\delta$ are orthogonal martingale differences, so
+$\E(\widehat\delta_{k-1}-\delta)^2\le\nu^2/[h(k-1)]$.
+Jensen gives $\delta\le\nu$; positive-part truncation and projection onto an
+interval containing the oracle do not increase squared error. Thus
+$\E(\widehat\lambda_k-\lambda^*)^2\le1/[4\nu^2h(k-1)]$.
+Summing proves the regret bound. The third inequality in \eqref{eq:phi} gives
+conditional expected log growth at least $\lambda_t\delta-\lambda_t^2\nu^2$.
+Complete the square:
+\begin{equation}
+ \lambda\delta-\lambda^2\nu^2
+ =\frac{\delta^2}{4\nu^2}-\nu^2(\lambda-\lambda^*)^2.\label{eq:square}
+\end{equation}
+This proves the expected growth statement. For power, the inverse-capital
+argument from T2a shows that
+\[
+ Z_T=E_T^{-1}\exp\!\left\{\sum_{t\le T}(\lambda_t\delta-\lambda_t^2\nu^2)\right\}
+\]
+is a nonnegative supermartingale with expectation at most one. At $T=hK$,
+$Z_T=E_T^{-1}e^{A_K-R_K}$. Hence
+\begin{align*}
+ \Prb(E_{hK}<1/\alpha)
+ &\le\Prb(R_K>r)+\Prb(Z_{hK}>\alpha e^{A_K-r})\\
+ &\le C_K/r+\alpha^{-1}e^{-A_K+r}.
+\end{align*}
+No annual crossing implies the event on the left. Finally $C_K=O(\log K)$
+while $A_K$ grows linearly, proving consistency.
+\end{proof}
+
+$R_K$ concerns the quadratic growth certificate. It is not asserted to equal
+the realized log-capital difference from the fixed-bet oracle. In the changing
+market below, neither a constant effect nor a constant conditional mean is
+available. T1 still applies when its null is true, but T2b--c cannot be
+transferred to regime adaptation.
+
+\section{The economic value of an additional signal}
+Fix a date and a common previous state $b$. In this section only, remove the
+leverage constraint and suppose $H=\gamma M+\eta\Lambda\succ0$.
+Writing $a_0=\mu+\eta\Lambda b$, the objective up to a constant is
+$a_0'w-w'Hw/2-c\norm{w-b}_1$.
+Let $w_S^*$ maximize it on support $S$ and let $j\notin S$ with $b_j=0$.
+Define
+\begin{equation}
+ q_j=(a_0)_j-H_{jS}w_S^*,\qquad
+ d_j=H_{jj}-H_{jS}H_{SS}^{-1}H_{Sj}>0.
+\end{equation}
+For empty $S$, use $q_j=(a_0)_j$ and $d_j=H_{jj}$.
+
+\begin{theorem}[T3: entry threshold and marginal-value bounds]
+The gain $\Delta_j=V(S\cup\{j\};b)-V(S;b)$ satisfies
+\begin{equation}
+ \frac{\pos{|q_j|-c}^2}{2H_{jj}}
+ \le\Delta_j\le\frac{\pos{|q_j|-c}^2}{2d_j}.
+\end{equation}
+In particular, $\Delta_j>0$ if and only if $|q_j|>c$.
+\end{theorem}
+\begin{proof}
+Optimality on $S$ gives $z_S\in\partial\norm{w_S^*-b_S}_1$ with
+$(a_0)_S-H_{SS}w_S^*=cz_S$. Write a perturbation as $(u,x)$ on $(S,j)$.
+The subgradient inequality and $b_j=0$ bound its objective improvement by
+\[
+ q_jx-c|x|-\tfrac12\{u'H_{SS}u+2xH_{jS}u+H_{jj}x^2\}.
+\]
+Minimizing the quadratic in $u$ gives $u=-H_{SS}^{-1}H_{Sj}x$ and residual
+curvature $d_j$. Maximizing $q_jx-c|x|-d_jx^2/2$ gives the upper bound.
+Holding $u=0$ makes the actual improvement exactly
+$q_jx-c|x|-H_{jj}x^2/2$ and gives the lower bound. Positive denominators
+then prove the entry characterization.
+\end{proof}
+
+When $c=0$, the subgradient inequality is exact and
+\begin{equation}
+ \Delta_j=
+ \frac{\{(a_0)_j-H_{jS}H_{SS}^{-1}(a_0)_S\}^2}
+ {2\{H_{jj}-H_{jS}H_{SS}^{-1}H_{Sj}\}}.
+\end{equation}
+With incumbent weights frozen, the new-coordinate optimizer is
+$\operatorname{sign}(q_j)\pos{|q_j|-c}/H_{jj}$.
+The quantity that matters is residual marginal utility, rather than standalone
+expected return. The leverage-constrained simulation solves the full convex
+problem; these unconstrained formulas are not used as constrained shortcuts.
+
+\section{From population values to estimated policies}
+For a common feasible set, let $w^*(S;b)$ maximize $J$ and
+$\widehat w(S;b)$ maximize $\widehat J$. Suppose on an event $\mathcal A$,
+\begin{equation}
+ \sup_{w,b}|\widehat J(w;b)-J(w;b)|\le\varepsilon.\label{eq:uniform}
+\end{equation}
+This is an assumption about a specified event; it does not itself establish
+any probabilistic coverage under a changing market.
+
+\begin{theorem}[T4: implementation and marginal-value errors]
+On $\mathcal A$, each implementation loss satisfies
+$0\le\ell(S;b)=V(S;b)-J(\widehat w(S;b);b)\le2\varepsilon$.
+For two supports at a common state,
+\begin{equation}
+ \left|J(\widehat w(B;b);b)-J(\widehat w(S;b);b)
+       -\{V(B;b)-V(S;b)\}\right|\le2\varepsilon.
+\end{equation}
+The same bound holds with separate states $b_B,b_S$ on the corresponding two
+values, if \eqref{eq:uniform} holds uniformly over those states.
+\end{theorem}
+\begin{proof}
+Insert the estimated objective at the population and estimated maximizers:
+\begin{align*}
+ J(w^*;b)-J(\widehat w;b)
+ &=J(w^*;b)-\widehat J(w^*;b)
+   +\widehat J(w^*;b)-\widehat J(\widehat w;b)\\
+ &\quad+\widehat J(\widehat w;b)-J(\widehat w;b)\le2\varepsilon.
+\end{align*}
+The middle difference is nonpositive. Population optimality gives the lower
+bound zero. The marginal error is $\ell(S;b)-\ell(B;b)$, the difference of
+two numbers in $[0,2\varepsilon]$. Replacing their states changes none of
+these steps.
+\end{proof}
+
+With support-specific uniform error $\varepsilon_S$ and estimated solver
+suboptimality $\xi_S$, loss is at most $2\varepsilon_S+\xi_S$.
+The marginal-error bound becomes the maximum of the two loss bounds.
+For known costs and $\norm w_2\le L$,
+\begin{equation}
+ \varepsilon\le L\norm{\widehat\mu-\mu}_2
+       +\frac{\gamma L^2}{2}\norm{\widehat M-M}_{\op}.
+\end{equation}
+If $\Lambda$ is estimated, add
+$\eta(L+L_b)^2\norm{\widehat\Lambda-\Lambda}_{\op}/2$.
+
+For the link to a common state, assume $\norm w_2,\norm b_2,\norm{b'}_2\le L$
+and $\norm\Lambda_{\op}\le\bar\Lambda$. Then
+\begin{equation}
+ |C(w,b)-C(w,b')|\le L_C\norm{b-b'}_2,\qquad
+ L_C=c\sqrt p+2\eta\bar\Lambda L.
+\end{equation}
+The maximum over $w$ preserves this Lipschitz bound. Consequently the shadow
+policy difference $d^{state}$ satisfies
+\begin{equation}
+ |d^{state}-\{V(B;b_S)-V(S;b_S)\}|
+ \le2\varepsilon+L_C\norm{b_B-b_S}_2.\label{eq:bridge}
+\end{equation}
+This state term cannot be dropped by invoking support monotonicity.
+
+If $\gamma M+\eta\Lambda\succeq mI$, known identical costs and exact
+optimization yield a refinement. Let
+$e=\norm{\widehat\mu-\mu}_2+\gamma L\norm{\widehat M-M}_{\op}$.
+The estimated first-order variational inequality implies that, along every
+feasible direction, the true negative objective's subgradient is bounded
+below by the negative gradient error. Strong convexity gives
+$\ell\le e\norm{w^*-\widehat w}_2-m\norm{w^*-\widehat w}_2^2/2
+\le e^2/(2m)$.
+In fixed-dimensional independent data with finite fourth moments and no
+persistent moment bias, expected squared moment errors are $O(n^{-1})$.
+Neither that rate nor consistency follows from expanding estimation under
+unrestricted drift.
+
+\section{An auditable annual selection rule}
+All methods use initial training $n_0=h=252$, expanding sample moments and
+annual parameter updates. The estimated second moment is
+\begin{equation}
+ \widehat M_\rho=(1-\rho)n^{-1}\sum_{s\le n}A_sA_s'
+       +\rho\operatorname{diag}\!\left(n^{-1}\sum_{s\le n}A_sA_s'\right)
+       +\epsilon I.
+\end{equation}
+Shrinkage and ridge are common to methods and frozen before evaluation.
+Starting from $S=\varnothing$, each block opens all additions, all removals,
+and swaps using the ten excluded signals with the largest training marginal
+values. The shortlist is known before the validating returns. Retained
+comparisons continue their own evidence; a swap leaving the shortlist closes
+its episode and starts afresh if later reintroduced.
+
+At a block end, choose the eligible addition with largest positive episode
+mean score. If none exists, consider removals, then swaps. Ties use stable
+signal identifiers. Eligibility for PARK/REVIVE requires current
+$L\ge\log20$. At most one support change occurs per annual revision.
+The next block charges its actual transition from the fund's previous target.
+In a 15-year market with one training year, only 14 structural changes are
+possible, including any terminal decision without a subsequent realized
+investment period. Recovering all 45 predictive functions is not possible
+under this calendar.
+
+For $s=|S|$, a pass considers $p+s\min(10,p-s)$ candidate policies plus the
+shared reference. This is a count of candidate evaluations, not total runtime.
+Swap10 is a search heuristic without a global-optimality guarantee.
+
+\section{One simulated financial market}
+For $N=500$ stocks and $D=30$ observed characteristics, excess returns are
+\begin{equation}
+ R^e_{i,t+1}=\beta_i'F_{t+1}+\sum_{j=1}^{100}\theta_{j,t}f_j(Z_{i,t})
+       +\epsilon_{i,t+1}.
+\end{equation}
+Twenty latent characteristics drive candidate predictors and ten form an
+independent noise block. Each block follows a stationary Gaussian AR(1) with
+persistence $0.97$, unit marginal variance and correlation $0.6$ within
+five-coordinate groups. Observed characteristics are its componentwise
+hyperbolic tangent. A design-seeded library contains normalized linear
+functions, saturating functions and interactions, all bounded by one.
+
+There are 15 persistent, 10 weak, 10 decay and 10 revive functions, together
+with 40 independent structural-noise functions and 15 correlated proxies.
+Noise functions use only the independent characteristic block. Each proxy
+combines $0.9$ times a predictor with $0.1$ times an independent noise
+function. All 55 structural nulls have exactly zero coefficient and zero
+coefficient innovation, while their characteristics continue to vary.
+
+A single symmetric two-state Markov chain starts in state zero and switches
+with daily probability $1/1008$. Stress raises volatility. A first-stress
+indicator switches decay targets permanently to zero; revive targets are
+high in normal states and low in stress. Predictive coefficients follow a
+projected AR(1) with half-life 126 days, bounded symmetric innovations and
+caps fixed in configuration. No seed is selected for having a particular
+regime history.
+
+The four factor shocks and stock-specific shocks are independent standardized
+Laplace variables. Normal-state factor standard deviations are
+$(.009,.004,.004,.004)$ and stock-specific standard deviation is $.012$;
+stress multiplies them by $1.5$. Factor means are zero and fixed stock betas
+are bounded by $(1.5,1,1,1)$ in absolute value. For function values $z_{ij,t}$,
+the common sleeve weights are
+\begin{equation}
+ P_{ij,t}=\frac{z_{ij,t}-N^{-1}\sum_lz_{lj,t}}
+ {\max\{\sum_l|z_{lj,t}-N^{-1}\sum_kz_{kj,t}|,10^{-12}\}},
+ \qquad A_{t+1}=P_t'R^e_{t+1}.
+\end{equation}
+Each sleeve is dollar neutral and has gross leverage at most one. Sleeves are
+not fully factor neutralized. Investible algorithms see realized sleeve
+returns and public risk caps; labels, coefficients, regimes and exact
+conditional moments are confined to the evaluator and oracle.
+
+\subsection{A public conditional moment certificate}
+Suppose both portfolios have conditional return second and fourth moments
+bounded by $m_2,m_4$ and costs bounded by $C_{max}$. Then
+\begin{equation}
+ \E[Y_t^2\mid\F_{t-1}]\le
+ 12(m_2+\gamma^2m_4/4+C_{max}^2)=\nu^2,\qquad
+ C_{max}=2cL+2\eta\bar\Lambda L^2.\label{eq:envelope}
+\end{equation}
+This follows from $U^2\le3(r^2+\gamma^2r^4/4+C^2)$ and
+$(U_B-U_S)^2\le2U_B^2+2U_S^2$.
+
+Let $m$ bound absolute conditional portfolio mean and $v$ bound variance using
+the declared coefficient caps, stock beta caps, maximum volatility and gross
+leverage. Independent standardized Laplace shocks have fourth cumulant three,
+so one may take
+$m_2=m^2+v$ and $m_4=m^4+6m^2v+6v^2$.
+These public quantities do not reveal a realized hidden coefficient or regime.
+The resulting constant is deliberately conservative. A sample variance is
+not substituted for it. The ratio of the certificate to true score second
+moments is reported to diagnose power.
+
+\subsection{Benchmarks and evaluation}
+All Signals optimizes over the entire library. Greedy uses the same search and
+accepts a positive mean score without a test threshold. Repeated-HAC-p uses
+the same policy comparisons and repeated annual one-sided normal p-values,
+with Bartlett long-run variance and bandwidth
+$\lfloor4(n/100)^{2/9}\rfloor$. Its repeated testing is uncorrected and
+finite-sample nominal validity is not claimed. The E-process method uses
+\eqref{eq:eprocess}. Oracle uses true current moments with identical costs and
+constraints, without future shocks. It maximizes one-period conditional
+utility, not pathwise wealth. A separate oracle matched to each method's
+actual state supplies implementation regret.
+
+The primary outcome is mean OOS utility. Secondary outcomes are net wealth,
+conventional and HAC-adjusted Sharpe, drawdown, costs, turnover, inactivity and
+selected support size. A variance-zero Sharpe is undefined. Net wealth is
+absorbed at zero on insolvency; failed paths are retained. Structural discovery
+and conditional economic quality are reported separately. Two consecutive
+favorable annual economic comparisons define evaluator-only detection events;
+undetected events are right-censored. These path-based labels do not define
+an ex ante type-I-error calibration experiment.
+
+All methods share each simulated market. Uncertainty about performance uses
+independent paired seeds, not individual daily observations. Smoke runs test
+software with reduced dimensions. Pilot and final evaluation use disjoint
+seed pools with full dimensions; the final design calls for 500 new seeds.
+Execution status is reported explicitly below.
+
+\section{Executed results and limitations}
+\IfFileExists{generated_results.tex}{\input{generated_results.tex}}{
+This draft contains no executed-result claim. Numeric output must first be
+generated and linked to this section by the reproducible paper-building script.}
+
+\section{Discussion}
+The central economic distinction is between a direction that can help an
+informed optimizer and a policy that helps when estimated and traded. T3
+characterizes the former; T4 and the separate state accounts connect it to the
+latter. Sequential evidence addresses a further question: whether observed
+utility differences justify rejecting an episode-wide conditional null.
+These questions remain distinct even when their calculations share data.
+
+Several obstacles remain before a strong publication claim is warranted.
+The conservative moment certificate may prevent meaningful entry, the annual
+calendar restricts the number of experiments that can become positions, and
+the episode null does not directly express a current-regime profitability
+claim. No multiplicity guarantee protects the whole selection process. A
+complete final simulation and a broader prior-art review are necessary before
+claiming either practical superiority or methodological novelty. Empirical
+applications are outside this paper's current scope.
+
+\appendix
+\section{Conditional moments used only by the evaluator}
+Let $x=\mu_x+h_x'\zeta$ and $y=\mu_y+h_y'\zeta$, where the components of
+$\zeta$ are independent, symmetric, variance one and fourth moment six.
+Write $v_x=h_x'h_x$, $v_y=h_y'h_y$ and $v_{xy}=h_x'h_y$. Then
+\begin{align*}
+ \E x^2&=\mu_x^2+v_x,&\E x^3&=\mu_x^3+3\mu_xv_x,\\
+ \E x^4&=\mu_x^4+6\mu_x^2v_x+3v_x^2+3\sum_lh_{xl}^4,\\
+ \E[x^2y]&=\mu_x^2\mu_y+\mu_yv_x+2\mu_xv_{xy},\\
+ \E[xy^2]&=\mu_x\mu_y^2+\mu_xv_y+2\mu_yv_{xy},\\
+ \E[x^2y^2]&=\mu_x^2\mu_y^2+\mu_x^2v_y+\mu_y^2v_x+4\mu_x\mu_yv_{xy}\\
+ &\quad+v_xv_y+2v_{xy}^2+3\sum_lh_{xl}^2h_{yl}^2.
+\end{align*}
+These follow by expanding products and keeping only even multiplicities of
+each independent centered shock. With $D=C_B-C_S$, $L=x-y$, $Q=x^2-y^2$,
+\begin{align*}
+ \E Y&=\E L-\gamma\E Q/2-D,\\
+ \E Y^2&=\E L^2+\gamma^2\E Q^2/4+D^2
+             -\gamma\E[LQ]-2D\E L+\gamma D\E Q,\\
+ \E L^2&=(\mu_x-\mu_y)^2+v_x+v_y-2v_{xy},\\
+ \E Q^2&=\E x^4+\E y^4-2\E[x^2y^2],\\
+ \E[LQ]&=\E x^3+\E y^3-\E[xy^2]-\E[x^2y].
+\end{align*}
+The implementation verifies these expressions against an independent
+conditional Monte Carlo sample. Identical policies and states give exactly
+$Y=0$, a separate cancellation check.
+
+\section{Reproducibility and numerical conventions}
+The archived starting commit is
+\texttt{db5c37ab3e23a7818869d32ba35f22d51c3a89b2}.
+The rebuilt package is isolated from the removed legacy implementation.
+Frozen JSON configurations record economic units and simulation parameters;
+source hashes, installed versions, seed manifests and annual checkpoints
+identify each run. The learner is deterministic given its observed history.
+The DGP, statistical diagnostics and independent moment-check samples use
+distinct random streams. Checkpoint resumption reproduces OOS observations
+without counting an observation twice.
+
+The optimizer solves a convex quadratic program with epigraph variables for
+turnover and gross leverage. It records primal and dual residuals and the
+duality gap. Exact zero-trade cases have a sufficient subgradient check.
+Weights, realized score histories and decisions are tested for invariance to
+future-data perturbations. Stable identifiers govern tie breaking, and the
+candidate shortlist is tested under a consistent permutation of columns.
+No old empirical or simulated result enters this manuscript.
+
+\begin{thebibliography}{9}
+\bibitem{wr} Wang, H., and A. Ramdas (2023).
+Catoni-style confidence sequences for heavy-tailed mean estimation.
+\emph{Stochastic Processes and their Applications} 163, 168--202.
+\url{https://arxiv.org/abs/2202.01250}.
+\bibitem{savi} Ramdas, A., P. Gr\"unwald, V. Vovk, and G. Shafer (2023).
+Game-theoretic statistics and safe anytime-valid inference.
+\emph{Statistical Science} 38(4), 576--601.
+\url{https://arxiv.org/abs/2210.01948}.
+\bibitem{boyd} Boyd, S., E. Busseti, S. Diamond, R. Kahn, K. Koh,
+P. Nystrup, and J. Speth (2017). Multi-Period Trading via Convex Optimization.
+\emph{Foundations and Trends in Optimization} 3(1), 1--76.
+\url{https://web.stanford.edu/~boyd/papers/cvx_portfolio.html}.
+\bibitem{hlz} Harvey, C. R., Y. Liu, and H. Zhu (2016).
+\ldots\ and the Cross-Section of Expected Returns.
+\emph{Review of Financial Studies} 29(1), 5--68.
+Working paper: \url{https://www.nber.org/papers/w20592}.
+\end{thebibliography}
 \end{document}

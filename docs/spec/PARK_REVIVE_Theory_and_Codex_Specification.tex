@@ -1,0 +1,972 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{booktabs,longtable,tabularx,array,enumitem}
+\usepackage{xcolor,hyperref,fancyhdr,listings,xurl}
+\definecolor{ink}{HTML}{16324F}
+\definecolor{light}{HTML}{F2F5F8}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=ink,citecolor=ink,pdftitle={PARK/REVIVE: teoria e specifica per Codex},pdfauthor={Documento di lavoro per Enrico Bignozzi}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small PARK/REVIVE}\fancyhead[R]{\small Specifica teorica e operativa}\fancyfoot[C]{\thepage}
+\setlength{\emergencystretch}{2em}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlist{nosep,leftmargin=1.6em}
+\renewcommand{\arraystretch}{1.18}
+\allowdisplaybreaks[2]
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposizione}
+\newtheorem{corollary}[theorem]{Corollario}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definizione}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Osservazione}
+\newcommand{\E}{\mathbb E}\newcommand{\PP}{\mathbb P}\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathcal F}\newcommand{\W}{\mathcal W}\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\op}{\mathrm{op}}\newcommand{\ind}{\mathbf 1}\newcommand{\pos}[1]{\left[#1\right]_+}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\argmax}{\operatorname*{arg\,max}}\newcommand{\argmin}{\operatorname*{arg\,min}}
+\newcommand{\important}[1]{\par\smallskip\noindent\colorbox{light}{\parbox{0.963\linewidth}{\textbf{Punto fermo.} #1}}\par\smallskip}
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true,columns=fullflexible,keepspaces=true,frame=single,rulecolor=\color{ink},showstringspaces=false}
+\begin{document}
+\begin{titlepage}
+\vspace*{12mm}
+{\color{ink}\Large E-VALUE / RESEARCH HANDOFF}\par\vspace{13mm}
+{\Huge\bfseries PARK/REVIVE}\par\vspace{5mm}
+{\LARGE Selezione e gestione dinamica\par di segnali di investimento}\par\vspace{11mm}
+{\Large Teoria completa, dimostrazioni\par e specifica di implementazione per Codex}\par\vspace{14mm}
+\rule{\linewidth}{0.7pt}
+\textbf{Versione 1.0 --- 16 ottobre 2026}\par
+Preparato per Enrico Bignozzi. Repository: \texttt{ENRICOBIGNOZZI/E-value}.\par
+\rule{\linewidth}{0.7pt}
+\vspace{8mm}
+\textbf{Scelte definitive}\par
+Utilità quadratica osservabile; secondo momento dei rendimenti; costi proporzionali al turnover e market impact quadratico; insieme iniziale vuoto; stima expanding e revisioni ogni 252 osservazioni; Forward--Backward--Swap10; Catoni e-process per singolo confronto; un solo DGP finanziario con veri predittori, ridondanza, decadimento e rumore.
+\vfill
+\textbf{Natura del documento}\par
+Specifica matematica e sperimentale, non articolo con risultati empirici. Le prove sono riportate per esteso e le ipotesi delimitano ogni conclusione. Nessuna simulazione del nuovo disegno è dichiarata eseguita. Non si rivendicano ottimalità globale della selezione, massima potenza esatta, controllo multiplo o novità delle componenti statistiche note.
+\end{titlepage}
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup\newpage
+
+\section{Contratto scientifico e decisioni da non cambiare}
+\label{sec:contract}
+La domanda economica è: \emph{quando conviene aggiungere, togliere o sostituire un segnale nel portafoglio che siamo effettivamente in grado di stimare?} Un segnale è una funzione osservabile di caratteristiche. Non tutti i segnali disponibili sono alpha veri; alcuni sono rumore, altri proxy o coperture.
+
+L'algoritmo combina selezione economica e inferenza sequenziale. La selezione propone confronti. Il test valuta le utilità realizzate di politiche costruite prima dei rendimenti. Il test non rende automaticamente ottimale la selezione e non certifica tutte le decisioni simultaneamente.
+
+\begin{longtable}{p{.27\linewidth}p{.67\linewidth}}
+\toprule Decisione & Specifica vincolante\\\midrule\endhead
+Obiettivo & Solo soluzione A: utilità quadratica osservabile, non mean--variance con varianza.\\
+Costi & $c\norm{w-\bar w}_1+\frac\eta2(w-\bar w)'\Lambda_t(w-\bar w)$. Nessun nuovo modello di costi.\\
+Partenza & $S_0=\varnothing$. Il caso vuoto implica $w=0$; non è un fattore candidato denominato risk-free.\\
+Campione & Training iniziale $n_0=252$; successivamente 252 nuove osservazioni per revisione. Nessuna rolling window nella specifica principale.\\
+Ricerca & Tutte le aggiunte; tutte le rimozioni; swap limitati ai 10 migliori esclusi secondo ranking prevedibile.\\
+Inferenza & Catoni e-process. Parametro di scommessa stimato solo dal passato. Garanzie per singolo confronto/episodio.\\
+Test multipli & Nessuna correzione fra segnali o riavvii. Misurare gli errori effettivi senza attribuire un livello globale del 5\%.\\
+Simulazione & Un DGP su azioni e caratteristiche, non cinque DGP finanziari indipendenti. Veri coefficienti e stati restano nascosti ai metodi investibili.\\
+Benchmark & All Signals, Greedy, P-value HAC, PARK/REVIVE, Oracle.\\
+Empirica reale & Preservare dati, manifesti, licenze, unità e frequenza originali. Non inventare dati mancanti.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Convenzioni completate in questo handoff}
+Le discussioni precedenti non fissavano ogni dettaglio numerico e contabile. Questo documento propone default espliciti per la programmazione: stati shadow separati, priorità delle mosse, al massimo una modifica strutturale annuale, coefficienti iniziali di calibrazione e seed distinti. Sono convenzioni operative del handoff, non risultati già verificati o stime di mercato. Possono essere riviste prima di congelare il disegno, ma non dopo aver osservato quale scelta fa vincere un metodo. La limitazione a una mossa annuale deve essere evidenziata nel report.
+
+\subsection{Quattro risultati, quattro ambiti diversi}
+T1 prova la validità del singolo test adattivo. T2 prova un limite di potenza e il costo di stimare la scommessa sotto alternative specifiche. T3 caratterizza il valore economico marginale in un problema convesso con costi. T4 collega ottimizzazione di popolazione e politiche stimate. Non sono quattro affermazioni sulla stessa quantità: la distinzione è essenziale.
+
+\important{Il parametro oracle di T2 massimizza il limite inferiore dimostrato sulla potenza, non la potenza esatta fra tutti i test possibili. L'expanding window non implica, da sola, consistenza quando i parametri cambiano nel tempo.}
+
+\section{Notazione, informazione e calendario}
+\label{sec:notation}
+\begin{longtable}{p{.24\linewidth}p{.70\linewidth}}
+\toprule Simbolo & Significato\\\midrule\endhead
+$N,D,p$ & Numero di azioni, caratteristiche primitive e segnali candidati. Default: $500,30,100$.\\
+$Z_{i,t}\in\R^D$ & Caratteristiche disponibili prima del rendimento dell'azione $i$.\\
+$f_j,\theta_{j,t}$ & Funzione candidata e suo coefficiente predittivo nel DGP.\\
+$A_{t+1}\in\R^p$ & Rendimenti lordi delle strategie associate ai segnali.\\
+$S,B\subseteq[p]$ & Insieme di riferimento e insieme candidato.\\
+$w_t,\bar w_t$ & Allocazione target e allocazione precedente usata dal modello di costo.\\
+$\mu_t,M_t$ & $\E[A_{t+1}\mid\F_t]$ e $\E[A_{t+1}A_{t+1}'\mid\F_t]$.\\
+$\Sigma_t$ & Covarianza: $M_t-\mu_t\mu_t'$.\\
+$J_t,V_t$ & Valore atteso a pesi dati e suo massimo nel supporto consentito.\\
+$U_{t+1},Y_{t+1}$ & Utilità osservabile e differenza di utilità fra due politiche.\\
+$\nu^2,v_t^2$ & Limite sul secondo momento del punteggio: costante o prevedibile. Non è necessariamente una varianza.\\
+$\lambda_t$ & Intensità della scommessa, non penalizzazione del portafoglio.\\
+$a$ & Livello del singolo test. Default $a=0.05$; soglia $1/a=20$.\\
+$h,n_0,b_k$ & $h=252$, training $n_0=252$, revisioni $b_k=n_0+kh$.\\
+$\tau_c$ & Inizio del confronto/episodio $c$.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Filtrazione e assenza di anticipazione}
+$\F_t$ contiene caratteristiche pubblicate, rendimenti già realizzati, stati delle politiche, stime, scelte di candidati e casualità algoritmica già estratta. Non contiene $A_{t+1}$, shock futuri o etichette nascoste del DGP. Ogni $w_t(S)$ e $\lambda_{t+1}$ deve essere $\F_t$-misurabile.
+
+Un simulatore può conoscere una filtrazione più ampia $\mathcal G_t\supseteq\F_t$, che include stati latenti e parametri veri. Questa informazione è utilizzabile esclusivamente dall'oracle e dal valutatore. Un limite condizionale verificato rispetto a $\mathcal G_t$ implica quello rispetto a $\F_t$ per la proprietà della torre, se è formulato per la stessa quantità e con un limite ammissibile per il learner.
+
+\subsection{Due campioni expanding, non una riscrittura del passato}
+Il campione di stima comprende tutti i dati osservati fino all'ultimo aggiornamento. Il campione del test comprende solo gli incrementi OOS prodotti dopo l'apertura del relativo confronto. Al cambio di $S$ si apre un nuovo episodio: il training rimane expanding, l'evidenza del nuovo confronto parte da uno.
+
+Riaddestrare al giorno 1008 e ricalcolare i primi 1008 rendimenti con i pesi odierni non produce 1008 osservazioni OOS. I punteggi già registrati sono immutabili. Un normale aggiornamento annuale dei parametri della stessa regola di apprendimento non obbliga, invece, a un reset: il target diventa il valore della politica adattiva predefinita.
+
+\section{Criterio economico unico: utilità quadratica con costi}
+\label{sec:utility}
+Per un'allocazione prevedibile $w$ e uno stato precedente $b$ definiamo
+\begin{align}
+ C_t(w,b)&=c\norm{w-b}_1+\frac\eta2(w-b)'\Lambda_t(w-b),\label{eq:cost}\\
+ r_{t+1}(w)&=w'A_{t+1},\\
+ U_{t+1}(w;b)&=r_{t+1}(w)-\frac\gamma2r_{t+1}(w)^2-C_t(w,b),\label{eq:score}\\
+ J_t(w;b)&=w'\mu_t-\frac\gamma2w'M_tw-C_t(w,b).\label{eq:J}
+\end{align}
+Qui $\gamma>0$, $c,\eta\ge0$, $\Lambda_t\succeq0$ e i parametri del costo sono noti al momento della decisione. La funzione è coerente con l'impostazione di ottimizzazione convessa con frizioni, pur mantenendo esattamente il costo scelto per questo progetto \cite{boyd}.
+
+\begin{proposition}[Identità economica]
+Per ogni $w,b$ prevedibili e integrabili quanto necessario,
+\begin{equation}
+ \E[U_{t+1}(w;b)\mid\F_t]=J_t(w;b).
+\end{equation}
+\end{proposition}
+\begin{proof}
+$C_t(w,b)$ è noto condizionatamente a $\F_t$. Inoltre $\E[w'A_{t+1}\mid\F_t]=w'\mu_t$ e
+$\E[(w'A_{t+1})^2\mid\F_t]=w'\E[A_{t+1}A_{t+1}'\mid\F_t]w=w'M_tw$. Sostituendo si ottiene l'identità.
+\end{proof}
+
+Non sostituire $M_t$ con $\Sigma_t$: $M_t=\Sigma_t+\mu_t\mu_t'$. Il criterio scelto contiene la penalizzazione addizionale $\gamma(w'\mu_t)^2/2$ rispetto a Markowitz mean--variance. Non è un errore: è la definizione definitiva del progetto. Inoltre il costo viene sottratto \emph{dopo} l'utilità del rendimento lordo; $u(r-C)$ sarebbe un criterio diverso.
+
+\subsection{Insiemi ammissibili e caso vuoto}
+Nella teoria generale siano $\W(S)=\{w\in\W:\supp(w)\subseteq S\}$ e
+\begin{equation}
+ V_t(S;b)=\max_{w\in\W(S)}J_t(w;b).
+\end{equation}
+Per la simulazione si impone una leva lorda comune $\norm{w}_1\le L$. La stessa regione è utilizzata da tutti i metodi. $\W(\varnothing)=\{0\}$; $V_t(\varnothing;0)=0$, ma $V_t(\varnothing;b)=-C_t(0,b)$ se ci sono posizioni da liquidare. Liquidare non è gratuito.
+
+Per $S\subseteq B$, a parità di stato $b$ e di vincoli, $V_t(B;b)\ge V_t(S;b)$. La monotonicità sopravvive ai costi. Pesi stimati, stati differenti e utilità future possono comunque rendere utile PARK.
+
+\subsection{Stima e regolarizzazione}
+All'aggiornamento annuale si calcolano, sul training passato,
+\begin{equation}
+ \widehat\mu=\frac1n\sum_{s=1}^n A_s,\qquad
+ \widehat M=\frac1n\sum_{s=1}^n A_sA_s'.
+\end{equation}
+Una stabilizzazione PSD comune, per esempio $\widehat M_\rho=(1-\rho)\widehat M+\rho\operatorname{diag}(\widehat M)+\epsilon I$, è consentita se $\rho,\epsilon$ sono fissati prima del test o selezionati solo dentro il training. Il relativo bias entra in T4. Non usare una diversa regolarizzazione per favorire il metodo E.
+
+\section{Confronti operativi e contabilità dei portafogli}
+\label{sec:comparisons}
+Ogni oggetto statistico è identificato da
+\begin{equation}
+ c=(\tau_c,S,B,\text{regola di stima},\text{costi},\text{convenzione degli stati}).
+\end{equation}
+Per un Forward $B=S\cup\{j\}$; per un Backward $B=S\setminus\{j\}$; per uno Swap $B=(S\setminus\{i\})\cup\{j\}$. Usiamo sempre l'orientamento ``candidato meno riferimento'':
+\begin{equation}
+ Y_{c,t+1}=U_{t+1}(B)-U_{t+1}(S).\label{eq:Y}
+\end{equation}
+Pertanto lo stesso test unilaterale vale per tutte le mosse. In PARK la rimozione è il candidato; non si cambia il segno due volte.
+
+\subsection{Protocollo principale: due politiche shadow con propri stati}
+Alla nascita del confronto le due politiche partono dallo stesso stato effettivo. In seguito ciascuna conserva il proprio precedente vettore di allocazione. Il costo candidato è calcolato sulla variazione della sua politica, non sulla variazione di quella di riferimento. Il costo di ingresso o uscita viene registrato nel momento in cui avviene, senza scomparire dalla serie.
+
+Questa scelta valuta due politiche implementabili, non un ingresso ipotetico ripetuto ogni giorno. Se il candidato viene selezionato, l'allocazione effettiva viene ricalcolata dallo stato \emph{reale} del fondo e il costo effettivo viene addebitato. Non si trasferiscono gratuitamente al fondo le posizioni del portafoglio shadow.
+
+Poiché gli stati shadow possono divergere, T3 e la monotonicità si riferiscono a un \emph{comune} stato $b$, mentre T4 include anche la versione a stati diversi. Non identificare silenziosamente questi due confronti.
+
+\subsection{Convenzione sui costi mantenuta nel DGP}
+La specifica principale usa esattamente $\bar w_t=w_{t-1}$: il turnover è la variazione delle allocazioni target fra sleeve. È un modello stilizzato di turnover dell'allocatore, non una ricostruzione completa degli ordini azionari. Non si aggiungono costi di ribilanciamento interni alle sleeve, spread a livello di azione, ADV o funzioni alternative di impatto.
+
+I rendimenti netti utilizzati per equity e Sharpe sono $r_{t+1}^{net}=w_t'A_{t+1}-C_t(w_t,w_{t-1})$. Il valore del portafoglio cresce come $W_{t+1}=W_t(1+r_{t+1}^{net})$. Se si verifica $1+r_{t+1}^{net}\le0$, registrare insolvenza e applicare una regola di arresto esplicita: non eliminare il seed o tagliare artificialmente la perdita.
+
+\section{E-values ed e-process: definizione e costruzione}
+\label{sec:eprocess}
+\begin{definition}
+Un e-value per una famiglia nulla $\mathcal P_0$ è una variabile $E\ge0$ tale che $\E_P E\le1$ per ogni $P\in\mathcal P_0$. Un e-process mantiene questa proprietà ai tempi di arresto ammissibili. In questo documento costruiamo la classe sufficiente delle supermartingale non negative inizializzate a uno.
+\end{definition}
+Non ogni sequenza di e-values marginalmente validi è un e-process. Serve una struttura sequenziale. La costruzione adottata deriva dalle supermartingale di Catoni \cite{wr}; la specializzazione alla nostra ipotesi di media condizionale è dimostrata qui.
+
+L'ipotesi per un confronto e
+\begin{equation}
+ H_{0,c}:\quad \E[Y_{c,t}\mid\F_{t-1}]\le0
+ \quad\text{per ogni osservazione dell'episodio}.\label{eq:null}
+\end{equation}
+Non è la sola ipotesi ``la media storica è non positiva''. Condizionalmente al passato, il guadagno atteso non deve essere positivo in ogni data coperta dalla null.
+
+\subsection{Funzione di Catoni}
+Definiamo
+\begin{equation}
+ \phi(x)=\begin{cases}
+ \log(1+x+x^2/2),&x\ge0,\\
+ -\log(1-x+x^2/2),&x<0.
+ \end{cases}\label{eq:phi}
+\end{equation}
+\begin{lemma}[Disuguaglianze deterministiche]
+Per ogni $x\in\R$,
+\begin{align}
+ e^{\phi(x)}&\le1+x+x^2/2,\\
+ e^{-\phi(x)}&\le1-x+x^2/2,\\
+ \phi(x)&\ge x-x^2/2.
+\end{align}
+\end{lemma}
+\begin{proof}
+Poni $p_+(x)=1+x+x^2/2$ e $p_-(x)=1-x+x^2/2$. Sono positivi e $p_+(x)p_-(x)=1+x^4/4\ge1$. Per $x\ge0$ la prima disuguaglianza è un'uguaglianza, e la seconda segue dal prodotto. Per $x<0$ vale il contrario. In ogni caso $\phi(x)\ge-\log p_-(x)$. Usando $\log(1+u)\le u$ per $u>-1$, con $u=-x+x^2/2$, segue $-\log p_-(x)\ge x-x^2/2$.
+\end{proof}
+
+\subsection{Assunzione sui momenti e processo in log}
+Sia $v_t^2>0$ un limite prevedibile tale che
+\begin{equation}
+ \E[Y_t^2\mid\F_{t-1}]\le v_t^2.\label{eq:moment}
+\end{equation}
+È un \emph{secondo momento grezzo}, non una stima libera della varianza. Definiamo
+\begin{equation}
+ L_{\tau,t}=\sum_{s=\tau+1}^t\left\{\phi(\lambda_sY_s)-\frac12\lambda_s^2v_s^2\right\},
+ \qquad E_{\tau,t}=\exp L_{\tau,t},\label{eq:catoni}
+\end{equation}
+con $\lambda_s\ge0$ prevedibile. Implementare $L$, non il prodotto in floating point. Il confronto con la soglia e $L\ge\log(1/a)$.
+
+\section{T1: validità anytime del singolo confronto adattivo}
+\label{sec:T1}
+\begin{theorem}[T1: validità condizionata all'avvio]
+Sia $\tau$ un tempo di arresto finito all'inizio di un episodio. Il confronto e le regole che producono i pesi sono fissati usando $\F_\tau$. Sotto \eqref{eq:null}--\eqref{eq:moment}, con $\lambda_s\ge0$ prevedibile, $E_{\tau,t}$ è una supermartingala non negativa e
+\begin{equation}
+ \PP\left(\sup_{t\ge\tau}E_{\tau,t}\ge1/a\mid\F_\tau\right)\le a.\label{eq:ville}
+\end{equation}
+La stessa conclusione vale restringendo le decisioni alle revisioni annuali.
+\end{theorem}
+\begin{proof}
+Il moltiplicatore giornaliero e $Q_t=\exp\{\phi(\lambda_tY_t)-\lambda_t^2v_t^2/2\}\ge0$. Condizionando al passato,
+\begin{align*}
+ \E[Q_t\mid\F_{t-1}]
+ &\le e^{-\lambda_t^2v_t^2/2}\left(1+\lambda_t\E[Y_t\mid\F_{t-1}]
+      +\frac{\lambda_t^2}{2}\E[Y_t^2\mid\F_{t-1}]\right)\\
+ &\le e^{-\lambda_t^2v_t^2/2}(1+\lambda_t^2v_t^2/2)\le1.
+\end{align*}
+Da $E_{\tau,t}=E_{\tau,t-1}Q_t$ segue la proprietà di supermartingala. Per un orizzonte $n$ finito ferma il processo al primo superamento della soglia o a $n$. L'aspettativa condizionata del processo fermato e al più uno. Sull'evento di superamento il valore e almeno $1/a$, quindi la probabilità condizionata e al più $a$. Passando a $n\to\infty$ per monotonia degli eventi si ottiene \eqref{eq:ville}. Le verifiche annuali sono un sottoinsieme delle verifiche giornaliere.
+\end{proof}
+
+\subsection{Cosa copre esattamente T1}
+Il candidato può essere scelto usando il passato; i pesi possono essere riottimizzati annualmente su training expanding; $\lambda$ può essere stimato; la chiusura del confronto può dipendere dall'evidenza. Ogni nuova osservazione deve essere consumata una sola volta per quel processo. La validità e condizionata alla null di quel confronto, non alla semplice appartenenza a una lista di segnali con $\theta_j=0$.
+
+Se si scelgono a posteriori i migliori fra cento processi validi, la probabilità di una falsa scelta non è automaticamente $a$. Analogamente, riavviare ogni anno un test al 5\% non mantiene un rischio complessivo del 5\%. La specifica non introduce una correzione multipla; le metriche devono riportare questo limite.
+
+\subsection{Soglia, tempo e p-value anytime}
+$20=1/0.05$ e una soglia di evidenza, non un numero di giorni. Il tempo di decisione annuale e
+\begin{equation}
+ \widehat\tau=\inf\{b_k>\tau:L_{\tau,b_k}\ge\log(1/a)\}.
+\end{equation}
+Per descrivere la relazione con i p-value si può definire
+\begin{equation}
+ p_t^{any}=\min\left\{1,\frac1{\max_{\tau\le s\le t}E_{\tau,s}}\right\}.
+\end{equation}
+E un p-value anytime valido per la stessa null. Quindi la differenza fondamentale non è ``e contro p'' ma inferenza sequenziale valida contro ripetizione non corretta di test a tempo fisso. Il test operativo annuale usa $E_{b_k}$ corrente; non attivare oggi soltanto per un massimo storico superato molti mesi prima.
+
+\section{T2: potenza oracle e costo della scommessa stimata}
+\label{sec:T2}
+Si lavora in un singolo episodio, con tempo locale $t=1,2,\ldots$, blocchi di $h=252$ osservazioni e limite costante $v_t^2=\nu^2$. Per la potenza oracle basta
+\begin{equation}
+ \E[Y_t\mid\F_{t-1}]\ge\delta>0,\qquad
+ \E[Y_t^2\mid\F_{t-1}]\le\nu^2.\label{eq:alternative}
+\end{equation}
+Per i risultati sul plug-in si richiedera la condizione più forte di media condizionale \emph{costante} uguale a $\delta$.
+
+\subsection{T2a: limite inferiore sulla potenza}
+Per $\lambda\ge0$ fisso, poni
+\begin{equation}
+ g(\lambda)=\lambda\delta-\lambda^2\nu^2,
+ \quad\pi_K(\lambda)=\PP\left(\max_{1\le k\le K}E_{hk}(\lambda)\ge1/a\right).
+\end{equation}
+\begin{theorem}[T2a]
+Sotto \eqref{eq:alternative},
+\begin{equation}
+ \pi_K(\lambda)\ge\pos{1-a^{-1}\exp\{-hK g(\lambda)\}}.\label{eq:powerfixed}
+\end{equation}
+Il massimo dell'esponente è raggiunto in
+\begin{equation}
+ \lambda^*=\frac\delta{2\nu^2},\qquad
+ g^*=\frac{\delta^2}{4\nu^2}.\label{eq:lambdastar}
+\end{equation}
+Una condizione sufficiente per potenza almeno $1-\beta$ e
+\begin{equation}
+ hK\ge\frac{4\nu^2}{\delta^2}\log\frac1{a\beta}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+La disuguaglianza per $e^{-\phi}$ implica
+\begin{align*}
+ \E[e^{-\phi(\lambda Y_t)+\lambda^2\nu^2/2}\mid\F_{t-1}]
+ &\le e^{\lambda^2\nu^2/2}(1-\lambda\delta+\lambda^2\nu^2/2)\\
+ &\le e^{-\lambda\delta+\lambda^2\nu^2}=e^{-g(\lambda)}.
+\end{align*}
+Iterando si ottiene $\E[E_{hK}^{-1}]\le e^{-hKg(\lambda)}$. L'evento di non attraversamento annuale implica $E_{hK}<1/a$. Markov fornisce $\PP(E_{hK}<1/a)\le a^{-1}e^{-hKg(\lambda)}$. Infine $g'(\lambda)=\delta-2\lambda\nu^2$, $g''(\lambda)=-2\nu^2<0$. La condizione di potenza segue risolvendo $a^{-1}e^{-hKg^*}\le\beta$.
+\end{proof}
+
+\subsection{Significato dell'ottimalità e velocita}
+Il risultato non ottimizza la probabilità di attraversamento esatta: distribuzioni diverse con gli stessi primi due momenti possono dare potenze diverse. Non è un risultato minimax ottimale sulla classe dei rendimenti. E una scelta analitica, riproducibile, che massimizza una garanzia esplicita.
+
+Se $\tau_h$ e il primo indice di revisione che attraversa la soglia e $g(\lambda)>0$, la stessa prova da $\PP(\tau_h>k)\le\min\{1,a^{-1}e^{-hk g(\lambda)}\}$. In particolare, con $k_0=\lceil\log(1/a)/(h g(\lambda))\rceil$,
+\begin{equation}
+ \E[h\tau_h]\le hk_0+\frac{h}{1-e^{-h g(\lambda)}}.
+\end{equation}
+Questa e una garanzia per un effetto favorevole presente dall'inizio dell'episodio. Non è automaticamente un detection delay dopo un cambio di regime.
+
+\subsection{T2b: stima annuale di lambda con expanding window}
+Assumi adesso $\E[Y_t\mid\F_{t-1}]=\delta$ e $\E[Y_t^2\mid\F_{t-1}]\le\nu^2$. Per $k\ge2$ definiamo
+\begin{equation}
+ \widehat\delta_{k-1}=\frac1{h(k-1)}\sum_{t=1}^{h(k-1)}Y_t,
+ \qquad \widehat\lambda_k=\frac{\pos{\widehat\delta_{k-1}}}{2\nu^2}.\label{eq:lambda_hat}
+\end{equation}
+$\lambda_1$ è fissato prima del test. Una scelta iniziale documentabile e $\lambda_1=\delta_0/(2\nu^2)$ per un effetto di progetto $0<\delta_0\le\nu$. Non stimare $\delta_0$ sulle osservazioni future del confronto.
+
+Per stabilità numerica si può proiettare $\widehat\lambda_k$ su $[0,1/(2\nu)]$. Poiché $\delta\le\nu$ per Jensen, l'oracle appartiene all'intervallo; la proiezione non aumenta l'errore quadratico rispetto a $\lambda^*$.
+
+Poni
+\begin{equation}
+ R_K=h\nu^2\sum_{k=1}^K(\widehat\lambda_k-\lambda^*)^2,
+ \qquad C_K=h\nu^2(\lambda_1-\lambda^*)^2+\frac14\sum_{k=1}^{K-1}\frac1k.
+\end{equation}
+\begin{theorem}[T2b: costo di adattamento]
+Con $\widehat\lambda_1=\lambda_1$, $\E R_K\le C_K$ e
+\begin{equation}
+ \E[\log E_{hK}]\ge \frac{hK\delta^2}{4\nu^2}-C_K.
+\end{equation}
+La penalizzazione in aspettativa del certificato di crescita e $O(\log K)$.
+\end{theorem}
+\begin{proof}
+$D_t=Y_t-\delta$ e una differenza di martingala. Per $s<t$, $\E[D_sD_t]=\E[D_s\E(D_t\mid\F_{t-1})]=0$. Quindi
+\begin{equation}
+ \E[(\widehat\delta_{k-1}-\delta)^2]
+ =\frac{\sum_{t=1}^{h(k-1)}\E D_t^2}{h^2(k-1)^2}
+ \le\frac{\nu^2}{h(k-1)}.
+\end{equation}
+La parte positiva e la proiezione su un intervallo contenente $\delta$ sono non espansive. Ne segue
+$\E[(\widehat\lambda_k-\lambda^*)^2]\le1/(4\nu^2h(k-1))$. Sommando si ottiene $\E R_K\le C_K$.
+
+Dalla disuguaglianza $\phi(x)\ge x-x^2/2$ segue
+$\E[\log E_{hK}]\ge\E\sum_t(\lambda_t\delta-\lambda_t^2\nu^2)$.
+Il completamento del quadrato
+\begin{equation}
+ \lambda\delta-\lambda^2\nu^2=\frac{\delta^2}{4\nu^2}-\nu^2(\lambda-\lambda^*)^2\label{eq:complete}
+\end{equation}
+conclude la prova.
+\end{proof}
+\important{$R_K$ e il regret dell'esponente quadratico usato nella garanzia. Non è dimostrato che coincida con la differenza effettiva di log-capitale fra la strategia oracle e quella adattiva.}
+
+\subsection{T2c: potenza finita-campione del plug-in}
+\begin{theorem}[T2c]
+Poni $A_K=hK\delta^2/(4\nu^2)$. Per ogni $r>0$,
+\begin{equation}
+ \pi_K(\widehat\lambda)\ge\pos{1-\frac{C_K}{r}-a^{-1}e^{-A_K+r}}.\label{eq:poweradaptive}
+\end{equation}
+In particolare, con $r=A_K/2$,
+\begin{equation}
+ \pi_K(\widehat\lambda)\ge
+ \pos{1-\frac{8\nu^2 C_K}{hK\delta^2}
+       -a^{-1}\exp\left(-\frac{hK\delta^2}{8\nu^2}\right)}.
+\end{equation}
+Per $\delta>0$ fissato questa potenza tende a uno.
+\end{theorem}
+\begin{proof}
+Definisci sotto l'alternativa
+\begin{equation}
+ Z_T=E_T^{-1}\exp\left\{\sum_{t=1}^T(\lambda_t\delta-\lambda_t^2\nu^2)\right\}.
+\end{equation}
+Per la stessa disuguaglianza condizionale usata in T2a, con $\lambda_t$ prevedibile, $Z_T$ è una supermartingala non negativa e $\E Z_T\le1$. Per \eqref{eq:complete}, $Z_{hK}=E_{hK}^{-1}e^{A_K-R_K}$. Su $\{E_{hK}<1/a,R_K\le r\}$ si ha $Z_{hK}>ae^{A_K-r}$. Applicando Markov a $Z_{hK}$ e a $R_K$,
+\begin{align*}
+ \PP(E_{hK}<1/a)&\le\PP(R_K>r)+\PP(Z_{hK}>ae^{A_K-r})\\
+ &\le C_K/r+a^{-1}e^{-A_K+r}.
+\end{align*}
+L'evento di non attraversamento annuale è contenuto in $\{E_{hK}<1/a\}$. Scegliendo $r=A_K/2$ segue la formula; $C_K=O(\log K)$ prova la consistenza.
+\end{proof}
+
+\subsection{Limiti del risultato in presenza di alpha decay}
+T1 resta valido sotto la null condizionale e un limite ai momenti. T2b--c, invece, non si applicano automaticamente se il contributo atteso cambia con il regime o con la qualità delle stime. L'evidenza expanding conserva memoria del passato: può ritardare PARK o REVIVE. Un rifiuto di una null valida ``per tutto l'episodio'' non prova che il contributo sia positivo \emph{oggi}.
+
+La simulazione dinamica misura questi effetti; non li nasconde attribuendo a T2 una garanzia di identificazione istantanea. Non si introducono reset retrospettivi, finestre scelte dopo aver visto i risultati o nuove soglie per far funzionare la procedura.
+
+\section{T3: valore incrementale con turnover e market impact}
+\label{sec:T3}
+In questa sezione fissiamo la data e omettiamo l'indice $t$. Consideriamo il problema con vincolo di supporto ma \emph{senza ulteriori vincoli sui pesi}:
+\begin{equation}
+ V(S;b)=\max_{\supp(w)\subseteq S}\left\{w'\mu-\frac\gamma2w'Mw
+ -c\norm{w-b}_1-\frac\eta2(w-b)'\Lambda(w-b)\right\}.
+\end{equation}
+Assumiamo $M\succeq0$, $\Lambda\succeq0$ e
+\begin{equation}
+ H=\gamma M+\eta\Lambda\succ0,\qquad a_0=\mu+\eta\Lambda b.
+\end{equation}
+Il simbolo $a_0$ e un vettore economico; non è il livello del test $a$. L'obiettivo, a meno di una costante, e
+\begin{equation}
+ J(w)=a_0'w-\frac12w'Hw-c\norm{w-b}_1.
+\end{equation}
+La stretta concavita e la coercivita assicurano esistenza e unicita del massimo.
+
+Sia $j\notin S$ con $b_j=0$, e sia $w_S^*$ la soluzione sul supporto $S$. Definiamo
+\begin{equation}
+ q_j=(a_0)_j-H_{jS}w_S^*,\qquad
+ d_j=H_{jj}-H_{jS}H_{SS}^{-1}H_{Sj}>0.
+\end{equation}
+Per $S=\varnothing$ usiamo $q_j=(a_0)_j$ e $d_j=H_{jj}$.
+
+\begin{theorem}[T3: condizione di ingresso e limiti sul beneficio]
+Con $\Delta_j(S;b)=V(S\cup\{j\};b)-V(S;b)$,
+\begin{equation}
+ \frac{\pos{|q_j|-c}^2}{2H_{jj}}
+ \le\Delta_j(S;b)\le
+ \frac{\pos{|q_j|-c}^2}{2d_j}.\label{eq:T3}
+\end{equation}
+In particolare, $\Delta_j(S;b)>0$ se e solo se $|q_j|>c$.
+\end{theorem}
+\begin{proof}
+L'ottimalità sul supporto $S$ implica l'esistenza di $z_S\in\partial\norm{w_S^*-b_S}_1$ tale che
+\begin{equation}
+ (a_0)_S-H_{SS}w_S^*=cz_S.
+\end{equation}
+Una nuova allocazione e $(w_S^*+u,x)$ sulle coordinate $(S,j)$. Poiché $b_j=0$, la variazione del costo L1 sulla coordinata nuova e $c|x|$. La disuguaglianza del sottogradiente da
+\begin{align*}
+ J(w_S^*+u,x)-J(w_S^*,0)
+ &\le q_jx-c|x|\\
+ &\quad-\frac12\{u'H_{SS}u+2xH_{jS}u+H_{jj}x^2\}.
+\end{align*}
+Il minimo della forma quadratica in $u$ si raggiunge in $u=-H_{SS}^{-1}H_{Sj}x$ ed e $d_jx^2$. Pertanto
+\begin{equation}
+ \Delta_j\le\max_x\{q_jx-c|x|-d_jx^2/2\}
+ =\frac{\pos{|q_j|-c}^2}{2d_j}.
+\end{equation}
+Per il limite inferiore si mantiene $u=0$; in questo caso la variazione dell'obiettivo è esattamente $q_jx-c|x|-H_{jj}x^2/2$. Il massimo e il limite inferiore. La positività dei denominatori conclude la caratterizzazione del segno.
+\end{proof}
+
+\subsection{Caso quadratico puro e soft threshold}
+Se $c=0$, la disuguaglianza del sottogradiente e un'uguaglianza e
+\begin{equation}
+ \Delta_j(S;b)=
+ \frac{\{(a_0)_j-H_{jS}H_{SS}^{-1}(a_0)_S\}^2}
+ {2\{H_{jj}-H_{jS}H_{SS}^{-1}H_{Sj}\}}.\label{eq:schur}
+\end{equation}
+Se si congelano i pesi in $S$ anche con $c>0$, il peso ottimo della nuova coordinata e
+\begin{equation}
+ x_{freeze}^*=\frac{\operatorname{sign}(q_j)\pos{|q_j|-c}}{H_{jj}}.
+\end{equation}
+Il guadagno corrisponde al limite inferiore in T3. Il limite superiore misura il massimo beneficio ottenibile riallocando le altre posizioni senza pagare un costo L1 addizionale oltre al suo supporto lineare locale.
+
+\subsection{Interpretazione e condizioni da non omettere}
+Conta il contributo residuo $q_j$, non il rendimento individuale. Una sleeve con rendimento atteso nullo può coprire una componente rischiosa delle sleeve già presenti. Il costo proporzionale crea una soglia di ingresso; il termine quadratico modifica curvatura, intensità ottimale e valore del trade.
+
+T3 e un risultato di ottimizzazione basato su KKT e complemento di Schur; non va presentato come nuova identità generale senza verifica della letteratura. Il teorema utilizza $M$, non $\Sigma$. Richiede lo stesso stato $b$ nei due problemi e $b_j=0$. Per una liquidazione o uno swap con posizioni iniziali non nulle si usa il problema completo.
+
+\important{Con il vincolo di leva della simulazione, le formule chiuse non sono in generale esatte. L'oracle e i confronti numerici devono risolvere il problema convesso con gli stessi vincoli. T3 resta una caratterizzazione analitica del sottocaso senza vincoli addizionali, non una scorciatoia illegittima per il caso vincolato.}
+
+\section{T4: dal valore oracle alle politiche stimate}
+\label{sec:T4}
+Fissiamo data e stato $b$. Definiamo
+\begin{equation}
+ w^*(S;b)\in\argmax_{w\in\W(S)}J(w;b),\qquad
+ \widehat w(S;b)\in\argmax_{w\in\W(S)}\widehat J(w;b).
+\end{equation}
+Supponiamo che su un evento $\mathcal A$ valga uniformemente in $w\in\W$ e negli stati utilizzati
+\begin{equation}
+ \abs{\widehat J(w;b)-J(w;b)}\le\varepsilon.\label{eq:uniform}
+\end{equation}
+L'evento può avere probabilità almeno $1-\zeta$. Le conclusioni seguenti sono deterministiche su $\mathcal A$; la probabilità non viene inventata a partire dalla sola notazione $\varepsilon$.
+
+\begin{theorem}[T4: regret di implementazione e contributo marginale]
+Su $\mathcal A$,
+\begin{equation}
+ 0\le \ell(S;b):=V(S;b)-J(\widehat w(S;b);b)\le2\varepsilon.
+\end{equation}
+Per due insiemi $S,B$ valutati nello stesso stato, poni
+\begin{align}
+ \Delta(B,S;b)&=V(B;b)-V(S;b),\\
+ d(B,S;b)&=J(\widehat w(B;b);b)-J(\widehat w(S;b);b).
+\end{align}
+Allora
+\begin{equation}
+ |d(B,S;b)-\Delta(B,S;b)|\le2\varepsilon.\label{eq:T4}
+\end{equation}
+In particolare, $\Delta(B,S;b)>2\varepsilon$ implica $d(B,S;b)>0$.
+\end{theorem}
+\begin{proof}
+Poiché $\widehat w$ massimizza $\widehat J$,
+\begin{align*}
+ J(w^*;b)-J(\widehat w;b)
+ &=[J(w^*;b)-\widehat J(w^*;b)]\\
+ &\quad+[\widehat J(w^*;b)-\widehat J(\widehat w;b)]\\
+ &\quad+[\widehat J(\widehat w;b)-J(\widehat w;b)]\le2\varepsilon.
+\end{align*}
+La non negativita segue dall'ottimalità di popolazione. Inoltre $d-\Delta=\ell(S;b)-\ell(B;b)$ e i due regret appartengono allo stesso intervallo $[0,2\varepsilon]$. La differenza ha modulo al più $2\varepsilon$, non occorre il più largo limite $4\varepsilon$.
+\end{proof}
+
+\subsection{Tolleranza del solver e diverse precisioni}
+Se $\widehat w(S;b)$ e subottimo per il problema stimato di al più $\xi_S$, allora $\ell(S;b)\le2\varepsilon_S+\xi_S$. Per due insiemi il limite e $\max\{2\varepsilon_S+\xi_S,2\varepsilon_B+\xi_B\}$ quando entrambi i regret sono non negativi. Le tolleranze numeriche devono essere registrate: un risultato di ottimizzazione non giustifica un solver lasciato senza controllo.
+
+\subsection{Errore espresso attraverso i momenti}
+Se $\norm{w}_2\le L$, $\norm{b}_2\le L_b$ e $c,\eta$ sono noti,
+\begin{equation}
+ \varepsilon\le L\norm{\widehat\mu-\mu}_2
+ +\frac{\gamma L^2}{2}\norm{\widehat M-M}_{\op}
+ +\frac{\eta(L+L_b)^2}{2}\norm{\widehat\Lambda-\Lambda}_{\op}.
+\end{equation}
+L'ultimo termine scompare quando $\Lambda$ e noto. Se si stima anche $c$, aggiungere $\norm{w-b}_1|\widehat c-c|$ uniformemente limitato. Non si può sostituire un bound noto con una stima casuale senza dichiararne la copertura.
+
+\subsection{Raffinamento sotto forte concavita}
+Supponi $\gamma M+\eta\Lambda\succeq mI$ con $m>0$, stesso costo L1 e stessa regione convessa nei problemi vero e stimato. Definisci
+\begin{equation}
+ e=\norm{\widehat\mu-\mu}_2+\gamma L\norm{\widehat M-M}_{\op}.
+\end{equation}
+Con costi noti e ottimizzazione esatta,
+\begin{equation}
+ \ell(S;b)\le\frac{e^2}{2m}.\label{eq:strong}
+\end{equation}
+Per dimostrarlo considera le funzioni convesse negative $f=-J$ e $\widehat f=-\widehat J$. La condizione di ottimalità di $\widehat f$ sul vincolo implica che un sottogradiente di $f$ in $\widehat w$ abbia, lungo ogni direzione ammissibile, prodotto scalare limitato inferiormente da quello dell'errore delle parti lisce. La forte convessita da, con $d=w^*-\widehat w$,
+$f(w^*)\ge f(\widehat w)-e\norm d_2+(m/2)\norm d_2^2$. Massimizzando $e x-mx^2/2$ in $x\ge0$ segue \eqref{eq:strong}.
+
+In un modello i.i.d. a dimensione fissa, con quarto momento finito e stime campionarie senza bias persistente, gli errori quadratici dei momenti sono $O(n^{-1})$; lo si verifica sommando varianze e covarianze nulle fra osservazioni. Quindi \eqref{eq:strong} da un regret atteso $O(n^{-1})$. Con dipendenza o drift occorrono condizioni specifiche: non trasferire questo tasso automaticamente al DGP dinamico.
+
+\subsection{Estensione necessaria ai portafogli shadow}
+Le politiche parallele di Sezione~\ref{sec:comparisons} hanno stati $b_B$ e $b_S$ potenzialmente differenti. Definisci
+\begin{align}
+ \Delta^{state}&=V(B;b_B)-V(S;b_S),\\
+ d^{state}&=J(\widehat w(B;b_B);b_B)-J(\widehat w(S;b_S);b_S).
+\end{align}
+Con \eqref{eq:uniform} uniforme anche in $b$, la medesima prova fornisce
+\begin{equation}
+ |d^{state}-\Delta^{state}|\le2\varepsilon.\label{eq:T4state}
+\end{equation}
+Questo e il confronto direttamente collegato alla media condizionale di $Y$ nella specifica principale.
+
+Per collegarlo al valore a stato comune, supponi $\norm w_2,\norm b_2,\norm{b'}_2\le L$ e $\norm\Lambda_\op\le\bar\Lambda$. Per la disuguaglianza triangolare,
+\begin{equation}
+ |C(w,b)-C(w,b')|\le L_C\norm{b-b'}_2,
+ \quad L_C=c\sqrt p+2\eta\bar\Lambda L.
+\end{equation}
+Il massimo di funzioni tutte $L_C$-Lipschitz conserva questo limite. Pertanto
+\begin{equation}
+ |d^{state}-\{V(B;b_S)-V(S;b_S)\}|
+ \le2\varepsilon+L_C\norm{b_B-b_S}_2.\label{eq:statebridge}
+\end{equation}
+Non omettere il termine di stato. Con stati differenti, la monotonicità fra supporti non si applica direttamente a $\Delta^{state}$.
+
+\subsection{Perché PARK e REVIVE restano economicamente sensati}
+L'oracle può dare peso zero a una nuova possibilità, ma la politica stimata può introdurre allocazioni errate e costi. Se il beneficio teorico e piccolo rispetto all'errore di stima e alle differenze di stato, il contributo implementato può essere negativo. PARK verifica la politica, non l'esistenza astratta di una direzione utile con informazione perfetta. REVIVE ripropone la stessa famiglia di segnale quando il portafoglio di riferimento e l'informazione disponibile sono cambiati.
+
+\section{Rendimenti non limitati, momenti e normalizzazione}
+\label{sec:moments}
+\subsection{Dalle code dei rendimenti al secondo momento di Y}
+La subesponenzialita dei rendimenti non implica un limite deterministico $|Y_t|\le B$. Inoltre il quadrato di una variabile subesponenziale non è necessariamente subesponenziale. Catoni richiede qui soltanto un controllo sul secondo momento di $Y$, ottenuto da quarti momenti dei rendimenti.
+
+Supponi per entrambe le politiche
+\begin{equation}
+ \E[r_t^2\mid\F_{t-1}]\le m_2,\qquad
+ \E[r_t^4\mid\F_{t-1}]\le m_4,\qquad 0\le C_t\le C_{max}.
+\end{equation}
+Allora
+\begin{equation}
+ \E[Y_t^2\mid\F_{t-1}]
+ \le12\left(m_2+\frac{\gamma^2}{4}m_4+C_{max}^2\right)=:\nu^2.\label{eq:numoment}
+\end{equation}
+Infatti $U^2\le3(r^2+\gamma^2r^4/4+C^2)$ e $(U_B-U_S)^2\le2U_B^2+2U_S^2$.
+
+Se $\E[\exp(|r_t|/K)\mid\F_{t-1}]\le2$ con $K$ noto, Markov e integrazione delle code danno $\E[|r_t|^q\mid\F_{t-1}]\le2q!K^q$. Sono ammissibili $m_2=4K^2$ e $m_4=48K^4$.
+
+Con $\norm{w_t}_1,\norm{w_{t-1}}_1\le L$ e $\norm{\Lambda_t}_\op\le\bar\Lambda$, il costo prefissato soddisfa
+\begin{equation}
+ C_{max}=2cL+2\eta\bar\Lambda L^2.
+\end{equation}
+La limitatezza delle allocazioni e dei coefficienti, non la sola finitezza dei costi, produce il limite uniforme utile a T2.
+
+\subsection{Limite prevedibile più stretto}
+Per T1 si possono usare limiti diversi per data e confronto. Scrivi $d_t=r_t(B)-r_t(S)$, $s_t=r_t(B)+r_t(S)$, $D_t=C_t(B)-C_t(S)$. Allora $Y_t=d_t-(\gamma/2)d_ts_t-D_t$ e
+\begin{equation}
+ v_t^2=3\left(m_{2,d,t}+\frac{\gamma^2}{4}\sqrt{m_{4,d,t}m_{4,s,t}}+D_t^2\right)\label{eq:pairedmoment}
+\end{equation}
+e valido se i tre limiti di momento sono prevedibili e veri. La prova usa $(x+y+z)^2\le3(x^2+y^2+z^2)$ e Cauchy--Schwarz condizionale. Questo sfrutta il fatto che le due politiche possono essere molto simili.
+
+Il fatto che un costo sia noto al momento del trade permette di includere il suo valore esatto nel limite prevedibile. Se il costo e random e osservabile solo a fine periodo, serve invece un limite al suo momento condizionale.
+
+\subsection{Protocollo di certificazione nella simulazione}
+La versione principale di T2 e dell'implementazione usa un $\nu^2$ costante fissato in configurazione prima dei seed di valutazione, ricavato da limiti pubblici della classe DGP, leva e costo. Il simulatore deve verificare analiticamente che tale limite copra tutti i confronti. Parametri pubblici di un involucro di rischio sono distinti da coefficienti veri e etichette individuali: questi ultimi restano riservati all'oracle.
+
+La formula prevedibile \eqref{eq:pairedmoment} può essere implementata come variante dichiarata con garanzia T1. Non attribuirle automaticamente la formula T2b--c con $\nu$ costante. Se si usa una stima campionaria non certificata al posto del limite, chiamare la variante \emph{heuristic/plugin}, non \emph{certified}. Non ridurre il limite dopo aver visto che il metodo non seleziona nulla.
+
+Il limite uniforme può essere conservativo: riportare $\nu^2$ e il rapporto fra limite e secondo momento empirico. L'eventuale assenza di potenza e un risultato, non un motivo per cambiare di nascosto l'oggetto testato.
+
+\subsection{Scaling corretto}
+Le caratteristiche vengono trasformate con statistiche disponibili nel passato o con una normalizzazione cross-section contemporanea che non usa rendimenti futuri. Non standardizzare usando l'intero dataset. Il training scaling deve essere congelato durante il blocco OOS, salvo una regola online dichiarata in anticipo.
+
+Per il punteggio $Y$ è consentito dividere per una costante positiva $s$ nota all'avvio: $X=Y/s$, limite $\nu_X^2=\nu^2/s^2$, scommessa $\lambda_X=s\lambda_Y$. Allora l'e-process è esattamente invariato. Non sottrarre la media campionaria a $Y$: cambierebbe la null. Un fattore prevedibile variabile positivo conserva il segno condizionale, ma cambia il target medio di T2 e deve essere trattato separatamente.
+
+\section{Algoritmo annuale Forward--Backward--Swap10}
+\label{sec:algorithm}
+\subsection{Stato persistente e ranking}
+Lo stato del metodo comprende $S$, allocazione reale, identificativi degli episodi, stati shadow, log-evidence, somme storiche dei punteggi, conteggi, parametri del modello, liste di candidati e ragioni di chiusura dei test. Il numero dei segnali non cambia: una feature PARK rimane disponibile per REVIVE.
+
+All'inizio di ogni blocco annuale si aggiornano le stime usando solo le osservazioni già note. Il ranking Forward e
+\begin{equation}
+ \widehat\Delta_j^{train}(S)=\widehat V(S\cup\{j\};b)-\widehat V(S;b).
+\end{equation}
+I primi $q=\min\{10,p-|S|\}$ esclusi costituiscono la shortlist Swap del \emph{blocco successivo}. Il ranking e riutilizzato; non lo si ricostruisce sui rendimenti che dovrebbero validare i nuovi swap.
+
+A parità di valore usare identificativi stabili del segnale, indipendenti dalla posizione della colonna. L'invarianza alla permutazione e testata permutando insieme segnali, matrici, etichette riservate al valutatore e seed legati agli identificativi.
+
+\subsection{Confronti ammessi}
+Con $s=|S|$, preparare tutti i $p-s$ Forward, tutti gli $s$ Backward e gli $sq$ Swap. Per ciascuno definire il target, la politica, lo stato iniziale e la regola per il parametro $\widehat\lambda$ prima di ricevere la nuova osservazione. Un confronto Swap che esce dalla shortlist può essere chiuso; se rientra dopo un intervallo, riaprirlo con un nuovo identificativo e rendere esplicito il riavvio. Non conservare evidenza senza conservarne esattamente la semantica.
+
+\subsection{Aggiornamento giornaliero e decisione annuale}
+Durante il blocco si calcolano pesi con parametri stimati nell'ultimo training e con gli stati previsti dalla politica. Le sleeve di caratteristiche possono variare ogni giorno, ma i parametri di apprendimento e il supporto selezionato si aggiornano al calendario dichiarato. Ogni nuovo rendimento genera $U_B,U_S,Y$ e un solo incremento di log-evidence per confronto.
+
+A fine blocco, applicare questo ordine deterministico:
+\begin{enumerate}
+\item Fra le aggiunte con $E\ge1/a$, scegliere quella con maggiore media OOS di $Y$ positiva. A parità, ID stabile.
+\item Se nessuna aggiunta passa, considerare le rimozioni con evidenza positiva per ``senza meno con''.
+\item Se non passa nemmeno una rimozione, considerare gli swap prevalidati della shortlist; scegliere il migliore fra quelli con evidenza positiva.
+\item Se nessuna mossa passa, mantenere $S$.
+\end{enumerate}
+La regola sulla media positiva e un filtro aggiuntivo: restringe l'evento di rifiuto del singolo test e non ne peggiora T1. Il ranking finale e una selezione multipla non corretta, per cui non si rivendica un livello globale.
+
+\important{Specificazione principale: al massimo una modifica strutturale di $S$ per revisione annuale. Dopo una modifica non si esegue un'altra mossa usando test costruiti rispetto al vecchio $S$. Le stime vengono aggiornate subito; i nuovi confronti consumano solo dati successivi.}
+
+Questa scelta conserva la cronologia e rende il confronto con P-value e Greedy leggibile. Ha un costo: in 14 anni OOS partendo dal vuoto si possono effettuare al massimo 14 modifiche strutturali, e le rimozioni riducono ulteriormente il numero di aggiunte. Non promettere di selezionare tutti i 45 predittori strutturali. Per ammettere più modifiche nello stesso anno servirebbe una diversa specifica, con percorsi interamente preregistrati sul training o ulteriori blocchi di validazione; non introdurla silenziosamente.
+
+\subsection{Pseudocodice}
+\begin{lstlisting}
+S = empty_set
+fit_model(first_252_observations)
+open_comparisons(S, forward_all=True, backward_all=True, swap_top=10)
+for year in out_of_sample_years:
+    freeze_annual_estimates_and_predictable_rankings()
+    set_lambda_for_each_comparison_from_its_past_only()
+    for observation in next_252_observations:
+        compute_pre_return_weights_for_actual_and_shadow_policies()
+        observe_the_common_market_return_once()
+        charge_declared_costs_to_each_policy_using_its_own_state()
+        append_immutable_realized_scores()
+        update_log_evidence_once_per_observation_and_comparison()
+        update_actual_equity_and_shadow_states()
+    move = best_eligible_forward_else_backward_else_swap()
+    if move is not None:
+        close_old_reference_comparisons_with_reason()
+        S = apply_one_move(move)
+        charge_actual_transition_when_it_is_executed()
+    expand_training_with_the_new_year()
+    refit_without_rewriting_old_scores()
+    maintain_same_comparisons_or_open_new_episodes_from_now_on()
+\end{lstlisting}
+
+\subsection{Costo computazionale}
+Una passata con $s$ segnali attivi richiede al più
+\begin{equation}
+ (p-s)+s+s\min(10,p-s)=p+s\min(10,p-s)
+\end{equation}
+valutazioni candidate, oltre all'ottimizzazione del riferimento riutilizzabile. Con $p=100,s=10$ sono 200, contro 1000 includendo tutti gli swap. Il confronto riguarda \emph{valutazioni per passata}, non un fattore universale di velocita del programma: solver, aggiornamenti giornalieri, caching e numero di episodi determinano il tempo effettivo.
+
+Swap10 e un'euristica computazionale. I migliori candidati Forward non sono necessariamente i migliori partner di sostituzione. Non si garantiscono ottimo globale, monotonia della performance OOS o risoluzione di ogni complementarita.
+
+\section{Un solo DGP finanziario: caratteristiche, alpha e rumore}
+\label{sec:dgp}
+Il modello distingue caratteristiche, funzioni candidate e contributi predittivi veri. E ispirato alla modellazione dei rendimenti attraverso caratteristiche e interazioni \cite{gkx} e al problema di combinare molti segnali correlati \cite{kns}; non è una replica dichiarata di quei lavori.
+
+\subsection{Rendimenti azionari}
+Per $i=1,\ldots,N$,
+\begin{equation}
+ R^e_{i,t+1}=\beta_i'F_{t+1}
+   +\underbrace{\sum_{j=1}^{p}\alpha_{j,t}(Z_{i,t})}_{\text{contributi predittivi di caratteristiche}}
+   +\epsilon_{i,t+1},\qquad
+ \alpha_{j,t}(z)=\theta_{j,t}f_j(z).\label{eq:dgp}
+\end{equation}
+Le funzioni $f_j$ sono candidate pubbliche. I coefficienti $\theta_{j,t}$ sono veri parametri del simulatore e non vengono passati agli algoritmi. Un segnale di puro rumore ha $\theta_{j,t}=0$ in ogni data. Non si deve rinominare automaticamente ogni funzione candidata ``alpha vero''.
+
+\begin{longtable}{p{.46\linewidth}rp{.32\linewidth}}
+\toprule Gruppo & Numero & Coefficiente vero\\\midrule\endhead
+Persistenti & 15 & Positivo e stabile in media\\
+Deboli & 10 & Positivo, di scala minore\\
+Decay & 10 & Si riduce dopo deterioramento\\
+Revive & 10 & Cambia con stati persistenti\\
+Rumore strutturale indipendente & 40 & Identicamente zero\\
+Proxy senza coefficiente proprio & 15 & Zero, ma feature correlate\\\midrule
+Totale & 100 & 55 coefficienti strutturali nulli\\\bottomrule
+\end{longtable}
+
+La percentuale di rumore e una scelta di disegno, non una stima della quota di falsi segnali negli hedge fund. Gli identificativi di gruppo sono accessibili soltanto alla valutazione.
+
+\subsection{Caratteristiche persistenti e funzioni candidate}
+Dividere $D=30$ caratteristiche in 20 componenti di segnale e 10 di noise. Generare due blocchi latenti indipendenti fra loro, con correlazione all'interno del blocco:
+\begin{align}
+ X_{i,t+1}^{(b)}&=\rho_Z X_{i,t}^{(b)}+\sqrt{1-\rho_Z^2}\,L_b\xi_{i,t+1}^{(b)},\\
+ Z_{i,t}^{(b)}&=\tanh(X_{i,t}^{(b)}),\qquad b\in\{signal,noise\}.
+\end{align}
+$\xi$ sono gaussiane standard, $\rho_Z=0.97$ e $L_bL_b'$ ha diagonale uno e struttura a piccoli gruppi con correlazione 0.6 dentro il gruppo e zero fra gruppi. La trasformazione mantiene le caratteristiche limitate, ma i rendimenti restano non limitati.
+
+La libreria delle 45 funzioni predittive alterna combinazioni lineari normalizzate ($\norm{a}_1=1$), $\tanh(2a'z)$ e interazioni $z_kz_l$. I vettori e gli indici sono estratti una volta da un seed di disegno e salvati in una tabella. Ogni funzione rimane limitata in modulo da uno. Le 40 funzioni di noise dipendono esclusivamente dal blocco indipendente di noise, usando funzioni lineari, quadratiche centrate e interazioni. Le 15 proxy sono combinazioni normalizzate di una funzione di segnale e di una funzione indipendente di noise, con correlazione progettuale elevata, ma coefficiente proprio nullo.
+
+Non creare quaranta colonne identicamente uguali a zero: il rumore deve produrre serie e pesi non degeneri, in modo da poter apparire profittevole per caso sul training.
+
+\subsection{Regimi e decadimento nello stesso mercato}
+Usare un unico stato $g_t\in\{0,1\}$ con matrice di transizione simmetrica e probabilità giornaliera di cambio $1/(4h)$. Lo stato iniziale e zero. Non selezionare solo i seed nei quali avviene una crisi o un recupero. L'indicatore $\ell_t$ registra se si e già verificato il primo stato sfavorevole.
+
+Per i gruppi non nulli,
+\begin{equation}
+ \theta_{j,t+1}=\Pi_{[0,\theta_{j,max}]}
+ \left\{\rho_j\theta_{j,t}+(1-\rho_j)\bar\theta_j(g_t,\ell_t)+u_{j,t+1}\right\}.\label{eq:decay}
+\end{equation}
+Usare $\rho_j=2^{-1/126}$ come persistenza iniziale e innovazioni simmetriche limitate, con ampiezza al più $0.01\bar\theta_j(0,0)$. Per i persistenti il target e stabile; per i deboli e un quarto del livello base; per i decay il target diventa zero dopo il primo deterioramento; per i revive e alto in stato zero e basso in stato uno. Per tutti i nulli imporre esattamente $\theta_{j,t}=u_{j,t}=0$: non lasciare che la dinamica AR generi inavvertitamente alpha sui nulli.
+
+Lo zero del target può produrre decadimento graduale, non necessariamente un coefficiente esattamente nullo in un giorno predeterminato. Per le etichette dinamiche usare il contributo economico vero, non soltanto il nome del gruppo.
+
+\subsection{Shock di rischio e code}
+Usare quattro fattori di rischio. Le innovazioni fattoriali e idiosincratiche sono Laplace simmetriche, standardizzate a varianza uno e indipendenti condizionatamente allo stato. Le scale sono limitate e maggiori nello stato sfavorevole. Per esempio, deviazioni standard giornaliere iniziali dei fattori $(0.009,0.004,0.004,0.004)$, rischio idiosincratico 0.012, moltiplicatore di volatilità 1.5 nello stato uno. Sono valori iniziali di progetto, non stime empiriche.
+
+Le esposizioni $\beta_i$ sono limitate. Il primo fattore ha beta intorno a uno; gli altri beta possono dipendere da poche caratteristiche iniziali e restano entro intervalli prefissati. Non attribuire carichi fattoriali ai segnali usando le loro etichette nascoste durante l'apprendimento. Il premio medio dei fattori può essere nullo nel disegno di identificazione, per isolare il contributo della sommatoria; qualunque premio non nullo deve essere dichiarato e incluso nell'oracle.
+
+La Laplace condizionata con scale limitate fornisce code subesponenziali e quarti momenti finiti. La proiezione di $\theta$, le caratteristiche limitate, i beta limitati e la leva limitata consentono un involucro deterministico di momenti per \eqref{eq:numoment}. L'uso di distribuzioni Student con pochi gradi di liberta senza verifica del quarto momento non è consentito.
+
+\subsection{Dai segnali alle sleeve negoziabili}
+Definire $z_{ij,t}=f_j(Z_{i,t})$ e
+\begin{equation}
+ \widetilde z_{ij,t}=z_{ij,t}-\frac1N\sum_{l=1}^Nz_{lj,t},\qquad
+ P_{ij,t}=\frac{\widetilde z_{ij,t}}{\max\{\sum_l|\widetilde z_{lj,t}|,\epsilon_P\}}.
+\end{equation}
+Ogni colonna ha esposizione netta nulla e leva lorda al più uno. Il rendimento della sleeve e
+\begin{equation}
+ A_{j,t+1}=\sum_iP_{ij,t}R^e_{i,t+1},\qquad A_{t+1}=P_t'R^e_{t+1}.
+\end{equation}
+La normalizzazione usa solo caratteristiche contemporaneamente disponibili. Non usa i rendimenti futuri e non garantisce che il segnale sia economicamente utile. La stessa $P_t$ e utilizzata per tutti i metodi.
+
+La leva $\norm w_1\le L$ implica $\norm{P_tw}_1\le L$, utile per i momenti. Non neutralizzare automaticamente tutti i fattori: ciò eliminerebbe parte del problema di diversificazione che intendiamo misurare. La neutralita al dollaro e già definita.
+
+\subsection{Rumore strutturale non significa null economica}
+Con $\theta_j=0$ il segnale non contribuisce direttamente alla media nella rappresentazione generativa. Può pero essere un proxy di altre caratteristiche, una copertura di rischio, o avere correlazioni finite-campione. Pertanto le due verità da salvare sono:
+\begin{equation}
+ label^{struct}_{j,t}=\ind\{\theta_{j,t}\ne0\},\qquad
+ d^{true}_{c,t}=\E[Y_{c,t+1}\mid\mathcal G_t].
+\end{equation}
+La prima misura scoperta dei predittori strutturali; la seconda valuta la decisione economica. Un hedge economicamente utile non deve essere contato come falso positivo economico soltanto perché ha coefficiente strutturale zero.
+
+\subsection{Calibrazione, non manipolazione dei risultati}
+Configurazione iniziale: $N=500,D=30,p=100$, 15 anni, $n_0=h=252$, $L=2$, $\gamma=5$, $c=10^{-4}$, $\eta=10^{-3}$, $\Lambda$ diagonale con elementi fra uno e tre, assegnati indipendentemente dal gruppo del segnale. Questi numeri completano la specifica numerica proposta; la forma dei costi non cambia. Se esistono valori numerici già approvati dal ricercatore, essi hanno precedenza e la modifica va registrata.
+
+Usare come ampiezza iniziale dei coefficienti forti $5\times10^{-5}$ per giorno e calibrare una sola scala comune su seed separati. La calibrazione verifica volatilità azionarie e delle sleeve, Sharpe lordi, correlazioni, turnover e dimensione dei costi; non massimizza la differenza di performance fra E-process e benchmark. Congelare la configurazione e il suo hash prima delle repliche di valutazione. Riportare anche che un solo cambiamento annuale limita il numero massimo di segnali selezionabili.
+
+\section{Benchmark: confronto economico e statistico corretto}
+\label{sec:benchmarks}
+\begin{longtable}{p{.20\linewidth}p{.74\linewidth}}
+\toprule Metodo & Definizione\\\midrule\endhead
+All Signals & Stesso ottimizzatore, tutti i 100 segnali disponibili, nessuna selezione di supporto. Non significa peso uguale o peso non nullo per tutti.\\
+Greedy & Stessa lista di mosse e stessa priorità Forward--Backward--Swap10; nessuna soglia statistica. Accetta il migliore guadagno medio OOS positivo alla revisione.\\
+P-value HAC & Stesse politiche, punteggi, episodi, calendario, shortlist e criteri di ranking; soglia unilaterale $p\le0.05$ al posto di $E\ge20$.\\
+PARK/REVIVE & Catoni con limite certificato e $\widehat\lambda$ prevedibile. Tutti gli altri componenti restano comuni.\\
+Oracle & Conosce i momenti condizionali veri e risolve l'ottimizzazione vincolata sul set completo; stessi costi e leva. Non conosce gli shock futuri.\\\bottomrule
+\end{longtable}
+
+Il Greedy principale usa la stessa informazione OOS disponibile al momento della decisione, senza attendere il superamento di una soglia. Un Greedy basato soltanto su guadagni in-sample può essere riportato come ablation, non sostituire di nascosto il benchmark dichiarato. Aumentare la dimensione del supporto in-sample non riduce $\widehat V$ a stato comune: una procedura che accetta qualunque incremento numericamente positivo può saturare il supporto. Questo deve essere visibile nei risultati.
+
+\subsection{P-value robusto alla dipendenza}
+Per $n$ osservazioni dell'episodio, usa
+\begin{equation}
+ \bar Y_n=\frac1n\sum_{t=1}^nY_t,\qquad
+ T_n=\frac{\sqrt n\bar Y_n}{\widehat\omega_n},\qquad p_n=1-\Phi(T_n).
+\end{equation}
+La stima HAC con pesi di Bartlett e
+\begin{align}
+ \widehat\omega_n^2&=\widehat\Gamma_0+
+ 2\sum_{l=1}^{L_n}\left(1-\frac{l}{L_n+1}\right)\widehat\Gamma_l,\\
+ \widehat\Gamma_l&=\frac1n\sum_{t=l+1}^n(Y_t-\bar Y_n)(Y_{t-l}-\bar Y_n),\\
+ L_n&=\left\lfloor4(n/100)^{2/9}\right\rfloor.
+\end{align}
+Questa e una regola di bandwidth prefissata; la stima HAC segue l'impostazione di Newey--West \cite{nw}. Il p-value e asintotico sotto adeguate condizioni di dipendenza, momenti e stabilità; non è esatto per la nostra null condizionale generale con drift arbitrario. Se la varianza e zero o numericamente non positiva, restituire uno stato degenerato e non una significativita artificiale.
+
+Come richiesto, non correggere per le verifiche annuali o per i molteplici segnali. Chiamare il metodo \emph{Repeated-HAC-p}. Misurarne l'errore effettivo, senza affermare che controlli automaticamente il 5\% nel tempo. Anche per E-process, l'assenza di correzione tra candidati e riavvii impedisce una garanzia globale. La conversione $p^{any}$ dell'e-process deve produrre le stesse decisioni per la relativa regola di attraversamento ed e un test di implementazione, non un nuovo benchmark indipendente.
+
+\subsection{Oracle non significa massima equity realizzata}
+L'oracle massimizza l'utilità condizionale di un periodo nel proprio stato. Non è un controllore dinamico onnisciente e non garantisce Sharpe o patrimonio realizzato massimi su ogni percorso. Per misurare regret, calcolare inoltre un oracle \emph{state-matched}: stessa informazione vera, ma stato corrente del metodo sotto valutazione. Cosi non si confonde il costo di una storia diversa con l'errore di stima corrente.
+
+\subsection{Date comuni e costo dell'attesa}
+Tutti i metodi condividono training, rendimenti, calendario OOS, vincoli e funzione di costo. All Signals e Oracle possono impiegare capitale dopo il training; i metodi con selezione partono da $S=\varnothing$ e pagano il costo opportunità dell'attesa. Non spostare in avanti l'inizio delle loro equity per nascondere gli anni in cui restano inattivi. Evidenziare nelle figure la fase di accumulo delle prime evidenze.
+
+\section{Metriche e verità economica del simulatore}
+\label{sec:metrics}
+\subsection{Performance investibile}
+La metrica primaria e l'utilità media OOS, coerente con la teoria:
+\begin{equation}
+ \widehat U=\frac1{T_{OOS}}\sum_t
+ \left(r_t-\frac\gamma2r_t^2-C_t\right).
+\end{equation}
+Mostrare anche $h\widehat U$, chiamandola \emph{utilità media riscalata annualmente}, non equivalente certo annuale esatto. La metrica usa rendimento lordo nel quadrato e costo sottratto separatamente.
+
+Il rendimento netto e $r_t^{net}=r_t-C_t$. Lo Sharpe convenzionale e
+\begin{equation}
+ SR_{ann}=\sqrt h\,\frac{\overline r^{net}}{s(r^{net})}.
+\end{equation}
+In presenza di autocorrelazione la radice di $h$ e una convenzione, non l'identità della varianza annuale aggregata. Affiancare una versione con varianza di lungo periodo se la dipendenza e rilevante. Se la varianza e zero, lo Sharpe e non definito: riportare NA e il numero di percorsi inattivi, non un numero enorme o uno zero presentato come stima.
+
+Produrre equity nette, rendimento annualizzato geometrico, drawdown massimo, turnover cumulativo, costi totali separati per componente, leva, quota di giorni inattivi, numero di segnali attivi e numero di cambiamenti. Il turnover e $\sum_t\norm{\Delta w_t}_1$ e non contiene il fattore $1/2$ salvo etichetta esplicita: deve coincidere con la convenzione del costo.
+
+\subsection{Riconoscimento dei segnali e delle decisioni}
+Riportare separatamente:
+\begin{enumerate}
+\item Precision e recall strutturali: rispetto a $\theta_{j,t}\ne0$, con una soglia di intensità dichiarata per i gruppi in decay.
+\item Precision economica delle mosse: rispetto al segno del vero contributo $d^{true}_{c,t}$ o della sua media nel blocco, dichiarando quale dei due si usa.
+\item Intensità del beneficio/perdita: valore economico medio delle mosse corrette ed errate, non soltanto conteggi.
+\item Errori fra i 40 segnali di rumore indipendente e fra le 15 proxy, mantenendoli separati.
+\end{enumerate}
+Una tolleranza numerica comune, per esempio $10^{-8}$ in unità di utilità giornaliera, separa contributi positivi, negativi e quasi nulli. Non cambiare la tolleranza per metodo. Se non si effettuano selezioni, la precision e NA e il tasso di selezione e zero; non assegnare automaticamente precision uno.
+
+\subsection{Potenza e dimensione del test}
+Per confronti fissi che soddisfano le ipotesi T2, misurare
+\begin{equation}
+ \widehat\pi_K=\frac1R\sum_{r=1}^R
+ \ind\{\max_{k\le K}E^{(r)}_{hk}\ge1/a\}.
+\end{equation}
+La potenza del test e diversa dalla probabilità che un segnale venga effettivamente scelto: un candidato significativo può perdere il ranking contro un altro. Registrare entrambe.
+
+La dimensione T1 deve essere verificata con controlli in cui la null condizionale e vera per costruzione in tutta la legge del confronto. Etichettare come ``null'' i soli episodi che \emph{a posteriori} hanno medie condizionali osservate negative non basta a validare T1: quella selezione di episodi può dipendere dal percorso. I test di calibrazione matematica su sequenze controllate sono unit test della statistica, non un secondo DGP finanziario principale.
+
+Nel mercato dinamico chiamare gli errori rispetto al segno corrente \emph{errori economici di decisione}. Non identificarli con l'errore di tipo I della null estesa all'intero episodio.
+
+\subsection{Decay, PARK e REVIVE}
+Il valutatore registra il primo blocco nel quale il contributo economico cambia segno e resta nel nuovo segno per una durata prefissata, ad esempio due revisioni. Questo criterio e usato solo ex post per classificare eventi; non viene passato al metodo. Misurare ritardo alla successiva decisione corretta, frequenza di PARK erronei e riattivazioni erronee, quota di eventi mai rilevati e costi durante il ritardo.
+
+I mancati rilevamenti sono censurati a fine campione. Riportare probabilità di rilevazione entro 1, 3 e 5 anni, quando osservabili. La sola media dei ritardi fra i successi sarebbe ottimistica. I seed senza una transizione di regime non sono fallimenti di rilevazione: sono non eleggibili per quella specifica metrica, ma rimangono nel confronto economico generale.
+
+\subsection{Repliche, intervalli e figure}
+Usare common random numbers: ogni metodo riceve lo stesso mercato nel medesimo seed. Repliche indipendenti fra seed. Separare seed di calibrazione, smoke, pilot e valutazione. Proposta: 3 smoke ridotti; 100 pilot; 500 repliche finali a configurazione congelata. Le dimensioni ridotte sono test di software, non risultati del disegno principale.
+
+Gli intervalli sui confronti sono costruiti sulle differenze \emph{appaiate per seed}, con errore standard o bootstrap dei seed. Non trattare $500\times252\times15$ rendimenti come osservazioni Monte Carlo indipendenti. Per tassi binomiali riportare intervalli Wilson e denominatori. Per metriche non definite riportare quanti seed sono utilizzati e perché.
+
+Figure obbligatorie: equity del seed rappresentativo fissato prima del run; mediana e quantili dell'equity fra seed; distribuzioni dello Sharpe e differenze appaiate; utilità netta e costi; curva di potenza per orizzonte; errori economici; stati ACTIVE/PARK nel tempo; ritardi censurati; numero di attivi; tempi di calcolo. Nessuna figura illustrativa deve essere confusa con risultati eseguiti.
+
+\section{Appendice matematica: momenti veri nel DGP Laplace}
+\label{sec:laplace}
+Questo calcolo consente audit del simulatore e valutazione della verità economica. Non autorizza a passare parametri nascosti al learner.
+
+Condizionatamente a $\mathcal G_t$, un rendimento di portafoglio ha forma
+\begin{equation}
+ x=\mu_x+h_x'\zeta,
+\end{equation}
+con componenti di $\zeta$ indipendenti, simmetriche, a media zero, varianza uno e quarto momento sei. Poni $v_x=\norm{h_x}_2^2$. Allora
+\begin{align}
+ \E x^2&=\mu_x^2+v_x,\\
+ \E x^3&=\mu_x^3+3\mu_xv_x,\\
+ \E x^4&=\mu_x^4+6\mu_x^2v_x+3v_x^2+3\sum_l h_{xl}^4.
+\end{align}
+L'ultimo termine è il contributo del quarto cumulante della Laplace. La formula segue espandendo il quarto potere: sopravvivono solo indici tutti uguali o a coppie. Poiché $\sum_l h_{xl}^4\le v_x^2$, si ottiene il limite $\mu_x^4+6\mu_x^2v_x+6v_x^2$.
+
+Per due portafogli $x=\mu_x+h_x'\zeta$ e $y=\mu_y+h_y'\zeta$, poni $v_y=\norm{h_y}_2^2$, $v_{xy}=h_x'h_y$. Allora
+\begin{align}
+ \E[x^2y]&=\mu_x^2\mu_y+\mu_yv_x+2\mu_xv_{xy},\\
+ \E[xy^2]&=\mu_x\mu_y^2+\mu_xv_y+2\mu_yv_{xy},\\
+ \E[x^2y^2]&=\mu_x^2\mu_y^2+\mu_x^2v_y+\mu_y^2v_x+4\mu_x\mu_yv_{xy}\notag\\
+ &\quad+v_xv_y+2v_{xy}^2+3\sum_lh_{xl}^2h_{yl}^2.
+\end{align}
+Con $D=C_B-C_S$, $L=x-y$, $Q=x^2-y^2$, il punteggio è $Y=L-\gamma Q/2-D$. Quindi
+\begin{align}
+ \E Y&=\E L-\frac\gamma2\E Q-D,\\
+ \E Y^2&=\E L^2+\frac{\gamma^2}{4}\E Q^2+D^2
+ -\gamma\E[LQ]-2D\E L+\gamma D\E Q,\\
+ \E L^2&=(\mu_x-\mu_y)^2+v_x+v_y-2v_{xy},\\
+ \E Q^2&=\E x^4+\E y^4-2\E[x^2y^2],\\
+ \E[LQ]&=\E x^3+\E y^3-\E[xy^2]-\E[x^2y].
+\end{align}
+Queste formule devono essere confrontate con integrazione Monte Carlo condizionale indipendente in un test numerico del codice, con tolleranze basate sull'errore Monte Carlo. Quando $B=S$ e costi/stati coincidono, tutti i termini danno $Y=0$: testare espressamente la cancellazione.
+
+\section{Dati reali e stato del repository}
+\label{sec:repository}
+Alla verifica del 16 ottobre 2026 il branch principale del repository è \texttt{main}, con commit
+\begin{center}\texttt{db5c37ab3e23a7818869d32ba35f22d51c3a89b2}.\end{center}
+È stato creato il branch di backup
+\begin{center}\texttt{archive/pre-rebuild-20261016}.\end{center}
+La richiesta di svuotamento remoto tramite creazione di un nuovo tree è stata bloccata: \textbf{la pulizia di main non è stata eseguita}. Questo documento non deve far credere a Codex che il vecchio codice sia già scomparso.
+
+La cartella tracciata \texttt{data/} contiene \texttt{README.md} e \texttt{source\_manifest\_20261006.json}. Gli archivi grezzi risultano intenzionalmente esclusi dal tracking. Il manifest descrive dati JKP USA \emph{mensili}, capped-value, con archivi fattori, mercato e temi, e riporta hash SHA-256 e data di acquisizione. La documentazione indica rendimenti decimali già firmati e licenza di ricerca non commerciale. I dettagli provengono dai file del repository; la fonte pubblica del dataset è il progetto di Jensen, Kelly e Pedersen \cite{jkp}.
+
+\subsection{Preservazione prima di qualsiasi ricostruzione}
+Codex deve inventariare file tracciati, non tracciati e ignorati, Git LFS e archivi locali. Deve produrre un manifest di preservazione con percorso, dimensione e SHA-256. Conservare dati grezzi, metadati, dizionari, licenze, provenienza e script strettamente necessari a comprenderne l'acquisizione. Non assumere che un nuovo clone contenga archivi ignorati esistenti su un altro computer.
+
+Nessun \texttt{git clean -fdx}, nessun \texttt{rm -rf} della radice, nessun force push e nessuna riscrittura della storia. Lavorare su un branch nuovo; la pulizia va prima descritta in un manifest di eliminazione e sottoposta ad approvazione. Nel frattempo il nuovo codice può vivere in un namespace isolato, senza importare il vecchio package. File ambigui vengono conservati, non eliminati.
+
+Il vecchio script di download è recuperabile dal backup con:
+\begin{lstlisting}
+git show archive/pre-rebuild-20261016:experiments/fetch_jkp.py
+\end{lstlisting}
+Non rieseguirlo sovrascrivendo archivi esistenti: il provider può aggiornare le serie. Qualunque nuova acquisizione va in una directory separata e ha un nuovo manifest.
+
+\subsection{Frequenza e limiti dell'empirica}
+Non interpolare rendimenti mensili per produrre 252 osservazioni giornaliere. Se sono disponibili soltanto dati mensili, eseguire una pipeline empirica separata con $h=12$, parametrizzazione e costi coerenti alla frequenza, mantenendo il Monte Carlo principale daily. Rendimenti di fattori aggregati non consentono di ricostruire ordini azionari o impatto effettivo a livello di titolo; il costo sulle allocazioni delle sleeve resta un modello dichiarato. Non creare backfill sintetici, etichette di verità economica o periodi pre-lancio mancanti.
+
+\section{Specifiche software e criteri di accettazione}
+\label{sec:software}
+\subsection{Moduli richiesti}
+\begin{lstlisting}
+src/park_revive/
+    config.py           # validazione e serializzazione configurazioni
+    dgp.py              # mercato; vista learner distinta da truth
+    features.py         # libreria f_j e trasformazioni causali
+    sleeves.py          # P_t e rendimenti A_t
+    costs.py            # unica funzione di costo condivisa
+    optimizer.py        # utilita quadratica, vincoli, KKT residuals
+    policies.py         # allocazioni reali e shadow, propri stati
+    comparisons.py      # identita immutabile degli episodi
+    eprocess.py          # phi stabile, lambda prevedibile, log E
+    pvalues.py          # HAC unilaterale, stessa serie di score
+    selection.py        # Forward, Backward, Swap10, una mossa/anno
+    backtest.py         # calendario, ledger, OOS, equity
+    oracle.py           # momenti veri e valutazione, mai import dal learner
+    metrics.py          # performance, potenza, errori, censura
+    reporting.py        # tabelle/figure da file realmente prodotti
+    empirical.py        # lettura non distruttiva dei dati preservati
+    cli.py              # comandi riproducibili
+configs/               # smoke, pilot, main, empirical
+scripts/               # entry points e inventario
+tests/                 # unitari, proprieta matematiche, integration
+reports/               # audit, definizioni, stato dei run
+\end{lstlisting}
+Il package nuovo non deve dipendere dal vecchio codice se questo resta temporaneamente nel repository.
+
+\subsection{Test matematici e di cronologia}
+Obbligatori prima del pilot:
+\begin{enumerate}
+\item Verifica delle tre disuguaglianze di $\phi$, disparità, valore zero e stabilità per argomenti molto grandi e molto piccoli. Usare \texttt{log1p} e una formula asintoticamente stabile senza overflow del quadrato.
+\item Aggiornamento in log, uguaglianza fra somma giornaliera e blocco annuale, nessun doppio conteggio, invarianza esatta allo scaling costante con trasformazione di $\lambda,\nu$.
+\item T1 su distribuzioni nulle controllate con limite valido, inclusa dipendenza prevedibile. Intervalli binomiali: non pretendere errore osservato sempre minore del nominale in ogni campione Monte Carlo finito.
+\item T2: valore dell'oracle, identità del completamento del quadrato, bound $O(\log K)$ nel caso di media condizionale costante e confronto empirico con il limite di potenza, senza pretendere che il bound sia stretto.
+\item T3: soluzione chiusa per $c=0$, limiti inferiore/superiore per $c>0$, segno e condizioni $b_j=0$; usare solver indipendente come controllo. Verificare separatamente che con vincoli attivi non si usi la formula non vincolata.
+\item T4: perturbazioni controllate di momenti, regret, versione a stati diversi e tolleranza del solver.
+\item Nessun valore futuro influenza candidati, scaling, pesi o lambda. Modificare dati futuri e verificare che l'intero prefisso delle decisioni resti identico.
+\item Cambiare $S$ apre nuovi confronti; un normale refit prevedibile non riscrive i punteggi. La selezione non usa la vecchia evidenza per un diverso supporto.
+\item Costi identici fra metodi e funzioni; liquidazioni non gratuite; stati shadow distinti; costo reale di transizione; caso vuoto e confronto identico danno i valori corretti.
+\item Esattamente 100 candidati, 40 noise indipendenti e 15 proxy con coefficienti sempre zero. Nessuna leakage delle etichette; nullo strutturale distinto da nullo economico.
+\item Invarianza alla permutazione delle colonne e tie-breaking stabile; Swap10 usa solo shortlist note prima del blocco testato.
+\item Riproducibilità su stesso seed e checkpoint, assenza di seed eliminati per risultati sfavorevoli, gestione insolvenza e Sharpe non definito.
+\end{enumerate}
+
+\subsection{File di output e audit}
+Produrre almeno \nolinkurl{config_frozen.json}, \nolinkurl{seed_manifest.json}, \nolinkurl{environment.txt}, \nolinkurl{metrics_by_seed.csv}, \nolinkurl{paired_comparisons.csv}, \nolinkurl{daily_ledger.parquet}, \nolinkurl{comparison_events.parquet}, \nolinkurl{decisions.csv}, \nolinkurl{detection.csv}, \nolinkurl{runtime.csv} e figure. Gli eventi contengono ID del confronto, date, supporti prima/dopo, lambda, limite di momento, log-evidence, p-value, score e ragione della decisione. Le etichette oracle vengono aggiunte dal valutatore in una fase separata.
+
+Ogni risultato contiene commit, hash della configurazione, seed, versione delle dipendenze e durata. Salvataggio incrementale e resume devono preservare generatori random e stati statistici; non sommare di nuovo blocchi già elaborati. Gli output pesanti non vanno committati indiscriminatamente in Git.
+
+\subsection{Ordine di esecuzione affidato a Codex}
+Prima inventario e audit della specifica; poi moduli e test; poi smoke; poi pilot; quindi report dei problemi di calibrazione, potenza e runtime. La valutazione finale usa configurazione congelata e seed nuovi. Se l'ambiente non consente 500 repliche, implementare il comando completo e riportare il numero realmente terminato. Non dichiarare successo sulla base di file pilota o risultati del vecchio progetto.
+
+\section{Affermazioni autorizzate e non autorizzate}
+\begin{longtable}{p{.44\linewidth}p{.50\linewidth}}
+\toprule Affermazione corretta & Affermazione da evitare\\\midrule\endhead
+Il singolo episodio soddisfa T1 sotto ipotesi esplicite. & L'intero algoritmo ha il 5\% di probabilità di qualunque errore.\\
+$\widehat\lambda$ ha regret logaritmico nel certificato quadratico sotto media costante. & $\widehat\lambda$ massimizza la potenza esatta in ogni mercato.\\
+T3 caratterizza l'ingresso nel problema senza vincoli aggiuntivi. & La formula Schur risolve anche ogni problema vincolato e ogni swap.\\
+T4 controlla il costo della stima su un evento uniforme. & L'expanding window impara automaticamente il regime corrente.\\
+Il DGP contiene 55 coefficienti strutturali nulli. & Tutti quei segnali hanno necessariamente valore economico nullo.\\
+La simulazione misura ritardi ed errori nei regimi. & Una soglia superata certifica che l'alpha funziona oggi e in futuro.\\
+L'oracle massimizza l'utilità condizionale modellata. & L'oracle deve avere l'equity o lo Sharpe migliori in ogni seed.\\
+Il pilot produce risultati soltanto se realmente eseguito. & File preesistenti o curve illustrative dimostrano il nuovo metodo.\\\bottomrule
+\end{longtable}
+
+\important{Il successo scientifico non è garantito dal disegno. Il confronto deve poter mostrare che la validazione sequenziale migliora l'utilità netta, oppure che è troppo lenta o conservativa. Entrambi sono esiti da riportare fedelmente.}
+
+\begin{thebibliography}{9}
+\bibitem{wr} H. Wang e A. Ramdas (2023). \emph{Catoni-style confidence sequences for heavy-tailed mean estimation}. Stochastic Processes and their Applications, 163, 168--202. Versione autore: \url{https://arxiv.org/abs/2202.01250}. Fonte della costruzione Catoni e della validità via supermartingale; le specializzazioni del documento sono dimostrate nel testo.
+\bibitem{gkx} S. Gu, B. Kelly e D. Xiu (2020). \emph{Empirical Asset Pricing via Machine Learning}. Review of Financial Studies, 33(5), 2223--2273. \url{https://doi.org/10.1093/rfs/hhaa009}.
+\bibitem{kns} S. Kozak, S. Nagel e S. Santosh (2020). \emph{Shrinking the cross-section}. Journal of Financial Economics, 135(2), 271--292. Working paper: \url{https://www.nber.org/papers/w24070}.
+\bibitem{boyd} S. Boyd, E. Busseti, S. Diamond, R. Kahn, K. Koh, P. Nystrup e J. Speth (2017). \emph{Multi-Period Trading via Convex Optimization}. Foundations and Trends in Optimization, 3(1), 1--76. \url{https://web.stanford.edu/~boyd/papers/cvx_portfolio.html}.
+\bibitem{nw} W. K. Newey e K. D. West (1987). \emph{A Simple, Positive Semi-Definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix}. Econometrica, 55(3), 703--708. \url{https://doi.org/10.2307/1913610}.
+\bibitem{jkp} T. I. Jensen, B. Kelly e L. H. Pedersen (2023). \emph{Is There a Replication Crisis in Finance?} Journal of Finance, 78(5), 2465--2518. \url{https://doi.org/10.1111/jofi.13249}. Dataset: \url{https://jkpfactors.com/}.
+\end{thebibliography}
+\end{document}

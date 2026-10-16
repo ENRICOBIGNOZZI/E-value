@@ -1,0 +1,206 @@
+{
+  "base_commit": "db5c37ab3e23a7818869d32ba35f22d51c3a89b2",
+  "backup": "/Users/enrico/Desktop/PHD/E-value-pre-rebuild-20261016.zip",
+  "remote_archive": "origin/archive/pre-rebuild-20261016",
+  "files": [
+    {
+      "path": ".github/workflows/jkp-acquisition.yml",
+      "bytes": 2025,
+      "sha256": "bbab1b290f31a3b8a8bbe4204175e75b65141586cf5c2a98f9f2d574360124d6"
+    },
+    {
+      "path": ".github/workflows/jkp-daily.yml",
+      "bytes": 1471,
+      "sha256": "d5942628cef18fe420109ea81b458191fb71031ae18fa526fb8ad69bfe2879c5"
+    },
+    {
+      "path": ".github/workflows/jkp-data.yml",
+      "bytes": 1552,
+      "sha256": "cc0712e9e6aab5f82f359db8322d2fae629935f03b556efa80394dc0d34a29d4"
+    },
+    {
+      "path": ".github/workflows/research.yml",
+      "bytes": 1849,
+      "sha256": "9ba37353d25ee07956a3a7280ad16f442d76df404d3cecf400d80fd140f04418"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 126,
+      "sha256": "1593b3b312e57d7cb51d5e561189b3070db9d560ebd675a26e84d2a9be39f7b8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3559,
+      "sha256": "62c284423a448c723e7df51bcf0ca1b7316ae0797bc7fc994d48f4042293828b"
+    },
+    {
+      "path": "configs/reference.json",
+      "bytes": 293,
+      "sha256": "28064a02f467c63fc86712a58fef0440f6d119cf72da131fee3eef6afcb02bcd"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 627,
+      "sha256": "6f58e679eaa1722e2c19c38c10eb350acf1a6269d8609745412e6e8958152e68"
+    },
+    {
+      "path": "data/source_manifest_20261006.json",
+      "bytes": 1116,
+      "sha256": "090c36351221736976393614311f9be727a6a531b2475a9fd6181cb924c6a4be"
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "bytes": 3507,
+      "sha256": "a80e04242f33ab08d4ada2a5a470b5cbbfca514a39850bec7bf0c86f3a028967"
+    },
+    {
+      "path": "docs/THEORY_V4.md",
+      "bytes": 5406,
+      "sha256": "15e6a177b21f4a98874eb8e2296abfeff91c6740bfd6ad4fbdfe861d53f2c7a2"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 2373,
+      "sha256": "047f2311aff1613d415a770f0879d0d23a6fbbdbb82ad8bc1e5bd11de258d7a1"
+    },
+    {
+      "path": "experiments/delay.py",
+      "bytes": 3168,
+      "sha256": "9dce923507d09159012e7c382471d03dfa49b09a37cb762231093afb0d1ba4e5"
+    },
+    {
+      "path": "experiments/empirical.py",
+      "bytes": 7957,
+      "sha256": "c33a7e5cb59d018f0aa4355e7e99f21a1bb640b102318ce6baf2b7a7302f5c93"
+    },
+    {
+      "path": "experiments/empirical_diagnostics.py",
+      "bytes": 1736,
+      "sha256": "69b4d53b14a5f4154630eab2e98fd7c5327a7ce208a66f1f132a6a32f1de3a78"
+    },
+    {
+      "path": "experiments/fetch_jkp.py",
+      "bytes": 1359,
+      "sha256": "a9cafb8b5752cf9a3ca7d5bc4def6ec2d1bb41b513ad15e610cec91af203f28a"
+    },
+    {
+      "path": "experiments/report.py",
+      "bytes": 7233,
+      "sha256": "c839b7e13f1f1600c4ff6b1b288935724b1ee1bc88c345524c347bd3ac6e6dd4"
+    },
+    {
+      "path": "experiments/reproduce.py",
+      "bytes": 1990,
+      "sha256": "6150d9813a29722f95851cafd8c0e0612effa7d6f44b50068318a92aac89bf39"
+    },
+    {
+      "path": "experiments/run.py",
+      "bytes": 8459,
+      "sha256": "4668d92dc5294623c4d8086f1a1435daa08d52f27bb7029c8aa5f2f98b218ae5"
+    },
+    {
+      "path": "paper/main.tex",
+      "bytes": 3547,
+      "sha256": "e6bd932cbbfaf51593e2ef191e4d02581c6a0a1a4b864dbf54622a1b3c5fc794"
+    },
+    {
+      "path": "paper/sections/01_economy.tex",
+      "bytes": 8755,
+      "sha256": "37bd38b7d626ac7311e8b391186815374a33a91d06909e3bb801f784cfcc900c"
+    },
+    {
+      "path": "paper/sections/02_method.tex",
+      "bytes": 9710,
+      "sha256": "2a9514c70d8df69da6a4a3ab57658fbc2ac1ebed8db6737ca25765e63c757e23"
+    },
+    {
+      "path": "paper/sections/03_simulations.tex",
+      "bytes": 10093,
+      "sha256": "71c45cd64fb38dca405ed5289f590d441fa442f22a56ede31f98fd8accf2b042"
+    },
+    {
+      "path": "paper/sections/04_empirical.tex",
+      "bytes": 10314,
+      "sha256": "9fc2b1d70fb2fcd74e7127fa832fd57f0d516ff855812e7c7dcec365343c8ebb"
+    },
+    {
+      "path": "paper/sections/05_proofs.tex",
+      "bytes": 7961,
+      "sha256": "196c109183ca2c1f65c57a540f325f718c5445e42e9c1a91a01a6e42cd05604a"
+    },
+    {
+      "path": "paper/sections/06_appendices.tex",
+      "bytes": 7308,
+      "sha256": "1d2796af99a3d0fb42f307f30c6cc5273b7b7a2e9300a6d931587ee8fe34cfd6"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 505,
+      "sha256": "10a281ee2377e8f4c6deb1c8483123fa650a48f8bce8f4a99a481f3bec15967e"
+    },
+    {
+      "path": "requirements-tested.txt",
+      "bytes": 161,
+      "sha256": "3627f1823541ecd334699a9505a652b0de455feb67186e6494a92acf2c285399"
+    },
+    {
+      "path": "src/alpha_lifecycle/__init__.py",
+      "bytes": 99,
+      "sha256": "ad780888120846556533aa04aad8cf7e263f054bcff11d5ad973d9806ff8dd9e"
+    },
+    {
+      "path": "src/alpha_lifecycle/core.py",
+      "bytes": 7291,
+      "sha256": "88755d0cba4850e760a714fc0dc33edf16c5469bea9ebaa46323e698f1b7fd29"
+    },
+    {
+      "path": "src/alpha_lifecycle/dgp.py",
+      "bytes": 4003,
+      "sha256": "82da0476da299a9bc4583cef7337e04cc88fb8b6ba3955e13c1ed6ec806576b8"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 3590,
+      "sha256": "d1a6ed0f3af39154c2a7d6595f3ce4dc9e4bc52724f83fe4fb5250b1f7a2b32d"
+    },
+    {
+      "path": "tests/test_empirical.py",
+      "bytes": 1094,
+      "sha256": "591e59992be7e602083cc64b1a1787c099d7b53a12a03dcd9a157c8bf1011a42"
+    },
+    {
+      "path": "v4/README.md",
+      "bytes": 2306,
+      "sha256": "e3044c602aa9708a366181d958b3ea5356d1a21633052afd0a7d1b5cf5f85dc0"
+    },
+    {
+      "path": "v4/RESULTS.md",
+      "bytes": 2652,
+      "sha256": "c9d411e9d9cec4556e9ea821fa531891932e27c58e32e10ea171ca4e02cf708a"
+    },
+    {
+      "path": "v4/THEORY.md",
+      "bytes": 5468,
+      "sha256": "baede9013bc15540a8aefbca8a5d5e9fbdf05fc7c6f839fdf670d50e470ae204"
+    },
+    {
+      "path": "v4/fast.py",
+      "bytes": 8909,
+      "sha256": "00dd2b1505557215a2a5473d33fe0815c052c99bf34c016008e4a21eb4b85dff"
+    },
+    {
+      "path": "v4/test_fast.py",
+      "bytes": 1431,
+      "sha256": "cb033d51485cfbcb2b70a717b0b21d85ae4fce8b70ae3a702b9adedb86effbb3"
+    }
+  ],
+  "preserved": [
+    "data/README.md",
+    "data/source_manifest_20261006.json",
+    "experiments/fetch_jkp.py"
+  ],
+  "raw_available": [],
+  "raw_note": "Fresh clone: historical raw archives are absent. No empirical data acquired or modified.",
+  "untracked_before": [],
+  "ignored_before": []
+}

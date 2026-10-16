@@ -1,53 +1,89 @@
-# When Should I Kill—and Revive—an Alpha?
+# PARK/REVIVE — theory and simulations
 
-**Portfolio-aware sequential monitoring and the cost of certification.**
+Fresh research implementation for sequential comparison of **estimated investment
+policies**, with quadratic utility and shared turnover/impact costs. The current
+scope excludes empirical analysis. No legacy results are reused.
 
-V4 research status, 6 October 2026.
+The working manuscript is [`paper/main.tex`](paper/main.tex); mathematical
+assumptions and limitations are audited in [`reports/theory_audit.md`](reports/theory_audit.md).
+The supplied handoff is preserved unchanged under [`docs/spec/`](docs/spec/).
+Its operational instructions are reference material; the user's explicit restart
+and theory/simulation scope govern this reconstruction.
 
-## Core idea
+## Reproduce
 
-A strategy is monitored by its conditional marginal contribution to portfolio utility, not its standalone mean return. Capital can move reversibly between **ACTIVE** and **PARKED** states; parked strategies continue in shadow mode and may later be revived.
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-tested.txt
+.venv/bin/python -m pip install -e '.[test]'
+.venv/bin/python -m pytest -q
+.venv/bin/python -m park_revive.cli audit
+.venv/bin/python -m park_revive.cli simulate --config configs/smoke.json --stage smoke --seeds 101 102 103 --output outputs/park_revive_v1/smoke
+.venv/bin/python -m park_revive.cli report --output outputs/park_revive_v1/smoke
+```
 
-Two policies are kept distinct:
+An existing run requires `resume` in place of `simulate`. Checkpoints are local
+generated Python pickles: resume only checkpoints created by this pipeline.
+All score observations are consumed once; resuming at an annual checkpoint
+reproduces the uninterrupted numerical run. Incomplete block files are replaced
+when replaying that block. Completed seed directories are used by the report.
 
-- **SAFE:** lifetime-valid certification benchmark; intentionally conservative.
-- **FAST:** 31-component bounded-mean mixture e-CUSUM + e-d-BH, using finite-patience / error-over-patience control.
+```sh
+# Full dimensions, first pilot seed (500 stocks, 100 signals, 15 years).
+.venv/bin/python scripts/run_stage.py pilot --count 1
+# Resume or extend the 100-seed pilot.
+.venv/bin/python scripts/run_stage.py pilot
+# Separate controlled null/power diagnostics, not additional financial DGPs.
+.venv/bin/python -m park_revive.cli statistics --output outputs/park_revive_v1/pilot
+.venv/bin/python -m park_revive.cli report --output outputs/park_revive_v1/pilot
+# Compile the paper after completed pilot results exist; requires Tectonic.
+.venv/bin/python scripts/build_paper.py --results outputs/park_revive_v1/pilot
+# Planned final 500 fresh seeds, not a claim that these have been executed.
+.venv/bin/python scripts/run_stage.py main
+```
 
-The statistical primitives are attributed to the modern e-detector literature. The finance contribution is the portfolio-relative target, reversible lifecycle decision, economic indifference region, and the mapping from information-theoretic detection delay into unavoidable portfolio regret.
+Do not choose a new threshold, risk bound, seed or design based on which method
+wins. Any revised design needs a new named configuration, new output directory,
+an explicit change rationale and fresh evaluation seeds.
 
-## V4 theory
+## What is implemented
 
-The manuscript establishes or applies:
+- One characteristic-driven stock market, with 45 coefficient-bearing functions,
+  40 exact structural noise functions and 15 correlated proxies.
+- Strictly OOS annual expanding estimates, all additions/removals and Swap10.
+- Separate actual and shadow allocation states; actual transitions pay actual costs.
+- Catoni log evidence with past-only bets and a public analytic raw-second-moment bound.
+- All Signals, Greedy, Repeated-HAC-p, E-process and one-period Oracle benchmarks.
+- Evaluator-only Laplace score moments and state-matched full-universe oracle regret.
+- Daily ledgers, immutable score ledgers, comparison events, annual decisions,
+  censored economic detection events, runtime, paired seed comparisons and figures.
+- Atomic annual checkpointing, source/configuration hashes and disjoint seed pools.
 
-1. exact portfolio-value characterization under quadratic utility;
-2. e-CUSUM validity under a global-filtration conditional-mean null;
-3. multi-alpha EOP control via e-d-BH;
-4. a finite-sample bounded-mean delay bound;
-5. sharp first-order single-stream information limits from existing quickest-detection theory;
-6. first-order **economic delay-regret** optimality;
-7. repeated PARK/REVIVE true-change regret decomposition;
-8. a cost-weighted economic-error-over-patience extension.
+## What the results can establish
 
-All proofs are placed in the manuscript appendix. The complete V4 source and research outputs are kept in the current research deliverable; the repository will retain reproducible scripts rather than raw licensed JKP archives.
+The 5% error guarantee belongs to a **single comparison episode**. There is no
+multiple-testing correction across signals or restarts. Stationary betting-power
+results do not imply regime-detection guarantees. One structural move per year
+permits at most 14 changes in 14 OOS years. The public moment envelope can be
+very conservative; an inactive E-process portfolio is a valid possible outcome.
+The oracle optimizes current conditional utility and need not have the best
+realized wealth. Structural noise can be an economically useful hedge.
 
-## Simulation result
+Smoke runs are software checks. The 100-seed pilot and 500-seed main design are
+specified separately. **Read [`reports/execution_status.md`](reports/execution_status.md)
+for the actual completed seeds, test results and remaining work.** A manuscript
+draft and passing tests are not proof of publication readiness or superiority.
 
-The final suite uses 150 common-random-number replications × 900 observations for six economic scenarios under Gaussian, Student-t, GARCH, and AR noise.
+## Preserved empirical inputs
 
-FAST is materially faster than SAFE at a finite-patience operating point, preserves the negative-return hedge, and reacts to death/revival and covariance-only state changes. It does **not** uniformly dominate rolling or HMM heuristics, which do not provide the same sequential guarantee.
+`data/README.md`, `data/source_manifest_20261006.json` and the historical acquisition
+helper `experiments/fetch_jkp.py` are preserved byte-for-byte. Raw JKP archives
+are absent from this fresh clone. Nothing was downloaded, interpolated or used
+in an empirical application. The historical helper is retained for provenance;
+it is not part of the current simulation pipeline.
 
-A matched-strictness experiment is intentionally retained. When FAST is calibrated to approximately SAFE's very low false-switch frequency, the advantage becomes modest and is not uniform. The main operational gain therefore comes from using a finite-patience error criterion appropriate for capital allocation, not from a free statistical improvement.
-
-## Information experiment
-
-A least-favourable Bernoulli bounded-mean experiment uses 3,000 paths per design point. Observed delay divided by `log(A)/KL` moves toward one as patience grows, consistent with the first-order information frontier.
-
-## JKP validation
-
-The public validation uses 153 official U.S. daily value-weighted JKP factors, a 252-trading-day pre-2000 burn-in, daily evidence updates, and month-end allocation decisions through 2025.
-
-This is a retrospective factor-library validation, **not** a historical-publication-date point-in-time backtest. The factor-only results show only modest descriptive improvement for some pre-specified patience values; post-PARK event evidence is mixed and moderate-patience runs contain little revival evidence. No profitability claim is made.
-
-## Reproducibility
-
-The V4 build passes **27 unit tests**. Raw JKP data are not committed. Generated performance claims must be traceable to path-level results and manifests; no synthetic empirical fallback is allowed.
+The old tree is recoverable at `origin/archive/pre-rebuild-20261016` and from the
+adjacent `../E-value-pre-rebuild-20261016.zip`. SHA-256 inventory and exact cleanup
+list are in `reports/data_preservation_manifest.json` and
+`reports/legacy_cleanup_plan.md`. The rebuild uses branch
+`codex/park-revive-20261016`; no push, merge or history rewrite is implicit.

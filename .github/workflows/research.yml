@@ -1,60 +1,14 @@
-name: Reproduce alpha lifecycle research
-on:
-  push:
-    branches: [main]
-    paths:
-      - 'src/**'
-      - 'experiments/**'
-      - 'tests/**'
-      - 'paper/**'
-      - 'pyproject.toml'
-      - '.github/workflows/research.yml'
-  workflow_dispatch:
-permissions:
-  contents: read
+name: Theory and causal protocol checks
+on: [push, pull_request]
 jobs:
-  reproduce:
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
-    env:
-      OPENBLAS_NUM_THREADS: '1'
-      OMP_NUM_THREADS: '1'
-      MPLBACKEND: Agg
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-      - name: Install research dependencies
-        run: python -m pip install -e '.[test]'
-      - name: Run complete simulation and official JKP replay
-        run: python experiments/reproduce.py --download
-      - name: Install manuscript compiler and scalable T1 fonts
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended cm-super
-      - name: Compile manuscript
-        working-directory: paper
-        run: |
-          pdflatex -interaction=nonstopmode -halt-on-error main.tex
-          pdflatex -interaction=nonstopmode -halt-on-error main.tex
-      - name: Retain research package, never raw source data
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: alpha-lifecycle-research
-          path: |
-            results/
-            figures/
-            paper/main.tex
-            paper/main.pdf
-            paper/sections/
-            paper/tables/
-            src/
-            experiments/
-            tests/
-            configs/
-            docs/
-            README.md
-            pyproject.toml
-            data/README.md
-            data/source_manifest_20261006.json
-          retention-days: 30
+          python-version: '3.13'
+      - run: python -m pip install -r requirements-tested.txt
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest -q
+      - run: python -m park_revive.cli audit
