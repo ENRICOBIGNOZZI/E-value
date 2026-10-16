@@ -1,4 +1,40 @@
-# Current continuation — fresh comparison with optimized constant lambda
+# Current continuation — complete shared-pool version equality audit
+
+The first **20/100 v3 pilot markets have finished simulation**. Independent
+arithmetic replay of the second batch is in progress; the overall pilot is
+not complete and final evaluation remains **0/500**. The live parent process
+is confirmed, and its detailed checkpoint remains in
+`full_v3_results/pilot_live_checkpoint.json`. No worker or seed was restarted
+because an observation timed out.
+
+The cross-version audit now covers all nineteen markets complete in both v2
+and v3: **3,495 data-file pairs** match byte for byte over fourteen OOS blocks
+each. The failed seed 50020 adds a separately labeled three-block prefix and
+**39 identical file pairs**. Total: **269 sealed block pairs and 3,534 file
+pairs**, 477,416,821 equal artifact bytes per version. Every parsed configuration
+field agrees except its version label. This covers funds, costs, evidence,
+saved scores, decisions, shortlists, event labels and ghost continuations.
+Runtime, source/checkpoint metadata and v3-only recovery diagnostics are
+explicitly separate. Absent optional terminal files are distinguished from
+missing required data. See `full_v3_results/cross_version_interpretation.md`.
+
+Copied one-block controls confirm that the audit detects both a changed risk
+aversion and a changed score-archive byte; original data hashes remain intact.
+This is an equality/integrity check, not another arithmetic replay or proof
+that a shared computation is correct. It adds no independent markets or
+pytest count. The financial scientific source and configurations remain
+unchanged; the last full suite has **55 passing tests**.
+
+The equality evidence is documented in the manuscript, whose **36 pages**
+have been rendered and reviewed again. Its financial table deliberately
+retains the first-ten v2 snapshot. No new empirical analysis or acquisition
+was performed. The overall paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
+# Fresh comparison with optimized constant lambda
 
 The **36-page** manuscript now tests whether horizon adaptation improves over
 a constant lambda that itself optimizes deadline power. The new companion

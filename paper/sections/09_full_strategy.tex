@@ -38,6 +38,12 @@ after failed refinement and checks its original-unit KKT conditions. It
 completes the failed market; the entire pilot is being replayed with unchanged
 economic parameters. The fund table here retains the first-ten v2 snapshot
 and does not combine implementation versions as extra replications.
+In all nineteen complete markets shared by v2 and v3, the audited fund/score
+ledgers, event labels, decisions and metrics match byte for byte. The first
+three sealed blocks of the previously failed market match as well. Every
+configuration field agrees apart from its version label. This cross-version
+equality check is distinct from independent arithmetic replay and supplies
+no additional market replications.
 
 \subsection{Economic events that retain early responses}
 An economic opportunity starts at the end of the first annual block with

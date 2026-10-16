@@ -23,6 +23,11 @@ the full objective is complete.
 | Reviewable manuscript and figures | Compiled PDF, numeric table/figure sources, visual QA | Working draft, not a final publication claim |
 
 The QP convergence failure at seed 50020 is corrected and independently audited.
+The entire common completed v2/v3 pool now has a byte-equality audit: nineteen
+complete markets (3,495 file pairs) and the failed seed's three sealed blocks
+(39 pairs). All compared data agree; configuration fields differ only by
+version label. Copied parameter/data corruption controls are detected. This
+audit adds no independent replications or arithmetic-replay counts.
 The next work is to finish the same entire 100-market v3 pilot replay and then
 the separate final study. The first ten v2 markets remain a labeled pilot snapshot.
 The costless vanishing-gain theory, complete proof and scalar diagnostics are

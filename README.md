@@ -177,6 +177,8 @@ input byte still match.
 .venv/bin/python scripts/run_full_study.py main --workers 2 --batch-size 10 --compact-verified-checkpoints
 .venv/bin/python scripts/audit_horizon_examples.py
 .venv/bin/python scripts/audit_search_budget.py
+# Compare retained v2/v3 outputs, including the previously failed seed's sealed prefix.
+.venv/bin/python scripts/compare_full_versions.py
 ```
 
 The manuscript title now emphasizes trading costs, moment information and the

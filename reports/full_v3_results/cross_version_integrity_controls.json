@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "script_sha256": "6828e97fb4f7f74b1baf761dfddc5c2ff92cfe91db2c486665b06afc8c5f6803",
+  "baseline_shared_block_matches": true,
+  "changed_risk_aversion_detected": true,
+  "changed_score_archive_byte_detected": true,
+  "original_inputs_unchanged": true,
+  "input_sha256": {
+    "/Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v2/pilot/seed_50001/block_01/scores_Tail.npz": "f6155df5d075d1dbccadc499edd84da404936ef76f4023a821bd08bd560dfcfe",
+    "/Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v3/pilot/seed_50001/block_01/scores_Tail.npz": "f6155df5d075d1dbccadc499edd84da404936ef76f4023a821bd08bd560dfcfe",
+    "/Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v2/pilot/seed_50001/config_frozen.json": "1e67a398553db47fae4b2087cdc873d8ca7afb89c48606582555a797217eab11",
+    "/Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v3/pilot/seed_50001/config_frozen.json": "613efa8dcf2286a466395a55be314c1819ce55fc9fa34bb9e0895077d53ff715"
+  },
+  "scope": "Copied one-block integrity controls; no new market simulation, no change to original outputs and no additional arithmetic-replay count."
+}
