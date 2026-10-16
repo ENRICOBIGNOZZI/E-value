@@ -1,0 +1,17 @@
+{
+  "label": "cash-park-vanishing-gain-v1",
+  "seed": 430001,
+  "replications": 4096,
+  "observations": 65536,
+  "training": 32,
+  "gamma": 1.0,
+  "sigma": 1.0,
+  "leverage": 0.5,
+  "ridge": 0.0,
+  "public_second": 1.0,
+  "public_fourth": 6.0,
+  "review_block": 252,
+  "initial_gain": 0.0001,
+  "levels": [0.05, 0.01, 0.001],
+  "laws": ["gaussian_alternative", "gaussian_feedback_null"]
+}

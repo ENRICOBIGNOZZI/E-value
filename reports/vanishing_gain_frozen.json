@@ -1,0 +1,13 @@
+{
+  "files": {
+    "configs/vanishing_gain.json": "b112aa2393f1c2ea90353182d40937b5256f7d22e2d7d9ac3e09475000bf3e91",
+    "scripts/vanishing_gain_study.py": "091a6ad2c3f72254691214b4736fff690b5f463ed4187d1e900d8706ccaa63e8",
+    "reports/vanishing_gain_protocol.md": "fe0e4fccf67fbf0dbe4e266c41d9eb297ec1f4ff3c4eee77f36b2de56a86c380",
+    "reports/vanishing_gain_proof_audit.md": "63841710102ec35fbfc2a462c25b2ad36662816e891e5ef254d8c513d28304c3"
+  },
+  "scientific_seed": 430001,
+  "scientific_stream_executed": false,
+  "software_checks": 2,
+  "full_financial_source_unmodified": true,
+  "primary_financial_counts_added": 0
+}
