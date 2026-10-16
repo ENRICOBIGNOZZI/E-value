@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50018,
+    50019
+  ],
+  "scalar_checks": 167898532,
+  "ghost_pairs": 2566,
+  "failed_seed": 50020,
+  "failed_seed_excluded": false,
+  "superseded_by": "full-strategy-v3",
+  "note": "Retained diagnostics only; paper uses separately fixed first-ten v2 snapshot. No full pilot completion or additional independent markets claimed."
+}

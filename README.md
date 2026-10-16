@@ -191,3 +191,24 @@ currently retains its explicitly labeled first-ten **v2** snapshot. To reproduce
 that paper snapshot, use `scripts/build_paper.py --full-pilot-count 10`; its default
 input is deliberately still the retained v2 directory. New v3 results are kept
 separately until audited. See `reports/full_strategy_protocol.md`.
+
+## Separate vanishing-gain research diagnostic
+
+The costless scalar cash-PARK study is frozen separately at `57752eb`. It has
+4,096 paths per law and 65,536 observations, with no financial minimum-effect
+floor. It does not add financial market replications or alter the primary arms.
+The proof audit and completed results are in
+[`reports/vanishing_gain_proof_audit.md`](reports/vanishing_gain_proof_audit.md) and
+[`reports/vanishing_gain_results/interpretation.md`](reports/vanishing_gain_results/interpretation.md).
+Only three alternative paths cross the 5% threshold under linear betting;
+asymptotic information growth does not imply useful finite-horizon power.
+These research notes are not included in the main manuscript yet.
+
+```sh
+# Fresh checkout: generate the declared scalar streams once.
+.venv/bin/python scripts/vanishing_gain_study.py
+# Independently replay eight paths per law and build the diagnostic report.
+.venv/bin/python scripts/audit_vanishing_gain.py
+# Re-render the retained report without repeating simulation or arithmetic replay.
+.venv/bin/python scripts/audit_vanishing_gain.py --plot-only
+```

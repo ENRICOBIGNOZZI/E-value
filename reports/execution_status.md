@@ -1,3 +1,48 @@
+# Current continuation — v3 numerical recovery verified
+
+The failed market 50020 now completes under source freeze **482aa70**. The
+47-test financial suite passes, including the preserved failing QP, independent
+optimization, signal permutation and deliberately invalid certificates. Three
+software markets were regenerated and independently replayed. Full markets
+50001 and 50020 have **17,705,584 independent scalar arithmetic checks** and
+360 ghost pairs. Their earlier common blocks are bitwise identical to v2;
+all fourteen blocks of representative seed 50001 are unchanged. No economic
+parameter or threshold was retuned, and the failed seed is retained.
+
+The full **100-market v3 pilot is running** in declared batches of ten with
+independent replay and verified checkpoint-cache compaction. Final evaluation
+remains **0/500**. V2 completed nineteen markets before its preserved failure;
+all nineteen are now independently replayed (167,898,532 scalar checks and
+2,566 ghost pairs), retained as diagnostics rather than additional replications.
+The 25-page manuscript still reports its **fixed first-ten v2 snapshot**. Its
+PDF and source/input hashes are in `full_results/verification.json`.
+
+A separately frozen controlled study, commit **57752eb**, now has **4,096 paths
+under each of two laws**, 65,536 evaluated dates, and two disjoint software
+checks. Under the zero-mean Gaussian alternative, linear cash-PARK crosses the
+individual 5% threshold on only **3/4,096** paths; fixed geometric Catoni crosses
+on **1/4,096**. Both uniform-bound variants cross on zero paths. All four have
+zero crossings under the conditional Gaussian boundary null. Zero observed
+crossings do not prove zero probability. The mean final log capitals under the
+alternative are .9756, .7704, -5322.35 and -.00193 respectively. Long-run
+information growth is therefore compatible with extremely low finite-horizon
+crossing power. These are scalar diagnostics, **not additional financial
+markets**. Independent multiplicative replay checks an eight-path prefix per law
+(39,888 scalar checkpoint values; maximum absolute discrepancy 8.37e-11).
+Complete numeric summaries and a visually reviewed figure are retained in
+`vanishing_gain_results/`. The research proof note remains excluded from
+the manuscript while integration and broader novelty review are pending.
+
+A separate research note records the classical contamination obstruction to
+moment-free ENTRY validation and a conservative second-moment surrogate route.
+It introduces no new financial arm or post-pilot tuning. Empirical inputs
+continue to pass their original SHA-256 checks; empirical work remains disabled.
+The goal is active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Latest full-strategy status — 16 October 2026
 
 The manuscript now has **25 pages**. Its full-strategy table is a fixed snapshot

@@ -1,0 +1,28 @@
+{
+  "study_source_matches_frozen": true,
+  "source_commit": "57752eb",
+  "replay": {
+    "gaussian_alternative": {
+      "replayed_path_prefix": 8,
+      "scalar_checks": 19944,
+      "max_absolute_error": 8.36735125631094e-11,
+      "compounding": "direct multiplicative factors, reset at saved checkpoints; not the study log-increment code"
+    },
+    "gaussian_feedback_null": {
+      "replayed_path_prefix": 8,
+      "scalar_checks": 19944,
+      "max_absolute_error": 4.4565240386873484e-11,
+      "compounding": "direct multiplicative factors, reset at saved checkpoints; not the study log-increment code"
+    }
+  },
+  "input_sha256": {
+    "config_frozen.json": "89f646f6f26ff36bde0f7494fb0dcbf14e5ca996099f899d70ba4eaa4b483e8e",
+    "gaussian_alternative.npz": "93ae7028a9c779c350a20d94143a75e823b03f9928625cee6039d96e4f3c3c4c",
+    "gaussian_feedback_null.npz": "69a80e6029737a0a11885c3e364a0a93de1c0eb686208b1b509f08ee8778021e",
+    "status.json": "f84d3bcb5bbc8ad58860304512793641bdb3459954be9d88aada2408b8a009e5",
+    "summary.csv": "51d6c44db05232af6f526f19530dc798b99acc1a17583a88f2ee0b71887eee46"
+  },
+  "scope": "Fixed eight-path prefix independently replayed under each law; 4096 paths/law summarized. Not a replay of every path, an asymptotic proof or extra financial market replication.",
+  "replay_function_sha256": "f9ccbca70d30440a84e35038347be776721e2f39ff913188b628dc6eda21e2a1",
+  "figure_visual_qa": "Viewed final PNG at original size; labels and intervals readable, no clipping; consistent method colors."
+}

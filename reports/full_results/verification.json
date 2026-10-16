@@ -19,7 +19,7 @@
   "max_log_e_replay_error": 1.7763568394002505e-15,
   "pdf_pages": 25,
   "pdf_sha256": "2b7e1bb7e0da6dd3407a071a73d1fd7e666d54fe993956036e4fa5c5b1437957",
-  "pdf_visual_qa": "All 25 pages rendered and reviewed as contact sheets; pages 9,20,22,25 inspected individually at larger resolution. No clipping/overlap; bibliography fits; no overfull or undefined-reference log entries.",
+  "pdf_visual_qa": "Final 25-page file re-rendered in full; both contact sheets reviewed. Pages 9,20,22,25 also inspected individually at larger resolution. No clipping/overlap; bibliography fits; no overfull or undefined-reference log entries.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",

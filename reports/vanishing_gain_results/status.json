@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "config": {
+    "label": "cash-park-vanishing-gain-v1",
+    "seed": 430001,
+    "replications": 4096,
+    "observations": 65536,
+    "training": 32,
+    "gamma": 1.0,
+    "sigma": 1.0,
+    "leverage": 0.5,
+    "ridge": 0.0,
+    "public_second": 1.0,
+    "public_fourth": 6.0,
+    "review_block": 252,
+    "initial_gain": 0.0001,
+    "levels": [
+      0.05,
+      0.01,
+      0.001
+    ],
+    "laws": [
+      "gaussian_alternative",
+      "gaussian_feedback_null"
+    ]
+  },
+  "script_sha256": "091a6ad2c3f72254691214b4736fff690b5f463ed4187d1e900d8706ccaa63e8",
+  "seconds": 109.03256054106168,
+  "checks": {
+    "gaussian_alternative": {
+      "minimum_factor": 0.7500000007241913,
+      "max_null_mean_error": 0.0
+    },
+    "gaussian_feedback_null": {
+      "minimum_factor": 0.7500000249352421,
+      "max_null_mean_error": 4.163336342344337e-17
+    }
+  },
+  "scope": "Controlled scalar, single costless comparison without the financial minimum-effect floor; not extra financial markets or an expected stopping-time theorem."
+}

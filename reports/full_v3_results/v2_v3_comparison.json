@@ -1,0 +1,80 @@
+{
+  "scientific_source_commit": "482aa70",
+  "comparisons": [
+    {
+      "seed": 50001,
+      "blocks_compared": 14,
+      "all_fund_and_score_fields_bitwise_identical": true
+    },
+    {
+      "seed": 50020,
+      "blocks_compared": 3,
+      "all_fund_and_score_fields_bitwise_identical": true
+    }
+  ],
+  "failed_seed_completed": true,
+  "recoveries": [
+    {
+      "file": "outputs/park_revive_full_v3/pilot/seed_50020/block_04/solver_recoveries.json",
+      "optimizer": "learner",
+      "support": [
+        5,
+        32
+      ],
+      "objective_scale": 10000.0,
+      "iterations": 75,
+      "primal_residual": 3.4330982501273866e-11,
+      "dual_residual": 3.4636193652765046e-15,
+      "complementarity": 3.4330982502462962e-15,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 3.9473363218663146e-15
+    },
+    {
+      "file": "outputs/park_revive_full_v3/pilot/seed_50020/block_04/solver_recoveries.json",
+      "optimizer": "learner",
+      "support": [
+        5,
+        76
+      ],
+      "objective_scale": 10000.0,
+      "iterations": 100,
+      "primal_residual": 1.0784240167538428e-10,
+      "dual_residual": 7.683171590264215e-15,
+      "complementarity": 1.0784240166777594e-14,
+      "dual_sign_violation": 6.178974183365298e-23,
+      "duality_gap": 1.1248955966658888e-14
+    },
+    {
+      "file": "outputs/park_revive_full_v3/pilot/seed_50020/block_04/solver_recoveries.json",
+      "optimizer": "learner",
+      "support": [
+        5,
+        32
+      ],
+      "objective_scale": 10000.0,
+      "iterations": 75,
+      "primal_residual": 3.4330982501273866e-11,
+      "dual_residual": 3.4636193652765046e-15,
+      "complementarity": 3.4330982502462962e-15,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 3.9473363218663146e-15
+    },
+    {
+      "file": "outputs/park_revive_full_v3/pilot/seed_50020/block_04/solver_recoveries.json",
+      "optimizer": "learner",
+      "support": [
+        5,
+        76
+      ],
+      "objective_scale": 10000.0,
+      "iterations": 100,
+      "primal_residual": 1.0784240167538428e-10,
+      "dual_residual": 7.683171590264215e-15,
+      "complementarity": 1.0784240166777594e-14,
+      "dual_sign_violation": 6.178974183365298e-23,
+      "duality_gap": 1.1248955966658888e-14
+    }
+  ],
+  "economic_retuning": false,
+  "failed_seeds_excluded": 0
+}
