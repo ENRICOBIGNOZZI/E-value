@@ -1,4 +1,40 @@
-# Current continuation — sharp vanishing-gain example integrated
+# Current continuation — fresh comparison with optimized constant lambda
+
+The **36-page** manuscript now tests whether horizon adaptation improves over
+a constant lambda that itself optimizes deadline power. The new companion
+is frozen at **c73e713** before drawing seed **450001**, with 20,000 paths under
+each of the four original actual score laws. It retains the same working law,
+stake cap, nominal individual 5% bound and 100-date betting/review calendar.
+Both grids select constant bets .1272113, .0897962 and .0636057 at horizons
+400, 800 and 1600. These are numerical working-model optima, not globally
+optimal choices for an unknown law.
+
+Fresh design-law powers for primary horizon DP versus these constants are
+37.35% vs 33.10%, 72.71% vs 66.02%, and 96.76% vs 94.42%. Paired gains are
+4.26, 6.70 and 2.34 percentage points, with respective pointwise normal
+Monte Carlo intervals [3.96,4.55], [6.33,7.06] and [2.12,2.56]. Actual null
+fractions differ: at 400 dates, 1.29% versus 1.04%. This is not matched-size
+dominance or a financial result. Original and companion paths remain separate.
+
+All twelve predicted-versus-observed power checks pass. Independent replay
+reconstructs every DP/fixed stake and crossing, checking 20,497,504 scalar
+values; direct score-factor and past-mean replay cover sixteen paths/law.
+Maximum prefix log discrepancy is 8.89e-14. **55 tests pass**. All four small
+working models are retained for fresh-checkout reproduction without old score
+paths. Both new manuscript pages and the entire PDF were rendered and reviewed.
+See `lambda_constant_results/interpretation.md` for complete counts and scope.
+
+Financial scientific source/configurations are unchanged; the 100-market v3
+pilot remains active, with a read-only live checkpoint retained in
+`full_v3_results/pilot_live_checkpoint.json`. The paper still reports the fixed
+first-ten v2 financial snapshot. The final stage is **0/500**; the overall
+paper goal remains active and incomplete. Empirical work remains disabled.
+
+The following milestones are historical snapshots.
+
+---
+
+# Sharp vanishing-gain example integrated
 
 The manuscript has **35 pages**. The audited costless cash-PARK example now
 appears with its complete proof, conditional-benefit coefficient and executed

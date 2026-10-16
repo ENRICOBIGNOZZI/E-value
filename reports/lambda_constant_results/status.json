@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "config": {
+    "label": "catoni-fixed-horizon-power-companion-v1",
+    "seed": 450001,
+    "replications": 20000,
+    "alpha": 0.05,
+    "block": 100,
+    "horizon_blocks": [
+      4,
+      8,
+      16
+    ],
+    "score_means": [
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "score_sd": 1.0,
+    "public_second": 1.09,
+    "design_mean": 0.1,
+    "initial_gain": 0.1,
+    "cap_multiplier": 0.5,
+    "increment_range": 64.0,
+    "gaussian_tail_sd": 12.0,
+    "numerical_power_tolerance": 0.005,
+    "models": {
+      "primary": {
+        "step": 0.01,
+        "lower": -18.0,
+        "actions": 129
+      },
+      "refinement": {
+        "step": 0.005,
+        "lower": -24.0,
+        "actions": 257
+      }
+    },
+    "audit_path_prefix": 16
+  },
+  "source_files": {
+    "scripts/lambda_constant_study.py": "daeb0f2344ab59716eb87135a8d14bb8d694edec0902926c1b6e96f001555153",
+    "scripts/lambda_power_study.py": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
+    "configs/lambda_constant.json": "08dcab768c277eceeedfd836eb6241aab41de1103dbd70249dae350c37ce8c03",
+    "configs/lambda_power.json": "66fe5692ab906b2a91eef67008086f8da70053b80e9134e1457d8dad1191fdd2",
+    "reports/lambda_constant_protocol.md": "321a7d8c9a0aac30aeb3e8069abaabb1de6fba54f01e5a1d4ab3261e721d14d7"
+  },
+  "seconds": 65.43856170808431,
+  "scope": "Fresh separate companion stream; no pooling with the original study. Fixed bets maximize the declared discretized working-model horizon power, not power under every law. No financial implementation or performance claim."
+}

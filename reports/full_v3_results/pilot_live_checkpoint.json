@@ -1,0 +1,53 @@
+{
+  "captured_at": "2026-10-16T23:57:55.324931+02:00",
+  "confirmed_live_process": "64355 01:01:05   0:00.08 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "completed_pilot_seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50020
+  ],
+  "unfinished_seed_status_files": [
+    50018,
+    50019
+  ],
+  "recorded_independent_replay_complete_seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50020
+  ],
+  "completed_source_hashes": [
+    "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3"
+  ],
+  "stage_progress": {
+    "stage": "pilot",
+    "requested_count": 100,
+    "prefix_completed_and_replayed": 10,
+    "batch_size": 10
+  },
+  "completed_final_seeds": [],
+  "manuscript_snapshot": "First-ten v2 financial markets remain separately labeled. Newly generated v3 markets are not added as replications.",
+  "scope": "Live execution checkpoint, not full-pilot completion or a new arithmetic replay."
+}

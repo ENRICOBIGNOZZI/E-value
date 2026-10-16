@@ -1,0 +1,28 @@
+{
+  "study_source_matches_freeze": true,
+  "source_freeze_commit": "c73e713",
+  "scalar_checks": 20497504,
+  "max_prefix_log_capital_error": 8.881784197001252e-14,
+  "every_fixed_and_DP_stake_reconstructed": true,
+  "every_first_crossing_replayed": true,
+  "multiplicative_score_replay_paths_per_law": 16,
+  "all_model_calibrations_pass": true,
+  "inputs": {
+    "summary.csv": "0c4306c0a7c22782f30b9dba5da06312b2620c2249edc3ebbea5524b313b3bd2",
+    "constant_model_primary.npz": "70c76720e301d250b602836909937f6295e0247e3d52a0c83f0ed19a358c990c",
+    "dp_model_refinement.npz": "43c1db3ff739e6f81683308f54c79f9829170f9268671f7e2ede60171396dca9",
+    "dp_model_primary.npz": "db28becd173022bc40416ee648fcea6ea2506f3437084cea32a9a6c21320e6bb",
+    "mean_0.npz": "f5a49373064a76fd95dc5c78f06687a38e2ee56a08eb7124343999f988990dd9",
+    "constant_model_refinement.npz": "f1f203c6ec96a2690da2515a96c8964a3dcb7ba5383857168296ef73a58080f7",
+    "mean_0.2.npz": "d4ef0124e70aaef8e5d02e438a4ed5b42f98193f5eda1d5931d76eae2873c64b",
+    "mean_0.3.npz": "e72811683a9efab71f65944e24e4edde375efd94474a4d276b28fa9649e44729",
+    "mean_0.1.npz": "ed3e809aa2076fc54ac4a31d240dbcf2fb09329a7ca34cdfee6a031ceb414546",
+    "status.json": "0b744ae25b58c2084f7ff6fd161be20e709e2770b94732786279afaf3e402d73",
+    "model_manifest.json": "934809d6446c5bf32f409d7ffa73717b6d3a8532c409ba47bb35df7338c40975"
+  },
+  "audit_sources": {
+    "scripts/audit_lambda_constant.py": "901738b9b8183bf16f8cb514b337cb183c978eddbf024bcbe9450793edb65e60",
+    "scripts/audit_lambda_power.py": "1e9f7894f39db41b74a531d6658a72deafca7284c7f05bdd5cafcaf7696c529e"
+  },
+  "scope": "Fresh companion only. Every fixed/DP stake and crossing checked; score-factor and past-mean reconstruction cover sixteen paths/law. Nominal individual level is common; actual null rates differ. No pooling, continuous-control optimality or financial performance claim."
+}

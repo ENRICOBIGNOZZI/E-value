@@ -244,3 +244,21 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/lambda_power_s
 # Rebuild the manuscript while keeping the financial snapshot at ten v2 seeds.
 .venv/bin/python scripts/build_paper.py --full-pilot-count 10
 ```
+
+The subsequent, separately frozen companion compares deadline-adaptive bets
+with a constant lambda optimized for each same deadline. On its fresh design-law
+paths, 400-observation power is **37.35% versus 33.10%**. This isolates a gain
+beyond the earlier certificate/log-growth constants at a common nominal level;
+actual null rejection rates remain different. Original and companion results
+are kept separate. See
+[`reports/lambda_constant_results/interpretation.md`](reports/lambda_constant_results/interpretation.md).
+
+```sh
+# Fresh checkout: restore the small frozen models, then draw the companion once.
+mkdir -p outputs/lambda_constant_v1
+cp reports/lambda_constant_results/*_model_*.npz reports/lambda_constant_results/model_manifest.json outputs/lambda_constant_v1/
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/lambda_constant_study.py evaluate
+.venv/bin/python scripts/audit_lambda_constant.py
+# Rebuild only the manuscript table from retained, audited companion CSVs.
+.venv/bin/python scripts/build_lambda_constant_results.py
+```

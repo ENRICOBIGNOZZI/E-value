@@ -1,0 +1,27 @@
+\subsection{A fresh comparison with a deadline-optimized constant}
+
+The first experiment compares the Bellman rule with certificate and log-growth bets, which target different objectives. To separate deadline calibration from adaptation to evidence, a new companion experiment chooses the best constant stake on each existing action grid for each deadline. It maximizes working-model probability of crossing at a review, using a constant-action recursion rather than the Bellman maximum at each state. Stake selection and source hashes are frozen before drawing the fresh seed-450001 stream. This is an explicitly subsequent comparison, not an additional arm fitted to the first experiment or extra replications of its paths.
+
+Writing $W_0^\lambda=V_0$, the constant-action recursion is $W_k^\lambda(\ell)=1$ for $\ell\ge b_\alpha$, and $W_k^\lambda(\ell)=\int W_{k-1}^\lambda(\ell+z)Q_\lambda(dz)$ otherwise. The selected constant maximizes $W_H^\lambda(0)$ over the grid actions, rather than taking a new maximum at every state.
+
+Both grids select the same three constant bets. Their predicted maximum powers differ by at most 0.000465. The fixed-arm simulation holds its stake until crossing or its own deadline, including below the computational lower boundary; absorption there is only a numerical approximation in its value calculation. All twelve predicted-versus-observed DP/constant design-power checks pass the same declared numerical-plus-Monte-Carlo tolerance.
+
+\begin{table}[H]\centering\small
+
+\begin{tabular}{rrrrrl}\toprule
+
+Deadline & Constant $\lambda$ & Constant (\%) & Horizon DP (\%) & Gain (pp) & 95\% MC interval \\\midrule
+
+400 & 0.12721 & 33.10 & 37.35 & 4.26 & [3.96, 4.55] \\
+
+800 & 0.08980 & 66.02 & 72.71 & 6.70 & [6.33, 7.06] \\
+
+1600 & 0.06361 & 94.42 & 96.76 & 2.34 & [2.12, 2.56] \\
+
+\bottomrule\end{tabular}
+
+\caption{Fresh companion comparison at actual mean .1, with 20,000 paired paths, the unchanged nominal individual 5\% bound, and the common betting/review calendar. Constants maximize horizon power on the declared working-model action grid. Each deadline uses its own two policies. Gain intervals are pointwise paired normal-approximation Monte Carlo intervals, unadjusted across comparisons; this is not matched-actual-size inference.}\label{tab:constant-power}\end{table}
+
+At 400 observations the counts are 7470/20000 for horizon DP and 6619/20000 for the optimized constant. The corresponding null fractions are 1.29\% and 1.04\%. Thus the gain is beyond selecting one better constant at the common nominal level; actual null rejection probabilities remain different. Both numerical resolutions, the unchanged earlier comparators and actual means .2 and .3 are retained in the report. Original and companion powers are reported separately and are not pooled.
+
+The independent companion audit reconstructs every DP/fixed stake and every first crossing (20,497,504 scalar checks). Direct multiplicative score replay covers sixteen paths per law and has maximum log-capital discrepancy 8.88e-14; it is not a replay of every score path. This comparison supplies neither a continuous-action global optimum nor a financial performance claim.
