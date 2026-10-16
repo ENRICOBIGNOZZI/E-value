@@ -1,0 +1,93 @@
+{
+  "version": "full-strategy-v1",
+  "superseded_for_primary_inference": true,
+  "first_failure_seed": 50005,
+  "failure_day": 3549,
+  "comparison_id": "Tail:000176:3024",
+  "computed_score": -1.6940658945086007e-21,
+  "extra_allocation": 1.6444509700466818e-18,
+  "stock_difference_max": 1.1986840249722564e-20,
+  "computed_fourth_cap": 0.0,
+  "cause": "Separate projections erased a tiny nonzero contrast; utility subtraction retained a rounding residual.",
+  "correction": "Form weight differences and sums before stock projection and before evaluating paired utility.",
+  "economic_design_retuned": false,
+  "failed_seed_retained": true,
+  "pilot_replay_pool": [
+    50001,
+    50100
+  ],
+  "statuses": [
+    {
+      "seed": 50001,
+      "completed_blocks": 14,
+      "total_blocks": 14,
+      "complete": true,
+      "source_hash": "dbb7e8549b7aa8c037d1d5a7ad9879604aa04f0ecb434c84f85da7573b90bd83",
+      "elapsed_seconds": 201.15788275154773,
+      "stable_opportunities": 296,
+      "unstable_runs": 35
+    },
+    {
+      "seed": 50002,
+      "completed_blocks": 14,
+      "total_blocks": 14,
+      "complete": true,
+      "source_hash": "dbb7e8549b7aa8c037d1d5a7ad9879604aa04f0ecb434c84f85da7573b90bd83",
+      "elapsed_seconds": 530.1239474989707,
+      "stable_opportunities": 294,
+      "unstable_runs": 5
+    },
+    {
+      "seed": 50003,
+      "completed_blocks": 14,
+      "total_blocks": 14,
+      "complete": true,
+      "source_hash": "dbb7e8549b7aa8c037d1d5a7ad9879604aa04f0ecb434c84f85da7573b90bd83",
+      "elapsed_seconds": 437.19946704187896,
+      "stable_opportunities": 174,
+      "unstable_runs": 2
+    },
+    {
+      "seed": 50004,
+      "completed_blocks": 14,
+      "total_blocks": 14,
+      "complete": true,
+      "source_hash": "dbb7e8549b7aa8c037d1d5a7ad9879604aa04f0ecb434c84f85da7573b90bd83",
+      "elapsed_seconds": 542.0335536660859,
+      "stable_opportunities": 261,
+      "unstable_runs": 15
+    },
+    {
+      "seed": 50005,
+      "completed_blocks": 13,
+      "total_blocks": 14,
+      "complete": false,
+      "source_hash": "dbb7e8549b7aa8c037d1d5a7ad9879604aa04f0ecb434c84f85da7573b90bd83",
+      "elapsed_seconds": 549.6112552080303
+    },
+    {
+      "seed": 50006,
+      "completed_blocks": 11,
+      "total_blocks": 14,
+      "complete": false,
+      "source_hash": "dbb7e8549b7aa8c037d1d5a7ad9879604aa04f0ecb434c84f85da7573b90bd83",
+      "elapsed_seconds": 580.0597574159037
+    },
+    {
+      "seed": 50007,
+      "completed_blocks": 13,
+      "total_blocks": 14,
+      "complete": false,
+      "source_hash": "dbb7e8549b7aa8c037d1d5a7ad9879604aa04f0ecb434c84f85da7573b90bd83",
+      "elapsed_seconds": 582.2217017080402
+    },
+    {
+      "seed": 50008,
+      "completed_blocks": 6,
+      "total_blocks": 14,
+      "complete": false,
+      "source_hash": "dbb7e8549b7aa8c037d1d5a7ad9879604aa04f0ecb434c84f85da7573b90bd83",
+      "elapsed_seconds": 162.02843437402043
+    }
+  ]
+}

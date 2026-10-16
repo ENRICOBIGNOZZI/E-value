@@ -1,4 +1,24 @@
-# Full-strategy study v1 — locally frozen before new pilot markets
+# Full-strategy study v2 — arithmetic correction, unchanged economic design
+
+The initial implementation was frozen in commit `a975ef8` before its pilot
+markets. Version 1 is superseded for primary inference. Four markets completed;
+seed 50005 failed during its final block when a tiny real policy difference was
+erased by subtracting separately projected stock exposures. Its computed fourth
+moment cap was zero although the utility subtraction returned a residual.
+The remaining batch was stopped. All outputs and the failed seed are retained
+under `outputs/park_revive_full_v1`; snapshots are in `reports/full_v1_diagnostics`.
+
+Version 2 forms allocation differences and sums **before** projecting to stock
+exposures and computes paired utility as
+`d_return * (1 - gamma * sum_return / 2) - cost_difference`.
+This is the same economic score in exact arithmetic. No economic parameter,
+threshold, risk restriction, tail grid, seed or selection priority is retuned.
+A regression test reproduces the failure with a 1.64445e-18 extra allocation,
+checks that its corrected moment cap is positive, and retains its tiny score.
+The entire declared pilot pool is replayed under v2; a replayed seed is counted
+once, and no failed market is excluded. The final pool remains unobserved.
+Loaded-module fingerprints now reject source changes during a run or between
+worker import and the next seed, preventing cached code from being mislabeled.
 
 This study preserves the old baseline and first-entry evidence. The new code
 lives under `research/park_revive_full` so adding it does not alter either
@@ -22,7 +42,9 @@ the next shock is drawn. No hidden data enter investible policies.
 An insufficient QP iteration budget triggers refinement at the same tolerances
 with a longer budget and polishing; it does not change the objective or gate.
 
-Fresh pools: software tests 51001–51003, pilot **50001–50100**, final **60001–60500**.
+Originally declared pools: software tests 51001–51003, pilot **50001–50100**,
+final **60001–60500**. The v2 pilot reuses its whole v1 pool solely for this
+numerical correction; these are not additional independent markets.
 The representative pilot market is fixed at 50001. Start with one measured
 full-size seed, then a small batch before committing to the complete pilot.
 Any final 500-seed claim requires actual execution and remains outstanding.
@@ -41,6 +63,10 @@ feeds this continuation to the learner. Separate optimizer instances prevent
 evaluator queries from changing learner warm starts. One additional evaluator-
 only market year resolves onsets in the last main year; main fund returns and
 decisions end at the original 15-year horizon.
+Ghost allocations, utilities and true-mean labels are evaluator-only outputs.
+Ordinary shared market returns within the main horizon still enter the common
+estimation history. The extra terminal year enters neither that history nor
+actual fund returns.
 
 Criterion detection is distinguished from being selected: a candidate can meet
 its method's criterion and lose the annual ranking. Selecting another move,

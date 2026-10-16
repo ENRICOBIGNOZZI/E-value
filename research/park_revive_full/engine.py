@@ -16,12 +16,13 @@ from park_revive.metrics import path_metrics
 from park_revive.optimizer import fit_moments
 from park_revive.policies import Policy
 from park_revive.pvalues import hac_pvalue
-from park_revive_extensions.certificates import PublicRisk,paired_score_caps
+from park_revive_extensions.certificates import PublicRisk
 from park_revive_extensions.tail_betting import TailMixture
 from .events import EventTracker
 from .market import CausalMarket
 from .moments import pair_moments
 from .optimization import StudyOptimizer
+from .paired import paired_caps,paired_scores
 from .selection import Selector
 
 METHODS=('All Signals','Greedy','HAC','Catoni','Tail','Oracle')
@@ -33,6 +34,9 @@ def source_fingerprint():
     files={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
     digest=hashlib.sha256(json.dumps(files,sort_keys=True).encode()).hexdigest()
     return digest,files
+
+
+IMPORTED_SOURCE_HASH=source_fingerprint()[0]
 
 
 @dataclass
@@ -92,6 +96,8 @@ def record_ghosts(archive,ghosts,means,cfg):
 def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_factory=CausalMarket):
     directory=Path(directory);directory.mkdir(parents=True,exist_ok=True)
     ckpt=directory/'checkpoint.pkl';fingerprint,files=source_fingerprint()
+    if fingerprint!=IMPORTED_SOURCE_HASH:
+        raise RuntimeError('Scientific source changed after module import; restart the worker')
     if resume and ckpt.exists():
         # Only locally generated checkpoints are accepted by this CLI.
         with ckpt.open('rb') as f:state=pickle.load(f)
@@ -109,7 +115,8 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
         atomic_json(directory/'source_manifest.json',files)
         atomic_json(directory/'config_frozen.json',cfg.to_dict())
         atomic_json(directory/'feature_library.json',serialize_library(market.library))
-        atomic_json(directory/'protocol.json',dict(methods=METHODS,numerical_margin=1e-8,
+        atomic_json(directory/'protocol.json',dict(version='full-strategy-v2',paired_arithmetic='difference-first',
+            methods=METHODS,numerical_margin=1e-8,
             rank_tolerance=1e-9,catoni=public_envelope(cfg),public_risk=PublicRisk.from_market_contract(cfg).__dict__,
             evaluator_extra_blocks=1,score_format='compressed per-block arrays; order in comparison_order.json'))
         checkpoint(ckpt,state)
@@ -168,8 +175,7 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
             # Tail choices depend only on public geometry, weights and known turnover costs.
             comps,wb,costs=prepared['Tail'];ref=selectors['Tail'].reference
             reference_cost=sum(cost_components(ref.weights,ref.previous,cfg));dc=costs-reference_cost
-            v2,v4=paired_score_caps(design.sleeves@wb.T,design.sleeves@ref.weights[:,None],
-                                   design.values,dc,cfg.gamma,risk)
+            v2,v4=paired_caps(wb,ref.weights,design,dc,cfg.gamma,risk)
             tail=TailMixture(len(comps));tail.log_capitals=np.column_stack([c.components for c in comps])
             tail_prepared=tail.prepare(v2,v4)
             # Exact moments below are audit outputs only; no evidence preparation reads them.
@@ -214,8 +220,8 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
             for n,s in selectors.items():
                 comps,wb,costs=prepared[n];ref=s.reference
                 rc=sum(cost_components(ref.weights,ref.previous,cfg))
-                rw=ref.weights.copy();rr=ref.realize(obs.returns,cfg)
-                returns=wb@obs.returns;y=utility(returns,costs,cfg.gamma)-rr['utility']
+                rw=ref.weights.copy();ref.realize(obs.returns,cfg)
+                y=paired_scores(wb,rw,costs-rc,obs.returns,cfg.gamma)
                 means=conditional_values(wb,costs,truth,cfg)-(rw@truth.mean-cfg.gamma*(rw@truth.second@rw)/2-rc)
                 if n=='Tail':
                     np.testing.assert_allclose(means,true_mean,rtol=1e-7,atol=1e-14)
@@ -266,6 +272,8 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
             elif terminal:
                 for c in s.comparisons.values():close_comparison(state,c,s.reference,end,'administrative_end')
         blockdir=directory/f'block_{year:02d}';blockdir.mkdir(exist_ok=True)
+        if source_fingerprint()[0]!=fingerprint:
+            raise RuntimeError('Scientific source changed during execution; annual checkpoint not advanced')
         pd.DataFrame(ledger).to_parquet(blockdir/'daily_ledger.parquet',index=False)
         pd.DataFrame(events).to_parquet(blockdir/'comparison_events.parquet',index=False)
         pd.DataFrame(decisions).to_json(blockdir/'decisions.json',orient='records',indent=2)

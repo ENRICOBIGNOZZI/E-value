@@ -134,11 +134,11 @@ The protocol and fresh seed pools are in
 The software checks do not count as financial pilot markets.
 
 ```sh
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_smoke.json --output outputs/park_revive_full_v1/software_audited --seeds 51001 51002 51003
-.venv/bin/python scripts/verify_full_strategy.py --output outputs/park_revive_full_v1/software_audited
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_smoke.json --output outputs/park_revive_full_v2/software_audited --seeds 51001 51002 51003
+.venv/bin/python scripts/verify_full_strategy.py --output outputs/park_revive_full_v2/software_audited
 # First full-size pilot block; resume the same seed to complete its horizon.
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v1/pilot --seeds 50001 --stop-after-blocks 1
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v1/pilot --seeds 50001 --resume
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v2/pilot --seeds 50001 --stop-after-blocks 1
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v2/pilot --seeds 50001 --resume
 ```
 
 The arithmetic verifier independently reconstructs fund and paired utility,
@@ -147,3 +147,19 @@ tail betting capitals from saved weights and replayed market returns. It also
 checks the evaluator-only continuations. It loads no checkpoint or test-process
 state. This verifies numerical consistency, not global testing control or
 economic superiority.
+
+The initial full-strategy v1 is retained as diagnostics after a cancellation
+failure in seed 50005. Version 2 forms policy differences before projection
+and utility evaluation, with no economic retuning; it replays the complete
+original pilot pool and retains the failed market. See the protocol for the
+correction and counting rule. Completed checkpoints are losslessly compressed
+and verified by SHA-256; unfinished annual checkpoints remain resumable.
+
+```sh
+# Run a declared contiguous pilot pool using independent worker processes.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v2/pilot --start-seed 50001 --count 100 --workers 2 --resume
+.venv/bin/python scripts/verify_full_strategy.py --output outputs/park_revive_full_v2/pilot
+.venv/bin/python scripts/build_full_results.py --paper
+# Final pool: specified, not a statement of completed execution.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_main.json --output outputs/park_revive_full_v2/main --start-seed 60001 --count 500 --workers 2 --resume
+```

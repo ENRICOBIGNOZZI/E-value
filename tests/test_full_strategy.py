@@ -105,6 +105,69 @@ def test_ranking_loss_and_sign_reversal_are_distinct_competing_events():
     assert tracker.unstable_runs==1 and len(tracker.rows)==1
 
 
+def test_shortlists_and_near_tied_choices_preserve_signal_ids_after_permutation():
+    from park_revive_full.selection import Selector
+    cfg=replace(Config(),solver_tolerance=1e-10)
+    rng=np.random.default_rng(51001);ids=tuple(f's{j:03d}' for j in range(100))
+    mu=rng.normal(size=100)*.0005;h=rng.normal(size=(100,8))*.003
+    second=h@h.T+np.eye(100)*.00001;previous=np.zeros(100);previous[[3,7]]=[.2,-.3]
+    permutation=rng.permutation(100)
+    original=Selector('Greedy',cfg,ids);original.actual.support=(3,7);original.actual.previous=previous.copy()
+    other=Selector('Greedy',cfg,tuple(ids[j] for j in permutation))
+    other.actual.support=tuple(np.flatnonzero(np.isin(permutation,[3,7])))
+    other.actual.previous=previous[permutation]
+    a=original.refresh(0,StudyOptimizer(cfg,mu,second))[0]
+    b=other.refresh(0,StudyOptimizer(cfg,mu[permutation],second[np.ix_(permutation,permutation)]))[0]
+    assert [ids[j] for j in a]==[other.ids[j] for j in b]
+    for selector in (original,other):
+        for c in selector.comparisons.values():
+            index=int(selector.ids[c.added][1:]) if c.added>=0 else 0
+            value=1e-6+index*1e-12
+            c.scores=[value,value];c.total=2*value
+    ac=original.choose();bc=other.choose()
+    assert ids[ac.added]==other.ids[bc.added]=='s000'
+
+
+def test_general_pair_public_certificates_cover_true_laplace_moments():
+    from park_revive_extensions.certificates import PublicRisk,paired_score_caps
+    from park_revive.costs import cost_components
+    cfg=replace(Config(),n_assets=12,block=3,years=3)
+    rng=np.random.default_rng(51002);market=CausalMarket(cfg,51002);risk=PublicRisk.from_market_contract(cfg)
+    for _ in range(3):
+        design,truth=market.prepare()
+        portfolios=rng.normal(size=(4,4,100));portfolios/=np.sum(np.abs(portfolios),axis=2,keepdims=True)
+        wb,ws,bb,bs=portfolios
+        dc=np.array([sum(cost_components(w,b,cfg))-sum(cost_components(v,c,cfg)) for w,b,v,c in zip(wb,bb,ws,bs)])
+        _,second,fourth=pair_moments(wb,ws,dc,truth,cfg.gamma)
+        bound2,bound4=paired_score_caps(design.sleeves@wb.T,design.sleeves@ws.T,design.values,dc,cfg.gamma,risk)
+        assert np.all(second<=bound2*(1+1e-12))
+        assert np.all(fourth<=bound4*(1+1e-12))
+        market.step()
+
+
+def test_tiny_contrast_survives_common_exposure_and_utility_cancellation():
+    from types import SimpleNamespace
+    from park_revive_extensions.certificates import PublicRisk,paired_score_caps
+    from park_revive_full.paired import paired_caps,paired_scores
+    cfg=Config();risk=PublicRisk.from_market_contract(cfg)
+    tiny=1.6444509700466818e-18
+    p=np.array([[.5,.5],[-.5,-.5],[0.,0.],[0.,0.]])
+    design=SimpleNamespace(sleeves=p,values=np.array([[.3,.2],[-.3,-.2],[0.,0.],[0.,0.]]))
+    wb=np.array([[1.,tiny]]);ws=np.array([1.,0.])
+    old2,old4=paired_score_caps(p@wb.T,p@ws[:,None],design.values,0.,cfg.gamma,risk)
+    new2,new4=paired_caps(wb,ws,design,0.,cfg.gamma,risk)
+    assert old2[0]==old4[0]==0.  # The actual failure mechanism, not an exact-zero policy.
+    assert new2[0]>0 and new4[0]>0
+    a=np.array([.001,.001])
+    expected=tiny*.001*(1-cfg.gamma*.001)
+    assert paired_scores(wb,ws,0.,a,cfg.gamma)[0]==pytest.approx(expected,rel=1e-15,abs=0.)
+    assert paired_scores(ws,ws,0.,a,cfg.gamma)[0]==0.
+    mu=np.array([.0002,.0002]);h=np.array([[.002],[.002]])
+    truth=Truth(0,mu,h,np.outer(mu,mu)+h@h.T,np.zeros(2),0,False)
+    _,second,fourth=pair_moments(wb,ws,0.,truth,cfg.gamma)
+    assert 0<second[0]<=new2[0] and 0<fourth[0]<=new4[0]
+
+
 def test_full_engine_resume_and_evaluator_isolation(tmp_path,monkeypatch):
     from park_revive_full.engine import run_seed
     cfg=replace(Config(),n_assets=8,block=3,years=3,solver_tolerance=1e-10)
