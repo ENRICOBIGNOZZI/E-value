@@ -1,0 +1,97 @@
+{
+  "version": "catoni-fixed-horizon-power-companion-v1",
+  "evaluation_executed_at_freeze": false,
+  "source_files": {
+    "scripts/lambda_constant_study.py": "daeb0f2344ab59716eb87135a8d14bb8d694edec0902926c1b6e96f001555153",
+    "scripts/lambda_power_study.py": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
+    "configs/lambda_constant.json": "08dcab768c277eceeedfd836eb6241aab41de1103dbd70249dae350c37ce8c03",
+    "configs/lambda_power.json": "66fe5692ab906b2a91eef67008086f8da70053b80e9134e1457d8dad1191fdd2",
+    "reports/lambda_constant_protocol.md": "321a7d8c9a0aac30aeb3e8069abaabb1de6fba54f01e5a1d4ab3261e721d14d7"
+  },
+  "model_files": {
+    "constant_model_primary.npz": "70c76720e301d250b602836909937f6295e0247e3d52a0c83f0ed19a358c990c",
+    "dp_model_refinement.npz": "43c1db3ff739e6f81683308f54c79f9829170f9268671f7e2ede60171396dca9",
+    "dp_model_primary.npz": "db28becd173022bc40416ee648fcea6ea2506f3437084cea32a9a6c21320e6bb",
+    "constant_model_refinement.npz": "f1f203c6ec96a2690da2515a96c8964a3dcb7ba5383857168296ef73a58080f7",
+    "model_manifest.json": "934809d6446c5bf32f409d7ffa73717b6d3a8532c409ba47bb35df7338c40975"
+  },
+  "software_checks_passed": 2,
+  "software_report_sha256": "ee961c7da189bf3542ce3c8dd3d9ca4a92cd7237bb5126456725ee0c44b159c1",
+  "config": {
+    "label": "catoni-fixed-horizon-power-companion-v1",
+    "seed": 450001,
+    "replications": 20000,
+    "alpha": 0.05,
+    "block": 100,
+    "horizon_blocks": [
+      4,
+      8,
+      16
+    ],
+    "score_means": [
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "score_sd": 1.0,
+    "public_second": 1.09,
+    "design_mean": 0.1,
+    "initial_gain": 0.1,
+    "cap_multiplier": 0.5,
+    "increment_range": 64.0,
+    "gaussian_tail_sd": 12.0,
+    "numerical_power_tolerance": 0.005,
+    "models": {
+      "primary": {
+        "step": 0.01,
+        "lower": -18.0,
+        "actions": 129
+      },
+      "refinement": {
+        "step": 0.005,
+        "lower": -24.0,
+        "actions": 257
+      }
+    },
+    "audit_path_prefix": 16
+  },
+  "model_selection": {
+    "primary": {
+      "best_bets": [
+        0.12721130350593415,
+        0.08979621423948293,
+        0.06360565175296708
+      ],
+      "initial_power": [
+        0.32769537546175415,
+        0.66344513906996,
+        0.9457977168982321
+      ],
+      "dp_initial_power": [
+        0.37272983454188224,
+        0.7299628100778027,
+        0.9693617832916998
+      ]
+    },
+    "refinement": {
+      "best_bets": [
+        0.12721130350593415,
+        0.08979621423948293,
+        0.06360565175296708
+      ],
+      "initial_power": [
+        0.3272308863464139,
+        0.6630395310764645,
+        0.9457794652145012
+      ],
+      "dp_initial_power": [
+        0.37233467952386273,
+        0.7298788029341311,
+        0.9695286163497531
+      ]
+    }
+  },
+  "maximum_refinement_power_difference": 0.0004644891153402497,
+  "scope": "Fresh seed 450001; original and companion evaluations remain separate. Working-model/grid constant-power comparison, not a global unknown-law optimum or financial result."
+}

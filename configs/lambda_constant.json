@@ -1,0 +1,8 @@
+{
+  "label": "catoni-fixed-horizon-power-companion-v1",
+  "seed": 450001,
+  "replications": 20000,
+  "audit_path_prefix": 16,
+  "base_config": "configs/lambda_power.json",
+  "base_models": "outputs/lambda_power_v2"
+}
