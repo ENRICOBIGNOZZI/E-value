@@ -1,0 +1,44 @@
+\section{Higher-moment and directional consistency arguments}
+\label{app:directional}
+For Proposition~\ref{prop:above-two}, conditional versions of
+\eqref{eq:utility-moment-conversion} hold whenever the stated return-moment
+contract holds conditionally. Write $A_p$ for that public bound and
+$\kappa_p=(p-1)^{p-1}/p^p$. Choose $B_i=B_0 2^i$, $i\ge0$, $B_0>0$, and
+\[
+ b_i=\kappa_p A_p/B_i^{p-1},\qquad
+ X_{i,t}=\max\{U(r_t),-B_i\}-b_i,\qquad
+ \lambda_{ij}=\frac{2^{-j-1}}{B_i+b_i},\quad i,j\ge0.
+\]
+The sharp tail inequality \eqref{eq:sharp-tail} gives
+$\E_{t-1}X_{i,t}\le\E_{t-1}U(r_t)$. Each factor
+$1+\lambda_{ij}X_{i,t}\ge1-2^{-j-1}\ge1/2$ therefore has conditional
+expectation at most one under the original utility null. With weights
+$\omega_{ij}=2^{-i-j-2}$, the sum of the products is a valid e-process by
+conditional Tonelli. Its finite-time value is finite on every finite return
+path: $\lambda_{ij}\le1/(2B_0)$ and each factor is at most
+$1+|U(r_t)|/(2B_0)$, giving a common finite product upper bound.
+
+Under an iid law with $\delta=\E U(r)>0$, select a fixed $i$ with
+$b_i<\delta/2$. Then $\E X_i\ge\delta-b_i>0$. For a fixed integrable $X$
+bounded below by $-D$, dominated convergence gives
+\begin{equation}
+ \frac{\E\log(1+\lambda X)}{\lambda}\longrightarrow\E X
+ \quad\text{as }\lambda\downarrow0,\quad \lambda D\le1/2.
+ \label{eq:small-stake-growth}
+\end{equation}
+For $X\ge0$ the quotient is at most $X$; for $-D\le X<0$ its absolute value
+is at most $2|X|$. These bounds prove domination and log integrability.
+Some $j$ thus has positive expected log factor. The iid strong law makes
+that component grow to infinity almost surely. Its fixed positive mixture
+weight proves eventual crossing at every individual level, completing
+Proposition~\ref{prop:above-two}. No finite expectation of the hitting time
+is needed or inferred.
+
+For the cash-PARK mixture, $Y_t\ge-1/(2\gamma)$ makes every dyadic linear
+factor positive and of null conditional expectation at most one. The weights
+sum to one, so the same conditional-Tonelli argument proves validity without
+a supplied numerical return-moment bound. With iid integrable positive-mean
+$Y$, \eqref{eq:small-stake-growth} supplies a fixed component with positive
+log growth and proves eventual power one. This assertion does not apply
+the iid strong law to the dependent estimated-policy scores of
+Theorem~\ref{thm:vanishing}; that theorem has its own proof below.

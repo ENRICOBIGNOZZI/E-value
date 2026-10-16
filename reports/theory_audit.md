@@ -20,6 +20,8 @@ is evidence for the new design.
 | T4 | Uniform error of estimated objective <=epsilon; same feasible set and known cost | Each regret in [0,2epsilon]; difference bounded by 2epsilon, not 4epsilon | controlled moment perturbations; separate shadow states and state bridge |
 | Cash-PARK confidence exponent | Costless scalar policy; iid Gaussian alternative including n0>=5 training; clipped past mean/raw-risk optimizer; broad datewise conditional null permitting dependence | Explicit admissible Gaussian feedback null; self-contained quadratic strong law; finite almost-sure and bounded expected log discrepancy; stopped change of measure for alpha-dependent test families | Full proof in manuscript appendix; 66 deterministic quadrature checks; separate frozen 4096-path/law finite-horizon diagnostic; no expected-time or financial-DGP claim |
 | Uniform plug-in failure in that instance | Same alternative, fixed uniform certificate, capped positive past mean bet held in fixed blocks | Integrated error grows as log n; square-summable bets and absolutely summable drift imply finite log-capital limit | Full manuscript proof; does not imply zero crossing probability at a fixed alpha |
+| ENTRY frontier with only a public second-return-moment cap | Fixed costless policy; all iid laws with E r²<=K2; uniform ever-rejection control for nonpositive expected quadratic utility | Admissible rare-return nulls have exactly second moment K2 and converge in TV to every law with mean<=gamma*K2/2; surrogate r-gamma*K2/2 and T2 attain eventual power one above it | Complete proof in main text; 302 deterministic checks cover finite identities, not the sequential proof; fixed Laplace DGP is a different, narrower class |
+| Known return moments strictly above two suffice | Known numerical (2+xi)th absolute moment, xi>0; iid positive-utility alternative | Convert to utility p=1+xi/2 moment; countable corrected-tail/small-stake mixture; dominated convergence and iid strong law | Complete appendix proof; existence construction differs from the finite nine-component financial rule; no expected-time bound |
 
 All four main arguments in the supplied source pass the algebraic audit within these
 assumptions. The strong-concavity refinement also follows from the variational
@@ -106,6 +108,9 @@ moments through order four, hence return moments through order eight.
 - A single-gate costless corollary translates waiting into cumulative utility
   opportunity cost. It does not bound the uncorrected 100-candidate search or
   substitute for stateful trading-cost accounting.
+  Its fixed-ENTRY return embedding now explicitly imposes delta<=1/(2 gamma).
+  The generic rare-negative-score null is not transferred to cash-PARK classes
+  whose economic lower bound would exclude it.
 
 The original T2b/c constant-mean, constant-bound results are not assigned to
 the variable-bound extension. The first-entry experiment has no actual fund

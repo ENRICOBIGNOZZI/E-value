@@ -18,35 +18,29 @@
 \newcommand{\supp}{\operatorname{supp}}\newcommand{\op}{\mathrm{op}}
 \title{Sequential Validation of Investment Policies:\\Trading Costs, Moment Information, and the Cost of Waiting}
 \author{Enrico Bignozzi}
-\date{Working draft --- 16 October 2026}
+\date{Working draft --- 17 October 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-An investment signal should be evaluated through the portfolio it changes,
-including estimation error and the cost of reaching that portfolio. We study
-sequential comparisons between implementable policies under quadratic utility,
-proportional turnover costs and quadratic market impact. A Catoni
-supermartingale validates a single adaptive comparison with a certified
-conditional second-moment bound. Under a constant positive conditional mean,
-past-only blockwise betting incurs logarithmic expected regret in a quadratic
-growth certificate and admits a finite-sample power bound. We distinguish this
-certificate-optimal bet from log-growth and horizon-power optimization, and
-execute a separate predictable Bellman betting experiment. Convex analysis
-characterizes the population value of adding a signal, while a uniform
-perturbation argument connects that value to estimated policies with separate
-trading states. A costless scalar example yields a sharp confidence exponent
-and a conditional waiting-benefit coefficient for a vanishing estimated-policy
-gain, alongside very low executed finite-horizon power.
-A single simulated market combines persistent, weak, decaying
-and reviving predictors with structural noise and correlated proxies. The
-protocol explicitly separates individual-test validity, economic decision
-quality and portfolio performance. Its uniform risk certificate and annual
-decision bottleneck can make validation economically slow. We report executed
-diagnostics without presuming superiority, global error control or a theorem
-of adaptation to changing regimes. A declared extension combines observable
-policy geometry with bias-corrected tail betting under eighth return moments;
-fixed-reference and full-fund experiments distinguish feasible certification
-from its economic waiting costs.
+We study sequential validation of estimated investment policies under
+quadratic utility, turnover costs and market impact. The inferential object
+is an observable score between policies with separate trading states.
+Conditional moment certificates give individual anytime validity; they do not
+certify current profitability or search-wide safety. Under constant effects,
+estimating a quadratic-certificate bet costs logarithmic expected regret.
+We distinguish that objective from log growth and deadline power, and evaluate
+predictable deadline bets against optimized constants on fresh controlled paths.
+A fixed-policy ENTRY comparison has an exact testing frontier with only a
+public second-return-moment cap: nontrivial uniformly valid inference requires
+mean return above half risk aversion times that cap. Cash-PARK instead admits
+safe betting from its economic lower bound. A Gaussian estimated-policy
+example yields a sharp confidence exponent and a coefficient for conditional
+benefits forgone while waiting, despite very low finite-horizon power.
+Convex analysis links population entry value to estimation and trading-state
+effects. Simulations retain a conservative baseline, a separately frozen
+stronger-moment extension, and full-fund pilot paths. They distinguish feasible
+certification from economic performance and report the cost of waiting without
+presuming superiority. Empirical applications are outside the current scope.
 \end{abstract}
 \noindent\textbf{Keywords:} sequential inference; investment signals; e-processes;
 transaction costs; portfolio estimation; simulation.
@@ -82,6 +76,12 @@ We then distinguish optimizing a power certificate, expected log growth and
 actual working-model rejection probability by a fixed review horizon.
 The last criterion gives a predictable Bellman rule tested separately on fresh
 controlled score paths; it does not silently replace the financial methods.
+Two costless specializations isolate the information and waiting requirements.
+For fixed-policy ENTRY, a public second-return-moment cap yields an exact
+frontier for uniformly informative testing. Known moments strictly above two
+provide a sufficient consistency route. Cash-PARK has a one-sided economic
+bound; a Gaussian estimated-reference example then gives an attainable sharp
+confidence exponent and a conditional-benefit coefficient for its waiting cost.
 
 The statistical ingredients build on Catoni-style confidence sequences
 \cite{wr} and the broader theory of safe anytime-valid inference \cite{savi}.
@@ -694,6 +694,7 @@ This draft contains no executed-result claim. Numeric output must first be
 generated and linked to this section by the reproducible paper-building script.}
 
 \input{sections/07_certified_tails.tex}
+\input{sections/13_directional_information.tex}
 \input{sections/11_vanishing_gains.tex}
 \input{sections/08_global_safety.tex}
 \input{sections/09_full_strategy.tex}
@@ -730,6 +731,11 @@ leave only logarithmically growing information. Its sharp confidence exponent
 does not ensure useful finite-horizon power, as its controlled experiment
 demonstrates. Its conditional-benefit coefficient is not an expected stopped
 cost or a theorem for the stateful financial fund.
+The ENTRY frontier also distinguishes return-moment from utility-score
+information. A second-return-moment cap can permit null laws arbitrarily
+close to profitable alternatives; legitimate higher-moment or distributional
+restrictions can exclude them. These explicit law-class statements do not
+declare particular gains untestable in the fixed Laplace financial DGP.
 
 \appendix
 \begingroup\small
@@ -759,6 +765,7 @@ The implementation verifies these expressions against an independent
 conditional Monte Carlo sample. Identical policies and states give exactly
 $Y=0$, a separate cancellation check.
 
+\input{sections/14_directional_proofs.tex}
 \input{sections/12_vanishing_proofs.tex}
 
 \section{Reproducibility and numerical conventions}
@@ -851,6 +858,12 @@ Author version: \url{https://arxiv.org/abs/2404.18678}.
 \bibitem{ssre} Frazier, D. T., and D. S. Poskitt (2025).
 Sequential Scoring Rule Evaluation for Forecast Method Selection.
 Author version: \url{https://arxiv.org/abs/2505.09090}.
+\bibitem{impossible} Bertanha, M., and M. J. Moreira (2020).
+Impossible Inference in Econometrics: Theory and Applications.
+Author version: \url{https://arxiv.org/abs/1612.02024}.
+\bibitem{meanvariance} Fan, Y., Z. Jiao, and R. Wang (2024).
+Testing mean and variance by e-processes.
+Author version: \url{https://sas.uwaterloo.ca/~wang/papers/2024Fan-Jiao-Wang-Biom.pdf}.
 \end{thebibliography}
 \endgroup
 \end{document}

@@ -1,3 +1,45 @@
+# Current continuation — directional moment frontier, 17 October 2026
+
+The **40-page** manuscript now identifies an exact testing frontier for a
+costless fixed-policy iid ENTRY comparison with only a known second-return-
+moment cap K2. Uniform level-alpha tests have eventual power at most alpha
+when E r <= gamma K2/2, including profitable laws. Above this boundary one
+common valid test has eventual power one. The full proof uses explicit
+rare-loss nulls and a return-mean surrogate; the impossibility principle itself
+is classical. This is a moment-class result, not an impossibility claim for the
+fixed Laplace financial DGP or the complete adaptive trading strategy.
+
+A further complete construction shows that a known numerical moment cap of
+any order strictly above two suffices for eventual consistency at all iid
+positive-utility laws. A countable mixture is an existence construction, not
+the implemented finite financial method. Cash-PARK instead has an economic
+score lower bound: safe linear betting needs no supplied higher-return-moment
+cap, and a small-stake mixture is consistent for iid integrable positive gains.
+The single fixed cash-PARK stake need not be universally consistent. The
+separate dependent vanishing-gain theorem retains its stated scope.
+
+**302 deterministic quadrature/identity checks** pass for the frontier,
+contamination moments, moment conversion and quadratic return embedding.
+These finite checks do not prove asymptotic claims. The existing **66**
+vanishing-theory identity checks were rerun after moving the cash definitions;
+maximum identity error remains 3.39e-13. Scientific simulation sources and
+configurations are unchanged; the latest full repository suite remains
+**55 passing tests**. The analytic frontier figure uses no simulated data.
+
+All forty pages were rendered and reviewed on contact sheets; the changed
+frontier, figure, cash-PARK section and appendix were inspected individually.
+No clipping, overlap, overfull boxes or unresolved references were found.
+The first **20 financial v3 pilot markets are complete and independently
+replayed**; the following batch is running. Current live counts and process
+confirmation are retained in `full_v3_results/pilot_live_checkpoint.json`.
+Final evaluation remains **0/500**. The financial manuscript table deliberately
+retains the first-ten v2 snapshot. Empirical inputs remain untouched.
+The overall paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — complete shared-pool version equality audit
 
 The first **20/100 v3 pilot markets have finished simulation**. Independent

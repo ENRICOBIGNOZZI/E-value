@@ -1,6 +1,13 @@
 # Research note: ENTRY and cash-PARK need different information
 
-This note is **not included in the manuscript or frozen financial methods**.
+This historical derivation note is **not a frozen financial method**. The
+current stronger result and full proofs are integrated in
+`paper/sections/13_directional_information.tex` and
+`paper/sections/14_directional_proofs.tex`; see
+`directional_frontier_proof_audit.md`. In particular, a common second-return-
+moment cap alone still leaves an exact region of untestable positive utility.
+The conservative surrogate below attains the complementary region. The older
+moment-existence argument is retained as background.
 It records a useful structural implication of the chosen quadratic utility,
 not a claim of a new general impossibility theorem. The construction is in
 the classical Bahadur–Savage contamination tradition. The original article

@@ -233,7 +233,7 @@ legitimately exploiting stronger distributional information.
 
 \begin{corollary}[An opportunity cost of certification in a single gate]
 Consider the costless single-candidate subcase, with an incumbent of zero
-utility and deterministic candidate utility $\delta$ per period. A fund
+utility and deterministic candidate utility $0<\delta\le1/(2\gamma)$ per period. A fund
 remains with the incumbent until the first rejection time $\tau$, then
 deploys the candidate in the next period. Under the assumptions of the
 rare-loss proposition, its expected cumulative utility loss over $T$ periods
@@ -257,6 +257,13 @@ additional trading-state costs of the financial experiment. It isolates a
 mechanism: evidence waiting can have economic cost even before frictions are
 introduced. It does not assert that the observed twelve-year waits are
 necessary in the Laplace market.
+An explicit quadratic-utility representation takes
+$r_+=2\delta/(1+\sqrt{1-2\gamma\delta})$ and
+$r_-=-2a/(1+\sqrt{1+2\gamma a})$, with
+$a=\delta(1-\varepsilon)/\varepsilon$. Then $U(r_+)=\delta$ and $U(r_-)=-a$.
+This embeds the score null in a fixed ENTRY comparison. It need not preserve
+additional public return-moment restrictions and does not apply to cash-PARK
+classes whose economic lower bound excludes the arbitrarily large negative score.
 
 The proposed mechanism experiment fixes scales $c\in\{2,4,8\}$,
 $B_t=cV_{4,t}^{1/4}$, and fractions $\rho\in\{.25,.5,.75\}$ before

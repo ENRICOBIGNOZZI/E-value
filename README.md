@@ -264,3 +264,23 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/lambda_constan
 # Rebuild only the manuscript table from retained, audited companion CSVs.
 .venv/bin/python scripts/build_lambda_constant_results.py
 ```
+
+## Directional moment information
+
+The manuscript characterizes a fixed-policy ENTRY comparison over all iid
+return laws with public raw-second-moment cap K. Uniformly valid testing has
+nontrivial eventual power only when mean return exceeds gamma*K/2. A
+second-moment surrogate attains that region; known return moments strictly
+above two provide a sufficient route to eventual consistency for every positive
+utility law. Cash-PARK has a different economic lower bound. These explicit
+law-class results do not change the frozen financial methods or establish
+impossibility in the fixed Laplace market. The proof and finite numerical
+checks are in `reports/directional_frontier_proof_audit.md` and
+`reports/directional_frontier_checks.json`.
+
+```sh
+# Deterministic identities only: no new scientific paths or financial tuning.
+.venv/bin/python scripts/audit_directional_frontier.py
+# Analytic feasibility diagram; no Monte Carlo observations.
+.venv/bin/python scripts/plot_directional_frontier.py
+```

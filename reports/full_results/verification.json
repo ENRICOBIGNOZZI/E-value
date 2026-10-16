@@ -17,12 +17,13 @@
   "scalar_arithmetic_checks": 88285790,
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
-  "pdf_pages": 36,
-  "pdf_sha256": "e6acaf3e086b817dd8eabea3753beeae93300524b0b642db444b8e0ed558020f",
-  "pdf_visual_qa": "All 36 pages re-rendered and reviewed on three contact sheets; changed version-audit paragraph and following material on pages 28\u201329 inspected individually. No clipping/overlap, overfull boxes, multiply defined labels or unresolved references.",
+  "pdf_pages": 40,
+  "pdf_sha256": "19f9ee166f46ba2281af3af601970a92428802bf9dee93c9a94d795738a5fbe9",
+  "pdf_visual_qa": "All 40 pages rendered and reviewed on three contact sheets; pages 25, 26, 27 and 36 individually inspected for the frontier theorem, analytic figure, cash-PARK definitions and complete mixture proof. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
+    "paper/figures/directional_frontier.png": "2b015d0858ae9b37d4ea2f231db64eaa60e178fd4f29e5181bf05af3b328def7",
     "paper/figures/equity_quantiles.png": "f48e28ce8693bde8a976b1e75eaa948e536a9c4c2fb023d4b4e5f714f9525474",
     "paper/figures/first_entry_feasibility.png": "bb5b10592855396a64074f45b5c693057d9fe000343f79ff2595e507c255afb6",
     "paper/figures/full_strategy_evidence.png": "ebd4891d95d13526f517f34181932d0f4922977db76d798e4cb6d5ca62dbf0c9",
@@ -36,16 +37,18 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "b073cc0f7c17d32f117a7a4aa76e20fd48a2691539762012e5e7b25f5401c4e6",
-    "paper/main.tex": "fc5fab65dd1491037aacc077941cd60d61810a0d191eceed4215d65552ea0fd8",
+    "paper/main.tex": "8d9a9571ce30dc188d9989219a87b1bcef96450413812b55872ec9474a8a54d4",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
-    "paper/sections/07_certified_tails.tex": "497f2f7fdf5c9ad6c938663ec6efaf6802c9cc1edccc79cfeec670ef0011a400",
+    "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
     "paper/sections/09_full_strategy.tex": "f0bea802ea29e2dbea981226efffcc5d19864815972b1606e7a5fc15dace97c5",
     "paper/sections/10_lambda_power.tex": "109efa86863ff91f17e6190b55aa13539b495705c2e4ccfe7e9b22b27f8a537c",
-    "paper/sections/11_vanishing_gains.tex": "f81c066b0ab4b200ded2f16f177b0cf7b9b42f7f39a20c2db54f843a6e2bb60e",
-    "paper/sections/12_vanishing_proofs.tex": "3cd300f0f6fed7c381c27ab0be5c17013077d4852d5d057ea774fdf037e4dd32"
+    "paper/sections/11_vanishing_gains.tex": "ba648a494769c5c9eb3cfa51732abdfd4c1db3e6e344099d1c8ae2d30d5be38b",
+    "paper/sections/12_vanishing_proofs.tex": "3cd300f0f6fed7c381c27ab0be5c17013077d4852d5d057ea774fdf037e4dd32",
+    "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
+    "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062"
   },
-  "scope": "Financial results remain first-ten v2 pilot snapshot only. V3 same-pool pilot replay running; final 0/500. Separate original lambda experiment, fresh optimized-constant companion, and audited costless vanishing-gain theorem/diagnostic included. Historical derivations excluded.",
+  "scope": "Financial results remain first-ten v2 pilot snapshot only. First twenty v3 pilot markets independently replayed; continuation running, final 0/500. Separate original lambda experiment, fresh optimized-constant companion, costless vanishing-gain theorem/diagnostic, and directional moment-class theory included. Historical derivations excluded.",
   "current_repository_tests_passed": 55,
   "current_repository_test_report": "reports/full_test_results_with_lambda_constant.txt",
   "tests_passed_scope": "Historical 44-test financial v2 snapshot; current repository additionally includes numerical-recovery, vanishing-gain, horizon-lambda and optimized-constant companion checks.",
@@ -84,5 +87,14 @@
     "total_data_file_pairs": 3534,
     "all_scientific_data_equal": true,
     "scope": "Same-seed byte equality and configuration equality except version labels. Two copied integrity controls pass. No new market replications, arithmetic-replay counts or correctness guarantee."
+  },
+  "directional_moment_frontier": {
+    "audit": "reports/directional_frontier_checks.json",
+    "proof_audit": "reports/directional_frontier_proof_audit.md",
+    "main_proof": "paper/sections/13_directional_information.tex",
+    "appendix_proof": "paper/sections/14_directional_proofs.tex",
+    "deterministic_checks": 302,
+    "figure": "Analytic moment-class diagram; no simulated data.",
+    "scope": "Costless fixed-policy iid ENTRY with known raw-second-return cap; exact frontier. Known moments above order two suffice by a countable-mixture existence construction. Separate cash-PARK lower-bound consistency under iid integrable scores. Not the complete financial strategy, not a fixed-Laplace impossibility or expected-delay claim."
   }
 }

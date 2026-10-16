@@ -1,0 +1,2064 @@
+{
+  "complete": true,
+  "deterministic_checks": 302,
+  "checks": [
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=below eps=0.1",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=below eps=0.1",
+      "observed": -0.11366207071720615,
+      "expected": -0.11366207071720616,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=below eps=0.001",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=below eps=0.001",
+      "observed": -0.022502739377137072,
+      "expected": -0.022502739377137065,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=below eps=1e-06",
+      "observed": 0.09999999999999998,
+      "expected": 0.1,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=below eps=1e-06",
+      "observed": -0.012815931299211618,
+      "expected": -0.012815931299211622,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=below eps=1e-09",
+      "observed": 0.10000000000000002,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=below eps=1e-09",
+      "observed": -0.012509990242101981,
+      "expected": -0.012509990242101976,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=below eps=1e-12",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=below eps=1e-12",
+      "observed": -0.0125003159188114,
+      "expected": -0.012500315918811403,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=0.1 case=below",
+      "observed": 0.009960975646972696,
+      "expected": 0.009960975646972656,
+      "absolute_error": 3.9898639947466563e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=boundary eps=0.1",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=boundary eps=0.1",
+      "observed": -0.0902941484382644,
+      "expected": -0.09029414843826439,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=boundary eps=0.001",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=boundary eps=0.001",
+      "observed": -0.008659623254664926,
+      "expected": -0.008659623254664905,
+      "absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=boundary eps=1e-06",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=boundary eps=1e-06",
+      "observed": -0.0002730291674934021,
+      "expected": -0.00027302916749337436,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=boundary eps=1e-09",
+      "observed": 0.10000000000000002,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=boundary eps=1e-09",
+      "observed": -8.633173326413196e-06,
+      "expected": -8.63317332638891e-06,
+      "absolute_error": 2.42861286636753e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=boundary eps=1e-12",
+      "observed": 0.09999999999999998,
+      "expected": 0.1,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=boundary eps=1e-12",
+      "observed": -2.730041458662291e-07,
+      "expected": -2.730041458488819e-07,
+      "absolute_error": 1.734723475976807e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=0.1 case=boundary",
+      "observed": 0.005554907226568243,
+      "expected": 0.005554907226562499,
+      "absolute_error": 5.743669428959208e-15
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=above eps=0.1",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=above eps=0.1",
+      "observed": 0.05249241353865314,
+      "expected": 0.052492413538653186,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=above eps=0.001",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=above eps=0.001",
+      "observed": 0.1381484073024286,
+      "expected": 0.13814840730242867,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=above eps=1e-06",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=above eps=1e-06",
+      "observed": 0.14538313003609232,
+      "expected": 0.14538313003609235,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=above eps=1e-09",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=above eps=1e-09",
+      "observed": 0.14560659118660382,
+      "expected": 0.14560659118660388,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=0.1 case=above eps=1e-12",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=0.1 case=above eps=1e-12",
+      "observed": 0.14561365242599142,
+      "expected": 0.14561365242599147,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=0.1 case=above",
+      "observed": 0.0028268550660990764,
+      "expected": 0.0028268550660892114,
+      "absolute_error": 9.864938727011108e-15
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=below eps=0.1",
+      "observed": 1.0000000000000002,
+      "expected": 1.0,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=below eps=0.1",
+      "observed": -0.4509360979529959,
+      "expected": -0.4509360979529959,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=below eps=0.001",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=below eps=0.001",
+      "observed": -0.156437749500004,
+      "expected": -0.156437749500004,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=below eps=1e-06",
+      "observed": 0.9999999999999999,
+      "expected": 1.0,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=below eps=1e-06",
+      "observed": -0.12599031122972204,
+      "expected": -0.1259903112297221,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=below eps=1e-09",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=below eps=1e-09",
+      "observed": -0.125031312562625,
+      "expected": -0.125031312562625,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=below eps=1e-12",
+      "observed": 0.9999999999999999,
+      "expected": 1.0,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=below eps=1e-12",
+      "observed": -0.1250009901863448,
+      "expected": -0.12500099018634486,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=1.0 case=below",
+      "observed": 0.9613189697266015,
+      "expected": 0.9613189697265625,
+      "absolute_error": 3.8968828164342995e-14
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=boundary eps=0.1",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=boundary eps=0.1",
+      "observed": -0.29570509784634635,
+      "expected": -0.29570509784634647,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=boundary eps=0.001",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=boundary eps=0.001",
+      "observed": -0.02677210163241206,
+      "expected": -0.02677210163241217,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=boundary eps=1e-06",
+      "observed": 0.9999999999999999,
+      "expected": 1.0,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=boundary eps=1e-06",
+      "observed": -0.0008387756685843406,
+      "expected": -0.0008387756685844516,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=boundary eps=1e-09",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=boundary eps=1e-09",
+      "observed": -2.6516754299960033e-05,
+      "expected": -2.651675430009881e-05,
+      "absolute_error": 1.3877787807814457e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=boundary eps=1e-12",
+      "observed": 0.9999999999999999,
+      "expected": 1.0,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=boundary eps=1e-12",
+      "observed": -8.38525741425622e-07,
+      "expected": -8.385257415643999e-07,
+      "absolute_error": 1.3877787807814457e-16
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=1.0 case=boundary",
+      "observed": 0.49438476562567396,
+      "expected": 0.49438476562499983,
+      "absolute_error": 6.741274205523951e-13
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=above eps=0.1",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=above eps=0.1",
+      "observed": 0.08637434356093071,
+      "expected": 0.08637434356093071,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=above eps=0.001",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=above eps=0.001",
+      "observed": 0.35298401547964664,
+      "expected": 0.35298401547964664,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=above eps=1e-06",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=above eps=1e-06",
+      "observed": 0.37432333373427085,
+      "expected": 0.37432333373427085,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=above eps=1e-09",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=above eps=1e-09",
+      "observed": 0.37497862108576674,
+      "expected": 0.37497862108576674,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=1.0 case=above eps=1e-12",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=1.0 case=above eps=1e-12",
+      "observed": 0.37499932395851093,
+      "expected": 0.3749993239585109,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=1.0 case=above",
+      "observed": 0.2088775634776381,
+      "expected": 0.2088775634765625,
+      "absolute_error": 1.0756118218324673e-12
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=below eps=0.1",
+      "observed": 8.999999999999998,
+      "expected": 9.0,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=below eps=0.1",
+      "observed": -2.489723318823785,
+      "expected": -2.489723318823785,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=below eps=0.001",
+      "observed": 8.999999999999998,
+      "expected": 9.0,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=below eps=0.001",
+      "observed": -1.5918410430558347,
+      "expected": -1.591841043055835,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=below eps=1e-06",
+      "observed": 8.999999999999998,
+      "expected": 9.0,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=below eps=1e-06",
+      "observed": -1.5028811797775021,
+      "expected": -1.5028811797775028,
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=below eps=1e-09",
+      "observed": 8.999999999999998,
+      "expected": 9.0,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=below eps=1e-09",
+      "observed": -1.500091087933515,
+      "expected": -1.500091087933515,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=below eps=1e-12",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=below eps=1e-12",
+      "observed": -1.5000028804304057,
+      "expected": -1.5000028804304053,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=9.0 case=below",
+      "observed": 68.83813476563752,
+      "expected": 68.838134765625,
+      "absolute_error": 1.2519763004092965e-11
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=boundary eps=0.1",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=boundary eps=0.1",
+      "observed": -0.8214740145220067,
+      "expected": -0.8214740145220074,
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=boundary eps=0.001",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=boundary eps=0.001",
+      "observed": -0.05664827088244573,
+      "expected": -0.05664827088244628,
+      "absolute_error": 5.551115123125783e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=boundary eps=1e-06",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=boundary eps=1e-06",
+      "observed": -0.0017207176449887118,
+      "expected": -0.001720717644989378,
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=boundary eps=1e-09",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=boundary eps=1e-09",
+      "observed": -5.434491285338794e-05,
+      "expected": -5.434491285338794e-05,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=boundary eps=1e-12",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=boundary eps=1e-12",
+      "observed": -1.7184681350146391e-06,
+      "expected": -1.718468135347706e-06,
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=9.0 case=boundary",
+      "observed": 8.72094726571914,
+      "expected": 8.72094726562499,
+      "absolute_error": 9.415046520189208e-11
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=above eps=0.1",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=above eps=0.1",
+      "observed": -0.3695610049568411,
+      "expected": -0.3695610049568412,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=above eps=0.001",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=above eps=0.001",
+      "observed": 0.3325071029053454,
+      "expected": 0.3325071029053448,
+      "absolute_error": 6.106226635438361e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=above eps=1e-06",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=above eps=1e-06",
+      "observed": 0.3737395838138454,
+      "expected": 0.3737395838138453,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=above eps=1e-09",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=above eps=1e-09",
+      "observed": 0.3749602226184656,
+      "expected": 0.3749602226184652,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "second cap gamma=0.5 K=9.0 case=above eps=1e-12",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=0.5 K=9.0 case=above eps=1e-12",
+      "observed": 0.37499874220913804,
+      "expected": 0.3749987422091374,
+      "absolute_error": 6.106226635438361e-16
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=0.5 K=9.0 case=above",
+      "observed": 2.502822876070148,
+      "expected": 2.50282287597656,
+      "absolute_error": 9.35882482622219e-11
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=below eps=0.1",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=below eps=0.1",
+      "observed": -0.1271478173368589,
+      "expected": -0.12714781733685893,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=below eps=0.001",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=below eps=0.001",
+      "observed": -0.034985900122478895,
+      "expected": -0.034985900122478895,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=below eps=1e-06",
+      "observed": 0.10000000000000002,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=below eps=1e-06",
+      "observed": -0.025315015080448984,
+      "expected": -0.025315015080448974,
+      "absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=below eps=1e-09",
+      "observed": 0.10000000000000002,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=below eps=1e-09",
+      "observed": -0.025009960885906617,
+      "expected": -0.025009960885906606,
+      "absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=below eps=1e-12",
+      "observed": 0.09999999999999999,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=below eps=1e-12",
+      "observed": -0.025000314990104203,
+      "expected": -0.02500031499010421,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=1.0 K=0.1 case=below",
+      "observed": 0.009844360351562657,
+      "expected": 0.009844360351562501,
+      "absolute_error": 1.5612511283791264e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=boundary eps=0.1",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=boundary eps=0.1",
+      "observed": -0.09207037383634005,
+      "expected": -0.09207037383634001,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=boundary eps=0.001",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=boundary eps=0.001",
+      "observed": -0.00860288693950767,
+      "expected": -0.008602886939507622,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=boundary eps=1e-06",
+      "observed": 0.09999999999999999,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=boundary eps=1e-06",
+      "observed": -0.00027046639535172057,
+      "expected": -0.0002704663953516859,
+      "absolute_error": 3.469446951953614e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=boundary eps=1e-09",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=boundary eps=1e-09",
+      "observed": -8.551365689862811e-06,
+      "expected": -8.551365689814239e-06,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=boundary eps=1e-12",
+      "observed": 0.09999999999999999,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=boundary eps=1e-12",
+      "observed": -2.704163957062411e-07,
+      "expected": -2.7041639566460773e-07,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=1.0 K=0.1 case=boundary",
+      "observed": 0.005347265625006085,
+      "expected": 0.005347265624999999,
+      "absolute_error": 6.086277315464628e-15
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=above eps=0.1",
+      "observed": 0.10000000000000002,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=above eps=0.1",
+      "observed": 0.040730380218745366,
+      "expected": 0.04073038021874541,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=above eps=0.001",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=above eps=0.001",
+      "observed": 0.1258666253409312,
+      "expected": 0.12586662534093124,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=above eps=1e-06",
+      "observed": 0.09999999999999999,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=above eps=1e-06",
+      "observed": 0.1328904242139632,
+      "expected": 0.13289042421396324,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=above eps=1e-09",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=above eps=1e-09",
+      "observed": 0.1331068222318854,
+      "expected": 0.13310682223188547,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=0.1 case=above eps=1e-12",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=0.1 case=above eps=1e-12",
+      "observed": 0.13311365973266753,
+      "expected": 0.1331136597326676,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=1.0 K=0.1 case=above",
+      "observed": 0.002485219848830542,
+      "expected": 0.0024852198488202466,
+      "absolute_error": 1.029558382992235e-14
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=below eps=0.1",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=below eps=0.1",
+      "observed": -0.5799077729412616,
+      "expected": -0.5799077729412617,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=below eps=0.001",
+      "observed": 0.9999999999999999,
+      "expected": 1.0,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=below eps=0.001",
+      "observed": -0.2806136810186116,
+      "expected": -0.2806136810186117,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=below eps=1e-06",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=below eps=1e-06",
+      "observed": -0.25096039325916764,
+      "expected": -0.25096039325916764,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=below eps=1e-09",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=below eps=1e-09",
+      "observed": -0.25003036264450496,
+      "expected": -0.250030362644505,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=below eps=1e-12",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=below eps=1e-12",
+      "observed": -0.2500009601434685,
+      "expected": -0.2500009601434685,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=1.0 K=1.0 case=below",
+      "observed": 0.8498535156251544,
+      "expected": 0.849853515625,
+      "absolute_error": 1.5443202272535927e-13
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=boundary eps=0.1",
+      "observed": 0.9999999999999999,
+      "expected": 1.0,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=boundary eps=0.1",
+      "observed": -0.29622144504490244,
+      "expected": -0.29622144504490266,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=boundary eps=0.001",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=boundary eps=0.001",
+      "observed": -0.024226303968380825,
+      "expected": -0.02422630396838077,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=boundary eps=1e-06",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=boundary eps=1e-06",
+      "observed": -0.0007505002916666226,
+      "expected": -0.0007505002916666226,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=boundary eps=1e-09",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=boundary eps=1e-09",
+      "observed": -2.3717582460391906e-05,
+      "expected": -2.3717582460447417e-05,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=boundary eps=1e-12",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=boundary eps=1e-12",
+      "observed": -7.500004999827503e-07,
+      "expected": -7.500004999827503e-07,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=1.0 K=1.0 case=boundary",
+      "observed": 0.3164062500009415,
+      "expected": 0.3164062500000001,
+      "absolute_error": 9.414136137309015e-13
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=above eps=0.1",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=above eps=0.1",
+      "observed": -0.023824671507335582,
+      "expected": -0.02382467150733575,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=above eps=0.001",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=above eps=0.001",
+      "observed": 0.2311172430391848,
+      "expected": 0.23111724303918457,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=above eps=1e-06",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=above eps=1e-06",
+      "observed": 0.2494264274516704,
+      "expected": 0.2494264274516702,
+      "absolute_error": 1.942890293094024e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=above eps=1e-09",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=above eps=1e-09",
+      "observed": 0.24998188502904886,
+      "expected": 0.24998188502904872,
+      "absolute_error": 1.3877787807814457e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=1.0 case=above eps=1e-12",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=1.0 case=above eps=1e-12",
+      "observed": 0.2499994271772883,
+      "expected": 0.24999942717728818,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=1.0 K=1.0 case=above",
+      "observed": 0.1076660156261623,
+      "expected": 0.10766601562499993,
+      "absolute_error": 1.1623757512069233e-12
+    },
+    {
+      "identity": "second cap gamma=1.0 K=9.0 case=below eps=0.1",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=9.0 case=below eps=0.1",
+      "observed": -4.983742469849155,
+      "expected": -4.983742469849155,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=1.0 K=9.0 case=below eps=0.001",
+      "observed": 9.000000000000002,
+      "expected": 9.0,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "identity": "null utility gamma=1.0 K=9.0 case=below eps=0.001",
+      "observed": -4.093708435777027,
+      "expected": -4.093708435777026,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "identity": "second cap gamma=1.0 K=9.0 case=below eps=1e-06",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=9.0 case=below eps=1e-06",
+      "observed": -4.002947956583649,
+      "expected": -4.002947956583649,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=1.0 K=9.0 case=below eps=1e-09",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=9.0 case=below eps=1e-09",
+      "observed": -4.000093207259413,
+      "expected": -4.000093207259413,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=1.0 K=9.0 case=below eps=1e-12",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=1.0 K=9.0 case=below eps=1e-12",
+      "observed": -4.0000029474570304,
+      "expected": -4.0000029474570304,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=1.0 K=9.0 case=below",
+      "observed": 75.47265625000561,
+      "expected": 75.47265625,
+      "absolute_error": 5.6132876125047915e-12
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=below eps=0.1",
+      "observed": 0.09999999999999999,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=below eps=0.1",
+      "observed": -0.2752690565245959,
+      "expected": -0.27526905652459593,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=below eps=0.001",
+      "observed": 0.10000000000000002,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=below eps=0.001",
+      "observed": -0.18062395445385823,
+      "expected": -0.18062395445385818,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=below eps=1e-06",
+      "observed": 0.09999999999999999,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=below eps=1e-06",
+      "observed": -0.1712467615106347,
+      "expected": -0.17124676151063473,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=below eps=1e-09",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=below eps=1e-09",
+      "observed": -0.1709526600070327,
+      "expected": -0.1709526600070327,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=below eps=1e-12",
+      "observed": 0.10000000000000003,
+      "expected": 0.1,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=below eps=1e-12",
+      "observed": -0.17094336211981465,
+      "expected": -0.17094336211981462,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=5.0 K=0.1 case=below",
+      "observed": 0.008498535156251546,
+      "expected": 0.00849853515625,
+      "absolute_error": 1.5456386170953351e-15
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=boundary eps=0.1",
+      "observed": 0.10000000000000003,
+      "expected": 0.1,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=boundary eps=0.1",
+      "observed": -0.08442432162002357,
+      "expected": -0.08442432162002356,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=boundary eps=0.001",
+      "observed": 0.10000000000000005,
+      "expected": 0.1,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=boundary eps=0.001",
+      "observed": -0.0055600729750164835,
+      "expected": -0.005560072975016456,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=boundary eps=1e-06",
+      "observed": 0.10000000000000005,
+      "expected": 0.1,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=boundary eps=1e-06",
+      "observed": -0.00016795531260223318,
+      "expected": -0.00016795531260219154,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=boundary eps=1e-09",
+      "observed": 0.10000000000000005,
+      "expected": 0.1,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=boundary eps=1e-09",
+      "observed": -5.303550865670692e-06,
+      "expected": -5.303550865670692e-06,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=boundary eps=1e-12",
+      "observed": 0.10000000000000005,
+      "expected": 0.1,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=boundary eps=1e-12",
+      "observed": -1.677053483167823e-07,
+      "expected": -1.677053483029045e-07,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=5.0 K=0.1 case=boundary",
+      "observed": 0.000791015625011729,
+      "expected": 0.0007910156250000006,
+      "absolute_error": 1.1728357000861944e-14
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=above eps=0.1",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=above eps=0.1",
+      "observed": -0.043567338083460375,
+      "expected": -0.043567338083460416,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=above eps=0.001",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=above eps=0.001",
+      "observed": 0.028961659145197396,
+      "expected": 0.028961659145197327,
+      "absolute_error": 6.938893903907228e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=above eps=1e-06",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=above eps=1e-06",
+      "observed": 0.032991595869803145,
+      "expected": 0.0329915958698031,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=above eps=1e-09",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=above eps=1e-09",
+      "observed": 0.033110024630306226,
+      "expected": 0.033110024630306156,
+      "absolute_error": 6.938893903907228e-17
+    },
+    {
+      "identity": "second cap gamma=5.0 K=0.1 case=above eps=1e-12",
+      "observed": 0.1,
+      "expected": 0.1,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=0.1 case=above eps=1e-12",
+      "observed": 0.033113761004460035,
+      "expected": 0.03311376100446001,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=5.0 K=0.1 case=above",
+      "observed": 0.00022156015680442119,
+      "expected": 0.00022156015679300283,
+      "absolute_error": 1.1418356494694026e-14
+    },
+    {
+      "identity": "second cap gamma=5.0 K=1.0 case=below eps=0.1",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=1.0 case=below eps=0.1",
+      "observed": -2.7244439536706024,
+      "expected": -2.7244439536706024,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=5.0 K=1.0 case=below eps=0.001",
+      "observed": 1.0000000000000002,
+      "expected": 1.0,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "null utility gamma=5.0 K=1.0 case=below eps=0.001",
+      "observed": -2.4315247116136334,
+      "expected": -2.431524711613633,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "second cap gamma=5.0 K=1.0 case=below eps=1e-06",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=1.0 case=below eps=1e-06",
+      "observed": -2.4009938303520064,
+      "expected": -2.400993830352007,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "second cap gamma=5.0 K=1.0 case=below eps=1e-09",
+      "observed": 1.0000000000000002,
+      "expected": 1.0,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "null utility gamma=5.0 K=1.0 case=below eps=1e-09",
+      "observed": -2.4000314246127252,
+      "expected": -2.4000314246127252,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=5.0 K=1.0 case=below eps=1e-12",
+      "observed": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=1.0 case=below eps=1e-12",
+      "observed": -2.400000993730446,
+      "expected": -2.400000993730446,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=5.0 K=1.0 case=below",
+      "observed": 0.9751562500000249,
+      "expected": 0.9751562500000001,
+      "absolute_error": 2.4868995751603507e-14
+    },
+    {
+      "identity": "second cap gamma=5.0 K=9.0 case=below eps=0.1",
+      "observed": 8.999999999999998,
+      "expected": 9.0,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "identity": "null utility gamma=5.0 K=9.0 case=below eps=0.1",
+      "observed": -23.358090185583624,
+      "expected": -23.358090185583627,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "identity": "second cap gamma=5.0 K=9.0 case=below eps=0.001",
+      "observed": 9.000000000000002,
+      "expected": 9.0,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "identity": "null utility gamma=5.0 K=9.0 case=below eps=0.001",
+      "observed": -22.494902492055854,
+      "expected": -22.494902492055854,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=5.0 K=9.0 case=below eps=1e-06",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=9.0 case=below eps=1e-06",
+      "observed": -22.402998015944874,
+      "expected": -22.40299801594487,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "identity": "second cap gamma=5.0 K=9.0 case=below eps=1e-09",
+      "observed": 9.000000000000002,
+      "expected": 9.0,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "identity": "null utility gamma=5.0 K=9.0 case=below eps=1e-09",
+      "observed": -22.40009480252613,
+      "expected": -22.40009480252613,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "second cap gamma=5.0 K=9.0 case=below eps=1e-12",
+      "observed": 9.0,
+      "expected": 9.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "null utility gamma=5.0 K=9.0 case=below eps=1e-12",
+      "observed": -22.400002997916047,
+      "expected": -22.400002997916044,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "identity": "fourth-moment divergence coefficient gamma=5.0 K=9.0 case=below",
+      "observed": 80.77515625000024,
+      "expected": 80.77515625000001,
+      "absolute_error": 2.2737367544323206e-13
+    },
+    {
+      "identity": "utility p-moment bound gamma=0.5 p=1.05",
+      "observed": 0.5608208901599286,
+      "upper_bound": 1.3109709908634257
+    },
+    {
+      "identity": "utility p-moment bound gamma=0.5 p=1.25",
+      "observed": 0.5916538908027354,
+      "upper_bound": 1.6232957100048984
+    },
+    {
+      "identity": "utility p-moment bound gamma=0.5 p=1.5",
+      "observed": 0.676246162700565,
+      "upper_bound": 2.179093102116574
+    },
+    {
+      "identity": "utility p-moment bound gamma=0.5 p=2.0",
+      "observed": 1.0863494999999999,
+      "upper_bound": 4.144557188525325
+    },
+    {
+      "identity": "utility p-moment bound gamma=0.5 p=3.0",
+      "observed": 4.539071123749999,
+      "upper_bound": 16.90063911662146
+    },
+    {
+      "identity": "utility p-moment bound gamma=1.0 p=1.05",
+      "observed": 0.47032975324304416,
+      "upper_bound": 1.5940484405067934
+    },
+    {
+      "identity": "utility p-moment bound gamma=1.0 p=1.25",
+      "observed": 0.5576487584344669,
+      "upper_bound": 2.086922487909578
+    },
+    {
+      "identity": "utility p-moment bound gamma=1.0 p=1.5",
+      "observed": 0.7645778809067292,
+      "upper_bound": 3.0149236559121024
+    },
+    {
+      "identity": "utility p-moment bound gamma=1.0 p=2.0",
+      "observed": 1.782918,
+      "upper_bound": 6.692139582829664
+    },
+    {
+      "identity": "utility p-moment bound gamma=1.0 p=3.0",
+      "observed": 12.69614439,
+      "upper_bound": 37.78472095503455
+    },
+    {
+      "identity": "utility p-moment bound gamma=5.0 p=1.05",
+      "observed": 2.4105105946612904,
+      "upper_bound": 3.9254682804687353
+    },
+    {
+      "identity": "utility p-moment bound gamma=5.0 p=1.25",
+      "observed": 3.8955839871552564,
+      "upper_bound": 6.418385431695906
+    },
+    {
+      "identity": "utility p-moment bound gamma=5.0 p=1.5",
+      "observed": 7.396492956124575,
+      "upper_bound": 12.327265276234838
+    },
+    {
+      "identity": "utility p-moment bound gamma=5.0 p=2.0",
+      "observed": 29.22255,
+      "upper_bound": 48.93988273726437
+    },
+    {
+      "identity": "utility p-moment bound gamma=5.0 p=3.0",
+      "observed": 574.32907125,
+      "upper_bound": 904.3525088381082
+    },
+    {
+      "identity": "positive utility embedding gamma=1.0 fraction=0.01",
+      "observed": 0.005,
+      "expected": 0.005,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.01 eps=0.1",
+      "observed": -0.045,
+      "expected": -0.045000000000000005,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.01 eps=0.1",
+      "observed": 8.673617379884035e-19,
+      "expected": 0.0,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.01 eps=0.001",
+      "observed": -4.994999999999999,
+      "expected": -4.995,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.01 eps=0.001",
+      "observed": 8.673617379884035e-19,
+      "expected": 0.0,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.01 eps=1e-06",
+      "observed": -4999.995000000001,
+      "expected": -4999.995000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.01 eps=1e-06",
+      "observed": -8.673617379884035e-19,
+      "expected": 0.0,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "identity": "positive utility embedding gamma=1.0 fraction=0.1",
+      "observed": 0.05,
+      "expected": 0.05,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.1 eps=0.1",
+      "observed": -0.44999999999999996,
+      "expected": -0.45,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.1 eps=0.1",
+      "observed": 6.938893903907228e-18,
+      "expected": 0.0,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.1 eps=0.001",
+      "observed": -49.949999999999996,
+      "expected": -49.95,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.1 eps=0.001",
+      "observed": 6.938893903907228e-18,
+      "expected": 0.0,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.1 eps=1e-06",
+      "observed": -49999.950000000004,
+      "expected": -49999.950000000004,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.1 eps=1e-06",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "positive utility embedding gamma=1.0 fraction=0.5",
+      "observed": 0.25,
+      "expected": 0.25,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.5 eps=0.1",
+      "observed": -2.2499999999999996,
+      "expected": -2.25,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.5 eps=0.1",
+      "observed": 2.7755575615628914e-17,
+      "expected": 0.0,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.5 eps=0.001",
+      "observed": -249.75,
+      "expected": -249.75,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.5 eps=0.001",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=0.5 eps=1e-06",
+      "observed": -249999.75000000006,
+      "expected": -249999.75,
+      "absolute_error": 5.820766091346741e-11
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=0.5 eps=1e-06",
+      "observed": -5.551115123125783e-17,
+      "expected": 0.0,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "positive utility embedding gamma=1.0 fraction=1.0",
+      "observed": 0.5,
+      "expected": 0.5,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=1.0 eps=0.1",
+      "observed": -4.499999999999999,
+      "expected": -4.5,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=1.0 eps=0.1",
+      "observed": 5.551115123125783e-17,
+      "expected": 0.0,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=1.0 eps=0.001",
+      "observed": -499.49999999999983,
+      "expected": -499.5,
+      "absolute_error": 1.7053025658242404e-13
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=1.0 eps=0.001",
+      "observed": 1.6653345369377348e-16,
+      "expected": 0.0,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "identity": "negative utility embedding gamma=1.0 fraction=1.0 eps=1e-06",
+      "observed": -499999.5,
+      "expected": -499999.5,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=1.0 fraction=1.0 eps=1e-06",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "positive utility embedding gamma=5.0 fraction=0.01",
+      "observed": 0.001,
+      "expected": 0.001,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.01 eps=0.1",
+      "observed": -0.009000000000000001,
+      "expected": -0.009000000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.01 eps=0.1",
+      "observed": -1.0842021724855044e-19,
+      "expected": 0.0,
+      "absolute_error": 1.0842021724855044e-19
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.01 eps=0.001",
+      "observed": -0.999,
+      "expected": -0.9990000000000001,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.01 eps=0.001",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.01 eps=1e-06",
+      "observed": -999.9989999999999,
+      "expected": -999.9989999999999,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.01 eps=1e-06",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "positive utility embedding gamma=5.0 fraction=0.1",
+      "observed": 0.01,
+      "expected": 0.01,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.1 eps=0.1",
+      "observed": -0.09,
+      "expected": -0.09000000000000001,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.1 eps=0.1",
+      "observed": 1.734723475976807e-18,
+      "expected": 0.0,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.1 eps=0.001",
+      "observed": -9.99,
+      "expected": -9.99,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.1 eps=0.001",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.1 eps=1e-06",
+      "observed": -9999.990000000003,
+      "expected": -9999.990000000002,
+      "absolute_error": 1.8189894035458565e-12
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.1 eps=1e-06",
+      "observed": -3.469446951953614e-18,
+      "expected": 0.0,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "identity": "positive utility embedding gamma=5.0 fraction=0.5",
+      "observed": 0.05,
+      "expected": 0.05,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.5 eps=0.1",
+      "observed": -0.45,
+      "expected": -0.45,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.5 eps=0.1",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.5 eps=0.001",
+      "observed": -49.95,
+      "expected": -49.95,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.5 eps=0.001",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=0.5 eps=1e-06",
+      "observed": -49999.95,
+      "expected": -49999.950000000004,
+      "absolute_error": 7.275957614183426e-12
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=0.5 eps=1e-06",
+      "observed": 6.938893903907228e-18,
+      "expected": 0.0,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "positive utility embedding gamma=5.0 fraction=1.0",
+      "observed": 0.09999999999999999,
+      "expected": 0.1,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=1.0 eps=0.1",
+      "observed": -0.8999999999999999,
+      "expected": -0.9,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=1.0 eps=0.1",
+      "observed": 1.3877787807814457e-17,
+      "expected": 0.0,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=1.0 eps=0.001",
+      "observed": -99.9,
+      "expected": -99.9,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=1.0 eps=0.001",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "negative utility embedding gamma=5.0 fraction=1.0 eps=1e-06",
+      "observed": -99999.89999999998,
+      "expected": -99999.90000000001,
+      "absolute_error": 2.9103830456733704e-11
+    },
+    {
+      "identity": "zero null utility gamma=5.0 fraction=1.0 eps=1e-06",
+      "observed": 2.7755575615628914e-17,
+      "expected": 0.0,
+      "absolute_error": 2.7755575615628914e-17
+    }
+  ],
+  "frontier_examples": [
+    {
+      "gamma": 0.5,
+      "public_second": 0.1,
+      "region": "below",
+      "mean": 0.0125,
+      "raw_second": 0.00019531250000000004,
+      "positive_utility": 0.012451171875,
+      "surrogate_mean": -0.0125
+    },
+    {
+      "gamma": 0.5,
+      "public_second": 0.1,
+      "region": "boundary",
+      "mean": 0.025,
+      "raw_second": 0.02546875000000001,
+      "positive_utility": 0.0186328125,
+      "surrogate_mean": 0.0
+    },
+    {
+      "gamma": 0.5,
+      "public_second": 0.1,
+      "region": "above",
+      "mean": 0.17061388300841898,
+      "raw_second": 0.046831822806407866,
+      "positive_utility": 0.15890592730681702,
+      "surrogate_mean": 0.145613883008419
+    },
+    {
+      "gamma": 0.5,
+      "public_second": 1.0,
+      "region": "below",
+      "mean": 0.125,
+      "raw_second": 0.019531250000000007,
+      "positive_utility": 0.1201171875,
+      "surrogate_mean": -0.125
+    },
+    {
+      "gamma": 0.5,
+      "public_second": 1.0,
+      "region": "boundary",
+      "mean": 0.25,
+      "raw_second": 0.2968750000000001,
+      "positive_utility": 0.17578124999999997,
+      "surrogate_mean": 0.0
+    },
+    {
+      "gamma": 0.5,
+      "public_second": 1.0,
+      "region": "above",
+      "mean": 0.625,
+      "raw_second": 0.54296875,
+      "positive_utility": 0.4892578125,
+      "surrogate_mean": 0.375
+    },
+    {
+      "gamma": 0.5,
+      "public_second": 9.0,
+      "region": "below",
+      "mean": 0.75,
+      "raw_second": 0.7031250000000001,
+      "positive_utility": 0.57421875,
+      "surrogate_mean": -1.5
+    },
+    {
+      "gamma": 0.5,
+      "public_second": 9.0,
+      "region": "boundary",
+      "mean": 2.25,
+      "raw_second": 6.046875000000002,
+      "positive_utility": 0.7382812499999996,
+      "surrogate_mean": 0.0
+    },
+    {
+      "gamma": 0.5,
+      "public_second": 9.0,
+      "region": "above",
+      "mean": 2.625,
+      "raw_second": 7.417968750000001,
+      "positive_utility": 0.7705078124999998,
+      "surrogate_mean": 0.375
+    },
+    {
+      "gamma": 1.0,
+      "public_second": 0.1,
+      "region": "below",
+      "mean": 0.025,
+      "raw_second": 0.0007812500000000002,
+      "positive_utility": 0.024609375000000003,
+      "surrogate_mean": -0.025
+    },
+    {
+      "gamma": 1.0,
+      "public_second": 0.1,
+      "region": "boundary",
+      "mean": 0.05,
+      "raw_second": 0.026875000000000007,
+      "positive_utility": 0.0365625,
+      "surrogate_mean": 0.0
+    },
+    {
+      "gamma": 1.0,
+      "public_second": 0.1,
+      "region": "above",
+      "mean": 0.18311388300841897,
+      "raw_second": 0.05014802061281572,
+      "positive_utility": 0.1580398727020111,
+      "surrogate_mean": 0.13311388300841898
+    },
+    {
+      "gamma": 1.0,
+      "public_second": 1.0,
+      "region": "below",
+      "mean": 0.25,
+      "raw_second": 0.07812500000000003,
+      "positive_utility": 0.2109375,
+      "surrogate_mean": -0.25
+    },
+    {
+      "gamma": 1.0,
+      "public_second": 1.0,
+      "region": "boundary",
+      "mean": 0.5,
+      "raw_second": 0.4374999999999999,
+      "positive_utility": 0.28125000000000006,
+      "surrogate_mean": 0.0
+    },
+    {
+      "gamma": 1.0,
+      "public_second": 1.0,
+      "region": "above",
+      "mean": 0.75,
+      "raw_second": 0.6718750000000001,
+      "positive_utility": 0.41406249999999994,
+      "surrogate_mean": 0.25
+    },
+    {
+      "gamma": 1.0,
+      "public_second": 9.0,
+      "region": "below",
+      "mean": 0.5,
+      "raw_second": 0.3125000000000001,
+      "positive_utility": 0.34374999999999994,
+      "surrogate_mean": -4.0
+    },
+    {
+      "gamma": 5.0,
+      "public_second": 0.1,
+      "region": "below",
+      "mean": 0.07905694150420949,
+      "raw_second": 0.0078125,
+      "positive_utility": 0.059525691504209485,
+      "surrogate_mean": -0.1709430584957905
+    },
+    {
+      "gamma": 5.0,
+      "public_second": 0.1,
+      "region": "boundary",
+      "mean": 0.25,
+      "raw_second": 0.071875,
+      "positive_utility": 0.0703125,
+      "surrogate_mean": 0.0
+    },
+    {
+      "gamma": 5.0,
+      "public_second": 0.1,
+      "region": "above",
+      "mean": 0.283113883008419,
+      "raw_second": 0.08511510306407859,
+      "positive_utility": 0.07032612534822252,
+      "surrogate_mean": 0.033113883008419
+    },
+    {
+      "gamma": 5.0,
+      "public_second": 1.0,
+      "region": "below",
+      "mean": 0.1,
+      "raw_second": 0.012500000000000002,
+      "positive_utility": 0.06875,
+      "surrogate_mean": -2.4
+    },
+    {
+      "gamma": 5.0,
+      "public_second": 9.0,
+      "region": "below",
+      "mean": 0.1,
+      "raw_second": 0.012500000000000002,
+      "positive_utility": 0.06875,
+      "surrogate_mean": -22.4
+    }
+  ],
+  "cash_positive_mean_fixed_bet_counterexample": {
+    "scores": [
+      -0.5,
+      5.0
+    ],
+    "probabilities": [
+      0.9,
+      0.1
+    ],
+    "mean": 0.04999999999999999,
+    "growth_by_dyadic_stake": [
+      [
+        0.5,
+        -0.133637568357066
+      ],
+      [
+        0.25,
+        -0.03908523174043749
+      ],
+      [
+        0.125,
+        -0.009533887445643978
+      ],
+      [
+        0.0625,
+        -0.0013804569347580925
+      ],
+      [
+        0.03125,
+        0.00034467971312453737
+      ],
+      [
+        0.015625,
+        0.00046348240883545017
+      ],
+      [
+        0.0078125,
+        0.00030937704119096427
+      ],
+      [
+        0.00390625,
+        0.00017476493209007786
+      ],
+      [
+        0.001953125,
+        9.248926384818317e-05
+      ],
+      [
+        0.0009765625,
+        4.753257516166415e-05
+      ],
+      [
+        0.00048828125,
+        2.408969699699371e-05
+      ],
+      [
+        0.000244140625,
+        1.212587995326986e-05
+      ]
+    ]
+  },
+  "source_sha256": {
+    "scripts/audit_directional_frontier.py": "b33faf580660376790a1d42bc0c49c37fe17a48acd5736a2f76c7a11d4b2d26c",
+    "reports/directional_frontier_proof_audit.md": "7a15705aae6635820392043923bab3f95a165694835da594b348864f17bdd229",
+    "scripts/plot_directional_frontier.py": "a3dba049635f3e98e1135882a8b13088961d528ec068bc75476d396c1f4d939f",
+    "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
+    "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062",
+    "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6"
+  },
+  "scope": "Finite deterministic quadrature/identity checks only; no new simulation paths, test-size estimate or proof of sequential/asymptotic claims. Financial design unchanged."
+}

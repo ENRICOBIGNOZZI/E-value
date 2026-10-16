@@ -2,7 +2,9 @@
 
 Status: the costless scalar theorem, uniform plug-in separation and complete
 proof are now integrated in `paper/sections/11_vanishing_gains.tex` and
-`paper/sections/12_vanishing_proofs.tex`. The controlled study's very low
+`paper/sections/12_vanishing_proofs.tex`. The cash-score definitions now appear
+in `paper/sections/13_directional_information.tex`; their equation labels and
+mathematical meaning are unchanged. The controlled study's very low
 finite-horizon power is reported alongside them. Historical notes remain
 excluded. Sixty-six deterministic quadrature checks support the identities;
 they do not prove the asymptotics or stopping-time statements. No claim of a

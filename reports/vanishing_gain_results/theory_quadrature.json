@@ -401,9 +401,10 @@
     }
   ],
   "source_sha256": {
-    "paper/sections/11_vanishing_gains.tex": "f81c066b0ab4b200ded2f16f177b0cf7b9b42f7f39a20c2db54f843a6e2bb60e",
+    "paper/sections/11_vanishing_gains.tex": "ba648a494769c5c9eb3cfa51732abdfd4c1db3e6e344099d1c8ae2d30d5be38b",
     "paper/sections/12_vanishing_proofs.tex": "3cd300f0f6fed7c381c27ab0be5c17013077d4852d5d057ea774fdf037e4dd32",
-    "scripts/audit_vanishing_theory.py": "df4a12bdb7b6e4e23c2466dda48b8a4c588dd2be4fa8b85bea9b6179f08f2730"
+    "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
+    "scripts/audit_vanishing_theory.py": "d2548fb17c94ea547d0244c768df2a16cf060dc5cfe3029992b21c1c7caf4385"
   },
   "scope": "Deterministic quadrature of Gaussian null moments, log-density ratios, inverse-risk moments and local growth coefficients. Finite numerical checks do not prove asymptotics, optimality or stopping-time claims."
 }

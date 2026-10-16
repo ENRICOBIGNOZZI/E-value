@@ -13,6 +13,7 @@ the full objective is complete.
 | Lambda selection targeting deadline power | Separately frozen controlled score experiment; Bellman argument; corrected whole-pool replay and independent audit | Implemented and reported; 37.48% vs 11.41% power at 400 observations; working-model optimum, no financial dominance claim |
 | Comparison against the best constant for the same deadline | Subsequent pre-evaluation source/model freeze c73e713 and fresh seed 450001; primary and refined grids; complete paired summaries | Integrated: fresh 400-date power 37.35% vs 33.10%; individual nominal level common, actual null errors differ; original paths not pooled |
 | Vanishing estimation gains and cost of waiting | Complete cash-PARK proof and adaptive boundary null; 66 deterministic identity checks; separately frozen finite-horizon scalar diagnostic | Integrated with explicit Gaussian/costless scope; high-confidence coefficient is not an expected stopped-cost result |
+| Directional information requirements | Complete fixed-policy iid frontier proof, higher-than-second-moment consistency construction and cash-PARK lower-bound argument; 302 finite identity checks | Integrated; moment-class scope, no general testing-priority or financial impossibility claim |
 | Separate stronger-moment extension | Public envelopes, clipping proof, new namespace and frozen protocol | Implemented and individually valid under stronger assumptions |
 | Fresh experiment without favorable-seed selection | All seeds 40001–40020 completed with identical committed source hashes | Complete mechanism study |
 | Reproducible numerical evidence | Saved score/certificate ledgers, independent vectorized replay, checkpoints, source/configuration hashes | Audited separately from proof validity |
@@ -28,12 +29,13 @@ complete markets (3,495 file pairs) and the failed seed's three sealed blocks
 (39 pairs). All compared data agree; configuration fields differ only by
 version label. Copied parameter/data corruption controls are detected. This
 audit adds no independent replications or arithmetic-replay counts.
+The first twenty v3 markets are complete and independently replayed.
 The next work is to finish the same entire 100-market v3 pilot replay and then
 the separate final study. The first ten v2 markets remain a labeled pilot snapshot.
 The costless vanishing-gain theory, complete proof and scalar diagnostics are
 now integrated. Broader publication-level novelty assessment remains open;
 the draft makes no unqualified priority claim. These paths do not add financial markets.
-The 36-page draft also includes the separate lambda-selection study. Its
+The 40-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
 55 passing tests. The fresh optimized-constant companion independently checks

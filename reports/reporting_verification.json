@@ -19,12 +19,20 @@
   "report_source_sha256": {
     "scripts/build_lambda_results.py": "e2ae74d27bf24928f9a70abdc8ceb5904b55ae1141cc3a18fbf04f8698f0f454",
     "scripts/build_vanishing_results.py": "83c6718ddb6f027411d24cc1c2ce72b0f6d734d4e361ce5841062a300b1fc0ab",
-    "scripts/build_lambda_constant_results.py": "13c3319d60c964277bd4be222c2984e08317d4ac79bd824e664a6cd66bb65e3d"
+    "scripts/build_lambda_constant_results.py": "13c3319d60c964277bd4be222c2984e08317d4ac79bd824e664a6cd66bb65e3d",
+    "scripts/plot_directional_frontier.py": "a3dba049635f3e98e1135882a8b13088961d528ec068bc75476d396c1f4d939f",
+    "scripts/build_paper.py": "c266dc6ae688f9b953d46b084456e1bae99f031c45c997ae461609c485496ac5"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
     "input_validation": "Retained summary/status/model-manifest bytes matched independent audit; model-manifest bytes matched pre-evaluation freeze.",
     "rounding": "Exact counts and decimal half-up for percentages; ceiling for the stated refinement bound.",
     "scope": "Report generation, not new simulations."
+  },
+  "directional_frontier_figure": {
+    "analytic_only": true,
+    "paper_and_report_png_bytes_equal": true,
+    "png_sha256": "2b015d0858ae9b37d4ea2f231db64eaa60e178fd4f29e5181bf05af3b328def7",
+    "scope": "Analytic inequalities for gamma=K2=1; no random observations or financial study."
   }
 }

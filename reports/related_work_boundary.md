@@ -98,3 +98,14 @@ Further primary sources checked for integration of the cash-PARK example:
   The cash-PARK example retains that policy loss in its utility target and
   specializes standard likelihood comparison to an adaptive boundary null;
   it does not introduce logarithmic prequential regret as a general principle.
+
+For the directional moment section, primary-source review also includes
+[Bertanha and Moreira](https://arxiv.org/html/1612.02024), whose null-density
+framework covers classical contamination/trivial-power arguments, and
+[Fan, Jiao and Wang](https://sas.uwaterloo.ca/~wang/papers/2024Fan-Jiao-Wang-Biom.pdf),
+who study existing conditional mean/variance e-processes. The manuscript
+specializes these principles to quadratic-utility direction and an explicit
+second-return-moment frontier. It gives the contamination, sufficiency and
+above-two-moment proofs in full; no new general impossibility, mixture or
+mean-testing principle is claimed. The fixed Laplace financial law is not the
+entire iid moment class appearing in that theorem.

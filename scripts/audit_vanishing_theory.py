@@ -75,6 +75,7 @@ def main():
 
     root = Path(__file__).resolve().parents[1]
     sources = ['paper/sections/11_vanishing_gains.tex', 'paper/sections/12_vanishing_proofs.tex',
+               'paper/sections/13_directional_information.tex',
                'scripts/audit_vanishing_theory.py']
     report = {'complete': True, 'deterministic_scalar_checks': len(checks),
               'maximum_identity_error_excluding_local_rate_approximations': max(c['absolute_error'] for c in checks[:-2]),
