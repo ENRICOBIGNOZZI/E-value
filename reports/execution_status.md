@@ -1,3 +1,45 @@
+# Current continuation — verified twenty-market interim snapshot
+
+A separately sealed first-twenty v3 pilot snapshot, markets **50001–50020**,
+retains the complete six-method evidence without mixing versions or counting
+replayed markets twice. All twenty have finished independent pathwise replay:
+**176,784,154 scalar checks** and **2,756 ghost pairs**. An additional independent
+CSV-based audit recalculates **3,425 reporting values**, with maximum absolute
+error 8.89e-16. This aggregate audit adds no market or pathwise replay count.
+Its precise scope excludes independent reaggregation of event/deployment
+summaries. Both new financial figures were visually inspected.
+
+In this interim prefix, Tail's mean h-scaled utility is **0.012061** (MC SE
+0.000961), versus 0.044146 for All Signals and 0.052368 for Greedy. Tail enters
+every market but stays inactive for **81.07%** of OOS dates; it has no PARK,
+REVIVE or SWAP. Catoni stays in cash throughout. These outcomes do not establish
+universal rankings, matched test size, or a causal decomposition of waiting.
+No economic parameter, test threshold or seed pool was retuned. Complete
+interpretation: `full_v3_snapshots/pilot_020_interpretation.md`.
+
+The new reporting gate rejects missing, failed, incomplete or unaudited
+requested markets, mismatched source/configuration identities, stale replay
+bytes and malformed method membership. The final stage requires all **500**
+frozen markets; smaller final subsets are rejected. Fourteen adversarial
+software checks pass, and the full suite has **69 passing tests**. Copied
+report/source corruption controls also pass, and an attempted premature
+100-market pilot seal is rejected without publishing a snapshot directory.
+The sealed interim directory remains unchanged. The reporting contract is
+`full_reporting_protocol.md`, specified during pilot execution, not externally
+preregistered before it.
+
+The 100-market v3 pilot remains live; the exact status/process checkpoint is
+in `full_v3_results/pilot_live_checkpoint.json`. The current **40-page**
+manuscript deliberately retains the first-ten v2 financial table and is
+unchanged in this continuation. Its original scientific and controlled-study
+sources remain frozen; empirical inputs retain their original hashes.
+Final evaluation is still **0/500**. The overall paper goal remains active
+and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — directional moment frontier, 17 October 2026
 
 The **40-page** manuscript now identifies an exact testing frontier for a

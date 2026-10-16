@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "snapshot": "reports/full_v3_snapshots/pilot_020",
+  "kind": "interim_pilot",
+  "seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50018,
+    50019,
+    50020
+  ],
+  "scalar_reporting_checks": 3425,
+  "maximum_absolute_error": 8.881784197001252e-16,
+  "all_sealed_report_file_hashes_match": true,
+  "snapshot_seal_sha256": "d337c157b827540ecd499c8e7dcdd09e07bbfcf8546820e5e0c1710898f1306f",
+  "audit_source_sha256": "2a0bdeedb7f29c99329b0b728b75feaf2c0361922bff963dbc5eda2a38aa1f13",
+  "scope": "Original seed metrics, all method means/medians/SE/Student intervals, all paired contrasts and market-level Wilson incidence. No new markets, optimization or pathwise score replay. Event-rate and deployment tables are covered by seal hashes, not independently recalculated here."
+}

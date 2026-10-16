@@ -1,0 +1,13 @@
+method,endpoint,seeds,markets_with_move,fraction,wilson_low,wilson_high
+All Signals,moves,20,0,0.0,0.0,0.16112515805281938
+All Signals,executed_moves,20,0,0.0,0.0,0.16112515805281938
+Oracle,moves,20,0,0.0,0.0,0.16112515805281938
+Oracle,executed_moves,20,0,0.0,0.0,0.16112515805281938
+Greedy,moves,20,20,1.0,0.8388748419471806,1.0
+Greedy,executed_moves,20,20,1.0,0.8388748419471806,1.0
+HAC,moves,20,20,1.0,0.8388748419471806,1.0
+HAC,executed_moves,20,20,1.0,0.8388748419471806,1.0
+Catoni,moves,20,0,0.0,0.0,0.16112515805281938
+Catoni,executed_moves,20,0,0.0,0.0,0.16112515805281938
+Tail,moves,20,20,1.0,0.8388748419471806,1.0
+Tail,executed_moves,20,20,1.0,0.8388748419471806,1.0

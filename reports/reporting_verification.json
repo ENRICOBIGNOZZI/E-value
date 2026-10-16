@@ -21,7 +21,10 @@
     "scripts/build_vanishing_results.py": "83c6718ddb6f027411d24cc1c2ce72b0f6d734d4e361ce5841062a300b1fc0ab",
     "scripts/build_lambda_constant_results.py": "13c3319d60c964277bd4be222c2984e08317d4ac79bd824e664a6cd66bb65e3d",
     "scripts/plot_directional_frontier.py": "a3dba049635f3e98e1135882a8b13088961d528ec068bc75476d396c1f4d939f",
-    "scripts/build_paper.py": "c266dc6ae688f9b953d46b084456e1bae99f031c45c997ae461609c485496ac5"
+    "scripts/build_paper.py": "c266dc6ae688f9b953d46b084456e1bae99f031c45c997ae461609c485496ac5",
+    "scripts/build_full_results.py": "db80e4db2fb848dc0f620c56e70e4abc82b2972ab3c278039acd7099a23fb926",
+    "scripts/seal_full_snapshot.py": "e9568ad528011b6c47351141102c8e2796a00e73ddcefc86ecf49372826d6ded",
+    "scripts/audit_full_snapshot.py": "2a0bdeedb7f29c99329b0b728b75feaf2c0361922bff963dbc5eda2a38aa1f13"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
@@ -34,5 +37,11 @@
     "paper_and_report_png_bytes_equal": true,
     "png_sha256": "2b015d0858ae9b37d4ea2f231db64eaa60e178fd4f29e5181bf05af3b328def7",
     "scope": "Analytic inequalities for gamma=K2=1; no random observations or financial study."
+  },
+  "financial_sealed_snapshot": {
+    "seal": "reports/full_v3_snapshots/pilot_020/snapshot_seal.json",
+    "numeric_checks": 3425,
+    "controls": "reports/full_v3_snapshots/pilot_020_integrity_controls.json",
+    "scope": "All requested twenty markets fully replayed and byte-bound; separate interim report with no manuscript changes."
   }
 }

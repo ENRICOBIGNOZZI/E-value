@@ -284,3 +284,31 @@ checks are in `reports/directional_frontier_proof_audit.md` and
 # Analytic feasibility diagram; no Monte Carlo observations.
 .venv/bin/python scripts/plot_directional_frontier.py
 ```
+
+## Verified financial reporting snapshots
+
+The separate first-twenty v3 **interim** snapshot is retained in
+`reports/full_v3_snapshots/pilot_020`; its interpretation is
+`reports/full_v3_snapshots/pilot_020_interpretation.md`. All twenty markets
+completed independent arithmetic replay. Tail enters each but remains inactive
+for about 81% of OOS dates and has lower mean utility than Greedy or All Signals.
+This does not complete the 100-market pilot or the 500-market final study and
+does not change the manuscript's labeled first-ten v2 financial table.
+
+The reporting contract is `reports/full_reporting_protocol.md`. Sealing
+requires all requested markets, frozen source/configuration identities and
+byte-current independent replay evidence; it rejects incomplete final subsets
+and refuses to overwrite prior seals. The current repository suite has
+**69 passing tests**, including fourteen reporting-gate controls.
+
+```sh
+# Recalculate summaries independently from the original twenty seed CSVs.
+.venv/bin/python scripts/audit_full_snapshot.py \
+  --snapshot reports/full_v3_snapshots/pilot_020 \
+  --output outputs/park_revive_full_v3/pilot \
+  --report tmp/pilot020_numeric_audit.json
+# Run only after every requested pilot market and replay has finished.
+.venv/bin/python scripts/seal_full_snapshot.py pilot
+# Run only after all 500 separate final markets and replays have finished.
+.venv/bin/python scripts/seal_full_snapshot.py main
+```

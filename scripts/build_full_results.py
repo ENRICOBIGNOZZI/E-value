@@ -10,7 +10,7 @@ import pandas as pd
 from scipy.stats import t
 
 
-def summarize(output,destination,paper=None,seeds=None):
+def summarize(output,destination,paper=None,seeds=None,*,details=None):
     destination.mkdir(parents=True,exist_ok=True)
     complete=[];incomplete=[]
     selected=set(seeds) if seeds is not None else None
@@ -86,14 +86,15 @@ def summarize(output,destination,paper=None,seeds=None):
                             seed_rates.append(dict(**key,seed=int(seed),eligible_events=len(sg),
                                 selected_within=int((sg.selected & sg.selection_delay_days.le(years*block)).sum()),
                                 criterion_within=int((sg.criterion_detected & sg.criterion_delay_days.le(years*block)).sum())))
-    details=output/'aggregate';details.mkdir(exist_ok=True)
+    details=output/'aggregate' if details is None else details
+    details.mkdir(parents=True,exist_ok=True)
     for name,frame in [('metrics_by_seed',metrics),('method_summary',pd.DataFrame(summaries)),
         ('paired_comparisons',pd.DataFrame(paired)),('decisions',decisions),('deployments',deployments),
         ('economic_opportunities',opportunities),('opportunity_registry',registry),
         ('holdings_diagnostics',pd.DataFrame(holdings)),('market_move_incidence',pd.DataFrame(incidence)),
         ('opportunity_rates',pd.DataFrame(risksets)),('opportunity_seed_counts',pd.DataFrame(seed_rates))]:
         if name in ('economic_opportunities','opportunity_registry'):
-            frame.to_csv(details/f'{name}.csv.gz',index=False,compression='gzip')
+            frame.to_csv(details/f'{name}.csv.gz',index=False,compression={'method':'gzip','mtime':0})
         else:frame.to_csv(destination/f'{name}.csv',index=False)
     shutil.copyfile(complete[0]/'config_frozen.json',destination/'config_frozen.json')
     shutil.copyfile(complete[0]/'source_manifest.json',destination/'source_manifest.json')
@@ -107,7 +108,7 @@ def summarize(output,destination,paper=None,seeds=None):
     manifest=dict(seeds=metrics.seed.unique().tolist(),requested_snapshot_seeds=sorted(selected) if selected is not None else None,n_complete=len(complete),
         incomplete=[str(p) for p in incomplete],source_hash=next(iter(sources)),
         config_sha256=hashlib.sha256(next(iter(configs)).encode()).hexdigest(),completed_seeds_with_arithmetic_audit=audited,
-        detailed_tables=str(details),
+        detailed_tables=str(details.relative_to(destination)) if details.is_relative_to(destination) else str(details),
         limits=['Pilot uncertainty intervals use independent markets, not dependent episode counts.',
                 'Opportunity populations depend on each method; fractions are descriptive.',
                 'No multiple-comparison correction; HAC and e-tests have unmatched global error.',

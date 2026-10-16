@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "controls": [
+    {
+      "control": "Changed sealed table byte",
+      "detected": true,
+      "reason": "Changed report artifact: method_summary.csv"
+    },
+    {
+      "control": "Changed original utility metric with unchanged sealed tables",
+      "detected": true,
+      "reason": "(0.0419220571870859, 0.14192205718708598)"
+    },
+    {
+      "control": "Premature complete-pilot report",
+      "detected": true,
+      "reason": "Independent replay is missing or stale: 50021",
+      "no_snapshot_directory_published": true
+    }
+  ],
+  "original_snapshot_bytes_unchanged": true,
+  "snapshot_seal_sha256": "d337c157b827540ecd499c8e7dcdd09e07bbfcf8546820e5e0c1710898f1306f",
+  "scope": "Copied artifact controls and a read-only rejection of premature full-pilot reporting; no new markets or pytest count."
+}
