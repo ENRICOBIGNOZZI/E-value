@@ -22,9 +22,9 @@ def main():
     count=maximum if args.count is None else args.count
     if not 1<=count<=maximum:parser.error('Count must remain inside the declared seed pool')
     if args.batch_size<1:parser.error('Positive batch size required')
-    output=ROOT/'outputs/park_revive_full_v2'/args.stage
+    output=ROOT/'outputs/park_revive_full_v3'/args.stage
     config=ROOT/'configs'/('full_pilot.json' if args.stage=='pilot' else 'full_main.json')
-    destination=ROOT/'reports'/('full_results' if args.stage=='pilot' else 'full_final_results')
+    destination=ROOT/'reports'/('full_v3_results' if args.stage=='pilot' else 'full_final_results')
     environment=os.environ.copy();environment.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1')
     def run(script,*arguments):
         subprocess.run([sys.executable,str(ROOT/'scripts'/script),*map(str,arguments)],cwd=ROOT,env=environment,check=True)

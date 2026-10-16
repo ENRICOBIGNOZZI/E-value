@@ -134,11 +134,11 @@ The protocol and fresh seed pools are in
 The software checks do not count as financial pilot markets.
 
 ```sh
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_smoke.json --output outputs/park_revive_full_v2/software_audited --seeds 51001 51002 51003
-.venv/bin/python scripts/verify_full_strategy.py --output outputs/park_revive_full_v2/software_audited
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_smoke.json --output outputs/park_revive_full_v3/software --seeds 51001 51002 51003
+.venv/bin/python scripts/verify_full_strategy.py --output outputs/park_revive_full_v3/software
 # First full-size pilot block; resume the same seed to complete its horizon.
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v2/pilot --seeds 50001 --stop-after-blocks 1
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v2/pilot --seeds 50001 --resume
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v3/pilot --seeds 50001 --stop-after-blocks 1
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v3/pilot --seeds 50001 --resume
 ```
 
 The arithmetic verifier independently reconstructs fund and paired utility,
@@ -157,11 +157,11 @@ and verified by SHA-256; unfinished annual checkpoints remain resumable.
 
 ```sh
 # Run a declared contiguous pilot pool using independent worker processes.
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v2/pilot --start-seed 50001 --count 100 --workers 2 --resume
-.venv/bin/python scripts/verify_full_strategy.py --output outputs/park_revive_full_v2/pilot
-.venv/bin/python scripts/build_full_results.py --paper
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v3/pilot --start-seed 50001 --count 100 --workers 2 --resume
+.venv/bin/python scripts/verify_full_strategy.py --output outputs/park_revive_full_v3/pilot
+.venv/bin/python scripts/build_full_results.py --output outputs/park_revive_full_v3/pilot --destination reports/full_v3_results
 # Final pool: specified, not a statement of completed execution.
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_main.json --output outputs/park_revive_full_v2/main --start-seed 60001 --count 500 --workers 2 --resume
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_main.json --output outputs/park_revive_full_v3/main --start-seed 60001 --count 500 --workers 2 --resume
 ```
 
 
@@ -183,3 +183,11 @@ The manuscript title now emphasizes trading costs, moment information and the
 cost of waiting. PARK/REVIVE remains the implementation name. Mathematical
 research notes under `paper/notes/` are explicitly excluded from the manuscript
 until separately audited; they are not reported theorems or simulation results.
+
+The current full-strategy implementation is v3: a preserved QP convergence
+failure triggers exact objective preconditioning, with original-unit KKT guards.
+The same whole pilot pool is replayed; no failed seed is excluded. The manuscript
+currently retains its explicitly labeled first-ten **v2** snapshot. To reproduce
+that paper snapshot, use `scripts/build_paper.py --full-pilot-count 10`; its default
+input is deliberately still the retained v2 directory. New v3 results are kept
+separately until audited. See `reports/full_strategy_protocol.md`.

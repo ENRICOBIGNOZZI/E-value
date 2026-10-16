@@ -1,5 +1,6 @@
 from dataclasses import replace
 import json
+from pathlib import Path
 from math import comb,factorial
 import numpy as np
 import pandas as pd
@@ -40,6 +41,51 @@ def test_scalar_optimizer_matches_independent_qp_and_liquidation_cost():
             a=exact.solve(support,previous);b=qp.solve(support,previous)
             np.testing.assert_allclose(a.weights,b.weights,atol=1e-6,rtol=0)
             assert a.value==pytest.approx(b.value,abs=1e-10)
+
+
+def test_preserved_qp_failure_recovers_same_problem_with_kkt_certificate():
+    from scipy.optimize import minimize
+    z=np.load(Path(__file__).parent/'fixtures/seed50020_qp.npz')
+    cfg=replace(Config(),solver_tolerance=1e-10)
+    idx=tuple(int(j) for j in z['support']);mu=z['mu'];second=z['second'];b=z['previous']
+    optimizer=StudyOptimizer(cfg,mu,second)
+    solved=optimizer.solve(idx,b)
+    assert len(optimizer.recoveries)==1  # Reproduces the original failure and fallback.
+    assert solved.primal_residual<1e-9 and solved.dual_residual<1e-9 and solved.gap<1e-9
+    assert np.abs(solved.weights).sum()<=cfg.leverage
+    outside=np.ones(len(mu),bool);outside[list(idx)]=False
+    assert np.all(solved.weights[outside]==0)
+    # Independent two-dimensional constrained objective, including outside liquidation.
+    def loss(x):
+        w=np.zeros(len(mu));w[list(idx)]=x;d=w-b
+        return -(w@mu-cfg.gamma*(w@second@w)/2-cfg.proportional*np.abs(d).sum()-cfg.impact*(d@d)/2)
+    independent=minimize(loss,np.zeros(len(idx)),method='SLSQP',
+                         constraints={'type':'ineq','fun':lambda x:cfg.leverage-np.abs(x).sum()},
+                         options={'ftol':1e-14,'maxiter':10000})
+    assert independent.success
+    assert solved.value==pytest.approx(-independent.fun,abs=1e-12)
+    # Signal renaming must preserve the feasible solution and its objective.
+    permutation=np.arange(len(mu))[::-1]
+    renamed=StudyOptimizer(cfg,mu[permutation],second[np.ix_(permutation,permutation)])
+    other=renamed.solve_in_basis_points(tuple(np.flatnonzero(np.isin(permutation,idx))),b[permutation])
+    np.testing.assert_allclose(other.weights,solved.weights[permutation],atol=1e-8,rtol=0)
+    assert other.value==pytest.approx(solved.value,abs=1e-12)
+
+
+@pytest.mark.parametrize('fault',('status','certificate'))
+def test_preconditioned_qp_rejects_failed_status_and_invalid_certificate(monkeypatch,fault):
+    import osqp
+    z=np.load(Path(__file__).parent/'fixtures/seed50020_qp.npz')
+    optimizer=StudyOptimizer(replace(Config(),solver_tolerance=1e-10),z['mu'],z['second'])
+    original=osqp.OSQP.solve
+    def corrupted(self,*args,**kwargs):
+        result=original(self,*args,**kwargs)
+        if fault=='status':result.info.status_val=2
+        else:result.x[0]=100.
+        return result
+    monkeypatch.setattr(osqp.OSQP,'solve',corrupted)
+    with pytest.raises(RuntimeError,match='Preconditioned QP'):
+        optimizer.solve_in_basis_points(tuple(int(j) for j in z['support']),z['previous'])
 
 
 def test_joint_moment_recurrence_independent_polynomial_convolution():

@@ -74,12 +74,12 @@ def summarize(output,destination,paper=None,seeds=None):
                     if kind!='ALL':g=g[g.event_kind.eq(kind)]
                     for years in (1,3,5):
                         cohort=g[g.onset_day+years*block<=horizon].copy()
-                        selected=cohort.selected & cohort.selection_delay_days.le(years*block)
+                        selected_events=cohort.selected & cohort.selection_delay_days.le(years*block)
                         detected=cohort.criterion_detected & cohort.criterion_delay_days.le(years*block)
                         key=dict(method=method,lifecycle=lifecycle,event_kind=kind,followup_years=years)
                         risksets.append(dict(**key,stable_events=len(g),eligible_events=len(cohort),
-                            selected_within=int(selected.sum()),criterion_within=int(detected.sum()),
-                            selection_fraction=float(selected.mean()) if len(cohort) else np.nan,
+                            selected_within=int(selected_events.sum()),criterion_within=int(detected.sum()),
+                            selection_fraction=float(selected_events.mean()) if len(cohort) else np.nan,
                             criterion_fraction=float(detected.mean()) if len(cohort) else np.nan,
                             contributing_seeds=cohort.seed.nunique()))
                         for seed,sg in cohort.groupby('seed'):

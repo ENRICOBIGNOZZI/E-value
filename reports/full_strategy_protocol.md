@@ -1,3 +1,40 @@
+# Full-strategy study v3 — same economic problem, numerical recovery
+
+Version 2 completed nineteen pilot markets and stopped at seed 50020 before
+its fourth OOS block. The strict OSQP status guard rejected `solved inaccurate`
+after both 30,000 and 300,000 iterations. The preserved two-coordinate QP has
+an epigraph feasibility residual near 4.1e-10, objective gap 3.4e-14, and a
+virtually zero second allocation. No failed market is excluded. The first-ten
+v2 manuscript snapshot is retained as a labeled pilot observation.
+
+Version 3 keeps the economic objective, constraints, thresholds, tolerances,
+seed pools and all statistical rules. Only after both old attempts fail, it
+rebuilds the exact QP with **the whole objective multiplied by 10,000**, expressing
+utility in basis points. It requires `solved` status at the original 1e-10
+absolute/relative settings, then separately checks original-unit stationarity,
+constraint feasibility, complementary slackness, multiplier signs and duality
+gap, each at most 10 times that tolerance. Original-unit certificates are saved.
+Annual and terminal ledgers record every recovery, including evaluator solves.
+This is numerical preconditioning, not a relaxed economic comparison gate.
+
+The preserved failing QP is an input fixture. Regression checks compare its
+recovery with an independent SLSQP solution, check signal permutation, and
+reject deliberately corrupted solver status and KKT certificates. All three
+software markets are regenerated and independently replayed. The full pilot
+pool **50001–50100** must be replayed under the v3 source freeze; reused paths
+are counted once, and v1/v2 outputs remain diagnostics. The representative
+comparison is still seed 50001. Seed 50020 is also checked explicitly because
+it triggered the correction. The untouched final pool **60001–60500** remains
+unexecuted at this freeze. No economic results determine the correction.
+
+Versioned records: `full_v2_failure_audit.json`, `full_v3_results/protocol_frozen.json`,
+`full_test_results_v3.txt`; outputs `outputs/park_revive_full_v3/`. The current
+paper continues to report the first-ten v2 snapshot until v3 evidence is audited.
+
+The earlier freezes and common scientific protocol follow as historical records.
+
+---
+
 # Full-strategy study v2 — arithmetic correction, unchanged economic design
 
 The initial implementation was frozen in commit `a975ef8` before its pilot

@@ -115,7 +115,8 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
         atomic_json(directory/'source_manifest.json',files)
         atomic_json(directory/'config_frozen.json',cfg.to_dict())
         atomic_json(directory/'feature_library.json',serialize_library(market.library))
-        atomic_json(directory/'protocol.json',dict(version='full-strategy-v2',paired_arithmetic='difference-first',
+        atomic_json(directory/'protocol.json',dict(version='full-strategy-v3',paired_arithmetic='difference-first',
+            qp_recovery='fresh objective in basis points; same tolerances; original-unit KKT guard',
             methods=METHODS,numerical_margin=1e-8,
             rank_tolerance=1e-9,catoni=public_envelope(cfg),public_risk=PublicRisk.from_market_contract(cfg).__dict__,
             evaluator_extra_blocks=1,score_format='compressed per-block arrays; order in comparison_order.json'))
@@ -146,7 +147,7 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
         orders={n:[dict(comparison_id=c.comparison_id,candidate=list(c.candidate),
                         reference=list(c.reference_support)) for c in s.comparisons.values()]
                 for n,s in selectors.items()}
-        ledger=[];deployments=[];events=[];decisions=[];ghost_archive={}
+        ledger=[];deployments=[];events=[];decisions=[];ghost_archive={};solver_recoveries=[]
         block_means={c.comparison_id:[] for s in selectors.values() for c in s.comparisons.values()}
         bets={c.comparison_id:min((cfg.delta0 if not c.scores else max(0.,c.mean))/(2*public_envelope(cfg)['nu2']),
                                  1/(2*np.sqrt(public_envelope(cfg)['nu2'])))
@@ -197,6 +198,7 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
                 gap=matched.value-value
                 if gap < -1e-7:raise ArithmeticError('State-matched regret is negative beyond QP tolerance')
                 actual_audits[n]=(value,max(0.,gap))
+            solver_recoveries.extend(dict(optimizer='oracle',day=design.day,**r) for r in exact.recoveries)
             obs,realized_truth=market.step()
             if realized_truth is not truth:raise AssertionError('Prepared truth boundary changed')
             for n,p in all_actual.items():
@@ -246,6 +248,8 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
             state['history'].append(obs.returns.copy())
         end=(year+1)*cfg.block;terminal=year+1==cfg.years
         for ghost in ghosts:ghost.tracker.adjudicate(end,float(np.mean(ghost.means)))
+        for label,optimizer in [('learner',estimated),('ghost',ghost_optimizer),('deployment',deployment_optimizer)]:
+            solver_recoveries.extend(dict(optimizer=label,**r) for r in optimizer.recoveries)
         ghost_optimizer=None
         for n,s in selectors.items():
             chosen=None if state['insolvent'][n] else s.choose()
@@ -282,6 +286,7 @@ def run_seed(cfg,seed,directory,resume=False,stop_after_blocks=None,market_facto
         atomic_json(blockdir/'shortlists.json',shortlists)
         atomic_json(blockdir/'closed_episodes.json',state['closures'])
         atomic_json(blockdir/'ghost_order.json',ghost_order(ghosts))
+        atomic_json(blockdir/'solver_recoveries.json',solver_recoveries)
         if ghost_archive:np.savez_compressed(blockdir/'ghosts.npz',**{k:np.asarray(v) for k,v in ghost_archive.items()})
         for n,archive in archives.items():
             np.savez_compressed(blockdir/f'scores_{n}.npz',**{k:np.asarray(v) for k,v in archive.items() if len(v)})
@@ -322,6 +327,7 @@ def adjudicate_terminal(cfg,state,directory):
                          adjudication_day=(cfg.years+1)*cfg.block))
     atomic_json(directory/'terminal_adjudication.json',rows)
     atomic_json(directory/'terminal_ghost_order.json',ghost_order(ghosts))
+    atomic_json(directory/'terminal_solver_recoveries.json',estimated.recoveries)
     np.savez_compressed(directory/'terminal_ghosts.npz',**{k:np.asarray(v) for k,v in archive.items()})
 
 

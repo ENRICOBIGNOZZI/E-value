@@ -38,5 +38,5 @@
   "solver_tolerance": 1e-10,
   "economic_tolerance": 1e-08,
   "state_matched_oracle": true,
-  "label": "full-strategy-v2-final"
+  "label": "full-strategy-v3-final"
 }
