@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "scalar_reporting_checks": 25,
+  "max_absolute_error": 1.0408340855860843e-17,
+  "diagnostic_report_sha256": "bebd454be84425e5ce126e86ce5ae83e7fc6b38fc7a582d2710e2014eb3cccec",
+  "frozen_analysis_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
+  "scope": "The frozen assessment recomputes all five utility contrasts on the already observed twenty-market pilot and agrees with the independently audited retained table. No new markets, final evidence or pathwise arithmetic replay."
+}

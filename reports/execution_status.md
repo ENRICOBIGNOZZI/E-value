@@ -1,3 +1,39 @@
+# Current continuation — economic analysis frozen before final observations
+
+The new executable analysis is bound to `final_analysis_plan.json` before any
+final-market output exists, after inspecting the first-ten v2 and first-twenty
+v3 pilot results. It is explicitly not a plan registered before the pilot.
+The primary metric remains h-scaled mean OOS quadratic utility, including all
+modeled actual costs and waiting. Comparator priority is now fixed: **Tail
+minus All Signals** is primary; Greedy, HAC, Catoni and Oracle contrasts remain
+secondary. All **500** declared final markets are required, using paired
+market-level means and two-sided pointwise approximate 95% Student MC
+intervals. The plan allows no outcome-dependent sample size, reference,
+direction or seed exclusion. It asserts neither simultaneous coverage nor
+matched actual test size.
+
+The assessment code rejects pilot/partial-final membership, duplicate/missing
+method outcomes, nonfinite utility, changed sealed inputs and wrong scientific
+stage identities. Explicit diagnostic mode labels the old twenty-market prefix
+as a pilot. On that observed prefix it reproduces all five retained utility
+contrasts: **25 reporting checks**, maximum discrepancy 1.05e-17. This adds no
+markets, final observations or pathwise replay checks. Twelve software controls
+pass, including analytic positive/negative paired effects on synthetic fixtures.
+The complete suite has **81 passing tests**. Synthetic fixture IDs never enter
+scientific outputs or replication counts.
+
+No learner, financial model, bet, economic parameter or configured seed pool
+changes. The 100-market pilot remains live; exact counts and the confirmed
+process are retained in `full_v3_results/pilot_live_checkpoint.json`. All
+**500 final markets remain unexecuted**. The **40-page** manuscript and its
+reported financial/controlled results are unchanged in this continuation.
+Frozen scientific source and preserved empirical-input hashes still agree.
+The overall paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — direct prior art for horizon betting
 
 Three direct statistical antecedents now appear in the introduction, the

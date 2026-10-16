@@ -49,9 +49,9 @@
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062"
   },
   "scope": "Financial results remain first-ten v2 pilot snapshot only. First twenty v3 pilot markets independently replayed; continuation running, final 0/500. Separate original lambda experiment, fresh optimized-constant companion, costless vanishing-gain theorem/diagnostic, and directional moment-class theory included. Historical derivations excluded.",
-  "current_repository_tests_passed": 69,
-  "current_repository_test_report": "reports/full_test_results_with_reporting_gate.txt",
-  "tests_passed_scope": "Historical 44-test financial v2 snapshot; current repository additionally includes numerical-recovery, vanishing-gain, horizon-lambda and optimized-constant companion checks. Fourteen subsequent reporting-gate controls are included in the current 69-test suite; the historical financial v2 count remains 44.",
+  "current_repository_tests_passed": 81,
+  "current_repository_test_report": "reports/full_test_results_with_final_assessment.txt",
+  "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 81-test suite additionally includes numerical recovery, vanishing gain, horizon lambda, optimized constants, fourteen reporting-gate and twelve final-assessment checks.",
   "lambda_power_study": {
     "source_freeze_commit": "bbd619f",
     "source_hash": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
@@ -116,5 +116,14 @@
       "https://arxiv.org/html/2605.28653"
     ],
     "scope": "Direct existing statistical deadline-control antecedents cited; working-model Catoni recursion explicitly a specialization. No new deadline-power principle, numerical retuning or comparison against the cited learned/binary designs."
+  },
+  "pre_final_analysis_freeze": {
+    "plan": "reports/final_analysis_plan.json",
+    "plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
+    "analysis": "scripts/assess_final_study.py",
+    "primary": "Tail minus All Signals in h-scaled OOS utility; 500 paired markets; two-sided pointwise approximate 95% Student MC interval.",
+    "timing": "Fixed after observed pilot performance, before final-market output. Not preregistered before pilot.",
+    "diagnostic": "reports/full_v3_snapshots/pilot_020_planned_analysis_diagnostic.json",
+    "scope": "Executable analysis and software controls; no generated final markets, numerical/economic retuning or manuscript result changes."
   }
 }

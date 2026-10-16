@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-10-17T00:46:20.927845+02:00",
-  "confirmed_live_process": "64355 01:49:30   0:00.10 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T00:51:42.979985+02:00",
+  "confirmed_live_process": "64355 01:54:52   0:00.10 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
   "completed_pilot_seeds": [
     50001,
     50002,
@@ -56,7 +56,12 @@
     50019,
     50020,
     50021,
-    50022
+    50022,
+    50023,
+    50024,
+    50025,
+    50026,
+    50027
   ],
   "completed_source_hashes": [
     "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3"
@@ -68,6 +73,6 @@
     "batch_size": 10
   },
   "completed_final_seeds": [],
-  "manuscript_snapshot": "First-ten v2 financial markets remain separately labeled; v3 replays do not add replications.",
-  "scope": "Read-only live checkpoint, not full-pilot completion or another arithmetic replay."
+  "manuscript_snapshot": "First-ten v2 financial table retained; neither repeated pilot snapshots nor software fixtures add replications.",
+  "scope": "Read-only live process checkpoint, not full-pilot completion or a new arithmetic replay."
 }

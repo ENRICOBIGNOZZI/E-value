@@ -1,0 +1,104 @@
+{
+  "complete": true,
+  "kind": "pilot_diagnostic",
+  "markets": 20,
+  "seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50018,
+    50019,
+    50020
+  ],
+  "metric": "annual_scaled_utility",
+  "tested_method": "Tail",
+  "primary": {
+    "reference": "All Signals",
+    "n": 20,
+    "mean_difference": -0.032084797037579035,
+    "standard_error": 0.003282354553274284,
+    "ci_low": -0.03895484407267875,
+    "ci_high": -0.02521475000247932,
+    "zero_observed_standard_error": false,
+    "role": "primary"
+  },
+  "all_contrasts": [
+    {
+      "reference": "All Signals",
+      "n": 20,
+      "mean_difference": -0.032084797037579035,
+      "standard_error": 0.003282354553274284,
+      "ci_low": -0.03895484407267875,
+      "ci_high": -0.02521475000247932,
+      "zero_observed_standard_error": false,
+      "role": "primary"
+    },
+    {
+      "reference": "Greedy",
+      "n": 20,
+      "mean_difference": -0.04030727320522053,
+      "standard_error": 0.0012146596027182341,
+      "ci_low": -0.04284958497162784,
+      "ci_high": -0.03776496143881323,
+      "zero_observed_standard_error": false,
+      "role": "secondary"
+    },
+    {
+      "reference": "HAC",
+      "n": 20,
+      "mean_difference": -0.03875181174248419,
+      "standard_error": 0.0011933582530141644,
+      "ci_low": -0.04124953927156951,
+      "ci_high": -0.03625408421339887,
+      "zero_observed_standard_error": false,
+      "role": "secondary"
+    },
+    {
+      "reference": "Catoni",
+      "n": 20,
+      "mean_difference": 0.012061144166224256,
+      "standard_error": 0.0009609851839775022,
+      "ci_low": 0.01004977906022935,
+      "ci_high": 0.014072509272219163,
+      "zero_observed_standard_error": false,
+      "role": "secondary"
+    },
+    {
+      "reference": "Oracle",
+      "n": 20,
+      "mean_difference": -0.046491669510534114,
+      "standard_error": 0.00097997063524478,
+      "ci_low": -0.04854277162271523,
+      "ci_high": -0.044440567398353,
+      "zero_observed_standard_error": false,
+      "role": "secondary"
+    }
+  ],
+  "confidence_level": 0.95,
+  "analysis_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
+  "snapshot_seal_sha256": "d337c157b827540ecd499c8e7dcdd09e07bbfcf8546820e5e0c1710898f1306f",
+  "limits": [
+    "Primary comparator priority fixed after observing pilot results, before any final-market output.",
+    "Primary and secondary effects concern this fixed simulation law and signal library; no universal method ranking.",
+    "Pointwise Student intervals are approximate Monte Carlo intervals; secondary contrasts are unadjusted.",
+    "Zero observed standard error does not establish zero population uncertainty.",
+    "Common individual nominal level does not match actual size or protect the entire search.",
+    "Portfolio differences do not causally isolate waiting; support and exposure paths also differ.",
+    "Positive one-day deployment gain is not lifetime trade value; method-specific events are not common causal risk sets.",
+    "No new empirical analysis, financial arm, economic parameter or lambda-power substitution."
+  ]
+}

@@ -299,7 +299,8 @@ The reporting contract is `reports/full_reporting_protocol.md`. Sealing
 requires all requested markets, frozen source/configuration identities and
 byte-current independent replay evidence; it rejects incomplete final subsets
 and refuses to overwrite prior seals. The current repository suite has
-**69 passing tests**, including fourteen reporting-gate controls.
+**81 passing tests**, including fourteen reporting-gate controls and twelve
+final-assessment checks.
 
 ```sh
 # Recalculate summaries independently from the original twenty seed CSVs.
@@ -312,3 +313,23 @@ and refuses to overwrite prior seals. The current repository suite has
 # Run only after all 500 separate final markets and replays have finished.
 .venv/bin/python scripts/seal_full_snapshot.py main
 ```
+
+The final economic analysis is fixed in `reports/final_analysis_plan.md` and
+its machine-readable JSON before any final-market output, but after inspecting
+pilot results. It uses all 500 final markets, with Tail-minus-All-Signals
+h-scaled OOS utility as the primary paired contrast. The remaining references
+are secondary, with pointwise approximate Monte Carlo intervals. It reports
+negative comparisons without changing sample membership or the comparator.
+
+```sh
+# Only after the entire pilot, final study and corresponding replays/seal:
+.venv/bin/python scripts/assess_final_study.py \
+  --snapshot reports/full_v3_snapshots/main_500 \
+  --report reports/full_final_assessment.json
+```
+
+The explicit pilot diagnostic at
+`reports/full_v3_snapshots/pilot_020_planned_analysis_diagnostic.json` exercises
+the same analysis on previously observed data; it is not final evidence or an
+additional experiment. Software fixtures with synthetic 500-row market IDs
+exercise membership and arithmetic gates only and are never simulation results.
