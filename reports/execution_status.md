@@ -1,3 +1,35 @@
+# Current continuation — direct prior art for horizon betting
+
+Three direct statistical antecedents now appear in the introduction, the
+horizon-power section and the bibliography: Taga/Oymak/Shekhar (ICML 2026),
+Clerico/Wegel/Azangulov/Rebeschini (2026), and Baas/ter Schure/van Rosmalen
+(2026). The earlier generic reachability citation alone did not describe the
+closest existing work. Primary-source review confirms that deadline-sensitive
+betting and its Bellman formulation are established. The paper now explicitly
+labels its blockwise Catoni recursion a specialization. It does not compare
+against those learned or binary-trial policies and makes no best-available
+power claim. Scope mapping: `horizon_prior_art_audit.md`.
+
+No scientific experiment, economic parameter, test threshold or path is
+changed. All numerical results and the separate first-twenty v3 interim
+snapshot remain intact. The **40-page** manuscript was compiled, rendered and
+reviewed again; changed pages 2, 8 and 40 were inspected individually. No
+clipping, overlap, overfull boxes or unresolved references were found.
+The latest unchanged software suite remains **69 passing tests**.
+
+The 100-market v3 pilot remains live; its exact completed/replayed counts and
+confirmed process are in `full_v3_results/pilot_live_checkpoint.json`. The
+manuscript retains its first-ten v2 financial table. Final evaluation remains
+**0/500**. A read-only storage projection records the observed pilot artifact
+sizes and the runner's existing free-space guard; capacity must be rechecked
+before final launch. This estimate is not a guarantee about future disk usage.
+Empirical inputs and frozen scientific modules retain their original hashes.
+The overall paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — verified twenty-market interim snapshot
 
 A separately sealed first-twenty v3 pilot snapshot, markets **50001–50020**,

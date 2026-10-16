@@ -18,8 +18,8 @@
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
   "pdf_pages": 40,
-  "pdf_sha256": "19f9ee166f46ba2281af3af601970a92428802bf9dee93c9a94d795738a5fbe9",
-  "pdf_visual_qa": "All 40 pages rendered and reviewed on three contact sheets; pages 25, 26, 27 and 36 individually inspected for the frontier theorem, analytic figure, cash-PARK definitions and complete mixture proof. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
+  "pdf_sha256": "ee506a1fee79509e66259c03a3294377665543892e8878cf51bcf45a14012785",
+  "pdf_visual_qa": "All 40 pages rendered and inspected on three contact sheets after direct horizon-betting prior-art attribution. Pages 2, 8 and 40 inspected individually. No clipping, overlap, overfull boxes, duplicate labels or unresolved references; the standard inputenc notice is harmless.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -37,12 +37,12 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "b073cc0f7c17d32f117a7a4aa76e20fd48a2691539762012e5e7b25f5401c4e6",
-    "paper/main.tex": "8d9a9571ce30dc188d9989219a87b1bcef96450413812b55872ec9474a8a54d4",
+    "paper/main.tex": "75f0903f6c6ee346ad0866a7eff817929a69d849b5a0261042487cdd7c2ba9b4",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
     "paper/sections/09_full_strategy.tex": "f0bea802ea29e2dbea981226efffcc5d19864815972b1606e7a5fc15dace97c5",
-    "paper/sections/10_lambda_power.tex": "109efa86863ff91f17e6190b55aa13539b495705c2e4ccfe7e9b22b27f8a537c",
+    "paper/sections/10_lambda_power.tex": "fb2eba2485c11d893b6eda900d8dddcfe166745302f9e163859459785747a880",
     "paper/sections/11_vanishing_gains.tex": "ba648a494769c5c9eb3cfa51732abdfd4c1db3e6e344099d1c8ae2d30d5be38b",
     "paper/sections/12_vanishing_proofs.tex": "3cd300f0f6fed7c381c27ab0be5c17013077d4852d5d057ea774fdf037e4dd32",
     "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
@@ -107,5 +107,14 @@
     "numeric_audit": "reports/full_v3_snapshots/pilot_020_numeric_audit.json",
     "interpretation": "reports/full_v3_snapshots/pilot_020_interpretation.md",
     "scope": "Separate first-twenty v3 interim report; not promoted into the manuscript financial table, not complete pilot/final and not extra same-seed replications."
+  },
+  "horizon_betting_prior_art": {
+    "audit": "reports/horizon_prior_art_audit.md",
+    "sources": [
+      "https://proceedings.mlr.press/v306/taga26a.html",
+      "https://arxiv.org/html/2605.06521",
+      "https://arxiv.org/html/2605.28653"
+    ],
+    "scope": "Direct existing statistical deadline-control antecedents cited; working-model Catoni recursion explicitly a specialization. No new deadline-power principle, numerical retuning or comparison against the cited learned/binary designs."
   }
 }

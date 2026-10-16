@@ -20,7 +20,7 @@ the full objective is complete.
 | Complete and version-consistent report membership | Strict sealed-snapshot gate; fourteen adversarial software controls; independent CSV-based aggregate audit | First-twenty v3 interim snapshot sealed; 3,425 reporting values checked; no premature full-pilot or partial final claim |
 | Full-strategy economic assessment | Six-method v2 protocol frozen; first ten v2 markets reported; v3 recovery verified on the representative and failed market; whole pilot replay running | **Incomplete**; do not require or presume a positive result |
 | Response-independent economic event assessment | New counterfactual continuations retain fast responses; tests and independent software replay pass | Implemented; full-size economic evidence pending; method-specific populations do not give causal delay rankings |
-| Broad prior-art and novelty validation | Primary-source boundary includes sequential forecaster comparison and existing betting methods | **Incomplete**; current contribution is carefully delimited |
+| Broad prior-art and novelty validation | Primary-source boundary includes sequential forecaster comparison and direct 2026 horizon-aware/Bellman testing antecedents | **Incomplete**; current contribution is carefully delimited |
 | Frozen large final study | Original pilot 3 retained; v1 full study superseded; v2 reached 19 completed plus one failed market; v3 recovery verified and full replay running; final 0/500 | **Not executed**; twenty mechanism markets do not fill these counts |
 | Reviewable manuscript and figures | Compiled PDF, numeric table/figure sources, visual QA | Working draft, not a final publication claim |
 

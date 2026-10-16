@@ -109,3 +109,22 @@ second-return-moment frontier. It gives the contamination, sufficiency and
 above-two-moment proofs in full; no new general impossibility, mixture or
 mean-testing principle is claimed. The fixed Laplace financial law is not the
 entire iid moment class appearing in that theorem.
+
+Direct antecedents for the horizon-betting section were subsequently checked:
+
+- [Taga, Oymak and Shekhar (ICML 2026)](https://proceedings.mlr.press/v306/taga26a.html)
+  already use time/evidence state and finite-horizon control for bounded means.
+  Their paper also studies learned betting policies.
+- [Clerico, Wegel, Azangulov and Rebeschini (2026)](https://arxiv.org/html/2605.06521)
+  formulate rejection-time rewards, their Bellman representation and the
+  hard-deadline simple-vs-simple Neyman--Pearson connection.
+- [Baas, ter Schure and van Rosmalen (2026)](https://arxiv.org/html/2605.28653)
+  develop power/expected-sample-size optimal binary clinical-trial designs
+  through dynamic programming.
+
+These are direct statistical antecedents, beyond the generic reachability
+reference. The manuscript now explicitly describes its horizon-power recursion
+as a blockwise Catoni specialization and disclaims a comparison against their
+learned or binary-design policies. Its existing fixed/optimized-constant
+benchmarks do not establish a state-of-the-art power ranking. See
+`horizon_prior_art_audit.md` for the exact scope mapping.

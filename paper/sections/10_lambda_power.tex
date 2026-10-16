@@ -71,7 +71,7 @@ chosen action, independently of earlier blocks. Set
        \int V_{k-1}(\ell+z)Q_\lambda(dz),&\ell<b_\alpha.
  \end{cases}\label{eq:power-bellman}
 \end{equation}
-\begin{proposition}[Working-model horizon power]
+\begin{proposition}[Working-model horizon power: a specialization]
 The recursion gives the largest probability, under the specified working
 model and action class, of crossing at a review within $k$ remaining blocks.
 A maximizing action chosen from the current log capital and remaining time
@@ -88,9 +88,11 @@ maximizer and then the inductively optimal continuation attains it. The
 finite action set permits measurable tie breaking. Each selected action uses
 only pre-block information, so T1 applies separately to the real score law.
 \end{proof}
-This is a standard finite-horizon target-reachability calculation
-\cite{reachability}, specialized to the specified evidence process. The
-computed implementation also discretizes log capital; its numerical maximum
+This uses standard target reachability \cite{reachability}. More directly,
+\cite{taga} studies horizon-aware bounded-mean betting, \cite{clerico} treats
+rejection-time rewards and Bellman optimization, and \cite{baas} optimizes
+finite-horizon binary-trial e-values. The recursion here is a specialization
+to blockwise Catoni factors. The computed implementation also discretizes log capital; its numerical maximum
 is not asserted to be a continuous-control global optimum. A full financial
 score model would also need the evolving estimation and allocation states.
 The scalar stationary calculation below does not supply that model.

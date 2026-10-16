@@ -1,0 +1,134 @@
+{
+  "captured_at": "2026-10-17T00:46:20.927845+02:00",
+  "observed_completed_pilot_markets": 30,
+  "observed_seed_bytes": [
+    {
+      "seed": 50001,
+      "logical_noncheckpoint_bytes": 24798887
+    },
+    {
+      "seed": 50002,
+      "logical_noncheckpoint_bytes": 26369807
+    },
+    {
+      "seed": 50003,
+      "logical_noncheckpoint_bytes": 24865229
+    },
+    {
+      "seed": 50004,
+      "logical_noncheckpoint_bytes": 24733519
+    },
+    {
+      "seed": 50005,
+      "logical_noncheckpoint_bytes": 23338131
+    },
+    {
+      "seed": 50006,
+      "logical_noncheckpoint_bytes": 24647292
+    },
+    {
+      "seed": 50007,
+      "logical_noncheckpoint_bytes": 22467691
+    },
+    {
+      "seed": 50008,
+      "logical_noncheckpoint_bytes": 25429317
+    },
+    {
+      "seed": 50009,
+      "logical_noncheckpoint_bytes": 24461512
+    },
+    {
+      "seed": 50010,
+      "logical_noncheckpoint_bytes": 24907005
+    },
+    {
+      "seed": 50011,
+      "logical_noncheckpoint_bytes": 24049563
+    },
+    {
+      "seed": 50012,
+      "logical_noncheckpoint_bytes": 23605445
+    },
+    {
+      "seed": 50013,
+      "logical_noncheckpoint_bytes": 23679801
+    },
+    {
+      "seed": 50014,
+      "logical_noncheckpoint_bytes": 29065008
+    },
+    {
+      "seed": 50015,
+      "logical_noncheckpoint_bytes": 24813338
+    },
+    {
+      "seed": 50016,
+      "logical_noncheckpoint_bytes": 26541722
+    },
+    {
+      "seed": 50017,
+      "logical_noncheckpoint_bytes": 25826058
+    },
+    {
+      "seed": 50018,
+      "logical_noncheckpoint_bytes": 24954939
+    },
+    {
+      "seed": 50019,
+      "logical_noncheckpoint_bytes": 23261211
+    },
+    {
+      "seed": 50020,
+      "logical_noncheckpoint_bytes": 27010053
+    },
+    {
+      "seed": 50021,
+      "logical_noncheckpoint_bytes": 22734718
+    },
+    {
+      "seed": 50022,
+      "logical_noncheckpoint_bytes": 23778787
+    },
+    {
+      "seed": 50023,
+      "logical_noncheckpoint_bytes": 26711414
+    },
+    {
+      "seed": 50024,
+      "logical_noncheckpoint_bytes": 26896278
+    },
+    {
+      "seed": 50025,
+      "logical_noncheckpoint_bytes": 24235218
+    },
+    {
+      "seed": 50026,
+      "logical_noncheckpoint_bytes": 24937084
+    },
+    {
+      "seed": 50027,
+      "logical_noncheckpoint_bytes": 20610390
+    },
+    {
+      "seed": 50028,
+      "logical_noncheckpoint_bytes": 23467654
+    },
+    {
+      "seed": 50029,
+      "logical_noncheckpoint_bytes": 25831678
+    },
+    {
+      "seed": 50030,
+      "logical_noncheckpoint_bytes": 26685947
+    }
+  ],
+  "mean_seed_logical_bytes": 24823823.2,
+  "max_seed_logical_bytes": 29065008,
+  "uncompleted_pilot_plus_final_markets": 570,
+  "filesystem_free_bytes": 17686482944,
+  "mean_size_projection_remaining_bytes": 14149579224.0,
+  "max_observed_size_projection_remaining_bytes": 16567054560,
+  "existing_runner_per_seed_free_space_reserve_bytes": 2147483648,
+  "scope": "Capacity estimate only, based on completed pilot ledgers excluding regenerable checkpoints. Later market sizes, allocation overhead, in-flight caches and unrelated disk usage can differ. Recheck before final launch; the existing runner stops before a new seed below its free-space reserve. No source/data changes or claim that final execution is complete."
+}
