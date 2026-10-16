@@ -99,6 +99,9 @@ def build_model(cfg,settings):
 def choose(model,remaining,capital):
     position=np.rint((capital-model['states'][0])/float(model['step'])).astype(int)
     position=np.clip(position,0,len(model['states'])-1)
+    # A real subthreshold capital may not inherit the absorbing boundary's
+    # zero bet merely because nearest-grid rounding moves it above threshold.
+    position=np.where(capital<model['states'][-1],np.minimum(position,len(model['states'])-2),position)
     lam=model['actions'][model['policy'][remaining,position]]
     # The computational lower boundary is absorbing, rather than silently extrapolated.
     return np.where(capital<model['states'][0],0.,lam)
@@ -150,7 +153,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('stage',choices=('build','evaluate'))
     parser.add_argument('--config',type=Path,default=Path('configs/lambda_power.json'))
-    parser.add_argument('--output',type=Path,default=Path('outputs/lambda_power_v1'))
+    parser.add_argument('--output',type=Path,default=Path('outputs/lambda_power_v2'))
     args=parser.parse_args();cfg=json.loads(args.config.read_text());args.output.mkdir(parents=True,exist_ok=True)
     source_hash=hashlib.sha256(Path(__file__).read_bytes()).hexdigest();started=time.perf_counter()
     if args.stage=='build':

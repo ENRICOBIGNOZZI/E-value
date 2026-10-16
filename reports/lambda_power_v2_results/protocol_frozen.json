@@ -1,0 +1,94 @@
+{
+  "version": "catoni-finite-horizon-power-v2",
+  "scientific_replay_executed_at_freeze": false,
+  "seed": 440001,
+  "source_files": {
+    "configs/lambda_power.json": "66fe5692ab906b2a91eef67008086f8da70053b80e9134e1457d8dad1191fdd2",
+    "scripts/lambda_power_study.py": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
+    "reports/lambda_power_protocol.md": "771db224e95e3c882f9c31fda676f82e65f2c2b088dd757e1c421543d2e022eb",
+    "reports/lambda_power_theory.md": "9215152f3625d2cd533ed6cd5f1f90b2ccf7be9b948123996793506bd708b473"
+  },
+  "model_files": {
+    "model_refinement.npz": "43c1db3ff739e6f81683308f54c79f9829170f9268671f7e2ede60171396dca9",
+    "model_primary.npz": "db28becd173022bc40416ee648fcea6ea2506f3437084cea32a9a6c21320e6bb"
+  },
+  "model_manifest": {
+    "config": {
+      "label": "catoni-finite-horizon-power-v2",
+      "seed": 440001,
+      "replications": 20000,
+      "alpha": 0.05,
+      "block": 100,
+      "horizon_blocks": [
+        4,
+        8,
+        16
+      ],
+      "score_means": [
+        0.0,
+        0.1,
+        0.2,
+        0.3
+      ],
+      "score_sd": 1.0,
+      "public_second": 1.09,
+      "design_mean": 0.1,
+      "initial_gain": 0.1,
+      "cap_multiplier": 0.5,
+      "increment_range": 64.0,
+      "gaussian_tail_sd": 12.0,
+      "numerical_power_tolerance": 0.005,
+      "models": {
+        "primary": {
+          "step": 0.01,
+          "lower": -18.0,
+          "actions": 129
+        },
+        "refinement": {
+          "step": 0.005,
+          "lower": -24.0,
+          "actions": 257
+        }
+      },
+      "audit_path_prefix": 16
+    },
+    "source_sha256": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
+    "audits": {
+      "primary": {
+        "daily_radius": 328,
+        "block_radius": 6400,
+        "maximum_daily_tail": 0.0,
+        "maximum_block_tail": 3.909353511253965e-13,
+        "maximum_mass_error": 1.1435297153639112e-14
+      },
+      "refinement": {
+        "daily_radius": 654,
+        "block_radius": 12800,
+        "maximum_daily_tail": 0.0,
+        "maximum_block_tail": 5.421286716843427e-13,
+        "maximum_mass_error": 2.1538326677728037e-14
+      }
+    },
+    "initial_power": {
+      "primary": {
+        "400": 0.37272983454188224,
+        "800": 0.7299628100778027,
+        "1600": 0.9693617832916998
+      },
+      "refinement": {
+        "400": 0.37233467952386273,
+        "800": 0.7298788029341311,
+        "1600": 0.9695286163497531
+      }
+    },
+    "max_refinement_difference": 0.0003951550180195107,
+    "log_growth_bet": 0.09080199172897861
+  },
+  "software_checks_passed": 4,
+  "v1_v2_model_comparison": {
+    "primary": "all model arrays bitwise identical to v1",
+    "refinement": "all model arrays bitwise identical to v1"
+  },
+  "change_reason": "Subthreshold capitals cannot be rounded into the absorbing threshold state. Same entire controlled pool replayed, no parameter retuning or exclusion.",
+  "full_financial_source_changed": false
+}

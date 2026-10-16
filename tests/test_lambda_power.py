@@ -60,3 +60,10 @@ def test_bets_precede_scores_and_do_not_use_actual_alternative_mean():
                     factors.append(np.where(x>=0,base,1/base)*np.exp(-lam*lam*cfg['public_second']/2))
                 capital[j]+=np.log(np.prod(factors,axis=0))
             np.testing.assert_allclose(capital,result['log_capital'][k+1],atol=1e-13)
+
+
+def test_nearest_grid_rounding_cannot_absorb_a_subthreshold_capital():
+    model=dict(states=np.array([-1.,0.,1.]),actions=np.array([0.,.1,.2]),
+               policy=np.array([[0,0,0],[2,1,0]],dtype=int),step=np.array(1.))
+    bets=module.choose(model,1,np.array([.50001,.999999999,1.]))
+    np.testing.assert_array_equal(bets,np.array([.1,.1,0.]))

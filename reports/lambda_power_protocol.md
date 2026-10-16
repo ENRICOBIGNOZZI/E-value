@@ -1,3 +1,24 @@
+# Version 2 numerical correction — full replay, unchanged power design
+
+The initial version is superseded. Its nearest-grid lookup mapped real capital
+within half a grid step below the threshold into the absorbing boundary state,
+which chose lambda=0. This froze unrejected paths just below the threshold.
+At the design alternative and horizon 1600, 571 of 20,000 primary-grid paths
+ended in this dead zone. Independent predicted-versus-observed checking exposed
+the discrepancy. All v1 outputs and diagnostics are retained in
+`lambda_power_v1_diagnostics/`; they are not extra independent replications.
+
+Version 2 clamps every strictly subthreshold real capital to a nonabsorbing
+state. A regression test covers the boundary. The Bellman model arrays,
+actions, distributions, thresholds, horizons, cap and design alternative remain
+unchanged. The complete same seed-440001 stream is replayed once under the
+corrected implementation. No failing path is removed or economic parameter
+tuned; the full financial source remains unchanged. Four software checks pass.
+The current output is `outputs/lambda_power_v2/` and reported artifacts are
+`reports/lambda_power_v2_results/`. The original pre-evaluation protocol follows.
+
+---
+
 # Pre-evaluation freeze: selecting lambda for finite-horizon power
 
 This study responds to the user's request to select lambda to maximize power.

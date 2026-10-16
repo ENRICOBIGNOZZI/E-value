@@ -1,0 +1,20 @@
+{
+  "version": "catoni-finite-horizon-power-v1",
+  "source_commit": "037eca0",
+  "failure": "Nearest-state mapping could send subthreshold real capital into the absorbing threshold grid state, selecting lambda=0 and never crossing.",
+  "correction": "Clamp the index of every strictly subthreshold real capital to the last nonabsorbing grid state. Do not change action grids, working alternative, horizon, cap, score laws or evaluation paths.",
+  "diagnostic_law_mean": 0.1,
+  "artifact_sha256": {
+    "model_refinement.npz": "43c1db3ff739e6f81683308f54c79f9829170f9268671f7e2ede60171396dca9",
+    "model_primary.npz": "db28becd173022bc40416ee648fcea6ea2506f3437084cea32a9a6c21320e6bb",
+    "mean_0.npz": "a0da3e30004d7e80e2a67a4602ace0dee07c279e1e58f678e074e35ffa40d490",
+    "mean_0.2.npz": "34fbe2c2f4b43701e38f63cccba4cedfae6d8e1090e5324ac48c0935fb0998d1",
+    "mean_0.3.npz": "fd981a9dc3e048ada8a55bf86bea46c304902fbbe0798b11da2b009b390854cb",
+    "mean_0.1.npz": "482b776a9e4797a1028f8e3462a0e551fea03ccf2186600c10a138fb886216f4"
+  },
+  "all_paths_retained": true,
+  "whole_declared_stream_replayed": true,
+  "additional_independent_replications": 0,
+  "financial_source_changed": false,
+  "unrejected_primary_H1600_paths_within_half_grid_step_of_threshold": 571
+}
