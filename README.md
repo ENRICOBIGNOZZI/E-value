@@ -122,3 +122,28 @@ The original `true_current_mean` event field describes the last evaluated
 pre-return shadow gain. A separate post-hoc deployment audit values the next
 action from the real zero allocation, pays its entry cost and draws no next
 return; it is not a post-entry fund performance result.
+
+## Full-strategy extension
+
+`research/park_revive_full/` adds a separate six-method study, preserving both
+frozen packages. Its actual funds include waiting in cash, post-entry returns
+and actual transition costs. Economic opportunity labels use counterfactual
+continuations after early closures, so fast responses remain in the risk set.
+The protocol and fresh seed pools are in
+[`reports/full_strategy_protocol.md`](reports/full_strategy_protocol.md).
+The software checks do not count as financial pilot markets.
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_smoke.json --output outputs/park_revive_full_v1/software_audited --seeds 51001 51002 51003
+.venv/bin/python scripts/verify_full_strategy.py --output outputs/park_revive_full_v1/software_audited
+# First full-size pilot block; resume the same seed to complete its horizon.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v1/pilot --seeds 50001 --stop-after-blocks 1
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/run_full_strategy.py --config configs/full_pilot.json --output outputs/park_revive_full_v1/pilot --seeds 50001 --resume
+```
+
+The arithmetic verifier independently reconstructs fund and paired utility,
+turnover costs, pre-return geometric certificates, Catoni bets and the nine
+tail betting capitals from saved weights and replayed market returns. It also
+checks the evaluator-only continuations. It loads no checkpoint or test-process
+state. This verifies numerical consistency, not global testing control or
+economic superiority.

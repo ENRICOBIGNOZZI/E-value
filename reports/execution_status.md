@@ -1,3 +1,14 @@
+# Full-strategy continuation — implementation frozen before pilot markets
+
+The isolated `research/park_revive_full` implementation adds actual post-entry
+fund paths for six methods and response-independent opportunity adjudication.
+Three software markets, seeds 51001–51003 at 12 stocks / 4-day blocks / 4 years,
+completed. Independent arithmetic replay checked 73,656 scalar values and 276
+ghost pairs. Maximum evidence discrepancy was 8.89e-16; costs matched exactly.
+These are software checks, not full-size pilot results. The first measured
+full-size pilot seed is 50001; its 100-seed pool and the fresh final pool remain
+separately declared. See `full_strategy_protocol.md` and `full_test_results.txt`.
+
 # Latest research continuation — 16 October 2026
 
 Scope remains **theory and simulations only**. The baseline package and original

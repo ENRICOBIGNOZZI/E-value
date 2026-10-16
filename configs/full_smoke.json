@@ -1,0 +1,42 @@
+{
+  "n_assets": 12,
+  "n_features": 30,
+  "n_signals": 100,
+  "block": 4,
+  "years": 4,
+  "gamma": 5.0,
+  "proportional": 0.0001,
+  "impact": 0.0001,
+  "leverage": 1.0,
+  "shrinkage": 0.1,
+  "ridge": 1e-08,
+  "alpha": 0.05,
+  "delta0": 0.0001,
+  "base_theta": 0.0002,
+  "theta_cap_multiple": 2.0,
+  "revive_low_fraction": 0.05,
+  "feature_rho": 0.97,
+  "feature_correlation": 0.6,
+  "coefficient_half_life": 126.0,
+  "transition_probability": 0.000992063492063492,
+  "factor_scales": [
+    0.009,
+    0.004,
+    0.004,
+    0.004
+  ],
+  "idio_scale": 0.012,
+  "stress_multiplier": 1.5,
+  "beta_bounds": [
+    1.5,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "design_seed": 74021,
+  "swap_top": 10,
+  "solver_tolerance": 1e-10,
+  "economic_tolerance": 1e-08,
+  "state_matched_oracle": true,
+  "label": "full-strategy-v1-software"
+}
