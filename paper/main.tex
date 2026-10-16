@@ -83,6 +83,10 @@ its individual 5\% guarantee is therefore not a 5\% guarantee for the entire
 search. Nor does an episode rejection certify that a previously profitable
 signal remains profitable in the current regime.
 
+An explicit counterexample below makes this distinction operational: an
+annual decision can pass both the evidence threshold and the positive-history
+filter while the current gain is negative.
+
 \section{The economic object}
 Let $A_{t+1}\in\mathbb R^p$ be next-period gross returns of observable signal
 sleeves. The information $\F_t$ contains characteristics, realized returns,
@@ -212,6 +216,44 @@ benchmark is sequentially valid inference versus repeated uncorrected
 fixed-time inference, rather than e-values versus every possible p-value
 procedure. The operational decision uses current annual evidence, not a stale
 historical maximum.
+
+\begin{proposition}[Episode evidence does not certify the current sign]
+Even with a valid moment bound and positive episode mean, an annual rejection
+can occur when the current conditional gain is negative.
+\end{proposition}
+\begin{proof}
+Consider a deterministic 252-date episode, with $Y_t=1/2$ for the first 200
+dates and $Y_t=-1/2$ for the remaining 52. The valid second-moment bound
+$\nu^2=1$ and a predeclared first-block bet $\lambda=.1$ give
+$L_{252}=148\phi(.05)-252(.1)^2/2>6>\log20$.
+The episode mean is $74/252>0$, but
+$\E[Y_{252}\mid\F_{251}]=-1/2$. The episode null is false, so T1 is not
+violated; the interpretation as a certificate of current benefit fails.
+\end{proof}
+
+The issue is more fundamental for prospective certification without any
+restriction relating the past to the next period.
+\begin{proposition}[A limit under unrestricted nonstationarity]
+Fix a decision date $t$ and a class of laws closed under replacing the next
+score by zero while preserving the law of $\F_t$. Let a decision
+$D_t\in\{0,1\}$ be $\F_t$-measurable. If
+$\Prb_Q(D_t=1)\le\alpha$ for every law $Q$ in the class satisfying
+$\E_Q[Y_{t+1}\mid\F_t]\le0$, then
+$\Prb_P(D_t=1)\le\alpha$ for every law $P$ in the class, including
+alternatives with positive next-period gain.
+\end{proposition}
+\begin{proof}
+For any $P$, construct $Q$ with the same distribution on $\F_t$ and
+$Y_{t+1}=0$. This replacement respects any positive upper second-moment bound.
+The prospective null holds under $Q$. Since $D_t$ depends only on the shared
+history, $\Prb_P(D_t=1)=\Prb_Q(D_t=1)\le\alpha$.
+\end{proof}
+The closure condition deliberately permits unrestricted changes; it need not
+hold in the specified persistent DGP. The proposition identifies why a
+uniformly informative certificate of next-period benefit requires temporal
+structure or a different inferential target. It is not a failure of the
+episode-wide guarantee in T1, and no novelty claim is attached to this basic
+observational-equivalence argument.
 
 \section{Power and predictable betting}
 Work in local episode time with blocks of $h$ observations and constant bound

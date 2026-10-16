@@ -18,8 +18,8 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -e '.[test]'
 .venv/bin/python -m pytest -q
 .venv/bin/python -m park_revive.cli audit
-.venv/bin/python -m park_revive.cli simulate --config configs/smoke.json --stage smoke --seeds 101 102 103 --output outputs/park_revive_v1/smoke
-.venv/bin/python -m park_revive.cli report --output outputs/park_revive_v1/smoke
+.venv/bin/python -m park_revive.cli simulate --config configs/smoke.json --stage smoke --seeds 101 102 103 --output outputs/park_revive_v1/frozen_smoke
+.venv/bin/python -m park_revive.cli report --output outputs/park_revive_v1/frozen_smoke
 ```
 
 An existing run requires `resume` in place of `simulate`. Checkpoints are local
@@ -34,10 +34,12 @@ when replaying that block. Completed seed directories are used by the report.
 # Resume or extend the 100-seed pilot.
 .venv/bin/python scripts/run_stage.py pilot
 # Separate controlled null/power diagnostics, not additional financial DGPs.
-.venv/bin/python -m park_revive.cli statistics --output outputs/park_revive_v1/pilot
-.venv/bin/python -m park_revive.cli report --output outputs/park_revive_v1/pilot
+.venv/bin/python -m park_revive.cli statistics --output outputs/park_revive_v1/frozen_pilot
+.venv/bin/python -m park_revive.cli report --output outputs/park_revive_v1/frozen_pilot
+# Export hidden simulation truth separately, verifying every replayed return.
+.venv/bin/python scripts/export_truth.py --output outputs/park_revive_v1/frozen_pilot
 # Compile the paper after completed pilot results exist; requires Tectonic.
-.venv/bin/python scripts/build_paper.py --results outputs/park_revive_v1/pilot
+.venv/bin/python scripts/build_paper.py --results outputs/park_revive_v1/frozen_pilot
 # Planned final 500 fresh seeds, not a claim that these have been executed.
 .venv/bin/python scripts/run_stage.py main
 ```

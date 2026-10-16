@@ -1,0 +1,25 @@
+{
+  "commit": "971510be3d34cda75a83661d09ddf3012097f1cc",
+  "working_tree_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_sha256": {
+    "src/park_revive/__init__.py": "f7bb357fcb8ecfe616bc4a1a396cc50179f9c997f8d2e138a1c0eb722fe7b24e",
+    "src/park_revive/backtest.py": "05b757b9f59e011ec6fdf3b18b83c23f0584c4d29562d2e23ca7a9d3495718fa",
+    "src/park_revive/cli.py": "d8ea0b3b0f0821af55f6cfd458941791c26bba60e52ae736309001894f053a8a",
+    "src/park_revive/comparisons.py": "4a9203304d0c8f50dac00e46c41a24293646de6aaf926215b01424b8048337ed",
+    "src/park_revive/config.py": "2c71af93fc9d36d9cdc79998e619464495494bdab83b0a2e2d4bd857fa4ec03a",
+    "src/park_revive/costs.py": "8e47c027dfc30742bf74c2d2b6d1ffe06d29dafc86feccadc77c08b70bd50299",
+    "src/park_revive/dgp.py": "19b1ed74334e8dc0ce3edbddd1b5db5a1a165f647eca0d5a4c5e9f2c109f4b77",
+    "src/park_revive/eprocess.py": "6a32e38ad1119a4266c6f8627a419073cab659860cfd964d5e76548b3f80e4a1",
+    "src/park_revive/experiments.py": "882b20c4791e5971ddefb4f0ac9129455e97aece48a28d80bc033f51fc61886f",
+    "src/park_revive/features.py": "f18767a4659b4c8298a8f7451a8a54f85dfa9ac735aee97f0641755bd076b123",
+    "src/park_revive/metrics.py": "10edb3549fdc94b4aefe2dda422201079ae9bd97080d7872bcf03858308d940b",
+    "src/park_revive/optimizer.py": "a3a71a9f419b9fe408e44ffd8723521847a81dc564b621b8cae675656f69a9a9",
+    "src/park_revive/oracle.py": "9964098a7e255b6649e1662be59f8110ba7c72c9b7b00d05bb6e2d33c7708c59",
+    "src/park_revive/policies.py": "40c38ed387e6f4276f0810806afb31b0691a7f05ff8f1c7b67eeb4592ab63be7",
+    "src/park_revive/pvalues.py": "0f0a4387243ef7b91ed24d2640f76256fcc8195d54d7a275d8c8ef3c622a9582",
+    "src/park_revive/reporting.py": "c53d777b395f46e04524716629e361ec7e0833e4383dc91ea5abe8f9929ce541",
+    "src/park_revive/selection.py": "030714150bd3f15c64e77309140ba505a75c193eee7fd32d543a2b849e0f0ec0",
+    "src/park_revive/sleeves.py": "9b5427753d4df0c5144c2887c148992d9a89c8f38e5b80fef88f9686c3658a05"
+  },
+  "config_sha256": "0e92b451843cf3c91f6ce74fe3b04b91c1638ab335992e31e74729571260d1c7"
+}

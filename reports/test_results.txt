@@ -1,0 +1,5 @@
+Python 3.13.3; local virtual environment
+Command: .venv/bin/python -m pytest -q
+Result: 23 passed in 24.34s
+
+Includes: T1 null calibration; T2 algebra/MSE; T3 independent optimizer; T4 moment perturbations; conditional Laplace moments; causal future perturbation; exact checkpoint replay; stable column permutation; structural zeros; own-state costs; insolvency absorption; current-sign counterexample.

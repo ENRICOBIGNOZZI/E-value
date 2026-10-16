@@ -156,3 +156,18 @@ def test_hac_degenerate_and_past_dependence():
 def test_invalid_moments_fail_explicitly():
     with pytest.raises(ValueError):Optimizer(Config(),np.zeros(2),np.diag([1.,-1.]))
     with pytest.raises(ValueError):Config(proportional=-.1)
+
+
+def test_rejection_does_not_certify_current_sign():
+    scores=np.r_[np.full(200,.5),np.full(52,-.5)]
+    loge=np.sum(phi(.1*scores)-.1**2/2)
+    assert loge>np.log(20) and scores.mean()>0 and scores[-1]<0
+
+
+def test_no_trade_with_active_leverage_uses_normal_cone():
+    cfg=replace(Config(),gamma=1.,proportional=.1,impact=.1,leverage=1.)
+    m=np.array([[.1]]);b=np.array([1.])
+    positive=Optimizer(cfg,np.array([1.]),m).solve((0,),b)
+    np.testing.assert_array_equal(positive.weights,b)
+    negative=Optimizer(cfg,np.array([-1.]),m).solve((0,),b)
+    assert negative.weights[0]<0

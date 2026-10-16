@@ -68,3 +68,9 @@ Primary sources checked on 16 October 2026:
 The contribution currently supported is an explicit integration and audit of
 economic policy comparisons, predictable betting and state-aware selection.
 A publication-level novelty claim still needs a broader literature review.
+
+The rebuilt manuscript also gives a deterministic counterexample: annual
+rejection and a positive historical score mean can coexist with a negative
+current conditional gain. This establishes an interpretation limit, not a new
+type-I-error failure. See `reports/design_assessment.md` for its numerical values
+and the conservative sufficient-horizon calculations.

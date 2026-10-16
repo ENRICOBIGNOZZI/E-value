@@ -1,14 +1,98 @@
 # Execution status — 16 October 2026
 
-Scope: theory and simulations. No empirical analysis or data acquisition.
+The repository was rebuilt for **theory and simulations only**. The manuscript is
+an executed working draft, not a completed publication or a claimed 10/10 paper.
 
-- Rebuilt from the supplied handoff on `codex/park-revive-20261016`.
-- Preserved data documentation, historical source manifest and acquisition script byte-for-byte.
-- Raw empirical archives are absent from the fresh clone.
-- 21 tests pass, including future perturbation, exact checkpoint replay, independent Laplace moments, constrained optimizer, structural nulls and insolvency absorption.
-- Three development smoke seeds (101–103) completed; results are software checks only.
-- A development pilot is separate from the frozen implementation; its partial runs are not final evidence.
-- Full-dimensional frozen pilot and updated controlled statistical diagnostics are in progress.
-- The final 500-seed evaluation is specified, not executed.
+## Preservation and repository
 
-The manuscript is a working draft. No claim of paper completion, publication readiness, global 5% error control or method superiority is made.
+- Branch: `codex/park-revive-20261016`.
+- Frozen simulation implementation commit: `971510b` (full source hashes in each seed's `source_manifest.json`).
+- Original commit and remote archive: `db5c37ab3e23a7818869d32ba35f22d51c3a89b2`, `origin/archive/pre-rebuild-20261016`.
+- Additional original-tree ZIP: `../E-value-pre-rebuild-20261016.zip`.
+- `data/README.md`, `data/source_manifest_20261006.json` and `experiments/fetch_jkp.py` retained byte-for-byte; SHA-256 audit passes.
+- Raw JKP archives are **absent** from the fresh clone. No empirical input acquired or modified, no empirical analysis performed.
+- Local commits only; no push, merge, force push or history rewrite.
+
+## Verified
+
+- **23 tests passed**, including future-data perturbations of weights, evidence,
+  shortlist and decisions; exact checkpoint replay; independent conditional
+  Laplace moments; T1–T4 checks; stable identifier permutation; exact structural
+  nulls; own-state costs; and explicit insolvency absorption.
+- The provided handoff's SHA-256 checks all pass.
+- Frozen simulation source hashes match all three reported pilot runs.
+- Replayed **every one of 3,780 dates for each pilot seed**, checking all 100
+  sleeve returns exactly against the saved history, then exported hidden truth
+  separately. The learner never consumes those truth files.
+- Recorded maximum primal residual = 2.13e-8, dual residual < 1.00e-8, and solver
+  duality gap < 9.62e-9 across reported actual policies.
+- PDF compiled with Tectonic; all 13 pages rendered for visual inspection;
+  references resolve and the log has no overfull boxes.
+
+## Actually executed
+
+| Stage | Completed | Scope |
+|---|---:|---|
+| Frozen smoke | 3: seeds 101, 102, 103 | N=40, p=100, h=12, 4 years; software checks |
+| Frozen pilot | **3/100**: seeds 20001, 20002, 20003 | N=500, p=100, h=252, 15 years |
+| Controlled statistical study | 10,000 independent replications per case | delta=0, .1, .2, .3; 1,600 observations; seed 910001 |
+| Final evaluation | **0/500** | Specified in `configs/main.json`; not started |
+| Empirical | 0 | Explicitly outside current scope |
+
+Development smoke/pilot runs in `outputs/park_revive_v1/smoke` and `.../pilot`
+are excluded from the reported frozen evidence. They include reused markets
+and do not add independent replications.
+
+## Main finding
+
+The certified E-process makes **zero support changes in 3/3 full pilot paths**
+and is inactive throughout OOS. Its largest annual current log evidence is
+**0.00657515**, compared with log(20)=2.99573227. The public constant is
+nu²=0.01321480686738281, approximately **68,914 times** the pooled mean true score
+second moment. This ratio pools executed comparisons, not just E-process tests.
+No bound, threshold or seed was adjusted to manufacture entry.
+
+The stationary null experiment gives adaptive crossing 0.0036 (Wilson interval
+0.002602–0.004980) and repeated uncorrected Bartlett-HAC crossing 0.1894. These
+are individual-episode diagnostic laws, not financial performance comparisons;
+the procedures do not have matched overall type-I error.
+
+Observed complete seed wall times were 552.7–615.2
+seconds while three pilot processes ran concurrently. No jobs remain running.
+
+The paper adds a deterministic example where rejection coexists with negative
+current gain and an observational-equivalence limit for prospective testing
+under unrestricted nonstationarity. Neither is claimed as a new general theorem.
+
+## Artifacts
+
+- Manuscript: `paper/main.tex`, `paper/main.pdf` (13 pages).
+- Small numeric snapshots and provenance: `reports/results/`.
+- Frozen full ledgers, score histories, truth and figures: `outputs/park_revive_v1/frozen_pilot/`.
+- Frozen smoke output: `outputs/park_revive_v1/frozen_smoke/`.
+- Assumptions and scientific diagnosis: `reports/theory_audit.md`, `reports/design_assessment.md`.
+- Main run files: metrics_by_seed.csv, paired_comparisons.csv, daily_ledger.parquet,
+  comparison_events.parquet, decisions.csv, detection.csv, runtime.csv,
+  config_frozen.json, seed_manifest.json, environment.txt; each seed also has
+  score ledgers, evaluator_truth.parquet, annual checkpoints and source hashes.
+
+## Continue exactly
+
+```sh
+# Resume existing completed seed or continue an interrupted run, without double counting:
+.venv/bin/python scripts/run_stage.py pilot --count 3
+# Remaining registered pilot seeds (not yet executed):
+.venv/bin/python scripts/run_stage.py pilot --start 3 --count 97
+# Final fresh evaluation, not yet executed:
+.venv/bin/python scripts/run_stage.py main
+# Refresh report, truth export and manuscript:
+.venv/bin/python -m park_revive.cli report --output outputs/park_revive_v1/frozen_pilot
+.venv/bin/python scripts/export_truth.py --output outputs/park_revive_v1/frozen_pilot
+.venv/bin/python scripts/build_paper.py
+```
+
+Scientifically, a much larger unchanged experiment cannot by itself repair the
+observed feasibility problem. The next research work is a tighter genuinely
+certified comparison-level envelope and an explicit target for regime-changing
+benefits. No replacement design was silently introduced; it would require new
+assumptions, proofs, named configuration and fresh evaluation seeds.

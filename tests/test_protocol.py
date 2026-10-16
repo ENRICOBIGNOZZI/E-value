@@ -122,6 +122,8 @@ def test_checkpoint_resume_and_future_perturbation(tmp_path):
     pd.testing.assert_frame_equal(a[a.day<2*cfg.block].reset_index(drop=True),c[c.day<2*cfg.block].reset_index(drop=True))
     for filename in ('shortlists.csv','decisions.csv'):
         pd.testing.assert_frame_equal(pd.read_csv(full/'block_01'/filename),pd.read_csv(changed/'block_01'/filename))
+    pd.testing.assert_frame_equal(pd.read_parquet(full/'block_01/score_ledger.parquet'),
+                                 pd.read_parquet(changed/'block_01/score_ledger.parquet'))
     scores=pd.read_parquet(full/'block_01/score_ledger.parquet')
     for method in ('E-process','Repeated-HAC-p'):
         values=scores[scores.method.eq(method)].sort_values(['comparison_id','day']).y.to_numpy()
