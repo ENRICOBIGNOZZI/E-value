@@ -1,3 +1,47 @@
+# Current continuation — live automatic pilot-to-final workflow
+
+A live supervisor now observes the existing pilot PID **64355** and will
+continue the frozen study after all **100** pilot markets finish. The actual
+controller process is confirmed in
+`full_v3_results/continuation_checkpoint.json`; it is currently waiting for
+the pilot, not generating final data. No pilot or market job was restarted.
+Two initial waiting observers were replaced during development to harden
+transient process observations and pin the entire committed analysis plan;
+neither had launched a final market. Only the final tested controller remains.
+
+The continuation requires exact completion membership, unchanged scientific
+source/configurations and the original analysis-plan bytes committed at
+**c7f7275**. After independent pilot replay/sealing and report audit/assessment,
+it starts all **500** final markets with the existing two-worker and batch-ten
+settings. It checks for an already active final runner. Economic signs,
+interval widths and event counts cannot trigger retuning or sample selection.
+Observation failures retry the same still-live or unconfirmed handle; real
+execution failures stop the continuation and preserve the data. The final
+stage must independently replay, seal and assess every requested market.
+Its terminal success phase leaves manuscript synthesis outstanding and does
+not mark the overall paper goal complete.
+
+Nineteen meaningful software controls pass, including a real process lock,
+partial/stale completion evidence, changed source/configuration/analysis,
+changed comparator with otherwise matching fields, PID reuse, transient
+observation failure, no observer restart and immutable assessment reuse.
+The complete suite has **100 passing tests**. These are software controls,
+not new market replications or statistical power estimates. The waiting
+supervisor uses only standard-library imports; heavy reporting libraries load
+after the pilot, limiting idle memory overhead.
+
+Exact live counts remain in `full_v3_results/pilot_live_checkpoint.json`.
+Final evaluation is still **0/500**. The **40-page** manuscript and all numerical
+scientific results are unchanged in this continuation, retaining the separate
+first-ten v2 financial snapshot. Frozen scientific, original controlled-study,
+analysis-plan and empirical-input hashes still match. The overall paper goal
+remains active and incomplete. The workflow is documented in
+`full_continuation_protocol.md`; it neither publishes nor pushes Git changes.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — realized utility cost of waiting
 
 The costless Gaussian cash-PARK result now explicitly covers **realized

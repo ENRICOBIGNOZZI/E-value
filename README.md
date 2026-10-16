@@ -299,8 +299,8 @@ The reporting contract is `reports/full_reporting_protocol.md`. Sealing
 requires all requested markets, frozen source/configuration identities and
 byte-current independent replay evidence; it rejects incomplete final subsets
 and refuses to overwrite prior seals. The current repository suite has
-**81 passing tests**, including fourteen reporting-gate controls and twelve
-final-assessment checks.
+**100 passing tests**, including fourteen reporting-gate controls, twelve
+final-assessment checks and nineteen continuation controls.
 
 
 ```sh
@@ -350,3 +350,18 @@ See `reports/vanishing_gain_results/realized_benefit_interpretation.md` for the
 fixed-horizon numbers and the distinction from expected stopped costs. The
 updated theory audit has 156 finite deterministic checks; it is not an
 asymptotic proof or a new Monte Carlo study.
+
+## Automatic pilot-to-final continuation
+
+`scripts/continue_full_study.py` observes the existing live pilot, verifies and
+seals all 100 markets, then runs the fixed 500-market final pool and audits its
+reports. It starts no duplicate pilot, applies no outcome-dependent gate and
+preserves the existing two-worker/thread settings. Scientific source and final
+analysis choices remain frozen. Errors stop the continuation rather than
+excluding markets. The terminal phase leaves manuscript synthesis outstanding.
+
+The recorded launch and exact process/provenance gates are documented in
+`reports/full_continuation_protocol.md`. Live state is in
+`outputs/park_revive_full_v3/continuation_status.json`; confirm its PID is
+actually alive before relying on it. The retained checkpoint is
+`reports/full_v3_results/continuation_checkpoint.json`.

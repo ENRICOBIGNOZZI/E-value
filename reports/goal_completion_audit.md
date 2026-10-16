@@ -19,6 +19,7 @@ the full objective is complete.
 | Reproducible numerical evidence | Saved score/certificate ledgers, independent vectorized replay, checkpoints, source/configuration hashes | Audited separately from proof validity |
 | Complete and version-consistent report membership | Strict sealed-snapshot gate; fourteen adversarial software controls; independent CSV-based aggregate audit | First-twenty v3 interim snapshot sealed; 3,425 reporting values checked; no premature full-pilot or partial final claim |
 | Analysis fixed before final observations | Machine-readable final analysis plan, source hash and executable complete-sample assessment; explicit pilot diagnostic agrees with retained contrasts | Frozen after pilot inspection, before final outputs; final economic evidence still missing |
+| Continue complete experiment without manual relaunches | Live controller attached to the existing pilot; source/plan gates, complete-sample seals, independent reporting audits and process lock | Running; automatic final launch requires complete pilot evidence, final still 0/500 |
 | Full-strategy economic assessment | Six-method v2 protocol frozen; first ten v2 markets reported; v3 recovery verified on the representative and failed market; whole pilot replay running | **Incomplete**; do not require or presume a positive result |
 | Response-independent economic event assessment | New counterfactual continuations retain fast responses; tests and independent software replay pass | Implemented; full-size economic evidence pending; method-specific populations do not give causal delay rankings |
 | Broad prior-art and novelty validation | Primary-source boundary includes sequential forecaster comparison and direct 2026 horizon-aware/Bellman testing antecedents | **Incomplete**; current contribution is carefully delimited |
@@ -40,7 +41,7 @@ the draft makes no unqualified priority claim. These paths do not add financial 
 The 40-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
-81 passing tests, including fourteen reporting-gate and twelve final-assessment controls. The fresh optimized-constant companion independently checks
+100 passing tests, including fourteen reporting-gate, twelve final-assessment and nineteen continuation controls. The fresh optimized-constant companion independently checks
 20,497,504 scalar values, with sixteen-path score replay per law, and all
 twelve model-power calibrations pass. The numerical boundary correction replays the same pool,
 rather than adding replications or selecting favorable seeds.
