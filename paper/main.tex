@@ -162,6 +162,13 @@ parameters can worsen an estimated forecast even when the population models
 coincide. We retain such estimation effects when they change traded utility:
 our inferential target is an implemented policy comparison, rather than an
 estimation-noise-adjusted test of population predictive content.
+Portfolio utility losses from estimating means and covariance matrices are
+already analyzed by \cite{kanzhou}. Recent parametric work derives leading
+minimax and Bayes expected-regret constants for portfolio choice
+\cite{katoportfolio}. Our stationary calculation fixes the reference learner
+and studies stopping under a sequential evidence constraint. Its stopped
+cumulative-utility coefficient is a different objective from optimizing the
+allocation rule's expected regret.
 
 Costly learning and delayed adoption have established economic treatments.
 \cite{costlyexperimentation} optimizes discounted project value with an explicit
@@ -843,9 +850,10 @@ candidate shortlist is tested under a consistent permutation of columns.
 No old empirical or simulated result enters this manuscript.
 
 \endgroup
-\begingroup\small
+\begingroup\fontsize{9.5}{11}\selectfont
 \begin{thebibliography}{99}
 \setlength{\itemsep}{0pt}
+\raggedright
 \bibitem{wr} Wang, H., and A. Ramdas (2023).
 Catoni-style confidence sequences for heavy-tailed mean estimation.
 \emph{Stochastic Processes and their Applications} 163, 168--202.
@@ -953,6 +961,18 @@ Author version: \url{https://arxiv.org/abs/2605.06520v1}.
 \bibitem{waitoptimal} Ram, A., and A. Ramdas (2026).
 Optimal sequential tests yield log-optimal e-processes.
 Author version: \url{https://arxiv.org/abs/2605.12720v1}.
+\bibitem{kanzhou} Kan, R., and G. Zhou (2007).
+Optimal Portfolio Choice with Parameter Uncertainty.
+\emph{Journal of Financial and Quantitative Analysis} 42(3), 621--656.
+\url{https://doi.org/10.1017/S0022109000004129}.
+\bibitem{katoportfolio} Kato, M. (2026).
+Expected Utility Regret Rule: Minimax and Bayes Optimal Portfolio Choice.
+Preprint, version 1, 1 October 2026.
+\url{https://arxiv.org/abs/2610.02290v1}.
+\bibitem{chaabane} Chaâbane, F. (2002).
+Invariance principles with logarithmic averaging for continuous local martingales.
+\emph{Statistics \& Probability Letters} 59(2), 209--217.
+\url{https://doi.org/10.1016/S0167-7152(02)00207-9}.
 \end{thebibliography}
 \endgroup
 \end{document}

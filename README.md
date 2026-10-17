@@ -419,6 +419,9 @@ financial DGP. The initial constrained phase can dominate a practical horizon.
 No frozen simulation or betting rule is replaced. Complete proofs and scope
 checks are recorded in
 [`reports/multivariate_waiting_proof_audit.md`](reports/multivariate_waiting_proof_audit.md).
+Portfolio estimation loss and logarithmic-averaging antecedents are compared
+in [`reports/portfolio_learning_prior_art_audit.md`](reports/portfolio_learning_prior_art_audit.md),
+with their static-regret and sequential-stopping objectives kept explicit.
 The separate deterministic auditor checks matrix identities and Gaussian
 densities, not random paths or asymptotic convergence:
 

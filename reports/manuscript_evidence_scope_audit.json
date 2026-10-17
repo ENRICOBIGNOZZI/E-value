@@ -2,7 +2,7 @@
   "complete": true,
   "captured_at": "2026-10-17T03:15:33.671957+02:00",
   "manuscript_source_sha256": {
-    "paper/main.tex": "653428ef625750f78dd76644e382c4b9f660a2357ad9c0a1c20b38e05e7ccf4a",
+    "paper/main.tex": "c4dd4b66fa4b66ffbadf83bf6f27d9f6d6ff3993f4924205e7e873ecc4562a00",
     "paper/sections/09_full_strategy.tex": "acd52717672f76891dbd58755f8bc238ebc2e91e83e32c47a1b5c7eb7ea1b3f3",
     "paper/sections/15_evidence_scope.tex": "94cc6c4df9b504d27a4c2d97455c1fdee368b29c4c5465fbe9cef7aadbff643e"
   },
@@ -621,5 +621,5 @@
   },
   "all_existing_generated_numeric_manuscript_inputs_unchanged": true,
   "scope": "Read-only retained-CSV count/unit consistency and manuscript mapping to the unchanged frozen final analysis. No new market, score path, replay, statistical inference or proof of publication quality. Final-estimand formula checked against the existing assessment and its previous tests.",
-  "manuscript_source_revalidated_at": "2026-10-17T04:10:22.274263+02:00"
+  "manuscript_source_revalidated_at": "2026-10-17T04:37:35.293591+02:00"
 }

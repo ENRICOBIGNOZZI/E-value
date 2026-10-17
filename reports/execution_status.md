@@ -1,3 +1,51 @@
+# Current continuation — portfolio learning antecedents and ninety replays
+
+The preceding goal turn was **progress**: 37b0c45 completed supplementary
+graphics preparation, the sealed-twenty pilot preview and handoff traceability.
+This turn checks three further primary antecedents: Kan–Zhou (2007),
+Kato (2026 v1) and Chaâbane (2002). The manuscript now distinguishes established
+portfolio estimation loss/static expected regret from its fixed-reference,
+evidence-constrained stopping calculation. It also attributes logarithmic
+Gaussian/martingale averaging while retaining the direct proof for its
+unbounded quadratic forms and ratio. Access limits and assumptions of the
+inspected versions are explicit in portfolio_learning_prior_art_audit.md.
+This improves attribution; it establishes no exhaustive priority claim.
+
+The mathematical statements and numerical estimates are unchanged. The same
+573 identity, 250 inequality and 17 optimizer checks pass with refreshed
+appendix-source binding. Existing scalar/directional theory source maps match.
+The full scientific/final-analysis freeze, preserved empirical-input hashes
+and all numeric manuscript inputs are unchanged. The existing **223-test**
+software report remains applicable and was not rerun for these prose/citation
+and reference-formatting changes.
+
+The **48-page PDF** compiles with resolved references and no box/label problems.
+Every final page is rendered and all four contact sheets reviewed; new
+introduction/appendix text and both final reference pages are inspected
+individually. A consistent 9.5-point ragged-right reference layout avoids a
+stranded last reference. The separate eight-page pilot-graphics preview is
+byte-identical and retains its historical input/PDF bindings.
+
+All first **90** pilot markets are complete and independently replayed.
+A fresh read-only check confirms their ninety current input digests after
+checkpoint compaction. Existing replay records contain **794,473,322 scalar
+checks** and **11,878 ghost pairs**, with maximum log-evidence discrepancy
+2.66e-15. The digest check adds no arithmetic replay counts or independent
+replications. Evidence is retained in full_v3_results/pilot90_replay_milestone.json;
+no ninety-market economic table is promoted to the paper.
+
+At **2026-10-17T04:37:35.293591+02:00**, original PIDs 64355 and 91419 remain
+confirmed live. The checkpoint records **90/100 generated pilot markets**,
+**90/100 recorded complete independent replays**, and **0/500 final markets**.
+No job was restarted, empirical analysis performed or remote push made.
+The complete pilot/final economic evidence, production final graphics and
+manuscript integration, and broader publication review remain outstanding.
+The overall paper goal stays active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — complete supplementary graphics and handoff traceability
 
 The preceding turn was **progress**: 5bb2025 added estimated-matrix waiting

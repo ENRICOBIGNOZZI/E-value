@@ -170,7 +170,7 @@
   },
   "manuscript_evidence_scope": {
     "audit": "reports/manuscript_evidence_scope_audit.json",
-    "audit_sha256": "8ba3b236fe97e5e93f8a493a86ec5b8b00e7a2de345e35516a09ab905fd6c65d",
+    "audit_sha256": "d95dda1705a2ce61d19015d92a5f18ab9a5d8912332d12ab295d16c738864596",
     "csv_unit_checks": 75,
     "maximum_csv_unit_scale_error": 2.43e-14,
     "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
@@ -203,7 +203,7 @@
   },
   "multivariate_cash_park": {
     "audit": "reports/multivariate_waiting_checks.json",
-    "audit_sha256": "399ea3f05d7012217995a259e8ec263056e6742dec42f5ef9631ddfb0a5a41f0",
+    "audit_sha256": "0228f6093c8965f4408bf8a6e3b750c7f84254a1616de76fca0fdacfd02d195b",
     "proof_scope_audit": "reports/multivariate_waiting_proof_audit.md",
     "proof_scope_audit_sha256": "6922dcc9f44c7227bc0d9157cfd55c077576c46a387c69d343a3a7e345adad8b",
     "script": "scripts/audit_multivariate_waiting.py",
@@ -218,7 +218,7 @@
     "theorem_source_sha256": {
       "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
       "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
-      "paper/sections/17_multivariate_proofs.tex": "7ad1c1c83ad3700906e3483ffd98b2a8872917a4958931544b213edbb14f3548",
+      "paper/sections/17_multivariate_proofs.tex": "ae5f2bd4b92131d89aaf3607abc71e1566fa33181bdc2ae53ee56a85c58f9e21",
       "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7"
     },
     "scope": "Fixed finite dimension, iid zero-mean Gaussian alternative, fixed positive ridge and leverage, estimated raw-moment matrix, possibly singular covariance. Adaptive conditional null and high-confidence pathwise/probability coefficients; no stopped expectations or finite-deadline power guarantee. An anisotropic public matrix cap permits a bounded past-only stake attaining psi/8 versus chi^2/(8 chi_K) for the best constant within the stated Catoni family. Constant-certificate maximal power still vanishes uniformly over predictable policies. Finite checks are not an asymptotic proof, simulated paths or a new financial arm."
@@ -255,5 +255,15 @@
       "pdf_sha256": "7a9e977ea5c898f25b58a010e185e2ec812656a60a55c86245eb11f77f282c1d"
     },
     "scope": "Supplementary descriptive reporting with exact complete-final guards, all signed outcomes and explicit missing/empty denominators. The retained preview uses only the existing sealed twenty pilot markets. Synthetic fixture identifiers and plot generation add no market replications or raw-replay counts. No scientific/final-analysis/controller change or new inferential endpoint. Final production, final visual QA and manuscript integration remain outstanding."
+  },
+  "portfolio_learning_prior_art": {
+    "audit": "reports/portfolio_learning_prior_art_audit.md",
+    "audit_sha256": "27077af7f363c870994f562ab6f44f6acee2e881cbcec9e4998762da7a6d9f13",
+    "primary_sources": [
+      "https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/optimal-portfolio-choice-with-parameter-uncertainty/A0E9F31F3B3E0873109AD8B2C8563393",
+      "https://arxiv.org/html/2610.02290v1",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0167715202002079"
+    ],
+    "scope": "Targeted attribution: portfolio estimation utility loss, static parametric expected-regret constants near cash, and classical logarithmic Gaussian/martingale averaging. Access/assumption limits are explicit. The paper fixes a reference learner and an evidence-constrained stopping objective; no new allocation-regret framework, general logarithmic strong law, expected stopped-cost theorem or exhaustive priority claim. No scientific/theorem/numeric change."
   }
 }

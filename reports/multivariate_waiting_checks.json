@@ -4008,7 +4008,7 @@
   "source_sha256": {
     "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
     "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
-    "paper/sections/17_multivariate_proofs.tex": "7ad1c1c83ad3700906e3483ffd98b2a8872917a4958931544b213edbb14f3548",
+    "paper/sections/17_multivariate_proofs.tex": "ae5f2bd4b92131d89aaf3607abc71e1566fa33181bdc2ae53ee56a85c58f9e21",
     "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7"
   },
   "scope": "Finite deterministic matrix identities, Gaussian density comparisons, moment inequalities and scalar quadratic optimization. No random paths, asymptotic proof by computation, observed power, expected stopped costs, growing-dimensional result or financial-strategy performance claim."

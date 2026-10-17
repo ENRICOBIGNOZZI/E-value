@@ -17,9 +17,9 @@
   "scalar_arithmetic_checks": 88285790,
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
-  "pdf_pages": 47,
-  "pdf_sha256": "c42e9b9ea95a99727ddc7d142055a88f7f8c9b9d055b82a81ff66a4ba2f08d35",
-  "pdf_visual_qa": "All 47 final pages rendered at maximum dimension 1150 pixels. All four contact sheets (pages 1\u201312, 13\u201324, 25\u201336 and 37\u201347) inspected; new theorem/corollary pages 32\u201333 and critical proof pages 44\u201345 inspected individually. No clipping/overlap, overfull/underfull boxes, duplicate labels or unresolved references. Existing benign inputenc/XeTeX notice does not affect the output.",
+  "pdf_pages": 48,
+  "pdf_sha256": "80efdbddaccd646f62f0b83bef824885eaea31cd78a7b11aa26b56b06d524d73",
+  "pdf_visual_qa": "All 48 final pages rendered at maximum dimension 1150 pixels. Four complete contact sheets (pages 1\u201312, 13\u201324, 25\u201336, 37\u201348) inspected. New introduction page 3, appendix attribution page 44, and both reference pages 47\u201348 inspected individually. References use a consistent 9.5-point ragged-right layout; no stranded reference page. No clipping/overlap, overfull/underfull boxes, duplicate labels or unresolved references.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -37,7 +37,7 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
-    "paper/main.tex": "653428ef625750f78dd76644e382c4b9f660a2357ad9c0a1c20b38e05e7ccf4a",
+    "paper/main.tex": "c4dd4b66fa4b66ffbadf83bf6f27d9f6d6ff3993f4924205e7e873ecc4562a00",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
@@ -50,7 +50,7 @@
     "paper/generated_gaussian_power_envelope.tex": "b89d2152f4b042a177b159a4c5c5fc955046eddcd06a30285de9f2ff214588dc",
     "paper/sections/15_evidence_scope.tex": "94cc6c4df9b504d27a4c2d97455c1fdee368b29c4c5465fbe9cef7aadbff643e",
     "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
-    "paper/sections/17_multivariate_proofs.tex": "7ad1c1c83ad3700906e3483ffd98b2a8872917a4958931544b213edbb14f3548"
+    "paper/sections/17_multivariate_proofs.tex": "ae5f2bd4b92131d89aaf3607abc71e1566fa33181bdc2ae53ee56a85c58f9e21"
   },
   "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar and fixed-dimensional estimated-matrix Gaussian waiting theory, scalar diagnostic and directional moment-class theory included. Historical derivations excluded.",
   "current_repository_tests_passed": 223,
@@ -222,7 +222,7 @@
   },
   "manuscript_evidence_scope": {
     "audit": "reports/manuscript_evidence_scope_audit.json",
-    "audit_sha256": "8ba3b236fe97e5e93f8a493a86ec5b8b00e7a2de345e35516a09ab905fd6c65d",
+    "audit_sha256": "d95dda1705a2ce61d19015d92a5f18ab9a5d8912332d12ab295d16c738864596",
     "csv_unit_checks": 75,
     "maximum_csv_unit_scale_error": 2.43e-14,
     "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
@@ -255,7 +255,7 @@
   },
   "multivariate_cash_park": {
     "audit": "reports/multivariate_waiting_checks.json",
-    "audit_sha256": "399ea3f05d7012217995a259e8ec263056e6742dec42f5ef9631ddfb0a5a41f0",
+    "audit_sha256": "0228f6093c8965f4408bf8a6e3b750c7f84254a1616de76fca0fdacfd02d195b",
     "proof_scope_audit": "reports/multivariate_waiting_proof_audit.md",
     "proof_scope_audit_sha256": "6922dcc9f44c7227bc0d9157cfd55c077576c46a387c69d343a3a7e345adad8b",
     "script": "scripts/audit_multivariate_waiting.py",
@@ -270,7 +270,7 @@
     "theorem_source_sha256": {
       "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
       "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
-      "paper/sections/17_multivariate_proofs.tex": "7ad1c1c83ad3700906e3483ffd98b2a8872917a4958931544b213edbb14f3548",
+      "paper/sections/17_multivariate_proofs.tex": "ae5f2bd4b92131d89aaf3607abc71e1566fa33181bdc2ae53ee56a85c58f9e21",
       "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7"
     },
     "scope": "Fixed finite dimension, iid zero-mean Gaussian alternative, fixed positive ridge and leverage, estimated raw-moment matrix, possibly singular covariance. Adaptive conditional null and high-confidence pathwise/probability coefficients; no stopped expectations or finite-deadline power guarantee. An anisotropic public matrix cap permits a bounded past-only stake attaining psi/8 versus chi^2/(8 chi_K) for the best constant within the stated Catoni family. Constant-certificate maximal power still vanishes uniformly over predictable policies. Finite checks are not an asymptotic proof, simulated paths or a new financial arm."
@@ -307,5 +307,15 @@
       "pdf_sha256": "7a9e977ea5c898f25b58a010e185e2ec812656a60a55c86245eb11f77f282c1d"
     },
     "scope": "Supplementary descriptive reporting with exact complete-final guards, all signed outcomes and explicit missing/empty denominators. The retained preview uses only the existing sealed twenty pilot markets. Synthetic fixture identifiers and plot generation add no market replications or raw-replay counts. No scientific/final-analysis/controller change or new inferential endpoint. Final production, final visual QA and manuscript integration remain outstanding."
+  },
+  "portfolio_learning_prior_art": {
+    "audit": "reports/portfolio_learning_prior_art_audit.md",
+    "audit_sha256": "27077af7f363c870994f562ab6f44f6acee2e881cbcec9e4998762da7a6d9f13",
+    "primary_sources": [
+      "https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/optimal-portfolio-choice-with-parameter-uncertainty/A0E9F31F3B3E0873109AD8B2C8563393",
+      "https://arxiv.org/html/2610.02290v1",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0167715202002079"
+    ],
+    "scope": "Targeted attribution: portfolio estimation utility loss, static parametric expected-regret constants near cash, and classical logarithmic Gaussian/martingale averaging. Access/assumption limits are explicit. The paper fixes a reference learner and an evidence-constrained stopping objective; no new allocation-regret framework, general logarithmic strong law, expected stopped-cost theorem or exhaustive priority claim. No scientific/theorem/numeric change."
   }
 }

@@ -25,11 +25,11 @@ the full objective is complete.
 | Continue complete experiment without manual relaunches | Live controller attached to the existing pilot; source/plan gates, complete-sample seals, independent reporting audits and process lock | Running; automatic final launch requires complete pilot evidence, final still 0/500 |
 | Full-strategy economic assessment | Six-method v2 protocol frozen; first ten v2 markets reported; v3 recovery verified on the representative and failed market; whole pilot replay running | **Incomplete**; do not require or presume a positive result |
 | Response-independent economic event assessment | Counterfactual continuations retain fast responses; separate batch positive-run reconstruction uses annual conditional-score arrays, flags and ghost continuations | First-twenty reconstruction reproduces 4,895 stable events, 483 unstable runs and 118 prompt selected responses confirmed after closure; full-size evidence pending and method-specific populations do not identify causal delay rankings |
-| Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing, cash-PARK/heteroscedastic Catoni/iid widths, economic experimentation and log-growth/test-family clocks, plus explicit ENTRY utility-null versus joint mean/variance-null mapping; TV corollary distinguished from weak-topology continuity theorem | **Incomplete**; targeted audits improve attribution and hypothesis precision but do not prove priority |
+| Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing, cash-PARK/heteroscedastic Catoni/iid widths, economic experimentation and log-growth/test-family clocks, portfolio estimation utility loss/static regret and logarithmic Gaussian/martingale averaging, plus explicit ENTRY utility-null versus joint mean/variance-null mapping; TV corollary distinguished from weak-topology continuity theorem | **Incomplete**; targeted audits improve attribution and hypothesis precision but do not prove priority |
 | Frozen large final study | Original pilot 3 retained; v1 full study superseded; v2 reached 19 completed plus one failed market; v3 recovery verified and full replay running; final 0/500 | **Not executed**; twenty mechanism markets do not fill these counts |
 | Complete-final manuscript generation | Separate exact-500 packet builder; source/assessment/numeric/event/raw-replay guards; 24 synthetic controls and current production rejection without a final snapshot | Prepared and tested; no production final packet or final-paper integration yet |
 | Handoff test/output/graphics traceability | Twelve test groups mapped to actual functions; frozen numerical choices and output-name equivalents explicit; supplementary graphics builder with exact-500 gates and 23 controls | Implemented; eight-page sealed-twenty pilot preview visually verified. Complete-final diagnostics and paper integration remain pending |
-| Reviewable manuscript and figures | 47-page compiled PDF; evidence-panel map; final economic estimand and timing explicit; count/unit/source audit and visual QA | Working draft; complete final study and publication review remain outstanding |
+| Reviewable manuscript and figures | 48-page compiled PDF; evidence-panel map; final economic estimand and timing explicit; count/unit/source audit and visual QA | Working draft; complete final study and publication review remain outstanding |
 
 The QP convergence failure at seed 50020 is corrected and independently audited.
 The entire common completed v2/v3 pool now has a byte-equality audit: nineteen
@@ -37,8 +37,8 @@ complete markets (3,495 file pairs) and the failed seed's three sealed blocks
 (39 pairs). All compared data agree; configuration fields differ only by
 version label. Copied parameter/data corruption controls are detected. This
 audit adds no independent replications or arithmetic-replay counts.
-The first eighty v3 markets are complete and independently replayed;
-all eighty current input digests have been revalidated after compaction.
+The first ninety v3 markets are complete and independently replayed;
+all ninety current input digests have been revalidated after compaction.
 The latest generated and recorded replay counts are retained in
 `full_v3_results/pilot_live_checkpoint.json`.
 The next work is to finish the same entire 100-market v3 pilot replay and then
@@ -46,7 +46,7 @@ the separate final study. The first ten v2 markets remain a labeled pilot snapsh
 The costless vanishing-gain theory, complete proof and scalar diagnostics are
 now integrated. Broader publication-level novelty assessment remains open;
 the draft makes no unqualified priority claim. These paths do not add financial markets.
-The 47-page draft also includes the separate lambda-selection study. Its
+The 48-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
 223 passing tests, including fourteen reporting-gate, twelve final-assessment,
