@@ -1,3 +1,59 @@
+# Current continuation — estimated matrices and directional bet selection
+
+The preceding goal turn was **progress**: b301249 clarified economic-waiting
+prior work and the information clock. This turn adds a fixed-dimensional
+estimated-matrix Gaussian extension, complete proofs and a separate finite
+deterministic auditor. The learner permits positive ridge, diagonal shrinkage,
+an L1 constraint and singular nonzero covariance. With chi=tr((H^-1 Sigma)^2),
+the confidence-time exponent is 8/chi; conditional and realized cumulative
+utility keep the attained coefficient 4/gamma. The adaptive comparison null
+preserves the matrix/raw-fourth-moment contracts. These are pathwise and
+probability results, with no stopped-expectation claim.
+
+An anisotropic public matrix cap gives a further bet-selection result:
+the bounded past-only projected-moment stake attains rate psi/8, whereas the
+best constant has rate chi²/(8*chi_K). In two isotropic dimensions the
+waiting coefficient uses the caps' geometric mean for the adaptive rule and
+their arithmetic mean for the constant. The (1,9) example gives 12/gamma
+versus 20/gamma. These are analytic high-confidence coefficients, not observed
+costs, finite-horizon power dominance or a new frozen financial arm.
+The constant-certificate obstruction extends uniformly over predictable
+policies, including level-dependent choices.
+
+The new deterministic auditor passes **573 identity comparisons, 250
+inequality checks and 17 optimizer checks**. It checks Gaussian densities,
+matrix moments, independent angular/integral formulas and scalar optimizers;
+it does not verify asymptotic convergence by simulation. Maximum absolute
+identity discrepancy is 1.14e-13 (scaled 2.48e-15); minimum inequality gap is
+-6.67e-16, a floating-point residual against an analytic PSD formula.
+The existing **200-test** software report remains applicable to unchanged
+production software; that suite was not rerun for this theory/standalone-audit
+addition. No random paths are introduced by this extension.
+
+All generated numeric manuscript inputs, previous finite-theory source maps,
+the whole scientific/final-analysis freeze and preserved empirical-input
+hashes match. The **47-page PDF** compiles; all pages are rendered and all four
+contact sheets inspected, with new result and critical proof pages checked
+individually. No box/reference/label problems or clipping/overlap remain.
+
+The first **80** pilot markets have completed independent arithmetic replay.
+A read-only revalidation confirms all eighty current input digests match
+after compaction. Their existing records contain **705,867,820 scalar checks**
+and **10,345 ghost pairs**, with maximum log-evidence error 1.78e-15.
+This integrity check adds no replay counts or market replications; the
+milestone is full_v3_results/pilot80_replay_milestone.json.
+
+At **2026-10-17T04:10:22.274263+02:00**, original PIDs 64355 and 91419 remain
+confirmed live. The checkpoint records **85/100 generated pilot markets**,
+**80/100 recorded complete independent replays** and **0/500 final markets**.
+No job was restarted, no empirical analysis or remote push occurred. The
+complete pilot/final economic evidence and broader priority assessment remain
+outstanding; the overall paper goal stays active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — economic waiting and the information clock in prior work
 
 The preceding goal turn was **progress**: 180f324 prepared complete-final

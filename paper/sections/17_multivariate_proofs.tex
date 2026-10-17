@@ -1,0 +1,216 @@
+\section{Proofs for the estimated-matrix comparison}
+\label{app:multivariate-waiting}
+All limits and moment estimates in this appendix are under $P$ unless marked
+$Q$. Dimension, shrinkage, positive ridge, leverage and training size are fixed.
+
+\subsection{Integrated estimation and moments}
+Let $S_m$ be partial sums of iid standard $p$-dimensional Gaussian vectors.
+For any fixed symmetric $B\succeq0$ and $i\le j$, Gaussian fourth moments give
+\[
+ \E(S_m'BS_m)=m\operatorname{tr}B,
+ \qquad
+ \operatorname{Cov}(S_i'BS_i,S_j'BS_j)
+       =2i^2\operatorname{tr}(B^2).
+\]
+Therefore $\sum_{m\le n}S_m'BS_m/m^2$ has mean
+$\operatorname{tr}B\log n+O(1)$ and variance $O(\log n)$.
+The positive-summand subsequence argument in
+Appendix~\ref{app:vanishing-normalization} yields
+\[
+ \frac1{\log n}\sum_{m\le n}\frac{S_m'BS_m}{m^2}
+       \longrightarrow\operatorname{tr}B\quad\text{almost surely}.
+\]
+Apply this with
+$B=\Sigma^{1/2}H^{-1}\Sigma H^{-1}\Sigma^{1/2}$, whose trace is $\chi$,
+and with $B=\Sigma$. The ordinary strong laws give
+$\widehat H_t\to H$ and $\widehat\mu_t\to0$. Thus the unconstrained
+optimizer tends to zero and is eventually feasible for the $L_1$ constraint.
+For those dates, the difference between $v_t$ and
+$\widehat\mu_t'H^{-1}\Sigma H^{-1}\widehat\mu_t/\gamma^2$ is bounded by
+$\epsilon_t\norm{\widehat\mu_t}^2$, with $\epsilon_t\to0$ almost surely.
+The second integrated law and weighted Cesaro imply that their accumulated
+difference divided by $\log n$ vanishes. Removing the fixed training prefix
+proves $\sum_{t\le n}v_t/\log n\to\chi/\gamma^2$.
+
+The first-order condition along the feasible direction $-w_t$ gives
+\[
+ \gamma r\norm{w_t}_2^2
+ \le\gamma w_t'\widehat H_tw_t
+ \le\widehat\mu_t'w_t,
+ \qquad \norm{w_t}_2\le\frac{\norm{\widehat\mu_t}_2}{\gamma r}.
+\]
+Since $\widehat\mu_t\sim N_p(0,\Sigma/m_t)$, for each fixed positive $a$,
+$\E\norm{w_t}_2^a=O(m_t^{-a/2})$. In particular
+\[
+ \E v_t=O(m_t^{-1}),\qquad
+ \sum_t\E v_t^{3/2}<\infty,\qquad
+ \sum_t\E v_t^2<\infty,
+\]
+and $v_t\le L^2\norm\Sigma_{\op}$ deterministically. More explicitly,
+\[
+ \E v_t^2\le
+ \frac{\norm\Sigma_{\op}^2
+       \{(\operatorname{tr}\Sigma)^2+2\operatorname{tr}(\Sigma^2)\}}
+      {\gamma^4r^4m_t^2}.
+\]
+These inequalities require no inverse-Wishart moment or growing-dimension
+approximation. They also apply when $\Sigma$ is singular.
+
+\subsection{A rank-one conditional null}
+Put $a_t=\gamma\sqrt{v_t}/2$. When $v_t>0$, define the conditional Gaussian
+kernel under $Q$ by mean and covariance
+\[
+ \mu_{Q,t}=\frac{\gamma\Sigma w_t}{2(1+a_t^2)},\qquad
+ \Sigma_{Q,t}=\Sigma-
+ \{1-(1+a_t^2)^{-2}\}\frac{\Sigma w_tw_t'\Sigma}{v_t}.
+\]
+Use $N_p(0,\Sigma)$ when $v_t=0$, and the original training law. In whitened
+coordinates this changes only the unit direction
+$e_t=\Sigma^{1/2}w_t/\sqrt{v_t}$: its mean is $a_t/(1+a_t^2)$ and variance
+$(1+a_t^2)^{-2}$; orthogonal directions retain their original centered
+Gaussian law. For singular $\Sigma$, work on its range. These kernels have
+the same support and strictly positive densities there at every finite date.
+
+Their raw second-moment matrix is
+\[
+ M_{Q,t}=\Sigma-\frac{a_t^2}{1+a_t^2}
+                    \frac{\Sigma w_tw_t'\Sigma}{v_t}\preceq\Sigma.
+\]
+Also $w_t'\mu_{Q,t}=\gamma v_t/\{2(1+a_t^2)\}$ and
+$w_t'M_{Q,t}w_t=v_t/(1+a_t^2)$, proving $\E_Q(Y_t\mid\F_{t-1})=0$.
+For each direction $b$, a Gaussian variable with mean $\mu$ and raw second
+moment $M$ has fourth moment $3M^2-2\mu^4$. Consequently the displayed
+directional fourth-moment contract follows from $M\le b'\Sigma b$.
+
+Write $R_n=dP/dQ|_{\F_n}$ for these kernels.
+Under $P$, $Z_t=w_t'A_t/\sqrt{v_t}$ has conditional standard Gaussian law.
+Choose a fixed unit whitened direction in the range of $\Sigma$ when $v_t=0$; its coefficient
+$a_t$ is then zero. The likelihood-ratio increment is exactly
+\eqref{eq:vanishing-lr} with this $a_t,Z_t$, while the linear factor is
+$1-a_tZ_t+a_t^2Z_t^2$. The previous moment estimates provide bounded $a_t$,
+$\sum_t\E|a_t|^3<\infty$ and $\sum_t\E a_t^4<\infty$.
+Thus Appendix~\ref{app:vanishing}'s likelihood and summable-discrepancy
+arguments apply without alteration, with $\sum_t v_t$ as the predictable
+normalizer. They give $\log R_n/\log n\to\chi/8$, convergence of
+$\log G_n-\log R_n$ and uniformly bounded expected absolute discrepancy.
+The score martingale $J_n-C_n$ has conditional variance
+$v_t+\gamma^2v_t^2/2$, at most a fixed multiple of $v_t$.
+The same martingale normalization gives $J_n/C_n\to1$.
+
+The fixed-e-process upper bound, the change-of-measure bound for
+level-indexed stopping rules, and the first-passage inversion in
+Appendix~\ref{app:vanishing} now apply with $\kappa=\chi/8$.
+Since $C_n/\log n\to\chi/(2\gamma)$, their ratio gives the attained and
+probability-lower-bound coefficient $4/\gamma$. All bounds use the same
+adaptive null, not a null law selected anew at each confidence level.
+This proves Theorem~\ref{thm:multivariate-waiting}.
+
+\subsection{Geometric and constant certificates}
+For Corollary~\ref{cor:multivariate-geometric-bet}, the public contracts imply
+$\E(Y_t^2\mid\F_{t-1})\le\nu_t^2$ by Minkowski. Under $P$,
+$\nu_t^2=s_t+O(s_t^{3/2}+s_t^2)$, with summable expected remainder.
+For each fixed rule with a finite deterministic stake bound, the Catoni
+expansion and martingale normalization in Appendix~\ref{app:vanishing} give
+\[
+ \log E_n^{\mathrm{geo},\lambda}
+ =\sum_{t\le n}\{\gamma\lambda_tv_t/2-\lambda_t^2s_t/2\}
+                       +o(\log n)\quad\text{almost surely}.
+\]
+The quadratic strong law also gives
+$\sum_{t\le n}s_t/\log n\to\chi_K/\gamma^2$.
+
+We need one additional weighted Gaussian law. For standard Gaussian partial
+sums, put $X_m=S_m/\sqrt m$ and
+$f(x)=(x'\mathsf A x)^2/(x'\mathsf B x)$, with value zero at a zero
+denominator. Since $0\preceq\mathsf A\preceq\mathsf B$,
+$0\le f(x)\le x'\mathsf A x$; thus $f$ is even and square integrable.
+For $i\le j$, $X_i,X_j$ have cross-correlation $\sqrt{i/j}\,I_p$.
+The centered Gaussian Hermite expansion of an even function has only terms
+of total degree at least two. Orthogonality therefore gives
+\[
+ 0\le\operatorname{Cov}\{f(X_i),f(X_j)\}
+            \le(i/j)\operatorname{Var}\{f(Z)\}.
+\]
+Indeed each Hermite term of degree $k$ is multiplied by $(i/j)^{k/2}$.
+It follows that $\sum_{m\le n}f(X_m)/m$ has mean
+$\psi\log n+O(1)$ and variance $O(\log n)$. Positivity and the previous
+subsequence argument prove its ratio to $\log n$ tends to $\psi$ almost
+surely.
+
+To pass to estimated targets, define
+$F(w)=(w'\Sigma w)^2/(w'Kw)$ with the same zero convention. Where the
+denominator is positive,
+\[
+ \nabla F(w)=
+ \frac{4(w'\Sigma w)\Sigma w}{w'Kw}
+ -\frac{2(w'\Sigma w)^2Kw}{(w'Kw)^2}.
+\]
+Because $w'\Sigma w\le w'Kw$, its norm is at most a fixed multiple of
+$\norm w_2$. The function extends differentiably with zero gradient on
+$\ker K$. Hence
+$|F(w)-F(u)|\le C(\norm w_2+\norm u_2)\norm{w-u}_2$.
+Inverse-curvature convergence, eventual inactivity of the constraint and
+weighted Cesaro now yield
+\[
+ \frac1{\log n}\sum_{t\le n}\frac{v_t^2}{s_t}
+                 \longrightarrow\frac{\psi}{\gamma^2},
+\]
+where zero-risk terms are zero. This argument works for singular covariance.
+
+Completing the square pointwise gives
+\[
+ \gamma\lambda_tv_t/2-\lambda_t^2s_t/2
+ =\frac{\gamma^2v_t^2}{8s_t}
+     -\frac{s_t}{2}\left(\lambda_t-\frac{\gamma v_t}{2s_t}\right)^2
+\]
+when $s_t>0$. This proves the upper rate $\psi/8$. On the range of $K$,
+the strong raw-moment law gives
+\[
+ \sup_{w'w>0,\ w'Kw>0}
+ \frac{|w'(\widehat M_t-\Sigma)w|}{w'Kw}\to0
+ \quad\text{almost surely}.
+\]
+The numerator vanishes on $\ker K$; use its inverse square root on its
+range. Clipping at one is nonexpansive, so the observable stake differs from
+$\gamma v_t/(2s_t)$ by $o(1)$ uniformly in directions. Since
+$\sum s_t/\log n$ has a finite limit, its accumulated square-completion loss
+is $o(\log n)$. It attains $\psi/8$. Constant stakes give the stated
+quadratic rate. Cauchy--Schwarz yields
+$\chi^2\le\psi\chi_K$, while $f(Z)\le Z'\mathsf A Z$ gives $\psi\le\chi$.
+First-passage inversion and the utility limits prove the coefficient claims.
+
+For deterministic evaluation of $\psi$, Gaussian integration and
+$1/y=\int_0^\infty e^{-ty}\,dt$ give
+\[
+ \psi=\int_0^\infty
+ \frac{2\operatorname{tr}\{(\mathsf A C_t)^2\}
+       +\{\operatorname{tr}(\mathsf A C_t)\}^2}
+      {\sqrt{\det(I_p+2t\mathsf B)}}\,dt,\qquad
+ C_t=(I_p+2t\mathsf B)^{-1}.
+\]
+Tonelli applies to the nonnegative integrand; singular zero directions
+contribute no numerator. In two isotropic dimensions, separating the
+Gaussian radius and angle gives the displayed geometric-mean formula.
+
+For Corollary~\ref{cor:multivariate-constant-certificate}, under $P$,
+\[
+ \E(Y_t^2\mid\F_{t-1})=v_t+3\gamma^2v_t^2/4
+       \le V+3\gamma^2V^2/4,
+ \qquad d_*:=\nu_*^2-V-3\gamma^2V^2/4
+                 =\gamma\sqrt3\,V^{3/2}>0.
+\]
+The policy-independent compensator is
+$\mathcal B_n=\sum_{t\le n}\gamma^2v_t^2/(8d_*)$. Its expected total is
+at most the finite constant
+\[
+ B_*=
+ \frac{\norm\Sigma_{\op}^2
+       \{(\operatorname{tr}\Sigma)^2+2\operatorname{tr}(\Sigma^2)\}}
+      {8\gamma^2r^4d_*}
+       \sum_{m=n_0}^{\infty}m^{-2}.
+\]
+Completing the square in the conditional Catoni-factor expectation, then
+Ville and Markov, gives $B_*/u+\alpha e^u$ exactly as in the proof of
+Proposition~\ref{prop:vanishing-uniform}. Taking $u=\log(1/\alpha)/2$
+proves convergence to zero. The bound may be numerically uninformative for
+a very small positive ridge; no finite-level efficiency claim is deduced.

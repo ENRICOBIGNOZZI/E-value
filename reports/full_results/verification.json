@@ -17,9 +17,9 @@
   "scalar_arithmetic_checks": 88285790,
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
-  "pdf_pages": 43,
-  "pdf_sha256": "3ef69990c2d87fed7c822132c19c8ffc8179a123adda97f1589544a6fc6c8acc",
-  "pdf_visual_qa": "All 43 final pages rendered. Final contact sheets for pages 1\u201324 inspected; new reference page 43 and critical pages 3, 4 and 16 inspected individually. 23 page PNGs match the preceding fully reviewed 43-page render byte for byte. General club/widow/display-widow settings prevent isolated prose lines. No clipping/overlap, overfull/underfull boxes, duplicate labels or unresolved references.",
+  "pdf_pages": 47,
+  "pdf_sha256": "c42e9b9ea95a99727ddc7d142055a88f7f8c9b9d055b82a81ff66a4ba2f08d35",
+  "pdf_visual_qa": "All 47 final pages rendered at maximum dimension 1150 pixels. All four contact sheets (pages 1\u201312, 13\u201324, 25\u201336 and 37\u201347) inspected; new theorem/corollary pages 32\u201333 and critical proof pages 44\u201345 inspected individually. No clipping/overlap, overfull/underfull boxes, duplicate labels or unresolved references. Existing benign inputenc/XeTeX notice does not affect the output.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -37,7 +37,7 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
-    "paper/main.tex": "992cc1d45b497c09c329600921bbf4d94b23326676a25726b35c1515dc1e8c48",
+    "paper/main.tex": "653428ef625750f78dd76644e382c4b9f660a2357ad9c0a1c20b38e05e7ccf4a",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
@@ -48,9 +48,11 @@
     "paper/sections/13_directional_information.tex": "b8ea6d6e1582e765d191b097a6529781ec42279be9e2ca2fa0bd6cc4d3d53e27",
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062",
     "paper/generated_gaussian_power_envelope.tex": "b89d2152f4b042a177b159a4c5c5fc955046eddcd06a30285de9f2ff214588dc",
-    "paper/sections/15_evidence_scope.tex": "94cc6c4df9b504d27a4c2d97455c1fdee368b29c4c5465fbe9cef7aadbff643e"
+    "paper/sections/15_evidence_scope.tex": "94cc6c4df9b504d27a4c2d97455c1fdee368b29c4c5465fbe9cef7aadbff643e",
+    "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
+    "paper/sections/17_multivariate_proofs.tex": "7ad1c1c83ad3700906e3483ffd98b2a8872917a4958931544b213edbb14f3548"
   },
-  "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar waiting theorem/diagnostic and directional moment-class theory included. Historical derivations excluded.",
+  "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar and fixed-dimensional estimated-matrix Gaussian waiting theory, scalar diagnostic and directional moment-class theory included. Historical derivations excluded.",
   "current_repository_tests_passed": 200,
   "current_repository_test_report": "reports/full_test_results_with_final_packet.txt",
   "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 200-test suite includes numerical/scalar/lambda controls, fourteen snapshot-reporting, twelve final-assessment, nineteen continuation, twenty-four event-reporting and twenty-seven independent event-reconstruction controls, plus twenty-five Gaussian-envelope reporting/statistical controls and twenty-four final-packet controls. Synthetic fixtures are not market observations.",
@@ -220,7 +222,7 @@
   },
   "manuscript_evidence_scope": {
     "audit": "reports/manuscript_evidence_scope_audit.json",
-    "audit_sha256": "3de19a53b69454fc6e99ea6733969ecb47dc678c709190519fabf7b2b7b34bf7",
+    "audit_sha256": "8ba3b236fe97e5e93f8a493a86ec5b8b00e7a2de345e35516a09ab905fd6c65d",
     "csv_unit_checks": 75,
     "maximum_csv_unit_scale_error": 2.43e-14,
     "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
@@ -250,5 +252,27 @@
       "https://arxiv.org/html/2605.12720v1"
     ],
     "scope": "Targeted primary-source comparison of costly experimentation, economic e-value approval and test/log-growth normalization. The scalar example has a log-n information clock and potentially decreasing capital; no generic waiting-cost or asymptotic-optimality principle is claimed as new. Attribution/formatting only; no theorem, numerical estimate or scientific source change. Exhaustive priority remains unproven."
+  },
+  "multivariate_cash_park": {
+    "audit": "reports/multivariate_waiting_checks.json",
+    "audit_sha256": "399ea3f05d7012217995a259e8ec263056e6742dec42f5ef9631ddfb0a5a41f0",
+    "proof_scope_audit": "reports/multivariate_waiting_proof_audit.md",
+    "proof_scope_audit_sha256": "6922dcc9f44c7227bc0d9157cfd55c077576c46a387c69d343a3a7e345adad8b",
+    "script": "scripts/audit_multivariate_waiting.py",
+    "script_sha256": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
+    "deterministic_identity_checks": 573,
+    "deterministic_inequality_checks": 250,
+    "optimizer_checks": 17,
+    "maximum_identity_error": 1.1368683772161603e-13,
+    "maximum_scaled_identity_error": 2.475615241714116e-15,
+    "minimum_inequality_gap": -6.661338147750939e-16,
+    "maximum_optimizer_location_error": 7.833693027592403e-09,
+    "theorem_source_sha256": {
+      "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
+      "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
+      "paper/sections/17_multivariate_proofs.tex": "7ad1c1c83ad3700906e3483ffd98b2a8872917a4958931544b213edbb14f3548",
+      "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7"
+    },
+    "scope": "Fixed finite dimension, iid zero-mean Gaussian alternative, fixed positive ridge and leverage, estimated raw-moment matrix, possibly singular covariance. Adaptive conditional null and high-confidence pathwise/probability coefficients; no stopped expectations or finite-deadline power guarantee. An anisotropic public matrix cap permits a bounded past-only stake attaining psi/8 versus chi^2/(8 chi_K) for the best constant within the stated Catoni family. Constant-certificate maximal power still vanishes uniformly over predictable policies. Finite checks are not an asymptotic proof, simulated paths or a new financial arm."
   }
 }

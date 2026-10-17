@@ -1,0 +1,165 @@
+\section{Several estimated signals: dimension and the waiting coefficient}
+\label{sec:multivariate-waiting}
+The scalar calculation extends to a constrained portfolio that estimates a
+whole second-moment matrix. This extension remains costless and stationary;
+it is not a result for the changing financial DGP. Dimension changes the
+confidence-time exponent, while the attained cumulative-utility coefficient
+remains $4/\gamma$.
+
+Fix a finite number $p$ of signals. Under $P$, training and subsequent returns
+are iid $N_p(0,\Sigma)$, with $0\ne\Sigma\succeq0$; singular covariance is
+allowed. At date $t$, use all $m_t=n_0+t-1$ past observations, $n_0\ge1$, and
+define their mean $\widehat\mu_t$ and raw second moment $\widehat M_t$.
+For fixed $\rho\in[0,1]$, $r>0$ and $L>0$, set
+\[
+ \widehat H_t=(1-\rho)\widehat M_t+
+                 \rho\operatorname{diag}(\widehat M_t)+rI_p,
+ \qquad
+ w_t=\arg\max_{\norm w_1\le L}
+        \{\widehat\mu_t'w-\gamma w'\widehat H_tw/2\}.
+\]
+The positive ridge makes this optimizer unique on every history. There are
+no trading costs in this subcase. Cash minus the fitted portfolio has score
+\[
+ Y_t=-w_t'A_t+\frac\gamma2(w_t'A_t)^2,
+ \quad v_t=w_t'\Sigma w_t,
+ \quad C_n=\frac\gamma2\sum_{t\le n}v_t,
+ \quad J_n=\sum_{t\le n}Y_t.
+\]
+Use the same safe linear capital $G_n=\prod_{t\le n}(1+\gamma Y_t/2)$.
+It needs no supplied covariance matrix for its validity. Put
+\[
+ H=(1-\rho)\Sigma+\rho\operatorname{diag}(\Sigma)+rI_p,
+ \qquad \chi=\operatorname{tr}\{(H^{-1}\Sigma)^2\}>0,
+ \qquad \kappa_p=\chi/8.
+\]
+
+\begin{theorem}[An estimated-matrix cash-PARK comparison]
+\label{thm:multivariate-waiting}
+Under $P$, almost surely,
+\[
+ \frac{\sum_{t\le n}v_t}{\log n}\to\frac\chi{\gamma^2},
+ \qquad \frac{\log G_n}{\log n}\to\kappa_p,
+ \qquad \frac{J_n}{C_n}\to1.
+\]
+There is a conditional cash-PARK null $Q$, agreeing with $P$ during training,
+which satisfies
+\[
+ \E_Q(A_tA_t'\mid\F_{t-1})\preceq\Sigma,
+ \qquad
+ \E_Q\{(b'A_t)^4\mid\F_{t-1}\}\le3(b'\Sigma b)^2
+ \quad\text{for every }b\in\mathbb R^p.
+\]
+Every fixed $Q$-valid e-process $F$ has
+$\limsup_n\log F_n/\log n\le\kappa_p$, $P$-almost surely.
+For $\tau_\alpha=\inf\{n:G_n\ge1/\alpha\}$,
+\[
+ \frac{\log\tau_\alpha}{\log(1/\alpha)}\to\frac8\chi,
+ \qquad
+ \frac{C_{\tau_\alpha}}{\log(1/\alpha)}\to\frac4\gamma,
+ \qquad
+ \frac{J_{\tau_\alpha}}{\log(1/\alpha)}\to\frac4\gamma
+ \quad\text{almost surely}.
+\]
+For every level-indexed family satisfying $Q(T_\alpha<\infty)\le\alpha$,
+$P(T_\alpha\le\alpha^{-d})\to0$ for each $0<d<8/\chi$. Its conditional and
+realized cumulative-utility coefficients are at least $4/\gamma$ in the
+same probability sense as Theorem~\ref{thm:vanishing}, with infinite costs at
+$T_\alpha=\infty$. No expected stopped-time or stopped-benefit conclusion is
+asserted.
+\end{theorem}
+
+The proof is in Appendix~\ref{app:multivariate-waiting}. It reduces the
+conditional experiment to the one-dimensional projection along the fitted
+portfolio and proves a matrix integrated-estimation law. The conditional null
+is adaptive: the upper bound does not assert optimality against a null
+restricted to iid returns. Training size and dimension are fixed in the
+high-confidence limit. Neither growing dimension nor $r\downarrow0$ jointly
+with the confidence level is covered.
+The exponents do not bound the duration of the initial constrained phase or
+finite-horizon power.
+When $\rho=0$ and $\Sigma=\sigma^2 I_p$,
+$\chi=p\{\sigma^2/(\sigma^2+r)\}^2$. More fitted noise directions increase
+the cash disadvantage and its information at the same leading rate. They
+change the time exponent while canceling from the stopped-utility coefficient.
+In general $\chi$ describes the learner's limiting curvature; with shrinkage
+it need not equal the covariance rank or be bounded by $p$.
+The ridge remains strictly positive in this theorem; the earlier scalar result
+also covers zero ridge under its stronger training condition.
+
+\begin{corollary}[Bet selection with a matrix cap]
+\label{cor:multivariate-geometric-bet}
+In the same instance, let the public return-moment contract use a fixed
+$K\succeq\Sigma$: conditional raw second moments are bounded by $K$ and
+directional fourth moments by $3(b'Kb)^2$. Write
+\[
+ s_t=w_t'Kw_t,\qquad
+ \nu_t^2=s_t\{1+\gamma\sqrt{3s_t}/2\}^2.
+\]
+Define
+\[
+ \mathsf A=\Sigma^{1/2}H^{-1}\Sigma H^{-1}\Sigma^{1/2},\quad
+ \mathsf B=\Sigma^{1/2}H^{-1}KH^{-1}\Sigma^{1/2},\quad
+ \chi_K=\operatorname{tr}\mathsf B,
+\]
+\[
+ \psi=\E_{Z\sim N_p(0,I_p)}
+       \frac{(Z'\mathsf A Z)^2}{Z'\mathsf B Z},
+ \qquad \frac{\chi^2}{\chi_K}\le\psi\le\chi.
+\]
+Set the ratio to zero when its denominator is zero. For Catoni capital with
+penalty $\lambda_t^2\nu_t^2/2$, every constant bet has limiting log rate
+\[
+ \frac{\chi\lambda}{2\gamma}
+       -\frac{\chi_K\lambda^2}{2\gamma^2}.
+\]
+Its optimum is $\lambda_c=\gamma\chi/(2\chi_K)$, with rate
+$\chi^2/(8\chi_K)$.
+Each fixed nonnegative predictable rule with a finite deterministic bound
+has limsup rate at most $\psi/8$. The past-only rule
+\[
+ \widehat\lambda_t=\frac\gamma2
+       \min\!\left\{\frac{w_t'\widehat M_tw_t}{w_t'Kw_t},1\right\},
+ \qquad \widehat\lambda_t=0\text{ if }w_t'Kw_t=0.
+\]
+attains $\psi/8$ without knowledge of $\Sigma$. Its confidence-time exponent
+is $8/\psi$ and its conditional and realized cumulative-utility coefficients
+are $4\chi/(\gamma\psi)$, almost surely. The optimal constant instead attains
+coefficient $4\chi_K/(\gamma\chi)$.
+\end{corollary}
+
+This is an asymptotic criterion within the prescribed geometric certificate
+and bounded-rule class, not a deadline-power optimizer or an information bound
+for every test using $K$. The upper rate is pointwise in the fixed rule, not
+uniform over level-dependent policy families. Safe linear capital still attains
+$4/\gamma$ in this instance. If $K=q\Sigma$, then $\psi=\chi/q$: both optima
+reduce to $\gamma/(2q)$ and coefficient $4q/\gamma$.
+
+Anisotropy creates a separate gain from adapting the stake. For two signals
+with $\Sigma=\sigma^2 I_2$ and $K=\sigma^2\operatorname{diag}(k_1,k_2)$,
+$k_i\ge1$, put $a=\{\sigma^2/(\sigma^2+r)\}^2$. Then
+\[
+ \chi=2a,\quad \chi_K=a(k_1+k_2),\quad
+ \psi=\frac{2a}{\sqrt{k_1k_2}}.
+\]
+The adaptive coefficient is $4\sqrt{k_1k_2}/\gamma$; the best constant's is
+$2(k_1+k_2)/\gamma$. For $(k_1,k_2)=(1,9)$ these are $12/\gamma$ and
+$20/\gamma$, respectively, while safe linear capital still has $4/\gamma$.
+These are analytic high-confidence coefficients, not observed finite-level
+costs or a new arm in the financial experiment.
+
+\begin{corollary}[The constant-certificate obstruction persists]
+\label{cor:multivariate-constant-certificate}
+Under the moment contract of Corollary~\ref{cor:multivariate-geometric-bet},
+put $V=L^2\norm K_{\op}$ and
+$\nu_*^2=V\{1+\gamma\sqrt{3V}/2\}^2$. There is a finite $B_*$, independent
+of the predictable bet policy, such that the Catoni product with constant
+penalty $\lambda_t^2\nu_*^2/2$ satisfies
+\[
+ \sup_\lambda P\{\sup_n\widetilde E_n^\lambda\ge1/\alpha\}
+       \le B_*/u+\alpha e^u\quad(u>0).
+\]
+Consequently maximal ever-rejection probability vanishes as $\alpha\downarrow0$,
+including level-dependent predictable policies. This asserts no useful finite
+level numerical ceiling for a small ridge and changes no financial method.
+\end{corollary}

@@ -36,6 +36,8 @@ Gaussian estimated policy, information grows only logarithmically; an explicit
 adaptive null gives a matching high-confidence exponent and an attained
 pathwise coefficient for conditional and realized cumulative utility forgone.
 These are not expected stopped-cost results.
+With finitely many signals and positive ridge, estimating the full matrix of
+raw second moments under a leverage constraint gives the same coefficient.
 In that instance, a constant certificate makes maximal power vanish in the high-confidence
 limit uniformly over predictable Catoni bets. For portfolios with trading
 costs, observable comparisons retain separate allocation states and public
@@ -89,6 +91,10 @@ attained coefficient of conditional and realized utility forgone is
 $4/\gamma$ per $\log(1/\alpha)$ at test level $\alpha$.
 This coefficient is a high-confidence limit for that instance, not an expected
 stopped cost or a claim about the complete financial strategy.
+An extension with finitely many signals, positive ridge and an estimated
+second-moment matrix retains the same stopped-utility coefficient;
+Section~\ref{sec:multivariate-waiting} computes how the time exponent changes
+with the learner's limiting curvature.
 For the same policy, a constant-certificate Catoni family has vanishing maximal
 high-confidence power over all predictable bets, including rules chosen
 separately at each confidence level. The fixed penalty constrains that whole
@@ -740,6 +746,7 @@ generated and linked to this section by the reproducible paper-building script.}
 \input{sections/07_certified_tails.tex}
 \input{sections/13_directional_information.tex}
 \input{sections/11_vanishing_gains.tex}
+\input{sections/16_multivariate_waiting.tex}
 \input{sections/08_global_safety.tex}
 \input{sections/09_full_strategy.tex}
 
@@ -817,6 +824,7 @@ $Y=0$, a separate cancellation check.
 
 \input{sections/14_directional_proofs.tex}
 \input{sections/12_vanishing_proofs.tex}
+\input{sections/17_multivariate_proofs.tex}
 
 \section{Reproducibility and numerical conventions}
 Versioned configurations, source hashes, installed versions and seed manifests

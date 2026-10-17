@@ -31,7 +31,8 @@
     "scripts/audit_full_event_snapshot.py": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
     "scripts/audit_full_event_adjudication.py": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724",
     "scripts/gaussian_power_envelope.py": "09e7eb6523265159114ae6c314cc268b3ef78dcaf1ad712863a4b89f41a0fe3d",
-    "scripts/build_final_manuscript_results.py": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c"
+    "scripts/build_final_manuscript_results.py": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c",
+    "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
@@ -168,7 +169,7 @@
   },
   "manuscript_evidence_scope": {
     "audit": "reports/manuscript_evidence_scope_audit.json",
-    "audit_sha256": "3de19a53b69454fc6e99ea6733969ecb47dc678c709190519fabf7b2b7b34bf7",
+    "audit_sha256": "8ba3b236fe97e5e93f8a493a86ec5b8b00e7a2de345e35516a09ab905fd6c65d",
     "csv_unit_checks": 75,
     "maximum_csv_unit_scale_error": 2.43e-14,
     "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
@@ -198,5 +199,27 @@
       "https://arxiv.org/html/2605.12720v1"
     ],
     "scope": "Targeted primary-source comparison of costly experimentation, economic e-value approval and test/log-growth normalization. The scalar example has a log-n information clock and potentially decreasing capital; no generic waiting-cost or asymptotic-optimality principle is claimed as new. Attribution/formatting only; no theorem, numerical estimate or scientific source change. Exhaustive priority remains unproven."
+  },
+  "multivariate_cash_park": {
+    "audit": "reports/multivariate_waiting_checks.json",
+    "audit_sha256": "399ea3f05d7012217995a259e8ec263056e6742dec42f5ef9631ddfb0a5a41f0",
+    "proof_scope_audit": "reports/multivariate_waiting_proof_audit.md",
+    "proof_scope_audit_sha256": "6922dcc9f44c7227bc0d9157cfd55c077576c46a387c69d343a3a7e345adad8b",
+    "script": "scripts/audit_multivariate_waiting.py",
+    "script_sha256": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
+    "deterministic_identity_checks": 573,
+    "deterministic_inequality_checks": 250,
+    "optimizer_checks": 17,
+    "maximum_identity_error": 1.1368683772161603e-13,
+    "maximum_scaled_identity_error": 2.475615241714116e-15,
+    "minimum_inequality_gap": -6.661338147750939e-16,
+    "maximum_optimizer_location_error": 7.833693027592403e-09,
+    "theorem_source_sha256": {
+      "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
+      "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
+      "paper/sections/17_multivariate_proofs.tex": "7ad1c1c83ad3700906e3483ffd98b2a8872917a4958931544b213edbb14f3548",
+      "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7"
+    },
+    "scope": "Fixed finite dimension, iid zero-mean Gaussian alternative, fixed positive ridge and leverage, estimated raw-moment matrix, possibly singular covariance. Adaptive conditional null and high-confidence pathwise/probability coefficients; no stopped expectations or finite-deadline power guarantee. An anisotropic public matrix cap permits a bounded past-only stake attaining psi/8 versus chi^2/(8 chi_K) for the best constant within the stated Catoni family. Constant-certificate maximal power still vanishes uniformly over predictable policies. Finite checks are not an asymptotic proof, simulated paths or a new financial arm."
   }
 }

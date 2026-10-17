@@ -1,0 +1,4015 @@
+{
+  "complete": true,
+  "deterministic_identity_checks": 573,
+  "deterministic_inequality_checks": 250,
+  "optimizer_checks": 17,
+  "maximum_identity_error": 1.1368683772161603e-13,
+  "maximum_scaled_identity_error": 2.475615241714116e-15,
+  "minimum_inequality_gap": -6.661338147750939e-16,
+  "maximum_optimizer_location_error": 7.833693027592403e-09,
+  "identities": [
+    {
+      "name": "scalar trace factor rho=0.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "scalar Frobenius factor rho=0.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 1,1 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 2,7 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=0.7 rho=0.0 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.554312234475219e-16
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=2.0 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar trace factor rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Frobenius factor rho=0.0 r=0.6",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 1,1 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 2,7 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=0.7 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=2.0 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar trace factor rho=0.35 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "scalar Frobenius factor rho=0.35 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 1,1 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 2,7 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=0.7 rho=0.35 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.554312234475219e-16
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=2.0 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar trace factor rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Frobenius factor rho=0.35 r=0.6",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 1,1 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 2,7 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=0.7 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=2.0 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar trace factor rho=1.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "scalar Frobenius factor rho=1.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 1,1 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 2,7 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=0.7 rho=1.0 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.554312234475219e-16
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=2.0 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar trace factor rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Frobenius factor rho=1.0 r=0.6",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 1,1 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Gaussian quadratic covariance 2,7 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=0.7 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar stopped utility coefficient gamma=2.0 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar null raw matrix w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar boundary utility w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar fourth-moment identity w=0 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar fourth-moment identity w=0 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar fourth-moment identity w=0 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar linear projection factor w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar linear projection factor w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar linear projection factor w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar score conditional variance w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar null raw matrix w=1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.9425700364523052e-16
+    },
+    {
+      "name": "scalar boundary utility w=1",
+      "absolute_error": 2.7755575615628914e-17,
+      "scaled_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "scalar fourth-moment identity w=1 b=0",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.2881944207423233e-16
+    },
+    {
+      "name": "scalar fourth-moment identity w=1 b=1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.2881944207423233e-16
+    },
+    {
+      "name": "scalar fourth-moment identity w=1 b=2",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.2881944207423233e-16
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=1 x=0",
+      "absolute_error": 1.3877787807814457e-17,
+      "scaled_error": 1.3877787807814457e-17
+    },
+    {
+      "name": "scalar linear projection factor w=1 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=1 x=1",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "scalar linear projection factor w=1 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=1 x=2",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "scalar linear projection factor w=1 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar score conditional variance w=1",
+      "absolute_error": 5.551115123125783e-17,
+      "scaled_error": 5.551115123125783e-17
+    },
+    {
+      "name": "scalar null raw matrix w=2",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.9425700364523052e-16
+    },
+    {
+      "name": "scalar boundary utility w=2",
+      "absolute_error": 2.7755575615628914e-17,
+      "scaled_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "scalar fourth-moment identity w=2 b=0",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.2881944207423233e-16
+    },
+    {
+      "name": "scalar fourth-moment identity w=2 b=1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.2881944207423233e-16
+    },
+    {
+      "name": "scalar fourth-moment identity w=2 b=2",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.2881944207423233e-16
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=2 x=0",
+      "absolute_error": 1.3877787807814457e-17,
+      "scaled_error": 1.3877787807814457e-17
+    },
+    {
+      "name": "scalar linear projection factor w=2 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=2 x=1",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "scalar linear projection factor w=2 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar full Gaussian density ratio w=2 x=2",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "scalar linear projection factor w=2 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar score conditional variance w=2",
+      "absolute_error": 5.551115123125783e-17,
+      "scaled_error": 5.551115123125783e-17
+    },
+    {
+      "name": "scalar Gaussian mean fourth norm m=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Gaussian mean fourth norm m=32",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar Gaussian mean fourth norm m=252",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar best constant rate",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "scalar proportional-cap ratio q=1.0",
+      "absolute_error": 3.3306690738754696e-16,
+      "scaled_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "scalar proportional-cap ratio q=1.5",
+      "absolute_error": 2.7755575615628914e-16,
+      "scaled_error": 2.7755575615628914e-16
+    },
+    {
+      "name": "scalar proportional-cap ratio q=3.0",
+      "absolute_error": 2.7755575615628914e-17,
+      "scaled_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "scalar spherical-cap exact fourth-ratio rank=1",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "correlated trace factor rho=0.0 r=0.1",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 2.80057656271177e-16
+    },
+    {
+      "name": "correlated Frobenius factor rho=0.0 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 5.601153125423538e-16
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 1,1 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 2,7 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=0.7 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=2.0 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated trace factor rho=0.0 r=0.6",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 4.440892098500626e-16
+    },
+    {
+      "name": "correlated Frobenius factor rho=0.0 r=0.6",
+      "absolute_error": 7.771561172376096e-16,
+      "scaled_error": 7.771561172376096e-16
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 1,1 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 2,7 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=0.7 rho=0.0 r=0.6",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.554312234475219e-16
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=2.0 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated trace factor rho=0.35 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 5.679387132221171e-16
+    },
+    {
+      "name": "correlated Frobenius factor rho=0.35 r=0.1",
+      "absolute_error": 1.5543122344752192e-15,
+      "scaled_error": 9.938927481387045e-16
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 1,1 rho=0.35 r=0.1",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.6756837158074103e-16
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 2,7 rho=0.35 r=0.1",
+      "absolute_error": 1.7763568394002505e-15,
+      "scaled_error": 1.6756837158074103e-16
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=0.7 rho=0.35 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.554312234475219e-16
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=2.0 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated trace factor rho=0.35 r=0.6",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "correlated Frobenius factor rho=0.35 r=0.6",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 4.440892098500626e-16
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 1,1 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 2,7 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=0.7 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=2.0 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated trace factor rho=1.0 r=0.1",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 2.479874486931838e-16
+    },
+    {
+      "name": "correlated Frobenius factor rho=1.0 r=0.1",
+      "absolute_error": 1.3322676295501878e-15,
+      "scaled_error": 7.43962346079551e-16
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 1,1 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 2,7 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=0.7 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=2.0 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated trace factor rho=1.0 r=0.6",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 4.440892098500626e-16
+    },
+    {
+      "name": "correlated Frobenius factor rho=1.0 r=0.6",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 8.881784197001252e-16
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 1,1 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated Gaussian quadratic covariance 2,7 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=0.7 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated stopped utility coefficient gamma=2.0 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated null raw matrix w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated boundary utility w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated fourth-moment identity w=0 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated fourth-moment identity w=0 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated fourth-moment identity w=0 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated fourth-moment identity w=0 b=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated linear projection factor w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated linear projection factor w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated linear projection factor w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=0 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated linear projection factor w=0 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated score conditional variance w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated null raw matrix w=1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.9073340696736767e-16
+    },
+    {
+      "name": "correlated boundary utility w=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated fourth-moment identity w=1 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated fourth-moment identity w=1 b=1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.660778816744468e-16
+    },
+    {
+      "name": "correlated fourth-moment identity w=1 b=2",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 2.1222914968285324e-16
+    },
+    {
+      "name": "correlated fourth-moment identity w=1 b=3",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.7521293580015496e-16
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=1 x=0",
+      "absolute_error": 5.898059818321144e-17,
+      "scaled_error": 5.898059818321144e-17
+    },
+    {
+      "name": "correlated linear projection factor w=1 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=1 x=1",
+      "absolute_error": 1.3877787807814457e-16,
+      "scaled_error": 1.3877787807814457e-16
+    },
+    {
+      "name": "correlated linear projection factor w=1 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=1 x=2",
+      "absolute_error": 3.885780586188048e-16,
+      "scaled_error": 3.885780586188048e-16
+    },
+    {
+      "name": "correlated linear projection factor w=1 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=1 x=3",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "correlated linear projection factor w=1 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated score conditional variance w=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated null raw matrix w=2",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.856700859038048e-16
+    },
+    {
+      "name": "correlated boundary utility w=2",
+      "absolute_error": 1.3877787807814457e-17,
+      "scaled_error": 1.3877787807814457e-17
+    },
+    {
+      "name": "correlated fourth-moment identity w=2 b=0",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.0700725340084502e-16
+    },
+    {
+      "name": "correlated fourth-moment identity w=2 b=1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.57203352352985e-16
+    },
+    {
+      "name": "correlated fourth-moment identity w=2 b=2",
+      "absolute_error": 7.105427357601002e-15,
+      "scaled_error": 3.7981909737821574e-16
+    },
+    {
+      "name": "correlated fourth-moment identity w=2 b=3",
+      "absolute_error": 1.7763568394002505e-15,
+      "scaled_error": 3.6891571728049977e-16
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=2 x=0",
+      "absolute_error": 6.938893903907228e-17,
+      "scaled_error": 6.938893903907228e-17
+    },
+    {
+      "name": "correlated linear projection factor w=2 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=2 x=1",
+      "absolute_error": 5.551115123125783e-17,
+      "scaled_error": 5.551115123125783e-17
+    },
+    {
+      "name": "correlated linear projection factor w=2 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=2 x=2",
+      "absolute_error": 8.604228440844963e-16,
+      "scaled_error": 8.604228440844963e-16
+    },
+    {
+      "name": "correlated linear projection factor w=2 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated full Gaussian density ratio w=2 x=3",
+      "absolute_error": 3.608224830031759e-16,
+      "scaled_error": 3.608224830031759e-16
+    },
+    {
+      "name": "correlated linear projection factor w=2 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated score conditional variance w=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "correlated Gaussian mean fourth norm m=1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.134327483652778e-16
+    },
+    {
+      "name": "correlated Gaussian mean fourth norm m=32",
+      "absolute_error": 8.673617379884035e-19,
+      "scaled_error": 8.673617379884035e-19
+    },
+    {
+      "name": "correlated Gaussian mean fourth norm m=252",
+      "absolute_error": 2.710505431213761e-20,
+      "scaled_error": 2.710505431213761e-20
+    },
+    {
+      "name": "correlated best constant rate",
+      "absolute_error": 1.3877787807814457e-17,
+      "scaled_error": 1.3877787807814457e-17
+    },
+    {
+      "name": "correlated Gaussian integral versus angular integration",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "correlated proportional-cap ratio q=1.0",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.0137749425210618e-16
+    },
+    {
+      "name": "correlated proportional-cap ratio q=1.5",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "correlated proportional-cap ratio q=3.0",
+      "absolute_error": 5.551115123125783e-17,
+      "scaled_error": 5.551115123125783e-17
+    },
+    {
+      "name": "correlated spherical-cap exact fourth-ratio rank=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one trace factor rho=0.0 r=0.1",
+      "absolute_error": 1.1102230246251565e-15,
+      "scaled_error": 1.1102230246251565e-15
+    },
+    {
+      "name": "rank_one Frobenius factor rho=0.0 r=0.1",
+      "absolute_error": 2.220446049250313e-15,
+      "scaled_error": 2.220446049250313e-15
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 1,1 rho=0.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.2658200962035247e-16
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 2,7 rho=0.0 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.2658200962035247e-16
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=0.7 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=2.0 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one trace factor rho=0.0 r=0.6",
+      "absolute_error": 7.771561172376096e-16,
+      "scaled_error": 7.771561172376096e-16
+    },
+    {
+      "name": "rank_one Frobenius factor rho=0.0 r=0.6",
+      "absolute_error": 1.2212453270876722e-15,
+      "scaled_error": 1.2212453270876722e-15
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 1,1 rho=0.0 r=0.6",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 2,7 rho=0.0 r=0.6",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.302158463862728e-16
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=0.7 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=2.0 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one trace factor rho=0.35 r=0.1",
+      "absolute_error": 1.7763568394002505e-15,
+      "scaled_error": 1.1368683772161615e-15
+    },
+    {
+      "name": "rank_one Frobenius factor rho=0.35 r=0.1",
+      "absolute_error": 3.3306690738754696e-15,
+      "scaled_error": 2.1316282072803052e-15
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 1,1 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 2,7 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=0.7 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=2.0 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one trace factor rho=0.35 r=0.6",
+      "absolute_error": 1.1102230246251565e-15,
+      "scaled_error": 1.0374417374552862e-15
+    },
+    {
+      "name": "rank_one Frobenius factor rho=0.35 r=0.6",
+      "absolute_error": 2.220446049250313e-15,
+      "scaled_error": 2.0748834749105748e-15
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 1,1 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 2,7 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=0.7 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=2.0 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one trace factor rho=1.0 r=0.1",
+      "absolute_error": 7.105427357601002e-15,
+      "scaled_error": 9.552852336330246e-16
+    },
+    {
+      "name": "rank_one Frobenius factor rho=1.0 r=0.1",
+      "absolute_error": 1.509903313490213e-14,
+      "scaled_error": 2.0299811214701793e-15
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 1,1 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 2,7 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=0.7 rho=1.0 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.554312234475219e-16
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=2.0 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one trace factor rho=1.0 r=0.6",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 1.010549668636588e-15
+    },
+    {
+      "name": "rank_one Frobenius factor rho=1.0 r=0.6",
+      "absolute_error": 6.661338147750939e-15,
+      "scaled_error": 1.894780628693604e-15
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 1,1 rho=1.0 r=0.6",
+      "absolute_error": 7.105427357601002e-15,
+      "scaled_error": 2.87445239078852e-16
+    },
+    {
+      "name": "rank_one Gaussian quadratic covariance 2,7 rho=1.0 r=0.6",
+      "absolute_error": 2.842170943040401e-14,
+      "scaled_error": 2.87445239078852e-16
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=0.7 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one stopped utility coefficient gamma=2.0 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one null raw matrix w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one boundary utility w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=0 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=0 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=0 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=0 b=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=0 b=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=0 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=0 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=0 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=0 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one score conditional variance w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one null raw matrix w=1",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "rank_one boundary utility w=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=1 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=1 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=1 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=1 b=3",
+      "absolute_error": 2.842170943040401e-14,
+      "scaled_error": 1.438501000646254e-16
+    },
+    {
+      "name": "rank_one fourth-moment identity w=1 b=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=1 x=0",
+      "absolute_error": 1.734723475976807e-16,
+      "scaled_error": 1.734723475976807e-16
+    },
+    {
+      "name": "rank_one linear projection factor w=1 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=1 x=1",
+      "absolute_error": 8.326672684688674e-17,
+      "scaled_error": 8.326672684688674e-17
+    },
+    {
+      "name": "rank_one linear projection factor w=1 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=1 x=2",
+      "absolute_error": 8.326672684688674e-17,
+      "scaled_error": 8.326672684688674e-17
+    },
+    {
+      "name": "rank_one linear projection factor w=1 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=1 x=3",
+      "absolute_error": 8.326672684688674e-17,
+      "scaled_error": 8.326672684688674e-17
+    },
+    {
+      "name": "rank_one linear projection factor w=1 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=1 x=4",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "rank_one linear projection factor w=1 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one score conditional variance w=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one null raw matrix w=2",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "rank_one boundary utility w=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=2 b=0",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.5153830649085455e-16
+    },
+    {
+      "name": "rank_one fourth-moment identity w=2 b=1",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.5153830649085455e-16
+    },
+    {
+      "name": "rank_one fourth-moment identity w=2 b=2",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.5153830649085455e-16
+    },
+    {
+      "name": "rank_one fourth-moment identity w=2 b=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=2 b=4",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.5153830649085455e-16
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=2 x=0",
+      "absolute_error": 5.2909066017292616e-17,
+      "scaled_error": 5.2909066017292616e-17
+    },
+    {
+      "name": "rank_one linear projection factor w=2 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=2 x=1",
+      "absolute_error": 6.938893903907228e-17,
+      "scaled_error": 6.938893903907228e-17
+    },
+    {
+      "name": "rank_one linear projection factor w=2 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=2 x=2",
+      "absolute_error": 2.636779683484747e-16,
+      "scaled_error": 2.636779683484747e-16
+    },
+    {
+      "name": "rank_one linear projection factor w=2 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=2 x=3",
+      "absolute_error": 4.163336342344337e-17,
+      "scaled_error": 4.163336342344337e-17
+    },
+    {
+      "name": "rank_one linear projection factor w=2 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=2 x=4",
+      "absolute_error": 6.938893903907228e-17,
+      "scaled_error": 6.938893903907228e-17
+    },
+    {
+      "name": "rank_one linear projection factor w=2 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one score conditional variance w=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one null raw matrix w=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one boundary utility w=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=3 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=3 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=3 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=3 b=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one fourth-moment identity w=3 b=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=3 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=3 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=3 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=3 x=1",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=3 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=3 x=2",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=3 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=3 x=3",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "rank_one full Gaussian density ratio w=3 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one linear projection factor w=3 x=4",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "rank_one score conditional variance w=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one Gaussian mean fourth norm m=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one Gaussian mean fourth norm m=32",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one Gaussian mean fourth norm m=252",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one best constant rate",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "rank_one proportional-cap ratio q=1.0",
+      "absolute_error": 1.1102230246251565e-15,
+      "scaled_error": 8.33900849607341e-16
+    },
+    {
+      "name": "rank_one proportional-cap ratio q=1.5",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 4.440892098500626e-16
+    },
+    {
+      "name": "rank_one proportional-cap ratio q=3.0",
+      "absolute_error": 5.551115123125783e-17,
+      "scaled_error": 5.551115123125783e-17
+    },
+    {
+      "name": "rank_one spherical-cap exact fourth-ratio rank=1",
+      "absolute_error": 3.3306690738754696e-16,
+      "scaled_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "singular_diagonal trace factor rho=0.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.280921314962659e-16
+    },
+    {
+      "name": "singular_diagonal Frobenius factor rho=0.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.280921314962659e-16
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 1,1 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 2,7 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=0.7 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=2.0 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal trace factor rho=0.0 r=0.6",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "singular_diagonal Frobenius factor rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 1,1 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 2,7 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=0.7 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=2.0 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal trace factor rho=0.35 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.280921314962659e-16
+    },
+    {
+      "name": "singular_diagonal Frobenius factor rho=0.35 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.280921314962659e-16
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 1,1 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 2,7 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=0.7 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=2.0 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal trace factor rho=0.35 r=0.6",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "singular_diagonal Frobenius factor rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 1,1 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 2,7 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=0.7 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=2.0 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal trace factor rho=1.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.280921314962659e-16
+    },
+    {
+      "name": "singular_diagonal Frobenius factor rho=1.0 r=0.1",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.280921314962659e-16
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 1,1 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 2,7 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=0.7 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=2.0 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal trace factor rho=1.0 r=0.6",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "singular_diagonal Frobenius factor rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 1,1 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian quadratic covariance 2,7 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=0.7 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal stopped utility coefficient gamma=2.0 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal null raw matrix w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal boundary utility w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=0 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=0 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=0 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=0 b=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=0 b=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=0 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=0 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=0 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=0 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal score conditional variance w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal null raw matrix w=1",
+      "absolute_error": 3.469446951953614e-18,
+      "scaled_error": 1.8260705447147365e-18
+    },
+    {
+      "name": "singular_diagonal boundary utility w=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=1 b=0",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.4885665035246703e-16
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=1 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=1 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=1 b=3",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 1.4458859539952472e-16
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=1 b=4",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 1.4458859539952472e-16
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=1 x=0",
+      "absolute_error": 1.97758476261356e-16,
+      "scaled_error": 1.97758476261356e-16
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=1 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=1 x=1",
+      "absolute_error": 2.7755575615628914e-17,
+      "scaled_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=1 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=1 x=2",
+      "absolute_error": 1.97758476261356e-16,
+      "scaled_error": 1.97758476261356e-16
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=1 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=1 x=3",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=1 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=1 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=1 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal score conditional variance w=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal null raw matrix w=2",
+      "absolute_error": 3.469446951953614e-18,
+      "scaled_error": 1.8260705447147365e-18
+    },
+    {
+      "name": "singular_diagonal boundary utility w=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=2 b=0",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.4885665035246703e-16
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=2 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=2 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=2 b=3",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 1.4458859539952472e-16
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=2 b=4",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 1.4458859539952472e-16
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=2 x=0",
+      "absolute_error": 1.97758476261356e-16,
+      "scaled_error": 1.97758476261356e-16
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=2 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=2 x=1",
+      "absolute_error": 2.7755575615628914e-17,
+      "scaled_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=2 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=2 x=2",
+      "absolute_error": 1.97758476261356e-16,
+      "scaled_error": 1.97758476261356e-16
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=2 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=2 x=3",
+      "absolute_error": 1.6653345369377348e-16,
+      "scaled_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=2 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=2 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=2 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal score conditional variance w=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal null raw matrix w=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal boundary utility w=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=3 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=3 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=3 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=3 b=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal fourth-moment identity w=3 b=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=3 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=3 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=3 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=3 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=3 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=3 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=3 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=3 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal full Gaussian density ratio w=3 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal linear projection factor w=3 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal score conditional variance w=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian mean fourth norm m=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian mean fourth norm m=32",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal Gaussian mean fourth norm m=252",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal best constant rate",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal proportional-cap ratio q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "singular_diagonal proportional-cap ratio q=1.5",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "singular_diagonal proportional-cap ratio q=3.0",
+      "absolute_error": 5.551115123125783e-17,
+      "scaled_error": 5.551115123125783e-17
+    },
+    {
+      "name": "singular_diagonal spherical-cap exact fourth-ratio rank=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz trace factor rho=0.0 r=0.1",
+      "absolute_error": 4.884981308350689e-15,
+      "scaled_error": 1.2378076208570565e-15
+    },
+    {
+      "name": "toeplitz Frobenius factor rho=0.0 r=0.1",
+      "absolute_error": 9.769962616701378e-15,
+      "scaled_error": 2.475615241714116e-15
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 1,1 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 2,7 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=0.7 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=2.0 rho=0.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz trace factor rho=0.0 r=0.6",
+      "absolute_error": 1.5543122344752192e-15,
+      "scaled_error": 8.699753148236561e-16
+    },
+    {
+      "name": "toeplitz Frobenius factor rho=0.0 r=0.6",
+      "absolute_error": 2.220446049250313e-15,
+      "scaled_error": 1.2428218783195091e-15
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 1,1 rho=0.0 r=0.6",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 1.4934343089035072e-16
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 2,7 rho=0.0 r=0.6",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.4934343089035072e-16
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=0.7 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=2.0 rho=0.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz trace factor rho=0.35 r=0.1",
+      "absolute_error": 2.6645352591003757e-15,
+      "scaled_error": 7.023959165874963e-16
+    },
+    {
+      "name": "toeplitz Frobenius factor rho=0.35 r=0.1",
+      "absolute_error": 5.773159728050814e-15,
+      "scaled_error": 1.52185781927291e-15
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 1,1 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 2,7 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=0.7 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=2.0 rho=0.35 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz trace factor rho=0.35 r=0.6",
+      "absolute_error": 1.5543122344752192e-15,
+      "scaled_error": 8.254956993452434e-16
+    },
+    {
+      "name": "toeplitz Frobenius factor rho=0.35 r=0.6",
+      "absolute_error": 2.4424906541753444e-15,
+      "scaled_error": 1.2972075275425258e-15
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 1,1 rho=0.35 r=0.6",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 2.267497371403755e-16
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 2,7 rho=0.35 r=0.6",
+      "absolute_error": 1.7763568394002505e-15,
+      "scaled_error": 2.267497371403755e-16
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=0.7 rho=0.35 r=0.6",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.554312234475219e-16
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=2.0 rho=0.35 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz trace factor rho=1.0 r=0.1",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.665860783736062e-16
+    },
+    {
+      "name": "toeplitz Frobenius factor rho=1.0 r=0.1",
+      "absolute_error": 1.7763568394002505e-15,
+      "scaled_error": 3.3317215674721243e-16
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 1,1 rho=1.0 r=0.1",
+      "absolute_error": 7.105427357601002e-15,
+      "scaled_error": 3.0838380778772035e-16
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 2,7 rho=1.0 r=0.1",
+      "absolute_error": 2.842170943040401e-14,
+      "scaled_error": 3.0838380778772035e-16
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=0.7 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=2.0 rho=1.0 r=0.1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz trace factor rho=1.0 r=0.6",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.7622328951918672e-16
+    },
+    {
+      "name": "toeplitz Frobenius factor rho=1.0 r=0.6",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.7622328951918665e-16
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 1,1 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz Gaussian quadratic covariance 2,7 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=0.7 rho=1.0 r=0.6",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.554312234475219e-16
+    },
+    {
+      "name": "toeplitz stopped utility coefficient gamma=2.0 rho=1.0 r=0.6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz null raw matrix w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz boundary utility w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=0 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=0 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=0 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=0 b=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=0 b=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=0 b=5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=0 b=6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz linear projection factor w=0 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz linear projection factor w=0 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz linear projection factor w=0 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=0 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz linear projection factor w=0 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=0 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz linear projection factor w=0 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=0 x=5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz linear projection factor w=0 x=5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=0 x=6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz linear projection factor w=0 x=6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz score conditional variance w=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz null raw matrix w=1",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "toeplitz boundary utility w=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=1 b=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=1 b=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=1 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=1 b=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=1 b=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=1 b=5",
+      "absolute_error": 8.526512829121202e-14,
+      "scaled_error": 3.431643771346894e-16
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=1 b=6",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 1.8246419594581035e-16
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=1 x=0",
+      "absolute_error": 6.036837696399289e-16,
+      "scaled_error": 6.036837696399289e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=1 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=1 x=1",
+      "absolute_error": 1.033895191682177e-15,
+      "scaled_error": 1.033895191682177e-15
+    },
+    {
+      "name": "toeplitz linear projection factor w=1 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=1 x=2",
+      "absolute_error": 7.771561172376096e-16,
+      "scaled_error": 7.771561172376096e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=1 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=1 x=3",
+      "absolute_error": 1.3877787807814457e-16,
+      "scaled_error": 1.3877787807814457e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=1 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=1 x=4",
+      "absolute_error": 5.551115123125783e-16,
+      "scaled_error": 5.551115123125783e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=1 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=1 x=5",
+      "absolute_error": 7.771561172376096e-16,
+      "scaled_error": 7.771561172376096e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=1 x=5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=1 x=6",
+      "absolute_error": 5.273559366969494e-16,
+      "scaled_error": 5.273559366969494e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=1 x=6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz score conditional variance w=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz null raw matrix w=2",
+      "absolute_error": 1.1102230246251565e-16,
+      "scaled_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "toeplitz boundary utility w=2",
+      "absolute_error": 3.469446951953614e-18,
+      "scaled_error": 3.469446951953614e-18
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=2 b=0",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.4807151223431387e-16
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=2 b=1",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.4810082327908108e-16
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=2 b=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=2 b=3",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.481827290632773e-16
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=2 b=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=2 b=5",
+      "absolute_error": 1.1368683772161603e-13,
+      "scaled_error": 4.2351138539018155e-16
+    },
+    {
+      "name": "toeplitz fourth-moment identity w=2 b=6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=2 x=0",
+      "absolute_error": 3.9118014383277e-16,
+      "scaled_error": 3.9118014383277e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=2 x=0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=2 x=1",
+      "absolute_error": 7.355227538141662e-16,
+      "scaled_error": 7.355227538141662e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=2 x=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=2 x=2",
+      "absolute_error": 8.049116928532385e-16,
+      "scaled_error": 8.049116928532385e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=2 x=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=2 x=3",
+      "absolute_error": 2.3592239273284576e-16,
+      "scaled_error": 2.3592239273284576e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=2 x=3",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=2 x=4",
+      "absolute_error": 4.0245584642661925e-16,
+      "scaled_error": 4.0245584642661925e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=2 x=4",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=2 x=5",
+      "absolute_error": 2.220446049250313e-16,
+      "scaled_error": 2.220446049250313e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=2 x=5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz full Gaussian density ratio w=2 x=6",
+      "absolute_error": 5.689893001203927e-16,
+      "scaled_error": 5.689893001203927e-16
+    },
+    {
+      "name": "toeplitz linear projection factor w=2 x=6",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz score conditional variance w=2",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz Gaussian mean fourth norm m=1",
+      "absolute_error": 7.105427357601002e-15,
+      "scaled_error": 1.8746548619979992e-16
+    },
+    {
+      "name": "toeplitz Gaussian mean fourth norm m=32",
+      "absolute_error": 6.938893903907228e-18,
+      "scaled_error": 6.938893903907228e-18
+    },
+    {
+      "name": "toeplitz Gaussian mean fourth norm m=252",
+      "absolute_error": 1.0842021724855044e-19,
+      "scaled_error": 1.0842021724855044e-19
+    },
+    {
+      "name": "toeplitz best constant rate",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz proportional-cap ratio q=1.0",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 1.2848377296732597e-15
+    },
+    {
+      "name": "toeplitz proportional-cap ratio q=1.5",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 2.409070743137362e-16
+    },
+    {
+      "name": "toeplitz proportional-cap ratio q=3.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "toeplitz spherical-cap exact fourth-ratio rank=5",
+      "absolute_error": 1.2212453270876722e-15,
+      "scaled_error": 1.2212453270876722e-15
+    },
+    {
+      "name": "two-signal geometric-mean ratio",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "two-signal adaptive coefficient times gamma",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "two-signal best constant coefficient times gamma",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic dimension factor p=1",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic optimal rate p=1 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=1 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=1 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "constant-certificate strict gap p=1 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic optimal rate p=1 q=1.5",
+      "absolute_error": 6.938893903907228e-18,
+      "scaled_error": 6.938893903907228e-18
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=1 q=1.5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=1 q=1.5",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 3.898220855702425e-16
+    },
+    {
+      "name": "constant-certificate strict gap p=1 q=1.5",
+      "absolute_error": 3.3306690738754696e-16,
+      "scaled_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "isotropic optimal rate p=1 q=3.0",
+      "absolute_error": 3.469446951953614e-18,
+      "scaled_error": 3.469446951953614e-18
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=1 q=3.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=1 q=3.0",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.699655938618973e-16
+    },
+    {
+      "name": "constant-certificate strict gap p=1 q=3.0",
+      "absolute_error": 6.661338147750939e-16,
+      "scaled_error": 4.1375569220787877e-16
+    },
+    {
+      "name": "isotropic dimension factor p=5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic optimal rate p=5 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=5 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=5 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "constant-certificate strict gap p=5 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic optimal rate p=5 q=1.5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=5 q=1.5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=5 q=1.5",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 3.898220855702425e-16
+    },
+    {
+      "name": "constant-certificate strict gap p=5 q=1.5",
+      "absolute_error": 3.3306690738754696e-16,
+      "scaled_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "isotropic optimal rate p=5 q=3.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=5 q=3.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=5 q=3.0",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.699655938618973e-16
+    },
+    {
+      "name": "constant-certificate strict gap p=5 q=3.0",
+      "absolute_error": 6.661338147750939e-16,
+      "scaled_error": 4.1375569220787877e-16
+    },
+    {
+      "name": "isotropic dimension factor p=20",
+      "absolute_error": 3.552713678800501e-15,
+      "scaled_error": 2.467414028197541e-16
+    },
+    {
+      "name": "isotropic optimal rate p=20 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=20 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=20 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "constant-certificate strict gap p=20 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic optimal rate p=20 q=1.5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=20 q=1.5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=20 q=1.5",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 3.898220855702425e-16
+    },
+    {
+      "name": "constant-certificate strict gap p=20 q=1.5",
+      "absolute_error": 3.3306690738754696e-16,
+      "scaled_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "isotropic optimal rate p=20 q=3.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=20 q=3.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=20 q=3.0",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.699655938618973e-16
+    },
+    {
+      "name": "constant-certificate strict gap p=20 q=3.0",
+      "absolute_error": 6.661338147750939e-16,
+      "scaled_error": 4.1375569220787877e-16
+    },
+    {
+      "name": "isotropic dimension factor p=100",
+      "absolute_error": 1.4210854715202004e-14,
+      "scaled_error": 1.9739312225580337e-16
+    },
+    {
+      "name": "isotropic optimal rate p=100 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=100 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=100 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "constant-certificate strict gap p=100 q=1.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "isotropic optimal rate p=100 q=1.5",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 1.4804484169185248e-16
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=100 q=1.5",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=100 q=1.5",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 3.898220855702425e-16
+    },
+    {
+      "name": "constant-certificate strict gap p=100 q=1.5",
+      "absolute_error": 3.3306690738754696e-16,
+      "scaled_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "isotropic optimal rate p=100 q=3.0",
+      "absolute_error": 4.440892098500626e-16,
+      "scaled_error": 1.4804484169185248e-16
+    },
+    {
+      "name": "isotropic geometric utility coefficient p=100 q=3.0",
+      "absolute_error": 0.0,
+      "scaled_error": 0.0
+    },
+    {
+      "name": "geometric Minkowski certificate p=100 q=3.0",
+      "absolute_error": 8.881784197001252e-16,
+      "scaled_error": 2.699655938618973e-16
+    },
+    {
+      "name": "constant-certificate strict gap p=100 q=3.0",
+      "absolute_error": 6.661338147750939e-16,
+      "scaled_error": 4.1375569220787877e-16
+    }
+  ],
+  "inequalities": [
+    {
+      "name": "scalar positive learning factor rho=0.0 r=0.1",
+      "minimum_gap": 0.8622448979591835
+    },
+    {
+      "name": "scalar positive learning factor rho=0.0 r=0.6",
+      "minimum_gap": 0.46814404432132967
+    },
+    {
+      "name": "scalar positive learning factor rho=0.35 r=0.1",
+      "minimum_gap": 0.8622448979591835
+    },
+    {
+      "name": "scalar positive learning factor rho=0.35 r=0.6",
+      "minimum_gap": 0.46814404432132967
+    },
+    {
+      "name": "scalar positive learning factor rho=1.0 r=0.1",
+      "minimum_gap": 0.8622448979591835
+    },
+    {
+      "name": "scalar positive learning factor rho=1.0 r=0.6",
+      "minimum_gap": 0.46814404432132967
+    },
+    {
+      "name": "scalar null covariance PSD w=0",
+      "minimum_gap": 1.3
+    },
+    {
+      "name": "scalar raw-moment Loewner gap w=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "scalar directional fourth cap w=0 b=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "scalar directional fourth cap w=0 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "scalar directional fourth cap w=0 b=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "scalar safe factor w=0 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "scalar safe factor w=0 x=1",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "scalar safe factor w=0 x=2",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "scalar null covariance PSD w=1",
+      "minimum_gap": 1.00504088098912
+    },
+    {
+      "name": "scalar raw-moment Loewner gap w=1",
+      "minimum_gap": 0.15695444304006134
+    },
+    {
+      "name": "scalar directional fourth cap w=1 b=0",
+      "minimum_gap": 1.1884311453220526
+    },
+    {
+      "name": "scalar directional fourth cap w=1 b=1",
+      "minimum_gap": 1.1884311453220526
+    },
+    {
+      "name": "scalar directional fourth cap w=1 b=2",
+      "minimum_gap": 1.1884311453220526
+    },
+    {
+      "name": "scalar safe factor w=1 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "scalar safe factor w=1 x=1",
+      "minimum_gap": 0.016755486842780165
+    },
+    {
+      "name": "scalar safe factor w=1 x=2",
+      "minimum_gap": 0.016755486842780165
+    },
+    {
+      "name": "scalar null covariance PSD w=2",
+      "minimum_gap": 1.00504088098912
+    },
+    {
+      "name": "scalar raw-moment Loewner gap w=2",
+      "minimum_gap": 0.15695444304006134
+    },
+    {
+      "name": "scalar directional fourth cap w=2 b=0",
+      "minimum_gap": 1.1884311453220526
+    },
+    {
+      "name": "scalar directional fourth cap w=2 b=1",
+      "minimum_gap": 1.1884311453220526
+    },
+    {
+      "name": "scalar directional fourth cap w=2 b=2",
+      "minimum_gap": 1.1884311453220526
+    },
+    {
+      "name": "scalar safe factor w=2 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "scalar safe factor w=2 x=1",
+      "minimum_gap": 0.016755486842780165
+    },
+    {
+      "name": "scalar safe factor w=2 x=2",
+      "minimum_gap": 0.016755486842780165
+    },
+    {
+      "name": "scalar adaptive improvement over best constant",
+      "minimum_gap": 3.3306690738754696e-16
+    },
+    {
+      "name": "scalar geometric information-rate ceiling",
+      "minimum_gap": 0.12377929687499967
+    },
+    {
+      "name": "correlated positive learning factor rho=0.0 r=0.1",
+      "minimum_gap": 1.5857063711911357
+    },
+    {
+      "name": "correlated positive learning factor rho=0.0 r=0.6",
+      "minimum_gap": 0.7100444444444445
+    },
+    {
+      "name": "correlated positive learning factor rho=0.35 r=0.1",
+      "minimum_gap": 1.56386314055116
+    },
+    {
+      "name": "correlated positive learning factor rho=0.35 r=0.6",
+      "minimum_gap": 0.7271526430789887
+    },
+    {
+      "name": "correlated positive learning factor rho=1.0 r=0.1",
+      "minimum_gap": 1.7907729289940826
+    },
+    {
+      "name": "correlated positive learning factor rho=1.0 r=0.6",
+      "minimum_gap": 0.8113083497698883
+    },
+    {
+      "name": "correlated null covariance PSD w=0",
+      "minimum_gap": 0.5594875162046673
+    },
+    {
+      "name": "correlated raw-moment Loewner gap w=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "correlated directional fourth cap w=0 b=0",
+      "minimum_gap": 8.881784197001252e-16
+    },
+    {
+      "name": "correlated directional fourth cap w=0 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "correlated directional fourth cap w=0 b=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "correlated directional fourth cap w=0 b=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "correlated safe factor w=0 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "correlated safe factor w=0 x=1",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "correlated safe factor w=0 x=2",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "correlated safe factor w=0 x=3",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "correlated null covariance PSD w=1",
+      "minimum_gap": 0.5442800285029766
+    },
+    {
+      "name": "correlated raw-moment Loewner gap w=1",
+      "minimum_gap": -3.2444170932712506e-17
+    },
+    {
+      "name": "correlated directional fourth cap w=1 b=0",
+      "minimum_gap": 0.2564614812204704
+    },
+    {
+      "name": "correlated directional fourth cap w=1 b=1",
+      "minimum_gap": 0.13300916963588794
+    },
+    {
+      "name": "correlated directional fourth cap w=1 b=2",
+      "minimum_gap": 2.0100107755719065
+    },
+    {
+      "name": "correlated directional fourth cap w=1 b=3",
+      "minimum_gap": 0.0008627491227723993
+    },
+    {
+      "name": "correlated safe factor w=1 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "correlated safe factor w=1 x=1",
+      "minimum_gap": 0.12141874212724058
+    },
+    {
+      "name": "correlated safe factor w=1 x=2",
+      "minimum_gap": 0.0929687799253095
+    },
+    {
+      "name": "correlated safe factor w=1 x=3",
+      "minimum_gap": 0.05250229057805411
+    },
+    {
+      "name": "correlated null covariance PSD w=2",
+      "minimum_gap": 0.5245023462457885
+    },
+    {
+      "name": "correlated raw-moment Loewner gap w=2",
+      "minimum_gap": -5.045885221861469e-17
+    },
+    {
+      "name": "correlated directional fourth cap w=2 b=0",
+      "minimum_gap": 0.029433340578299827
+    },
+    {
+      "name": "correlated directional fourth cap w=2 b=1",
+      "minimum_gap": 0.057532634632042834
+    },
+    {
+      "name": "correlated directional fourth cap w=2 b=2",
+      "minimum_gap": 0.04260111814343048
+    },
+    {
+      "name": "correlated directional fourth cap w=2 b=3",
+      "minimum_gap": 0.25492502164221165
+    },
+    {
+      "name": "correlated safe factor w=2 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "correlated safe factor w=2 x=1",
+      "minimum_gap": 0.17360968945600164
+    },
+    {
+      "name": "correlated safe factor w=2 x=2",
+      "minimum_gap": 0.4369020411100455
+    },
+    {
+      "name": "correlated safe factor w=2 x=3",
+      "minimum_gap": 0.3835549574386188
+    },
+    {
+      "name": "correlated adaptive improvement over best constant",
+      "minimum_gap": 0.06489922633842016
+    },
+    {
+      "name": "correlated geometric information-rate ceiling",
+      "minimum_gap": 0.5027428220336463
+    },
+    {
+      "name": "rank_one positive learning factor rho=0.0 r=0.1",
+      "minimum_gap": 0.9365244536940671
+    },
+    {
+      "name": "rank_one positive learning factor rho=0.0 r=0.6",
+      "minimum_gap": 0.6944444444444446
+    },
+    {
+      "name": "rank_one positive learning factor rho=0.35 r=0.1",
+      "minimum_gap": 1.5625
+    },
+    {
+      "name": "rank_one positive learning factor rho=0.35 r=0.6",
+      "minimum_gap": 1.070154577883472
+    },
+    {
+      "name": "rank_one positive learning factor rho=1.0 r=0.1",
+      "minimum_gap": 7.438016528925619
+    },
+    {
+      "name": "rank_one positive learning factor rho=1.0 r=0.6",
+      "minimum_gap": 3.515625
+    },
+    {
+      "name": "rank_one null covariance PSD w=0",
+      "minimum_gap": -3.3306690738754696e-16
+    },
+    {
+      "name": "rank_one raw-moment Loewner gap w=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=0 b=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=0 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=0 b=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=0 b=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=0 b=4",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one safe factor w=0 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "rank_one safe factor w=0 x=1",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "rank_one safe factor w=0 x=2",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "rank_one safe factor w=0 x=3",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "rank_one safe factor w=0 x=4",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "rank_one null covariance PSD w=1",
+      "minimum_gap": -3.407703569275032e-16
+    },
+    {
+      "name": "rank_one raw-moment Loewner gap w=1",
+      "minimum_gap": -1.7413263427969944e-17
+    },
+    {
+      "name": "rank_one directional fourth cap w=1 b=0",
+      "minimum_gap": 0.5607573338337
+    },
+    {
+      "name": "rank_one directional fourth cap w=1 b=1",
+      "minimum_gap": 0.5607573338337
+    },
+    {
+      "name": "rank_one directional fourth cap w=1 b=2",
+      "minimum_gap": 0.5607573338337
+    },
+    {
+      "name": "rank_one directional fourth cap w=1 b=3",
+      "minimum_gap": 45.421344040529675
+    },
+    {
+      "name": "rank_one directional fourth cap w=1 b=4",
+      "minimum_gap": 0.5607573338337
+    },
+    {
+      "name": "rank_one safe factor w=1 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "rank_one safe factor w=1 x=1",
+      "minimum_gap": 0.09756949584670505
+    },
+    {
+      "name": "rank_one safe factor w=1 x=2",
+      "minimum_gap": 0.09756949584670505
+    },
+    {
+      "name": "rank_one safe factor w=1 x=3",
+      "minimum_gap": 0.09756949584670505
+    },
+    {
+      "name": "rank_one safe factor w=1 x=4",
+      "minimum_gap": 0.015555658360076663
+    },
+    {
+      "name": "rank_one null covariance PSD w=2",
+      "minimum_gap": -7.316127756485359e-17
+    },
+    {
+      "name": "rank_one raw-moment Loewner gap w=2",
+      "minimum_gap": -3.3970629357766214e-18
+    },
+    {
+      "name": "rank_one directional fourth cap w=2 b=0",
+      "minimum_gap": 0.06945906857640782
+    },
+    {
+      "name": "rank_one directional fourth cap w=2 b=1",
+      "minimum_gap": 0.06945906857640782
+    },
+    {
+      "name": "rank_one directional fourth cap w=2 b=2",
+      "minimum_gap": 0.06945906857640782
+    },
+    {
+      "name": "rank_one directional fourth cap w=2 b=3",
+      "minimum_gap": 5.626184554689047
+    },
+    {
+      "name": "rank_one directional fourth cap w=2 b=4",
+      "minimum_gap": 0.06945906857640782
+    },
+    {
+      "name": "rank_one safe factor w=2 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "rank_one safe factor w=2 x=1",
+      "minimum_gap": 0.19136575787482757
+    },
+    {
+      "name": "rank_one safe factor w=2 x=2",
+      "minimum_gap": 0.19136575787482757
+    },
+    {
+      "name": "rank_one safe factor w=2 x=3",
+      "minimum_gap": 0.19136575787482757
+    },
+    {
+      "name": "rank_one safe factor w=2 x=4",
+      "minimum_gap": 0.1405555898237293
+    },
+    {
+      "name": "rank_one null covariance PSD w=3",
+      "minimum_gap": -3.3306690738754696e-16
+    },
+    {
+      "name": "rank_one raw-moment Loewner gap w=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=3 b=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=3 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=3 b=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=3 b=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one directional fourth cap w=3 b=4",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "rank_one safe factor w=3 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "rank_one safe factor w=3 x=1",
+      "minimum_gap": 0.2499999999999999
+    },
+    {
+      "name": "rank_one safe factor w=3 x=2",
+      "minimum_gap": 0.2499999999999999
+    },
+    {
+      "name": "rank_one safe factor w=3 x=3",
+      "minimum_gap": 0.2499999999999999
+    },
+    {
+      "name": "rank_one safe factor w=3 x=4",
+      "minimum_gap": 0.2499999999999999
+    },
+    {
+      "name": "rank_one adaptive improvement over best constant",
+      "minimum_gap": -6.661338147750939e-16
+    },
+    {
+      "name": "rank_one geometric information-rate ceiling",
+      "minimum_gap": 0.3072371415566686
+    },
+    {
+      "name": "singular_diagonal positive learning factor rho=0.0 r=0.1",
+      "minimum_gap": 1.7334757594497852
+    },
+    {
+      "name": "singular_diagonal positive learning factor rho=0.0 r=0.6",
+      "minimum_gap": 0.9823409763313609
+    },
+    {
+      "name": "singular_diagonal positive learning factor rho=0.35 r=0.1",
+      "minimum_gap": 1.7334757594497852
+    },
+    {
+      "name": "singular_diagonal positive learning factor rho=0.35 r=0.6",
+      "minimum_gap": 0.9823409763313609
+    },
+    {
+      "name": "singular_diagonal positive learning factor rho=1.0 r=0.1",
+      "minimum_gap": 1.7334757594497852
+    },
+    {
+      "name": "singular_diagonal positive learning factor rho=1.0 r=0.6",
+      "minimum_gap": 0.9823409763313609
+    },
+    {
+      "name": "singular_diagonal null covariance PSD w=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal raw-moment Loewner gap w=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=0 b=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=0 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=0 b=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=0 b=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=0 b=4",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal safe factor w=0 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=0 x=1",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=0 x=2",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=0 x=3",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=0 x=4",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal null covariance PSD w=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal raw-moment Loewner gap w=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=1 b=0",
+      "minimum_gap": 0.016665303172310075
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=1 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=1 b=2",
+      "minimum_gap": 1.1885044082473293
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=1 b=3",
+      "minimum_gap": 2.428811179860329
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=1 b=4",
+      "minimum_gap": 2.428811179860329
+    },
+    {
+      "name": "singular_diagonal safe factor w=1 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=1 x=1",
+      "minimum_gap": 0.19876736111111104
+    },
+    {
+      "name": "singular_diagonal safe factor w=1 x=2",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=1 x=3",
+      "minimum_gap": 0.0730027961143721
+    },
+    {
+      "name": "singular_diagonal safe factor w=1 x=4",
+      "minimum_gap": 0.06357192739666173
+    },
+    {
+      "name": "singular_diagonal null covariance PSD w=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal raw-moment Loewner gap w=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=2 b=0",
+      "minimum_gap": 0.016665303172310075
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=2 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=2 b=2",
+      "minimum_gap": 1.1885044082473293
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=2 b=3",
+      "minimum_gap": 2.428811179860329
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=2 b=4",
+      "minimum_gap": 2.428811179860329
+    },
+    {
+      "name": "singular_diagonal safe factor w=2 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=2 x=1",
+      "minimum_gap": 0.19876736111111104
+    },
+    {
+      "name": "singular_diagonal safe factor w=2 x=2",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=2 x=3",
+      "minimum_gap": 0.0730027961143721
+    },
+    {
+      "name": "singular_diagonal safe factor w=2 x=4",
+      "minimum_gap": 0.06357192739666173
+    },
+    {
+      "name": "singular_diagonal null covariance PSD w=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal raw-moment Loewner gap w=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=3 b=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=3 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=3 b=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=3 b=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal directional fourth cap w=3 b=4",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "singular_diagonal safe factor w=3 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=3 x=1",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=3 x=2",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=3 x=3",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal safe factor w=3 x=4",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "singular_diagonal adaptive improvement over best constant",
+      "minimum_gap": 0.009343436877124689
+    },
+    {
+      "name": "singular_diagonal geometric information-rate ceiling",
+      "minimum_gap": 0.4703006347341746
+    },
+    {
+      "name": "toeplitz positive learning factor rho=0.0 r=0.1",
+      "minimum_gap": 3.9464786175482907
+    },
+    {
+      "name": "toeplitz positive learning factor rho=0.0 r=0.6",
+      "minimum_gap": 1.7866164797909
+    },
+    {
+      "name": "toeplitz positive learning factor rho=0.35 r=0.1",
+      "minimum_gap": 3.7934948028252964
+    },
+    {
+      "name": "toeplitz positive learning factor rho=0.35 r=0.6",
+      "minimum_gap": 1.8828835034610731
+    },
+    {
+      "name": "toeplitz positive learning factor rho=1.0 r=0.1",
+      "minimum_gap": 5.331648528925619
+    },
+    {
+      "name": "toeplitz positive learning factor rho=1.0 r=0.6",
+      "minimum_gap": 2.520037
+    },
+    {
+      "name": "toeplitz null covariance PSD w=0",
+      "minimum_gap": 0.45896699964195453
+    },
+    {
+      "name": "toeplitz raw-moment Loewner gap w=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "toeplitz directional fourth cap w=0 b=0",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "toeplitz directional fourth cap w=0 b=1",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "toeplitz directional fourth cap w=0 b=2",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "toeplitz directional fourth cap w=0 b=3",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "toeplitz directional fourth cap w=0 b=4",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "toeplitz directional fourth cap w=0 b=5",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "toeplitz directional fourth cap w=0 b=6",
+      "minimum_gap": 0.0
+    },
+    {
+      "name": "toeplitz safe factor w=0 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz safe factor w=0 x=1",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz safe factor w=0 x=2",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz safe factor w=0 x=3",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz safe factor w=0 x=4",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz safe factor w=0 x=5",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz safe factor w=0 x=6",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz null covariance PSD w=1",
+      "minimum_gap": 0.4589550029841285
+    },
+    {
+      "name": "toeplitz raw-moment Loewner gap w=1",
+      "minimum_gap": -5.1071195906413596e-17
+    },
+    {
+      "name": "toeplitz directional fourth cap w=1 b=0",
+      "minimum_gap": 0.019103941225996568
+    },
+    {
+      "name": "toeplitz directional fourth cap w=1 b=1",
+      "minimum_gap": 0.0559065123268736
+    },
+    {
+      "name": "toeplitz directional fourth cap w=1 b=2",
+      "minimum_gap": 0.10856678912863327
+    },
+    {
+      "name": "toeplitz directional fourth cap w=1 b=3",
+      "minimum_gap": 0.15414419343185548
+    },
+    {
+      "name": "toeplitz directional fourth cap w=1 b=4",
+      "minimum_gap": 0.14029365255767257
+    },
+    {
+      "name": "toeplitz directional fourth cap w=1 b=5",
+      "minimum_gap": 20.416321550924778
+    },
+    {
+      "name": "toeplitz directional fourth cap w=1 b=6",
+      "minimum_gap": 0.11639695353563084
+    },
+    {
+      "name": "toeplitz safe factor w=1 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz safe factor w=1 x=1",
+      "minimum_gap": 0.21504251579290556
+    },
+    {
+      "name": "toeplitz safe factor w=1 x=2",
+      "minimum_gap": 0.18844864203078582
+    },
+    {
+      "name": "toeplitz safe factor w=1 x=3",
+      "minimum_gap": 0.1636184195677538
+    },
+    {
+      "name": "toeplitz safe factor w=1 x=4",
+      "minimum_gap": 0.14408443104192825
+    },
+    {
+      "name": "toeplitz safe factor w=1 x=5",
+      "minimum_gap": 0.13824860511678638
+    },
+    {
+      "name": "toeplitz safe factor w=1 x=6",
+      "minimum_gap": 0.03406693268410699
+    },
+    {
+      "name": "toeplitz null covariance PSD w=2",
+      "minimum_gap": 0.45095270471646337
+    },
+    {
+      "name": "toeplitz raw-moment Loewner gap w=2",
+      "minimum_gap": -5.874478828262313e-17
+    },
+    {
+      "name": "toeplitz directional fourth cap w=2 b=0",
+      "minimum_gap": 0.0008463940901797251
+    },
+    {
+      "name": "toeplitz directional fourth cap w=2 b=1",
+      "minimum_gap": 0.0014399648999847692
+    },
+    {
+      "name": "toeplitz directional fourth cap w=2 b=2",
+      "minimum_gap": 0.006758781489335508
+    },
+    {
+      "name": "toeplitz directional fourth cap w=2 b=3",
+      "minimum_gap": 0.003097374050746282
+    },
+    {
+      "name": "toeplitz directional fourth cap w=2 b=4",
+      "minimum_gap": 0.039594282610967646
+    },
+    {
+      "name": "toeplitz directional fourth cap w=2 b=5",
+      "minimum_gap": 0.44494642792909644
+    },
+    {
+      "name": "toeplitz directional fourth cap w=2 b=6",
+      "minimum_gap": 0.41630231234300297
+    },
+    {
+      "name": "toeplitz safe factor w=2 x=0",
+      "minimum_gap": 0.25
+    },
+    {
+      "name": "toeplitz safe factor w=2 x=1",
+      "minimum_gap": 0.23477321823697583
+    },
+    {
+      "name": "toeplitz safe factor w=2 x=2",
+      "minimum_gap": 0.2781605748203102
+    },
+    {
+      "name": "toeplitz safe factor w=2 x=3",
+      "minimum_gap": 0.2074155270804603
+    },
+    {
+      "name": "toeplitz safe factor w=2 x=4",
+      "minimum_gap": 0.30335414458707555
+    },
+    {
+      "name": "toeplitz safe factor w=2 x=5",
+      "minimum_gap": 0.16662967966490339
+    },
+    {
+      "name": "toeplitz safe factor w=2 x=6",
+      "minimum_gap": 0.1848584143160582
+    },
+    {
+      "name": "toeplitz adaptive improvement over best constant",
+      "minimum_gap": 0.04598037602340521
+    },
+    {
+      "name": "toeplitz geometric information-rate ceiling",
+      "minimum_gap": 1.2617477587145327
+    },
+    {
+      "name": "constant-certificate positive gap p=1 q=1.0",
+      "minimum_gap": 0.3098386676965934
+    },
+    {
+      "name": "constant-certificate positive gap p=1 q=1.5",
+      "minimum_gap": 0.5692099788303087
+    },
+    {
+      "name": "constant-certificate positive gap p=1 q=3.0",
+      "minimum_gap": 1.6099689437998495
+    },
+    {
+      "name": "constant-certificate positive gap p=5 q=1.0",
+      "minimum_gap": 0.3098386676965934
+    },
+    {
+      "name": "constant-certificate positive gap p=5 q=1.5",
+      "minimum_gap": 0.5692099788303087
+    },
+    {
+      "name": "constant-certificate positive gap p=5 q=3.0",
+      "minimum_gap": 1.6099689437998495
+    },
+    {
+      "name": "constant-certificate positive gap p=20 q=1.0",
+      "minimum_gap": 0.3098386676965934
+    },
+    {
+      "name": "constant-certificate positive gap p=20 q=1.5",
+      "minimum_gap": 0.5692099788303087
+    },
+    {
+      "name": "constant-certificate positive gap p=20 q=3.0",
+      "minimum_gap": 1.6099689437998495
+    },
+    {
+      "name": "constant-certificate positive gap p=100 q=1.0",
+      "minimum_gap": 0.3098386676965934
+    },
+    {
+      "name": "constant-certificate positive gap p=100 q=1.5",
+      "minimum_gap": 0.5692099788303087
+    },
+    {
+      "name": "constant-certificate positive gap p=100 q=3.0",
+      "minimum_gap": 1.6099689437998495
+    }
+  ],
+  "optimizers": [
+    {
+      "case": "scalar",
+      "optimizer_location_error": 7.833693027592403e-09
+    },
+    {
+      "case": "correlated",
+      "optimizer_location_error": 5.551115123125783e-17
+    },
+    {
+      "case": "rank_one",
+      "optimizer_location_error": 5.551115123125783e-17
+    },
+    {
+      "case": "singular_diagonal",
+      "optimizer_location_error": 6.210562009112408e-09
+    },
+    {
+      "case": "toeplitz",
+      "optimizer_location_error": 5.081754683722295e-09
+    },
+    {
+      "dimension": 1,
+      "q": 1.0,
+      "optimizer_location_error": 1.1102230246251565e-16
+    },
+    {
+      "dimension": 1,
+      "q": 1.5,
+      "optimizer_location_error": 1.1102230246251565e-16
+    },
+    {
+      "dimension": 1,
+      "q": 3.0,
+      "optimizer_location_error": 3.885780586188048e-16
+    },
+    {
+      "dimension": 5,
+      "q": 1.0,
+      "optimizer_location_error": 1.1102230246251565e-16
+    },
+    {
+      "dimension": 5,
+      "q": 1.5,
+      "optimizer_location_error": 1.1102230246251565e-16
+    },
+    {
+      "dimension": 5,
+      "q": 3.0,
+      "optimizer_location_error": 1.6653345369377348e-16
+    },
+    {
+      "dimension": 20,
+      "q": 1.0,
+      "optimizer_location_error": 1.1102230246251565e-16
+    },
+    {
+      "dimension": 20,
+      "q": 1.5,
+      "optimizer_location_error": 1.1102230246251565e-16
+    },
+    {
+      "dimension": 20,
+      "q": 3.0,
+      "optimizer_location_error": 1.6653345369377348e-16
+    },
+    {
+      "dimension": 100,
+      "q": 1.0,
+      "optimizer_location_error": 1.1102230246251565e-16
+    },
+    {
+      "dimension": 100,
+      "q": 1.5,
+      "optimizer_location_error": 0.0
+    },
+    {
+      "dimension": 100,
+      "q": 3.0,
+      "optimizer_location_error": 3.3306690738754696e-16
+    }
+  ],
+  "anisotropic_ratio_cases": [
+    {
+      "case": "scalar",
+      "chi": 0.6601562500000001,
+      "chi_cap": 0.8125000000000001,
+      "psi": 0.5363769531250004,
+      "quadrature_error_estimate": 4.707345624410664e-14,
+      "adaptive_rate": 0.06704711914062506,
+      "best_constant_rate": 0.06704711914062501
+    },
+    {
+      "case": "correlated",
+      "chi": 1.1026287011350524,
+      "chi_cap": 2.272561467258514,
+      "psi": 0.5998858791014061,
+      "quadrature_error_estimate": 6.660071175046102e-15,
+      "adaptive_rate": 0.07498573488767576,
+      "best_constant_rate": 0.06687333159537324
+    },
+    {
+      "case": "rank_one",
+      "chi": 1.3313609467455603,
+      "chi_cap": 1.7307692307692286,
+      "psi": 1.0241238051888917,
+      "quadrature_error_estimate": 5.573319583618286e-14,
+      "adaptive_rate": 0.12801547564861146,
+      "best_constant_rate": 0.12801547564861154
+    },
+    {
+      "case": "singular_diagonal",
+      "chi": 1.3478596436281474,
+      "chi_cap": 2.0924821870001455,
+      "psi": 0.8775590088939728,
+      "quadrature_error_estimate": 8.129872588302412e-12,
+      "adaptive_rate": 0.1096948761117466,
+      "best_constant_rate": 0.10852694650210601
+    },
+    {
+      "case": "toeplitz",
+      "chi": 2.7651069055264843,
+      "chi_cap": 5.24627938339826,
+      "psi": 1.5033591468119516,
+      "quadrature_error_estimate": 7.2475889239197385e-12,
+      "adaptive_rate": 0.18791989335149395,
+      "best_constant_rate": 0.1821723463485683
+    }
+  ],
+  "source_sha256": {
+    "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
+    "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
+    "paper/sections/17_multivariate_proofs.tex": "7ad1c1c83ad3700906e3483ffd98b2a8872917a4958931544b213edbb14f3548",
+    "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7"
+  },
+  "scope": "Finite deterministic matrix identities, Gaussian density comparisons, moment inequalities and scalar quadratic optimization. No random paths, asymptotic proof by computation, observed power, expected stopped costs, growing-dimensional result or financial-strategy performance claim."
+}

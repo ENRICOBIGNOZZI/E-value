@@ -399,6 +399,33 @@ changed. Run its separate deterministic audit with:
 .venv/bin/python scripts/audit_geometric_bet_theory.py
 ```
 
+## Several estimated signals and the cash-PARK waiting coefficient
+
+The manuscript extends the costless Gaussian example to a portfolio with any
+fixed finite number of signals, positive ridge, diagonal shrinkage and an L1
+constraint. Singular nonzero covariance is allowed. With limiting estimated
+curvature H, the learning factor is chi=tr((H^-1 Sigma)^2). The confidence-time
+exponent is 8/chi, while conditional and realized cumulative utility retain
+the coefficient 4/gamma. A public matrix cap gives an attaining past-only
+projected-moment stake; its rate can exceed that of the best constant stake
+when the cap is anisotropic. For two isotropic signals and relative caps
+k1,k2, its waiting coefficient uses their geometric mean, while the best
+constant uses their arithmetic mean. A proportional cap K=q*Sigma recovers
+4q/gamma. The constant-certificate power obstruction also persists.
+
+These are analytic fixed-dimension/high-confidence statements, not expected
+stopped costs, finite-deadline power predictions or results for the changing
+financial DGP. The initial constrained phase can dominate a practical horizon.
+No frozen simulation or betting rule is replaced. Complete proofs and scope
+checks are recorded in
+[`reports/multivariate_waiting_proof_audit.md`](reports/multivariate_waiting_proof_audit.md).
+The separate deterministic auditor checks matrix identities and Gaussian
+densities, not random paths or asymptotic convergence:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/audit_multivariate_waiting.py
+```
+
 ## Automatic pilot-to-final continuation
 
 `scripts/continue_full_study.py` observes the existing live pilot, verifies and

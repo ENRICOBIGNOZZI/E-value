@@ -1,7 +1,7 @@
 {
-  "captured_at": "2026-10-17T03:38:14.248958+02:00",
-  "confirmed_live_controller": "91419 Sat Oct 17 01:18:35 2026     02:19:39  11072 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2",
-  "confirmed_live_pilot": "64355 Fri Oct 16 22:56:50 2026     04:41:24 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T04:10:22.274263+02:00",
+  "confirmed_live_controller": "91419 Sat Oct 17 01:18:35 2026     02:51:47   6352 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2",
+  "confirmed_live_pilot": "64355 Fri Oct 16 22:56:50 2026     05:13:32 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
   "status": {
     "controller_pid": 91419,
     "pilot_pid": 64355,
@@ -9,7 +9,7 @@
     "source_sha256": "8f250cf46d8ab94d9d6ec993f692b658a67b128792490c8cc6b2b1d7d88ea062",
     "analysis_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
     "phase": "waiting_for_pilot",
-    "updated_at": "2026-10-17T01:38:10.484049+00:00",
+    "updated_at": "2026-10-17T02:10:11.736178+00:00",
     "pilot_identity": [
       "Fri",
       "Oct",
@@ -28,5 +28,5 @@
   ],
   "replacement_scope": "Only waiting observers replaced for observation-retry and whole-plan-hash guards. Original pilot untouched; neither observer had launched final markets.",
   "scope": "Live process confirmation and operational continuation only. No new simulation evidence, pilot/final completion or overall-goal completion claim.",
-  "verified_pilot_milestone": "reports/full_v3_results/pilot70_replay_milestone.json"
+  "verified_pilot_milestone": "reports/full_v3_results/pilot80_replay_milestone.json"
 }
