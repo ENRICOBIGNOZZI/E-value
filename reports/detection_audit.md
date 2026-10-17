@@ -26,3 +26,11 @@ one of the 100 fixed-reference comparisons is followed for the complete
 horizon, including after a threshold crossing. It reports the first annual
 eligible entry or censoring at the common end, and makes no PARK/REVIVE delay
 claim.
+
+The later full-strategy v3 implementation now retains these shadow
+continuations and separates criterion dates, selected choices and executed
+deployments. Its independent aggregation audit and scope are documented in
+`full_event_reporting_protocol.md`. That audit checks the reported denominators
+and rates against retained JSON records; it does not re-run event adjudication
+from return paths or make method-specific event populations comparable causal
+risk sets. The legacy limitation above remains in force for the old logs.

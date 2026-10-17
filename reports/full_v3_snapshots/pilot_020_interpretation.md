@@ -13,7 +13,15 @@ CSV-based report audit checks **3,425 scalar values**, with maximum absolute
 discrepancy 8.89e-16. It recalculates all retained original metrics, method-level
 means/medians/standard errors/Student intervals, paired contrasts and market
 move incidence. Event-rate and deployment tables are hash-bound by the seal,
-but are not independently reaggregated by this report audit. Neither audit
+but are not independently reaggregated by this report audit. A subsequent
+separate audit in `pilot_020_event_numeric_audit.json` now checks their raw-JSON
+transcription, exact membership and all 1/3/5-year cohort aggregations, with
+264,406 numeric checks and zero copy/aggregation discrepancy. It covers 4,895
+events, 32,385 registry rows, 212 choices and 208 executed deployments. It does
+not re-run the underlying event adjudication or conditional-utility optimizer;
+the retained gain-field identity has maximum residual 1.01e-10 at the declared
+1e-8 economic tolerance. Twenty-two adversarial software controls pass.
+These are reporting checks, not new market replications. No audit
 substitutes for the mathematical assumptions or proves economic superiority.
 
 | Method | Mean h-scaled utility | MC SE | Mean final wealth | Mean inactive fraction |

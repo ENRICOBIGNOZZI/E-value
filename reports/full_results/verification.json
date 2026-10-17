@@ -49,9 +49,9 @@
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062"
   },
   "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar waiting theorem/diagnostic and directional moment-class theory included. Historical derivations excluded.",
-  "current_repository_tests_passed": 100,
-  "current_repository_test_report": "reports/full_test_results_with_continuation.txt",
-  "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 100-test suite includes numerical recovery, vanishing gain, horizon lambda, optimized constants, fourteen reporting-gate, twelve final-assessment and nineteen continuation controls.",
+  "current_repository_tests_passed": 122,
+  "current_repository_test_report": "reports/full_test_results_with_event_reporting.txt",
+  "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 122-test suite includes numerical recovery, scalar/lambda controls, fourteen snapshot-reporting, twelve final-assessment, nineteen continuation and twenty-two independent event-reporting controls. Synthetic fixtures are not market replications.",
   "lambda_power_study": {
     "source_freeze_commit": "bbd619f",
     "source_hash": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
@@ -125,7 +125,16 @@
     "independent_reporting_checks": 3425,
     "numeric_audit": "reports/full_v3_snapshots/pilot_020_numeric_audit.json",
     "interpretation": "reports/full_v3_snapshots/pilot_020_interpretation.md",
-    "scope": "Separate first-twenty v3 interim report; not promoted into the manuscript financial table, not complete pilot/final and not extra same-seed replications."
+    "scope": "Separate first-twenty v3 interim report; not promoted into the manuscript financial table, not complete pilot/final and not extra same-seed replications.",
+    "event_reporting_audit": {
+      "report": "reports/full_v3_snapshots/pilot_020_event_numeric_audit.json",
+      "report_sha256": "c1e87e669013b7bef6deec9c35e27b799321e949817d389bfa5c5bd04a05da7b",
+      "auditor_source_sha256": "d4ad3762bb0593291838dfac557998e5c202e7ced51273b690df927058c6728a",
+      "numeric_checks": 264406,
+      "structural_checks": 459239,
+      "software_controls": 22,
+      "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses the stated economic tolerance, not machine precision."
+    }
   },
   "horizon_betting_prior_art": {
     "audit": "reports/horizon_prior_art_audit.md",

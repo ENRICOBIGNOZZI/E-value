@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "snapshot": "reports/full_v3_snapshots/pilot_020",
+  "kind": "interim_pilot",
+  "seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50018,
+    50019,
+    50020
+  ],
+  "counts": {
+    "structural_checks": 459239,
+    "numeric_checks": 264406,
+    "economic_opportunities_rows": 4895,
+    "opportunity_registry_rows": 32385,
+    "decisions_rows": 212,
+    "deployments_rows": 208,
+    "opportunity_rates_rows": 180,
+    "opportunity_seed_counts_rows": 1792
+  },
+  "maximum_numeric_copy_or_aggregation_error": 0.0,
+  "maximum_retained_deployment_gain_identity_residual": 1.0000000003410059e-10,
+  "gain_identity_absolute_tolerance": 1e-08,
+  "deployment_summary": {
+    "Greedy": {
+      "executed": 117,
+      "positive_gain_fraction": 0.1452991452991453,
+      "mean_gain_basis_points": -0.6024622136752137,
+      "mean_entry_cost_basis_points": 1.148616829059829
+    },
+    "HAC": {
+      "executed": 71,
+      "positive_gain_fraction": 0.23943661971830985,
+      "mean_gain_basis_points": -0.45645284507042255,
+      "mean_entry_cost_basis_points": 1.3631352816901408
+    },
+    "Catoni": {
+      "executed": 0,
+      "positive_gain_fraction": null,
+      "mean_gain_basis_points": null,
+      "mean_entry_cost_basis_points": null
+    },
+    "Tail": {
+      "executed": 20,
+      "positive_gain_fraction": 1.0,
+      "mean_gain_basis_points": 1.0787422,
+      "mean_entry_cost_basis_points": 1.4999999999999998
+    }
+  },
+  "snapshot_seal_sha256": "d337c157b827540ecd499c8e7dcdd09e07bbfcf8546820e5e0c1710898f1306f",
+  "audit_source_sha256": "d4ad3762bb0593291838dfac557998e5c202e7ced51273b690df927058c6728a",
+  "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses the stated economic tolerance, not machine precision."
+}

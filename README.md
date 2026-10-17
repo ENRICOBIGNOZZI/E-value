@@ -299,8 +299,9 @@ The reporting contract is `reports/full_reporting_protocol.md`. Sealing
 requires all requested markets, frozen source/configuration identities and
 byte-current independent replay evidence; it rejects incomplete final subsets
 and refuses to overwrite prior seals. The current repository suite has
-**100 passing tests**, including fourteen reporting-gate controls, twelve
-final-assessment checks and nineteen continuation controls.
+**122 passing tests**, including fourteen reporting-gate controls, twelve
+final-assessment checks, nineteen continuation controls and twenty-two
+independent event-reporting controls.
 
 
 ```sh
@@ -309,11 +310,23 @@ final-assessment checks and nineteen continuation controls.
   --snapshot reports/full_v3_snapshots/pilot_020 \
   --output outputs/park_revive_full_v3/pilot \
   --report tmp/pilot020_numeric_audit.json
+# Independently check all event/deployment rows and 1/3/5-year cohort rates.
+.venv/bin/python scripts/audit_full_event_snapshot.py \
+  --snapshot reports/full_v3_snapshots/pilot_020 \
+  --output outputs/park_revive_full_v3/pilot \
+  --report tmp/pilot020_event_numeric_audit.json
 # Run only after every requested pilot market and replay has finished.
 .venv/bin/python scripts/seal_full_snapshot.py pilot
 # Run only after all 500 separate final markets and replays have finished.
 .venv/bin/python scripts/seal_full_snapshot.py main
 ```
+
+The event-audit scope and the additional commands for the eventual complete
+pilot/final snapshots are in `reports/full_event_reporting_protocol.md`.
+This audit verifies transcription and aggregation, not a causal cost of waiting
+or the underlying conditional-utility optimizer. It changes no scientific
+simulation or final-analysis choice. The live controller keeps its original
+audit scope; the extra event audit is run separately after sealing.
 
 The final economic analysis is fixed in `reports/final_analysis_plan.md` and
 its machine-readable JSON before any final-market output, but after inspecting

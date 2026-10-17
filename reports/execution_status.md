@@ -1,3 +1,49 @@
+# Current continuation — independent event/deployment report aggregation
+
+The preceding turn was **progress**: b69ffcb added the geometric-bet rate and
+waiting-coefficient proof. This turn closes a different verification gap in
+the already sealed first-twenty v3 financial report. The existing report audit
+checks market metrics and paired contrasts; it does not reaggregate event and
+deployment tables. The new standalone standard-library auditor independently
+checks their raw-JSON transcription, exact membership, calendars, terminal
+choices, registry consistency, all 1/3/5-year cohort fractions/denominators and
+four per-market decision/deployment metrics. It imports no simulator, selector,
+optimizer or dataframe reporting builder.
+
+On the same twenty markets it checks **4,895 events, 32,385 registry rows,
+212 choices and 208 executed deployments**, including all 180 cohort rows and
+1,792 market-specific count rows. There are **264,406 numeric checks** with
+zero copy/aggregation discrepancy and **459,239 structural checks**. These
+are not additional markets or pathwise replay counts. The maximum retained
+gain/new/old utility identity residual is 1.01e-10 at the fixed 1e-8 economic
+tolerance; no machine-precision conditional-utility claim is made.
+
+The auditor does not re-run stable-event adjudication from return paths or
+recompute underlying conditional utilities/optimal allocations. Method-specific
+cohorts still do not identify causal delay rankings or a causal waiting-cost
+decomposition. Twenty-two adversarial software controls pass, including prompt
+responses, terminal selections, empty denominators, wrong re-sealed aggregates,
+missing/duplicated rows, stale raw data, malformed metadata and a mid-audit
+input addition. The complete repository suite has **122 passing tests**.
+
+The existing live continuation script and the frozen analysis plan are
+unchanged. After pilot_100 and main_500 are sealed, the extra event audits must
+be run separately before using those tables; their commands and scope are in
+`full_event_reporting_protocol.md`. No economic endpoint, sample membership,
+comparator, threshold, seed or scientific source has been changed. The **42-page
+PDF and its numerical tables are byte-identical** to b69ffcb.
+
+At **2026-10-17T02:30:51.927941+02:00**, original PIDs 64355 and 91419 are confirmed live. The
+checkpoint records **59/100** generated pilot markets,
+**50/100** complete independent arithmetic replays and **0/500** final markets.
+Scientific, final-analysis and preserved empirical-input hashes still match.
+No job was restarted and no empirical work or remote push occurred. The paper
+goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — an attaining geometric bet and the price of a loose cap
 
 The preceding goal turn was **progress**: f379d30 added a targeted primary-source
