@@ -108,8 +108,8 @@
   "ghost_pairs_checked": 13201,
   "max_log_e_replay_error": 2.6645352591003757e-15,
   "pdf_pages": 48,
-  "pdf_sha256": "686e2cafb5521499e3bdbacceb1fe520b06c69be3f7b36ce55ec4f306bfb5ce8",
-  "pdf_visual_qa": "Updated evidence map, complete-pilot tables, signed contrasts and both sealed figures legible. No clipping, overlap, unresolved references or box warnings. All 48 pages rendered and four contact sheets reviewed; pages 18, 36\u201340 inspected individually.",
+  "pdf_sha256": "8f7000d7526a96d521316de83de0024e21953f33795a68c3b8031931a24d2202",
+  "pdf_visual_qa": "All 48 current page PNGs are byte-identical to the reviewed complete-pilot renders. Four contact sheets and pages 18, 36\u201340 were reviewed in the preceding turn. Current build and image-byte equivalence are recorded in reports/paper_build_verification.json.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -145,7 +145,7 @@
   "scope": "Complete hundred-market v3 traded-fund pilot displayed in manuscript. Historical baseline and first-entry mechanisms remain separate; final study running and incomplete. Lambda studies and Gaussian theory retain their separate scope.",
   "current_repository_tests_passed": 251,
   "current_repository_test_report": "reports/full_test_results_with_storage_maintenance.txt",
-  "tests_passed_scope": "Existing 251-test suite passed before this reporting-only update; no new suite run in this turn. The 44-test financial v2 count is retained under historical_first_ten_v2. Reformatting existing pilot outcomes adds no financial markets.",
+  "tests_passed_scope": "Prior full suite: 251 passed in the retained storage-maintenance report. Eight additional build-regression controls pass separately in reports/paper_build_tests.txt; no new full-suite run this turn. Historical v2 44-test count remains under historical_first_ten_v2.",
   "lambda_power_study": {
     "source_freeze_commit": "bbd619f",
     "source_hash": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
@@ -601,5 +601,18 @@
     "scalar_arithmetic_checks": 88285790,
     "ghost_pairs_checked": 1265,
     "max_log_e_replay_error": 1.7763568394002505e-15
+  },
+  "current_manuscript_build": {
+    "script": "scripts/build_paper.py",
+    "script_sha256": "d08ad699c438b8fe1c069bcb855420df5cee39b816262de63e1576b47e310d0b",
+    "verification": "reports/paper_build_verification.json",
+    "verification_sha256": "9fa23c7ecdf641ca0210bad32e8dff249825a4fb6a9ecf8e6cf45e50c997f8e5",
+    "focused_tests_passed": 8,
+    "prior_full_suite_tests_passed": 251,
+    "prior_full_suite_report": "reports/full_test_results_with_storage_maintenance.txt",
+    "full_suite_rerun": false,
+    "actual_default_build_passed": true,
+    "all_48_rendered_pages_unchanged": true,
+    "scope": "Default compile preserves current generated evidence; explicit legacy subcommand retains historical regeneration. Existing full-suite report and eight new regression controls are separate test runs."
   }
 }

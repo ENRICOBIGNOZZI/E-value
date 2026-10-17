@@ -38,8 +38,8 @@ when replaying that block. Completed seed directories are used by the report.
 .venv/bin/python -m park_revive.cli report --output outputs/park_revive_v1/frozen_pilot
 # Export hidden simulation truth separately, verifying every replayed return.
 .venv/bin/python scripts/export_truth.py --output outputs/park_revive_v1/frozen_pilot
-# Compile the paper after completed pilot results exist; requires Tectonic.
-.venv/bin/python scripts/build_paper.py --results outputs/park_revive_v1/frozen_pilot
+# Compile the existing current manuscript; requires Tectonic.
+.venv/bin/python scripts/build_paper.py
 # Planned final 500 fresh seeds, not a claim that these have been executed.
 .venv/bin/python scripts/run_stage.py main
 ```
@@ -190,17 +190,20 @@ The current full-strategy implementation is v3: a preserved QP convergence
 failure triggers exact objective preconditioning, with original-unit KKT guards.
 All 100 pilot markets are now complete, independently replayed and audited;
 no failed seed is excluded. The manuscript displays this complete **v3 pilot**.
-The old first-ten v2 tables remain in `reports/full_results`. The legacy
-`build_paper.py` defaults to those old v2 inputs and would replace the current
-pilot table. Reproduce the current pilot packet into a new directory with:
+The old first-ten v2 tables remain in `reports/full_results`.
+`scripts/build_paper.py` compiles existing manuscript sources and preserves
+all generated tables, figures and evidence. Historical report regeneration
+requires the explicit `legacy` subcommand; its v2 defaults replace current
+generated inputs. Reproduce the current pilot packet into a new directory with:
 
 ```sh
 .venv/bin/python reports/pilot100_manuscript_packet/reproduce.py --destination tmp/pilot100-reproduced
 ```
 
 The retained packet, input hashes and visual review are in
-`reports/pilot100_manuscript_packet`. Compile the existing manuscript directly
-with Tectonic from `paper/`. See `reports/full_strategy_protocol.md`.
+`reports/pilot100_manuscript_packet`. Compile the existing manuscript with
+`scripts/build_paper.py` or Tectonic from `paper/`. See
+`reports/full_strategy_protocol.md`.
 
 ## Separate vanishing-gain research diagnostic
 

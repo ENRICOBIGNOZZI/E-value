@@ -1,3 +1,48 @@
+# Current continuation — preserve current evidence during routine builds
+
+The preceding goal turn was **progress**: 92dda39 completed/sealed all 100
+pilot markets, integrated their economic outcomes and verified the original
+controller's one-time launch of the separate 500-market final study.
+
+A concrete reproducibility problem remained: the ordinary build_paper.py
+command regenerated historical v2 fund inputs by default. Running it after
+last turn could silently replace the new hundred-market tables and figures.
+The default now compiles existing manuscript sources only. Historical report
+regeneration remains available through the explicit `legacy` subcommand;
+its help and description identify the replacement behavior. README commands
+now match these semantics. No simulation runner, financial method, parameter,
+whole analysis freeze or actual study handle is changed.
+
+**Eight regression controls pass**: normal compilation, accidental legacy
+options, explicit legacy dispatch, compiler failure, absent compiler and help.
+An actual default invocation compiles successfully and preserves all **121
+captured manuscript, report and frozen input files byte for byte** across
+the command. No generated table, figure, empirical input or scientific source
+changes. Integrity checks precede the subsequent reporting-metadata refresh.
+The **48-page PDF** is rendered again; every page PNG is byte-identical to
+the previously reviewed complete-pilot render. Only PDF metadata bytes differ.
+The current PDF SHA-256 is
+8f7000d7526a96d521316de83de0024e21953f33795a68c3b8031931a24d2202.
+Evidence is in paper_build_verification.json and paper_build_tests.txt.
+The earlier 251-test full-suite report and these eight controls are separate
+runs; no new full-suite pass is claimed.
+
+At **2026-10-17T05:23:27.167379+02:00**, original controller 91419,
+final-stage runner **37346** and storage observer 35427 are independently
+confirmed live. There are **3/500 generated final markets** and **0/500
+recorded independent final replays**. The driver generates its ten-market
+batch before replaying it. No terminal failure is observed and no process is
+restarted. The complete pilot, its negative economic results and separate
+lambda-power experiments retain their reported scope.
+
+The remaining work is the actual complete final study and audits, final
+manuscript/diagnostics integration and publication review. The goal stays
+active and incomplete. No empirical analysis or remote push occurred.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — complete pilot and final study started
 
 The preceding goal turn was **progress**: f9860e2 prepared verified physical

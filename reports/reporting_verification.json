@@ -21,7 +21,7 @@
     "scripts/build_vanishing_results.py": "8965f2a8522c945e5a200ab327cbd9394df3772b517560f9ee7e66869722d44a",
     "scripts/build_lambda_constant_results.py": "13c3319d60c964277bd4be222c2984e08317d4ac79bd824e664a6cd66bb65e3d",
     "scripts/plot_directional_frontier.py": "a3dba049635f3e98e1135882a8b13088961d528ec068bc75476d396c1f4d939f",
-    "scripts/build_paper.py": "c266dc6ae688f9b953d46b084456e1bae99f031c45c997ae461609c485496ac5",
+    "scripts/build_paper.py": "d08ad699c438b8fe1c069bcb855420df5cee39b816262de63e1576b47e310d0b",
     "scripts/build_full_results.py": "db80e4db2fb848dc0f620c56e70e4abc82b2972ab3c278039acd7099a23fb926",
     "scripts/seal_full_snapshot.py": "e9568ad528011b6c47351141102c8e2796a00e73ddcefc86ecf49372826d6ded",
     "scripts/audit_full_snapshot.py": "2a0bdeedb7f29c99329b0b728b75feaf2c0361922bff963dbc5eda2a38aa1f13",
@@ -441,5 +441,18 @@
     "visual_qa": "reports/pilot100_manuscript_packet/visual_qa.json",
     "visual_qa_sha256": "9dcfe15d2bec4f9c583f263a1054cf50f3b6f8a9a57f9f35e7589f705a8bd0f9",
     "scope": "Complete pilot, not final assessment; all negative economic results retained, no frozen setting changed. All 100 current raw digests revalidated before/after report preparation."
+  },
+  "current_manuscript_build": {
+    "script": "scripts/build_paper.py",
+    "script_sha256": "d08ad699c438b8fe1c069bcb855420df5cee39b816262de63e1576b47e310d0b",
+    "verification": "reports/paper_build_verification.json",
+    "verification_sha256": "9fa23c7ecdf641ca0210bad32e8dff249825a4fb6a9ecf8e6cf45e50c997f8e5",
+    "focused_tests_passed": 8,
+    "prior_full_suite_tests_passed": 251,
+    "prior_full_suite_report": "reports/full_test_results_with_storage_maintenance.txt",
+    "full_suite_rerun": false,
+    "actual_default_build_passed": true,
+    "all_48_rendered_pages_unchanged": true,
+    "scope": "Default compile preserves current generated evidence; explicit legacy subcommand retains historical regeneration. Existing full-suite report and eight new regression controls are separate test runs."
   }
 }

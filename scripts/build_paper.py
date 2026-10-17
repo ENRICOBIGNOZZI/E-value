@@ -1,8 +1,9 @@
-"""Build the manuscript from completed simulation results, then compile with Tectonic."""
+"""Compile the current manuscript; explicitly select legacy to rebuild old reports."""
 import argparse
 import json
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 import pandas as pd
 
@@ -48,13 +49,22 @@ def tex_escape(s):
     return str(s).replace('_',r'\_').replace('%',r'\%')
 
 
-def main():
-    parser=argparse.ArgumentParser()
+def compile_manuscript(root):
+    """Compile existing sources without regenerating tables, figures or evidence."""
+    engine=shutil.which('tectonic')
+    if engine is None:
+        raise RuntimeError('Tectonic is required to compile the manuscript')
+    subprocess.run([engine,'-X','compile','main.tex','--keep-logs'],cwd=root/'paper',check=True)
+    print(root/'paper/main.pdf')
+
+
+def legacy_main(argv=None):
+    parser=argparse.ArgumentParser(description='Regenerate historical baseline/v2 reports and compile them. This replaces current generated manuscript inputs.')
     parser.add_argument('--results',default='outputs/park_revive_v1/frozen_pilot')
     parser.add_argument('--tail-results',default='outputs/park_revive_tail_v1/first_entry')
     parser.add_argument('--full-results',default='outputs/park_revive_full_v2/pilot')
     parser.add_argument('--full-pilot-count',type=int,help='Freeze the reported snapshot to this predeclared prefix starting at 50001')
-    args=parser.parse_args();root=Path(__file__).resolve().parents[1]
+    args=parser.parse_args(argv);root=Path(__file__).resolve().parents[1]
     results=(root/args.results).resolve()
     cfg=json.loads((results/'config_frozen.json').read_text())
     metrics=pd.read_csv(results/'metrics_by_seed.csv')
@@ -124,9 +134,18 @@ def main():
         generate_lambda_constant(root)
     from plot_directional_frontier import main as plot_directional_frontier
     plot_directional_frontier()
-    engine=shutil.which('tectonic') or '/opt/homebrew/bin/tectonic'
-    subprocess.run([engine,'--keep-logs','main.tex'],cwd=root/'paper',check=True)
-    print(root/'paper/main.pdf')
+    compile_manuscript(root)
+
+
+def main(argv=None):
+    argv=list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0]=='legacy':
+        legacy_main(argv[1:])
+        return
+    parser=argparse.ArgumentParser(description=__doc__,
+        epilog='Historical report regeneration: build_paper.py legacy --help. Current sealed pilot/final packets have their own reproduction commands.')
+    parser.parse_args(argv)
+    compile_manuscript(Path(__file__).resolve().parents[1])
 
 
 if __name__=='__main__':main()
