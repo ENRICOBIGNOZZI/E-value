@@ -716,10 +716,16 @@ software with reduced dimensions. Pilot and final evaluation use disjoint
 seed pools with full dimensions; the final design calls for 500 new seeds.
 Execution status is reported explicitly below.
 
-\section{Executed results and limitations}
+\section{Baseline feasibility and calibration diagnostics}
+\label{sec:baseline-diagnostic}
+\input{sections/15_evidence_scope.tex}
+\par\begingroup
+\widowpenalty=10000
+\clubpenalty=10000
 \IfFileExists{generated_results.tex}{\input{generated_results.tex}}{
 This draft contains no executed-result claim. Numeric output must first be
 generated and linked to this section by the reproducible paper-building script.}
+\endgroup
 
 \input{sections/07_certified_tails.tex}
 \input{sections/13_directional_information.tex}

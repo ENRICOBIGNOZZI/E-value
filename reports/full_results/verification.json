@@ -17,9 +17,9 @@
   "scalar_arithmetic_checks": 88285790,
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
-  "pdf_pages": 42,
-  "pdf_sha256": "cb09da465ce6d955cc2b684cba3af5047bef9412cedf3c751c6eca6f1c0fb524",
-  "pdf_visual_qa": "All 42 pages rendered. Changed pages 11\u201317 and 42 inspected individually; the remaining 34 page PNGs match the preceding reviewed render byte for byte. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
+  "pdf_pages": 43,
+  "pdf_sha256": "03aa7766e7203a06e92b125926c24a11482d363890a48798d86e65d3f0c7cccb",
+  "pdf_visual_qa": "All 43 pages rendered and four contact sheets inspected. New evidence-map/estimand pages 16, 17, 18, 32 and 33 inspected individually. Final pagination changes affect only 17 and 18 compared with the first reviewed 43-page render and were reinspected. Pages 1\u201315 match the preceding 42-page render byte for byte. No clipping/overlap, overfull or underfull boxes, unresolved references or duplicate labels.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -37,17 +37,18 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
-    "paper/main.tex": "04b1e003884653ab6fd8b7899307dffe166e3c62f3c48a0dd4fc05e27b27f033",
+    "paper/main.tex": "cd480947312e501d6031d9c539d258534459f17778cbf5436f3fd44b9eefad1f",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
-    "paper/sections/09_full_strategy.tex": "f0bea802ea29e2dbea981226efffcc5d19864815972b1606e7a5fc15dace97c5",
+    "paper/sections/09_full_strategy.tex": "acd52717672f76891dbd58755f8bc238ebc2e91e83e32c47a1b5c7eb7ea1b3f3",
     "paper/sections/10_lambda_power.tex": "49f1e3ab079db8fc0b7f892e170d3e72be573e65bb451f8566cad22b5521447e",
     "paper/sections/11_vanishing_gains.tex": "a0219912ccf40954afb500769ec96d48ead331fb70868953aa000befecf65b15",
     "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7",
     "paper/sections/13_directional_information.tex": "b8ea6d6e1582e765d191b097a6529781ec42279be9e2ca2fa0bd6cc4d3d53e27",
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062",
-    "paper/generated_gaussian_power_envelope.tex": "b89d2152f4b042a177b159a4c5c5fc955046eddcd06a30285de9f2ff214588dc"
+    "paper/generated_gaussian_power_envelope.tex": "b89d2152f4b042a177b159a4c5c5fc955046eddcd06a30285de9f2ff214588dc",
+    "paper/sections/15_evidence_scope.tex": "94cc6c4df9b504d27a4c2d97455c1fdee368b29c4c5465fbe9cef7aadbff643e"
   },
   "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar waiting theorem/diagnostic and directional moment-class theory included. Historical derivations excluded.",
   "current_repository_tests_passed": 176,
@@ -216,5 +217,15 @@
     "software_report": "reports/gaussian_power_envelope_tests.txt",
     "scope": "Classical simple-Gaussian fixed-horizon upper envelope, including early stopping. Empirical-size plug-ins are descriptive, not true-size bounds or matched-size recalibration. Exact-binomial one-sided limits use a union bound over the complete diagnostic panel. No new paths, selected policies, general moment-null power optimum, causal decomposition or financial claim.",
     "test_source_sha256": "1c8e432a0724e8b596d68b558aad36de6f82f39e21233a39cb5f16cf1255cf0e"
+  },
+  "manuscript_evidence_scope": {
+    "audit": "reports/manuscript_evidence_scope_audit.json",
+    "audit_sha256": "f0663faf7004e4ab64d404a46376a47c4049c95f33151f00c6867b531e4d3fc3",
+    "csv_unit_checks": 75,
+    "maximum_csv_unit_scale_error": 2.43e-14,
+    "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
+    "source_scope": "Manuscript count/unit mapping and frozen final estimand, not new simulations or arithmetic replay.",
+    "final_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
+    "generated_numeric_inputs_unchanged": true
   }
 }

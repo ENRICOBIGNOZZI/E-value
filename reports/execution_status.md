@@ -1,3 +1,51 @@
+# Current continuation — coherent experiment scopes and final estimand
+
+The preceding goal turn was **progress**: f228038 added a classical Gaussian
+power envelope. This turn makes the manuscript's evidence hierarchy explicit.
+The original three-market result is labeled a baseline feasibility/calibration
+diagnostic. A table distinguishes financial markets, fixed-reference mechanism
+markets, controlled score paths, scalar cash-PARK paths and the unreported final
+pool. It also states that independent markets, dependent within-market events
+and numerical replays are different units. Earlier outcomes remain visible;
+there is no pooling or promotion of a partial pilot.
+
+The full-strategy section now states the unchanged frozen final analysis:
+**Tail minus All Signals** in mean OOS quadratic utility scaled by 252, paired
+across all **500** final markets, with a two-sided approximate 95% Student MC
+interval and **499** degrees of freedom. Pilot-dependent comparator selection
+and its timing before final output are explicit; secondary contrasts remain
+unadjusted. Economic sign does not change sample size, membership or direction.
+The software-correction history is condensed, retaining its economic invariants
+and links to versioned protocols/failure audits in the repository.
+
+A retained-CSV/source audit confirms the displayed counts and plan mapping.
+Seventy-five CSV unit-scale comparisons agree within one last-printed decimal
+unit per field; maximum discrepancy is 2.43e-14. These check serialized
+columns, not raw-return arithmetic or statistical inference. All generated
+numerical manuscript inputs, frozen scientific source/configuration and the
+whole final-analysis plan remain unchanged. The existing **176-test** software
+report remains applicable; no full suite was rerun for these prose/formatting
+changes. Preserved empirical-input hashes match.
+
+The PDF has **43 pages**. Every page is rendered, all four contact sheets are
+inspected, and new-content pages 16, 17, 18, 32 and 33 are inspected individually.
+A final local pagination correction removes an isolated word; only pages 17
+and 18 change after that correction and are reinspected. No overfull/underfull
+boxes, unresolved references or duplicate labels remain.
+
+At **2026-10-17T03:18:39.098711+02:00**, original PIDs 64355 and 91419 are confirmed live.
+The checkpoint has **70/100 generated pilot markets**, **67/100 recorded complete
+independent arithmetic replays** and **0/500 final markets**. The first-sixty
+current-digest milestone remains the latest complete-batch revalidation;
+this read-only checkpoint claims no additional manual replay work. No job was
+restarted, no empirical work or remote push occurred. Full-size economic
+evidence and broader novelty assessment remain outstanding; the overall goal
+is active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — Gaussian deadline-power envelope
 
 The preceding goal turn was **progress**: 377adfc sharpened ENTRY hypotheses

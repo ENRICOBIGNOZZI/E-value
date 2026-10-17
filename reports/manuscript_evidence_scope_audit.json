@@ -1,0 +1,624 @@
+{
+  "complete": true,
+  "captured_at": "2026-10-17T03:15:33.671957+02:00",
+  "manuscript_source_sha256": {
+    "paper/main.tex": "cd480947312e501d6031d9c539d258534459f17778cbf5436f3fd44b9eefad1f",
+    "paper/sections/09_full_strategy.tex": "acd52717672f76891dbd58755f8bc238ebc2e91e83e32c47a1b5c7eb7ea1b3f3",
+    "paper/sections/15_evidence_scope.tex": "94cc6c4df9b504d27a4c2d97455c1fdee368b29c4c5465fbe9cef7aadbff643e"
+  },
+  "input_sha256": {
+    "reports/results/metrics_by_seed.csv": "83313fd47022b44676f4d2f03d07f03de124a6cde315c2f65db6a9f4685f3139",
+    "reports/tail_results/summary_by_seed.csv": "ac38384096a7b508ab44c42235ee555b30b86df08df0d24f2c6967d4a7fb35f7",
+    "reports/full_results/metrics_by_seed.csv": "8422ffac81a4f8b3981054789185ecc44741025ce5982be3dee680bb32a24ed7",
+    "reports/lambda_power_v2_results/summary.csv": "8d67dc06aa592e0e43d6e44ea0898b63445901f0e916cfc0fd2aafd2cd422e03",
+    "reports/lambda_constant_results/summary.csv": "0c4306c0a7c22782f30b9dba5da06312b2620c2249edc3ebbea5524b313b3bd2",
+    "reports/vanishing_gain_results/endpoint_summary.csv": "1c198a40f5c9fdcfc0d643e7d8097e83b663f63bc5ef0818f623cbdd8ade4975",
+    "reports/results/statistical_study.csv": "32ffa85b7165bb43949e13a704c647f459d165351046539154ff3977f04e4dbd",
+    "reports/tail_results/controlled_tail_study.csv": "9848b42f60cd26b411ed5753beb058c6e9212e0a099634552896873b7f3746a4",
+    "reports/final_analysis_plan.json": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
+    "scripts/assess_final_study.py": "76bf367a572881183a504d3bce83fd0411bfc2db0221bd13baccd4afec0241cc"
+  },
+  "reported_financial_seed_sets": {
+    "baseline": [
+      20001,
+      20002,
+      20003
+    ],
+    "first_entry": [
+      40001,
+      40002,
+      40003,
+      40004,
+      40005,
+      40006,
+      40007,
+      40008,
+      40009,
+      40010,
+      40011,
+      40012,
+      40013,
+      40014,
+      40015,
+      40016,
+      40017,
+      40018,
+      40019,
+      40020
+    ],
+    "fund_snapshot": [
+      50001,
+      50002,
+      50003,
+      50004,
+      50005,
+      50006,
+      50007,
+      50008,
+      50009,
+      50010
+    ]
+  },
+  "score_path_counts_per_law": {
+    "deadline_original": [
+      20000
+    ],
+    "deadline_companion": [
+      20000
+    ],
+    "scalar_cash_park": [
+      4096
+    ],
+    "baseline_calibration": [
+      10000
+    ],
+    "tail_calibration": [
+      10000
+    ]
+  },
+  "scalar_laws": [
+    "gaussian_alternative",
+    "gaussian_feedback_null"
+  ],
+  "unit_scale_checks": [
+    {
+      "panel": "baseline",
+      "seed": 20001,
+      "method": "All Signals",
+      "absolute_error": 1.52e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20001,
+      "method": "Oracle",
+      "absolute_error": 1.05e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20001,
+      "method": "Greedy",
+      "absolute_error": 3e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20001,
+      "method": "Repeated-HAC-p",
+      "absolute_error": 7.3e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20001,
+      "method": "E-process",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "baseline",
+      "seed": 20002,
+      "method": "All Signals",
+      "absolute_error": 2.43e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20002,
+      "method": "Oracle",
+      "absolute_error": 2.43e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20002,
+      "method": "Greedy",
+      "absolute_error": 8.2e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20002,
+      "method": "Repeated-HAC-p",
+      "absolute_error": 8.2e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20002,
+      "method": "E-process",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "baseline",
+      "seed": 20003,
+      "method": "All Signals",
+      "absolute_error": 1.5e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20003,
+      "method": "Oracle",
+      "absolute_error": 2.26e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20003,
+      "method": "Greedy",
+      "absolute_error": 2.43e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20003,
+      "method": "Repeated-HAC-p",
+      "absolute_error": 1.74e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "baseline",
+      "seed": 20003,
+      "method": "E-process",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50001,
+      "method": "All Signals",
+      "absolute_error": 5.9e-15,
+      "one_printed_unit_bound": 2.5201e-12
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50001,
+      "method": "Oracle",
+      "absolute_error": 5.9e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50001,
+      "method": "Greedy",
+      "absolute_error": 1.5e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50001,
+      "method": "HAC",
+      "absolute_error": 5.5e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50001,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50001,
+      "method": "Tail",
+      "absolute_error": 5.5848e-17,
+      "one_printed_unit_bound": 1.00252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50002,
+      "method": "All Signals",
+      "absolute_error": 2.8e-15,
+      "one_printed_unit_bound": 2.62e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50002,
+      "method": "Oracle",
+      "absolute_error": 2.27e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50002,
+      "method": "Greedy",
+      "absolute_error": 2.24e-14,
+      "one_printed_unit_bound": 2.62e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50002,
+      "method": "HAC",
+      "absolute_error": 1.3e-14,
+      "one_printed_unit_bound": 2.62e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50002,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50002,
+      "method": "Tail",
+      "absolute_error": 2.452e-17,
+      "one_printed_unit_bound": 1.0252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50003,
+      "method": "All Signals",
+      "absolute_error": 1.21e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50003,
+      "method": "Oracle",
+      "absolute_error": 2.14e-14,
+      "one_printed_unit_bound": 2.62e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50003,
+      "method": "Greedy",
+      "absolute_error": 1.26e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50003,
+      "method": "HAC",
+      "absolute_error": 1.26e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50003,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50003,
+      "method": "Tail",
+      "absolute_error": 7.884e-17,
+      "one_printed_unit_bound": 1.0252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50004,
+      "method": "All Signals",
+      "absolute_error": 1.86e-14,
+      "one_printed_unit_bound": 2.5201e-12
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50004,
+      "method": "Oracle",
+      "absolute_error": 2.2e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50004,
+      "method": "Greedy",
+      "absolute_error": 1.65e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50004,
+      "method": "HAC",
+      "absolute_error": 1.4e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50004,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50004,
+      "method": "Tail",
+      "absolute_error": 8.448e-17,
+      "one_printed_unit_bound": 1.0252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50005,
+      "method": "All Signals",
+      "absolute_error": 1.5e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50005,
+      "method": "Oracle",
+      "absolute_error": 1.92e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50005,
+      "method": "Greedy",
+      "absolute_error": 2.21e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50005,
+      "method": "HAC",
+      "absolute_error": 3e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50005,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50005,
+      "method": "Tail",
+      "absolute_error": 3.88e-17,
+      "one_printed_unit_bound": 1.252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50006,
+      "method": "All Signals",
+      "absolute_error": 5.9e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50006,
+      "method": "Oracle",
+      "absolute_error": 6.1e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50006,
+      "method": "Greedy",
+      "absolute_error": 1.8e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50006,
+      "method": "HAC",
+      "absolute_error": 2.13e-14,
+      "one_printed_unit_bound": 2.5201e-12
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50006,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50006,
+      "method": "Tail",
+      "absolute_error": 4.888e-17,
+      "one_printed_unit_bound": 1.0252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50007,
+      "method": "All Signals",
+      "absolute_error": 1.09e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50007,
+      "method": "Oracle",
+      "absolute_error": 7.4e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50007,
+      "method": "Greedy",
+      "absolute_error": 1.43e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50007,
+      "method": "HAC",
+      "absolute_error": 2.17e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50007,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50007,
+      "method": "Tail",
+      "absolute_error": 9.432e-17,
+      "one_printed_unit_bound": 1.0252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50008,
+      "method": "All Signals",
+      "absolute_error": 1.07e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50008,
+      "method": "Oracle",
+      "absolute_error": 2.19e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50008,
+      "method": "Greedy",
+      "absolute_error": 5.7e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50008,
+      "method": "HAC",
+      "absolute_error": 1.86e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50008,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50008,
+      "method": "Tail",
+      "absolute_error": 6.232e-17,
+      "one_printed_unit_bound": 1.0252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50009,
+      "method": "All Signals",
+      "absolute_error": 1.2e-15,
+      "one_printed_unit_bound": 2.521e-13
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50009,
+      "method": "Oracle",
+      "absolute_error": 2.41e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50009,
+      "method": "Greedy",
+      "absolute_error": 1.71e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50009,
+      "method": "HAC",
+      "absolute_error": 2.08e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50009,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50009,
+      "method": "Tail",
+      "absolute_error": 6.608e-17,
+      "one_printed_unit_bound": 1.0252e-16
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50010,
+      "method": "All Signals",
+      "absolute_error": 2.7e-15,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50010,
+      "method": "Oracle",
+      "absolute_error": 2.41e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50010,
+      "method": "Greedy",
+      "absolute_error": 1.67e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50010,
+      "method": "HAC",
+      "absolute_error": 1.95e-14,
+      "one_printed_unit_bound": 2.53e-14
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50010,
+      "method": "Catoni",
+      "absolute_error": 0.0,
+      "one_printed_unit_bound": 25.3
+    },
+    {
+      "panel": "fund_snapshot",
+      "seed": 50010,
+      "method": "Tail",
+      "absolute_error": 5.992e-17,
+      "one_printed_unit_bound": 1.0252e-16
+    }
+  ],
+  "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
+  "maximum_csv_unit_scale_error": 2.43e-14,
+  "final_plan_mapping": {
+    "tested_method": "Tail",
+    "primary_reference": "All Signals",
+    "metric": "annual_scaled_utility",
+    "paired_markets": 500,
+    "out_of_sample_dates_per_market": 3528,
+    "confidence_level": 0.95,
+    "student_degrees_of_freedom": 499,
+    "timing": "Chosen after first-ten v2 and first-twenty v3 pilot inspection, before final output; not pre-pilot preregistration."
+  },
+  "all_existing_generated_numeric_manuscript_inputs_unchanged": true,
+  "scope": "Read-only retained-CSV count/unit consistency and manuscript mapping to the unchanged frozen final analysis. No new market, score path, replay, statistical inference or proof of publication quality. Final-estimand formula checked against the existing assessment and its previous tests."
+}

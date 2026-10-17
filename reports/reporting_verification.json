@@ -164,5 +164,15 @@
     "software_report": "reports/gaussian_power_envelope_tests.txt",
     "scope": "Classical simple-Gaussian fixed-horizon upper envelope, including early stopping. Empirical-size plug-ins are descriptive, not true-size bounds or matched-size recalibration. Exact-binomial one-sided limits use a union bound over the complete diagnostic panel. No new paths, selected policies, general moment-null power optimum, causal decomposition or financial claim.",
     "test_source_sha256": "1c8e432a0724e8b596d68b558aad36de6f82f39e21233a39cb5f16cf1255cf0e"
+  },
+  "manuscript_evidence_scope": {
+    "audit": "reports/manuscript_evidence_scope_audit.json",
+    "audit_sha256": "f0663faf7004e4ab64d404a46376a47c4049c95f33151f00c6867b531e4d3fc3",
+    "csv_unit_checks": 75,
+    "maximum_csv_unit_scale_error": 2.43e-14,
+    "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
+    "source_scope": "Manuscript count/unit mapping and frozen final estimand, not new simulations or arithmetic replay.",
+    "final_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
+    "generated_numeric_inputs_unchanged": true
   }
 }

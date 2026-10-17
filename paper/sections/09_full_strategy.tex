@@ -19,31 +19,42 @@ episode-mean floor is $10^{-8}$ daily utility, ranking ties within $10^{-9}$
 use stable signal identifiers, and the QP tolerance is $10^{-10}$. Empty and
 single-coordinate allocations are computed exactly. These declared numerical
 conventions distinguish this study from the earlier positive-only baseline;
-all four new selection methods share them. The pilot pool, 50001--50100, was
-declared before the initial implementation's markets. A numerical failure in
-its final block for seed 50005 led us to retain the initial outputs as
-diagnostics and replay the same pool with corrected arithmetic: allocation
-differences are formed before projections, and $Y$ is evaluated as
-$d(1-\gamma s/2)-D$. This preserves the exact economic score and all design
-parameters; it avoids erasing a tiny contrast next to a large common position.
-The failed seed is included in the replay and no seed is counted twice.
-This is a pilot software correction, not an additional independent experiment.
-Final seeds 60001--60500 remain separate and unobserved at protocol freeze.
-The subsequent expanded v2 pilot stopped at seed 50020 when its QP failed
-the required convergence status despite refinement. Nineteen markets had
-completed. The table below remains the prespecified first-ten snapshot;
-the failed market is retained and the full pilot is not claimed complete.
-A further numerical revision expresses the same QP objective in basis points
-after failed refinement and checks its original-unit KKT conditions. It
-completes the failed market; the entire pilot is being replayed with unchanged
-economic parameters. The fund table here retains the first-ten v2 snapshot
-and does not combine implementation versions as extra replications.
-In all nineteen complete markets shared by v2 and v3, the audited fund/score
-ledgers, event labels, decisions and metrics match byte for byte. The first
-three sealed blocks of the previously failed market match as well. Every
-configuration field agrees apart from its version label. This cross-version
-equality check is distinct from independent arithmetic replay and supplies
-no additional market replications.
+all four new selection methods share them. The pilot pool is 50001--50100;
+the separate final pool is 60001--60500. Numerical pilot corrections form
+allocation differences before projections, evaluate the equivalent score as
+$d(1-\gamma s/2)-D$, and rescale a failed QP objective before checking its
+original-unit KKT conditions. They preserve economic parameters and retain
+failed seeds. Complete ledgers for the nineteen markets shared by the two
+latest implementations, and the failed market's three previously sealed
+blocks, match byte for byte. These are integrity checks, not new independent
+replications. The fund results in this draft retain the previously frozen
+first-ten v2 snapshot; neither the complete 100-market pilot nor the final
+500-market assessment is asserted by that table. Versioned protocols and
+failure audits retain the full implementation history.
+
+\subsection{The final economic estimand}
+The final analysis was fixed after inspecting the first-ten v2 and
+first-twenty v3 pilot results, before any final-market output. Comparator
+priority was therefore chosen using pilot evidence; it was not preregistered
+before the pilot. Each final market supplies one paired observation. With
+$h=252$ and $14h$ out-of-sample dates, define
+\[
+ \bar U_i^m=\frac1{14h}\sum_{t=1}^{14h}U_{i,t}^m,
+ \qquad D_i=h\bigl(\bar U_i^{\mathrm{Tail}}
+                         -\bar U_i^{\mathrm{All\ Signals}}\bigr).
+\]
+Here $U^m$ is actual fund quadratic utility including modeled trading costs
+and all waiting dates. The primary effect is the mean of $D_i$ over all 500
+declared final markets. Its two-sided approximate 95\% Monte Carlo interval
+is $\bar D\pm t_{499,.975}s_D/\sqrt{500}$, where $s_D$ is the sample standard
+deviation across paired markets. This is daily utility scaled by $h$, not
+annual return or certainty equivalent. It concerns the fixed DGP and signal
+library, and does not causally decompose the effect into waiting versus
+different allocation paths. Greedy, HAC, Catoni and Oracle contrasts are
+secondary and unadjusted. Sample size, reference, direction and seed membership
+do not change with the economic sign; a numerical failure does not authorize
+dropping its market. The exploratory first-ten intervals below do not replace
+this complete-sample final analysis.
 
 \subsection{Economic events that retain early responses}
 An economic opportunity starts at the end of the first annual block with

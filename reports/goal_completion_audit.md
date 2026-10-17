@@ -26,7 +26,7 @@ the full objective is complete.
 | Response-independent economic event assessment | Counterfactual continuations retain fast responses; separate batch positive-run reconstruction uses annual conditional-score arrays, flags and ghost continuations | First-twenty reconstruction reproduces 4,895 stable events, 483 unstable runs and 118 prompt selected responses confirmed after closure; full-size evidence pending and method-specific populations do not identify causal delay rankings |
 | Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing, cash-PARK/heteroscedastic Catoni/iid widths and explicit ENTRY utility-null versus joint mean/variance-null mapping; TV corollary distinguished from weak-topology continuity theorem | **Incomplete**; targeted audits improve attribution and hypothesis precision but do not prove priority |
 | Frozen large final study | Original pilot 3 retained; v1 full study superseded; v2 reached 19 completed plus one failed market; v3 recovery verified and full replay running; final 0/500 | **Not executed**; twenty mechanism markets do not fill these counts |
-| Reviewable manuscript and figures | Compiled PDF, numeric table/figure sources, visual QA | Working draft, not a final publication claim |
+| Reviewable manuscript and figures | 43-page compiled PDF; evidence-panel map; final economic estimand and timing explicit; count/unit/source audit and visual QA | Working draft; complete final study and publication review remain outstanding |
 
 The QP convergence failure at seed 50020 is corrected and independently audited.
 The entire common completed v2/v3 pool now has a byte-equality audit: nineteen
@@ -42,7 +42,7 @@ the separate final study. The first ten v2 markets remain a labeled pilot snapsh
 The costless vanishing-gain theory, complete proof and scalar diagnostics are
 now integrated. Broader publication-level novelty assessment remains open;
 the draft makes no unqualified priority claim. These paths do not add financial markets.
-The 42-page draft also includes the separate lambda-selection study. Its
+The 43-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
 176 passing tests, including fourteen reporting-gate, twelve final-assessment,
