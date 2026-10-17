@@ -1,0 +1,895 @@
+{
+  "complete": true,
+  "deterministic_identity_checks": 48,
+  "deterministic_optimizer_checks": 12,
+  "deterministic_local_quadrature_checks": 42,
+  "maximum_identity_error": 8.881784197001252e-16,
+  "maximum_optimizer_location_error": 3.708132556567989e-08,
+  "maximum_local_approximation_error": 3.163637088410276e-09,
+  "optimizer_location_tolerance": "1e-7 * max(1, gamma), plus rtol=2e-9; attained objective checked separately at the identity tolerance",
+  "local_approximation_tolerance": "2e-6 * (1 + abs(finite_weight_prediction))",
+  "checks": [
+    {
+      "identity": "quadratic optimizer gamma=1.0 sigma=1.0 ridge=0.0 q=1.0",
+      "numerical_optimizer": true,
+      "observed": 0.49999999999999994,
+      "expected": 0.5,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "optimal log rate gamma=1.0 sigma=1.0 ridge=0.0 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.125,
+      "expected": 0.125,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "unadjusted log rate gamma=1.0 sigma=1.0 ridge=0.0 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.125,
+      "expected": 0.125,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "attained utility coefficient gamma=1.0 sigma=1.0 ridge=0.0 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 4.0,
+      "expected": 4.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "past-second-moment limit gamma=1.0 sigma=1.0 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.5,
+      "expected": 0.5,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=1.0 sigma=1.0 ridge=0.0 q=1.5",
+      "numerical_optimizer": true,
+      "observed": 0.33333333333333337,
+      "expected": 0.3333333333333333,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "optimal log rate gamma=1.0 sigma=1.0 ridge=0.0 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 0.08333333333333334,
+      "expected": 0.08333333333333333,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "identity": "unadjusted log rate gamma=1.0 sigma=1.0 ridge=0.0 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 0.0625,
+      "expected": 0.0625,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "attained utility coefficient gamma=1.0 sigma=1.0 ridge=0.0 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 6.0,
+      "expected": 6.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "past-second-moment limit gamma=1.0 sigma=1.0 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 0.3333333333333333,
+      "expected": 0.3333333333333333,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=1.0 sigma=1.0 ridge=0.0 q=2.0",
+      "numerical_optimizer": true,
+      "observed": 0.25000000000000006,
+      "expected": 0.25,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "optimal log rate gamma=1.0 sigma=1.0 ridge=0.0 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 0.0625,
+      "expected": 0.0625,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "unadjusted log rate gamma=1.0 sigma=1.0 ridge=0.0 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "attained utility coefficient gamma=1.0 sigma=1.0 ridge=0.0 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 8.0,
+      "expected": 8.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "past-second-moment limit gamma=1.0 sigma=1.0 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 0.25,
+      "expected": 0.25,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=1.0 sigma=1.0 ridge=0.0 q=4.0",
+      "numerical_optimizer": true,
+      "observed": 0.12500000000000017,
+      "expected": 0.125,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "identity": "optimal log rate gamma=1.0 sigma=1.0 ridge=0.0 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 0.03125,
+      "expected": 0.03125,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "unadjusted log rate gamma=1.0 sigma=1.0 ridge=0.0 q=4.0",
+      "numerical_optimizer": false,
+      "observed": -0.25,
+      "expected": -0.25,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "attained utility coefficient gamma=1.0 sigma=1.0 ridge=0.0 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 16.0,
+      "expected": 16.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "past-second-moment limit gamma=1.0 sigma=1.0 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 0.125,
+      "expected": 0.125,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=5.0 sigma=0.2 ridge=0.1 q=1.0",
+      "numerical_optimizer": true,
+      "observed": 2.5000000370813256,
+      "expected": 2.5,
+      "absolute_error": 3.708132556567989e-08
+    },
+    {
+      "identity": "optimal log rate gamma=5.0 sigma=0.2 ridge=0.1 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.010204081632653059,
+      "expected": 0.010204081632653062,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "identity": "unadjusted log rate gamma=5.0 sigma=0.2 ridge=0.1 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.010204081632653059,
+      "expected": 0.010204081632653062,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "identity": "attained utility coefficient gamma=5.0 sigma=0.2 ridge=0.1 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.7999999999999998,
+      "expected": 0.8,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "past-second-moment limit gamma=5.0 sigma=0.2 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 2.5,
+      "expected": 2.5,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=5.0 sigma=0.2 ridge=0.1 q=1.5",
+      "numerical_optimizer": true,
+      "observed": 1.6666666666666665,
+      "expected": 1.6666666666666667,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "optimal log rate gamma=5.0 sigma=0.2 ridge=0.1 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 0.006802721088435373,
+      "expected": 0.006802721088435375,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "identity": "unadjusted log rate gamma=5.0 sigma=0.2 ridge=0.1 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 0.005102040816326528,
+      "expected": 0.005102040816326531,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "identity": "attained utility coefficient gamma=5.0 sigma=0.2 ridge=0.1 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 1.1999999999999997,
+      "expected": 1.2,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "past-second-moment limit gamma=5.0 sigma=0.2 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 1.6666666666666665,
+      "expected": 1.6666666666666667,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "quadratic optimizer gamma=5.0 sigma=0.2 ridge=0.1 q=2.0",
+      "numerical_optimizer": true,
+      "observed": 1.2499999999999993,
+      "expected": 1.25,
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "identity": "optimal log rate gamma=5.0 sigma=0.2 ridge=0.1 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 0.00510204081632653,
+      "expected": 0.005102040816326531,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "identity": "unadjusted log rate gamma=5.0 sigma=0.2 ridge=0.1 q=2.0",
+      "numerical_optimizer": false,
+      "observed": -4.5315225494904345e-18,
+      "expected": 0.0,
+      "absolute_error": 4.5315225494904345e-18
+    },
+    {
+      "identity": "attained utility coefficient gamma=5.0 sigma=0.2 ridge=0.1 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 1.5999999999999996,
+      "expected": 1.6,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "identity": "past-second-moment limit gamma=5.0 sigma=0.2 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 1.25,
+      "expected": 1.25,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=5.0 sigma=0.2 ridge=0.1 q=4.0",
+      "numerical_optimizer": true,
+      "observed": 0.6249999999999991,
+      "expected": 0.625,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "identity": "optimal log rate gamma=5.0 sigma=0.2 ridge=0.1 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 0.002551020408163265,
+      "expected": 0.0025510204081632655,
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "identity": "unadjusted log rate gamma=5.0 sigma=0.2 ridge=0.1 q=4.0",
+      "numerical_optimizer": false,
+      "observed": -0.02040816326530613,
+      "expected": -0.020408163265306124,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "attained utility coefficient gamma=5.0 sigma=0.2 ridge=0.1 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 3.1999999999999993,
+      "expected": 3.2,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "identity": "past-second-moment limit gamma=5.0 sigma=0.2 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 0.625,
+      "expected": 0.625,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=0.5 sigma=2.0 ridge=1.0 q=1.0",
+      "numerical_optimizer": true,
+      "observed": 0.24999999999999997,
+      "expected": 0.25,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "optimal log rate gamma=0.5 sigma=2.0 ridge=1.0 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.08,
+      "expected": 0.08,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "unadjusted log rate gamma=0.5 sigma=2.0 ridge=1.0 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.08,
+      "expected": 0.08,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "attained utility coefficient gamma=0.5 sigma=2.0 ridge=1.0 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 8.0,
+      "expected": 8.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "past-second-moment limit gamma=0.5 sigma=2.0 q=1.0",
+      "numerical_optimizer": false,
+      "observed": 0.25,
+      "expected": 0.25,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=0.5 sigma=2.0 ridge=1.0 q=1.5",
+      "numerical_optimizer": true,
+      "observed": 0.16666666666666669,
+      "expected": 0.16666666666666666,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "optimal log rate gamma=0.5 sigma=2.0 ridge=1.0 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 0.053333333333333344,
+      "expected": 0.05333333333333334,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "unadjusted log rate gamma=0.5 sigma=2.0 ridge=1.0 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 0.04,
+      "expected": 0.04,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "attained utility coefficient gamma=0.5 sigma=2.0 ridge=1.0 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 12.0,
+      "expected": 12.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "past-second-moment limit gamma=0.5 sigma=2.0 q=1.5",
+      "numerical_optimizer": false,
+      "observed": 0.16666666666666666,
+      "expected": 0.16666666666666666,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=0.5 sigma=2.0 ridge=1.0 q=2.0",
+      "numerical_optimizer": true,
+      "observed": 0.12500000000000003,
+      "expected": 0.125,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "optimal log rate gamma=0.5 sigma=2.0 ridge=1.0 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 0.04,
+      "expected": 0.04,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "unadjusted log rate gamma=0.5 sigma=2.0 ridge=1.0 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "attained utility coefficient gamma=0.5 sigma=2.0 ridge=1.0 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 16.0,
+      "expected": 16.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "past-second-moment limit gamma=0.5 sigma=2.0 q=2.0",
+      "numerical_optimizer": false,
+      "observed": 0.125,
+      "expected": 0.125,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "quadratic optimizer gamma=0.5 sigma=2.0 ridge=1.0 q=4.0",
+      "numerical_optimizer": true,
+      "observed": 0.06250000000000008,
+      "expected": 0.0625,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "identity": "optimal log rate gamma=0.5 sigma=2.0 ridge=1.0 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 0.02,
+      "expected": 0.02,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "unadjusted log rate gamma=0.5 sigma=2.0 ridge=1.0 q=4.0",
+      "numerical_optimizer": false,
+      "observed": -0.16,
+      "expected": -0.16,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "attained utility coefficient gamma=0.5 sigma=2.0 ridge=1.0 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 32.0,
+      "expected": 32.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "past-second-moment limit gamma=0.5 sigma=2.0 q=4.0",
+      "numerical_optimizer": false,
+      "observed": 0.0625,
+      "expected": 0.0625,
+      "absolute_error": 0.0
+    }
+  ],
+  "local_quadrature": [
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 1.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 1.0,
+      "stake": 0.5,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.12496937856594457,
+      "finite_weight_prediction": 0.12496937950321524,
+      "absolute_local_approximation_error": 9.372706638588468e-10
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 1.0,
+      "stake": 0.75,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0936811007185972,
+      "finite_weight_prediction": 0.09368110388223429,
+      "absolute_local_approximation_error": 3.163637088410276e-09
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 1.5,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 1.5,
+      "stake": 0.3333333333333333,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.08331666555548302,
+      "finite_weight_prediction": 0.08331666583333333,
+      "absolute_local_approximation_error": 2.7785031220251e-10
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 1.5,
+      "stake": 0.5,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.06246249718772937,
+      "finite_weight_prediction": 0.062462498125000016,
+      "absolute_local_approximation_error": 9.372706430421651e-10
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 2.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 2.0,
+      "stake": 0.25,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.062489174096540784,
+      "finite_weight_prediction": 0.06248917421370269,
+      "absolute_local_approximation_error": 1.171619051776318e-10
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 2.0,
+      "stake": 0.375,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.04685064158539915,
+      "finite_weight_prediction": 0.046850641980831054,
+      "absolute_local_approximation_error": 3.9543190250013183e-10
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 2.0,
+      "stake": 0.5,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": -4.330408245990488e-05,
+      "finite_weight_prediction": -4.330314518924405e-05,
+      "absolute_local_approximation_error": 9.37270660829857e-10
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 4.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 4.0,
+      "stake": 0.125,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.03124617254043416,
+      "finite_weight_prediction": 0.0312461725550894,
+      "absolute_local_approximation_error": 1.4655242297489934e-11
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 4.0,
+      "stake": 0.1875,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.023428888199534047,
+      "finite_weight_prediction": 0.023428888248951153,
+      "absolute_local_approximation_error": 4.9417105824067775e-11
+    },
+    {
+      "gamma": 1.0,
+      "sigma": 1.0,
+      "public_second_ratio": 4.0,
+      "stake": 0.5,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": -0.25006124005584024,
+      "finite_weight_prediction": -0.2500612391185696,
+      "absolute_local_approximation_error": 9.37270649981059e-10
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 1.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 1.0,
+      "stake": 2.5,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.12496937856591285,
+      "finite_weight_prediction": 0.12496937950321518,
+      "absolute_local_approximation_error": 9.373023329706243e-10
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 1.0,
+      "stake": 3.75,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.09368110071870837,
+      "finite_weight_prediction": 0.09368110388223418,
+      "absolute_local_approximation_error": 3.163525802429845e-09
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 1.5,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 1.5,
+      "stake": 1.6666666666666667,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.08331666555553648,
+      "finite_weight_prediction": 0.08331666583333332,
+      "absolute_local_approximation_error": 2.777968410860865e-10
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 1.5,
+      "stake": 2.5,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.062462497187697606,
+      "finite_weight_prediction": 0.06246249812499995,
+      "absolute_local_approximation_error": 9.37302346848412e-10
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 2.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 2.0,
+      "stake": 1.25,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.062489174096524915,
+      "finite_weight_prediction": 0.06248917421370266,
+      "absolute_local_approximation_error": 1.1717774667241443e-10
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 2.0,
+      "stake": 1.875,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.04685064158545472,
+      "finite_weight_prediction": 0.04685064198083099,
+      "absolute_local_approximation_error": 3.953762733877042e-10
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 2.0,
+      "stake": 2.5,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": -4.330408249170998e-05,
+      "finite_weight_prediction": -4.330314518934987e-05,
+      "absolute_local_approximation_error": 9.373023601095599e-10
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 4.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 4.0,
+      "stake": 0.625,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.031246172540426245,
+      "finite_weight_prediction": 0.031246172555089397,
+      "absolute_local_approximation_error": 1.466315263654039e-11
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 4.0,
+      "stake": 0.9375,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.02342888819956185,
+      "finite_weight_prediction": 0.023428888248951143,
+      "absolute_local_approximation_error": 4.938929126785396e-11
+    },
+    {
+      "gamma": 5.0,
+      "sigma": 0.2,
+      "public_second_ratio": 4.0,
+      "stake": 2.5,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": -0.250061240055872,
+      "finite_weight_prediction": -0.25006123911856964,
+      "absolute_local_approximation_error": 9.37302346848412e-10
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 1.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 1.0,
+      "stake": 0.25,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.12496937856594457,
+      "finite_weight_prediction": 0.12496937950321524,
+      "absolute_local_approximation_error": 9.372706638588468e-10
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 1.0,
+      "stake": 0.375,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0936811007185972,
+      "finite_weight_prediction": 0.09368110388223429,
+      "absolute_local_approximation_error": 3.163637088410276e-09
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 1.5,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 1.5,
+      "stake": 0.16666666666666666,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.08331666555548302,
+      "finite_weight_prediction": 0.08331666583333333,
+      "absolute_local_approximation_error": 2.7785031220251e-10
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 1.5,
+      "stake": 0.25,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.06246249718772937,
+      "finite_weight_prediction": 0.062462498125000016,
+      "absolute_local_approximation_error": 9.372706430421651e-10
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 2.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 2.0,
+      "stake": 0.125,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.062489174096540784,
+      "finite_weight_prediction": 0.06248917421370269,
+      "absolute_local_approximation_error": 1.171619051776318e-10
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 2.0,
+      "stake": 0.1875,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.04685064158539915,
+      "finite_weight_prediction": 0.046850641980831054,
+      "absolute_local_approximation_error": 3.9543190250013183e-10
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 2.0,
+      "stake": 0.25,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": -4.330408245990488e-05,
+      "finite_weight_prediction": -4.330314518924405e-05,
+      "absolute_local_approximation_error": 9.37270660829857e-10
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 4.0,
+      "stake": 0.0,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.0,
+      "finite_weight_prediction": 0.0,
+      "absolute_local_approximation_error": 0.0
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 4.0,
+      "stake": 0.0625,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.03124617254043416,
+      "finite_weight_prediction": 0.0312461725550894,
+      "absolute_local_approximation_error": 1.4655242297489934e-11
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 4.0,
+      "stake": 0.09375,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": 0.023428888199534047,
+      "finite_weight_prediction": 0.023428888248951153,
+      "absolute_local_approximation_error": 4.9417105824067775e-11
+    },
+    {
+      "gamma": 0.5,
+      "sigma": 2.0,
+      "public_second_ratio": 4.0,
+      "stake": 0.25,
+      "weight": 0.0001,
+      "observed_log_factor_per_weight_squared": -0.25006124005584024,
+      "finite_weight_prediction": -0.2500612391185696,
+      "absolute_local_approximation_error": 9.37270649981059e-10
+    }
+  ],
+  "analytic_examples_gamma_sigma_one_ridge_zero": [
+    {
+      "public_second_ratio": 1.0,
+      "oracle_stake": 0.5,
+      "optimized_log_rate": 0.125,
+      "unadjusted_log_rate": 0.125,
+      "attained_confidence_time_exponent": 8.0,
+      "attained_cumulative_utility_coefficient": 4.0
+    },
+    {
+      "public_second_ratio": 1.5,
+      "oracle_stake": 0.3333333333333333,
+      "optimized_log_rate": 0.08333333333333333,
+      "unadjusted_log_rate": 0.0625,
+      "attained_confidence_time_exponent": 12.0,
+      "attained_cumulative_utility_coefficient": 6.0
+    },
+    {
+      "public_second_ratio": 2.0,
+      "oracle_stake": 0.25,
+      "optimized_log_rate": 0.0625,
+      "unadjusted_log_rate": 0.0,
+      "attained_confidence_time_exponent": 16.0,
+      "attained_cumulative_utility_coefficient": 8.0
+    },
+    {
+      "public_second_ratio": 4.0,
+      "oracle_stake": 0.125,
+      "optimized_log_rate": 0.03125,
+      "unadjusted_log_rate": -0.25,
+      "attained_confidence_time_exponent": 32.0,
+      "attained_cumulative_utility_coefficient": 16.0
+    }
+  ],
+  "source_sha256": {
+    "scripts/audit_geometric_bet_theory.py": "9db2b0668433bd954d6458d4638a50f10c9e039f8d17f7fdad9b29bf0f8694c2",
+    "paper/sections/11_vanishing_gains.tex": "a0219912ccf40954afb500769ec96d48ead331fb70868953aa000befecf65b15",
+    "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7"
+  },
+  "scope": "Finite deterministic identities, scalar quadratic optimization and local Gaussian quadrature only. No new random paths, observed power, proof of asymptotics, expected stopped costs or financial-DGP result. The optimum is an asymptotic log-rate criterion, not deadline power."
+}

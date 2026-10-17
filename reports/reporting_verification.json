@@ -66,8 +66,8 @@
   },
   "uniform_family_bound": {
     "input": "reports/vanishing_gain_results/uniform_family_bound.json",
-    "input_sha256": "e1154a7433407d02b4561cf092de6ac3c9425a83037d4f59249cdd58932202da",
-    "theory_audit_sha256": "83ce76205664ec60e2a7a9482e7fbc6fd5b663685595d5dd588fae25a44f7a67",
+    "input_sha256": "94f5c7ea8e5e8802a6bf6cd96dba05798b25ac52e90ecfe3808b7e9115604ace",
+    "theory_audit_sha256": "7e42e011888798fb0b318fd53c030be231a2bc4b7ce446e6a2ce8d92b4bdf28c",
     "derivation_and_config_hashes_match": true,
     "upward_percentage_rounding": "15.11818736510762% -> 15.12%",
     "report_matches_regeneration": true,
@@ -78,5 +78,12 @@
   "cash_park_prior_art": {
     "audit": "reports/cash_park_prior_art_audit.md",
     "scope": "Attribution and assumption mapping only; no new observations or altered scientific methodology. The 286 deterministic theory checks pass with updated proof-source provenance; generated scalar report text is unchanged."
+  },
+  "geometric_bet_extension": {
+    "audit": "reports/vanishing_gain_results/geometric_bet_theory.json",
+    "audit_sha256": "5c84dc5ed9980f48b1a86dcbdda8cc41ffa089e48c68ba05c3acf602b998d2cb",
+    "auditor_source_sha256": "9db2b0668433bd954d6458d4638a50f10c9e039f8d17f7fdad9b29bf0f8694c2",
+    "proof_source_hashes_match": true,
+    "scope": "102 separate finite deterministic checks, not another Monte Carlo experiment or proof of the almost-sure statements. Existing numerical manuscript tables and curves unchanged."
   }
 }

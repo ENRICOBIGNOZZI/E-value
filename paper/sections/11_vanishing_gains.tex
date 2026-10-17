@@ -76,7 +76,8 @@ has conditional raw moments at most $\sigma^2$ and $3\sigma^4$; the upper bound
 therefore also applies if these public moment contracts are imposed.
 With $M_2=\sigma^2$ and finite $M_4\ge3\sigma^4$, geometric Catoni using
 $v_t^2=w_t^2(\sigma+\gamma|w_t|\sqrt{M_4}/2)^2$ and fixed bet $\gamma/2$
-attains the same $\kappa$. A looser $M_2$ need not retain that coefficient.
+attains the same $\kappa$. Proposition~\ref{prop:vanishing-geometry-bet}
+quantifies the effect of a looser $M_2$ and an adjusted bet.
 Reviewing only every fixed number of dates preserves the exponent, but a
 daily threshold crossing need not persist to the next review.
 
@@ -114,6 +115,53 @@ gains are compatible with this obstruction. A fixed positive minimum-effect
 floor eventually excludes the vanishing gains. Costs, competing closures and
 changing regimes are absent. Neither result transfers to the full financial
 PARK/REVIVE rule.
+
+\begin{proposition}[Bet selection with a geometry-dependent certificate]
+\label{prop:vanishing-geometry-bet}
+In the same Gaussian instance, fix public $M_2\ge\sigma^2$ and finite
+$M_4\ge3\sigma^4$, and put
+\[
+ v_t^2=w_t^2(\sqrt{M_2}+\gamma|w_t|\sqrt{M_4}/2)^2,
+ \qquad q=M_2/\sigma^2\ge1.
+\]
+Let $E_n^{\mathrm{geo},\lambda}$ be the Catoni product with penalty
+$\lambda_t^2v_t^2/2$. Every fixed constant bet $\lambda\ge0$ satisfies
+\begin{equation}
+ \frac{\log E_n^{\mathrm{geo},\lambda}}{\log n}
+ \longrightarrow\kappa\left(\frac{4\lambda}{\gamma}
+                  -\frac{4q\lambda^2}{\gamma^2}\right)
+ \quad\hbox{almost surely}.
+ \label{eq:geometry-bet-rate}
+\end{equation}
+For each nonnegative predictable bet rule bounded by a finite deterministic
+constant, the limsup is at most $\kappa/q$. The fixed bet
+$\lambda^*=\gamma/(2q)$ attains this bound, as does the observable rule
+\begin{equation}
+ \widehat\lambda_t=\frac\gamma2
+       \min\!\left\{\frac{\widehat M_{t-1}}{M_2},1\right\}.
+ \label{eq:geometry-bet-plugin}
+\end{equation}
+For its first crossing $\widehat\tau_\alpha$ of $1/\alpha$,
+\[
+ \frac{\log\widehat\tau_\alpha}{\log(1/\alpha)}\to\frac q\kappa,
+ \qquad
+ \frac{C_{\widehat\tau_\alpha}}{\log(1/\alpha)}\to\frac{4q}\gamma,
+ \qquad
+ \frac{J_{\widehat\tau_\alpha}}{\log(1/\alpha)}\to\frac{4q}\gamma
+ \quad\hbox{almost surely}.
+\]
+\end{proposition}
+
+The fixed optimizer uses the alternative's $\sigma^2$; the predictable rule
+uses only past raw second moments and the public cap. It changes the bet,
+not the certificate. A tighter valid cap, including one implied by $M_4$,
+changes this comparison. With the unadjusted bet $\gamma/2$, the rate is instead
+$\kappa(2-q)$ and is negative for $q>2$. Adjusting the bet restores positive
+growth but leaves a factor $q$ in the attained waiting coefficient. The
+optimality statement concerns each fixed bounded predictable rule and the
+asymptotic log rate; it is not finite-horizon power optimality or a bound for
+all level-dependent test families. The frozen scalar and financial experiments
+are unchanged. No expected stopped time or expected stopped benefit is inferred.
 
 Estimation noise in nested forecasts and logarithmic prequential estimation
 loss are established phenomena \cite{clarkmccracken,clarkwest,prequential}.

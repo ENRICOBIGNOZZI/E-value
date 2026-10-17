@@ -11,6 +11,8 @@ identities, two local-rate approximations and 114 one-step inequalities;
 they do not prove the sequential, asymptotic or stopping-time statements. No claim of a
 first general betting, likelihood-optimality or prequential-regret theorem is made.
 The financial configuration and its positive comparison-mean floor are unchanged.
+The geometric-bet extension has a separate 102-check audit: 48 identities,
+12 numerical optimizers and 42 local quadratures, likewise not an asymptotic proof.
 
 ## 1. Validity requires no separately certified high return moment
 
@@ -240,7 +242,63 @@ opportunities. Costs, episode closures, multiple signals and changing regimes
 also fall outside this example. It cannot establish PARK/REVIVE adaptation or
 superior full-fund performance in the main financial simulation.
 
-## 7. Primary-source overlap and remaining presentation decision
+## 7. Geometric certificates: adjusting the bet cannot remove an oversized cap
+
+Proposition 19 keeps exactly the Gaussian estimated-reference instance above.
+For public M2>=sigma² and finite M4>=3 sigma^4, use
+
+    v_t² = w_t² [sqrt(M2) + gamma |w_t| sqrt(M4)/2]²,
+    q = M2/sigma² >= 1.
+
+This is the existing predictable geometry-dependent certificate, not a new
+moment principle. Fix one predictable rule with 0<=lambda_t<=Lambda, for a
+finite deterministic Lambda. Gaussian moments give E(|Y_t|³|past)<=K |w_t|³.
+The third-moment sum above and the global bound |phi(x)-x|<=K |x|³ imply
+absolute almost-sure summability of the influence-function remainder. Likewise
+v_t²-M2 w_t² is O(|w_t|³+w_t^4) and is summable almost surely. The centered
+sum of lambda_t(Y_t-delta_t), divided by I_n, tends to zero by the same
+predictable variance normalization already proved. Therefore
+
+    log E_n = sum_{t<=n} w_t²
+                [gamma sigma² lambda_t/2 - M2 lambda_t²/2] + o(I_n)  a.s.
+
+Completing the square bounds the bracket by gamma² sigma^4/(8 M2), attained
+at lambda*=gamma sigma²/(2 M2)=gamma/(2q). Together with the integrated-error
+limit this gives limsup log E_n/log n<=kappa/q for each such fixed rule. For
+a constant lambda, the limit is exactly
+
+    kappa [4 lambda/gamma - 4q lambda²/gamma²].
+
+The fixed optimizer uses the alternative variance. An implementable
+predictable alternative is lambda_hat_t=(gamma/2) min{Mhat_{t-1}/M2,1},
+where Mhat is the same past-only raw return second moment. The strong law
+gives lambda_hat_t->lambda*. Weighted Cesaro against w_t² then proves
+log E_n/log n->kappa/q. There is no independent-score assumption in this
+argument. Predictability and the public certificate preserve null validity;
+the rule estimates a stake and does not replace M2 by an estimated risk cap.
+
+The positive attained rate gives log tau_hat_alpha/log(1/alpha)->q/kappa.
+The existing conditional and realized cumulative-utility limits then give
+C_tau/log(1/alpha)->4q/gamma and J_tau/log(1/alpha)->4q/gamma, almost surely.
+These are high-confidence limits for that one rule, not expected stopped
+costs or finite-horizon power optimality. The upper-rate argument concerns
+each fixed bounded predictable rule, not an unrestricted or level-dependent
+family. It is not an information-theoretic lower bound for every test using
+the public moment information. A tighter valid certificate, including a
+second-moment cap implied by the known fourth-moment cap, changes the family
+being compared. With the unadjusted lambda=gamma/2, the rate is kappa(2-q), which is
+negative when q>2. At q=2 the zero rate alone gives no ever-power conclusion.
+
+For gamma=sigma=1 and ridge zero, q=4 gives lambda*=.125, optimal log rate
+1/32, confidence-time exponent 32 and attained cumulative-utility coefficient
+16. These are analytic examples, not Monte Carlo estimates. The frozen scalar
+experiment still uses M2=1 and its original four methods; no existing arm,
+public bound, seed or path was changed. A separate finite audit in
+`geometric_bet_theory.json` checks 48 algebraic identities, 12 numerical
+quadratic optimizers and 42 local Gaussian quadratures. It does not prove
+the sequential or asymptotic statements above.
+
+## 8. Primary-source overlap and remaining presentation decision
 
 - [Choe and Ramdas](https://arxiv.org/html/2110.00115), sections 4.4 and F:
   sequential paired-score inference, weak versus strong nulls, and predictable

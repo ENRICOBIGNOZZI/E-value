@@ -13,6 +13,7 @@ the full objective is complete.
 | Lambda selection targeting deadline power | Separately frozen controlled score experiment; Bellman argument; corrected whole-pool replay and independent audit | Implemented and reported; 37.48% vs 11.41% power at 400 observations; working-model optimum, no financial dominance claim |
 | Comparison against the best constant for the same deadline | Subsequent pre-evaluation source/model freeze c73e713 and fresh seed 450001; primary and refined grids; complete paired summaries | Integrated: fresh 400-date power 37.35% vs 33.10%; individual nominal level common, actual null errors differ; original paths not pooled |
 | Vanishing estimation gains and cost of waiting | Complete cash-PARK proof and adaptive boundary null; realized-utility normalization; uniform power ceiling over all predictable constant-certificate Catoni policies; 286 finite checks including 114 inequalities; same saved scalar diagnostic | Integrated with explicit Gaussian/costless scope; policy-uniform ceiling includes level-dependent bets; cumulative-utility coefficients are not expected stopped-cost results |
+| Bet selection with a loose geometric risk cap | Full predictable-bet expansion and attaining past-only raw-moment stake; separate 48 identity, 12 optimizer and 42 local-quadrature checks | Integrated for the scalar Gaussian instance: lambda*=gamma sigma²/(2M2), attained rate kappa/q and cumulative-utility coefficient 4q/gamma. This is not finite-horizon power optimality or a new financial method |
 | Directional information requirements | Complete fixed-policy iid frontier proof, higher-than-second-moment consistency construction and cash-PARK lower-bound argument; 302 finite identity checks | Integrated; moment-class scope, no general testing-priority or financial impossibility claim |
 | Separate stronger-moment extension | Public envelopes, clipping proof, new namespace and frozen protocol | Implemented and individually valid under stronger assumptions |
 | Fresh experiment without favorable-seed selection | All seeds 40001–40020 completed with identical committed source hashes | Complete mechanism study |
@@ -40,7 +41,7 @@ the separate final study. The first ten v2 markets remain a labeled pilot snapsh
 The costless vanishing-gain theory, complete proof and scalar diagnostics are
 now integrated. Broader publication-level novelty assessment remains open;
 the draft makes no unqualified priority claim. These paths do not add financial markets.
-The 40-page draft also includes the separate lambda-selection study. Its
+The 42-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
 100 passing tests, including fourteen reporting-gate, twelve final-assessment and nineteen continuation controls. The fresh optimized-constant companion independently checks

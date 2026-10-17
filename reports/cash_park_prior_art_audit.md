@@ -51,6 +51,14 @@ testing method or a financial-performance gain.
 
 ## Outcome of this audit
 
+The subsequent Proposition 19 also specializes the same summable-remainder
+and martingale-normalization argument to bounded predictable geometric bets.
+It computes the price of a prescribed oversized second-moment certificate
+and an attaining past-only raw-moment stake. The claim is the instance-specific
+rate and waiting coefficient, not a new general adaptive-variance principle,
+deadline-power optimizer or information bound for every certificate using the
+public moment information.
+
 The manuscript's attribution is more specific, and one previously omitted
 nearby lower-bound source is now cited. The inspected statements do not by
 themselves establish the full estimated-policy/cumulative-utility result, but

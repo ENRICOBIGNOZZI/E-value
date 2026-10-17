@@ -1722,8 +1722,8 @@
     }
   ],
   "source_sha256": {
-    "paper/sections/11_vanishing_gains.tex": "24d067b3a263f2aa1342e7a242567e8db55b28df9a7afde12908e087d4988114",
-    "paper/sections/12_vanishing_proofs.tex": "4e9ff7d8040333303ac5cff9f984e17eaf93829d6500671c3c879dc3fca12c90",
+    "paper/sections/11_vanishing_gains.tex": "a0219912ccf40954afb500769ec96d48ead331fb70868953aa000befecf65b15",
+    "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7",
     "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
     "scripts/audit_vanishing_theory.py": "b859170990b47453f9600b293492cfd80659aa2d4f5991869b6f26872d29a061"
   },

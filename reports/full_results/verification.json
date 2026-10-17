@@ -17,9 +17,9 @@
   "scalar_arithmetic_checks": 88285790,
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
-  "pdf_pages": 40,
-  "pdf_sha256": "31e0846e5384177b6285b56cc61c85907201de803f4c3b190b7ccf7a425b9682",
-  "pdf_visual_qa": "All 40 current pages rendered. Thirty-seven PNG renders match the preceding visually reviewed manuscript byte for byte; changed pages 28, 29 and 40 inspected individually. Page 30 was also inspected. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
+  "pdf_pages": 42,
+  "pdf_sha256": "c29c1d5c1c69e2cd272d0f4e894807cd6a028935b3f88b6d5672fbca01d2a181",
+  "pdf_visual_qa": "All 42 pages rendered and four full contact sheets inspected. Introduction, Proposition 19, fixed scalar results, discussion and proof pages 2, 28, 29, 30, 36, 39 and 40 inspected individually. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -37,14 +37,14 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
-    "paper/main.tex": "6798c4960a97047ca7d21590485ea8527a1f2b3256f2471d13793311dcd4b98b",
+    "paper/main.tex": "fe1163b5494471d056e7a714953632fb81258381b00c51a95f47d05ada634136",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
     "paper/sections/09_full_strategy.tex": "f0bea802ea29e2dbea981226efffcc5d19864815972b1606e7a5fc15dace97c5",
     "paper/sections/10_lambda_power.tex": "fb2eba2485c11d893b6eda900d8dddcfe166745302f9e163859459785747a880",
-    "paper/sections/11_vanishing_gains.tex": "24d067b3a263f2aa1342e7a242567e8db55b28df9a7afde12908e087d4988114",
-    "paper/sections/12_vanishing_proofs.tex": "4e9ff7d8040333303ac5cff9f984e17eaf93829d6500671c3c879dc3fca12c90",
+    "paper/sections/11_vanishing_gains.tex": "a0219912ccf40954afb500769ec96d48ead331fb70868953aa000befecf65b15",
+    "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7",
     "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062"
   },
@@ -73,7 +73,19 @@
     "deterministic_total_checks": 286,
     "maximum_exact_identity_error": 3.381739333008227e-13,
     "uniform_family_bound": "reports/vanishing_gain_results/uniform_family_bound.json",
-    "uniform_family_scope": "Deterministic upper bounds, not observed powers, for all finite nonnegative predictable Catoni bets with the fixed constant certificate in the costless Gaussian estimated-policy instance. Supremum of ever-crossing probabilities, including alpha-dependent rules. No new paths or financial-DGP claim."
+    "uniform_family_scope": "Deterministic upper bounds, not observed powers, for all finite nonnegative predictable Catoni bets with the fixed constant certificate in the costless Gaussian estimated-policy instance. Supremum of ever-crossing probabilities, including alpha-dependent rules. No new paths or financial-DGP claim.",
+    "geometric_bet_extension": {
+      "audit": "reports/vanishing_gain_results/geometric_bet_theory.json",
+      "audit_sha256": "5c84dc5ed9980f48b1a86dcbdda8cc41ffa089e48c68ba05c3acf602b998d2cb",
+      "deterministic_identity_checks": 48,
+      "deterministic_optimizer_checks": 12,
+      "deterministic_local_quadrature_checks": 42,
+      "maximum_identity_error": 8.881784197001252e-16,
+      "maximum_optimizer_location_error": 3.708132556567989e-08,
+      "maximum_local_approximation_error": 3.163637088410276e-09,
+      "scope": "Finite deterministic identities, scalar quadratic optimization and local Gaussian quadrature only. No new random paths, observed power, proof of asymptotics, expected stopped costs or financial-DGP result. The optimum is an asymptotic log-rate criterion, not deadline power.",
+      "quantifiers": "Each fixed nonnegative predictable bet rule with a finite deterministic bound; upper asymptotic log rate kappa/q. Observable past-raw-moment stake attains it. No uniformity over alpha-dependent rule families or all possible certificates."
+    }
   },
   "lambda_constant_companion": {
     "source_freeze_commit": "c73e713",
@@ -142,7 +154,7 @@
   },
   "cash_park_prior_art": {
     "audit": "reports/cash_park_prior_art_audit.md",
-    "audit_sha256": "127fdc1509132dd9f325211aba1b90bae363a9bc29fe8ceda59dc8f5d0e3c1fe",
+    "audit_sha256": "d4a5b59872be26c5e47af25ee1c1c894dbbb53a92c98a672f4636aa4af292ddc",
     "scope": "Targeted comparison of three primary sources; predictable heteroscedastic certification, iid Catoni CS width and general numeraire/regret theory are existing antecedents. Added attribution only; broad priority validation remains incomplete."
   }
 }

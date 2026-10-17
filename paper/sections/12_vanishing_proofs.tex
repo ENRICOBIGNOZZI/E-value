@@ -213,3 +213,32 @@ have conditional variance at most $\lambda_t^2\nu^2$, so their martingale
 converges by localization. The penalty sum is finite as well. The log capital
 therefore converges to a finite real limit. Its supremum is finite almost
 surely, which proves the asserted high-confidence crossing limit.
+
+\subsection{Proof of Proposition~\ref{prop:vanishing-geometry-bet}}
+Fix a predictable rule $0\le\lambda_t\le\Lambda<\infty$.
+Gaussian moments and bounded targets give
+$\E_{t-1}|Y_t|^3\le K|w_t|^3$. Hence
+\eqref{eq:vanishing-moments} and $|\phi(x)-x|\le K|x|^3$ make
+$\sum_t|\phi(\lambda_tY_t)-\lambda_tY_t|$ finite almost surely.
+Also $v_t^2-M_2w_t^2=O(|w_t|^3+w_t^4)$ is summable almost surely.
+The centered increments $\lambda_t(Y_t-\delta_t)$ have conditional variance
+at most $K\Lambda^2w_t^2$, so the normalization in
+Section~\ref{app:vanishing-normalization} yields
+\begin{equation}
+ \log E_n^{\mathrm{geo},\lambda}
+ =\sum_{t\le n}w_t^2
+       \left(\frac{\gamma\sigma^2\lambda_t}{2}
+                         -\frac{M_2\lambda_t^2}{2}\right)+o(I_n)
+ \quad\hbox{almost surely}.
+ \label{eq:geometry-bet-expansion}
+\end{equation}
+The bracket is maximized at $\lambda^*=\gamma\sigma^2/(2M_2)$, with value
+$\gamma^2\sigma^4/(8M_2)$. Combining with the limit of $I_n/\log n$
+proves the upper bound and \eqref{eq:geometry-bet-rate}. The strong law gives
+$\widehat M_{t-1}\to\sigma^2$ and
+$\widehat\lambda_t\to\lambda^*$. Weighted Cesaro in
+\eqref{eq:geometry-bet-expansion} proves its attained rate $\kappa/q>0$.
+The crossing-time sandwich used for Theorem~\ref{thm:vanishing}, followed by
+$C_n/\log n\to\sigma^4/(2\gamma m^2)$ and $J_n/C_n\to1$,
+gives the stated high-confidence coefficients. All limits concern a single
+fixed policy; no uniformity over level-dependent rules is used.

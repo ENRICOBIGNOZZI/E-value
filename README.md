@@ -359,6 +359,18 @@ statement about the full financial strategy. The derivation and numeric bounds
 are in `reports/vanishing_gain_proof_audit.md` and
 `reports/vanishing_gain_results/uniform_family_bound.json`.
 
+For a geometry-dependent certificate with M2=q*sigma², the same Gaussian
+instance also gives an exact asymptotic rate calculation. The optimal constant
+bet is gamma/(2q). A predictable stake using only past raw return second
+moments attains the same rate kappa/q and cumulative waiting-utility coefficient
+4q/gamma. This is log-rate optimality within the declared bounded-bet class,
+not finite-horizon power optimality. No existing scalar or financial arm is
+changed. Run its separate deterministic audit with:
+
+```sh
+.venv/bin/python scripts/audit_geometric_bet_theory.py
+```
+
 ## Automatic pilot-to-final continuation
 
 `scripts/continue_full_study.py` observes the existing live pilot, verifies and

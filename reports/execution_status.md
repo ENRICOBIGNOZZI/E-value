@@ -1,3 +1,50 @@
+# Current continuation — an attaining geometric bet and the price of a loose cap
+
+The preceding goal turn was **progress**: f379d30 added a targeted primary-source
+comparison and recorded fifty independently replayed pilot markets. This turn
+adds Proposition 19 and a complete proof for the same costless Gaussian
+estimated-reference instance. For a prescribed geometric certificate with
+M2=q*sigma², the best asymptotic log rate among fixed bounded predictable
+bet rules is kappa/q. The fixed optimizer is gamma/(2q); the observable
+past-raw-moment stake `(gamma/2)*min(Mhat/M2,1)` attains the same rate.
+Its confidence-time exponent is q/kappa, and its attained conditional and
+realized cumulative-utility coefficients are 4q/gamma. The unadjusted gamma/2
+bet instead has rate kappa(2-q).
+
+The comparison fixes the certificate. A tighter valid public bound changes
+that family; the result is not an information bound for all tests using the
+moment information. It concerns each fixed bounded predictable rule, not
+finite-horizon power optimality, arbitrary level-dependent rule families,
+expected stopped costs or the stateful financial fund. The existing deadline
+experiment remains a different objective. No existing scientific method,
+parameter, configuration, random stream or observed crossing count was changed.
+
+The separate audit passes **48 identities, 12 numerical-optimizer checks and
+42 local Gaussian quadratures**. Maximum identity error is 8.89e-16;
+maximum optimizer-location error is 3.71e-8 (the declared floating-point
+location tolerance is recorded separately), and local expansion error is
+3.17e-9. These checks do not prove asymptotics. The existing **286-check**
+audit also passes with current derivation hashes. The new proof uses summable
+remainders, the already proved predictable normalization and weighted Cesaro.
+
+All **42 PDF pages** were rendered and reviewed in four contact sheets;
+changed theoretical/editorial pages were inspected individually. Compilation
+has no overfull boxes, unresolved references or duplicate labels. The scalar
+and financial numeric tables/plots are unchanged. The last full software
+suite remains 100 passing tests; the new deterministic audit is separate.
+
+At **2026-10-17T02:16:47.452563+02:00**, the pilot PID 64355 and continuation PID 91419 remain
+confirmed live. The checkpoint records **55/100** generated markets,
+**50/100** complete independent replays and **0/500** final markets.
+The labeled first-ten v2 manuscript snapshot is retained. Running scientific,
+original controlled-study, final-analysis-plan and empirical-input integrity
+checks all pass. No job was restarted, no empirical analysis or remote push
+occurred, and the overall paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — targeted cash-PARK prior-art comparison
 
 The preceding goal turn was **progress**: commit 020ccff integrated a complete
