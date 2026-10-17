@@ -113,6 +113,11 @@ above-two-moment proofs in full; no new general impossibility, mixture or
 mean-testing principle is claimed. The fixed Laplace financial law is not the
 entire iid moment class appearing in that theorem.
 
+`directional_prior_art_audit.md` records a more specific hypothesis comparison
+and the finite-prefix total-variation argument. The bibliography now uses the
+published 2025 Fan--Jiao--Wang record while retaining the inspected 2024 author
+preprint. This targeted mapping is not an exhaustive priority review.
+
 Direct antecedents for the horizon-betting section were subsequently checked:
 
 - [Taga, Oymak and Shekhar (ICML 2026)](https://proceedings.mlr.press/v306/taga26a.html)

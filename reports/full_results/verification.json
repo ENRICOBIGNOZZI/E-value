@@ -18,8 +18,8 @@
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
   "pdf_pages": 42,
-  "pdf_sha256": "c29c1d5c1c69e2cd272d0f4e894807cd6a028935b3f88b6d5672fbca01d2a181",
-  "pdf_visual_qa": "All 42 pages rendered and four full contact sheets inspected. Introduction, Proposition 19, fixed scalar results, discussion and proof pages 2, 28, 29, 30, 36, 39 and 40 inspected individually. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
+  "pdf_sha256": "701746002e52d03d0cc49504ab8a5e200f8856d97f8abaeabd44ab4be32af8f6",
+  "pdf_visual_qa": "All 42 pages rendered. Pages 25, 26, 27 and 42 changed and were inspected individually; the remaining 38 page PNGs are byte-identical to the preceding reviewed 42-page render. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -37,7 +37,7 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
-    "paper/main.tex": "fe1163b5494471d056e7a714953632fb81258381b00c51a95f47d05ada634136",
+    "paper/main.tex": "0abf5d9201c9a8c49dd1d56132d3a95202dd430ddc3d0978ef6c103c6864a4d2",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
@@ -45,7 +45,7 @@
     "paper/sections/10_lambda_power.tex": "fb2eba2485c11d893b6eda900d8dddcfe166745302f9e163859459785747a880",
     "paper/sections/11_vanishing_gains.tex": "a0219912ccf40954afb500769ec96d48ead331fb70868953aa000befecf65b15",
     "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7",
-    "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
+    "paper/sections/13_directional_information.tex": "b8ea6d6e1582e765d191b097a6529781ec42279be9e2ca2fa0bd6cc4d3d53e27",
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062"
   },
   "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar waiting theorem/diagnostic and directional moment-class theory included. Historical derivations excluded.",
@@ -114,7 +114,9 @@
     "appendix_proof": "paper/sections/14_directional_proofs.tex",
     "deterministic_checks": 302,
     "figure": "Analytic moment-class diagram; no simulated data.",
-    "scope": "Costless fixed-policy iid ENTRY with known raw-second-return cap; exact frontier. Known moments above order two suffice by a countable-mixture existence construction. Separate cash-PARK lower-bound consistency under iid integrable scores. Not the complete financial strategy, not a fixed-Laplace impossibility or expected-delay claim."
+    "scope": "Costless fixed-policy iid ENTRY with known raw-second-return cap; exact frontier. Known moments above order two suffice by a countable-mixture existence construction. Separate cash-PARK lower-bound consistency under iid integrable scores. Not the complete financial strategy, not a fixed-Laplace impossibility or expected-delay claim.",
+    "audit_sha256": "1181ad55c33cca5e09c7ebd8465f72497760daab7067ff3ab5b7255442d670bd",
+    "proof_audit_sha256": "8bd8007e8ac3cb7b29110442c46c939b4a817961c66f13431537e69d1219068c"
   },
   "supplementary_financial_snapshot": {
     "snapshot": "reports/full_v3_snapshots/pilot_020/snapshot_seal.json",
@@ -184,5 +186,15 @@
     "audit": "reports/cash_park_prior_art_audit.md",
     "audit_sha256": "d4a5b59872be26c5e47af25ee1c1c894dbbb53a92c98a672f4636aa4af292ddc",
     "scope": "Targeted comparison of three primary sources; predictable heteroscedastic certification, iid Catoni CS width and general numeraire/regret theory are existing antecedents. Added attribution only; broad priority validation remains incomplete."
+  },
+  "directional_entry_prior_art": {
+    "audit": "reports/directional_prior_art_audit.md",
+    "audit_sha256": "758b65ef5239dbe5567109b357e72ea2e80a4a162064b7b428fbc4f731003f80",
+    "sources": [
+      "https://sas.uwaterloo.ca/~wang/papers/2024Fan-Jiao-Wang-Biom.pdf",
+      "https://academic.oup.com/biomet/issue/112/1",
+      "https://arxiv.org/html/1612.02024"
+    ],
+    "scope": "Targeted primary-source hypothesis mapping and attribution. Utility null is contained in the larger joint return-mean/variance null; the explicit finite-prefix proof uses total variation without continuity. Published 2025 citation retained alongside inspected 2024 preprint. No numerical change, general novelty claim or exhaustive priority review."
   }
 }

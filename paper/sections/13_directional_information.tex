@@ -61,8 +61,10 @@ mean. T2's capped past-mean bet, initialized with gain $\nu_Z/2$, gives crossing
 one. The bet uses no alternative-specific mean, proving the assertion.
 \end{proof}
 
-This specializes the classical null-density argument discussed in
-\cite{impossible}; it is not a new general testing-impossibility principle.
+This specializes the total-variation null-density argument in
+\cite[Section~2, Corollary~1]{impossible}. The proof first controls each finite
+prefix, then sends the horizon to infinity; it requires no continuity of the
+test. It is not a new general testing-impossibility principle.
 It identifies the exact testable region for this utility and information
 contract. For $\gamma=K_2=1$, deterministic return $r=.2$ has utility $.18$
 but lies in the impossible region. A law's moments may be estimable from an
@@ -90,8 +92,11 @@ $m_4=\E_P r^4<\infty$, the contaminating null has
 Thus a valid numerical higher-moment envelope can rule out these nulls.
 The second-return-moment surrogate is not merely inefficient in this region:
 no uniformly valid test of the same class has nontrivial power there.
-Mean/variance e-processes themselves are established tools \cite{meanvariance};
-the issue is the difference between a return-moment and a utility-score contract.
+Joint conditional mean/variance tests are established \cite{meanvariance}.
+On the iid class here, our null implies $\E r\le\gamma K_2/2$ and
+$\operatorname{Var}r\le K_2$. These define a larger null that also contains
+profitable laws below the frontier. A return-moment test for those bounds is
+therefore conservative for our utility null; the targets are not equivalent.
 
 \subsection{Moments strictly above two can suffice}
 \begin{proposition}[A sufficient higher-moment route]

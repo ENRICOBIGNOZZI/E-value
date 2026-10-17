@@ -1,3 +1,43 @@
+# Current continuation — ENTRY hypotheses and primary-source attribution
+
+The preceding goal turn was **progress**: 67ed039 added independent batch event
+reconstruction. This turn makes the ENTRY literature comparison precise.
+Our utility null implies the joint return-mean/variance bounds, whose larger
+null also contains profitable laws below the proved frontier. Applying a
+variance-based construction directly to quadratic utility requires a different
+score-moment contract. The targeted note `directional_prior_art_audit.md`
+records the mapping and the limits of a particular one-step-score transplant;
+it makes no numerical ranking or broad priority claim.
+
+The null-contamination argument now cites the total-variation corollary and
+states the order of limits: finite-prefix approximation first, infinite horizon
+second. No continuity of the test or infinite-product TV convergence is used.
+The Fan--Jiao--Wang bibliography uses the published 2025 record and retains
+the inspected 2024 author version. These are attribution and exposition changes.
+
+The **302 directional and 286 scalar deterministic checks pass** with refreshed
+proof-source hashes. Every numerical audit payload is identical after excluding
+source-hash metadata; generated numerical manuscript text is byte-identical.
+The existing 151-test software report remains applicable and was not rerun for
+these prose/citation-only edits. The **42-page PDF** compiles without overfull
+boxes, duplicate labels or unresolved references. All pages were rendered;
+the four changed pages (25, 26, 27, 42) were inspected individually and the
+other 38 match the preceding reviewed page renders byte for byte.
+
+At **2026-10-17T03:01:42.106945+02:00**, original PIDs 64355 and 91419 remain confirmed live.
+There are **66/100 generated pilot markets**, **60/100 recorded complete
+independent arithmetic replays** and **0/500 final markets**. The existing
+first-sixty digest-revalidation milestone is retained; this checkpoint does
+not claim additional replay work. Scientific source/configurations, the entire
+final-analysis freeze and preserved empirical inputs match their fixed hashes.
+No job was restarted and no empirical work or remote push occurred. Full-size
+economic evidence and broader novelty review remain outstanding; the goal is
+active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — independent reconstruction of stable/unstable events
 
 The preceding goal turn was **progress**: 50baa1d added an independent event

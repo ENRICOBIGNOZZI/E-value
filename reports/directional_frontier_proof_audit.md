@@ -157,3 +157,9 @@ study existing e-process constructions for conditional mean and variance.
 Our claim is the explicit utility frontier and directional specialization;
 expectation domination, small-stake mixtures and safe mean testing are known
 tools. No unqualified priority claim is made.
+
+The targeted comparison in `directional_prior_art_audit.md` gives the explicit
+hypothesis inclusion and distinguishes the total-variation corollary from
+the weak-topology result that requires continuity. The proof above uses finite
+prefixes and then a monotone horizon limit, not total-variation convergence of
+the infinite product laws. This changes attribution and exposition only.

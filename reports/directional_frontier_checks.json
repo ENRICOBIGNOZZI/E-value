@@ -2054,9 +2054,9 @@
   },
   "source_sha256": {
     "scripts/audit_directional_frontier.py": "b33faf580660376790a1d42bc0c49c37fe17a48acd5736a2f76c7a11d4b2d26c",
-    "reports/directional_frontier_proof_audit.md": "7a15705aae6635820392043923bab3f95a165694835da594b348864f17bdd229",
+    "reports/directional_frontier_proof_audit.md": "8bd8007e8ac3cb7b29110442c46c939b4a817961c66f13431537e69d1219068c",
     "scripts/plot_directional_frontier.py": "a3dba049635f3e98e1135882a8b13088961d528ec068bc75476d396c1f4d939f",
-    "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
+    "paper/sections/13_directional_information.tex": "b8ea6d6e1582e765d191b097a6529781ec42279be9e2ca2fa0bd6cc4d3d53e27",
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6"
   },

@@ -41,7 +41,9 @@
     "analytic_only": true,
     "paper_and_report_png_bytes_equal": true,
     "png_sha256": "2b015d0858ae9b37d4ea2f231db64eaa60e178fd4f29e5181bf05af3b328def7",
-    "scope": "Analytic inequalities for gamma=K2=1; no random observations or financial study."
+    "scope": "Analytic inequalities for gamma=K2=1; no random observations or financial study.",
+    "proof_audit_sha256": "8bd8007e8ac3cb7b29110442c46c939b4a817961c66f13431537e69d1219068c",
+    "identity_audit_sha256": "1181ad55c33cca5e09c7ebd8465f72497760daab7067ff3ab5b7255442d670bd"
   },
   "financial_sealed_snapshot": {
     "seal": "reports/full_v3_snapshots/pilot_020/snapshot_seal.json",
@@ -68,8 +70,8 @@
   },
   "uniform_family_bound": {
     "input": "reports/vanishing_gain_results/uniform_family_bound.json",
-    "input_sha256": "94f5c7ea8e5e8802a6bf6cd96dba05798b25ac52e90ecfe3808b7e9115604ace",
-    "theory_audit_sha256": "7e42e011888798fb0b318fd53c030be231a2bc4b7ce446e6a2ce8d92b4bdf28c",
+    "input_sha256": "00f39f164c74284a15884b8722034b132bf6a6d62839d5e0ebd3a98b35d23f40",
+    "theory_audit_sha256": "2839cae2fa71334baa10d9b8845c95d9d178641e797a0be567b80b859e6e6585",
     "derivation_and_config_hashes_match": true,
     "upward_percentage_rounding": "15.11818736510762% -> 15.12%",
     "report_matches_regeneration": true,
@@ -132,5 +134,15 @@
     "protocol": "reports/full_event_adjudication_protocol.md",
     "scope": "Independent batch reconstruction of all stable and unstable event labels, confirmations, delays and closure reasons from ordered annual conditional-score arrays, annual eligibility/selection flags, closure logs and one-block ghost continuations. Includes the separate JSON/CSV aggregation audit. No DGP resimulation, optimizer rerun or new market; the stored conditional-score formulas and selector decisions rely on their separately recorded arithmetic replay. Method-specific event populations do not identify causal cross-method delay or waiting-cost effects.",
     "automatic_controller_unchanged": true
+  },
+  "directional_entry_prior_art": {
+    "audit": "reports/directional_prior_art_audit.md",
+    "audit_sha256": "758b65ef5239dbe5567109b357e72ea2e80a4a162064b7b428fbc4f731003f80",
+    "sources": [
+      "https://sas.uwaterloo.ca/~wang/papers/2024Fan-Jiao-Wang-Biom.pdf",
+      "https://academic.oup.com/biomet/issue/112/1",
+      "https://arxiv.org/html/1612.02024"
+    ],
+    "scope": "Targeted primary-source hypothesis mapping and attribution. Utility null is contained in the larger joint return-mean/variance null; the explicit finite-prefix proof uses total variation without continuity. Published 2025 citation retained alongside inspected 2024 preprint. No numerical change, general novelty claim or exhaustive priority review."
   }
 }
