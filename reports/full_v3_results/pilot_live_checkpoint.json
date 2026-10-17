@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-17T05:38:08.469189+02:00",
+  "captured_at": "2026-10-17T05:51:00.647533+02:00",
   "confirmed_live_process": null,
   "completed_pilot_seeds": [
     50001,
@@ -229,11 +229,27 @@
   ],
   "continuation_controller_pid": 91419,
   "manuscript_snapshot": "Complete hundred-market v3 pilot; historical first-ten v2 retained separately, repeated seeds not added.",
-  "scope": "Complete 100-market pilot and current final-stage progress only. First ten final markets generated; their independent batch replay is running. No completed final analysis or partial final economic inference.",
+  "scope": "Complete 100-market pilot and actual final execution progress. First ten final markets complete/replayed with current digests after cache compaction; next original-driver generation batch confirmed. No complete final assessment or partial-final economic inference.",
   "pilot_process_ended": true,
-  "recorded_final_replay_complete_seeds": [],
-  "confirmed_live_final_process": "37346 Sat Oct 17 05:11:27 2026     26:42 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py main --count 500 --workers 2 --batch-size 10 --compact-verified-checkpoints",
-  "confirmed_live_final_verifier": [
-    "42619 37346       01:04 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/verify_full_strategy.py --output /Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v3/main --seeds 60001 60002 60003 60004 60005 60006 60007 60008 60009 60010 --resume"
-  ]
+  "recorded_final_replay_complete_seeds": [
+    60001,
+    60002,
+    60003,
+    60004,
+    60005,
+    60006,
+    60007,
+    60008,
+    60009,
+    60010
+  ],
+  "confirmed_live_final_process": "37346 Sat Oct 17 05:11:27 2026     39:33 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py main --count 500 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "confirmed_live_final_verifier": [],
+  "final_stage_progress": {
+    "stage": "main",
+    "requested_count": 500,
+    "prefix_completed_and_replayed": 10,
+    "batch_size": 10
+  },
+  "verified_final_milestone": "reports/full_v3_results/final010_replay_milestone.json"
 }

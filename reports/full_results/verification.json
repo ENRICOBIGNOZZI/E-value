@@ -647,5 +647,18 @@
     "current_positioning_complete": true,
     "final_integrated_review_complete": false,
     "scope": "Bounded primary-source claim/assumption comparison; no exhaustive priority, acceptance or quality-rating claim. Complete final evidence and manuscript interpretation still required."
+  },
+  "verified_final_execution_prefix": {
+    "milestone": "reports/full_v3_results/final010_replay_milestone.json",
+    "milestone_sha256": "0d75e1505dcf5939b13b577b9ac302499d3c358a237109fd61631bcb0e721320",
+    "stage": "main",
+    "completed_and_replayed_markets": 10,
+    "frozen_final_pool_size": 500,
+    "all_10_current_digests_match_after_cache_compaction": true,
+    "scalar_checks_from_existing_replays": 88035406,
+    "ghost_pairs_from_existing_replays": 1339,
+    "maximum_log_e_replay_error": 1.7763568394002505e-15,
+    "removed_regenerable_checkpoint_bytes": 65874110,
+    "scope": "Operational verified first final batch only. No final seal, economic summary, inference or new checks from this digest audit. Complete frozen 500-market final pool and manuscript synthesis still required."
   }
 }

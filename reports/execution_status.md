@@ -1,3 +1,47 @@
+# Current continuation — first ten final markets fully replayed
+
+The preceding goal turn was **progress**: 5163854 consolidated the current
+scientific positioning, refreshed handoff status and repaired an unreadable
+Git index while preserving it. This turn is a **verified wait followed by a
+completed execution milestone**. The same final driver 37346 and independent
+batch verifier 42619 were observed directly throughout the ten-market replay;
+no process observation timeout was interpreted as failure and no job restarted.
+
+All first **10 declared final markets**, seeds 60001–60010, are now complete
+and independently replayed. Existing replay records contain **88,035,406
+scalar checks** and **1,339 ghost pairs**, maximum log-capital discrepancy
+**1.78e-15**. A fresh read-only snapshot validator rechecks all ten current
+input digests after the runner's planned checkpoint compaction. All agree.
+The removed **65,874,110 logical bytes** are regenerable checkpoint archives;
+all underlying input, return, score, policy-weight and event ledgers remain.
+The digest audit adds no markets or arithmetic replay counts.
+
+At **2026-10-17T05:49:52.993981+02:00**, the same original driver has automatically started
+its next ten-market generation child 44806 on exactly seeds 60011–60020.
+The final-stage progress records a completed/replayed prefix of ten out of
+500, with no size or sign gate. Controller 91419 and storage observer 35427
+remain confirmed live. The current live checkpoint was captured again at
+**2026-10-17T05:51:00.647533+02:00**. This is not a complete final sample or a final economic assessment.
+No partial-final economic result is calculated or used to alter the study.
+
+Scientific source, final configuration and whole analysis freeze match.
+All manuscript sources, numeric TeX, figure PNGs and the 48-page PDF are
+byte-identical to the preceding commit. Current claims positioning and prior
+visual/finite checks remain applicable; no new software test or simulation
+rule is introduced. Raw replay/digest and actual-handle evidence is retained
+in full_v3_results/final010_replay_milestone.json.
+
+The next action is to continue observing the same final run. The remaining
+490 markets and their replays, complete final audits, actual final tables/
+diagnostics, manuscript synthesis and integrated publication review are still
+required. Waiting on this live computation is not a user-input blocker.
+The overall goal stays active and incomplete. No empirical analysis, remote
+push, policy/threshold amendment or favorable-seed selection occurs.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — scientific positioning and first final batch
 
 The preceding goal turn was **progress**: 96030d3 brought the central ENTRY
