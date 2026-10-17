@@ -649,16 +649,23 @@
     "scope": "Bounded primary-source claim/assumption comparison; no exhaustive priority, acceptance or quality-rating claim. Complete final evidence and manuscript interpretation still required."
   },
   "verified_final_execution_prefix": {
-    "milestone": "reports/full_v3_results/final010_replay_milestone.json",
-    "milestone_sha256": "0d75e1505dcf5939b13b577b9ac302499d3c358a237109fd61631bcb0e721320",
+    "milestone": "reports/full_v3_results/final050_replay_milestone.json",
+    "milestone_sha256": "86cad2e698d3cdf99a5ae8cac34e57c8f5dd546556316e6c74b3d68b6b350441",
     "stage": "main",
-    "completed_and_replayed_markets": 10,
+    "completed_and_replayed_markets": 50,
     "frozen_final_pool_size": 500,
-    "all_10_current_digests_match_after_cache_compaction": true,
-    "scalar_checks_from_existing_replays": 88035406,
-    "ghost_pairs_from_existing_replays": 1339,
+    "all_50_current_digests_match_after_cache_compaction_and_filesystem_compression": true,
+    "scalar_checks_from_existing_replays": 442140058,
+    "ghost_pairs_from_existing_replays": 6897,
     "maximum_log_e_replay_error": 1.7763568394002505e-15,
-    "removed_regenerable_checkpoint_bytes": 65874110,
-    "scope": "Operational verified first final batch only. No final seal, economic summary, inference or new checks from this digest audit. Complete frozen 500-market final pool and manuscript synthesis still required."
+    "removed_regenerable_checkpoint_bytes": 306013515,
+    "filesystem_compression": {
+      "report": "reports/full_v3_results/json_storage_compression_main050.json",
+      "report_sha256": "22f71dc6c9dd284a79177c09d59bb6a8bdfbf2eb04eb9f8fcb41eb441239f3ab",
+      "changed_files": 1041,
+      "allocated_bytes_reduction": 80412672,
+      "all_current_input_digests_preserved": true
+    },
+    "scope": "Operational first-50 final-market milestone, not a complete final study or economic analysis. Existing independently replayed records and current digests validated after checkpoint compaction and native filesystem compression. No new replay checks or markets added by this audit. All 500 declared markets remain required. Same controller and driver automatically started the next ten; no restart, retuning or partial-final inference. Physical allocation reduction is not a free-space or remaining-capacity guarantee."
   }
 }
