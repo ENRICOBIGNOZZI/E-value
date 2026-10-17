@@ -29,7 +29,8 @@
     "scripts/summarize_realized_vanishing.py": "3b034d7e73fd7574a61b81ddd29b27c97e60ab1de5ad12fd7af3c8c562c5610b",
     "scripts/continue_full_study.py": "8f250cf46d8ab94d9d6ec993f692b658a67b128792490c8cc6b2b1d7d88ea062",
     "scripts/audit_full_event_snapshot.py": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
-    "scripts/audit_full_event_adjudication.py": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724"
+    "scripts/audit_full_event_adjudication.py": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724",
+    "scripts/gaussian_power_envelope.py": "09e7eb6523265159114ae6c314cc268b3ef78dcaf1ad712863a4b89f41a0fe3d"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
@@ -144,5 +145,24 @@
       "https://arxiv.org/html/1612.02024"
     ],
     "scope": "Targeted primary-source hypothesis mapping and attribution. Utility null is contained in the larger joint return-mean/variance null; the explicit finite-prefix proof uses total variation without continuity. Published 2025 citation retained alongside inspected 2024 preprint. No numerical change, general novelty claim or exhaustive priority review."
+  },
+  "gaussian_power_envelope": {
+    "report": "reports/lambda_constant_results/gaussian_power_envelope.json",
+    "report_sha256": "ffe1be7be8f8d1a7b49f68a26f9ba9dada1a372429f1b760dbfbf7d95c4bceee",
+    "derivation": "reports/gaussian_power_envelope.md",
+    "derivation_sha256": "a4314aa3b42236055ead49c3baddd85e564cca7b877dd6589688fa1bdb7093ca",
+    "script": "scripts/gaussian_power_envelope.py",
+    "script_sha256": "09e7eb6523265159114ae6c314cc268b3ef78dcaf1ad712863a4b89f41a0fe3d",
+    "post_hoc": true,
+    "existing_companion_paths_only": true,
+    "rows": 36,
+    "one_sided_binomial_limits": 48,
+    "simultaneous_coverage_at_least": 0.95,
+    "deterministic_quadratures": 18,
+    "maximum_quadrature_discrepancy": 2.220446049250313e-16,
+    "software_controls": 25,
+    "software_report": "reports/gaussian_power_envelope_tests.txt",
+    "scope": "Classical simple-Gaussian fixed-horizon upper envelope, including early stopping. Empirical-size plug-ins are descriptive, not true-size bounds or matched-size recalibration. Exact-binomial one-sided limits use a union bound over the complete diagnostic panel. No new paths, selected policies, general moment-null power optimum, causal decomposition or financial claim.",
+    "test_source_sha256": "1c8e432a0724e8b596d68b558aad36de6f82f39e21233a39cb5f16cf1255cf0e"
   }
 }

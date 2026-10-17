@@ -1,0 +1,9 @@
+\paragraph{A Gaussian power envelope.}
+
+The classical Neyman--Pearson bound \cite{neymanpearson} also applies to early rejection by a fixed deadline. For iid $N(0,\sigma^2)$ versus $N(\delta,\sigma^2)$, $\delta>0$, any test with actual null rejection probability $s$ by $H$ has power at most
+
+\[B_H(s)=\Phi\!\left(\delta\sqrt H/\sigma+\Phi^{-1}(s)\right).\]
+
+Indeed, its rejection event is measurable from the first $H$ scores; their likelihood ratio is increasing in their sum. A terminal upper-tail sum test maximizes power at size $s$, giving the formula. Independent test randomization does not improve this bound. This oracle fixes the two Gaussian laws: its attaining test need not be valid over the full moment null or under unrestricted monitoring.
+
+At the design alternative, $B_H(.05)$ is 63.88\%, 88.17\%, 99.07\% at the three deadlines. Substituting the observed null fractions of the fresh primary DP rules gives descriptive values 40.94\%, 77.12\%, 97.60\%. These plug-ins do not determine the true null sizes or establish matched-size dominance. The post-hoc report retains both grids, both rule classes and all three alternatives, and gives simultaneous exact-binomial uncertainty limits. It uses the existing audited counts without new paths, threshold changes or policy selection.

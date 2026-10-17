@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-10-17T03:01:42.106945+02:00",
-  "confirmed_live_process": "64355 Fri Oct 16 22:56:50 2026     04:04:52 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T03:09:30.107580+02:00",
+  "confirmed_live_process": "64355 Fri Oct 16 22:56:50 2026     04:12:40 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
   "completed_pilot_seeds": [
     50001,
     50002,
@@ -67,26 +67,13 @@
     50063,
     50064,
     50065,
-    50066
+    50066,
+    50067,
+    50068,
+    50069,
+    50070
   ],
-  "unfinished_seed_status_files": [
-    {
-      "seed": 50067,
-      "completed_blocks": 12,
-      "total_blocks": 14,
-      "complete": false,
-      "source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
-      "elapsed_seconds": 221.46262641600333
-    },
-    {
-      "seed": 50068,
-      "completed_blocks": 5,
-      "total_blocks": 14,
-      "complete": false,
-      "source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
-      "elapsed_seconds": 114.84943625004962
-    }
-  ],
+  "unfinished_seed_status_files": [],
   "recorded_independent_replay_complete_seeds": [
     50001,
     50002,

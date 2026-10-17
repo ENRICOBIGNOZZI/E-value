@@ -1,3 +1,45 @@
+# Current continuation — Gaussian deadline-power envelope
+
+The preceding goal turn was **progress**: 377adfc sharpened ENTRY hypotheses
+and literature attribution. This turn adds a substantive context for the
+lambda comparison: the classical simple-Gaussian Neyman--Pearson envelope
+applies even to early rejection by H. A self-contained likelihood-ratio proof
+and the original primary-source citation delimit the result. The attaining
+terminal Gaussian test need not satisfy the composite moment null or retain
+validity under unrestricted monitoring; no new optimality principle is claimed.
+
+At the design alternative the nominal 5% oracle upper powers are **63.88%,
+88.17%, 99.07%**. Substituting the fresh primary DP empirical null fractions
+gives descriptive **40.94%, 77.12%, 97.60%**, not true-size bounds or matched-size
+comparisons. The diagnostic retains both grids, both DP/constant classes and
+all three alternatives: **36 rows**, with a simultaneous at-least-95% union
+bound over **12 null upper and 36 power lower exact-binomial limits**. It does
+not recalibrate thresholds, select policies, pool studies or allocate the
+observed power difference causally between size and rejection-region effects.
+
+This explicitly post-hoc calculation uses the existing audited companion
+counts. Eighteen Gaussian-density quadratures agree with the closed form to
+2.23e-16; this finite check is not the optimality proof. **25 new controls**
+and the **176-test full suite** pass. An incompatible statistical diagnostic
+would remain visible in the report rather than suppressing its output. Original generated numerical tables,
+simulation sources/configurations, random streams and outcomes are unchanged.
+The **42-page PDF** compiles without overfull boxes, duplicate labels or
+unresolved references. All pages are rendered; changed pages 11–17 and 42
+are inspected individually and the remaining 34 match the preceding reviewed
+page renders byte for byte.
+
+At **2026-10-17T03:09:30.107580+02:00**, original PIDs 64355 and 91419 are confirmed live.
+The checkpoint has **70/100 generated pilot markets**, **60/100 recorded complete
+independent arithmetic replays** and **0/500 final markets**. The entire
+scientific/final-analysis freeze and preserved empirical-input hashes match.
+No job was restarted, no empirical work or remote push occurred. The complete
+pilot/final economic evidence and broad novelty review remain outstanding;
+the overall goal stays active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — ENTRY hypotheses and primary-source attribution
 
 The preceding goal turn was **progress**: 67ed039 added independent batch event

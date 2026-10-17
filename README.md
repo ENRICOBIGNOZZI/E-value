@@ -265,6 +265,19 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/lambda_constan
 .venv/bin/python scripts/build_lambda_constant_results.py
 ```
 
+A post-hoc Gaussian likelihood-ratio envelope now puts these powers in context.
+It applies to rejection by a deadline, including early stopping, and allows
+all tests for the two simple Gaussian laws. Its attaining terminal test need
+not satisfy the full moment-null contract. The diagnostic retains both grids,
+both DP/constant classes and all three alternatives, with simultaneous exact
+binomial limits. Plugging in empirical null fractions is descriptive and does
+not equalize the tests' true sizes. It adds no paths or policy calibration;
+see [`reports/gaussian_power_envelope.md`](reports/gaussian_power_envelope.md).
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/gaussian_power_envelope.py
+```
+
 ## Directional moment information
 
 The manuscript characterizes a fixed-policy ENTRY comparison over all iid

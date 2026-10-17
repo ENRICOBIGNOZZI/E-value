@@ -12,6 +12,7 @@ the full objective is complete.
 | T1–T4 assumptions/proofs and scope | Theory audit, full proofs, statistical and numerical checks | Verified within explicit assumptions; no general novelty claim |
 | Lambda selection targeting deadline power | Separately frozen controlled score experiment; Bellman argument; corrected whole-pool replay and independent audit | Implemented and reported; 37.48% vs 11.41% power at 400 observations; working-model optimum, no financial dominance claim |
 | Comparison against the best constant for the same deadline | Subsequent pre-evaluation source/model freeze c73e713 and fresh seed 450001; primary and refined grids; complete paired summaries | Integrated: fresh 400-date power 37.35% vs 33.10%; individual nominal level common, actual null errors differ; original paths not pooled |
+| Gaussian power context at nominal and actual size | Classical likelihood-ratio proof; complete post-hoc panel of 36 fresh-companion comparisons; 48 one-sided exact-binomial limits and 18 quadratures | Integrated as an oracle upper envelope; empirical-size plug-ins are descriptive and do not equalize true errors or establish matched-size dominance |
 | Vanishing estimation gains and cost of waiting | Complete cash-PARK proof and adaptive boundary null; realized-utility normalization; uniform power ceiling over all predictable constant-certificate Catoni policies; 286 finite checks including 114 inequalities; same saved scalar diagnostic | Integrated with explicit Gaussian/costless scope; policy-uniform ceiling includes level-dependent bets; cumulative-utility coefficients are not expected stopped-cost results |
 | Bet selection with a loose geometric risk cap | Full predictable-bet expansion and attaining past-only raw-moment stake; separate 48 identity, 12 optimizer and 42 local-quadrature checks | Integrated for the scalar Gaussian instance: lambda*=gamma sigma²/(2M2), attained rate kappa/q and cumulative-utility coefficient 4q/gamma. This is not finite-horizon power optimality or a new financial method |
 | Directional information requirements | Complete fixed-policy iid frontier proof, higher-than-second-moment consistency construction and cash-PARK lower-bound argument; 302 finite identity checks | Integrated; moment-class scope, no general testing-priority or financial impossibility claim |
@@ -44,9 +45,9 @@ the draft makes no unqualified priority claim. These paths do not add financial 
 The 42-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
-151 passing tests, including fourteen reporting-gate, twelve final-assessment,
+176 passing tests, including fourteen reporting-gate, twelve final-assessment,
 nineteen continuation, twenty-four event-reporting and twenty-seven
-event-reconstruction controls. The fresh optimized-constant companion independently checks
+event-reconstruction controls, plus twenty-five Gaussian-envelope controls. The fresh optimized-constant companion independently checks
 20,497,504 scalar values, with sixteen-path score replay per law, and all
 twelve model-power calibrations pass. The numerical boundary correction replays the same pool,
 rather than adding replications or selecting favorable seeds.
