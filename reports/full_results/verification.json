@@ -649,23 +649,23 @@
     "scope": "Bounded primary-source claim/assumption comparison; no exhaustive priority, acceptance or quality-rating claim. Complete final evidence and manuscript interpretation still required."
   },
   "verified_final_execution_prefix": {
-    "milestone": "reports/full_v3_results/final050_replay_milestone.json",
-    "milestone_sha256": "86cad2e698d3cdf99a5ae8cac34e57c8f5dd546556316e6c74b3d68b6b350441",
+    "milestone": "reports/full_v3_results/final250_replay_milestone.json",
+    "milestone_sha256": "719929ef75e2b70dc0025fc0f1ffe4edf379591e2da57c0c73611ce0385dc1bd",
     "stage": "main",
-    "completed_and_replayed_markets": 50,
+    "completed_and_replayed_markets": 250,
     "frozen_final_pool_size": 500,
-    "all_50_current_digests_match_after_cache_compaction_and_filesystem_compression": true,
-    "scalar_checks_from_existing_replays": 442140058,
-    "ghost_pairs_from_existing_replays": 6897,
-    "maximum_log_e_replay_error": 1.7763568394002505e-15,
-    "removed_regenerable_checkpoint_bytes": 306013515,
+    "all_250_current_digests_match_after_cache_compaction_and_filesystem_compression": true,
+    "scalar_checks_from_existing_replays": 2206217798,
+    "ghost_pairs_from_existing_replays": 31937,
+    "maximum_log_e_replay_error": 2.6645352591003757e-15,
+    "removed_regenerable_checkpoint_bytes": 1617832281,
     "filesystem_compression": {
-      "report": "reports/full_v3_results/json_storage_compression_main050.json",
-      "report_sha256": "22f71dc6c9dd284a79177c09d59bb6a8bdfbf2eb04eb9f8fcb41eb441239f3ab",
-      "changed_files": 1041,
-      "allocated_bytes_reduction": 80412672,
+      "report": "reports/full_v3_results/json_storage_compression_main250.json",
+      "report_sha256": "53e806562112755ca55666ebfe7ae2d00d6d46af53ad8ec307b5eb9ee1ec3aaa",
+      "changed_files": 1009,
+      "allocated_bytes_reduction": 75735040,
       "all_current_input_digests_preserved": true
     },
-    "scope": "Operational first-50 final-market milestone, not a complete final study or economic analysis. Existing independently replayed records and current digests validated after checkpoint compaction and native filesystem compression. No new replay checks or markets added by this audit. All 500 declared markets remain required. Same controller and driver automatically started the next ten; no restart, retuning or partial-final inference. Physical allocation reduction is not a free-space or remaining-capacity guarantee."
+    "scope": "Operational first-250 final-market milestone, not a complete final study or economic analysis. Existing independently replayed records and current digests validated after checkpoint compaction and native filesystem compression. No new replay checks or markets added by this audit. All 500 declared markets remain required. Same controller and driver automatically started the next ten; no restart, retuning or partial-final inference. Physical allocation reduction is not a free-space or remaining-capacity guarantee."
   }
 }
