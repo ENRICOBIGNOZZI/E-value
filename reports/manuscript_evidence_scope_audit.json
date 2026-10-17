@@ -2,7 +2,7 @@
   "complete": true,
   "captured_at": "2026-10-17T05:17:48.271182+02:00",
   "manuscript_source_sha256": {
-    "paper/main.tex": "c4dd4b66fa4b66ffbadf83bf6f27d9f6d6ff3993f4924205e7e873ecc4562a00",
+    "paper/main.tex": "6c6d0cf0fd3cbb5318d98d99ab743b3c20bf15e41801a01a58ea7f6f1f255bf9",
     "paper/sections/09_full_strategy.tex": "acb9dd2eab7cdb26775d5a4c0a21d38d6140029d301475330cf12411156c2a7d",
     "paper/sections/15_evidence_scope.tex": "0d83a920729155f09fdee02f464bc2752eee92a0a997f7c0357c7f8797aa3175"
   },
@@ -4489,9 +4489,9 @@
     "student_degrees_of_freedom": 499,
     "timing": "Chosen after first-ten v2 and first-twenty v3 pilot inspection, before final output; not pre-pilot preregistration."
   },
-  "all_existing_generated_numeric_manuscript_inputs_unchanged": false,
+  "all_existing_generated_numeric_manuscript_inputs_unchanged": true,
   "scope": "Read-only retained-CSV count/unit consistency and manuscript mapping to the unchanged frozen final analysis. No new market, score path, replay, statistical inference or proof of publication quality. Final-estimand formula checked against the existing assessment and its previous tests.",
-  "manuscript_source_revalidated_at": "2026-10-17T05:17:48.271182+02:00",
-  "numeric_input_change": "Only full-strategy pilot TeX and two pilot figures replaced using complete sealed 100-market v3 sample; all other generated numeric TeX byte-identical.",
+  "manuscript_source_revalidated_at": "2026-10-17T05:29:25.892222+02:00",
+  "numeric_input_change": "Latest edit moves section inputs and adjusts an introductory bridge. All generated numeric TeX and figures byte-identical to commit 4c3c43d; earlier pilot expansion remains recorded in git history.",
   "fund_snapshot_seal_sha256": "0b3ad22975542ad02090d2fca116c1e004512da12d1545a99a7b7462fd6a4123"
 }

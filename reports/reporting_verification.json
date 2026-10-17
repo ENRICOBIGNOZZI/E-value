@@ -49,7 +49,7 @@
     "png_sha256": "2b015d0858ae9b37d4ea2f231db64eaa60e178fd4f29e5181bf05af3b328def7",
     "scope": "Analytic inequalities for gamma=K2=1; no random observations or financial study.",
     "proof_audit_sha256": "8bd8007e8ac3cb7b29110442c46c939b4a817961c66f13431537e69d1219068c",
-    "identity_audit_sha256": "1181ad55c33cca5e09c7ebd8465f72497760daab7067ff3ab5b7255442d670bd"
+    "identity_audit_sha256": "55857b1fa78758f4b631f51c5523007be49d379535f2305e75fab01ab5d925d1"
   },
   "financial_sealed_snapshot": {
     "seal": "reports/full_v3_snapshots/pilot_020/snapshot_seal.json",
@@ -76,8 +76,8 @@
   },
   "uniform_family_bound": {
     "input": "reports/vanishing_gain_results/uniform_family_bound.json",
-    "input_sha256": "00f39f164c74284a15884b8722034b132bf6a6d62839d5e0ebd3a98b35d23f40",
-    "theory_audit_sha256": "2839cae2fa71334baa10d9b8845c95d9d178641e797a0be567b80b859e6e6585",
+    "input_sha256": "e6f0a9e5944f2db20fab4b3caeab0623e7d1a3acfbe6e70decb14512ab15dfbe",
+    "theory_audit_sha256": "01d5fcf27d3104dbd15726e535891424ac246643d93f748ba1bd50df8346ff95",
     "derivation_and_config_hashes_match": true,
     "upward_percentage_rounding": "15.11818736510762% -> 15.12%",
     "report_matches_regeneration": true,
@@ -172,14 +172,14 @@
   },
   "manuscript_evidence_scope": {
     "audit": "reports/manuscript_evidence_scope_audit.json",
-    "audit_sha256": "68dfdcd721de31335a204bbd9b8f7deefdbc8a003484c3d0175e7b1054d09aba",
+    "audit_sha256": "4a21d5e598050edebc6f14f900dc4c7dceb0a1c87d790a75151a89dc5ccc04ab",
     "csv_unit_checks": 615,
     "maximum_csv_unit_scale_error": 2.51e-14,
     "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
     "source_scope": "Manuscript count/unit mapping and frozen final estimand, not new simulations or arithmetic replay.",
     "final_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
-    "generated_numeric_inputs_unchanged": false,
-    "numeric_input_change": "Only full-strategy pilot TeX and two pilot figures replaced using complete sealed 100-market v3 sample; all other generated numeric TeX byte-identical."
+    "generated_numeric_inputs_unchanged": true,
+    "numeric_input_change": "Latest edit moves section inputs and adjusts an introductory bridge. All generated numeric TeX and figures byte-identical to commit 4c3c43d; earlier pilot expansion remains recorded in git history."
   },
   "final_manuscript_packet_pipeline": {
     "script": "scripts/build_final_manuscript_results.py",
@@ -453,6 +453,30 @@
     "full_suite_rerun": false,
     "actual_default_build_passed": true,
     "all_48_rendered_pages_unchanged": true,
-    "scope": "Default compile preserves current generated evidence; explicit legacy subcommand retains historical regeneration. Existing full-suite report and eight new regression controls are separate test runs."
+    "scope": "Default compile preserves current generated evidence; explicit legacy subcommand retains historical regeneration. Existing full-suite report and eight new regression controls are separate test runs.",
+    "latest_editorial_compile": "reports/theory_first_structure_verification.json"
+  },
+  "theory_first_editorial_review": {
+    "verification": "reports/theory_first_structure_verification.json",
+    "verification_sha256": "1442c3fd8f819790beea3a8c1870f90e94ad44ea3998cb2b82d1ee2507175333",
+    "section_starts": {
+      "Moment information depends on": {
+        "previous_page": 26,
+        "current_page": 8
+      },
+      "Waiting for a vanishing": {
+        "previous_page": 29,
+        "current_page": 10
+      },
+      "Several estimated signals": {
+        "previous_page": 33,
+        "current_page": 14
+      },
+      "Selecting bets for a rejection": {
+        "previous_page": 8,
+        "current_page": 16
+      }
+    },
+    "scope": "Editorial section order only; same mathematical/numeric content. Full 48-page render review completed; final financial study remains separate and incomplete."
   }
 }

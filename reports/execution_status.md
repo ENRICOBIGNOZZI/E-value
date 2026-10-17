@@ -1,3 +1,58 @@
+# Current continuation — central theory before financial experiments
+
+The preceding goal turn was **progress**: 4c3c43d corrected routine manuscript
+compilation so it cannot silently regenerate the old v2 financial tables.
+This turn improves the article's exposition. Its central theoretical results
+were reached only after most financial mechanism/implementation material.
+Three section inputs now follow the stationary validity/power foundations:
+ENTRY moment frontier, scalar estimated-reference waiting and the matrix
+extension. The deadline-betting section follows them; all financial content
+remains in the manuscript with its original inferential role.
+
+The ENTRY section moves from page **26 to 8**, scalar waiting from **29 to
+10**, and the matrix extension from **33 to 14**. Deadline betting starts at
+page 16. The main source has exactly the same multiset of lines; no section
+is lost or duplicated. One opening bridge in the ENTRY section now refers to
+moment assumptions used by the implementations rather than assumptions
+'above'. Its theorem/proof bodies are byte-identical. All other theorem/proof
+sources, every generated numeric TeX file and all figure PNGs are unchanged.
+No economic result, scientific source/configuration, analysis plan, policy,
+threshold, seed or sample size changes.
+
+The **302 directional finite checks** and **286 scalar finite checks** pass
+with current source bindings. Their entire numerical audit payloads and the
+uniform-family analytic bounds are identical to the previous commit; only
+the introductory-source hashes change. The geometric-bet and matrix audit
+source maps remain current. These finite algebraic checks are not new
+observations, asymptotic proofs or Monte Carlo replications. No software or
+scientific implementation changed, so the prior 251-test suite and eight
+build-regression controls were not rerun for this editorial reorder.
+
+The default build command compiles a **48-page PDF**, with resolved references
+and no box/label warnings. Every page is rendered and all four contact sheets
+reviewed; pages 8, 10, 14, 16, 37, 38 and 48 are inspected individually.
+Theorem statements, tables, negative contrasts, both pilot plots and references
+are legible with no clipping/overlap. Review evidence is retained in
+`theory_first_structure_verification.json`. Current PDF SHA-256:
+7ac9d2ea6408c95ae98e4f7bbf64f95eadec8e02330678e9237fa37daa0692d6.
+Historical PDF/checkpoint QA records retain their original bindings.
+
+At **2026-10-17T05:29:25.892222+02:00**, original controller PID 91419,
+final runner **37346** and storage observer 35427 are independently confirmed
+live. The fixed final pool has **6/500 generated markets** and **0/500 recorded
+complete independent replays**; generation of its first ten-market batch
+continues before replay. No job is restarted or failed seed excluded.
+The original reserve, two workers and optional byte-preserving maintenance
+remain in force. No empirical analysis or remote push occurs.
+
+The complete final study/audits, final manuscript/graphics integration and
+publication review remain outstanding. The overall goal stays active and
+incomplete. This editorial improvement does not change that completion gate.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — preserve current evidence during routine builds
 
 The preceding goal turn was **progress**: 92dda39 completed/sealed all 100

@@ -1724,7 +1724,7 @@
   "source_sha256": {
     "paper/sections/11_vanishing_gains.tex": "a0219912ccf40954afb500769ec96d48ead331fb70868953aa000befecf65b15",
     "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7",
-    "paper/sections/13_directional_information.tex": "b8ea6d6e1582e765d191b097a6529781ec42279be9e2ca2fa0bd6cc4d3d53e27",
+    "paper/sections/13_directional_information.tex": "d34eb22a9536de873cf899681c22c8aefc9e57dc7a7960fa5fcafd7d53b099b4",
     "scripts/audit_vanishing_theory.py": "b859170990b47453f9600b293492cfd80659aa2d4f5991869b6f26872d29a061"
   },
   "scope": "Finite deterministic identities and one-step inequalities for Gaussian null/alternative moments, log-density ratios, inverse-risk moments, local growth and the uniform constant-certificate family bound. Checks do not prove the sequential, asymptotic or stopping-time statements."

@@ -1,0 +1,149 @@
+{
+  "complete": true,
+  "captured_at": "2026-10-17T05:29:25.892222+02:00",
+  "kind": "editorial_theory_order",
+  "pdf_sha256": "7ac9d2ea6408c95ae98e4f7bbf64f95eadec8e02330678e9237fa37daa0692d6",
+  "pages": 48,
+  "section_starts": {
+    "Moment information depends on": {
+      "previous_page": 26,
+      "current_page": 8
+    },
+    "Waiting for a vanishing": {
+      "previous_page": 29,
+      "current_page": 10
+    },
+    "Several estimated signals": {
+      "previous_page": 33,
+      "current_page": 14
+    },
+    "Selecting bets for a rejection": {
+      "previous_page": 8,
+      "current_page": 16
+    }
+  },
+  "main_source_line_multiset_unchanged": true,
+  "all_directional_theorem_and_proof_bodies_byte_identical": true,
+  "unchanged_generated_numeric_inputs_and_figures_sha256": {
+    "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
+    "paper/generated_lambda_constant_results.tex": "b79ec9bc2c89a4b0a8d15372857815475382ac9cc4ac925a0b1c7adf68f04b09",
+    "paper/generated_gaussian_power_envelope.tex": "b89d2152f4b042a177b159a4c5c5fc955046eddcd06a30285de9f2ff214588dc",
+    "paper/generated_lambda_results.tex": "fa06e81cfe2c9f05066059009c5d59eef4e7bd9d83a862435bec89aa75afe9cb",
+    "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
+    "paper/generated_full_results.tex": "f341b8bd3b5e079eccf931ee74ef07fc9dd01586ecb168bec1f05896bf20a3da",
+    "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
+    "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
+    "paper/figures/directional_frontier.png": "2b015d0858ae9b37d4ea2f231db64eaa60e178fd4f29e5181bf05af3b328def7",
+    "paper/figures/equity_quantiles.png": "f48e28ce8693bde8a976b1e75eaa948e536a9c4c2fb023d4b4e5f714f9525474",
+    "paper/figures/first_entry_feasibility.png": "bb5b10592855396a64074f45b5c693057d9fe000343f79ff2595e507c255afb6",
+    "paper/figures/stationary_power.png": "c3d3ddbca49df76adf908452b855613d662ca235e446cc3f6f8dc25ad3263518",
+    "paper/figures/vanishing_gain.png": "fd4c516f652fa85b04d9c90cad2870121caecc25b6fb325310ae560d23e7dccc",
+    "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
+    "paper/figures/full_strategy_paths.png": "6b46edaa446df2eb382842c3e28f3cc752674f92c626ec0c65e8e1bf860637cb",
+    "paper/figures/full_strategy_evidence.png": "6d5ad8cbcca6a71c632fa229104d78ed29fac6c6984caade4785eea0f454d5bb",
+    "paper/figures/lambda_power.png": "c5030e099196b343f006ec60b143e0398f6cd6e6780d8f53a0a49906eff5dba8"
+  },
+  "finite_audits": {
+    "directional_checks": 302,
+    "scalar_checks": 286,
+    "numerical_audit_values_unchanged": true,
+    "all_four_proof_source_maps_match": true,
+    "reports_sha256": {
+      "reports/directional_frontier_checks.json": "55857b1fa78758f4b631f51c5523007be49d379535f2305e75fab01ab5d925d1",
+      "reports/vanishing_gain_results/theory_quadrature.json": "01d5fcf27d3104dbd15726e535891424ac246643d93f748ba1bd50df8346ff95",
+      "reports/vanishing_gain_results/geometric_bet_theory.json": "5c84dc5ed9980f48b1a86dcbdda8cc41ffa089e48c68ba05c3acf602b998d2cb",
+      "reports/multivariate_waiting_checks.json": "0228f6093c8965f4408bf8a6e3b750c7f84254a1616de76fca0fdacfd02d195b"
+    }
+  },
+  "source_sha256": {
+    "paper/main.tex": "6c6d0cf0fd3cbb5318d98d99ab743b3c20bf15e41801a01a58ea7f6f1f255bf9",
+    "paper/sections/13_directional_information.tex": "d34eb22a9536de873cf899681c22c8aefc9e57dc7a7960fa5fcafd7d53b099b4"
+  },
+  "compile_command": ".venv/bin/python scripts/build_paper.py",
+  "compile_exit_code": 0,
+  "all_pages_rendered": true,
+  "render_max_dimension": 1150,
+  "contact_sheets_reviewed": [
+    [
+      1,
+      12
+    ],
+    [
+      13,
+      24
+    ],
+    [
+      25,
+      36
+    ],
+    [
+      37,
+      48
+    ]
+  ],
+  "individually_reviewed_pages": [
+    8,
+    10,
+    14,
+    16,
+    37,
+    38,
+    48
+  ],
+  "rendered_sha256": {
+    "contact-1-12.png": "5987641ccd5b236ccafaf22b26e96836f659bfbb1b1bf76789d523de4b445e15",
+    "contact-13-24.png": "dcf870e385b204401c982535de8a77203c388ded520cdb68c7717eb59c1a820a",
+    "contact-25-36.png": "f894be03ba6a666dfdd2e13d67fdbd984397188a82f0aa26ee129834c953087d",
+    "contact-37-48.png": "fda2fb302127495d1b75b023f101add29b6ae2d6395a4cad4626b18638e09e4c",
+    "page-01.png": "ef758d8f403c3adfaaa665ec87fde6ab615833cf7e33d258b9bf0c47d1465f51",
+    "page-02.png": "b94ca6f531884ac50a815dbf58742244dd53efbcdbdd6a21c8148b3b807d2fe9",
+    "page-03.png": "3bf2a0f4cdc4885569efb035088cec2ed29d924e0e049d1f129b5bf4f96c2e29",
+    "page-04.png": "25e1f5aad7e8140274e10f9daa61c75d7b4889a7a4d82ce9199b84a64683605a",
+    "page-05.png": "41885c69d3bad210cd9791ee91a55af28f1c3264cbabf383dd5f3eac229ed929",
+    "page-06.png": "df2a8bf6f0f55afc69ea6e82a3dc4b359b0363a42acaf9860f369022fd3436d9",
+    "page-07.png": "9061e0e021c142d983595349bb7759a04b071244dda503e2e31fc5ced136157c",
+    "page-08.png": "f6ed321c44d484a4dcc9be3c673106ed6ac951f13aa642e3208bd4c7e68065c0",
+    "page-09.png": "05eafb9f7e1df97aca33f193952815e7e467b614f0ad3d0acbf1f321e7041a74",
+    "page-10.png": "e7702bd602c23c6d5935e52bbeea1c1a88cff42274cbd887ac71d539abf96bd9",
+    "page-11.png": "411e96340b3cc4384253b060ece5832e2c65ef8d1dbb5f13bca4a9f9a809d081",
+    "page-12.png": "2c87b1fafe50d02c287491fcaf05aaa8001f6ed8339894f54aea89d63f3a3eb8",
+    "page-13.png": "f1fd7bca9768e06eb924c4f4ebdd295f8cfbf6e8068eb87d1f52d0a0bda87544",
+    "page-14.png": "1225ac28c8c90fa207dfbe8439f5be0877f86aa9e3f65d42ffc87791bade2aaa",
+    "page-15.png": "1d816abc36ce86cdc9495329ab6e3e7e681b858aac8441799d5abdf0f514e097",
+    "page-16.png": "73fd063d7f943183ebd0119dd3a090b51002db03384e6a596926cf5ba7723c41",
+    "page-17.png": "6a08de53d194b7053e269a624167f479cb3f021e7e860f086ebd5dcef914ffb0",
+    "page-18.png": "701df117d2380bf2770844212b31f5b06efcea91489dffc4cf2559a4ccff7226",
+    "page-19.png": "165ae8341b82a1fd03b8d7ada5462f7f26e514a19e4bd7b4376ae1064c0878a7",
+    "page-20.png": "e782c4d697daa2eb80df6e3731524fd1178c904a5cf2c9e59f2d1e3b33281c1f",
+    "page-21.png": "a6008f5c001aa2545085edcd05903a583826bdae3c2753e491f159bdfec771d8",
+    "page-22.png": "0018138ed852e7957b7ef8d40e8067ffe0c5e7670b659f9736a46ad482725d00",
+    "page-23.png": "f7d9533631b244eeb52935912b5de0775de74478423cf37e28ad7edc4bbee8fa",
+    "page-24.png": "3e9f630dde4136e47005dd219ef238ca592364fd8dbb44925c227179680098ba",
+    "page-25.png": "d50419f221d638537bb44c41481253708a5caa0227fb54c29d985e79c9a4b26c",
+    "page-26.png": "3ce939c71bd32ed88c8caddb0d0e419d760ccc439aae38f006cf459cbf43c340",
+    "page-27.png": "40ac778bd98e6f5bf104d5c2ae6a1abf7ca4369202eb48819d920ca9fb371830",
+    "page-28.png": "ca340962852be699073f2c5ff59b27cfca945a3367a7f2eb76386bdcb54ba3e1",
+    "page-29.png": "8b1d18085049d8e612567c0bb2bab9ba3eb2f5f9b3dc712c374a042b7a489d0a",
+    "page-30.png": "fe15ea55b078ba87abd28ad65903f6f882d0ceabaceeec9cbd406505ac7eb4df",
+    "page-31.png": "8622514969d3ebccf28eb8798807240481e1b539ee891e0df8329608719ac1f2",
+    "page-32.png": "90736f2f7c397c045d5bfbcf48e541f7bdf739547d399072fa6d4d5e9988d971",
+    "page-33.png": "aee55951fec3633a69d114a794817822da4732dca8cb57a51266c05ce5875d71",
+    "page-34.png": "38eb8f1c1c5e1ad6eaf7eba6b56394c62011f66f2b133605e36d725ea4c09245",
+    "page-35.png": "8d185a3e303addb416fccd1b465060a3d0f95caef0d77f2136d4e6a88496bee3",
+    "page-36.png": "72a86cba726359514990456aedce364f5087a277ac39a4f7d40dea552fa75f67",
+    "page-37.png": "c0c23ab727b12667fe1c2e3d53a5e5600a9415f50088cef261676a984000f74c",
+    "page-38.png": "f9eb3089ff71f380d85f8e8f1a27364e053881a51dbaa396a322b7c50e69ea07",
+    "page-39.png": "cf64a2ad495f79bf6470221283579533eb0d73a017b9862fd8aa8348a7fbe0a9",
+    "page-40.png": "8d9711a7d214068d0649bd3f3d823be3ee967e98d392f7aa056f744251620f8a",
+    "page-41.png": "492adf0ec619d998f8b7ada8596e9ec9924e4998b9447f4e0848a1f44d702cc1",
+    "page-42.png": "6926b7ae39c640137a7f836066dbce5889d51832830c09f89b41cdf564ecc694",
+    "page-43.png": "03276ad3e49fa89d542c03ff1d82cba048ae6dc79807bf47492c5a784fb4d163",
+    "page-44.png": "4cba0c02ad4f2736cde540ffd8d1f484c528dcd13ded785f8c0d1d26d0c96744",
+    "page-45.png": "9f1890b84f46e8f68f0d9461ab89fa705c039848e2d90e0ee682c51bcaa78121",
+    "page-46.png": "4951cffe3a76baf0cf91f21616dba46606a963589d579c7bba7b330a34eaa875",
+    "page-47.png": "a5171cf09805dc59217c1922dde731e4a73ba61f7fa8df3e4768ff64d3b3efc0",
+    "page-48.png": "ccd01c029289249caecec14a603a01d014e9e1018eccd33069c0bbabd38dfc81"
+  },
+  "findings": "Central theory now precedes financial implementation/experiments. All cross-references resolve; tables/figures and proof text are legible without clipping/overlap or box warnings. Same 48 pages.",
+  "scope": "Section-input reorder and one opening bridge only. No theorem, proof body, numeric result, scientific source, parameter, analysis or market membership changes. Numeric audit checks are finite algebraic checks, not new observations or proofs of asymptotic claims."
+}

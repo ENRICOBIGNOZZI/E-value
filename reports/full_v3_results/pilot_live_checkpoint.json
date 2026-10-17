@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-17T05:23:27.167379+02:00",
+  "captured_at": "2026-10-17T05:29:25.892222+02:00",
   "confirmed_live_process": null,
   "completed_pilot_seeds": [
     50001,
@@ -218,12 +218,15 @@
   "completed_final_seeds": [
     60001,
     60002,
-    60003
+    60003,
+    60004,
+    60005,
+    60006
   ],
   "continuation_controller_pid": 91419,
   "manuscript_snapshot": "Complete hundred-market v3 pilot; historical first-ten v2 retained separately, repeated seeds not added.",
   "scope": "Complete pilot checkpoint and current final generation observation; no final completion claim.",
   "pilot_process_ended": true,
   "recorded_final_replay_complete_seeds": [],
-  "confirmed_live_final_process": "37346 Sat Oct 17 05:11:27 2026     12:00 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py main --count 500 --workers 2 --batch-size 10 --compact-verified-checkpoints"
+  "confirmed_live_final_process": "37346 Sat Oct 17 05:11:27 2026     18:03 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py main --count 500 --workers 2 --batch-size 10 --compact-verified-checkpoints"
 }

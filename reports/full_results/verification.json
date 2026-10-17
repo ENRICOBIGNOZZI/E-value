@@ -108,8 +108,8 @@
   "ghost_pairs_checked": 13201,
   "max_log_e_replay_error": 2.6645352591003757e-15,
   "pdf_pages": 48,
-  "pdf_sha256": "8f7000d7526a96d521316de83de0024e21953f33795a68c3b8031931a24d2202",
-  "pdf_visual_qa": "All 48 current page PNGs are byte-identical to the reviewed complete-pilot renders. Four contact sheets and pages 18, 36\u201340 were reviewed in the preceding turn. Current build and image-byte equivalence are recorded in reports/paper_build_verification.json.",
+  "pdf_sha256": "7ac9d2ea6408c95ae98e4f7bbf64f95eadec8e02330678e9237fa37daa0692d6",
+  "pdf_visual_qa": "Central theory now precedes financial implementation/experiments. All cross-references resolve; tables/figures and proof text are legible without clipping/overlap or box warnings. Same 48 pages. Four full contact sheets and pages 8, 10, 14, 16, 37, 38, 48 reviewed individually.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -127,7 +127,7 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
-    "paper/main.tex": "c4dd4b66fa4b66ffbadf83bf6f27d9f6d6ff3993f4924205e7e873ecc4562a00",
+    "paper/main.tex": "6c6d0cf0fd3cbb5318d98d99ab743b3c20bf15e41801a01a58ea7f6f1f255bf9",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
@@ -135,7 +135,7 @@
     "paper/sections/10_lambda_power.tex": "49f1e3ab079db8fc0b7f892e170d3e72be573e65bb451f8566cad22b5521447e",
     "paper/sections/11_vanishing_gains.tex": "a0219912ccf40954afb500769ec96d48ead331fb70868953aa000befecf65b15",
     "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7",
-    "paper/sections/13_directional_information.tex": "b8ea6d6e1582e765d191b097a6529781ec42279be9e2ca2fa0bd6cc4d3d53e27",
+    "paper/sections/13_directional_information.tex": "d34eb22a9536de873cf899681c22c8aefc9e57dc7a7960fa5fcafd7d53b099b4",
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062",
     "paper/generated_gaussian_power_envelope.tex": "b89d2152f4b042a177b159a4c5c5fc955046eddcd06a30285de9f2ff214588dc",
     "paper/sections/15_evidence_scope.tex": "0d83a920729155f09fdee02f464bc2752eee92a0a997f7c0357c7f8797aa3175",
@@ -209,7 +209,7 @@
     "deterministic_checks": 302,
     "figure": "Analytic moment-class diagram; no simulated data.",
     "scope": "Costless fixed-policy iid ENTRY with known raw-second-return cap; exact frontier. Known moments above order two suffice by a countable-mixture existence construction. Separate cash-PARK lower-bound consistency under iid integrable scores. Not the complete financial strategy, not a fixed-Laplace impossibility or expected-delay claim.",
-    "audit_sha256": "1181ad55c33cca5e09c7ebd8465f72497760daab7067ff3ab5b7255442d670bd",
+    "audit_sha256": "55857b1fa78758f4b631f51c5523007be49d379535f2305e75fab01ab5d925d1",
     "proof_audit_sha256": "8bd8007e8ac3cb7b29110442c46c939b4a817961c66f13431537e69d1219068c"
   },
   "supplementary_financial_snapshot": {
@@ -312,14 +312,14 @@
   },
   "manuscript_evidence_scope": {
     "audit": "reports/manuscript_evidence_scope_audit.json",
-    "audit_sha256": "68dfdcd721de31335a204bbd9b8f7deefdbc8a003484c3d0175e7b1054d09aba",
+    "audit_sha256": "4a21d5e598050edebc6f14f900dc4c7dceb0a1c87d790a75151a89dc5ccc04ab",
     "csv_unit_checks": 615,
     "maximum_csv_unit_scale_error": 2.51e-14,
     "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
     "source_scope": "Manuscript count/unit mapping and frozen final estimand, not new simulations or arithmetic replay.",
     "final_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
-    "generated_numeric_inputs_unchanged": false,
-    "numeric_input_change": "Only full-strategy pilot TeX and two pilot figures replaced using complete sealed 100-market v3 sample; all other generated numeric TeX byte-identical."
+    "generated_numeric_inputs_unchanged": true,
+    "numeric_input_change": "Latest edit moves section inputs and adjusts an introductory bridge. All generated numeric TeX and figures byte-identical to commit 4c3c43d; earlier pilot expansion remains recorded in git history."
   },
   "final_manuscript_packet_pipeline": {
     "script": "scripts/build_final_manuscript_results.py",
@@ -613,6 +613,30 @@
     "full_suite_rerun": false,
     "actual_default_build_passed": true,
     "all_48_rendered_pages_unchanged": true,
-    "scope": "Default compile preserves current generated evidence; explicit legacy subcommand retains historical regeneration. Existing full-suite report and eight new regression controls are separate test runs."
+    "scope": "Default compile preserves current generated evidence; explicit legacy subcommand retains historical regeneration. Existing full-suite report and eight new regression controls are separate test runs.",
+    "latest_editorial_compile": "reports/theory_first_structure_verification.json"
+  },
+  "theory_first_editorial_review": {
+    "verification": "reports/theory_first_structure_verification.json",
+    "verification_sha256": "1442c3fd8f819790beea3a8c1870f90e94ad44ea3998cb2b82d1ee2507175333",
+    "section_starts": {
+      "Moment information depends on": {
+        "previous_page": 26,
+        "current_page": 8
+      },
+      "Waiting for a vanishing": {
+        "previous_page": 29,
+        "current_page": 10
+      },
+      "Several estimated signals": {
+        "previous_page": 33,
+        "current_page": 14
+      },
+      "Selecting bets for a rejection": {
+        "previous_page": 8,
+        "current_page": 16
+      }
+    },
+    "scope": "Editorial section order only; same mathematical/numeric content. Full 48-page render review completed; final financial study remains separate and incomplete."
   }
 }
