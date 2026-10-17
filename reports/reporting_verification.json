@@ -66,13 +66,17 @@
   },
   "uniform_family_bound": {
     "input": "reports/vanishing_gain_results/uniform_family_bound.json",
-    "input_sha256": "3cd8fe3a50294ebc0f317c0b4f61bad1be9ca9e81447dc2dae06b97384a5ae3a",
-    "theory_audit_sha256": "123c8f0d4f7d6c1733a06d7e7be6720e8993a9eb7320a13896523e283f63af26",
+    "input_sha256": "e1154a7433407d02b4561cf092de6ac3c9425a83037d4f59249cdd58932202da",
+    "theory_audit_sha256": "83ce76205664ec60e2a7a9482e7fbc6fd5b663685595d5dd588fae25a44f7a67",
     "derivation_and_config_hashes_match": true,
     "upward_percentage_rounding": "15.11818736510762% -> 15.12%",
     "report_matches_regeneration": true,
     "changed_proof_rejected": true,
     "changed_configuration_rejected": true,
     "scope": "Report-only checks in a temporary copy; deterministic analytic ceiling, no new paths or observed-power estimate."
+  },
+  "cash_park_prior_art": {
+    "audit": "reports/cash_park_prior_art_audit.md",
+    "scope": "Attribution and assumption mapping only; no new observations or altered scientific methodology. The 286 deterministic theory checks pass with updated proof-source provenance; generated scalar report text is unchanged."
   }
 }

@@ -1,3 +1,38 @@
+# Current continuation — targeted cash-PARK prior-art comparison
+
+The preceding goal turn was **progress**: commit 020ccff integrated a complete
+policy-uniform constant-certificate bound, numerical audit and reviewed PDF.
+This continuation inspects three close primary sources at theorem/assumption
+level and adds the missing iid Catoni confidence-sequence width reference.
+Predictable heteroscedastic Catoni certification, width lower bounds and
+general numeraire/regret theory are attributed explicitly. The comparison is
+in `cash_park_prior_art_audit.md`; it is targeted and does not establish priority.
+The broader novelty assessment remains open.
+
+The manuscript remains **40 pages**. All current pages were rendered; 37 match
+the preceding reviewed PNGs byte for byte, and changed pages 28, 29 and 40
+were inspected individually. Compilation has no unresolved references,
+duplicate labels or overfull boxes. The **286 finite theory checks** pass;
+the scalar report regenerates unchanged. No new mathematical claim, scientific
+source/configuration, random draw, parameter or reported estimate was introduced.
+The last full software-suite result remains 100 passing tests, not a rerun here.
+
+At **2026-10-17T02:04:38.079130+02:00**, the confirmed live pilot and continuation PIDs are 64355
+and 91419. The checkpoint records **50/100** generated pilot markets,
+**50/100** complete independent replays and **0/500** final markets.
+The first-fifty replay milestone is retained in
+`full_v3_results/pilot50_replay_milestone.json`; these are existing replay
+counts, not another independent run. Exact seeds and the live checkpoint are
+in `full_v3_results/pilot_live_checkpoint.json`.
+The first-ten v2 financial manuscript snapshot is retained. Scientific,
+analysis-plan and empirical-input integrity checks pass; no job was restarted.
+The full paper goal remains active and incomplete. No empirical work or remote
+publication occurred.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — power ceiling uniform over predictable bets
 
 Proposition 18 now covers **every finite nonnegative predictable Catoni bet**

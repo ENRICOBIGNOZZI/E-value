@@ -73,11 +73,14 @@ Additional sources for the lambda and nested-model sections:
   work. Our implemented-policy utility comparison retains that estimation loss
   rather than adjusting it away to infer population predictive content.
 
-The defensible contribution currently consists of explicit economic/state
-accounting, a public label-free policy-geometry moment envelope, a corrected-tail
-specialization with stronger moment assumptions, and transparent feasibility
-experiments. A complete independent prior-art review and full-strategy evidence
-are still needed before a strong publication or novelty claim.
+The contribution currently under assessment combines explicit economic/state
+accounting, public policy-geometry moment envelopes and the corrected-tail
+implementation with two analytic specializations: the directional ENTRY frontier
+and the estimated-reference cash-PARK waiting example. Their proofs specialize
+established testing principles. The individual examples and their economic
+interpretation need to carry the contribution; the underlying construction
+tools cannot. Complete final evidence and broader prior-art validation remain
+necessary for a strong publication or priority claim.
 
 Further primary sources checked for integration of the cash-PARK example:
 
@@ -128,3 +131,10 @@ as a blockwise Catoni specialization and disclaims a comparison against their
 learned or binary-design policies. Its existing fixed/optimized-constant
 benchmarks do not establish a state-of-the-art power ranking. See
 `horizon_prior_art_audit.md` for the exact scope mapping.
+
+The cash-PARK section now also cites existing predictable heteroscedastic Catoni
+certificates and an iid Catoni confidence-sequence width lower bound. The
+statement-by-statement comparison is in `cash_park_prior_art_audit.md`. It
+separates our explicit adaptive estimated-policy instance from general
+supermartingale, width and numeraire results without declaring a new general
+principle or an established priority claim.

@@ -22,7 +22,7 @@ the full objective is complete.
 | Continue complete experiment without manual relaunches | Live controller attached to the existing pilot; source/plan gates, complete-sample seals, independent reporting audits and process lock | Running; automatic final launch requires complete pilot evidence, final still 0/500 |
 | Full-strategy economic assessment | Six-method v2 protocol frozen; first ten v2 markets reported; v3 recovery verified on the representative and failed market; whole pilot replay running | **Incomplete**; do not require or presume a positive result |
 | Response-independent economic event assessment | New counterfactual continuations retain fast responses; tests and independent software replay pass | Implemented; full-size economic evidence pending; method-specific populations do not give causal delay rankings |
-| Broad prior-art and novelty validation | Primary-source boundary includes sequential forecaster comparison and direct 2026 horizon-aware/Bellman testing antecedents | **Incomplete**; current contribution is carefully delimited |
+| Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing antecedents and a targeted theorem/assumption comparison for cash-PARK, heteroscedastic Catoni and iid width bounds | **Incomplete**; the targeted audit improves attribution but does not prove priority |
 | Frozen large final study | Original pilot 3 retained; v1 full study superseded; v2 reached 19 completed plus one failed market; v3 recovery verified and full replay running; final 0/500 | **Not executed**; twenty mechanism markets do not fill these counts |
 | Reviewable manuscript and figures | Compiled PDF, numeric table/figure sources, visual QA | Working draft, not a final publication claim |
 
@@ -32,7 +32,7 @@ complete markets (3,495 file pairs) and the failed seed's three sealed blocks
 (39 pairs). All compared data agree; configuration fields differ only by
 version label. Copied parameter/data corruption controls are detected. This
 audit adds no independent replications or arithmetic-replay counts.
-At least the first forty v3 markets are complete and independently replayed;
+The first fifty v3 markets are complete and independently replayed;
 the latest generated and recorded replay counts are retained in
 `full_v3_results/pilot_live_checkpoint.json`.
 The next work is to finish the same entire 100-market v3 pilot replay and then

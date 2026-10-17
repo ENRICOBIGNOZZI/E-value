@@ -18,8 +18,8 @@
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
   "pdf_pages": 40,
-  "pdf_sha256": "e94367982c7d9bf62aa9a8f9271dc2197e17faa0e28ca63920110b49ced37d13",
-  "pdf_visual_qa": "All 40 pages rendered and all four contact sheets inspected. Changed abstract/introduction, Proposition 18, diagnostic, discussion and proof pages 1, 2, 28, 29, 35, 38 and 39 inspected individually. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
+  "pdf_sha256": "31e0846e5384177b6285b56cc61c85907201de803f4c3b190b7ccf7a425b9682",
+  "pdf_visual_qa": "All 40 current pages rendered. Thirty-seven PNG renders match the preceding visually reviewed manuscript byte for byte; changed pages 28, 29 and 40 inspected individually. Page 30 was also inspected. No clipping/overlap, overfull boxes, duplicate labels or unresolved references.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -37,13 +37,13 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
-    "paper/main.tex": "a4d6fd3c34cae41ddc9956c1d7e47909063abe12ef78f54bad09b9992b457cfd",
+    "paper/main.tex": "6798c4960a97047ca7d21590485ea8527a1f2b3256f2471d13793311dcd4b98b",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
     "paper/sections/09_full_strategy.tex": "f0bea802ea29e2dbea981226efffcc5d19864815972b1606e7a5fc15dace97c5",
     "paper/sections/10_lambda_power.tex": "fb2eba2485c11d893b6eda900d8dddcfe166745302f9e163859459785747a880",
-    "paper/sections/11_vanishing_gains.tex": "775878e3c375040ce2f509b6e0e28138338a0a07622402a134e3962374ad63cb",
+    "paper/sections/11_vanishing_gains.tex": "24d067b3a263f2aa1342e7a242567e8db55b28df9a7afde12908e087d4988114",
     "paper/sections/12_vanishing_proofs.tex": "4e9ff7d8040333303ac5cff9f984e17eaf93829d6500671c3c879dc3fca12c90",
     "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062"
@@ -139,5 +139,10 @@
     "live_checkpoint": "reports/full_v3_results/continuation_checkpoint.json",
     "controller_pid": 91419,
     "scope": "Observes existing pilot; final generation starts only after all 100 complete/replayed markets are sealed and assessed. All 500 final markets then require independent replay, sealing and frozen assessment. No economic sign gate, manuscript rewrite or overall-goal completion claim."
+  },
+  "cash_park_prior_art": {
+    "audit": "reports/cash_park_prior_art_audit.md",
+    "audit_sha256": "127fdc1509132dd9f325211aba1b90bae363a9bc29fe8ceda59dc8f5d0e3c1fe",
+    "scope": "Targeted comparison of three primary sources; predictable heteroscedastic certification, iid Catoni CS width and general numeraire/regret theory are existing antecedents. Added attribution only; broad priority validation remains incomplete."
   }
 }

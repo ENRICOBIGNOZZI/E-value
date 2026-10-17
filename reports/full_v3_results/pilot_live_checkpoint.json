@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-10-17T01:59:43.674355+02:00",
-  "confirmed_live_process": "64355 Fri Oct 16 22:56:50 2026     03:02:53 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T02:04:38.079130+02:00",
+  "confirmed_live_process": "64355 Fri Oct 16 22:56:50 2026     03:07:48 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
   "completed_pilot_seeds": [
     50001,
     50002,
@@ -53,7 +53,16 @@
     50049,
     50050
   ],
-  "unfinished_seed_status_files": [],
+  "unfinished_seed_status_files": [
+    {
+      "seed": 50051,
+      "completed_blocks": 1,
+      "total_blocks": 14,
+      "complete": false,
+      "source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
+      "elapsed_seconds": 10.409581332933158
+    }
+  ],
   "recorded_independent_replay_complete_seeds": [
     50001,
     50002,
@@ -100,7 +109,11 @@
     50043,
     50044,
     50045,
-    50046
+    50046,
+    50047,
+    50048,
+    50049,
+    50050
   ],
   "completed_source_hashes": [
     "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3"
@@ -108,7 +121,7 @@
   "stage_progress": {
     "stage": "pilot",
     "requested_count": 100,
-    "prefix_completed_and_replayed": 40,
+    "prefix_completed_and_replayed": 50,
     "batch_size": 10
   },
   "completed_final_seeds": [],
