@@ -30,7 +30,9 @@ claim.
 The later full-strategy v3 implementation now retains these shadow
 continuations and separates criterion dates, selected choices and executed
 deployments. Its independent aggregation audit and scope are documented in
-`full_event_reporting_protocol.md`. That audit checks the reported denominators
-and rates against retained JSON records; it does not re-run event adjudication
-from return paths or make method-specific event populations comparable causal
+`full_event_reporting_protocol.md`. It checks reported denominators and rates
+against retained JSON records. The separate reconstruction described in
+`full_event_adjudication_protocol.md` now also derives the stable/unstable
+labels from annual conditional-score arrays and ghost continuations, including
+fast responses. Neither makes method-specific populations comparable causal
 risk sets. The legacy limitation above remains in force for the old logs.

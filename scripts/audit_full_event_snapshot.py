@@ -21,6 +21,13 @@ ALL_METHODS = ('All Signals', *METHODS, 'Oracle')
 LIFECYCLES = ('ALL', 'ENTRY', 'PARK', 'REVIVE', 'SWAP')
 KINDS = ('ALL', 'inception_positive', 'sign_change_positive')
 FOLLOWUP = (1, 3, 5)
+GAIN_JSON_DECIMALS = 10  # Frozen engine: DataFrame.to_json default in pandas 3.0.6.
+
+
+def gain_identity_tolerance(record):
+    scale = max(1., *(abs(record[k]) for k in
+                    ('conditional_gain', 'new_conditional_utility', 'old_conditional_utility')))
+    return 1.5*10.**(-GAIN_JSON_DECIMALS)+4*math.ulp(scale)
 
 
 def sha256(path):
@@ -110,6 +117,7 @@ def audit(snapshot, output):
     original_counts = {}
     deployments_by_method = defaultdict(list)
     maximum_gain_identity_residual = 0.
+    maximum_gain_identity_tolerance = 1.5*10.**(-GAIN_JSON_DECIMALS)+4*math.ulp(1.)
 
     @lru_cache(maxsize=2)
     def source_rows(seed, filename):
@@ -215,8 +223,10 @@ def audit(snapshot, output):
                     f'Invalid deployment record: {seed}')
             residual = abs(deployment['conditional_gain'] -
                            (deployment['new_conditional_utility']-deployment['old_conditional_utility']))
-            require(residual <= tolerance, f'Inconsistent retained deployment gain: {seed}')
+            identity_tolerance = gain_identity_tolerance(deployment)
+            require(residual <= identity_tolerance, f'Inconsistent retained deployment gain: {seed}')
             maximum_gain_identity_residual = max(maximum_gain_identity_residual, residual)
+            maximum_gain_identity_tolerance = max(maximum_gain_identity_tolerance, identity_tolerance)
             deployments_by_method[deployment['method']].append(deployment)
         metric_rows = list(read_rows(directory/'metrics_by_seed.csv'))
         metrics = {r['method']: r for r in metric_rows}
@@ -297,10 +307,12 @@ def audit(snapshot, output):
     return dict(complete=True, snapshot=str(snapshot), kind=seal['kind'], seeds=seeds,
         counts=dict(counters), maximum_numeric_copy_or_aggregation_error=maximum_error,
         maximum_retained_deployment_gain_identity_residual=maximum_gain_identity_residual,
-        gain_identity_absolute_tolerance=tolerance,
+        gain_identity_absolute_tolerance=maximum_gain_identity_tolerance,
+        gain_serialization_decimal_places=GAIN_JSON_DECIMALS,
+        gain_identity_tolerance_rule='Three half-unit rounding errors at ten decimal places plus four ulps at record scale',
         deployment_summary=summary, snapshot_seal_sha256=sha256(seal_path),
         audit_source_sha256=sha256(Path(__file__)),
-        scope='Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses the stated economic tolerance, not machine precision.')
+        scope='Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses an explicit ten-decimal serialization bound, not the event-positivity tolerance or machine precision.')
 
 
 if __name__ == '__main__':

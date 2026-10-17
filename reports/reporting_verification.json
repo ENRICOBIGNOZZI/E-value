@@ -28,7 +28,8 @@
     "scripts/assess_final_study.py": "76bf367a572881183a504d3bce83fd0411bfc2db0221bd13baccd4afec0241cc",
     "scripts/summarize_realized_vanishing.py": "3b034d7e73fd7574a61b81ddd29b27c97e60ab1de5ad12fd7af3c8c562c5610b",
     "scripts/continue_full_study.py": "8f250cf46d8ab94d9d6ec993f692b658a67b128792490c8cc6b2b1d7d88ea062",
-    "scripts/audit_full_event_snapshot.py": "d4ad3762bb0593291838dfac557998e5c202e7ced51273b690df927058c6728a"
+    "scripts/audit_full_event_snapshot.py": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
+    "scripts/audit_full_event_adjudication.py": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
@@ -89,20 +90,47 @@
   },
   "independent_event_reporting": {
     "audit": "reports/full_v3_snapshots/pilot_020_event_numeric_audit.json",
-    "audit_sha256": "c1e87e669013b7bef6deec9c35e27b799321e949817d389bfa5c5bd04a05da7b",
+    "audit_sha256": "8ba6ebd79b94aa04b5e9b2a02d6e7e8b6d6dafd36d7a58118ff6003f2551ccd0",
     "numeric_checks": 264406,
     "maximum_copy_or_aggregation_error": 0.0,
     "maximum_retained_gain_identity_residual": 1.0000000003410059e-10,
-    "gain_identity_tolerance": 1e-08,
-    "controls": 22,
+    "gain_identity_tolerance": 1.500008881784197e-10,
+    "controls": 24,
     "test_report": "reports/full_event_reporting_tests.txt",
-    "test_source_sha256": "c0e7b446c9b16ea39774771761a7dd99621634efc24b254dff14fecb36d1509b",
+    "test_source_sha256": "2b6004db1d233480641420fd4743b5d7769b36d8c52948a1c7f49c44648fea80",
     "protocol": "reports/full_event_reporting_protocol.md",
-    "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses the stated economic tolerance, not machine precision.",
+    "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses an explicit ten-decimal serialization bound, not the event-positivity tolerance or machine precision.",
     "remaining_complete_study_audits": [
-      "reports/full_v3_snapshots/pilot_100_event_numeric_audit.json",
-      "reports/full_v3_snapshots/main_500_event_numeric_audit.json"
+      "reports/full_v3_snapshots/pilot_100_event_adjudication_audit.json",
+      "reports/full_v3_snapshots/main_500_event_adjudication_audit.json"
     ],
+    "automatic_controller_unchanged": true,
+    "gain_serialization_decimal_places": 10,
+    "included_in": "reports/full_v3_snapshots/pilot_020_event_adjudication_audit.json",
+    "report_audit_included_by_reconstruction": true
+  },
+  "independent_event_adjudication": {
+    "audit": "reports/full_v3_snapshots/pilot_020_event_adjudication_audit.json",
+    "audit_sha256": "42503ed7a1a034c307a6f48bd37508abcb2c34d0b27e15e5bef0ecaf763b0bea",
+    "auditor_source_sha256": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724",
+    "counts": {
+      "annual_mean_checks": 120630,
+      "ghost_mean_columns": 2756,
+      "terminal_mean_checks": 38,
+      "comparisons_reconstructed": 32385,
+      "stable_events_reconstructed": 4895,
+      "unstable_runs_reconstructed": 483,
+      "events_confirmed_after_closure": 2569,
+      "selected_events_confirmed_after_closure": 118,
+      "events_selected_at_onset": 118
+    },
+    "maximum_annual_mean_error": 5.421010862427522e-20,
+    "reconstruction_controls": 27,
+    "reporting_controls_included": 24,
+    "combined_test_report": "reports/full_event_adjudication_tests.txt",
+    "test_source_sha256": "587ea3115d80c2b4f436dfc9238f7100f5f8c50f9f119e9c22f6c59bc5fa7b15",
+    "protocol": "reports/full_event_adjudication_protocol.md",
+    "scope": "Independent batch reconstruction of all stable and unstable event labels, confirmations, delays and closure reasons from ordered annual conditional-score arrays, annual eligibility/selection flags, closure logs and one-block ghost continuations. Includes the separate JSON/CSV aggregation audit. No DGP resimulation, optimizer rerun or new market; the stored conditional-score formulas and selector decisions rely on their separately recorded arithmetic replay. Method-specific event populations do not identify causal cross-method delay or waiting-cost effects.",
     "automatic_controller_unchanged": true
   }
 }

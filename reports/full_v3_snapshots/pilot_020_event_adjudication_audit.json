@@ -1,0 +1,408 @@
+{
+  "complete": true,
+  "snapshot": "reports/full_v3_snapshots/pilot_020",
+  "kind": "interim_pilot",
+  "seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50018,
+    50019,
+    50020
+  ],
+  "counts": {
+    "annual_mean_checks": 120630,
+    "ghost_mean_columns": 2756,
+    "terminal_mean_checks": 38,
+    "comparisons_reconstructed": 32385,
+    "stable_events_reconstructed": 4895,
+    "unstable_runs_reconstructed": 483,
+    "events_confirmed_after_closure": 2569,
+    "selected_events_confirmed_after_closure": 118,
+    "events_selected_at_onset": 118
+  },
+  "maximum_annual_mean_error": 5.421010862427522e-20,
+  "per_seed": [
+    {
+      "seed": 50001,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 170,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1695,
+        "stable_events_reconstructed": 296,
+        "unstable_runs_reconstructed": 35,
+        "events_confirmed_after_closure": 157,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50002,
+      "counts": {
+        "annual_mean_checks": 6040,
+        "ghost_mean_columns": 178,
+        "terminal_mean_checks": 7,
+        "comparisons_reconstructed": 2067,
+        "stable_events_reconstructed": 294,
+        "unstable_runs_reconstructed": 5,
+        "events_confirmed_after_closure": 176,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50003,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 78,
+        "comparisons_reconstructed": 870,
+        "stable_events_reconstructed": 174,
+        "unstable_runs_reconstructed": 2,
+        "events_confirmed_after_closure": 78,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50004,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 162,
+        "comparisons_reconstructed": 1566,
+        "stable_events_reconstructed": 261,
+        "unstable_runs_reconstructed": 15,
+        "events_confirmed_after_closure": 152,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50005,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 97,
+        "comparisons_reconstructed": 1335,
+        "stable_events_reconstructed": 200,
+        "unstable_runs_reconstructed": 4,
+        "events_confirmed_after_closure": 95,
+        "selected_events_confirmed_after_closure": 4,
+        "events_selected_at_onset": 4
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50006,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 68,
+        "comparisons_reconstructed": 1345,
+        "stable_events_reconstructed": 158,
+        "unstable_runs_reconstructed": 9,
+        "events_confirmed_after_closure": 67,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50007,
+      "counts": {
+        "annual_mean_checks": 6110,
+        "ghost_mean_columns": 108,
+        "comparisons_reconstructed": 1446,
+        "stable_events_reconstructed": 221,
+        "unstable_runs_reconstructed": 14,
+        "events_confirmed_after_closure": 106,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50008,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 121,
+        "terminal_mean_checks": 5,
+        "comparisons_reconstructed": 1464,
+        "stable_events_reconstructed": 218,
+        "unstable_runs_reconstructed": 38,
+        "events_confirmed_after_closure": 114,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50009,
+      "counts": {
+        "annual_mean_checks": 5990,
+        "ghost_mean_columns": 138,
+        "terminal_mean_checks": 6,
+        "comparisons_reconstructed": 1563,
+        "stable_events_reconstructed": 268,
+        "unstable_runs_reconstructed": 7,
+        "events_confirmed_after_closure": 134,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50010,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 145,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1455,
+        "stable_events_reconstructed": 273,
+        "unstable_runs_reconstructed": 13,
+        "events_confirmed_after_closure": 139,
+        "selected_events_confirmed_after_closure": 4,
+        "events_selected_at_onset": 4
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50011,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 142,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 2042,
+        "stable_events_reconstructed": 262,
+        "unstable_runs_reconstructed": 5,
+        "events_confirmed_after_closure": 138,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50012,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 86,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 868,
+        "stable_events_reconstructed": 161,
+        "unstable_runs_reconstructed": 22,
+        "events_confirmed_after_closure": 77,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50013,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 167,
+        "comparisons_reconstructed": 1906,
+        "stable_events_reconstructed": 292,
+        "unstable_runs_reconstructed": 38,
+        "events_confirmed_after_closure": 155,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50014,
+      "counts": {
+        "annual_mean_checks": 5980,
+        "ghost_mean_columns": 134,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1787,
+        "stable_events_reconstructed": 232,
+        "unstable_runs_reconstructed": 38,
+        "events_confirmed_after_closure": 120,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50015,
+      "counts": {
+        "annual_mean_checks": 5930,
+        "ghost_mean_columns": 68,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 873,
+        "stable_events_reconstructed": 153,
+        "unstable_runs_reconstructed": 45,
+        "events_confirmed_after_closure": 59,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50016,
+      "counts": {
+        "annual_mean_checks": 6090,
+        "ghost_mean_columns": 158,
+        "comparisons_reconstructed": 1827,
+        "stable_events_reconstructed": 263,
+        "unstable_runs_reconstructed": 5,
+        "events_confirmed_after_closure": 157,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50017,
+      "counts": {
+        "annual_mean_checks": 6050,
+        "ghost_mean_columns": 229,
+        "terminal_mean_checks": 11,
+        "comparisons_reconstructed": 2453,
+        "stable_events_reconstructed": 321,
+        "unstable_runs_reconstructed": 34,
+        "events_confirmed_after_closure": 198,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50018,
+      "counts": {
+        "annual_mean_checks": 6080,
+        "ghost_mean_columns": 148,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1907,
+        "stable_events_reconstructed": 283,
+        "unstable_runs_reconstructed": 23,
+        "events_confirmed_after_closure": 144,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50019,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 169,
+        "comparisons_reconstructed": 1785,
+        "stable_events_reconstructed": 257,
+        "unstable_runs_reconstructed": 64,
+        "events_confirmed_after_closure": 144,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50020,
+      "counts": {
+        "annual_mean_checks": 6050,
+        "ghost_mean_columns": 190,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 2131,
+        "stable_events_reconstructed": 308,
+        "unstable_runs_reconstructed": 67,
+        "events_confirmed_after_closure": 159,
+        "selected_events_confirmed_after_closure": 10,
+        "events_selected_at_onset": 10
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    }
+  ],
+  "reporting_audit": {
+    "complete": true,
+    "snapshot": "reports/full_v3_snapshots/pilot_020",
+    "kind": "interim_pilot",
+    "seeds": [
+      50001,
+      50002,
+      50003,
+      50004,
+      50005,
+      50006,
+      50007,
+      50008,
+      50009,
+      50010,
+      50011,
+      50012,
+      50013,
+      50014,
+      50015,
+      50016,
+      50017,
+      50018,
+      50019,
+      50020
+    ],
+    "counts": {
+      "structural_checks": 459239,
+      "numeric_checks": 264406,
+      "economic_opportunities_rows": 4895,
+      "opportunity_registry_rows": 32385,
+      "decisions_rows": 212,
+      "deployments_rows": 208,
+      "opportunity_rates_rows": 180,
+      "opportunity_seed_counts_rows": 1792
+    },
+    "maximum_numeric_copy_or_aggregation_error": 0.0,
+    "maximum_retained_deployment_gain_identity_residual": 1.0000000003410059e-10,
+    "gain_identity_absolute_tolerance": 1.500008881784197e-10,
+    "gain_serialization_decimal_places": 10,
+    "gain_identity_tolerance_rule": "Three half-unit rounding errors at ten decimal places plus four ulps at record scale",
+    "deployment_summary": {
+      "Greedy": {
+        "executed": 117,
+        "positive_gain_fraction": 0.1452991452991453,
+        "mean_gain_basis_points": -0.6024622136752137,
+        "mean_entry_cost_basis_points": 1.148616829059829
+      },
+      "HAC": {
+        "executed": 71,
+        "positive_gain_fraction": 0.23943661971830985,
+        "mean_gain_basis_points": -0.45645284507042255,
+        "mean_entry_cost_basis_points": 1.3631352816901408
+      },
+      "Catoni": {
+        "executed": 0,
+        "positive_gain_fraction": null,
+        "mean_gain_basis_points": null,
+        "mean_entry_cost_basis_points": null
+      },
+      "Tail": {
+        "executed": 20,
+        "positive_gain_fraction": 1.0,
+        "mean_gain_basis_points": 1.0787422,
+        "mean_entry_cost_basis_points": 1.4999999999999998
+      }
+    },
+    "snapshot_seal_sha256": "d337c157b827540ecd499c8e7dcdd09e07bbfcf8546820e5e0c1710898f1306f",
+    "audit_source_sha256": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
+    "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses an explicit ten-decimal serialization bound, not the event-positivity tolerance or machine precision."
+  },
+  "snapshot_seal_sha256": "d337c157b827540ecd499c8e7dcdd09e07bbfcf8546820e5e0c1710898f1306f",
+  "audit_source_sha256": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724",
+  "reporting_auditor_source_sha256": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
+  "scope": "Independent batch reconstruction of all stable and unstable event labels, confirmations, delays and closure reasons from ordered annual conditional-score arrays, annual eligibility/selection flags, closure logs and one-block ghost continuations. Includes the separate JSON/CSV aggregation audit. No DGP resimulation, optimizer rerun or new market; the stored conditional-score formulas and selector decisions rely on their separately recorded arithmetic replay. Method-specific event populations do not identify causal cross-method delay or waiting-cost effects."
+}

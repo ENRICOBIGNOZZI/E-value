@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-10-17T02:30:51.927941+02:00",
-  "confirmed_live_process": "64355 Fri Oct 16 22:56:50 2026     03:34:01 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T02:45:34.147776+02:00",
+  "confirmed_live_process": "64355 Fri Oct 16 22:56:50 2026     03:48:44 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
   "completed_pilot_seeds": [
     50001,
     50002,
@@ -60,16 +60,25 @@
     50056,
     50057,
     50058,
-    50059
+    50059,
+    50060
   ],
   "unfinished_seed_status_files": [
     {
-      "seed": 50060,
-      "completed_blocks": 12,
+      "seed": 50061,
+      "completed_blocks": 6,
       "total_blocks": 14,
       "complete": false,
       "source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
-      "elapsed_seconds": 336.8478578320937
+      "elapsed_seconds": 112.15066225000191
+    },
+    {
+      "seed": 50062,
+      "completed_blocks": 8,
+      "total_blocks": 14,
+      "complete": false,
+      "source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
+      "elapsed_seconds": 110.03724445903208
     }
   ],
   "recorded_independent_replay_complete_seeds": [
@@ -122,7 +131,17 @@
     50047,
     50048,
     50049,
-    50050
+    50050,
+    50051,
+    50052,
+    50053,
+    50054,
+    50055,
+    50056,
+    50057,
+    50058,
+    50059,
+    50060
   ],
   "completed_source_hashes": [
     "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3"
@@ -130,7 +149,7 @@
   "stage_progress": {
     "stage": "pilot",
     "requested_count": 100,
-    "prefix_completed_and_replayed": 50,
+    "prefix_completed_and_replayed": 60,
     "batch_size": 10
   },
   "completed_final_seeds": [],

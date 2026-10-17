@@ -1,3 +1,51 @@
+# Current continuation — independent reconstruction of stable/unstable events
+
+The preceding goal turn was **progress**: 50baa1d added an independent event
+aggregation audit. This turn closes its explicit label-reconstruction gap.
+A separate batch calculation uses maximal positive annual runs, daily
+conditional-score arrays, annual flags, closure logs and ghost continuations;
+it imports no EventTracker, simulator, selector or optimizer. It reconstructs
+all event fields and registry stable/unstable counts before comparing them
+to the retained JSON labels.
+
+The same first-twenty sealed v3 markets reproduce **4,895 stable events, 483
+unstable runs and 32,385 comparison episodes**. There are **120,630 annual
+mean checks**, 2,756 ghost columns and 38 terminal mean checks; maximum annual
+mean discrepancy is 5.43e-20. All **118 events selected at their first positive
+review and confirmed after closure** are retained, including terminal choices.
+These are existing paths and audit operations, not additional replications.
+The reconstruction includes the existing 264,406-check report aggregation audit.
+Stored conditional-score formulas and selector choices rely on their separate
+arithmetic replay; no DGP or conditional-utility optimizer is rerun here.
+Method-specific populations still do not identify causal cross-method delays
+or a causal decomposition of utility gaps into waiting costs.
+
+The retained approximately 1e-10 deployment-gain residual is explained by the
+frozen engine's pandas ten-decimal JSON serialization. Its identity check is
+now tightened to three half-decimal-unit errors plus four ulps at record scale,
+about 1.51e-10, instead of the old 1e-8 economic tolerance. The actual **1e-8
+positivity threshold and every saved value are unchanged**. Twenty-four report
+and twenty-seven reconstruction controls pass; the combined report has 51
+checks and the complete repository suite has **151 passing tests**.
+
+The new protocol is `full_event_adjudication_protocol.md`. Its complete-pilot
+and final audits run separately after sealing and include the report-only
+audit, so no duplicate invocation is required. The running controller, frozen
+scientific source/configurations and entire final-analysis plan are unchanged.
+The **42-page PDF and all numerical tables remain byte-identical** to b69ffcb.
+
+At **2026-10-17T02:45:34.147776+02:00**, PIDs 64355 and 91419 remain confirmed live. The checkpoint
+records **60/100** generated pilot markets, **60/100** complete
+independent arithmetic replays and **0/500** final markets. The first-sixty
+milestone also revalidates all sixty current replay-input digests after cache
+compaction; it adds no arithmetic replay counts. Preserved empirical-input
+hashes match. No job was restarted, no empirical work or remote push occurred,
+and the overall paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — independent event/deployment report aggregation
 
 The preceding turn was **progress**: b69ffcb added the geometric-bet rate and

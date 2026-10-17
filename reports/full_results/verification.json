@@ -49,9 +49,9 @@
     "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062"
   },
   "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar waiting theorem/diagnostic and directional moment-class theory included. Historical derivations excluded.",
-  "current_repository_tests_passed": 122,
-  "current_repository_test_report": "reports/full_test_results_with_event_reporting.txt",
-  "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 122-test suite includes numerical recovery, scalar/lambda controls, fourteen snapshot-reporting, twelve final-assessment, nineteen continuation and twenty-two independent event-reporting controls. Synthetic fixtures are not market replications.",
+  "current_repository_tests_passed": 151,
+  "current_repository_test_report": "reports/full_test_results_with_event_adjudication.txt",
+  "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 151-test suite includes numerical/scalar/lambda controls, fourteen snapshot-reporting, twelve final-assessment, nineteen continuation, twenty-four event-reporting and twenty-seven independent event-reconstruction controls. Synthetic fixtures are not market observations.",
   "lambda_power_study": {
     "source_freeze_commit": "bbd619f",
     "source_hash": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
@@ -128,12 +128,31 @@
     "scope": "Separate first-twenty v3 interim report; not promoted into the manuscript financial table, not complete pilot/final and not extra same-seed replications.",
     "event_reporting_audit": {
       "report": "reports/full_v3_snapshots/pilot_020_event_numeric_audit.json",
-      "report_sha256": "c1e87e669013b7bef6deec9c35e27b799321e949817d389bfa5c5bd04a05da7b",
-      "auditor_source_sha256": "d4ad3762bb0593291838dfac557998e5c202e7ced51273b690df927058c6728a",
+      "report_sha256": "8ba6ebd79b94aa04b5e9b2a02d6e7e8b6d6dafd36d7a58118ff6003f2551ccd0",
+      "auditor_source_sha256": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
       "numeric_checks": 264406,
       "structural_checks": 459239,
-      "software_controls": 22,
-      "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses the stated economic tolerance, not machine precision."
+      "software_controls": 24,
+      "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses an explicit ten-decimal serialization bound, not the event-positivity tolerance or machine precision."
+    },
+    "event_adjudication_audit": {
+      "report": "reports/full_v3_snapshots/pilot_020_event_adjudication_audit.json",
+      "report_sha256": "42503ed7a1a034c307a6f48bd37508abcb2c34d0b27e15e5bef0ecaf763b0bea",
+      "auditor_source_sha256": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724",
+      "counts": {
+        "annual_mean_checks": 120630,
+        "ghost_mean_columns": 2756,
+        "terminal_mean_checks": 38,
+        "comparisons_reconstructed": 32385,
+        "stable_events_reconstructed": 4895,
+        "unstable_runs_reconstructed": 483,
+        "events_confirmed_after_closure": 2569,
+        "selected_events_confirmed_after_closure": 118,
+        "events_selected_at_onset": 118
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20,
+      "software_controls": 27,
+      "scope": "Independent batch reconstruction of all stable and unstable event labels, confirmations, delays and closure reasons from ordered annual conditional-score arrays, annual eligibility/selection flags, closure logs and one-block ghost continuations. Includes the separate JSON/CSV aggregation audit. No DGP resimulation, optimizer rerun or new market; the stored conditional-score formulas and selector decisions rely on their separately recorded arithmetic replay. Method-specific event populations do not identify causal cross-method delay or waiting-cost effects."
     }
   },
   "horizon_betting_prior_art": {

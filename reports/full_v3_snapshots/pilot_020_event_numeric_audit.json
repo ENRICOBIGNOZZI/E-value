@@ -36,7 +36,9 @@
   },
   "maximum_numeric_copy_or_aggregation_error": 0.0,
   "maximum_retained_deployment_gain_identity_residual": 1.0000000003410059e-10,
-  "gain_identity_absolute_tolerance": 1e-08,
+  "gain_identity_absolute_tolerance": 1.500008881784197e-10,
+  "gain_serialization_decimal_places": 10,
+  "gain_identity_tolerance_rule": "Three half-unit rounding errors at ten decimal places plus four ulps at record scale",
   "deployment_summary": {
     "Greedy": {
       "executed": 117,
@@ -64,6 +66,6 @@
     }
   },
   "snapshot_seal_sha256": "d337c157b827540ecd499c8e7dcdd09e07bbfcf8546820e5e0c1710898f1306f",
-  "audit_source_sha256": "d4ad3762bb0593291838dfac557998e5c202e7ced51273b690df927058c6728a",
-  "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses the stated economic tolerance, not machine precision."
+  "audit_source_sha256": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
+  "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses an explicit ten-decimal serialization bound, not the event-positivity tolerance or machine precision."
 }

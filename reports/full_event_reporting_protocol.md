@@ -32,22 +32,25 @@ stability. A terminal choice can count as a selection within an eligible
 calendar window, but never as an executed deployment. The audit does not
 re-run stable-event adjudication from the full return history or recompute
 evaluator conditional utilities/optimal allocations. The retained gain/new/old
-utility identity is checked at the declared economic tolerance, not at machine
-precision. Thus verification of transcription and aggregation is distinct from
+utility identity is now checked at a ten-decimal serialization bound, not the
+economic positivity tolerance or machine precision. Thus verification of
+transcription and aggregation is distinct from
 verification of those underlying scientific calculations.
 
 The first-twenty audit covers 4,895 stable-event rows, 32,385 comparison-registry
 rows, 212 decisions and 208 executed deployments. It makes 264,406 numeric
 copy/aggregation checks with maximum discrepancy zero and 459,239 structural
 checks. The maximum retained gain-field identity residual is 1.01e-10, below
-the fixed 1e-8 economic tolerance. These counts are not additional markets,
+the approximately 1.51e-10 serialization bound. These counts are not additional markets,
 score replays, statistical sample sizes or evidence of economic superiority.
 
-Twenty-two software controls use small synthetic fixtures, including prompt
+Twenty-four software controls use small synthetic fixtures, including prompt
 responses, terminal choices, empty cohorts, wrong re-sealed denominators,
 missing/duplicated report rows, stale raw data, malformed bound metadata and
 an input added during the audit. The CLI refuses to write an audit report
 inside either immutable input tree. Fixtures are never scientific observations.
+Two precision controls verify the installed serializer default and reject a
+gain residual that would have passed the former economic-tolerance check.
 
 ```sh
 .venv/bin/python scripts/audit_full_event_snapshot.py \
@@ -79,3 +82,9 @@ identify causal cross-method delay rankings or decompose the utility gap into
 a causal cost of waiting. Deployment gains concern the next period after
 transition costs, not lifetime trade value. No result in this reporting audit
 completes the still-running pilot/final study or the overall paper goal.
+
+The later `full_event_adjudication_protocol.md` documents a separate batch
+reconstruction of the stable/unstable labels from annual score arrays and
+ghost continuations. It includes this report audit and has additional controls;
+the scope limitation above continues to describe this standalone reporting
+auditor, not the later reconstruction.

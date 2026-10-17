@@ -166,15 +166,17 @@ def test_changed_source_bytes_require_a_current_replay(evidence):
 
 @pytest.mark.parametrize('change,reason',[('bad_delay','Invalid event delay'),
     ('bad_confirmation','Invalid stable-event calendar'),('terminal_execution','Invalid decision calendar'),
-    ('duplicate_registry','Duplicate comparison registry'),('gain_identity','Inconsistent retained deployment gain')])
+    ('duplicate_registry','Duplicate comparison registry'),('gain_identity','Inconsistent retained deployment gain'),
+    ('gain_serialization','Inconsistent retained deployment gain')])
 def test_inconsistent_bound_source_metadata_is_rejected(evidence,change,reason):
     snapshot,output=evidence
-    name='deployments' if change=='gain_identity' else 'decisions' if change=='terminal_execution' else 'opportunity_registry' if change=='duplicate_registry' else 'economic_opportunities'
+    name='deployments' if change in ('gain_identity','gain_serialization') else 'decisions' if change=='terminal_execution' else 'opportunity_registry' if change=='duplicate_registry' else 'economic_opportunities'
     path=output/'seed_50001'/f'{name}.json';rows=json.loads(path.read_text())
     if change=='bad_delay':rows[0]['selection_delay_days']=10
     elif change=='bad_confirmation':rows[0]['confirmation_day']=40
     elif change=='terminal_execution':rows[1]['executed']=True
     elif change=='gain_identity':rows[0]['conditional_gain']+=.001
+    elif change=='gain_serialization':rows[0]['conditional_gain']+=2e-10
     else:rows.append(dict(rows[0]))
     write_json(path,rows);rebind_fixture(snapshot,output)
     with pytest.raises(ValueError,match=reason):audit(snapshot,output)
@@ -225,3 +227,14 @@ def test_cli_cannot_write_its_report_into_immutable_inputs(evidence,destination)
         '--output',str(output),'--report',str(report)],capture_output=True,text=True)
     assert result.returncode==2 and 'must lie outside' in result.stderr
     assert not report.exists()
+
+
+def test_declared_gain_precision_matches_the_installed_frozen_serializer():
+    import inspect
+    import pandas as pd
+    assert inspect.signature(pd.DataFrame.to_json).parameters['double_precision'].default==event_audit.GAIN_JSON_DECIMALS
+    rows=[]
+    for new,old in [(1.234567890123e-4,-9.876543210987e-5),(-2.000000000045e-4,1.000000000055e-4)]:
+        rows.append(dict(new_conditional_utility=new,old_conditional_utility=old,conditional_gain=new-old))
+    for record in json.loads(pd.DataFrame(rows).to_json(orient='records')):
+        assert abs(record['conditional_gain']-(record['new_conditional_utility']-record['old_conditional_utility']))<=event_audit.gain_identity_tolerance(record)
