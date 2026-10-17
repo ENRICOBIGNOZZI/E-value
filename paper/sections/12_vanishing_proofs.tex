@@ -161,6 +161,42 @@ the probability lower bound from $C_{T_\alpha}$ to $J_{T_\alpha}$; it does
 not require monotonicity of $J$. This completes Theorem~\ref{thm:vanishing}.
 
 \subsection{Proof of Proposition~\ref{prop:vanishing-uniform}}
+The actual conditional score second moment is
+$m_{2,t}=\sigma^2w_t^2+3\gamma^2\sigma^4w_t^4/4$. The gap
+\[
+ d_\nu=\nu^2-\{\sigma^2L^2+3\gamma^2\sigma^4L^4/4\}
+ =\gamma\sigma L^3\sqrt{M_4}
+     +\gamma^2L^4(M_4-3\sigma^4)/4>0
+\]
+is independent of the bet. The Catoni inequality
+$e^{\phi(x)}\le1+x+x^2/2$ gives
+\[
+ \E_{t-1}\exp\{\phi(\lambda_tY_t)-\lambda_t^2\nu^2/2\}
+ \le\exp\{\lambda_t\delta_t-d_\nu\lambda_t^2/2\}
+ \le\exp\{\delta_t^2/(2d_\nu)\}.
+\]
+Thus $\widetilde E_n^{\lambda}e^{-\mathcal B_n}$ is a $P$-supermartingale for every
+predictable bet rule, where $\mathcal B_n=\sum_{t\le n}\delta_t^2/(2d_\nu)$ is common
+to all such rules. The fourth-moment bound in
+\eqref{eq:vanishing-moments} gives $\E\mathcal B_\infty<\infty$.
+More explicitly, one may take
+\[
+ B_\nu=\frac3{8\gamma^2d_\nu}
+ \left\{\frac13\left(\frac1{n_0-4}+\frac1{n_0-3}\right)
+       +\frac1{12}\sum_{j=n_0-2}^{n_0+1}\frac1j\right\}.
+\]
+Indeed $\E w_t^4\le3k/[\gamma^4\sigma^4(k-4)(k-2)(k+2)]$ for
+$k=n_0+t-1$; partial fractions telescope its sum to the displayed expression.
+On $\{\mathcal B_\infty\le u\}$, crossing $1/\alpha$ requires the compensated
+supermartingale to cross $e^{-u}/\alpha$. Ville and Markov therefore give
+$P(\sup_n\widetilde E_n^{\lambda}\ge1/\alpha)
+\le\alpha e^u+P(\mathcal B_\infty>u)\le\alpha e^u+B_\nu/u$.
+The bound is uniform in the policy, including policies depending on $\alpha$;
+take $u=\frac12\log(1/\alpha)$ to obtain its limit. No expected stopped time
+is used. This specializes standard supermartingale compensation and Ville's
+inequality to the constant-certificate family.
+
+For the stated plug-in rule, the following sharper pathwise conclusion holds.
 The score's conditional mean is $\gamma\sigma^2w_t^2/2$ and its conditional
 variance is at most $K w_t^2$. The normalization just proved gives
 $\sum_{t\le n}Y_t/I_n\to\gamma\sigma^2/2$, and hence the blockwise

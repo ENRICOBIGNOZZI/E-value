@@ -348,8 +348,16 @@ the originally saved `realized_benefit` fields and adds no paths:
 
 See `reports/vanishing_gain_results/realized_benefit_interpretation.md` for the
 fixed-horizon numbers and the distinction from expected stopped costs. The
-updated theory audit has 156 finite deterministic checks; it is not an
-asymptotic proof or a new Monte Carlo study.
+updated theory audit has 286 finite deterministic checks, including 114
+one-step inequalities and two local-rate approximations; it is not an
+asymptotic proof or a new Monte Carlo study. In the same Gaussian instance,
+Proposition 18 bounds ever-rejection probability uniformly over all predictable
+constant-certificate Catoni bets, including level-dependent choices. The toy
+configuration gives a conservative 15.12% upper bound at level 5%, even over
+an unlimited horizon. This is an analytic ceiling, not observed power or a
+statement about the full financial strategy. The derivation and numeric bounds
+are in `reports/vanishing_gain_proof_audit.md` and
+`reports/vanishing_gain_results/uniform_family_bound.json`.
 
 ## Automatic pilot-to-final continuation
 

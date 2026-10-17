@@ -18,7 +18,7 @@
   },
   "report_source_sha256": {
     "scripts/build_lambda_results.py": "e2ae74d27bf24928f9a70abdc8ceb5904b55ae1141cc3a18fbf04f8698f0f454",
-    "scripts/build_vanishing_results.py": "228a9d1db6764ce8a8be60a18c86f88cd28894c15370de150cdf7d2aad98b4ef",
+    "scripts/build_vanishing_results.py": "8965f2a8522c945e5a200ab327cbd9394df3772b517560f9ee7e66869722d44a",
     "scripts/build_lambda_constant_results.py": "13c3319d60c964277bd4be222c2984e08317d4ac79bd824e664a6cd66bb65e3d",
     "scripts/plot_directional_frontier.py": "a3dba049635f3e98e1135882a8b13088961d528ec068bc75476d396c1f4d939f",
     "scripts/build_paper.py": "c266dc6ae688f9b953d46b084456e1bae99f031c45c997ae461609c485496ac5",
@@ -63,5 +63,16 @@
     "live_checkpoint": "reports/full_v3_results/continuation_checkpoint.json",
     "software_controls": 19,
     "scope": "Process/whole-plan/source/completion gates and immutable reporting; no scientific source change or new market count."
+  },
+  "uniform_family_bound": {
+    "input": "reports/vanishing_gain_results/uniform_family_bound.json",
+    "input_sha256": "3cd8fe3a50294ebc0f317c0b4f61bad1be9ca9e81447dc2dae06b97384a5ae3a",
+    "theory_audit_sha256": "123c8f0d4f7d6c1733a06d7e7be6720e8993a9eb7320a13896523e283f63af26",
+    "derivation_and_config_hashes_match": true,
+    "upward_percentage_rounding": "15.11818736510762% -> 15.12%",
+    "report_matches_regeneration": true,
+    "changed_proof_rejected": true,
+    "changed_configuration_rejected": true,
+    "scope": "Report-only checks in a temporary copy; deterministic analytic ceiling, no new paths or observed-power estimate."
   }
 }

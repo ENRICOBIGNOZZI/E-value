@@ -1,3 +1,48 @@
+# Current continuation — power ceiling uniform over predictable bets
+
+Proposition 18 now covers **every finite nonnegative predictable Catoni bet**
+with the fixed constant certificate in the costless Gaussian estimated-policy
+instance. A common finite expected compensator budget yields
+`sup_policy P(ever reject) <= B/u + alpha exp(u)` for every positive cutoff u.
+The maximum probability vanishes as alpha tends to zero, including policies
+chosen separately at each confidence level. This is a supremum of probabilities,
+not a hindsight policy choice or an obstruction for all valid tests. The linear
+cash-PARK process still crosses almost surely in that instance. The separate
+constant-effect deadline-power gains do not fall under the finite-budget argument.
+
+For the existing toy configuration, the conservative unlimited-horizon power
+ceilings are **15.12%, 6.29% and 2.54%** at levels 5%, 1% and .1%, respectively
+(rounded upward). They are analytic upper bounds, not observed powers, attained
+optima or financial performance. The derivation is in
+`vanishing_gain_proof_audit.md`; the numeric record is
+`vanishing_gain_results/uniform_family_bound.json`. The current deterministic
+audit passes **286 checks**: 170 exact identities, two local-rate approximations
+and 114 one-step inequalities. Maximum exact-identity error is 3.39e-13.
+These finite checks do not replace the sequential and asymptotic proof.
+
+The abstract, introduction and discussion now center the information frontier
+and waiting costs, with explicit law-class and economic scope. All **40 PDF
+pages** were rendered and reviewed in contact sheets; changed mathematical
+and editorial pages were also inspected individually. Compilation has no
+unresolved references, duplicate labels or overfull boxes. Regeneration gives
+identical scalar prose; temporary-copy controls reject changed proof and
+configuration inputs. The latest full software suite remains **100 passing
+tests**; it was not rerun for these mathematical/editorial/report-only changes.
+
+At the checkpoint captured **2026-10-17T01:59:43.674355+02:00**, **50/100** pilot markets
+are generated and **46/100** have recorded complete independent
+arithmetic replays. The original pilot PID 64355 and continuation PID 91419
+are confirmed live. Exact seeds and the batch-sealed prefix are in
+`full_v3_results/pilot_live_checkpoint.json`. Final completion is **0/500**.
+Scientific source, original experiment, analysis-plan and preserved empirical
+input bytes remain unchanged; no job was restarted. The financial manuscript
+table remains the labeled first-ten v2 snapshot. No empirical analysis, push
+or publication occurred. The paper goal remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — live automatic pilot-to-final workflow
 
 A live supervisor now observes the existing pilot PID **64355** and will

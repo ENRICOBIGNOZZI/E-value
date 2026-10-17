@@ -22,25 +22,28 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We study sequential validation of estimated investment policies under
-quadratic utility, turnover costs and market impact. The inferential object
-is an observable score between policies with separate trading states.
-Conditional moment certificates give individual anytime validity; they do not
-certify current profitability or search-wide safety. Under constant effects,
-estimating a quadratic-certificate bet costs logarithmic expected regret.
-We distinguish that objective from log growth and deadline power, and evaluate
-predictable deadline bets against optimized constants on fresh controlled paths.
-A fixed-policy ENTRY comparison has an exact testing frontier with only a
-public second-return-moment cap: nontrivial uniformly valid inference requires
-mean return above half risk aversion times that cap. Cash-PARK instead admits
-safe betting from its economic lower bound. A Gaussian estimated-policy
-example yields a sharp confidence exponent and a coefficient for conditional
-and realized utility forgone while waiting, despite very low finite-horizon power.
-Convex analysis links population entry value to estimation and trading-state
-effects. Simulations retain a conservative baseline, a separately frozen
-stronger-moment extension, and full-fund pilot paths. They distinguish feasible
-certification from economic performance and report the cost of waiting without
-presuming superiority. Empirical applications are outside the current scope.
+Sequential validation delays a portfolio change while the current policy
+continues to trade. We study the moment information needed to certify a
+quadratic-utility improvement and the utility forgone while waiting. Two
+costless cases isolate the mechanisms. Over an iid fixed-policy return class,
+a public second-moment cap gives an exact ENTRY testing frontier: informative
+uniformly valid testing requires mean return above half risk aversion times
+that cap. Cash-PARK has an economic score lower bound. For a stationary
+Gaussian estimated policy, information grows only logarithmically; an explicit
+adaptive null gives a matching high-confidence exponent and an attained
+pathwise coefficient for conditional and realized cumulative utility forgone.
+These are not expected stopped-cost results.
+In that instance, a constant certificate makes maximal power vanish in the high-confidence
+limit uniformly over predictable Catoni bets. For portfolios with trading
+costs, observable comparisons retain separate allocation states and public
+conditional moment certificates. Under constant effects we distinguish
+estimating a quadratic-certificate bet, optimizing log growth and targeting
+deadline power. Controlled experiments and financial pilot paths separate
+validity, feasible certification and economic performance. A separately frozen
+stronger-moment extension allows entry but can require substantial waiting.
+The financial tests have individual guarantees; rejection certifies neither
+current profitability nor search-wide safety. Empirical applications are
+outside the current scope.
 \end{abstract}
 \noindent\textbf{Keywords:} sequential inference; investment signals; e-processes;
 transaction costs; portfolio estimation; simulation.
@@ -55,7 +58,12 @@ coefficient may hedge an incumbent exposure or proxy another characteristic.
 Conversely, an authentic predictor may worsen a portfolio when estimated
 weights and trading costs are taken into account.
 
-We formulate these decisions as comparisons of two policies constructed before
+Sequential validation takes time while the incumbent policy continues to
+trade. We study the information required to certify a utility improvement and
+the utility forgone before certification. A valid evidence process and a
+profitable trading rule address different parts of this problem.
+
+We formulate the decisions as comparisons of two policies constructed before
 the returns used to evaluate them. Each policy pays its own trading costs and
 keeps its own allocation state. Their observable utility difference feeds a
 heavy-tail-robust e-process. An annual search proposes additions, removals and
@@ -65,23 +73,34 @@ waiting for its evidence is worthwhile.
 We call the annual add--remove--swap implementation PARK/REVIVE; its name
 describes available actions, not a guarantee of adaptation to a new regime.
 
-The core analysis has four parts. First, a conditional supermartingale argument
-establishes validity for an individual adaptive episode. Second, a stationary
-alternative yields an oracle lower bound on power and a logarithmic cost for
-estimating the bet. Third, a residual marginal utility and a Schur complement
-bound the population benefit of entry under trading costs. Fourth, objective
-perturbations control the gap between population values and estimated-policy
-comparisons, including the effect of different previous allocations.
-We then distinguish optimizing a power certificate, expected log growth and
-actual working-model rejection probability by a fixed review horizon.
-The last criterion gives a predictable Bellman rule tested separately on fresh
-controlled score paths; it does not silently replace the financial methods.
-Two costless specializations isolate the information and waiting requirements.
-For fixed-policy ENTRY, a public second-return-moment cap yields an exact
-frontier for uniformly informative testing. Known moments strictly above two
-provide a sufficient consistency route. Cash-PARK has a one-sided economic
-bound; a Gaussian estimated-reference example then gives an attainable sharp
-confidence exponent and a coefficient for conditional and realized waiting costs.
+Two explicit cases isolate the information and waiting requirements.
+Section~\ref{sec:directional-information} characterizes fixed-policy ENTRY
+over all iid return laws with a public second-moment cap. Positive utility
+alone need not permit informative uniformly valid testing; we give the exact
+frontier and a sufficient higher-moment route to consistency. Cash-PARK instead
+has a one-sided economic score bound. Section~\ref{sec:vanishing} treats a
+stationary Gaussian estimated reference whose cash disadvantage shrinks over
+time. Its cumulative information grows as $\log n$. An admissible adaptive
+null gives a matching confidence exponent. With risk aversion $\gamma$, the
+attained coefficient of conditional and realized utility forgone is
+$4/\gamma$ per $\log(1/\alpha)$ at test level $\alpha$.
+This coefficient is a high-confidence limit for that instance, not an expected
+stopped cost or a claim about the complete financial strategy.
+For the same policy, a constant-certificate Catoni family has vanishing maximal
+high-confidence power over all predictable bets, including rules chosen
+separately at each confidence level. The fixed penalty constrains that whole
+family despite growing information in the return experiment.
+
+The supporting results connect utility comparisons to implementable
+portfolios. T1 establishes individual episode validity. T2 bounds stationary
+power and the estimation loss in a quadratic growth certificate. T3 describes
+population entry value under trading costs; T4 controls objective estimation
+and trading-state errors. Public policy geometry and corrected tail betting
+then provide a separately declared stronger-moment implementation. The
+controlled study in Section~\ref{sec:lambda-power} distinguishes certificate,
+log-growth and deadline-power objectives; its predictable Bellman policy is
+not substituted into the financial experiment. Section~\ref{sec:full-strategy}
+assesses actual fund costs and waiting, separately from certification.
 
 The statistical ingredients build on Catoni-style confidence sequences
 \cite{wr} and the broader theory of safe anytime-valid inference \cite{savi}.
@@ -705,25 +724,36 @@ generated and linked to this section by the reproducible paper-building script.}
 \input{sections/09_full_strategy.tex}
 
 \section{Discussion}
-The central economic distinction is between a direction that can help an
-informed optimizer and a policy that helps when estimated and traded. T3
-characterizes the former; T4 and the separate state accounts connect it to the
-latter. Sequential evidence addresses a further question: whether observed
-utility differences justify rejecting an episode-wide conditional null.
-These questions remain distinct even when their calculations share data.
+Moment information and the evolution of the implemented policy jointly
+determine the scope and cost of validation. The ENTRY frontier separates
+information about return moments from information about utility scores. With
+only a cap on the second moment of returns, admissible nulls can remain
+arbitrarily close to some profitable laws. Known numerical higher moment bounds
+or distributional restrictions can exclude those nulls. Cash-PARK
+has an economic lower bound, but estimation can still leave only logarithmically
+growing information. Its sharp Gaussian confidence exponent and cumulative
+utility coefficients coexist with extremely low executed finite-horizon power.
+The common finite compensator budget also bounds every predictable bet policy
+in the constant-certificate Catoni family, including rules chosen separately
+for each confidence level.
+These statements concern the explicit law classes and policies proved above;
+they do not make particular gains untestable in the fixed Laplace financial DGP
+or give expected stopped-cost formulas.
 
-Several obstacles remain before a strong publication claim is warranted.
-The baseline moment certificate prevents entry in the executed pilot; the
-declared higher-moment extension makes first certification feasible in new
-markets but still requires substantial waiting. The separate full-strategy
-study measures post-entry performance and opportunity costs; a small executed
-pilot does not establish practical superiority. The annual
-calendar restricts the number of experiments that can become positions, and
-the episode null does not directly express a current-regime profitability
-claim. No multiplicity guarantee protects the whole selection process. A
-complete final simulation and a broader prior-art review are necessary before
-claiming either practical superiority or methodological novelty. Empirical
-applications are outside this paper's current scope.
+Economic implementation also matters. T3 concerns a direction available to an
+informed optimizer; T4 and the separate allocation states connect that target
+to policies that are estimated and traded. A historical episode rejection is
+distinct from a current-regime profitability claim. An annual calendar limits
+the number and timing of deployed changes, and no multiplicity guarantee
+protects the complete reported search.
+
+The baseline certificate prevents entry in the executed pilot. The declared
+stronger-moment extension permits certification but entails substantial waiting;
+the separate full-strategy paths include its actual fund costs and time in cash.
+These pilot observations do not establish practical superiority. The outstanding
+final simulation must be reported regardless of its economic sign, and a broader
+prior-art assessment remains necessary for a priority claim. Empirical
+applications are outside the current scope.
 
 The separate horizon-betting experiment improves rejection probability under
 its declared stationary design law while retaining individual validity.
@@ -731,16 +761,6 @@ Its working score model and one-dimensional evidence state do not describe
 the evolving financial policy pairs. Its power gain therefore does not
 establish better financial decisions or remove the cost of a conservative
 public risk envelope, a positive minimum-effect floor or changing regimes.
-The costless Gaussian example isolates a different limit: estimation can
-leave only logarithmically growing information. Its sharp confidence exponent
-does not ensure useful finite-horizon power, as its controlled experiment
-demonstrates. Its conditional and realized utility coefficients do not give an expected stopped
-cost or a theorem for the stateful financial fund.
-The ENTRY frontier also distinguishes return-moment from utility-score
-information. A second-return-moment cap can permit null laws arbitrarily
-close to profitable alternatives; legitimate higher-moment or distributional
-restrictions can exclude them. These explicit law-class statements do not
-declare particular gains untestable in the fixed Laplace financial DGP.
 
 \appendix
 \begingroup\small

@@ -1,6 +1,7 @@
 """Build the scalar cash-PARK manuscript diagnostic from retained audited CSVs."""
 import hashlib
 import json
+from decimal import Decimal, ROUND_CEILING
 from pathlib import Path
 import shutil
 
@@ -88,6 +89,23 @@ def generate(root):
             f'{int(realized.negative_realized_paths)} of {int(realized.paths):,} realized sums are negative. '
             'This is a post-hoc fixed-horizon description, not another experiment, '
             'a stopped-cost estimate or a verification of the almost-sure limit.')
+    family_path = results/'uniform_family_bound.json'
+    if family_path.exists():
+        family = json.loads(family_path.read_text())
+        if not family['complete'] or family['config_sha256'] != verification['input_sha256']['config_frozen.json']:
+            raise ValueError('Uniform-family bound uses a different scalar configuration')
+        for name,digest in family['source_sha256'].items():
+            if hashlib.sha256((root/name).read_bytes()).hexdigest() != digest:
+                raise ValueError('Uniform-family bound derivation changed after audit')
+        ceiling = next(r for r in family['bounds'] if r['alpha']==.05)['ever_power_upper_bound']
+        percent = (Decimal(str(ceiling))*100).quantize(Decimal('0.01'),rounding=ROUND_CEILING)
+        lines.append(f'For the same toy configuration, Proposition~\\ref{{prop:vanishing-uniform}} '
+            f'gives an upper bound of {percent}\\% on ever rejecting at level 5\\% '
+            'for every predictable constant-certificate Catoni bet policy, including '
+            'level-dependent choices. This is a deterministic upper bound over an '
+            'unlimited horizon, not an observed crossing fraction or a finite-horizon '
+            'ranking against the linear rule. The inequality uses an explicit '
+            'conservative expectation bound for the compensator.')
     lines += [
         f'The linear crossing fraction is {linear.crossing_fraction:.6f} '
         f'(Wilson 95\\% interval [{linear.wilson_low:.6f}, {linear.wilson_high:.6f}]); '

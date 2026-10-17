@@ -1,13 +1,14 @@
 # Proof audit: costless cash-PARK with vanishing estimation error
 
-Status: the costless scalar theorem, uniform plug-in separation and complete
+Status: the costless scalar theorem, policy-uniform constant-certificate ceiling and complete
 proof are now integrated in `paper/sections/11_vanishing_gains.tex` and
 `paper/sections/12_vanishing_proofs.tex`. The cash-score definitions now appear
 in `paper/sections/13_directional_information.tex`; their equation labels and
 mathematical meaning are unchanged. The controlled study's very low
 finite-horizon power is reported alongside them. Historical notes remain
-excluded. The current 156 deterministic quadrature checks support the identities;
-they do not prove the asymptotics or stopping-time statements. No claim of a
+excluded. The current 286 finite deterministic checks comprise 170 exact
+identities, two local-rate approximations and 114 one-step inequalities;
+they do not prove the sequential, asymptotic or stopping-time statements. No claim of a
 first general betting, likelihood-optimality or prequential-regret theorem is made.
 The financial configuration and its positive comparison-mean floor are unchanged.
 
@@ -171,7 +172,53 @@ Fixed annual review spacing leaves the exponent unchanged by the same growth
 sandwich on the review grid; a daily crossing need not persist until the next
 review, so one must **not** claim the delay differs by at most one block.
 
-## 6. Why the uniform past-mean bet can stop accumulating information
+## 6. A uniform power ceiling for the entire constant-certificate family
+
+Fix the displayed constant Minkowski certificate nu² and M4>=3 sigma⁴.
+The Gaussian score has mean delta_t=gamma*sigma²*w_t²/2 and conditional raw
+second moment m2_t=sigma²*w_t²+3 gamma²*sigma⁴*w_t⁴/4. The fixed gap
+
+    d_nu = nu² - (sigma² L² + 3 gamma² sigma⁴ L⁴/4)
+         = gamma*sigma*L³*sqrt(M4)+gamma² L⁴*(M4-3 sigma⁴)/4 > 0
+
+bounds nu²-m2_t below. Since exp(phi(x))<=1+x+x²/2, the conditional P-expectation
+of a constant-certificate Catoni factor is at most
+exp(lambda_t*delta_t-d_nu*lambda_t²/2)<=exp(delta_t²/(2d_nu)). Thus each
+capital multiplied by exp(-budget_n), where budget_n=sum delta_t²/(2d_nu), is a
+P-supermartingale. The common budget_n depends on the reference policy/returns,
+not on the statistical bet. The previously proved sum E w_t⁴<infinity gives
+E budget_infinity<infinity.
+
+For any u>0, Ville on the compensated process and Markov give
+
+    sup_lambda P(sup_n E_n^lambda >=1/alpha)
+      <= P(budget_infinity>u)+alpha*exp(u) <= B_nu/u+alpha*exp(u).
+
+The supremum is outside the probability and ranges over finite nonnegative
+predictable bet policies, even policies selected separately for each alpha.
+It is not a pathwise hindsight supremum. Taking u=log(1/alpha)/2 proves
+vanishing maximal ever-power as alpha decreases. This does not rule out all
+valid tests: the economic linear cash-PARK process has eventual power one in
+the same instance. The obstruction concerns this constant-penalty family.
+
+An explicit conservative B_nu follows from the Gaussian inverse-risk moment:
+
+    B_nu = 3/(8 gamma² d_nu) * F(n0),
+    F(n) = (1/(n-4)+1/(n-3))/3
+           + (1/(n-2)+1/(n-1)+1/n+1/(n+1))/12.
+
+Partial fractions telescope sum_{k>=n} k/((k-4)(k-2)(k+2)) to F(n).
+For the original toy configuration, nu²=.6499362, d_nu=.3530612 and
+B_nu=.03610675. Optimizing the compensator cutoff u gives conservative ever-power ceilings of
+15.12%, 6.29% and 2.54% at levels .05, .01 and .001, rounded upward.
+These are analytic bounds, not observed powers or a finite-horizon ranking
+against the linear rule. The constant-effect lambda study lacks a finite
+compensator budget and is therefore compatible with its observed power gains.
+The full financial DGP and variable-certificate methods remain outside this
+claim. The proof uses standard compensation/Ville arguments, not a new general
+principle of betting optimality.
+
+### The specific past-mean rule also has a finite real limit
 
 Let nu² be the uniform geometric certificate obtained at |w|=L. Use any finite
 initial bet, then the original positive historical score mean/(2 nu²), capped

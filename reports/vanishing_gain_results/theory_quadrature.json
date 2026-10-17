@@ -1,6 +1,7 @@
 {
   "complete": true,
-  "deterministic_scalar_checks": 156,
+  "deterministic_scalar_checks": 286,
+  "deterministic_inequality_checks": 114,
   "maximum_identity_error_excluding_local_rate_approximations": 3.381739333008227e-13,
   "checks": [
     {
@@ -928,6 +929,786 @@
       "absolute_error": 0.0
     },
     {
+      "identity": "Inverse-risk fourth-moment telescoping n0=5",
+      "observed": 0.5790666516618324,
+      "expected": 0.5790666516618321,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "identity": "Inverse-risk fourth-moment telescoping n0=8",
+      "observed": 0.19536956171474235,
+      "expected": 0.19536956171474226,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "identity": "Inverse-risk fourth-moment telescoping n0=32",
+      "observed": 0.03389436878619841,
+      "expected": 0.03389436878619841,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Inverse-risk fourth-moment telescoping n0=128",
+      "observed": 0.007869403843929281,
+      "expected": 0.007869403843929281,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Positive constant-certificate gap gamma=1.0 sigma=1.0 L=0.5 M4=3.0",
+      "observed": 0.2165063509461096,
+      "expected": 0.21650635094610965,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=-0.5 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0367433354606588,
+      "numerical_slack": 0.036743335460658555
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=-0.5 lambda=0.577350269189626",
+      "observed": 1.0295062640952612,
+      "expected_upper_bound": 1.0367433354606588,
+      "numerical_slack": 0.007237071365397529
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=-0.5 lambda=0.6978305207480379",
+      "observed": 1.0229531402729874,
+      "expected_upper_bound": 1.0367433354606588,
+      "numerical_slack": 0.013790195187671328
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=-0.5 lambda=2.7913220829921515",
+      "observed": 0.33336062831644814,
+      "expected_upper_bound": 1.0367433354606588,
+      "numerical_slack": 0.7033827071442107
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=-0.125 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.000140964590138,
+      "numerical_slack": 0.00014096459013779317
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=-0.125 lambda=0.03608439182435162",
+      "observed": 0.9999579265105265,
+      "expected_upper_bound": 1.000140964590138,
+      "numerical_slack": 0.0001830380796115083
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=-0.125 lambda=0.6978305207480379",
+      "observed": 0.8906953762025371,
+      "expected_upper_bound": 1.000140964590138,
+      "numerical_slack": 0.10944558838760088
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=-0.125 lambda=2.7913220829921515",
+      "observed": 0.14637512365945668,
+      "expected_upper_bound": 1.000140964590138,
+      "numerical_slack": 0.8537658409306813
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": -2.220446049250313e-16
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.0 lambda=0.6978305207480379",
+      "observed": 0.8824969025845955,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.11750309741540454
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.0 lambda=2.7913220829921515",
+      "observed": 0.13533528323661262,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.8646647167633874
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.125 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.000140964590138,
+      "numerical_slack": 0.00014096459013779317
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.125 lambda=0.03608439182435162",
+      "observed": 0.9999579265105265,
+      "expected_upper_bound": 1.000140964590138,
+      "numerical_slack": 0.0001830380796115083
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.125 lambda=0.6978305207480379",
+      "observed": 0.8906953762025371,
+      "expected_upper_bound": 1.000140964590138,
+      "numerical_slack": 0.10944558838760088
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.125 lambda=2.7913220829921515",
+      "observed": 0.14637512365945668,
+      "expected_upper_bound": 1.000140964590138,
+      "numerical_slack": 0.8537658409306813
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.5 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0367433354606588,
+      "numerical_slack": 0.036743335460658555
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.5 lambda=0.577350269189626",
+      "observed": 1.0295062640952612,
+      "expected_upper_bound": 1.0367433354606588,
+      "numerical_slack": 0.007237071365397529
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.5 lambda=0.6978305207480379",
+      "observed": 1.0229531402729874,
+      "expected_upper_bound": 1.0367433354606588,
+      "numerical_slack": 0.013790195187671328
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=3.0 w=0.5 lambda=2.7913220829921515",
+      "observed": 0.33336062831644814,
+      "expected_upper_bound": 1.0367433354606588,
+      "numerical_slack": 0.7033827071442107
+    },
+    {
+      "identity": "Positive constant-certificate gap gamma=1.0 sigma=1.0 L=0.5 M4=6.0",
+      "observed": 0.35306121784789724,
+      "expected": 0.35306121784789724,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=-0.5 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0223745281911059,
+      "numerical_slack": 0.022374528191105636
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=-0.5 lambda=0.35404624943499574",
+      "observed": 1.0204110491767333,
+      "expected_upper_bound": 1.0223745281911059,
+      "numerical_slack": 0.001963479014372549
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=-0.5 lambda=0.6202041028867288",
+      "observed": 1.00109874075949,
+      "expected_upper_bound": 1.0223745281911059,
+      "numerical_slack": 0.021275787431615845
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=-0.5 lambda=2.480816411546915",
+      "observed": 0.29699403826078846,
+      "expected_upper_bound": 1.0223745281911059,
+      "numerical_slack": 0.7253804899303173
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=-0.125 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0000864408084074,
+      "numerical_slack": 8.644080840713997e-05
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=-0.125 lambda=0.022127890589687234",
+      "observed": 1.0000176103028358,
+      "expected_upper_bound": 1.0000864408084074,
+      "numerical_slack": 6.88305055716043e-05
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=-0.125 lambda=0.6202041028867288",
+      "observed": 0.8894499707560987,
+      "expected_upper_bound": 1.0000864408084074,
+      "numerical_slack": 0.1106364700523087
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=-0.125 lambda=2.480816411546915",
+      "observed": 0.14437909523988465,
+      "expected_upper_bound": 1.0000864408084074,
+      "numerical_slack": 0.8557073455685227
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": -2.220446049250313e-16
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.0 lambda=0.6202041028867288",
+      "observed": 0.8824969025845957,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.11750309741540432
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.0 lambda=2.480816411546915",
+      "observed": 0.1353352832366127,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.8646647167633873
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.125 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0000864408084074,
+      "numerical_slack": 8.644080840713997e-05
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.125 lambda=0.022127890589687234",
+      "observed": 1.0000176103028358,
+      "expected_upper_bound": 1.0000864408084074,
+      "numerical_slack": 6.88305055716043e-05
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.125 lambda=0.6202041028867288",
+      "observed": 0.8894499707560987,
+      "expected_upper_bound": 1.0000864408084074,
+      "numerical_slack": 0.1106364700523087
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.125 lambda=2.480816411546915",
+      "observed": 0.14437909523988465,
+      "expected_upper_bound": 1.0000864408084074,
+      "numerical_slack": 0.8557073455685227
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.5 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0223745281911059,
+      "numerical_slack": 0.022374528191105636
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.5 lambda=0.35404624943499574",
+      "observed": 1.0204110491767333,
+      "expected_upper_bound": 1.0223745281911059,
+      "numerical_slack": 0.001963479014372549
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.5 lambda=0.6202041028867288",
+      "observed": 1.00109874075949,
+      "expected_upper_bound": 1.0223745281911059,
+      "numerical_slack": 0.021275787431615845
+    },
+    {
+      "identity": "P factor bound gamma=1.0 sigma=1.0 L=0.5 M4=6.0 w=0.5 lambda=2.480816411546915",
+      "observed": 0.29699403826078846,
+      "expected_upper_bound": 1.0223745281911059,
+      "numerical_slack": 0.7253804899303173
+    },
+    {
+      "identity": "Positive constant-certificate gap gamma=5.0 sigma=0.2 L=1.0 M4=3.0",
+      "observed": 0.06928203230275509,
+      "expected": 0.06928203230275509,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=-1.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0748367436220922,
+      "numerical_slack": 0.07483674362209203
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=-1.0 lambda=1.3397459621556136",
+      "observed": 1.0561570829661715,
+      "expected_upper_bound": 1.0748367436220922,
+      "numerical_slack": 0.01867966065592075
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=-1.0 lambda=1.4433756729740645",
+      "observed": 1.0528459099509369,
+      "expected_upper_bound": 1.0748367436220922,
+      "numerical_slack": 0.021990833671155396
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=-1.0 lambda=5.358983848622454",
+      "observed": 0.34355233657644735,
+      "expected_upper_bound": 1.0748367436220922,
+      "numerical_slack": 0.7312844070456449
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=-0.25 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.000281949051292,
+      "numerical_slack": 0.0002819490512917522
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=-0.25 lambda=0.09021097956087903",
+      "observed": 1.0000075629818261,
+      "expected_upper_bound": 1.000281949051292,
+      "numerical_slack": 0.0002743860694658373
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=-0.25 lambda=1.3397459621556136",
+      "observed": 0.8919573311806345,
+      "expected_upper_bound": 1.000281949051292,
+      "numerical_slack": 0.1083246178706575
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=-0.25 lambda=5.358983848622454",
+      "observed": 0.14489670998374074,
+      "expected_upper_bound": 1.000281949051292,
+      "numerical_slack": 0.8553852390675513
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=0.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": -2.220446049250313e-16
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=0.0 lambda=1.3397459621556136",
+      "observed": 0.8824969025845955,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.11750309741540454
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=0.0 lambda=5.358983848622454",
+      "observed": 0.13533528323661262,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.8646647167633874
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=0.25 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.000281949051292,
+      "numerical_slack": 0.0002819490512917522
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=0.25 lambda=0.09021097956087903",
+      "observed": 1.0000075629818261,
+      "expected_upper_bound": 1.000281949051292,
+      "numerical_slack": 0.0002743860694658373
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=0.25 lambda=1.3397459621556136",
+      "observed": 0.8919573311806345,
+      "expected_upper_bound": 1.000281949051292,
+      "numerical_slack": 0.1083246178706575
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=0.25 lambda=5.358983848622454",
+      "observed": 0.14489670998374074,
+      "expected_upper_bound": 1.000281949051292,
+      "numerical_slack": 0.8553852390675513
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=1.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0748367436220922,
+      "numerical_slack": 0.07483674362209203
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=1.0 lambda=1.3397459621556136",
+      "observed": 1.0561570829661715,
+      "expected_upper_bound": 1.0748367436220922,
+      "numerical_slack": 0.01867966065592075
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=1.0 lambda=1.4433756729740645",
+      "observed": 1.0528459099509369,
+      "expected_upper_bound": 1.0748367436220922,
+      "numerical_slack": 0.021990833671155396
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=3.0 w=1.0 lambda=5.358983848622454",
+      "observed": 0.34355233657644735,
+      "expected_upper_bound": 1.0748367436220922,
+      "numerical_slack": 0.7312844070456449
+    },
+    {
+      "identity": "Positive constant-certificate gap gamma=5.0 sigma=0.2 L=1.0 M4=6.0",
+      "observed": 0.1279795897113271,
+      "expected": 0.12797958971132714,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=-1.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.03984194923936,
+      "numerical_slack": 0.0398419492393598
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=-1.0 lambda=0.7813745943830706",
+      "observed": 1.0350214129153754,
+      "expected_upper_bound": 1.03984194923936,
+      "numerical_slack": 0.004820536323984603
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=-1.0 lambda=1.1237243569579451",
+      "observed": 1.0206622438415844,
+      "expected_upper_bound": 1.03984194923936,
+      "numerical_slack": 0.01917970539777558
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=-1.0 lambda=4.494897427831781",
+      "observed": 0.29168661798628504,
+      "expected_upper_bound": 1.03984194923936,
+      "numerical_slack": 0.748155331253075
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=-0.25 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0001526238713037,
+      "numerical_slack": 0.0001526238713034367
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=-0.25 lambda=0.04883591214894191",
+      "observed": 1.000072215104821,
+      "expected_upper_bound": 1.0001526238713037,
+      "numerical_slack": 8.040876648274242e-05
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=-0.25 lambda=1.1237243569579451",
+      "observed": 0.8901522335125159,
+      "expected_upper_bound": 1.0001526238713037,
+      "numerical_slack": 0.11000039035878773
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=-0.25 lambda=4.494897427831781",
+      "observed": 0.14268531753024674,
+      "expected_upper_bound": 1.0001526238713037,
+      "numerical_slack": 0.857467306341057
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=0.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": -2.220446049250313e-16
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=0.0 lambda=1.1237243569579451",
+      "observed": 0.8824969025845957,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.11750309741540432
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=0.0 lambda=4.494897427831781",
+      "observed": 0.13533528323661273,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.8646647167633873
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=0.25 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0001526238713037,
+      "numerical_slack": 0.0001526238713034367
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=0.25 lambda=0.04883591214894191",
+      "observed": 1.000072215104821,
+      "expected_upper_bound": 1.0001526238713037,
+      "numerical_slack": 8.040876648274242e-05
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=0.25 lambda=1.1237243569579451",
+      "observed": 0.8901522335125159,
+      "expected_upper_bound": 1.0001526238713037,
+      "numerical_slack": 0.11000039035878773
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=0.25 lambda=4.494897427831781",
+      "observed": 0.14268531753024674,
+      "expected_upper_bound": 1.0001526238713037,
+      "numerical_slack": 0.857467306341057
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=1.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.03984194923936,
+      "numerical_slack": 0.0398419492393598
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=1.0 lambda=0.7813745943830706",
+      "observed": 1.0350214129153754,
+      "expected_upper_bound": 1.03984194923936,
+      "numerical_slack": 0.004820536323984603
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=1.0 lambda=1.1237243569579451",
+      "observed": 1.0206622438415844,
+      "expected_upper_bound": 1.03984194923936,
+      "numerical_slack": 0.01917970539777558
+    },
+    {
+      "identity": "P factor bound gamma=5.0 sigma=0.2 L=1.0 M4=6.0 w=1.0 lambda=4.494897427831781",
+      "observed": 0.29168661798628504,
+      "expected_upper_bound": 1.03984194923936,
+      "numerical_slack": 0.748155331253075
+    },
+    {
+      "identity": "Positive constant-certificate gap gamma=0.5 sigma=2.0 L=0.25 M4=3.0",
+      "observed": 0.1082531754730548,
+      "expected": 0.10825317547305482,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=-0.25 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.018205939611756,
+      "numerical_slack": 0.01820593961175576
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=-0.25 lambda=0.577350269189626",
+      "observed": 1.0146143745486158,
+      "expected_upper_bound": 1.018205939611756,
+      "numerical_slack": 0.0035915650631401785
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=-0.25 lambda=0.8220261235975244",
+      "observed": 1.0041322478701207,
+      "expected_upper_bound": 1.018205939611756,
+      "numerical_slack": 0.014073691741635308
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=-0.25 lambda=3.2881044943900974",
+      "observed": 0.33294295465442275,
+      "expected_upper_bound": 1.018205939611756,
+      "numerical_slack": 0.6852629849573333
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=-0.0625 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.000070479811367,
+      "numerical_slack": 7.047981136687476e-05
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=-0.0625 lambda=0.03608439182435162",
+      "observed": 0.9999102823295404,
+      "expected_upper_bound": 1.000070479811367,
+      "numerical_slack": 0.00016019748182671822
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=-0.0625 lambda=0.8220261235975244",
+      "observed": 0.8899799386417789,
+      "expected_upper_bound": 1.000070479811367,
+      "numerical_slack": 0.11009054116958816
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=-0.0625 lambda=3.2881044943900974",
+      "observed": 0.14799784743962546,
+      "expected_upper_bound": 1.000070479811367,
+      "numerical_slack": 0.8520726323717416
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": -2.220446049250313e-16
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.0 lambda=0.8220261235975244",
+      "observed": 0.8824969025845957,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.11750309741540432
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.0 lambda=3.2881044943900974",
+      "observed": 0.1353352832366127,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.8646647167633873
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.0625 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.000070479811367,
+      "numerical_slack": 7.047981136687476e-05
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.0625 lambda=0.03608439182435162",
+      "observed": 0.9999102823295404,
+      "expected_upper_bound": 1.000070479811367,
+      "numerical_slack": 0.00016019748182671822
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.0625 lambda=0.8220261235975244",
+      "observed": 0.8899799386417789,
+      "expected_upper_bound": 1.000070479811367,
+      "numerical_slack": 0.11009054116958816
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.0625 lambda=3.2881044943900974",
+      "observed": 0.14799784743962546,
+      "expected_upper_bound": 1.000070479811367,
+      "numerical_slack": 0.8520726323717416
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.25 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.018205939611756,
+      "numerical_slack": 0.01820593961175576
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.25 lambda=0.577350269189626",
+      "observed": 1.0146143745486158,
+      "expected_upper_bound": 1.018205939611756,
+      "numerical_slack": 0.0035915650631401785
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.25 lambda=0.8220261235975244",
+      "observed": 1.0041322478701207,
+      "expected_upper_bound": 1.018205939611756,
+      "numerical_slack": 0.014073691741635308
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=3.0 w=0.25 lambda=3.2881044943900974",
+      "observed": 0.33294295465442275,
+      "expected_upper_bound": 1.018205939611756,
+      "numerical_slack": 0.6852629849573333
+    },
+    {
+      "identity": "Positive constant-certificate gap gamma=0.5 sigma=2.0 L=0.25 M4=6.0",
+      "observed": 0.16481185892394867,
+      "expected": 0.16481185892394862,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=-0.25 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0119211308493288,
+      "numerical_slack": 0.011921130849328554
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=-0.25 lambda=0.3792202843172845",
+      "observed": 1.0109175976172307,
+      "expected_upper_bound": 1.0119211308493288,
+      "numerical_slack": 0.0010035332320981194
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=-0.25 lambda=0.7655876216850789",
+      "observed": 0.9910571441676518,
+      "expected_upper_bound": 1.0119211308493288,
+      "numerical_slack": 0.020863986681676994
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=-0.25 lambda=3.0623504867403155",
+      "observed": 0.30959489982673916,
+      "expected_upper_bound": 1.0119211308493288,
+      "numerical_slack": 0.7023262310225896
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=-0.0625 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0000462926100828,
+      "numerical_slack": 4.6292610082598884e-05
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=-0.0625 lambda=0.02370126776983028",
+      "observed": 0.9999771783383001,
+      "expected_upper_bound": 1.0000462926100828,
+      "numerical_slack": 6.91142717826887e-05
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=-0.0625 lambda=0.7655876216850789",
+      "observed": 0.8891713089543952,
+      "expected_upper_bound": 1.0000462926100828,
+      "numerical_slack": 0.1108749836556876
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=-0.0625 lambda=3.0623504867403155",
+      "observed": 0.14647404952124668,
+      "expected_upper_bound": 1.0000462926100828,
+      "numerical_slack": 0.8535722430888362
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.0 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": -2.220446049250313e-16
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.0 lambda=0.7655876216850789",
+      "observed": 0.8824969025845955,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.11750309741540454
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.0 lambda=3.0623504867403155",
+      "observed": 0.13533528323661262,
+      "expected_upper_bound": 1.0,
+      "numerical_slack": 0.8646647167633874
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.0625 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0000462926100828,
+      "numerical_slack": 4.6292610082598884e-05
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.0625 lambda=0.02370126776983028",
+      "observed": 0.9999771783383001,
+      "expected_upper_bound": 1.0000462926100828,
+      "numerical_slack": 6.91142717826887e-05
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.0625 lambda=0.7655876216850789",
+      "observed": 0.8891713089543952,
+      "expected_upper_bound": 1.0000462926100828,
+      "numerical_slack": 0.1108749836556876
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.0625 lambda=3.0623504867403155",
+      "observed": 0.14647404952124668,
+      "expected_upper_bound": 1.0000462926100828,
+      "numerical_slack": 0.8535722430888362
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.25 lambda=0.0",
+      "observed": 1.0000000000000002,
+      "expected_upper_bound": 1.0119211308493288,
+      "numerical_slack": 0.011921130849328554
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.25 lambda=0.3792202843172845",
+      "observed": 1.0109175976172307,
+      "expected_upper_bound": 1.0119211308493288,
+      "numerical_slack": 0.0010035332320981194
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.25 lambda=0.7655876216850789",
+      "observed": 0.9910571441676518,
+      "expected_upper_bound": 1.0119211308493288,
+      "numerical_slack": 0.020863986681676994
+    },
+    {
+      "identity": "P factor bound gamma=0.5 sigma=2.0 L=0.25 M4=6.0 w=0.25 lambda=3.0623504867403155",
+      "observed": 0.30959489982673916,
+      "expected_upper_bound": 1.0119211308493288,
+      "numerical_slack": 0.7023262310225896
+    },
+    {
+      "identity": "Uniform-family r optimizer alpha=0.05",
+      "observed": 0.6224952969331699,
+      "expected": 0.6224952969331607,
+      "absolute_error": 9.103828801926284e-15
+    },
+    {
+      "identity": "Uniform-family derivative at optimum alpha=0.05",
+      "observed": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Uniform-family r optimizer alpha=0.01",
+      "observed": 1.0976151805780083,
+      "expected": 1.0976151805780083,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Uniform-family derivative at optimum alpha=0.01",
+      "observed": 6.938893903907228e-18,
+      "expected": 0.0,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "identity": "Uniform-family r optimizer alpha=0.001",
+      "observed": 2.1013345781760218,
+      "expected": 2.1013345781760218,
+      "absolute_error": 0.0
+    },
+    {
+      "identity": "Uniform-family derivative at optimum alpha=0.001",
+      "observed": -1.734723475976807e-18,
+      "expected": 0.0,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
       "identity": "Local linear growth / a^2",
       "observed": 0.500000007499952,
       "expected": 0.5,
@@ -941,10 +1722,10 @@
     }
   ],
   "source_sha256": {
-    "paper/sections/11_vanishing_gains.tex": "3dbcf9fb0d0d8ba0608dfe6951571b5ee9c6b64a855095f977485da27c20e81e",
-    "paper/sections/12_vanishing_proofs.tex": "890ba5d1a03ac87f674bd6bb846367ce90029964eb57f0098ef1c4dedd8caf40",
+    "paper/sections/11_vanishing_gains.tex": "775878e3c375040ce2f509b6e0e28138338a0a07622402a134e3962374ad63cb",
+    "paper/sections/12_vanishing_proofs.tex": "4e9ff7d8040333303ac5cff9f984e17eaf93829d6500671c3c879dc3fca12c90",
     "paper/sections/13_directional_information.tex": "01517041293d0f675473fb84497b83428af4cf4c6a22ef39db1e409401203d8c",
-    "scripts/audit_vanishing_theory.py": "b92a19338f956402d2133809b587460e696432a57504911560e586093bbc30fd"
+    "scripts/audit_vanishing_theory.py": "b859170990b47453f9600b293492cfd80659aa2d4f5991869b6f26872d29a061"
   },
-  "scope": "Deterministic quadrature of Gaussian null moments, log-density ratios, inverse-risk moments and local growth coefficients. Finite numerical checks do not prove asymptotics, optimality or stopping-time claims."
+  "scope": "Finite deterministic identities and one-step inequalities for Gaussian null/alternative moments, log-density ratios, inverse-risk moments, local growth and the uniform constant-certificate family bound. Checks do not prove the sequential, asymptotic or stopping-time statements."
 }

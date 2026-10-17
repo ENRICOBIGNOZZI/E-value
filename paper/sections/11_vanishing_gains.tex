@@ -80,23 +80,39 @@ attains the same $\kappa$. A looser $M_2$ need not retain that coefficient.
 Reviewing only every fixed number of dates preserves the exponent, but a
 daily threshold crossing need not persist to the next review.
 
-\begin{proposition}[A uniform-bound plug-in can cease accumulating evidence]
+\begin{proposition}[A constant certificate can defeat every bet policy]
 \label{prop:vanishing-uniform}
-In the same instance, let
-$\nu^2=L^2(\sigma+\gamma L\sqrt{M_4}/2)^2$ be a constant valid bound.
-After any finite initial block, use the capped positive past score mean
-divided by $2\nu^2$, held fixed in blocks of a fixed length. Its uniform-bound
-Catoni log capital converges to a finite real random variable, $P$-almost
-surely. Its probability of ever crossing $1/\alpha$ tends to zero as
-$\alpha\downarrow0$, whereas \eqref{eq:cash-linear} crosses almost surely
-at every fixed level. This does not assert zero power at an individual level.
+In the same instance, fix finite $M_4\ge3\sigma^4$ and the constant bound
+$\nu^2=L^2(\sigma+\gamma L\sqrt{M_4}/2)^2$. For any finite nonnegative
+predictable bets $\lambda_t$, let
+\[
+ \widetilde E_n^{\lambda}
+ =\prod_{t\le n}\exp\{\phi(\lambda_tY_t)-\lambda_t^2\nu^2/2\}.
+\]
+There is an explicit finite $B_\nu$, independent of the bet policy, such that
+for every $u>0$,
+\begin{equation}
+ \sup_{\lambda}\ P\!\left\{\sup_n\widetilde E_n^{\lambda}\ge1/\alpha\right\}
+ \le \frac{B_\nu}{u}+\alpha e^u.
+ \label{eq:uniform-family-power}
+\end{equation}
+Consequently its maximal ever-rejection probability tends to zero as
+$\alpha\downarrow0$, even allowing $\alpha$-dependent predictable bet rules.
+For the particular uniform-bound Catoni rule that, after a finite initial
+block, uses the capped positive past score mean divided by $2\nu^2$ and holds
+the bet fixed in blocks of a fixed length, log capital converges to a finite
+real random variable almost surely. In contrast, \eqref{eq:cash-linear}
+crosses almost surely at every fixed level. This does not assert zero power
+at an individual level.
 \end{proposition}
 
-The statistical loss here combines a shrinking effect and a constant public
-penalty; it is distinct from choosing a poor fixed bet in the stationary
-constant-effect experiment of Section~\ref{sec:lambda-power}. A fixed positive minimum-effect floor
-eventually excludes these vanishing gains. Costs, competing closures and
-changing regimes are absent. Neither theorem transfers to the full financial
+The bound takes a supremum of probabilities over predictable policies, not a
+pathwise supremum over hindsight choices. The loss combines a shrinking effect
+and a constant public penalty. The constant-effect experiment of
+Section~\ref{sec:lambda-power} has no finite compensator budget, so its power
+gains are compatible with this obstruction. A fixed positive minimum-effect
+floor eventually excludes the vanishing gains. Costs, competing closures and
+changing regimes are absent. Neither result transfers to the full financial
 PARK/REVIVE rule.
 
 Estimation noise in nested forecasts and logarithmic prequential estimation
