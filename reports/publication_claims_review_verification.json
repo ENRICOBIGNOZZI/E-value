@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "kind": "bounded_current_claims_positioning_review",
+  "captured_at": "2026-10-17T05:38:08.469189+02:00",
+  "assessment": "reports/publication_claims_assessment.md",
+  "assessment_sha256": "a4020433d0afa2c943456dc1284dacc2d4cb4e99aa18dc19c860b387be0a4afc",
+  "inspected_local_sources_sha256": {
+    "reports/directional_prior_art_audit.md": "758b65ef5239dbe5567109b357e72ea2e80a4a162064b7b428fbc4f731003f80",
+    "reports/directional_frontier_proof_audit.md": "8bd8007e8ac3cb7b29110442c46c939b4a817961c66f13431537e69d1219068c",
+    "reports/cash_park_prior_art_audit.md": "d4a5b59872be26c5e47af25ee1c1c894dbbb53a92c98a672f4636aa4af292ddc",
+    "reports/economic_waiting_prior_art_audit.md": "79243ac924cac4db9d79455b586502a0af5ed1eacb5830a6e2facd7faa981d18",
+    "reports/horizon_prior_art_audit.md": "1ac3c3ed3e1ba8ec1d07540505335ca990a9dd20daadf346ee0166f960a0f8d2",
+    "reports/portfolio_learning_prior_art_audit.md": "27077af7f363c870994f562ab6f44f6acee2e881cbcec9e4998762da7a6d9f13",
+    "reports/handoff_acceptance_audit.md": "2c97e8b8d90dd24c24b71115b6ebacc249b9b30e5c85feadaf3038335127f612",
+    "paper/main.tex": "6c6d0cf0fd3cbb5318d98d99ab743b3c20bf15e41801a01a58ea7f6f1f255bf9",
+    "paper/sections/09_full_strategy.tex": "acb9dd2eab7cdb26775d5a4c0a21d38d6140029d301475330cf12411156c2a7d",
+    "paper/sections/10_lambda_power.tex": "49f1e3ab079db8fc0b7f892e170d3e72be573e65bb451f8566cad22b5521447e",
+    "paper/sections/11_vanishing_gains.tex": "a0219912ccf40954afb500769ec96d48ead331fb70868953aa000befecf65b15",
+    "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7",
+    "paper/sections/13_directional_information.tex": "d34eb22a9536de873cf899681c22c8aefc9e57dc7a7960fa5fcafd7d53b099b4",
+    "paper/sections/14_directional_proofs.tex": "a2966ca4b99e8e48e6a877ed998dc82f727b7bdcabd5c9eee8e25835b0167062",
+    "paper/sections/16_multivariate_waiting.tex": "7607801ea46d48673dfdb75d8b7648f4f3871f3ae51058eeceb7fddbfb8efcb2",
+    "paper/sections/17_multivariate_proofs.tex": "ae5f2bd4b92131d89aaf3607abc71e1566fa33181bdc2ae53ee56a85c58f9e21"
+  },
+  "additional_primary_sources": [
+    {
+      "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/563/seq_march.pdf",
+      "version": "February 2002 author draft",
+      "locations": "Title page, introduction, section 2.2"
+    },
+    {
+      "url": "https://arxiv.org/html/2406.13486v2",
+      "version": "v2, 11 March 2025",
+      "locations": "Section 2, Lemmas 1\u20132, Theorem 1, section 4"
+    },
+    {
+      "url": "https://arxiv.org/html/2504.02818v2",
+      "version": "v2, 14 September 2026",
+      "locations": "Definition E.1, Assumptions E.2\u2013E.3, Theorems E.4\u2013E.5"
+    }
+  ],
+  "paper_pdf_sha256": "7ac9d2ea6408c95ae98e4f7bbf64f95eadec8e02330678e9237fa37daa0692d6",
+  "all_manuscript_bytes_unchanged": true,
+  "chronological_priority_proved": false,
+  "independent_peer_review": false,
+  "publication_or_rating_guaranteed": false,
+  "final_economic_interpretation_review_complete": false,
+  "scope": "Current scientific positioning and remaining submission work. Primary statements and assumptions inspected; no empirical analysis, new market, financial outcome inspection/tuning, source/configuration/analysis change or manuscript claim expansion. Current bounded literature positioning complete; final 500-market evidence/integration remains required."
+}

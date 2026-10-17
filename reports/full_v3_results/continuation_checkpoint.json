@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-10-17T05:29:25.892222+02:00",
-  "confirmed_live_controller": "91419 Sat Oct 17 01:18:35 2026     04:10:55 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2",
+  "captured_at": "2026-10-17T05:38:08.469189+02:00",
+  "confirmed_live_controller": "91419 Sat Oct 17 01:18:35 2026     04:19:34 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2",
   "confirmed_live_pilot": null,
   "status": {
     "controller_pid": 91419,
@@ -9,7 +9,7 @@
     "source_sha256": "8f250cf46d8ab94d9d6ec993f692b658a67b128792490c8cc6b2b1d7d88ea062",
     "analysis_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
     "phase": "running_final",
-    "updated_at": "2026-10-17T03:29:28.079582+00:00",
+    "updated_at": "2026-10-17T03:37:58.208172+00:00",
     "pilot_identity": [
       "Fri",
       "Oct",
@@ -44,5 +44,8 @@
   "scope": "Original pilot ended with all 100 markets complete/replayed. Original controller launched the separate fixed 500-market final stage once. Actual final handle confirmed live; no overall-goal or final-completion claim.",
   "verified_pilot_milestone": "reports/full_v3_results/pilot100_replay_milestone.json",
   "pilot_ended_complete": true,
-  "confirmed_live_final": "37346 Sat Oct 17 05:11:27 2026     18:03 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py main --count 500 --workers 2 --batch-size 10 --compact-verified-checkpoints"
+  "confirmed_live_final": "37346 Sat Oct 17 05:11:27 2026     26:42 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py main --count 500 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "confirmed_live_final_verifier": [
+    "42619 37346       01:04 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/verify_full_strategy.py --output /Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v3/main --seeds 60001 60002 60003 60004 60005 60006 60007 60008 60009 60010 --resume"
+  ]
 }

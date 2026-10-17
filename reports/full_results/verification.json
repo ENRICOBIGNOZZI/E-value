@@ -374,7 +374,7 @@
     "evidence_gate": "scripts/build_final_manuscript_results.py",
     "evidence_gate_sha256": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c",
     "handoff_audit": "reports/handoff_acceptance_audit.md",
-    "handoff_audit_sha256": "fee8312492884e79e60f23ec38ee1ed63c43a1eac32e76f635476c19a0add908",
+    "handoff_audit_sha256": "2c97e8b8d90dd24c24b71115b6ebacc249b9b30e5c85feadaf3038335127f612",
     "handoff_named_tests_verified": 19,
     "software_controls": 23,
     "test_source_sha256": "88dcc8e452e8521d9ca9c9ccd04f76ccb14316ee02d91c72040d493d7406c8c2",
@@ -638,5 +638,14 @@
       }
     },
     "scope": "Editorial section order only; same mathematical/numeric content. Full 48-page render review completed; final financial study remains separate and incomplete."
+  },
+  "publication_claims_review": {
+    "assessment": "reports/publication_claims_assessment.md",
+    "assessment_sha256": "a4020433d0afa2c943456dc1284dacc2d4cb4e99aa18dc19c860b387be0a4afc",
+    "verification": "reports/publication_claims_review_verification.json",
+    "verification_sha256": "099cc2456c179a40859278b8a290f1b8b2b93d65da2835cd6f25e321dda8eadd",
+    "current_positioning_complete": true,
+    "final_integrated_review_complete": false,
+    "scope": "Bounded primary-source claim/assumption comparison; no exhaustive priority, acceptance or quality-rating claim. Complete final evidence and manuscript interpretation still required."
   }
 }

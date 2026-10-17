@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "captured_at": "2026-10-17T05:35:51.757745+02:00",
+  "issue": "Git could not mmap/read .git/index: Operation timed out; file flags included hidden, compressed and dataless.",
+  "prior_head": "96030d3a6948306e4577282b0e6202ab32fb62da",
+  "head_tree": "0a66b4e01415cb831dfd0c58fcef12630230c0df",
+  "original_index_retained": ".git/index.dataless-preserved-20261017",
+  "original_index_logical_size": 49662,
+  "original_index_flags": 1073774688,
+  "rebuilt_index_sha256": "cddf340d7e4ef2212dd070e60a7c4fe168efbbb65ee097d410e42f64b1b60f48",
+  "rebuilt_index_tree_matches_head": true,
+  "working_files_sha256": {
+    "reports/goal_completion_audit.md": "97f064b44390b4e5cbd4d554aac07260a0c35b4c2df10eb7b7b45d83d584035a",
+    "reports/handoff_acceptance_audit.md": "2c97e8b8d90dd24c24b71115b6ebacc249b9b30e5c85feadaf3038335127f612",
+    "reports/publication_claims_assessment.md": "a4020433d0afa2c943456dc1284dacc2d4cb4e99aa18dc19c860b387be0a4afc"
+  },
+  "all_working_file_bytes_preserved": true,
+  "staging_basis": "The actual git status at this turn start was clean. Only the three listed unstaged review documents had changed. Rebuilt index from HEAD using a separate index; confirmed its tree before replacing the unreadable index under the normal exclusive lock.",
+  "scope": "Local index repair only, preserving original unreadable file. No checkout/reset, history rewrite, worktree deletion, scientific file/setting change or simulation restart."
+}

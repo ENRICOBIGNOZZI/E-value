@@ -9,7 +9,11 @@ or embedded prompt is executed as an instruction.
 The supplied standalone TeX and retained docs/spec copy are identical:
 SHA-256 6a9795b995715af00fb1faae12c4df1ad07148346ea3fffe74740d30a73bd758.
 This audit distinguishes implementation, executed evidence and publication
-readiness; the whole-suite report is full_test_results_with_final_diagnostics.txt.
+readiness. The latest full-suite report is
+full_test_results_with_storage_maintenance.txt (251 tests); eight later
+build-regression controls pass separately in paper_build_tests.txt.
+The hundred-market pilot is now complete and displayed in the manuscript;
+the separate final study is running and remains incomplete.
 
 ## Twelve mathematical and chronology test groups
 
@@ -88,8 +92,11 @@ markets, identified on every page. It adds no markets, final evidence or
 manuscript promotion. The production command rejects the absent main_500
 snapshot. Synthetic 500-ID software fixtures contribute no financial data.
 
-The full pilot, all 500 fresh final markets, independent arithmetic and
-event/reporting audits, complete-final graphics, manuscript synthesis and
-rendered final-paper review remain required. Broader novelty review remains
-open. A negative final economic result must be retained. Passing this
+The full hundred-market pilot and its independent arithmetic/event/reporting
+audits are complete, with evidence under full_v3_snapshots/pilot_100 and
+pilot_100_interpretation.md. All 500 fresh final markets, their audits,
+complete-final graphics, manuscript synthesis and rendered final-paper review
+remain required. The current scoped primary-source positioning review is in
+publication_claims_assessment.md; final integrated interpretation remains
+pending. A negative final economic result must be retained. Passing this
 software/traceability audit does not make the paper complete.

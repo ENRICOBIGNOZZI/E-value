@@ -1,3 +1,62 @@
+# Current continuation — scientific positioning and first final batch
+
+The preceding goal turn was **progress**: 96030d3 brought the central ENTRY
+and estimated-reference theory before the financial experiments, preserving
+mathematical and numerical content and verifying the full 48-page PDF.
+
+The current claims now have a consolidated critical assessment in
+`publication_claims_assessment.md`. It maps each substantive contribution to
+its proof/evidence and its actual scope, distinguishing established tools from
+the explicit utility/information calculations. A targeted primary-source
+comparison additionally inspects the Johannes–Polson–Stroud February 2002
+draft, Lam's March 2025 v2 online mean–variance paper and the September 2026 v2
+numeraire/regret treatment by Waudby-Smith–Sandoval–Jordan. Locations and
+assumption boundaries are explicit. No search-result absence is treated as
+proof of originality. The current bounded positioning review is complete;
+chronological priority, independent peer review and a quality/acceptance
+rating are not claimed. Final integrated interpretation still requires the
+actual complete economic evidence. This closes the current positioning task
+without imposing an impossible exhaustive absence certificate.
+
+Handoff traceability now records the completed hundred-market pilot and the
+actual separate test reports (251 in the prior full suite, eight later build
+controls). Its implementation/default distinctions and full-final requirements
+remain. The main PDF, all manuscript sources, numeric inputs and figures are
+byte-identical to the preceding commit. Scientific/final-analysis freezes
+and preserved empirical-input hashes match; no new tests or simulations are
+introduced by this review. Verification binds the local sources and report.
+
+A local Git read failed twice because .git/index had hidden/compressed/dataless
+flags and timed out on mmap and direct byte reads. The actual status at this
+turn start was clean; only three subsequent review documents were modified.
+A separate index built from HEAD produced exactly the HEAD tree. Under the
+normal exclusive index lock, the original unreadable index was retained at
+`.git/index.dataless-preserved-20261017`, and the verified reconstructed index
+replaced it. All three working files matched before/after hashes. Normal Git
+status/diff work again. No checkout/reset, history rewrite or scientific-file
+change occurred. The recovery record is git_index_recovery_20261017.json.
+The original simulation handles were unaffected and never restarted.
+
+At **2026-10-17T05:38:08.469189+02:00**, controller 91419, final runner
+**37346** and storage observer 35427 are independently confirmed live.
+All first **10/500 final markets** are generated, with **0/500 recorded
+complete independent replays** at that checkpoint. The original driver's
+batch verifier **42619** is confirmed live on exactly seeds 60001–60010.
+A generated market does not yet pass replay, and a verified prefix will not
+substitute for the required entire final pool. No partial-final economic
+estimate is generated or used to retune the study.
+
+The next necessary work is to observe the same final process through complete
+execution/replay, then finish the complete-sample audits, actual final packet
+and diagnostics, manuscript synthesis and final review. All independent
+preparation is ready; waiting for this live computation is a verified wait,
+not a blocker or permission dependency. The goal stays active and incomplete.
+No empirical analysis or remote push occurred.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — central theory before financial experiments
 
 The preceding goal turn was **progress**: 4c3c43d corrected routine manuscript
