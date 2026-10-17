@@ -143,3 +143,9 @@ statement-by-statement comparison is in `cash_park_prior_art_audit.md`. It
 separates our explicit adaptive estimated-policy instance from general
 supermartingale, width and numeraire results without declaring a new general
 principle or an established priority claim.
+
+`economic_waiting_prior_art_audit.md` adds primary-source comparisons for
+costly learning/delayed adoption, e-value-based economic experimentation and
+test-family/log-growth aggregation. It also records why the example's log-n
+clock and potentially decreasing capital require its own stated normalization.
+No model, power ranking or scientific simulation is changed by that attribution.

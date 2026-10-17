@@ -18,8 +18,8 @@
   "ghost_pairs_checked": 1265,
   "max_log_e_replay_error": 1.7763568394002505e-15,
   "pdf_pages": 43,
-  "pdf_sha256": "03aa7766e7203a06e92b125926c24a11482d363890a48798d86e65d3f0c7cccb",
-  "pdf_visual_qa": "All 43 pages rendered and four contact sheets inspected. New evidence-map/estimand pages 16, 17, 18, 32 and 33 inspected individually. Final pagination changes affect only 17 and 18 compared with the first reviewed 43-page render and were reinspected. Pages 1\u201315 match the preceding 42-page render byte for byte. No clipping/overlap, overfull or underfull boxes, unresolved references or duplicate labels.",
+  "pdf_sha256": "3ef69990c2d87fed7c822132c19c8ffc8179a123adda97f1589544a6fc6c8acc",
+  "pdf_visual_qa": "All 43 final pages rendered. Final contact sheets for pages 1\u201324 inspected; new reference page 43 and critical pages 3, 4 and 16 inspected individually. 23 page PNGs match the preceding fully reviewed 43-page render byte for byte. General club/widow/display-widow settings prevent isolated prose lines. No clipping/overlap, overfull/underfull boxes, duplicate labels or unresolved references.",
   "manuscript_inputs": {
     "paper/figures/activity_evidence.png": "5419de5f5c1b2d35f601b8a334cbb3065266ab3642da31e5d44e31a066eaaa74",
     "paper/figures/controlled_tail_calibration.png": "a57a8050a5018f5b9d7053d80f8eee73837ad0527d952a6c45fd2bfdd3322d8d",
@@ -37,7 +37,7 @@
     "paper/generated_results.tex": "81dd043f2f6f318ce83d6bb4e3a313ecf5011b553e33ea0b2a16ea3ba2e653e3",
     "paper/generated_tail_results.tex": "be3d3e16c5f8fd00382045471b1903cade78d53f6daa82f59ce19f0861e8189a",
     "paper/generated_vanishing_results.tex": "8e853f8422656d532ae6077c34538b7108f886df16e23b2113dbe45bbfda60e4",
-    "paper/main.tex": "cd480947312e501d6031d9c539d258534459f17778cbf5436f3fd44b9eefad1f",
+    "paper/main.tex": "992cc1d45b497c09c329600921bbf4d94b23326676a25726b35c1515dc1e8c48",
     "paper/sections/06_horizon.tex": "f39b4eb7163d51d05f4d22c6bf2e956fa08a8b97ef527b6f477c560038462b0e",
     "paper/sections/07_certified_tails.tex": "a5dbae27391d5fbfbbfc99d0a19d704c7f96fa17437afa86daedc2c4d45b26e6",
     "paper/sections/08_global_safety.tex": "0a2c16d385f367cbc8b57daa4b621daf55f6ce8f8b51d23c7a477de0f91b7c9d",
@@ -220,7 +220,7 @@
   },
   "manuscript_evidence_scope": {
     "audit": "reports/manuscript_evidence_scope_audit.json",
-    "audit_sha256": "f0663faf7004e4ab64d404a46376a47c4049c95f33151f00c6867b531e4d3fc3",
+    "audit_sha256": "3de19a53b69454fc6e99ea6733969ecb47dc678c709190519fabf7b2b7b34bf7",
     "csv_unit_checks": 75,
     "maximum_csv_unit_scale_error": 2.43e-14,
     "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
@@ -240,5 +240,15 @@
     "production_readiness": "Not ready: complete main_500 snapshot is absent; default production invocation rejected before any packet or manuscript write.",
     "production_packet_exists": false,
     "scope": "Preparation and synthetic software controls only, including negative primary results, undefined empty groups, exact 500-ID membership, current audits/raw replay, mid-build changes and output immutability. The production packet, final data, PDF/editorial integration and publication-quality assessment remain outstanding. No new financial markets or modified scientific controller."
+  },
+  "economic_waiting_prior_art": {
+    "audit": "reports/economic_waiting_prior_art_audit.md",
+    "audit_sha256": "79243ac924cac4db9d79455b586502a0af5ed1eacb5830a6e2facd7faa981d18",
+    "primary_sources": [
+      "https://eprints.whiterose.ac.uk/id/eprint/113052/1/HTA_JEDC_R2.pdf",
+      "https://arxiv.org/html/2605.06520v1",
+      "https://arxiv.org/html/2605.12720v1"
+    ],
+    "scope": "Targeted primary-source comparison of costly experimentation, economic e-value approval and test/log-growth normalization. The scalar example has a log-n information clock and potentially decreasing capital; no generic waiting-cost or asymptotic-optimality principle is claimed as new. Attribution/formatting only; no theorem, numerical estimate or scientific source change. Exhaustive priority remains unproven."
   }
 }

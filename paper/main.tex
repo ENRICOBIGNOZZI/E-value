@@ -7,6 +7,9 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black}
 \setlength{\emergencystretch}{3em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -153,6 +156,16 @@ parameters can worsen an estimated forecast even when the population models
 coincide. We retain such estimation effects when they change traded utility:
 our inferential target is an implemented policy comparison, rather than an
 estimation-noise-adjusted test of population predictive content.
+
+Costly learning and delayed adoption have established economic treatments.
+\cite{costlyexperimentation} optimizes discounted project value with an explicit
+non-adoption penalty; \cite{socialutility} combines e-value approval with
+subsidized experimentation and belief-state control. Our cost calculation
+fixes a frequentist evidence constraint and allows the implemented reference
+to evolve. General links between log growth and threshold-time optimality,
+including distinctions between convergence modes, are studied in
+\cite{waitoptimal}. The Gaussian instance here has a logarithmic information
+clock and a potentially decreasing capital; its normalization is proved directly.
 
 Multiple testing remains a separate issue. The financial significance of
 searching among many predictors is emphasized by \cite{hlz}. Sequential model
@@ -719,13 +732,10 @@ Execution status is reported explicitly below.
 \section{Baseline feasibility and calibration diagnostics}
 \label{sec:baseline-diagnostic}
 \input{sections/15_evidence_scope.tex}
-\par\begingroup
-\widowpenalty=10000
-\clubpenalty=10000
+\par
 \IfFileExists{generated_results.tex}{\input{generated_results.tex}}{
 This draft contains no executed-result claim. Numeric output must first be
 generated and linked to this section by the reproducible paper-building script.}
-\endgroup
 
 \input{sections/07_certified_tails.tex}
 \input{sections/13_directional_information.tex}
@@ -924,6 +934,17 @@ Author version: \url{https://arxiv.org/abs/2208.03185v1}.
 On the Problem of the Most Efficient Tests of Statistical Hypotheses.
 \emph{Philosophical Transactions of the Royal Society of London, Series A}
 231, 289--337. \url{https://doi.org/10.1098/rsta.1933.0009}.
+\bibitem{costlyexperimentation} Thijssen, J. J. J., and D. Bregantini (2017).
+Costly sequential experimentation and project valuation with an application
+to health technology assessment.
+\emph{Journal of Economic Dynamics and Control} 77, 202--229.
+\url{https://doi.org/10.1016/j.jedc.2017.01.016}.
+\bibitem{socialutility} Artola Velasco, A., S. Tsirtsis, and M. Gomez-Rodriguez (2026).
+Optimizing Social Utility in Sequential Experiments.
+Author version: \url{https://arxiv.org/abs/2605.06520v1}.
+\bibitem{waitoptimal} Ram, A., and A. Ramdas (2026).
+Optimal sequential tests yield log-optimal e-processes.
+Author version: \url{https://arxiv.org/abs/2605.12720v1}.
 \end{thebibliography}
 \endgroup
 \end{document}

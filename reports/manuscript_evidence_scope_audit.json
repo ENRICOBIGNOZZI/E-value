@@ -2,7 +2,7 @@
   "complete": true,
   "captured_at": "2026-10-17T03:15:33.671957+02:00",
   "manuscript_source_sha256": {
-    "paper/main.tex": "cd480947312e501d6031d9c539d258534459f17778cbf5436f3fd44b9eefad1f",
+    "paper/main.tex": "992cc1d45b497c09c329600921bbf4d94b23326676a25726b35c1515dc1e8c48",
     "paper/sections/09_full_strategy.tex": "acd52717672f76891dbd58755f8bc238ebc2e91e83e32c47a1b5c7eb7ea1b3f3",
     "paper/sections/15_evidence_scope.tex": "94cc6c4df9b504d27a4c2d97455c1fdee368b29c4c5465fbe9cef7aadbff643e"
   },

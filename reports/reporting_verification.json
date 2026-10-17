@@ -168,7 +168,7 @@
   },
   "manuscript_evidence_scope": {
     "audit": "reports/manuscript_evidence_scope_audit.json",
-    "audit_sha256": "f0663faf7004e4ab64d404a46376a47c4049c95f33151f00c6867b531e4d3fc3",
+    "audit_sha256": "3de19a53b69454fc6e99ea6733969ecb47dc678c709190519fabf7b2b7b34bf7",
     "csv_unit_checks": 75,
     "maximum_csv_unit_scale_error": 2.43e-14,
     "unit_scale_scope": "Consistency of separately serialized CSV columns allowing one last-printed decimal unit in each field; not recomputation from raw returns.",
@@ -188,5 +188,15 @@
     "production_readiness": "Not ready: complete main_500 snapshot is absent; default production invocation rejected before any packet or manuscript write.",
     "production_packet_exists": false,
     "scope": "Preparation and synthetic software controls only, including negative primary results, undefined empty groups, exact 500-ID membership, current audits/raw replay, mid-build changes and output immutability. The production packet, final data, PDF/editorial integration and publication-quality assessment remain outstanding. No new financial markets or modified scientific controller."
+  },
+  "economic_waiting_prior_art": {
+    "audit": "reports/economic_waiting_prior_art_audit.md",
+    "audit_sha256": "79243ac924cac4db9d79455b586502a0af5ed1eacb5830a6e2facd7faa981d18",
+    "primary_sources": [
+      "https://eprints.whiterose.ac.uk/id/eprint/113052/1/HTA_JEDC_R2.pdf",
+      "https://arxiv.org/html/2605.06520v1",
+      "https://arxiv.org/html/2605.12720v1"
+    ],
+    "scope": "Targeted primary-source comparison of costly experimentation, economic e-value approval and test/log-growth normalization. The scalar example has a log-n information clock and potentially decreasing capital; no generic waiting-cost or asymptotic-optimality principle is claimed as new. Attribution/formatting only; no theorem, numerical estimate or scientific source change. Exhaustive priority remains unproven."
   }
 }
