@@ -1,15 +1,15 @@
 {
-  "captured_at": "2026-10-17T05:06:08.437001+02:00",
-  "confirmed_live_controller": "91419 Sat Oct 17 01:18:35 2026     03:47:33 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2",
-  "confirmed_live_pilot": "64355 Fri Oct 16 22:56:50 2026     06:09:18 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T05:17:48.271182+02:00",
+  "confirmed_live_controller": "91419 Sat Oct 17 01:18:35 2026     03:59:14 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2",
+  "confirmed_live_pilot": null,
   "status": {
     "controller_pid": 91419,
     "pilot_pid": 64355,
     "workers": 2,
     "source_sha256": "8f250cf46d8ab94d9d6ec993f692b658a67b128792490c8cc6b2b1d7d88ea062",
     "analysis_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
-    "phase": "waiting_for_pilot",
-    "updated_at": "2026-10-17T03:05:43.853701+00:00",
+    "phase": "running_final",
+    "updated_at": "2026-10-17T03:17:27.884510+00:00",
     "pilot_identity": [
       "Fri",
       "Oct",
@@ -18,7 +18,21 @@
       "2026",
       "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints"
     ],
-    "observation_error": null
+    "observation_error": null,
+    "final_pid": 37346,
+    "final_command": [
+      "/Users/enrico/Desktop/PHD/E-values/.venv/bin/python",
+      "/Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py",
+      "main",
+      "--count",
+      "500",
+      "--workers",
+      "2",
+      "--batch-size",
+      "10",
+      "--compact-verified-checkpoints"
+    ],
+    "final_log": "/Users/enrico/Desktop/PHD/E-values/tmp/full-v3-final500.log"
   },
   "final_analysis_freeze_commit": "c7f7275a53c039be549716d97c6c6ebd2b19ac60",
   "plan_matches_committed_freeze": true,
@@ -27,6 +41,8 @@
     90814
   ],
   "replacement_scope": "Only waiting observers replaced for observation-retry and whole-plan-hash guards. Original pilot untouched; neither observer had launched final markets.",
-  "scope": "Live process confirmation and operational continuation only. No new simulation evidence, pilot/final completion or overall-goal completion claim.",
-  "verified_pilot_milestone": "reports/full_v3_results/pilot90_replay_milestone.json"
+  "scope": "Original pilot ended with all 100 markets complete/replayed. Original controller launched the separate fixed 500-market final stage once. Actual final handle confirmed live; no overall-goal or final-completion claim.",
+  "verified_pilot_milestone": "reports/full_v3_results/pilot100_replay_milestone.json",
+  "pilot_ended_complete": true,
+  "confirmed_live_final": "37346 Sat Oct 17 05:11:27 2026     06:22 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py main --count 500 --workers 2 --batch-size 10 --compact-verified-checkpoints"
 }

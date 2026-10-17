@@ -20,13 +20,13 @@ the full objective is complete.
 | Separate stronger-moment extension | Public envelopes, clipping proof, new namespace and frozen protocol | Implemented and individually valid under stronger assumptions |
 | Fresh experiment without favorable-seed selection | All seeds 40001–40020 completed with identical committed source hashes | Complete mechanism study |
 | Reproducible numerical evidence | Saved score/certificate ledgers, independent vectorized replay, checkpoints, source/configuration hashes | Audited separately from proof validity |
-| Complete and version-consistent report membership | Strict snapshot gate, independent market-summary audit, JSON event aggregation and independent batch reconstruction of event labels | First-twenty snapshot sealed; 3,425 metric checks, 264,406 event-table numeric checks and 120,630 annual-mean checks; 24 report and 27 reconstruction controls pass; complete pilot/final event audits pending |
+| Complete and version-consistent report membership | Strict snapshot gate, independent market-summary audit, JSON event aggregation and independent batch reconstruction of event labels | Complete hundred-market pilot sealed; 14,945 metric checks, 1,275,416 event-table numeric checks and 602,810 annual-mean checks. Complete pilot audits pass; final evidence pending |
 | Analysis fixed before final observations | Machine-readable final analysis plan, source hash and executable complete-sample assessment; explicit pilot diagnostic agrees with retained contrasts | Frozen after pilot inspection, before final outputs; final economic evidence still missing |
-| Continue complete experiment without manual relaunches | Live controller attached to the existing pilot; source/plan gates, complete-sample seals, independent reporting audits and process lock | Running; automatic final launch requires complete pilot evidence, final still 0/500 |
-| Full-strategy economic assessment | Six-method v2 protocol frozen; first ten v2 markets reported; v3 recovery verified on the representative and failed market; whole pilot replay running | **Incomplete**; do not require or presume a positive result |
-| Response-independent economic event assessment | Counterfactual continuations retain fast responses; separate batch positive-run reconstruction uses annual conditional-score arrays, flags and ghost continuations | First-twenty reconstruction reproduces 4,895 stable events, 483 unstable runs and 118 prompt selected responses confirmed after closure; full-size evidence pending and method-specific populations do not identify causal delay rankings |
+| Continue complete experiment without manual relaunches | Live controller attached to the existing pilot; source/plan gates, complete-sample seals, independent reporting audits and process lock | Original pilot completed; original controller launched final PID 37346 once. At 05:17 CEST, 2/500 generated and 0/500 replayed; see timestamped live checkpoint |
+| Full-strategy economic assessment | Six-method protocol frozen; all 100 v3 pilot markets complete, audited and displayed; separate final study running | **Incomplete**; do not require or presume a positive result |
+| Response-independent economic event assessment | Counterfactual continuations retain fast responses; separate batch positive-run reconstruction uses annual conditional-score arrays, flags and ghost continuations | Complete-pilot reconstruction reproduces 23,248 stable events, 2,206 unstable runs and 524 prompt selected responses confirmed after closure, including terminal choices. Final-size evidence pending; method-specific populations do not identify causal delay rankings |
 | Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing, cash-PARK/heteroscedastic Catoni/iid widths, economic experimentation and log-growth/test-family clocks, portfolio estimation utility loss/static regret and logarithmic Gaussian/martingale averaging, plus explicit ENTRY utility-null versus joint mean/variance-null mapping; TV corollary distinguished from weak-topology continuity theorem | **Incomplete**; targeted audits improve attribution and hypothesis precision but do not prove priority |
-| Frozen large final study | Original pilot 3 retained; v1 full study superseded; v2 reached 19 completed plus one failed market; v3 recovery verified and full replay running; final 0/500 | **Not executed**; twenty mechanism markets do not fill these counts |
+| Frozen large final study | Original baseline 3 retained; v1 superseded and v2 historical; all 100 v3 pilot markets complete/replayed. Separate final execution started | **Running, incomplete**; 500 complete final markets and replays still required |
 | Complete-final manuscript generation | Separate exact-500 packet builder; source/assessment/numeric/event/raw-replay guards; 24 synthetic controls, a visually checked three-page table-only software fixture, and production rejection without a final snapshot | Prepared and tested; no production final packet or final-paper integration yet |
 | Physical storage with scientific-byte preservation | Verified first-ninety native JSON transaction, unchanged current replay digests, separate live final-prefix observer and 28 failure/scheduling controls | Prepared and operating; no original producer/controller changes or reduced reserve; measured allocation is not a final-capacity guarantee |
 | Handoff test/output/graphics traceability | Twelve test groups mapped to actual functions; frozen numerical choices and output-name equivalents explicit; supplementary graphics builder with exact-500 gates and 23 controls | Implemented; eight-page sealed-twenty pilot preview visually verified. Complete-final diagnostics and paper integration remain pending |
@@ -38,12 +38,13 @@ complete markets (3,495 file pairs) and the failed seed's three sealed blocks
 (39 pairs). All compared data agree; configuration fields differ only by
 version label. Copied parameter/data corruption controls are detected. This
 audit adds no independent replications or arithmetic-replay counts.
-The first ninety v3 markets are complete and independently replayed;
-all ninety current input digests have been revalidated after compaction.
+All 100 v3 pilot markets are complete and independently replayed;
+all current input digests have been revalidated before/after manuscript formatting.
 The latest generated and recorded replay counts are retained in
 `full_v3_results/pilot_live_checkpoint.json`.
-The next work is to finish the same entire 100-market v3 pilot replay and then
-the separate final study. The first ten v2 markets remain a labeled pilot snapshot.
+The next work is to finish the separate final study, its complete-sample
+audits and manuscript integration. The paper now displays the complete
+hundred-market v3 pilot; first-ten v2 results remain historical repository evidence.
 The costless vanishing-gain theory, complete proof and scalar diagnostics are
 now integrated. Broader publication-level novelty assessment remains open;
 the draft makes no unqualified priority claim. These paths do not add financial markets.

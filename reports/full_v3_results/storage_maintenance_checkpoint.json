@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-10-17T05:06:08.437001+02:00",
-  "confirmed_live_storage_process": "35427 Sat Oct 17 05:00:51 2026     05:17 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/maintain_final_storage.py --controller-pid 91419",
+  "captured_at": "2026-10-17T05:17:48.271182+02:00",
+  "confirmed_live_storage_process": "35427 Sat Oct 17 05:00:51 2026     16:58 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/maintain_final_storage.py --controller-pid 91419",
   "status": {
     "pid": 35427,
     "controller_pid": 91419,
@@ -19,7 +19,7 @@
     "last_verified_prefix": 0,
     "reports": [],
     "phase": "waiting_for_verified_final_prefix",
-    "updated_at": "2026-10-17T03:05:24.474493+00:00",
+    "updated_at": "2026-10-17T03:17:24.936475+00:00",
     "observed_prefix": 0
   },
   "protocol_sha256": "70ade4f2cd0a82b65adfc454b858293e3c228a14ffaaee28f015effcf90d6b11",

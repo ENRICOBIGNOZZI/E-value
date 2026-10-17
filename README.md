@@ -188,11 +188,19 @@ until separately audited; they are not reported theorems or simulation results.
 
 The current full-strategy implementation is v3: a preserved QP convergence
 failure triggers exact objective preconditioning, with original-unit KKT guards.
-The same whole pilot pool is replayed; no failed seed is excluded. The manuscript
-currently retains its explicitly labeled first-ten **v2** snapshot. To reproduce
-that paper snapshot, use `scripts/build_paper.py --full-pilot-count 10`; its default
-input is deliberately still the retained v2 directory. New v3 results are kept
-separately until audited. See `reports/full_strategy_protocol.md`.
+All 100 pilot markets are now complete, independently replayed and audited;
+no failed seed is excluded. The manuscript displays this complete **v3 pilot**.
+The old first-ten v2 tables remain in `reports/full_results`. The legacy
+`build_paper.py` defaults to those old v2 inputs and would replace the current
+pilot table. Reproduce the current pilot packet into a new directory with:
+
+```sh
+.venv/bin/python reports/pilot100_manuscript_packet/reproduce.py --destination tmp/pilot100-reproduced
+```
+
+The retained packet, input hashes and visual review are in
+`reports/pilot100_manuscript_packet`. Compile the existing manuscript directly
+with Tectonic from `paper/`. See `reports/full_strategy_protocol.md`.
 
 ## Separate vanishing-gain research diagnostic
 
@@ -243,8 +251,8 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/lambda_power_s
 .venv/bin/python scripts/audit_lambda_power.py
 # Rebuild only table and figure from the retained small report.
 .venv/bin/python scripts/build_lambda_results.py
-# Rebuild the manuscript while keeping the financial snapshot at ten v2 seeds.
-.venv/bin/python scripts/build_paper.py --full-pilot-count 10
+# Compile from paper/ after rebuilding the separate lambda report.
+tectonic -X compile main.tex --keep-logs
 ```
 
 The subsequent, separately frozen companion compares deadline-adaptive bets
@@ -305,14 +313,18 @@ The separate first-twenty v3 **interim** snapshot is retained in
 `reports/full_v3_snapshots/pilot_020_interpretation.md`. All twenty markets
 completed independent arithmetic replay. Tail enters each but remains inactive
 for about 81% of OOS dates and has lower mean utility than Greedy or All Signals.
-This does not complete the 100-market pilot or the 500-market final study and
-does not change the manuscript's labeled first-ten v2 financial table.
+That historical prefix is not added to later counts. The complete 100-market
+pilot is now sealed in `reports/full_v3_snapshots/pilot_100` and displayed in
+the manuscript. Its interpretation and independent numeric/event audits are
+stored alongside the seal. Tail enters in 99 markets, stays inactive for about
+82% of dates and has lower utility than All Signals, Greedy and HAC. The
+separate 500-market final study is running; its complete assessment is pending.
 
 The reporting contract is `reports/full_reporting_protocol.md`. Sealing
 requires all requested markets, frozen source/configuration identities and
 byte-current independent replay evidence; it rejects incomplete final subsets
 and refuses to overwrite prior seals. The current repository suite has
-**151 passing tests**, including fourteen reporting-gate controls, twelve
+**251 passing tests**, including fourteen reporting-gate controls, twelve
 final-assessment checks, nineteen continuation controls, twenty-four
 event-reporting controls and twenty-seven independent event-reconstruction controls.
 
@@ -437,6 +449,8 @@ reports. It starts no duplicate pilot, applies no outcome-dependent gate and
 preserves the existing two-worker/thread settings. Scientific source and final
 analysis choices remain frozen. Errors stop the continuation rather than
 excluding markets. The terminal phase leaves manuscript synthesis outstanding.
+The original pilot has finished and the original controller has launched the
+final study once; do not run a second final job while that handle is live.
 
 The recorded launch and exact process/provenance gates are documented in
 `reports/full_continuation_protocol.md`. Live state is in

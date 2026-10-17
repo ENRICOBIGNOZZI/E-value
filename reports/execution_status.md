@@ -1,3 +1,66 @@
+# Current continuation — complete pilot and final study started
+
+The preceding goal turn was **progress**: f9860e2 prepared verified physical
+storage maintenance and a labeled software-only final-table layout fixture.
+This turn completes the actual hundred-market pilot milestone, with no
+new scientific settings or additional seed pool.
+
+All **100/100 declared pilot markets**, seeds 50001–50100, are complete,
+independently replayed and sealed as pilot_100. Existing arithmetic replays
+contain **883,124,214 scalar checks** and **13,201 ghost pairs**, with maximum
+log-capital discrepancy **2.66e-15**. Current raw digests match the seal before
+and after manuscript formatting. The independent market-summary audit checks
+14,945 values (maximum error 1.78e-15). Separate JSON/CSV event aggregation
+checks 1,275,416 numeric values and 2,223,533 structural conditions, with zero
+aggregation discrepancy. Independent batch reconstruction reproduces 23,248
+stable events and 2,206 unstable runs from 602,810 annual means, maximum
+error 1.09e-19. These audit counts are not additional market replications.
+
+The complete pilot remains economically negative for Tail versus All Signals:
+mean paired h-scaled utility **−0.033248**, approximate pointwise Student 95%
+Monte Carlo interval **[−0.035601, −0.030894]**. Tail executes 99 ENTRY choices,
+with no PARK, REVIVE or SWAP, and remains inactive for 82.14% of dates on
+average. All five utility contrasts and all six methods are retained.
+Method-specific paths prevent causal attribution of the gaps to waiting alone.
+The separate lambda studies and analytic stake results are unchanged; no
+power-optimized policy is substituted into the frozen financial design.
+
+The paper now displays all hundred pilot markets instead of the earlier ten
+v2 markets. Earlier snapshots remain historical records without adding their
+repeated seeds. A retained reproduction script formats only the complete
+sealed pilot into a new directory, validates numeric/event audits and checks
+raw digests before/after; it never writes the paper. The generated TeX and two
+sealed figures are copied to the manuscript with output-hash checks. The
+count/unit audit now checks **615 serialized utility identities**. All other
+generated numeric TeX is byte-identical. The scientific/final-analysis freezes,
+all four finite-theory source maps and preserved empirical-input hashes match.
+The existing **251-test** suite remains applicable; no new full suite was run
+for this reporting-only change.
+
+The **48-page PDF** compiles without box, label or reference warnings. Every
+page is rendered, all four contact sheets reviewed, and pages 18 and 36–40
+inspected individually. Tables, both figures, signed contrasts and sample
+labels are legible. PDF SHA-256:
+686e2cafb5521499e3bdbacceb1fe520b06c69be3f7b36ce55ec4f306bfb5ce8.
+
+The original pilot PID 64355 ended normally with complete-stage evidence.
+The original controller PID 91419 sealed/audited the pilot and launched the
+separate fixed 500-market final study once, PID **37346**. At
+**2026-10-17T05:17:48.271182+02:00**, actual controller, final and storage-observer
+handles are independently confirmed live: **2/500 generated final markets**
+and **0/500 recorded complete final replays**. This is startup, not final
+completion. No job is restarted, no failure excluded and no outcome gate
+applied. The optional storage observer remains attached to verified final
+prefixes; the original 2 GiB reserve and two workers remain unchanged.
+
+Complete final execution/audits, final packet/diagnostics and manuscript
+integration, and publication review remain outstanding. The overall goal
+stays active and incomplete. No empirical analysis or remote push occurred.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — final-table layout and verified physical storage
 
 The preceding goal turn was **progress**: 8893fd4 clarified portfolio-learning

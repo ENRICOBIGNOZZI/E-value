@@ -1,0 +1,89 @@
+{
+  "complete": true,
+  "pdf": "paper/main.pdf",
+  "pdf_sha256": "686e2cafb5521499e3bdbacceb1fe520b06c69be3f7b36ce55ec4f306bfb5ce8",
+  "pages": 48,
+  "all_pages_rendered": true,
+  "render_max_dimension": 1150,
+  "contact_sheets_reviewed": [
+    [
+      1,
+      12
+    ],
+    [
+      13,
+      24
+    ],
+    [
+      25,
+      36
+    ],
+    [
+      37,
+      48
+    ]
+  ],
+  "individually_reviewed_pages": [
+    18,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "findings": "Updated evidence map, complete-pilot tables, signed contrasts and both sealed figures legible. No clipping, overlap, unresolved references or box warnings.",
+  "rendered_files_sha256": {
+    "contact-1-12.png": "ad929293e6f21828434691f9f3910e50d49b5577f4e741bc2c36e88a2d60b0de",
+    "contact-13-24.png": "e701ccac1e2adaf5a421b30b40a1a4b49ad2c63aa95212fe95fc6c202523a62f",
+    "contact-25-36.png": "e3e2e2efd3d1453a70dd9d84aac62c17d15f996ffbd365e827b0d72add90d80b",
+    "contact-37-48.png": "4b7f122511d6cec9a999aca6f571fa8e427e46cd3356ef3e5e8edb75af4eb34c",
+    "page-01.png": "ef758d8f403c3adfaaa665ec87fde6ab615833cf7e33d258b9bf0c47d1465f51",
+    "page-02.png": "15bd4b7e62b6bedce56abcd1df7696d5cd829328122159a9cddeed17352a8720",
+    "page-03.png": "3bf2a0f4cdc4885569efb035088cec2ed29d924e0e049d1f129b5bf4f96c2e29",
+    "page-04.png": "25e1f5aad7e8140274e10f9daa61c75d7b4889a7a4d82ce9199b84a64683605a",
+    "page-05.png": "41885c69d3bad210cd9791ee91a55af28f1c3264cbabf383dd5f3eac229ed929",
+    "page-06.png": "df2a8bf6f0f55afc69ea6e82a3dc4b359b0363a42acaf9860f369022fd3436d9",
+    "page-07.png": "9061e0e021c142d983595349bb7759a04b071244dda503e2e31fc5ced136157c",
+    "page-08.png": "a70831b6afd66bea766230acbc79b4d923131e0c1a48b8fe57e60b6633f65f6b",
+    "page-09.png": "3a7c01c0903353ead87417ae8a5f9f5a4421e1058d37e23ad3c056a16b91d1b8",
+    "page-10.png": "dbd1de6d77a494ec4689400fe1a7041d27ac40c24511fbde67c71dbb2d69c19c",
+    "page-11.png": "76c452000396a0337388ccfb9c9207afb70131742dbf8e6eb9133e866c496823",
+    "page-12.png": "f4bdc6b1f38b2a8da39a3c83110fa6321ff1de98119f060d3745949975d7184e",
+    "page-13.png": "2e359f1609d0c20c52129f7bfd02668c014e098d6ecf7794dd3a45814b4e3a30",
+    "page-14.png": "a71b242bfc34d495bf86d87d2a3ebc3df2ffe9fa77ef6be14a801f2e42cb6952",
+    "page-15.png": "4b3d2cf2818847fe27896512264632b9d92af65b35d117aaed337042feb98ee3",
+    "page-16.png": "d4c1559a1874e7ea632aa2c4a70dc0e27ffecafc3fcb6d14da6ff75265acbd1d",
+    "page-17.png": "29a98ab7631c07adbe191e78cded560d229aa67682ab2ab1beb190c2864e49fb",
+    "page-18.png": "6f1faf942aacb99936f118ffb283e21dabac417a6e8f7845c8cd7f4fd313abca",
+    "page-19.png": "588ca835fbd1f4117814a5f1a3f55857ac1afc8cac0dd137971adedccf5544cd",
+    "page-20.png": "52544b95d0e454e34c8f6006500c7b2af1deae0ed8bb150ff239fc302b184896",
+    "page-21.png": "f63aa37cc4fc72946e76b9949dbf7c91820604c645c86fe853cc639cf1946368",
+    "page-22.png": "35eeee49dbf483e5817cf810aa9f188952c260882a7dd3455fa369415785b050",
+    "page-23.png": "fc163bdc9fee5544f59cfb60537a8b6636ed87cd1594022ca026cedd832a8eb9",
+    "page-24.png": "e1402ba39fad376bbf301b62e027cb4260b2885164114597ace5fcfb2890ccb5",
+    "page-25.png": "780797ec60b6542ae0b9e9d8fe3fe04bd94f8c1a31a9da94d178f00732262e58",
+    "page-26.png": "f2f720634ba2b9dddcafada84dcd208b462d0b30b52a99a66b06476ee4628ce7",
+    "page-27.png": "fa5d15592a4940619b8f11237fc399bbc46b6535da1492682cc6f8b3f1dbe455",
+    "page-28.png": "d283b44f800e712c121df2cb190d713a7bff21fc430adab5d65530a8cc816eb9",
+    "page-29.png": "a079799a03bd941f836360495aeabcc5eac765a8bde076f08b0599373d3bb516",
+    "page-30.png": "5200c3731646e90fcdee0c2d6447785ede5ae5b8604d74a5e2fb45bc44ae0b07",
+    "page-31.png": "bce4a639243ad5281b5b8cbbf0862e4051b10c866bd32bc7ff59b39e3165ad87",
+    "page-32.png": "5ff005cbe3dbc526b69f4d0666e85451dfeaee4579a98a408f61c79c0f662ea5",
+    "page-33.png": "75547e8f80cd8ba3a9ae3e2e9e3edb571cccbc88e288d83ff54643183bcc27ad",
+    "page-34.png": "db0f5962594333b57ba3f590b3444cbaa9472ec56cc709e2cc5cd967c54d6f5a",
+    "page-35.png": "a8a46578feff21acbdc5b04456ae974cbab3bf2ecdb237f3fec17210e9ce9dea",
+    "page-36.png": "6edc1517d56bb1d506ee24df6deb40e015fd55e37a2b6427944210501d8613d3",
+    "page-37.png": "87451d5c9d929f53d76922f8b529fa40eae3db61df7875c88a144026964efbee",
+    "page-38.png": "08de2d54d689bccbfe4189bd75befda4b34a21e1464aa303a9f2279d1e71c5e6",
+    "page-39.png": "69a5de2fce35288402e0967adec0505850bdae6d255936cbd5b4754f34b69f87",
+    "page-40.png": "9c88b3fc6bf9fe922ebd1000b0d745047b22bbcfb35faedd76291c6881445b90",
+    "page-41.png": "972f097e333aabda19532cef5458a1fdccb9799c506d6f4d88a527c34dda468f",
+    "page-42.png": "dfb47387ec9d5eb3f4de2acbbd03ce4d50be15540ca4c279e2d21bf723a4cc31",
+    "page-43.png": "a8bf4fa787a41aae0698114e62a1964c5171e378a95fa48db50943b8858476aa",
+    "page-44.png": "7ba19a5738358b2d40d1e4e14603edce7e7edbbfaed31c18afc8281ecfd8d182",
+    "page-45.png": "b873cfcc2fda7ec7c40e0af556f903be0cfa50ce78329503dabb9018dfb36c7a",
+    "page-46.png": "7bdb32f9ef147c7ecb89c466459b0760214cdd22cdccd9e2d77ed8ae27e0d5da",
+    "page-47.png": "7aecf1c069eaa61d379532e6c00089ac615495cabc4efe3d8a8ed97d662b4db4",
+    "page-48.png": "5f6119ffd37a62ec1720b286ae1f20457279f833243a5f8637455f37a70528f0"
+  }
+}

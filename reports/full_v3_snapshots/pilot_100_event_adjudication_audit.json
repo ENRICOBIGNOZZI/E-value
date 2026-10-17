@@ -1,0 +1,1740 @@
+{
+  "complete": true,
+  "snapshot": "reports/full_v3_snapshots/pilot_100",
+  "kind": "complete_pilot",
+  "seeds": [
+    50001,
+    50002,
+    50003,
+    50004,
+    50005,
+    50006,
+    50007,
+    50008,
+    50009,
+    50010,
+    50011,
+    50012,
+    50013,
+    50014,
+    50015,
+    50016,
+    50017,
+    50018,
+    50019,
+    50020,
+    50021,
+    50022,
+    50023,
+    50024,
+    50025,
+    50026,
+    50027,
+    50028,
+    50029,
+    50030,
+    50031,
+    50032,
+    50033,
+    50034,
+    50035,
+    50036,
+    50037,
+    50038,
+    50039,
+    50040,
+    50041,
+    50042,
+    50043,
+    50044,
+    50045,
+    50046,
+    50047,
+    50048,
+    50049,
+    50050,
+    50051,
+    50052,
+    50053,
+    50054,
+    50055,
+    50056,
+    50057,
+    50058,
+    50059,
+    50060,
+    50061,
+    50062,
+    50063,
+    50064,
+    50065,
+    50066,
+    50067,
+    50068,
+    50069,
+    50070,
+    50071,
+    50072,
+    50073,
+    50074,
+    50075,
+    50076,
+    50077,
+    50078,
+    50079,
+    50080,
+    50081,
+    50082,
+    50083,
+    50084,
+    50085,
+    50086,
+    50087,
+    50088,
+    50089,
+    50090,
+    50091,
+    50092,
+    50093,
+    50094,
+    50095,
+    50096,
+    50097,
+    50098,
+    50099,
+    50100
+  ],
+  "counts": {
+    "annual_mean_checks": 602810,
+    "ghost_mean_columns": 13201,
+    "terminal_mean_checks": 318,
+    "comparisons_reconstructed": 157708,
+    "stable_events_reconstructed": 23248,
+    "unstable_runs_reconstructed": 2206,
+    "events_confirmed_after_closure": 12258,
+    "selected_events_confirmed_after_closure": 524,
+    "events_selected_at_onset": 524
+  },
+  "maximum_annual_mean_error": 1.0842021724855044e-19,
+  "per_seed": [
+    {
+      "seed": 50001,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 170,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1695,
+        "stable_events_reconstructed": 296,
+        "unstable_runs_reconstructed": 35,
+        "events_confirmed_after_closure": 157,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50002,
+      "counts": {
+        "annual_mean_checks": 6040,
+        "ghost_mean_columns": 178,
+        "terminal_mean_checks": 7,
+        "comparisons_reconstructed": 2067,
+        "stable_events_reconstructed": 294,
+        "unstable_runs_reconstructed": 5,
+        "events_confirmed_after_closure": 176,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50003,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 78,
+        "comparisons_reconstructed": 870,
+        "stable_events_reconstructed": 174,
+        "unstable_runs_reconstructed": 2,
+        "events_confirmed_after_closure": 78,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50004,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 162,
+        "comparisons_reconstructed": 1566,
+        "stable_events_reconstructed": 261,
+        "unstable_runs_reconstructed": 15,
+        "events_confirmed_after_closure": 152,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50005,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 97,
+        "comparisons_reconstructed": 1335,
+        "stable_events_reconstructed": 200,
+        "unstable_runs_reconstructed": 4,
+        "events_confirmed_after_closure": 95,
+        "selected_events_confirmed_after_closure": 4,
+        "events_selected_at_onset": 4
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50006,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 68,
+        "comparisons_reconstructed": 1345,
+        "stable_events_reconstructed": 158,
+        "unstable_runs_reconstructed": 9,
+        "events_confirmed_after_closure": 67,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50007,
+      "counts": {
+        "annual_mean_checks": 6110,
+        "ghost_mean_columns": 108,
+        "comparisons_reconstructed": 1446,
+        "stable_events_reconstructed": 221,
+        "unstable_runs_reconstructed": 14,
+        "events_confirmed_after_closure": 106,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50008,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 121,
+        "terminal_mean_checks": 5,
+        "comparisons_reconstructed": 1464,
+        "stable_events_reconstructed": 218,
+        "unstable_runs_reconstructed": 38,
+        "events_confirmed_after_closure": 114,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50009,
+      "counts": {
+        "annual_mean_checks": 5990,
+        "ghost_mean_columns": 138,
+        "terminal_mean_checks": 6,
+        "comparisons_reconstructed": 1563,
+        "stable_events_reconstructed": 268,
+        "unstable_runs_reconstructed": 7,
+        "events_confirmed_after_closure": 134,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50010,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 145,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1455,
+        "stable_events_reconstructed": 273,
+        "unstable_runs_reconstructed": 13,
+        "events_confirmed_after_closure": 139,
+        "selected_events_confirmed_after_closure": 4,
+        "events_selected_at_onset": 4
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50011,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 142,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 2042,
+        "stable_events_reconstructed": 262,
+        "unstable_runs_reconstructed": 5,
+        "events_confirmed_after_closure": 138,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50012,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 86,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 868,
+        "stable_events_reconstructed": 161,
+        "unstable_runs_reconstructed": 22,
+        "events_confirmed_after_closure": 77,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50013,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 167,
+        "comparisons_reconstructed": 1906,
+        "stable_events_reconstructed": 292,
+        "unstable_runs_reconstructed": 38,
+        "events_confirmed_after_closure": 155,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50014,
+      "counts": {
+        "annual_mean_checks": 5980,
+        "ghost_mean_columns": 134,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1787,
+        "stable_events_reconstructed": 232,
+        "unstable_runs_reconstructed": 38,
+        "events_confirmed_after_closure": 120,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50015,
+      "counts": {
+        "annual_mean_checks": 5930,
+        "ghost_mean_columns": 68,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 873,
+        "stable_events_reconstructed": 153,
+        "unstable_runs_reconstructed": 45,
+        "events_confirmed_after_closure": 59,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50016,
+      "counts": {
+        "annual_mean_checks": 6090,
+        "ghost_mean_columns": 158,
+        "comparisons_reconstructed": 1827,
+        "stable_events_reconstructed": 263,
+        "unstable_runs_reconstructed": 5,
+        "events_confirmed_after_closure": 157,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50017,
+      "counts": {
+        "annual_mean_checks": 6050,
+        "ghost_mean_columns": 229,
+        "terminal_mean_checks": 11,
+        "comparisons_reconstructed": 2453,
+        "stable_events_reconstructed": 321,
+        "unstable_runs_reconstructed": 34,
+        "events_confirmed_after_closure": 198,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50018,
+      "counts": {
+        "annual_mean_checks": 6080,
+        "ghost_mean_columns": 148,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1907,
+        "stable_events_reconstructed": 283,
+        "unstable_runs_reconstructed": 23,
+        "events_confirmed_after_closure": 144,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50019,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 169,
+        "comparisons_reconstructed": 1785,
+        "stable_events_reconstructed": 257,
+        "unstable_runs_reconstructed": 64,
+        "events_confirmed_after_closure": 144,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50020,
+      "counts": {
+        "annual_mean_checks": 6050,
+        "ghost_mean_columns": 190,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 2131,
+        "stable_events_reconstructed": 308,
+        "unstable_runs_reconstructed": 67,
+        "events_confirmed_after_closure": 159,
+        "selected_events_confirmed_after_closure": 10,
+        "events_selected_at_onset": 10
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50021,
+      "counts": {
+        "annual_mean_checks": 6120,
+        "ghost_mean_columns": 84,
+        "comparisons_reconstructed": 978,
+        "stable_events_reconstructed": 189,
+        "unstable_runs_reconstructed": 14,
+        "events_confirmed_after_closure": 78,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50022,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 159,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1778,
+        "stable_events_reconstructed": 253,
+        "unstable_runs_reconstructed": 14,
+        "events_confirmed_after_closure": 157,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50023,
+      "counts": {
+        "annual_mean_checks": 5980,
+        "ghost_mean_columns": 123,
+        "comparisons_reconstructed": 1794,
+        "stable_events_reconstructed": 231,
+        "unstable_runs_reconstructed": 10,
+        "events_confirmed_after_closure": 119,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50024,
+      "counts": {
+        "annual_mean_checks": 5960,
+        "ghost_mean_columns": 91,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 1570,
+        "stable_events_reconstructed": 168,
+        "unstable_runs_reconstructed": 47,
+        "events_confirmed_after_closure": 74,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50025,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 53,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 863,
+        "stable_events_reconstructed": 131,
+        "unstable_runs_reconstructed": 1,
+        "events_confirmed_after_closure": 53,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50026,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 165,
+        "terminal_mean_checks": 5,
+        "comparisons_reconstructed": 1592,
+        "stable_events_reconstructed": 259,
+        "unstable_runs_reconstructed": 4,
+        "events_confirmed_after_closure": 163,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50027,
+      "counts": {
+        "annual_mean_checks": 6080,
+        "ghost_mean_columns": 66,
+        "terminal_mean_checks": 4,
+        "comparisons_reconstructed": 977,
+        "stable_events_reconstructed": 164,
+        "unstable_runs_reconstructed": 17,
+        "events_confirmed_after_closure": 66,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50028,
+      "counts": {
+        "annual_mean_checks": 6000,
+        "ghost_mean_columns": 89,
+        "comparisons_reconstructed": 869,
+        "stable_events_reconstructed": 212,
+        "unstable_runs_reconstructed": 6,
+        "events_confirmed_after_closure": 89,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 1.0842021724855044e-19
+    },
+    {
+      "seed": 50029,
+      "counts": {
+        "annual_mean_checks": 6050,
+        "ghost_mean_columns": 226,
+        "terminal_mean_checks": 13,
+        "comparisons_reconstructed": 2343,
+        "stable_events_reconstructed": 334,
+        "unstable_runs_reconstructed": 19,
+        "events_confirmed_after_closure": 221,
+        "selected_events_confirmed_after_closure": 12,
+        "events_selected_at_onset": 12
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50030,
+      "counts": {
+        "annual_mean_checks": 5960,
+        "ghost_mean_columns": 269,
+        "terminal_mean_checks": 4,
+        "comparisons_reconstructed": 2143,
+        "stable_events_reconstructed": 358,
+        "unstable_runs_reconstructed": 34,
+        "events_confirmed_after_closure": 240,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50031,
+      "counts": {
+        "annual_mean_checks": 6090,
+        "ghost_mean_columns": 111,
+        "comparisons_reconstructed": 1446,
+        "stable_events_reconstructed": 194,
+        "unstable_runs_reconstructed": 30,
+        "events_confirmed_after_closure": 98,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50032,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 150,
+        "terminal_mean_checks": 34,
+        "comparisons_reconstructed": 1224,
+        "stable_events_reconstructed": 273,
+        "unstable_runs_reconstructed": 21,
+        "events_confirmed_after_closure": 137,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50033,
+      "counts": {
+        "annual_mean_checks": 5890,
+        "ghost_mean_columns": 93,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 983,
+        "stable_events_reconstructed": 192,
+        "unstable_runs_reconstructed": 35,
+        "events_confirmed_after_closure": 83,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50034,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 101,
+        "terminal_mean_checks": 3,
+        "comparisons_reconstructed": 1335,
+        "stable_events_reconstructed": 192,
+        "unstable_runs_reconstructed": 41,
+        "events_confirmed_after_closure": 86,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50035,
+      "counts": {
+        "annual_mean_checks": 6170,
+        "ghost_mean_columns": 234,
+        "terminal_mean_checks": 22,
+        "comparisons_reconstructed": 2466,
+        "stable_events_reconstructed": 345,
+        "unstable_runs_reconstructed": 29,
+        "events_confirmed_after_closure": 214,
+        "selected_events_confirmed_after_closure": 11,
+        "events_selected_at_onset": 11
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50036,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 131,
+        "terminal_mean_checks": 3,
+        "comparisons_reconstructed": 1947,
+        "stable_events_reconstructed": 234,
+        "unstable_runs_reconstructed": 22,
+        "events_confirmed_after_closure": 116,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50037,
+      "counts": {
+        "annual_mean_checks": 5980,
+        "ghost_mean_columns": 85,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 1327,
+        "stable_events_reconstructed": 185,
+        "unstable_runs_reconstructed": 11,
+        "events_confirmed_after_closure": 83,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 1.0842021724855044e-19
+    },
+    {
+      "seed": 50038,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 76,
+        "comparisons_reconstructed": 1212,
+        "stable_events_reconstructed": 171,
+        "unstable_runs_reconstructed": 14,
+        "events_confirmed_after_closure": 72,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50039,
+      "counts": {
+        "annual_mean_checks": 6100,
+        "ghost_mean_columns": 81,
+        "comparisons_reconstructed": 986,
+        "stable_events_reconstructed": 177,
+        "unstable_runs_reconstructed": 38,
+        "events_confirmed_after_closure": 78,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 1.0842021724855044e-19
+    },
+    {
+      "seed": 50040,
+      "counts": {
+        "annual_mean_checks": 6090,
+        "ghost_mean_columns": 186,
+        "comparisons_reconstructed": 2276,
+        "stable_events_reconstructed": 281,
+        "unstable_runs_reconstructed": 18,
+        "events_confirmed_after_closure": 168,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50041,
+      "counts": {
+        "annual_mean_checks": 6080,
+        "ghost_mean_columns": 116,
+        "comparisons_reconstructed": 1660,
+        "stable_events_reconstructed": 224,
+        "unstable_runs_reconstructed": 17,
+        "events_confirmed_after_closure": 110,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50042,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 140,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 2158,
+        "stable_events_reconstructed": 246,
+        "unstable_runs_reconstructed": 16,
+        "events_confirmed_after_closure": 136,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50043,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 69,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 865,
+        "stable_events_reconstructed": 167,
+        "unstable_runs_reconstructed": 8,
+        "events_confirmed_after_closure": 68,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 1.0842021724855044e-19
+    },
+    {
+      "seed": 50044,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 98,
+        "terminal_mean_checks": 12,
+        "comparisons_reconstructed": 1453,
+        "stable_events_reconstructed": 199,
+        "unstable_runs_reconstructed": 21,
+        "events_confirmed_after_closure": 93,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50045,
+      "counts": {
+        "annual_mean_checks": 5960,
+        "ghost_mean_columns": 159,
+        "comparisons_reconstructed": 2014,
+        "stable_events_reconstructed": 234,
+        "unstable_runs_reconstructed": 27,
+        "events_confirmed_after_closure": 141,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50046,
+      "counts": {
+        "annual_mean_checks": 5990,
+        "ghost_mean_columns": 78,
+        "terminal_mean_checks": 6,
+        "comparisons_reconstructed": 1098,
+        "stable_events_reconstructed": 197,
+        "unstable_runs_reconstructed": 37,
+        "events_confirmed_after_closure": 64,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50047,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 79,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 1100,
+        "stable_events_reconstructed": 163,
+        "unstable_runs_reconstructed": 3,
+        "events_confirmed_after_closure": 77,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50048,
+      "counts": {
+        "annual_mean_checks": 5990,
+        "ghost_mean_columns": 185,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 2026,
+        "stable_events_reconstructed": 288,
+        "unstable_runs_reconstructed": 51,
+        "events_confirmed_after_closure": 165,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50049,
+      "counts": {
+        "annual_mean_checks": 6000,
+        "ghost_mean_columns": 121,
+        "comparisons_reconstructed": 1563,
+        "stable_events_reconstructed": 220,
+        "unstable_runs_reconstructed": 14,
+        "events_confirmed_after_closure": 115,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 1.0842021724855044e-19
+    },
+    {
+      "seed": 50050,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 128,
+        "comparisons_reconstructed": 1788,
+        "stable_events_reconstructed": 207,
+        "unstable_runs_reconstructed": 31,
+        "events_confirmed_after_closure": 116,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 1.0842021724855044e-19
+    },
+    {
+      "seed": 50051,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 122,
+        "comparisons_reconstructed": 1335,
+        "stable_events_reconstructed": 218,
+        "unstable_runs_reconstructed": 10,
+        "events_confirmed_after_closure": 113,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50052,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 149,
+        "terminal_mean_checks": 12,
+        "comparisons_reconstructed": 1926,
+        "stable_events_reconstructed": 303,
+        "unstable_runs_reconstructed": 28,
+        "events_confirmed_after_closure": 147,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50053,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 198,
+        "terminal_mean_checks": 4,
+        "comparisons_reconstructed": 2608,
+        "stable_events_reconstructed": 271,
+        "unstable_runs_reconstructed": 35,
+        "events_confirmed_after_closure": 173,
+        "selected_events_confirmed_after_closure": 11,
+        "events_selected_at_onset": 11
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50054,
+      "counts": {
+        "annual_mean_checks": 5960,
+        "ghost_mean_columns": 157,
+        "comparisons_reconstructed": 2137,
+        "stable_events_reconstructed": 250,
+        "unstable_runs_reconstructed": 19,
+        "events_confirmed_after_closure": 144,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50055,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 101,
+        "comparisons_reconstructed": 1096,
+        "stable_events_reconstructed": 216,
+        "unstable_runs_reconstructed": 23,
+        "events_confirmed_after_closure": 96,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50056,
+      "counts": {
+        "annual_mean_checks": 5910,
+        "ghost_mean_columns": 99,
+        "terminal_mean_checks": 5,
+        "comparisons_reconstructed": 1218,
+        "stable_events_reconstructed": 186,
+        "unstable_runs_reconstructed": 10,
+        "events_confirmed_after_closure": 94,
+        "selected_events_confirmed_after_closure": 4,
+        "events_selected_at_onset": 4
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50057,
+      "counts": {
+        "annual_mean_checks": 6000,
+        "ghost_mean_columns": 150,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1929,
+        "stable_events_reconstructed": 261,
+        "unstable_runs_reconstructed": 24,
+        "events_confirmed_after_closure": 135,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50058,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 226,
+        "comparisons_reconstructed": 2263,
+        "stable_events_reconstructed": 320,
+        "unstable_runs_reconstructed": 33,
+        "events_confirmed_after_closure": 203,
+        "selected_events_confirmed_after_closure": 10,
+        "events_selected_at_onset": 10
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50059,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 78,
+        "comparisons_reconstructed": 865,
+        "stable_events_reconstructed": 175,
+        "unstable_runs_reconstructed": 1,
+        "events_confirmed_after_closure": 78,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50060,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 98,
+        "comparisons_reconstructed": 1222,
+        "stable_events_reconstructed": 205,
+        "unstable_runs_reconstructed": 11,
+        "events_confirmed_after_closure": 97,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50061,
+      "counts": {
+        "annual_mean_checks": 5960,
+        "ghost_mean_columns": 200,
+        "terminal_mean_checks": 3,
+        "comparisons_reconstructed": 1685,
+        "stable_events_reconstructed": 318,
+        "unstable_runs_reconstructed": 25,
+        "events_confirmed_after_closure": 189,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50062,
+      "counts": {
+        "annual_mean_checks": 5900,
+        "ghost_mean_columns": 99,
+        "comparisons_reconstructed": 1212,
+        "stable_events_reconstructed": 187,
+        "unstable_runs_reconstructed": 14,
+        "events_confirmed_after_closure": 90,
+        "selected_events_confirmed_after_closure": 4,
+        "events_selected_at_onset": 4
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50063,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 79,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 1564,
+        "stable_events_reconstructed": 182,
+        "unstable_runs_reconstructed": 6,
+        "events_confirmed_after_closure": 75,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50064,
+      "counts": {
+        "annual_mean_checks": 6120,
+        "ghost_mean_columns": 133,
+        "comparisons_reconstructed": 1947,
+        "stable_events_reconstructed": 228,
+        "unstable_runs_reconstructed": 24,
+        "events_confirmed_after_closure": 125,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50065,
+      "counts": {
+        "annual_mean_checks": 6110,
+        "ghost_mean_columns": 70,
+        "terminal_mean_checks": 4,
+        "comparisons_reconstructed": 1098,
+        "stable_events_reconstructed": 170,
+        "unstable_runs_reconstructed": 9,
+        "events_confirmed_after_closure": 70,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 1.0842021724855044e-19
+    },
+    {
+      "seed": 50066,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 154,
+        "terminal_mean_checks": 9,
+        "comparisons_reconstructed": 2173,
+        "stable_events_reconstructed": 245,
+        "unstable_runs_reconstructed": 20,
+        "events_confirmed_after_closure": 146,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50067,
+      "counts": {
+        "annual_mean_checks": 5960,
+        "ghost_mean_columns": 218,
+        "comparisons_reconstructed": 2253,
+        "stable_events_reconstructed": 321,
+        "unstable_runs_reconstructed": 13,
+        "events_confirmed_after_closure": 205,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50068,
+      "counts": {
+        "annual_mean_checks": 6070,
+        "ghost_mean_columns": 88,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 1219,
+        "stable_events_reconstructed": 195,
+        "unstable_runs_reconstructed": 24,
+        "events_confirmed_after_closure": 83,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50069,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 128,
+        "terminal_mean_checks": 5,
+        "comparisons_reconstructed": 1564,
+        "stable_events_reconstructed": 250,
+        "unstable_runs_reconstructed": 22,
+        "events_confirmed_after_closure": 119,
+        "selected_events_confirmed_after_closure": 4,
+        "events_selected_at_onset": 4
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50070,
+      "counts": {
+        "annual_mean_checks": 6040,
+        "ghost_mean_columns": 87,
+        "terminal_mean_checks": 6,
+        "comparisons_reconstructed": 978,
+        "stable_events_reconstructed": 196,
+        "unstable_runs_reconstructed": 30,
+        "events_confirmed_after_closure": 79,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50071,
+      "counts": {
+        "annual_mean_checks": 6110,
+        "ghost_mean_columns": 67,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 987,
+        "stable_events_reconstructed": 159,
+        "unstable_runs_reconstructed": 3,
+        "events_confirmed_after_closure": 66,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 1.0842021724855044e-19
+    },
+    {
+      "seed": 50072,
+      "counts": {
+        "annual_mean_checks": 6000,
+        "ghost_mean_columns": 77,
+        "comparisons_reconstructed": 865,
+        "stable_events_reconstructed": 168,
+        "unstable_runs_reconstructed": 23,
+        "events_confirmed_after_closure": 74,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50073,
+      "counts": {
+        "annual_mean_checks": 5990,
+        "ghost_mean_columns": 164,
+        "terminal_mean_checks": 4,
+        "comparisons_reconstructed": 1318,
+        "stable_events_reconstructed": 264,
+        "unstable_runs_reconstructed": 10,
+        "events_confirmed_after_closure": 157,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50074,
+      "counts": {
+        "annual_mean_checks": 5990,
+        "ghost_mean_columns": 127,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 1805,
+        "stable_events_reconstructed": 226,
+        "unstable_runs_reconstructed": 2,
+        "events_confirmed_after_closure": 125,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50075,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 231,
+        "terminal_mean_checks": 9,
+        "comparisons_reconstructed": 2057,
+        "stable_events_reconstructed": 355,
+        "unstable_runs_reconstructed": 21,
+        "events_confirmed_after_closure": 219,
+        "selected_events_confirmed_after_closure": 10,
+        "events_selected_at_onset": 10
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50076,
+      "counts": {
+        "annual_mean_checks": 5950,
+        "ghost_mean_columns": 134,
+        "comparisons_reconstructed": 1672,
+        "stable_events_reconstructed": 222,
+        "unstable_runs_reconstructed": 19,
+        "events_confirmed_after_closure": 121,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50077,
+      "counts": {
+        "annual_mean_checks": 6150,
+        "ghost_mean_columns": 149,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 1736,
+        "stable_events_reconstructed": 241,
+        "unstable_runs_reconstructed": 17,
+        "events_confirmed_after_closure": 139,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50078,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 72,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 867,
+        "stable_events_reconstructed": 153,
+        "unstable_runs_reconstructed": 13,
+        "events_confirmed_after_closure": 69,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50079,
+      "counts": {
+        "annual_mean_checks": 5980,
+        "ghost_mean_columns": 104,
+        "terminal_mean_checks": 5,
+        "comparisons_reconstructed": 1568,
+        "stable_events_reconstructed": 231,
+        "unstable_runs_reconstructed": 7,
+        "events_confirmed_after_closure": 99,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50080,
+      "counts": {
+        "annual_mean_checks": 6090,
+        "ghost_mean_columns": 84,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 986,
+        "stable_events_reconstructed": 183,
+        "unstable_runs_reconstructed": 20,
+        "events_confirmed_after_closure": 81,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50081,
+      "counts": {
+        "annual_mean_checks": 6170,
+        "ghost_mean_columns": 236,
+        "terminal_mean_checks": 13,
+        "comparisons_reconstructed": 2538,
+        "stable_events_reconstructed": 325,
+        "unstable_runs_reconstructed": 56,
+        "events_confirmed_after_closure": 205,
+        "selected_events_confirmed_after_closure": 10,
+        "events_selected_at_onset": 10
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50082,
+      "counts": {
+        "annual_mean_checks": 6110,
+        "ghost_mean_columns": 176,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 1843,
+        "stable_events_reconstructed": 296,
+        "unstable_runs_reconstructed": 2,
+        "events_confirmed_after_closure": 175,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50083,
+      "counts": {
+        "annual_mean_checks": 5990,
+        "ghost_mean_columns": 113,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 1326,
+        "stable_events_reconstructed": 212,
+        "unstable_runs_reconstructed": 20,
+        "events_confirmed_after_closure": 107,
+        "selected_events_confirmed_after_closure": 4,
+        "events_selected_at_onset": 4
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50084,
+      "counts": {
+        "annual_mean_checks": 6130,
+        "ghost_mean_columns": 194,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 2309,
+        "stable_events_reconstructed": 295,
+        "unstable_runs_reconstructed": 10,
+        "events_confirmed_after_closure": 185,
+        "selected_events_confirmed_after_closure": 12,
+        "events_selected_at_onset": 12
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50085,
+      "counts": {
+        "annual_mean_checks": 6120,
+        "ghost_mean_columns": 149,
+        "terminal_mean_checks": 15,
+        "comparisons_reconstructed": 2169,
+        "stable_events_reconstructed": 227,
+        "unstable_runs_reconstructed": 46,
+        "events_confirmed_after_closure": 116,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50086,
+      "counts": {
+        "annual_mean_checks": 5940,
+        "ghost_mean_columns": 79,
+        "terminal_mean_checks": 1,
+        "comparisons_reconstructed": 870,
+        "stable_events_reconstructed": 163,
+        "unstable_runs_reconstructed": 13,
+        "events_confirmed_after_closure": 75,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50087,
+      "counts": {
+        "annual_mean_checks": 5980,
+        "ghost_mean_columns": 84,
+        "terminal_mean_checks": 14,
+        "comparisons_reconstructed": 1110,
+        "stable_events_reconstructed": 188,
+        "unstable_runs_reconstructed": 43,
+        "events_confirmed_after_closure": 78,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50088,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 186,
+        "terminal_mean_checks": 6,
+        "comparisons_reconstructed": 2238,
+        "stable_events_reconstructed": 283,
+        "unstable_runs_reconstructed": 49,
+        "events_confirmed_after_closure": 169,
+        "selected_events_confirmed_after_closure": 10,
+        "events_selected_at_onset": 10
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50089,
+      "counts": {
+        "annual_mean_checks": 6060,
+        "ghost_mean_columns": 144,
+        "terminal_mean_checks": 4,
+        "comparisons_reconstructed": 1907,
+        "stable_events_reconstructed": 241,
+        "unstable_runs_reconstructed": 21,
+        "events_confirmed_after_closure": 138,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50090,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 172,
+        "comparisons_reconstructed": 2127,
+        "stable_events_reconstructed": 273,
+        "unstable_runs_reconstructed": 41,
+        "events_confirmed_after_closure": 156,
+        "selected_events_confirmed_after_closure": 8,
+        "events_selected_at_onset": 8
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50091,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 70,
+        "comparisons_reconstructed": 863,
+        "stable_events_reconstructed": 171,
+        "unstable_runs_reconstructed": 25,
+        "events_confirmed_after_closure": 70,
+        "selected_events_confirmed_after_closure": 3,
+        "events_selected_at_onset": 3
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50092,
+      "counts": {
+        "annual_mean_checks": 6200,
+        "ghost_mean_columns": 166,
+        "comparisons_reconstructed": 1918,
+        "stable_events_reconstructed": 247,
+        "unstable_runs_reconstructed": 32,
+        "events_confirmed_after_closure": 134,
+        "selected_events_confirmed_after_closure": 6,
+        "events_selected_at_onset": 6
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50093,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 55,
+        "comparisons_reconstructed": 1676,
+        "stable_events_reconstructed": 159,
+        "unstable_runs_reconstructed": 25,
+        "events_confirmed_after_closure": 45,
+        "selected_events_confirmed_after_closure": 5,
+        "events_selected_at_onset": 5
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50094,
+      "counts": {
+        "annual_mean_checks": 6080,
+        "ghost_mean_columns": 209,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 2456,
+        "stable_events_reconstructed": 285,
+        "unstable_runs_reconstructed": 39,
+        "events_confirmed_after_closure": 184,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50095,
+      "counts": {
+        "annual_mean_checks": 6200,
+        "ghost_mean_columns": 311,
+        "terminal_mean_checks": 13,
+        "comparisons_reconstructed": 2829,
+        "stable_events_reconstructed": 387,
+        "unstable_runs_reconstructed": 46,
+        "events_confirmed_after_closure": 268,
+        "selected_events_confirmed_after_closure": 9,
+        "events_selected_at_onset": 9
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50096,
+      "counts": {
+        "annual_mean_checks": 6020,
+        "ghost_mean_columns": 74,
+        "comparisons_reconstructed": 866,
+        "stable_events_reconstructed": 179,
+        "unstable_runs_reconstructed": 19,
+        "events_confirmed_after_closure": 74,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50097,
+      "counts": {
+        "annual_mean_checks": 5970,
+        "ghost_mean_columns": 91,
+        "terminal_mean_checks": 4,
+        "comparisons_reconstructed": 874,
+        "stable_events_reconstructed": 179,
+        "unstable_runs_reconstructed": 18,
+        "events_confirmed_after_closure": 89,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50098,
+      "counts": {
+        "annual_mean_checks": 6030,
+        "ghost_mean_columns": 76,
+        "terminal_mean_checks": 2,
+        "comparisons_reconstructed": 985,
+        "stable_events_reconstructed": 173,
+        "unstable_runs_reconstructed": 14,
+        "events_confirmed_after_closure": 74,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50099,
+      "counts": {
+        "annual_mean_checks": 6010,
+        "ghost_mean_columns": 89,
+        "comparisons_reconstructed": 866,
+        "stable_events_reconstructed": 195,
+        "unstable_runs_reconstructed": 5,
+        "events_confirmed_after_closure": 89,
+        "selected_events_confirmed_after_closure": 2,
+        "events_selected_at_onset": 2
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    },
+    {
+      "seed": 50100,
+      "counts": {
+        "annual_mean_checks": 6000,
+        "ghost_mean_columns": 182,
+        "terminal_mean_checks": 3,
+        "comparisons_reconstructed": 1566,
+        "stable_events_reconstructed": 288,
+        "unstable_runs_reconstructed": 33,
+        "events_confirmed_after_closure": 167,
+        "selected_events_confirmed_after_closure": 7,
+        "events_selected_at_onset": 7
+      },
+      "maximum_annual_mean_error": 5.421010862427522e-20
+    }
+  ],
+  "reporting_audit": {
+    "complete": true,
+    "snapshot": "reports/full_v3_snapshots/pilot_100",
+    "kind": "complete_pilot",
+    "seeds": [
+      50001,
+      50002,
+      50003,
+      50004,
+      50005,
+      50006,
+      50007,
+      50008,
+      50009,
+      50010,
+      50011,
+      50012,
+      50013,
+      50014,
+      50015,
+      50016,
+      50017,
+      50018,
+      50019,
+      50020,
+      50021,
+      50022,
+      50023,
+      50024,
+      50025,
+      50026,
+      50027,
+      50028,
+      50029,
+      50030,
+      50031,
+      50032,
+      50033,
+      50034,
+      50035,
+      50036,
+      50037,
+      50038,
+      50039,
+      50040,
+      50041,
+      50042,
+      50043,
+      50044,
+      50045,
+      50046,
+      50047,
+      50048,
+      50049,
+      50050,
+      50051,
+      50052,
+      50053,
+      50054,
+      50055,
+      50056,
+      50057,
+      50058,
+      50059,
+      50060,
+      50061,
+      50062,
+      50063,
+      50064,
+      50065,
+      50066,
+      50067,
+      50068,
+      50069,
+      50070,
+      50071,
+      50072,
+      50073,
+      50074,
+      50075,
+      50076,
+      50077,
+      50078,
+      50079,
+      50080,
+      50081,
+      50082,
+      50083,
+      50084,
+      50085,
+      50086,
+      50087,
+      50088,
+      50089,
+      50090,
+      50091,
+      50092,
+      50093,
+      50094,
+      50095,
+      50096,
+      50097,
+      50098,
+      50099,
+      50100
+    ],
+    "counts": {
+      "structural_checks": 2223533,
+      "numeric_checks": 1275416,
+      "economic_opportunities_rows": 23248,
+      "opportunity_registry_rows": 157708,
+      "decisions_rows": 1033,
+      "deployments_rows": 1004,
+      "opportunity_rates_rows": 180,
+      "opportunity_seed_counts_rows": 8672
+    },
+    "maximum_numeric_copy_or_aggregation_error": 0.0,
+    "maximum_retained_deployment_gain_identity_residual": 1.0000000003410059e-10,
+    "gain_identity_absolute_tolerance": 1.500008881784197e-10,
+    "gain_serialization_decimal_places": 10,
+    "gain_identity_tolerance_rule": "Three half-unit rounding errors at ten decimal places plus four ulps at record scale",
+    "deployment_summary": {
+      "Greedy": {
+        "executed": 620,
+        "positive_gain_fraction": 0.1403225806451613,
+        "mean_gain_basis_points": -0.7121234661290322,
+        "mean_entry_cost_basis_points": 1.1896266903225805
+      },
+      "HAC": {
+        "executed": 285,
+        "positive_gain_fraction": 0.30526315789473685,
+        "mean_gain_basis_points": -0.25583312631578947,
+        "mean_entry_cost_basis_points": 1.2908938631578946
+      },
+      "Catoni": {
+        "executed": 0,
+        "positive_gain_fraction": null,
+        "mean_gain_basis_points": null,
+        "mean_entry_cost_basis_points": null
+      },
+      "Tail": {
+        "executed": 99,
+        "positive_gain_fraction": 1.0,
+        "mean_gain_basis_points": 0.9308326969696971,
+        "mean_entry_cost_basis_points": 1.5
+      }
+    },
+    "snapshot_seal_sha256": "0b3ad22975542ad02090d2fca116c1e004512da12d1545a99a7b7462fd6a4123",
+    "audit_source_sha256": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
+    "scope": "Independent JSON-to-report transcription, exact cohort/deployment membership, all 1/3/5-year event and market-specific rates, registry consistency and four per-market decision metrics. No new market, optimizer or score replay; stable-event adjudication and underlying conditional utility are not recomputed. Event populations remain method-specific and do not identify causal cross-method delay or waiting-cost effects. Serialized gain-field identity uses an explicit ten-decimal serialization bound, not the event-positivity tolerance or machine precision."
+  },
+  "snapshot_seal_sha256": "0b3ad22975542ad02090d2fca116c1e004512da12d1545a99a7b7462fd6a4123",
+  "audit_source_sha256": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724",
+  "reporting_auditor_source_sha256": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
+  "scope": "Independent batch reconstruction of all stable and unstable event labels, confirmations, delays and closure reasons from ordered annual conditional-score arrays, annual eligibility/selection flags, closure logs and one-block ghost continuations. Includes the separate JSON/CSV aggregation audit. No DGP resimulation, optimizer rerun or new market; the stored conditional-score formulas and selector decisions rely on their separately recorded arithmetic replay. Method-specific event populations do not identify causal cross-method delay or waiting-cost effects."
+}

@@ -1,4 +1,4 @@
-The reported full-strategy pilot snapshot contains 10 completed independent markets (0 requested snapshot markets remain incomplete). Each has 500 stocks, 100 signals, one training block and 14 out-of-sample blocks of 252 days. Independent arithmetic replay covers 10 of these completed markets. These are pilot observations; the separate 500-market final study is not asserted to be complete. Earlier baseline and fixed-reference markets, and later markets outside the specified snapshot, are not added to this count.
+The reported full-strategy pilot snapshot contains 100 completed independent markets (0 requested snapshot markets remain incomplete). Each has 500 stocks, 100 signals, one training block and 14 out-of-sample blocks of 252 days. Independent arithmetic replay covers 100 of these completed markets. These are pilot observations; the separate 500-market final study is not asserted to be complete. Earlier baseline and fixed-reference markets, and later markets outside the specified snapshot, are not added to this count.
 
 \begin{table}[H]\centering\small
 
@@ -10,23 +10,23 @@ Method & $h\bar U$ (MC SE) & Mean wealth & Inactive & Mean moves \\
 
 \midrule
 
-All Signals & 0.04526 (0.00420) & 1.920 & 0.000 & 0.00 \\
+All Signals & 0.04429 (0.00113) & 1.889 & 0.000 & 0.00 \\
 
-Greedy & 0.05206 (0.00277) & 2.097 & 0.071 & 4.90 \\
+Greedy & 0.05166 (0.00074) & 2.083 & 0.071 & 6.47 \\
 
-HAC & 0.05055 (0.00200) & 2.047 & 0.071 & 3.40 \\
+HAC & 0.05100 (0.00075) & 2.064 & 0.071 & 2.87 \\
 
 Catoni & 0.00000 (0.00000) & 1.000 & 1.000 & 0.00 \\
 
-Tail & 0.01272 (0.00156) & 1.199 & 0.800 & 1.00 \\
+Tail & 0.01104 (0.00043) & 1.170 & 0.821 & 0.99 \\
 
-Oracle & 0.05787 (0.00202) & 2.265 & 0.000 & 0.00 \\
+Oracle & 0.05844 (0.00050) & 2.282 & 0.000 & 0.00 \\
 
 \bottomrule\end{tabular}
 
 \caption{Full-strategy pilot means. Utility is daily utility rescaled by $h=252$, not an annual certainty equivalent. MC SE uses independent markets. Wealth includes waiting in cash and all modeled actual fund costs. Moves include terminal choices, which create no post-choice fund return.}\end{table}
 
-Tail makes 10 choices (ENTRY: 10, PARK: 0, REVIVE: 0, SWAP: 0), of which 10 are executed before the horizon. Its mean inactive fraction is 0.800. Successful initial certification therefore must be assessed alongside the returns foregone during waiting. The lifecycle counts delimit what this pilot can say about parking and revival.
+Tail makes 99 choices (ENTRY: 99, PARK: 0, REVIVE: 0, SWAP: 0), of which 99 are executed before the horizon. Its mean inactive fraction is 0.821. Successful initial certification therefore must be assessed alongside the returns foregone during waiting. The lifecycle counts delimit what this pilot can say about parking and revival.
 
 \begin{table}[H]\centering\small
 
@@ -38,13 +38,13 @@ Method & Eligible stable events & Criterion within year & Selected within year \
 
 \midrule
 
-Greedy & 732 & 582 & 32 \\
+Greedy & 7515 & 6435 & 368 \\
 
-HAC & 675 & 438 & 22 \\
+HAC & 5962 & 3788 & 199 \\
 
-Catoni & 469 & 0 & 0 \\
+Catoni & 4787 & 0 & 0 \\
 
-Tail & 469 & 0 & 0 \\
+Tail & 4760 & 0 & 0 \\
 
 \bottomrule\end{tabular}
 
@@ -60,11 +60,11 @@ Method & Executed & Positive gain & Mean gain (bp) & Entry cost (bp) \\
 
 \midrule
 
-Greedy & 48 & 0.208 & -0.395 & 1.066 \\
+Greedy & 620 & 0.140 & -0.712 & 1.190 \\
 
-HAC & 34 & 0.294 & -0.492 & 1.495 \\
+HAC & 285 & 0.305 & -0.256 & 1.291 \\
 
-Tail & 10 & 1.000 & 0.976 & 1.500 \\
+Tail & 99 & 1.000 & 0.931 & 1.500 \\
 
 \bottomrule\end{tabular}
 
@@ -86,8 +86,8 @@ Tail & 10 & 1.000 & 0.976 & 1.500 \\
 
 \end{figure}
 
-Paired Tail-minus-reference differences in $h\bar U$ (95\% Student MC intervals) are All Signals: -0.03255 [-0.04228, -0.02281]; Greedy: -0.03935 [-0.04386, -0.03484]. These exploratory intervals use independent paired markets and are unadjusted across comparisons; they do not give guarantees for a new financial law. The reproducibility tables retain every benchmark contrast.
+Paired Tail-minus-reference differences in $h\bar U$ (95\% Student MC intervals) are All Signals: -0.03325 [-0.03560, -0.03089]; Greedy: -0.04062 [-0.04187, -0.03938]. These exploratory intervals use independent paired markets and are unadjusted across comparisons; they do not give guarantees for a new financial law. The reproducibility tables retain every benchmark contrast.
 
-All Signals permits every candidate but does not hold all of them: its mean number of positions exceeding $10^{-6}$ in absolute sleeve weight is 4.80. This descriptive count is computed after the run and changes no allocation or test. The optimizer already produces a sparse portfolio, so it is a substantive baseline for the value of an additional statistical support filter. No fixed per-signal research cost is charged in this design.
+All Signals permits every candidate but does not hold all of them: its mean number of positions exceeding $10^{-6}$ in absolute sleeve weight is 4.54. This descriptive count is computed after the run and changes no allocation or test. The optimizer already produces a sparse portfolio, so it is a substantive baseline for the value of an additional statistical support filter. No fixed per-signal research cost is charged in this design.
 
-Catoni executes a move in 0 of 10 markets (Wilson 95\% interval for the market-level fraction [0.000, 0.278]). A zero observed fraction does not establish zero probability of future entry.
+Catoni executes a move in 0 of 100 markets (Wilson 95\% interval for the market-level fraction [0.000, 0.037]). A zero observed fraction does not establish zero probability of future entry.

@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-10-17T05:06:08.437001+02:00",
-  "confirmed_live_process": "64355 Fri Oct 16 22:56:50 2026     06:09:18 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T05:17:48.271182+02:00",
+  "confirmed_live_process": null,
   "completed_pilot_seeds": [
     50001,
     50002,
@@ -200,7 +200,11 @@
     50093,
     50094,
     50095,
-    50096
+    50096,
+    50097,
+    50098,
+    50099,
+    50100
   ],
   "completed_source_hashes": [
     "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3"
@@ -208,11 +212,17 @@
   "stage_progress": {
     "stage": "pilot",
     "requested_count": 100,
-    "prefix_completed_and_replayed": 90,
+    "prefix_completed_and_replayed": 100,
     "batch_size": 10
   },
-  "completed_final_seeds": [],
+  "completed_final_seeds": [
+    60001,
+    60002
+  ],
   "continuation_controller_pid": 91419,
-  "manuscript_snapshot": "First-ten v2 financial table retained; repeated snapshots do not add independent market replications.",
-  "scope": "Read-only live checkpoint, not full-pilot/final completion."
+  "manuscript_snapshot": "Complete hundred-market v3 pilot; historical first-ten v2 retained separately, repeated seeds not added.",
+  "scope": "Complete pilot checkpoint and current final generation observation; no final completion claim.",
+  "pilot_process_ended": true,
+  "recorded_final_replay_complete_seeds": [],
+  "confirmed_live_final_process": "37346 Sat Oct 17 05:11:27 2026     06:22 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py main --count 500 --workers 2 --batch-size 10 --compact-verified-checkpoints"
 }
