@@ -1,7 +1,7 @@
 {
-  "captured_at": "2026-10-17T04:37:35.293591+02:00",
-  "confirmed_live_controller": "91419 Sat Oct 17 01:18:35 2026     03:19:00   6272 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2",
-  "confirmed_live_pilot": "64355 Fri Oct 16 22:56:50 2026     05:40:45 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
+  "captured_at": "2026-10-17T05:06:08.437001+02:00",
+  "confirmed_live_controller": "91419 Sat Oct 17 01:18:35 2026     03:47:33 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2",
+  "confirmed_live_pilot": "64355 Fri Oct 16 22:56:50 2026     06:09:18 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints",
   "status": {
     "controller_pid": 91419,
     "pilot_pid": 64355,
@@ -9,7 +9,7 @@
     "source_sha256": "8f250cf46d8ab94d9d6ec993f692b658a67b128792490c8cc6b2b1d7d88ea062",
     "analysis_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
     "phase": "waiting_for_pilot",
-    "updated_at": "2026-10-17T02:37:12.787372+00:00",
+    "updated_at": "2026-10-17T03:05:43.853701+00:00",
     "pilot_identity": [
       "Fri",
       "Oct",

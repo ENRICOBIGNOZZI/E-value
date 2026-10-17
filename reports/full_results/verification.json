@@ -53,8 +53,8 @@
     "paper/sections/17_multivariate_proofs.tex": "ae5f2bd4b92131d89aaf3607abc71e1566fa33181bdc2ae53ee56a85c58f9e21"
   },
   "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar and fixed-dimensional estimated-matrix Gaussian waiting theory, scalar diagnostic and directional moment-class theory included. Historical derivations excluded.",
-  "current_repository_tests_passed": 223,
-  "current_repository_test_report": "reports/full_test_results_with_final_diagnostics.txt",
+  "current_repository_tests_passed": 251,
+  "current_repository_test_report": "reports/full_test_results_with_storage_maintenance.txt",
   "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 200-test suite includes numerical/scalar/lambda controls, fourteen snapshot-reporting, twelve final-assessment, nineteen continuation, twenty-four event-reporting and twenty-seven independent event-reconstruction controls, plus twenty-five Gaussian-envelope reporting/statistical controls and twenty-four final-packet controls. Synthetic fixtures are not market observations.",
   "lambda_power_study": {
     "source_freeze_commit": "bbd619f",
@@ -317,5 +317,38 @@
       "https://www.sciencedirect.com/science/article/abs/pii/S0167715202002079"
     ],
     "scope": "Targeted attribution: portfolio estimation utility loss, static parametric expected-regret constants near cash, and classical logarithmic Gaussian/martingale averaging. Access/assumption limits are explicit. The paper fixes a reference learner and an evidence-constrained stopping objective; no new allocation-regret framework, general logarithmic strong law, expected stopped-cost theorem or exhaustive priority claim. No scientific/theorem/numeric change."
+  },
+  "physical_storage_maintenance": {
+    "protocol": "reports/storage_maintenance_protocol.md",
+    "protocol_sha256": "70ade4f2cd0a82b65adfc454b858293e3c228a14ffaaee28f015effcf90d6b11",
+    "source_sha256": {
+      "scripts/compress_verified_json_storage.py": "c4bf8ee40c0931ef5ae31e703ae9882ae51b177f7d24694501693412a35514e9",
+      "scripts/maintain_final_storage.py": "2458d6281595795cd5f6d95bd9df1ba12a5a6f1291f56562ec7dabd38ba2fa5d"
+    },
+    "software_controls": 28,
+    "software_report": "reports/storage_compression_tests.txt",
+    "software_report_sha256": "7e6a6f8f1489b2a825b44abd8395eee0c1f8fa5351ab3edb5831fa3bf3664432",
+    "full_test_report": "reports/full_test_results_with_storage_maintenance.txt",
+    "full_test_report_sha256": "d12084d3a89959cfa0ec94a0b47f250175566cb8222c2a5256b09b976c4e47f9",
+    "full_tests_passed": 251,
+    "transaction": "reports/full_v3_results/json_storage_compression_090.json",
+    "transaction_sha256": "dde25c65daad070d7b59afeb6ed4c780280164725dc5a383087ce04291d593ce",
+    "verified_pilot_prefix": 90,
+    "changed_json_files": 1849,
+    "allocated_block_bytes_reduction": 140701696,
+    "all_current_input_digests_preserved": true,
+    "live_checkpoint": "reports/full_v3_results/storage_maintenance_checkpoint.json",
+    "live_checkpoint_sha256": "16ce3d06b87c94cfdc6911c0e2ce3f4b1bb9727744dd0843268e58087407653d",
+    "retained_disk_reserve_bytes": 2147483648,
+    "scope": "Operational physical storage only. Native compression preserves every logical scientific byte; no simulation, source/configuration, analysis, endpoint or replay-count change. Completed verified final prefixes are observed separately; no study is launched/restarted. Allocation accounting does not guarantee future capacity or final completion."
+  },
+  "final_table_typesetting": {
+    "verification": "reports/final_manuscript_typesetting_fixture/verification.json",
+    "verification_sha256": "7b67f9616f6c490ef5cc95bdfb6571713d7c2ce454f3e61e1ba80739776528be",
+    "actual_financial_markets": 0,
+    "pages": 3,
+    "tables": 5,
+    "figure_placeholders": 2,
+    "scope": "Synthetic table/caption typesetting review only. Negative values, missing/empty groups and long fictional counts are labeled on every page. Future actual-final tables/figures still require rendered review."
   }
 }

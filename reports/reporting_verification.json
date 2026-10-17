@@ -33,7 +33,9 @@
     "scripts/gaussian_power_envelope.py": "09e7eb6523265159114ae6c314cc268b3ef78dcaf1ad712863a4b89f41a0fe3d",
     "scripts/build_final_manuscript_results.py": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c",
     "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
-    "scripts/build_final_diagnostics.py": "bbd34f8d62ab4fae9dab2a6f9a698e92d3382f3c3be1b89dcf954a4c1697a2b4"
+    "scripts/build_final_diagnostics.py": "bbd34f8d62ab4fae9dab2a6f9a698e92d3382f3c3be1b89dcf954a4c1697a2b4",
+    "scripts/compress_verified_json_storage.py": "c4bf8ee40c0931ef5ae31e703ae9882ae51b177f7d24694501693412a35514e9",
+    "scripts/maintain_final_storage.py": "2458d6281595795cd5f6d95bd9df1ba12a5a6f1291f56562ec7dabd38ba2fa5d"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
@@ -265,5 +267,38 @@
       "https://www.sciencedirect.com/science/article/abs/pii/S0167715202002079"
     ],
     "scope": "Targeted attribution: portfolio estimation utility loss, static parametric expected-regret constants near cash, and classical logarithmic Gaussian/martingale averaging. Access/assumption limits are explicit. The paper fixes a reference learner and an evidence-constrained stopping objective; no new allocation-regret framework, general logarithmic strong law, expected stopped-cost theorem or exhaustive priority claim. No scientific/theorem/numeric change."
+  },
+  "physical_storage_maintenance": {
+    "protocol": "reports/storage_maintenance_protocol.md",
+    "protocol_sha256": "70ade4f2cd0a82b65adfc454b858293e3c228a14ffaaee28f015effcf90d6b11",
+    "source_sha256": {
+      "scripts/compress_verified_json_storage.py": "c4bf8ee40c0931ef5ae31e703ae9882ae51b177f7d24694501693412a35514e9",
+      "scripts/maintain_final_storage.py": "2458d6281595795cd5f6d95bd9df1ba12a5a6f1291f56562ec7dabd38ba2fa5d"
+    },
+    "software_controls": 28,
+    "software_report": "reports/storage_compression_tests.txt",
+    "software_report_sha256": "7e6a6f8f1489b2a825b44abd8395eee0c1f8fa5351ab3edb5831fa3bf3664432",
+    "full_test_report": "reports/full_test_results_with_storage_maintenance.txt",
+    "full_test_report_sha256": "d12084d3a89959cfa0ec94a0b47f250175566cb8222c2a5256b09b976c4e47f9",
+    "full_tests_passed": 251,
+    "transaction": "reports/full_v3_results/json_storage_compression_090.json",
+    "transaction_sha256": "dde25c65daad070d7b59afeb6ed4c780280164725dc5a383087ce04291d593ce",
+    "verified_pilot_prefix": 90,
+    "changed_json_files": 1849,
+    "allocated_block_bytes_reduction": 140701696,
+    "all_current_input_digests_preserved": true,
+    "live_checkpoint": "reports/full_v3_results/storage_maintenance_checkpoint.json",
+    "live_checkpoint_sha256": "16ce3d06b87c94cfdc6911c0e2ce3f4b1bb9727744dd0843268e58087407653d",
+    "retained_disk_reserve_bytes": 2147483648,
+    "scope": "Operational physical storage only. Native compression preserves every logical scientific byte; no simulation, source/configuration, analysis, endpoint or replay-count change. Completed verified final prefixes are observed separately; no study is launched/restarted. Allocation accounting does not guarantee future capacity or final completion."
+  },
+  "final_table_typesetting": {
+    "verification": "reports/final_manuscript_typesetting_fixture/verification.json",
+    "verification_sha256": "7b67f9616f6c490ef5cc95bdfb6571713d7c2ce454f3e61e1ba80739776528be",
+    "actual_financial_markets": 0,
+    "pages": 3,
+    "tables": 5,
+    "figure_placeholders": 2,
+    "scope": "Synthetic table/caption typesetting review only. Negative values, missing/empty groups and long fictional counts are labeled on every page. Future actual-final tables/figures still require rendered review."
   }
 }

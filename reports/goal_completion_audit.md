@@ -27,7 +27,8 @@ the full objective is complete.
 | Response-independent economic event assessment | Counterfactual continuations retain fast responses; separate batch positive-run reconstruction uses annual conditional-score arrays, flags and ghost continuations | First-twenty reconstruction reproduces 4,895 stable events, 483 unstable runs and 118 prompt selected responses confirmed after closure; full-size evidence pending and method-specific populations do not identify causal delay rankings |
 | Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing, cash-PARK/heteroscedastic Catoni/iid widths, economic experimentation and log-growth/test-family clocks, portfolio estimation utility loss/static regret and logarithmic Gaussian/martingale averaging, plus explicit ENTRY utility-null versus joint mean/variance-null mapping; TV corollary distinguished from weak-topology continuity theorem | **Incomplete**; targeted audits improve attribution and hypothesis precision but do not prove priority |
 | Frozen large final study | Original pilot 3 retained; v1 full study superseded; v2 reached 19 completed plus one failed market; v3 recovery verified and full replay running; final 0/500 | **Not executed**; twenty mechanism markets do not fill these counts |
-| Complete-final manuscript generation | Separate exact-500 packet builder; source/assessment/numeric/event/raw-replay guards; 24 synthetic controls and current production rejection without a final snapshot | Prepared and tested; no production final packet or final-paper integration yet |
+| Complete-final manuscript generation | Separate exact-500 packet builder; source/assessment/numeric/event/raw-replay guards; 24 synthetic controls, a visually checked three-page table-only software fixture, and production rejection without a final snapshot | Prepared and tested; no production final packet or final-paper integration yet |
+| Physical storage with scientific-byte preservation | Verified first-ninety native JSON transaction, unchanged current replay digests, separate live final-prefix observer and 28 failure/scheduling controls | Prepared and operating; no original producer/controller changes or reduced reserve; measured allocation is not a final-capacity guarantee |
 | Handoff test/output/graphics traceability | Twelve test groups mapped to actual functions; frozen numerical choices and output-name equivalents explicit; supplementary graphics builder with exact-500 gates and 23 controls | Implemented; eight-page sealed-twenty pilot preview visually verified. Complete-final diagnostics and paper integration remain pending |
 | Reviewable manuscript and figures | 48-page compiled PDF; evidence-panel map; final economic estimand and timing explicit; count/unit/source audit and visual QA | Working draft; complete final study and publication review remain outstanding |
 
@@ -49,9 +50,9 @@ the draft makes no unqualified priority claim. These paths do not add financial 
 The 48-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
-223 passing tests, including fourteen reporting-gate, twelve final-assessment,
+251 passing tests, including fourteen reporting-gate, twelve final-assessment,
 nineteen continuation, twenty-four event-reporting and twenty-seven
-event-reconstruction controls, plus twenty-five Gaussian-envelope, twenty-four final-packet and twenty-three supplementary-diagnostic controls. The fresh optimized-constant companion independently checks
+event-reconstruction controls, plus twenty-five Gaussian-envelope, twenty-four final-packet and twenty-three supplementary-diagnostic controls, plus twenty-eight physical-storage/observer controls. The fresh optimized-constant companion independently checks
 20,497,504 scalar values, with sixteen-path score replay per law, and all
 twelve model-power calibrations pass. The numerical boundary correction replays the same pool,
 rather than adding replications or selecting favorable seeds.

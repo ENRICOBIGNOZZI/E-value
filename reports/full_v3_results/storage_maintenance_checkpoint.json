@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-10-17T05:06:08.437001+02:00",
+  "confirmed_live_storage_process": "35427 Sat Oct 17 05:00:51 2026     05:17 /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/maintain_final_storage.py --controller-pid 91419",
+  "status": {
+    "pid": 35427,
+    "controller_pid": 91419,
+    "controller_identity": [
+      "Sat",
+      "Oct",
+      "17",
+      "01:18:35",
+      "2026",
+      "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/continue_full_study.py --pilot-pid 64355 --workers 2"
+    ],
+    "source_sha256": {
+      "/Users/enrico/Desktop/PHD/E-values/scripts/maintain_final_storage.py": "2458d6281595795cd5f6d95bd9df1ba12a5a6f1291f56562ec7dabd38ba2fa5d",
+      "/Users/enrico/Desktop/PHD/E-values/scripts/compress_verified_json_storage.py": "c4bf8ee40c0931ef5ae31e703ae9882ae51b177f7d24694501693412a35514e9"
+    },
+    "last_verified_prefix": 0,
+    "reports": [],
+    "phase": "waiting_for_verified_final_prefix",
+    "updated_at": "2026-10-17T03:05:24.474493+00:00",
+    "observed_prefix": 0
+  },
+  "protocol_sha256": "70ade4f2cd0a82b65adfc454b858293e3c228a14ffaaee28f015effcf90d6b11",
+  "scope": "Actual live optional storage observer. It launches no study, preserves scientific bytes and is not evidence of final-study completion."
+}

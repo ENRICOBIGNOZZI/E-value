@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "kind": "synthetic_table_typesetting_review",
+  "captured_at": "2026-10-17T02:55:42.561743+00:00",
+  "actual_financial_markets": 0,
+  "synthetic_identifiers": 500,
+  "pages": 3,
+  "tables": 5,
+  "figure_placeholders": 2,
+  "packet_builder_sha256": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c",
+  "fixture_source": "tests/test_final_manuscript_packet.py::evidence",
+  "fixture_source_sha256": "bf378f04a77d7a8a01b68b28fda3e44a4b35a4f1ec5bd7d65af054f0230c4178",
+  "paper_preamble_source_sha256": "c4dd4b66fa4b66ffbadf83bf6f27d9f6d6ff3993f4924205e7e873ecc4562a00",
+  "main_manuscript_pdf_sha256": "80efdbddaccd646f62f0b83bef824885eaea31cd78a7b11aa26b56b06d524d73",
+  "artifacts_sha256": {
+    "SOFTWARE_FIXTURE.tex": "119258ed4fef4111408c5413932440d8cffabe8a12fa041735f86331ade59e25",
+    "SOFTWARE_FIXTURE.pdf": "a0e900ce918b170cab1aefaa670b9e01369699abb0d8af0f8fb724df174b0a18",
+    "compile.txt": "5dc4ec7367c40e52166eb85f0432f5ca060f56b8543de2b9394d76c0357dc070"
+  },
+  "reviewed": "All three pages rendered at 1400 pixels and individually inspected. No clipped/overlapping tables, missing text, box warnings or unresolved references. Every page carries SOFTWARE FIXTURE and a no-financial-evidence footer.",
+  "scope": "Typesetting only. Five tables exercise a fictional negative primary contrast, empty executed-deployment groups, terminal exclusion and seven-digit fictional event counts. Figure boxes are placeholders. Raw replay validation is stubbed only in the imported software fixture. This is not pilot/final evidence, a production packet, QA of actual final figures or completion of the paper.",
+  "raw_compiler_log_sha256": "450309386813d0e59b444bd039503820ba802ec3b4585c903d66f146cfc5f25b",
+  "compiler_log_normalization": "Trailing whitespace removed from the retained readable log; raw compiler log remains in the temporary fixture directory."
+}

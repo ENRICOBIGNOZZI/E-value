@@ -1,0 +1,75 @@
+{
+  "captured_at": "2026-10-17T02:53:13.069635+00:00",
+  "removed_only_regenerable_old_png_render_caches": true,
+  "removed": [
+    {
+      "path": "tmp/cash-park-attribution-pdf-qa",
+      "png_files": 44,
+      "logical_bytes": 11130622
+    },
+    {
+      "path": "tmp/directional-hypothesis-pdf-qa",
+      "png_files": 46,
+      "logical_bytes": 11461955
+    },
+    {
+      "path": "tmp/economic-waiting-pdf-qa",
+      "png_files": 47,
+      "logical_bytes": 11593241
+    },
+    {
+      "path": "tmp/evidence-scope-pdf-qa",
+      "png_files": 47,
+      "logical_bytes": 11489767
+    },
+    {
+      "path": "tmp/final-diagnostics-preview-qa",
+      "png_files": 10,
+      "logical_bytes": 878366
+    },
+    {
+      "path": "tmp/gaussian-envelope-pdf-qa",
+      "png_files": 46,
+      "logical_bytes": 11270865
+    },
+    {
+      "path": "tmp/geometric-bet-pdf-qa",
+      "png_files": 46,
+      "logical_bytes": 11430286
+    },
+    {
+      "path": "tmp/matrix-cap-final-qa",
+      "png_files": 51,
+      "logical_bytes": 13431528
+    },
+    {
+      "path": "tmp/multivariate-waiting-pdf-qa",
+      "png_files": 46,
+      "logical_bytes": 10291835
+    },
+    {
+      "path": "tmp/pdfs",
+      "png_files": 585,
+      "logical_bytes": 126118660
+    },
+    {
+      "path": "tmp/portfolio-learning-final-qa",
+      "png_files": 49,
+      "logical_bytes": 10604487
+    },
+    {
+      "path": "tmp/uniform-family-pdf-qa",
+      "png_files": 44,
+      "logical_bytes": 11091120
+    }
+  ],
+  "logical_bytes_removed": 240792732,
+  "filesystem_free_before": 14089134080,
+  "filesystem_free_after": 14335709184,
+  "retained_current_render_directories": [
+    "final-diagnostics-retained-qa",
+    "final-packet-typesetting-qa",
+    "portfolio-learning-final48-qa"
+  ],
+  "scope": "Only task-created superseded PDF render PNG caches. Source PDFs, tracked artifacts, every simulation/empirical file and live logs are retained. No evidence or scientific source changes; current manuscript/preview/typesetting renders retained."
+}

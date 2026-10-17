@@ -463,3 +463,14 @@ are in [`reports/final_diagnostics_protocol.md`](reports/final_diagnostics_proto
 and [`reports/handoff_acceptance_audit.md`](reports/handoff_acceptance_audit.md).
 Its pilot preview uses the already sealed twenty markets and adds no final
 evidence or manuscript promotion.
+
+Final table layouts have also been compiled with explicitly labeled software
+fixtures, including negative contrasts, empty deployment groups and long event
+counts. The three-page fixture is retained under
+`reports/final_manuscript_typesetting_fixture`; it contains no financial data.
+
+Optional macOS storage maintenance compresses only JSON from replay-verified
+completed markets. It preserves every logical byte and input digest. A
+separate observer handles verified final prefixes without launching or
+restarting studies; the existing disk reserve is unchanged. See
+[`reports/storage_maintenance_protocol.md`](reports/storage_maintenance_protocol.md).

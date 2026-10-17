@@ -1,0 +1,515 @@
+{
+  "captured_at": "2026-10-17T05:03:34.723189+02:00",
+  "completed_pilot_markets": 100,
+  "remaining_pilot_plus_final": 500,
+  "observed_seed_bytes": [
+    {
+      "seed": 50001,
+      "logical_bytes": 24798887,
+      "allocated_bytes": 23711744
+    },
+    {
+      "seed": 50002,
+      "logical_bytes": 26369807,
+      "allocated_bytes": 25067520
+    },
+    {
+      "seed": 50003,
+      "logical_bytes": 24865229,
+      "allocated_bytes": 24133632
+    },
+    {
+      "seed": 50004,
+      "logical_bytes": 24733519,
+      "allocated_bytes": 23674880
+    },
+    {
+      "seed": 50005,
+      "logical_bytes": 23338131,
+      "allocated_bytes": 22409216
+    },
+    {
+      "seed": 50006,
+      "logical_bytes": 24647292,
+      "allocated_bytes": 23732224
+    },
+    {
+      "seed": 50007,
+      "logical_bytes": 22467691,
+      "allocated_bytes": 21438464
+    },
+    {
+      "seed": 50008,
+      "logical_bytes": 25429317,
+      "allocated_bytes": 24457216
+    },
+    {
+      "seed": 50009,
+      "logical_bytes": 24461512,
+      "allocated_bytes": 23433216
+    },
+    {
+      "seed": 50010,
+      "logical_bytes": 24907005,
+      "allocated_bytes": 23904256
+    },
+    {
+      "seed": 50011,
+      "logical_bytes": 24049563,
+      "allocated_bytes": 22827008
+    },
+    {
+      "seed": 50012,
+      "logical_bytes": 23605445,
+      "allocated_bytes": 22917120
+    },
+    {
+      "seed": 50013,
+      "logical_bytes": 23679801,
+      "allocated_bytes": 22462464
+    },
+    {
+      "seed": 50014,
+      "logical_bytes": 29065008,
+      "allocated_bytes": 27963392
+    },
+    {
+      "seed": 50015,
+      "logical_bytes": 24813338,
+      "allocated_bytes": 24154112
+    },
+    {
+      "seed": 50016,
+      "logical_bytes": 26541722,
+      "allocated_bytes": 25313280
+    },
+    {
+      "seed": 50017,
+      "logical_bytes": 25826058,
+      "allocated_bytes": 24379392
+    },
+    {
+      "seed": 50018,
+      "logical_bytes": 24954939,
+      "allocated_bytes": 23711744
+    },
+    {
+      "seed": 50019,
+      "logical_bytes": 23261211,
+      "allocated_bytes": 22073344
+    },
+    {
+      "seed": 50020,
+      "logical_bytes": 27010053,
+      "allocated_bytes": 25718784
+    },
+    {
+      "seed": 50021,
+      "logical_bytes": 22734718,
+      "allocated_bytes": 21958656
+    },
+    {
+      "seed": 50022,
+      "logical_bytes": 23778787,
+      "allocated_bytes": 22634496
+    },
+    {
+      "seed": 50023,
+      "logical_bytes": 26711414,
+      "allocated_bytes": 25600000
+    },
+    {
+      "seed": 50024,
+      "logical_bytes": 26896278,
+      "allocated_bytes": 25923584
+    },
+    {
+      "seed": 50025,
+      "logical_bytes": 24235218,
+      "allocated_bytes": 23556096
+    },
+    {
+      "seed": 50026,
+      "logical_bytes": 24937084,
+      "allocated_bytes": 23871488
+    },
+    {
+      "seed": 50027,
+      "logical_bytes": 20610390,
+      "allocated_bytes": 19898368
+    },
+    {
+      "seed": 50028,
+      "logical_bytes": 23467654,
+      "allocated_bytes": 22720512
+    },
+    {
+      "seed": 50029,
+      "logical_bytes": 25831678,
+      "allocated_bytes": 24416256
+    },
+    {
+      "seed": 50030,
+      "logical_bytes": 26685947,
+      "allocated_bytes": 25358336
+    },
+    {
+      "seed": 50031,
+      "logical_bytes": 20938034,
+      "allocated_bytes": 19939328
+    },
+    {
+      "seed": 50032,
+      "logical_bytes": 22966138,
+      "allocated_bytes": 22036480
+    },
+    {
+      "seed": 50033,
+      "logical_bytes": 27320142,
+      "allocated_bytes": 26607616
+    },
+    {
+      "seed": 50034,
+      "logical_bytes": 25005347,
+      "allocated_bytes": 24121344
+    },
+    {
+      "seed": 50035,
+      "logical_bytes": 24793326,
+      "allocated_bytes": 23265280
+    },
+    {
+      "seed": 50036,
+      "logical_bytes": 25875084,
+      "allocated_bytes": 24711168
+    },
+    {
+      "seed": 50037,
+      "logical_bytes": 24564584,
+      "allocated_bytes": 23711744
+    },
+    {
+      "seed": 50038,
+      "logical_bytes": 27000936,
+      "allocated_bytes": 26165248
+    },
+    {
+      "seed": 50039,
+      "logical_bytes": 23568101,
+      "allocated_bytes": 22781952
+    },
+    {
+      "seed": 50040,
+      "logical_bytes": 24892043,
+      "allocated_bytes": 23474176
+    },
+    {
+      "seed": 50041,
+      "logical_bytes": 22399897,
+      "allocated_bytes": 21274624
+    },
+    {
+      "seed": 50042,
+      "logical_bytes": 24665375,
+      "allocated_bytes": 23359488
+    },
+    {
+      "seed": 50043,
+      "logical_bytes": 27157222,
+      "allocated_bytes": 26439680
+    },
+    {
+      "seed": 50044,
+      "logical_bytes": 22675304,
+      "allocated_bytes": 21729280
+    },
+    {
+      "seed": 50045,
+      "logical_bytes": 25407918,
+      "allocated_bytes": 24240128
+    },
+    {
+      "seed": 50046,
+      "logical_bytes": 25647109,
+      "allocated_bytes": 24879104
+    },
+    {
+      "seed": 50047,
+      "logical_bytes": 27525267,
+      "allocated_bytes": 26722304
+    },
+    {
+      "seed": 50048,
+      "logical_bytes": 26995515,
+      "allocated_bytes": 25763840
+    },
+    {
+      "seed": 50049,
+      "logical_bytes": 24144920,
+      "allocated_bytes": 23093248
+    },
+    {
+      "seed": 50050,
+      "logical_bytes": 22590778,
+      "allocated_bytes": 21487616
+    },
+    {
+      "seed": 50051,
+      "logical_bytes": 25528924,
+      "allocated_bytes": 24580096
+    },
+    {
+      "seed": 50052,
+      "logical_bytes": 27345658,
+      "allocated_bytes": 26120192
+    },
+    {
+      "seed": 50053,
+      "logical_bytes": 25315260,
+      "allocated_bytes": 23834624
+    },
+    {
+      "seed": 50054,
+      "logical_bytes": 29780286,
+      "allocated_bytes": 28508160
+    },
+    {
+      "seed": 50055,
+      "logical_bytes": 23550836,
+      "allocated_bytes": 22654976
+    },
+    {
+      "seed": 50056,
+      "logical_bytes": 27514435,
+      "allocated_bytes": 26689536
+    },
+    {
+      "seed": 50057,
+      "logical_bytes": 24003963,
+      "allocated_bytes": 22794240
+    },
+    {
+      "seed": 50058,
+      "logical_bytes": 27976873,
+      "allocated_bytes": 26595328
+    },
+    {
+      "seed": 50059,
+      "logical_bytes": 25811160,
+      "allocated_bytes": 25051136
+    },
+    {
+      "seed": 50060,
+      "logical_bytes": 27730638,
+      "allocated_bytes": 26841088
+    },
+    {
+      "seed": 50061,
+      "logical_bytes": 27870542,
+      "allocated_bytes": 26800128
+    },
+    {
+      "seed": 50062,
+      "logical_bytes": 26151053,
+      "allocated_bytes": 25341952
+    },
+    {
+      "seed": 50063,
+      "logical_bytes": 23733159,
+      "allocated_bytes": 22708224
+    },
+    {
+      "seed": 50064,
+      "logical_bytes": 22199423,
+      "allocated_bytes": 20996096
+    },
+    {
+      "seed": 50065,
+      "logical_bytes": 23134109,
+      "allocated_bytes": 22331392
+    },
+    {
+      "seed": 50066,
+      "logical_bytes": 25311022,
+      "allocated_bytes": 24006656
+    },
+    {
+      "seed": 50067,
+      "logical_bytes": 26394578,
+      "allocated_bytes": 25022464
+    },
+    {
+      "seed": 50068,
+      "logical_bytes": 21899328,
+      "allocated_bytes": 21012480
+    },
+    {
+      "seed": 50069,
+      "logical_bytes": 24267670,
+      "allocated_bytes": 23199744
+    },
+    {
+      "seed": 50070,
+      "logical_bytes": 23473349,
+      "allocated_bytes": 22720512
+    },
+    {
+      "seed": 50071,
+      "logical_bytes": 20896549,
+      "allocated_bytes": 20140032
+    },
+    {
+      "seed": 50072,
+      "logical_bytes": 23392551,
+      "allocated_bytes": 22654976
+    },
+    {
+      "seed": 50073,
+      "logical_bytes": 22516544,
+      "allocated_bytes": 21544960
+    },
+    {
+      "seed": 50074,
+      "logical_bytes": 25135615,
+      "allocated_bytes": 24014848
+    },
+    {
+      "seed": 50075,
+      "logical_bytes": 25105995,
+      "allocated_bytes": 23793664
+    },
+    {
+      "seed": 50076,
+      "logical_bytes": 25116736,
+      "allocated_bytes": 24051712
+    },
+    {
+      "seed": 50077,
+      "logical_bytes": 25088353,
+      "allocated_bytes": 23969792
+    },
+    {
+      "seed": 50078,
+      "logical_bytes": 22589114,
+      "allocated_bytes": 21880832
+    },
+    {
+      "seed": 50079,
+      "logical_bytes": 22028899,
+      "allocated_bytes": 21041152
+    },
+    {
+      "seed": 50080,
+      "logical_bytes": 25033853,
+      "allocated_bytes": 24252416
+    },
+    {
+      "seed": 50081,
+      "logical_bytes": 23786831,
+      "allocated_bytes": 22233088
+    },
+    {
+      "seed": 50082,
+      "logical_bytes": 23895939,
+      "allocated_bytes": 22663168
+    },
+    {
+      "seed": 50083,
+      "logical_bytes": 25211713,
+      "allocated_bytes": 24313856
+    },
+    {
+      "seed": 50084,
+      "logical_bytes": 22883993,
+      "allocated_bytes": 21487616
+    },
+    {
+      "seed": 50085,
+      "logical_bytes": 20909121,
+      "allocated_bytes": 19636224
+    },
+    {
+      "seed": 50086,
+      "logical_bytes": 23780704,
+      "allocated_bytes": 23113728
+    },
+    {
+      "seed": 50087,
+      "logical_bytes": 26928910,
+      "allocated_bytes": 26140672
+    },
+    {
+      "seed": 50088,
+      "logical_bytes": 28593866,
+      "allocated_bytes": 27287552
+    },
+    {
+      "seed": 50089,
+      "logical_bytes": 22281055,
+      "allocated_bytes": 21106688
+    },
+    {
+      "seed": 50090,
+      "logical_bytes": 27210275,
+      "allocated_bytes": 25919488
+    },
+    {
+      "seed": 50091,
+      "logical_bytes": 21715298,
+      "allocated_bytes": 22233088
+    },
+    {
+      "seed": 50092,
+      "logical_bytes": 24342584,
+      "allocated_bytes": 24854528
+    },
+    {
+      "seed": 50093,
+      "logical_bytes": 22281635,
+      "allocated_bytes": 22798336
+    },
+    {
+      "seed": 50094,
+      "logical_bytes": 25740638,
+      "allocated_bytes": 26238976
+    },
+    {
+      "seed": 50095,
+      "logical_bytes": 24093018,
+      "allocated_bytes": 24592384
+    },
+    {
+      "seed": 50096,
+      "logical_bytes": 23963011,
+      "allocated_bytes": 24481792
+    },
+    {
+      "seed": 50097,
+      "logical_bytes": 23711694,
+      "allocated_bytes": 24244224
+    },
+    {
+      "seed": 50098,
+      "logical_bytes": 24515776,
+      "allocated_bytes": 25059328
+    },
+    {
+      "seed": 50099,
+      "logical_bytes": 26230982,
+      "allocated_bytes": 26755072
+    },
+    {
+      "seed": 50100,
+      "logical_bytes": 25229698,
+      "allocated_bytes": 25763840
+    }
+  ],
+  "mean_seed_logical_bytes": 24740509.52,
+  "max_seed_logical_bytes": 29780286,
+  "filesystem_free_bytes": 14149836800,
+  "mean_uncompressed_logical_projection_remaining": 12370254760.0,
+  "existing_runner_reserve_bytes": 2147483648,
+  "verified_ninety_json_allocated_reduction": 140701696,
+  "conditional_final_500_json_reduction_projection": 781676088.8888888,
+  "scope": "Capacity estimate using actual completed pilot sizes. Native JSON maintenance is optional and preserves logical bytes; physical allocation, in-flight caches, future sizes and unrelated disk use vary. This estimate guarantees neither capacity nor final completion. The original 2 GiB per-seed reserve and failure handling remain unchanged."
+}

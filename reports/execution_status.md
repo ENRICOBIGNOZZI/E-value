@@ -1,3 +1,49 @@
+# Current continuation — final-table layout and verified physical storage
+
+The preceding goal turn was **progress**: 8893fd4 clarified portfolio-learning
+antecedents and verified ninety replay digests. This turn prepares two remaining
+practical parts of final reporting/execution while the original pilot continues.
+
+The final table template compiles with a deliberately synthetic fixture.
+All **three pages** are rendered and inspected: five tables retain a negative
+contrast, terminal exclusions, empty executed groups and long fictional event
+counts without clipping/overlap. Every page is labeled SOFTWARE FIXTURE and
+no-financial-evidence. Two figure boxes are placeholders; this is no review of
+actual final figures. The retained fixture contributes **zero financial markets**
+and publishes no production packet. The main **48-page PDF and all generated
+numeric manuscript inputs remain byte-identical**.
+
+Native filesystem compression reduces allocated JSON blocks for already
+completed, byte-current replay-verified markets. It verifies both copied
+streams, timestamps/permissions and whole-market digests before/after atomic
+replacement. The first-ninety transaction changes the physical encoding of
+**1,849 JSON files**, reducing allocated blocks by **140,701,696 bytes** while
+preserving all ninety input digests. **240,792,732 bytes** of superseded
+temporary render PNGs are separately removed; source PDFs, all scientific and
+empirical files, logs and current render caches remain. Whole-filesystem free
+space also changes for unrelated reasons; these numbers do not promise final
+capacity. The original 2 GiB reserve is unchanged.
+
+**28 storage/observer controls** and the full **251-test suite** pass.
+A separate live maintenance observer, PID 35427, attaches to the
+original controller. It handles only completed verified final prefixes at
+fifty-market increments or the terminal prefix. It starts/restarts no study.
+Scientific source/configuration, whole analysis freeze and empirical-input
+hashes match. The proof-audit source maps are unchanged.
+
+At **2026-10-17T05:06:08.437001+02:00**, original PIDs 64355 and 91419 and
+storage PID 35427 are independently confirmed live. The checkpoint
+records **100/100 generated pilot markets**, **96/100 recorded complete independent
+replays**, and **0/500 final markets**. Completed generation is not complete
+pilot validation or final evidence. Full pilot/final audits, actual final
+manuscript/graphics integration and publication review remain outstanding.
+The overall goal stays active and incomplete; no empirical analysis or remote
+push occurred.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — portfolio learning antecedents and ninety replays
 
 The preceding goal turn was **progress**: 37b0c45 completed supplementary
