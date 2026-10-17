@@ -28,6 +28,7 @@ the full objective is complete.
 | Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing, cash-PARK/heteroscedastic Catoni/iid widths, economic experimentation and log-growth/test-family clocks, plus explicit ENTRY utility-null versus joint mean/variance-null mapping; TV corollary distinguished from weak-topology continuity theorem | **Incomplete**; targeted audits improve attribution and hypothesis precision but do not prove priority |
 | Frozen large final study | Original pilot 3 retained; v1 full study superseded; v2 reached 19 completed plus one failed market; v3 recovery verified and full replay running; final 0/500 | **Not executed**; twenty mechanism markets do not fill these counts |
 | Complete-final manuscript generation | Separate exact-500 packet builder; source/assessment/numeric/event/raw-replay guards; 24 synthetic controls and current production rejection without a final snapshot | Prepared and tested; no production final packet or final-paper integration yet |
+| Handoff test/output/graphics traceability | Twelve test groups mapped to actual functions; frozen numerical choices and output-name equivalents explicit; supplementary graphics builder with exact-500 gates and 23 controls | Implemented; eight-page sealed-twenty pilot preview visually verified. Complete-final diagnostics and paper integration remain pending |
 | Reviewable manuscript and figures | 47-page compiled PDF; evidence-panel map; final economic estimand and timing explicit; count/unit/source audit and visual QA | Working draft; complete final study and publication review remain outstanding |
 
 The QP convergence failure at seed 50020 is corrected and independently audited.
@@ -48,9 +49,9 @@ the draft makes no unqualified priority claim. These paths do not add financial 
 The 47-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
-200 passing tests, including fourteen reporting-gate, twelve final-assessment,
+223 passing tests, including fourteen reporting-gate, twelve final-assessment,
 nineteen continuation, twenty-four event-reporting and twenty-seven
-event-reconstruction controls, plus twenty-five Gaussian-envelope and twenty-four final-packet controls. The fresh optimized-constant companion independently checks
+event-reconstruction controls, plus twenty-five Gaussian-envelope, twenty-four final-packet and twenty-three supplementary-diagnostic controls. The fresh optimized-constant companion independently checks
 20,497,504 scalar values, with sixteen-path score replay per law, and all
 twelve model-power calibrations pass. The numerical boundary correction replays the same pool,
 rather than adding replications or selecting favorable seeds.

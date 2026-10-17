@@ -1,0 +1,5 @@
+method,executed,positive,negative,near_zero
+Greedy,117,17,45,55
+HAC,71,17,28,26
+Catoni,0,0,0,0
+Tail,20,20,0,0

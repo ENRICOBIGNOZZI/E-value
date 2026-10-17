@@ -1,3 +1,54 @@
+# Current continuation — complete supplementary graphics and handoff traceability
+
+The preceding turn was **progress**: 5bb2025 added estimated-matrix waiting
+theory and revalidated eighty pilot replay digests. This turn identifies and
+fills a concrete reporting gap: the handoff calls for performance distributions,
+costs, membership histories, economic errors, follow-up and runtime graphics,
+whereas the core final packet supplied only two principal figures.
+
+A separate supplementary builder now uses the same complete-500 final evidence
+gate and fixed analysis, with independent raw/report/event checks before and
+after preparation. It writes eight graphics pages and ten numeric tables into
+a new directory, retains signed differences and undefined/empty groups, and
+does not overwrite the manuscript or evidence. Final representative seed
+60001 is fixed now, before final output. Competing event endings remain
+distinct from administrative censoring; no success-only mean delays or
+Kaplan–Meier assumption is substituted.
+
+The **23 diagnostic controls** pass, and the full suite has **223 passing
+tests**. The last title/legend formatting is also checked by the focused suite
+and rendered review. Synthetic final identifiers are software fixtures, not
+markets. A real production invocation rejects the missing main_500 seal and
+publishes no final packet.
+
+A reproducible **eight-page preview** uses exactly the existing sealed twenty
+pilot markets. Its input hashes and raw replay records are revalidated before
+and after plotting, with no additional arithmetic-replay counts. All pages
+identify the sample as a pilot; all final pages are rendered and reviewed.
+The PDF, graphics, ten tables, reproduction script and verification/QA records
+are retained under reports/final_diagnostics_preview_020. The main **47-page
+PDF and all numeric manuscript inputs are byte-identical**.
+
+The handoff audit maps all twelve software test groups, modules, output-name
+equivalents and required graphics to evidence. It distinguishes the user's
+theory/simulations request from embedded legacy operating instructions.
+It also states the originally frozen numerical choices relative to the
+handoff's revisable example defaults. No scientific parameter, policy,
+controller, whole final-analysis freeze or empirical-input byte changes.
+
+At **2026-10-17T04:26:04.761840+02:00**, original PIDs 64355 and 91419 remain
+confirmed live: **90/100 generated pilot markets**, **82/100 recorded complete
+independent replays**, **0/500 final markets**. The first-eighty digest
+milestone remains the latest complete-batch revalidation; later partial replay
+does not establish complete ninety-market evidence. No job was restarted.
+The full pilot/final economic evidence, production diagnostics/manuscript
+integration and broader novelty review remain outstanding. The overall goal
+is active and incomplete. No empirical analysis or remote push occurred.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — estimated matrices and directional bet selection
 
 The preceding goal turn was **progress**: b301249 clarified economic-waiting

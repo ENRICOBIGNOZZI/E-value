@@ -1,0 +1,13 @@
+method,followup_years,eligible_events,selected_within,criterion_within,competing_move,sign_reversal,shortlist_withdrawal,administrative_end,still_unselected
+Greedy,1,1511,79,1263,1385,0,5,0,42
+Greedy,3,1405,72,1201,1307,11,5,0,10
+Greedy,5,1367,72,1179,1278,12,5,0,0
+HAC,1,1388,52,830,1160,0,50,2,124
+HAC,3,1386,61,862,1208,8,50,1,58
+HAC,5,1346,62,864,1209,2,50,11,12
+Catoni,1,991,0,0,0,0,0,12,979
+Catoni,3,958,0,0,0,81,0,9,868
+Catoni,5,934,0,0,0,98,0,8,828
+Tail,1,975,0,0,20,0,4,1,950
+Tail,3,955,0,0,27,76,0,0,852
+Tail,5,934,0,0,38,98,0,0,798

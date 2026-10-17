@@ -448,3 +448,15 @@ checks the frozen assessment, and retains every contrast regardless of sign.
 It refuses pilot samples and never rewrites the current paper. Exact inputs,
 commands and remaining PDF/editorial review are in
 [`reports/final_manuscript_protocol.md`](reports/final_manuscript_protocol.md).
+
+The companion `scripts/build_final_diagnostics.py` uses the same complete-final
+gate to prepare eight supplementary graphics pages and their numeric tables:
+fixed representative wealth, Sharpe/paired distributions, utility/costs,
+executed economic errors, signal-support histories, fixed-calendar event
+responses and runtime. It retains missing Sharpe ratios, empty groups,
+competing terminations and signed outcomes. Final representative seed 60001
+is fixed before final output. The protocol and handoff traceability review
+are in [`reports/final_diagnostics_protocol.md`](reports/final_diagnostics_protocol.md)
+and [`reports/handoff_acceptance_audit.md`](reports/handoff_acceptance_audit.md).
+Its pilot preview uses the already sealed twenty markets and adds no final
+evidence or manuscript promotion.

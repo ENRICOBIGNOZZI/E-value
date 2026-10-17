@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "kind": "pilot_diagnostics_visual_review",
+  "captured_at": "2026-10-17T04:26:04.761840+02:00",
+  "markets": 20,
+  "pdf": "reports/final_diagnostics_preview_020/graphics/diagnostics.pdf",
+  "pdf_sha256": "7a9e977ea5c898f25b58a010e185e2ec812656a60a55c86245eb11f77f282c1d",
+  "pages": 8,
+  "review": "All eight final PDF pages rendered at maximum dimension 1400 pixels. Both complete contact sheets inspected; final follow-up page inspected individually. Deployment, membership and runtime pages also inspected individually in the preceding render, with unchanged content/layout. Every page retains PILOT PREVIEW, twenty markets and seed 50001. No clipped labels/overlap; follow-up legends are outside the plotting regions.",
+  "scope": "Visual QA of the first-twenty sealed pilot preview only. Not a review of future final figures or the complete final manuscript."
+}

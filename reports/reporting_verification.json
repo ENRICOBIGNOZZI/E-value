@@ -32,7 +32,8 @@
     "scripts/audit_full_event_adjudication.py": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724",
     "scripts/gaussian_power_envelope.py": "09e7eb6523265159114ae6c314cc268b3ef78dcaf1ad712863a4b89f41a0fe3d",
     "scripts/build_final_manuscript_results.py": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c",
-    "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa"
+    "scripts/audit_multivariate_waiting.py": "2fbeee1a9b84a856415db79b20c7c55521a4805144462c6b5456ba8d25bc16fa",
+    "scripts/build_final_diagnostics.py": "bbd34f8d62ab4fae9dab2a6f9a698e92d3382f3c3be1b89dcf954a4c1697a2b4"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
@@ -221,5 +222,38 @@
       "paper/sections/12_vanishing_proofs.tex": "7ed642869d01dc1ffad7bf8e3cf159c9d29737e09626082e848f070ea27ce6f7"
     },
     "scope": "Fixed finite dimension, iid zero-mean Gaussian alternative, fixed positive ridge and leverage, estimated raw-moment matrix, possibly singular covariance. Adaptive conditional null and high-confidence pathwise/probability coefficients; no stopped expectations or finite-deadline power guarantee. An anisotropic public matrix cap permits a bounded past-only stake attaining psi/8 versus chi^2/(8 chi_K) for the best constant within the stated Catoni family. Constant-certificate maximal power still vanishes uniformly over predictable policies. Finite checks are not an asymptotic proof, simulated paths or a new financial arm."
+  },
+  "final_diagnostics_pipeline": {
+    "script": "scripts/build_final_diagnostics.py",
+    "script_sha256": "bbd34f8d62ab4fae9dab2a6f9a698e92d3382f3c3be1b89dcf954a4c1697a2b4",
+    "protocol": "reports/final_diagnostics_protocol.md",
+    "protocol_sha256": "81f74fdc8b5b3e3b5ece38eb903b50781e6ed336a86883a14153bf03411e97d9",
+    "evidence_gate": "scripts/build_final_manuscript_results.py",
+    "evidence_gate_sha256": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c",
+    "handoff_audit": "reports/handoff_acceptance_audit.md",
+    "handoff_audit_sha256": "fee8312492884e79e60f23ec38ee1ed63c43a1eac32e76f635476c19a0add908",
+    "handoff_named_tests_verified": 19,
+    "software_controls": 23,
+    "test_source_sha256": "88dcc8e452e8521d9ca9c9ccd04f76ccb14316ee02d91c72040d493d7406c8c2",
+    "test_report": "reports/final_diagnostics_tests.txt",
+    "test_report_sha256": "cbac249048b3ad785d7b75ddf5529c58b228fa302ddd1400fb098dd68ffc61b2",
+    "full_suite_report": "reports/full_test_results_with_final_diagnostics.txt",
+    "full_suite_report_sha256": "df351e5b5eb0efde836f29eb117cd98370fc293749c1ff7828192d505fe1cbb1",
+    "current_repository_tests_passed": 223,
+    "final_representative_seed": 60001,
+    "figure_pages": 8,
+    "numeric_tables": 10,
+    "production_packet_exists": false,
+    "production_readiness": "Not ready: the actual main_500 seal is absent; default production invocation rejected without publishing.",
+    "pilot_preview": {
+      "markets": 20,
+      "representative_seed": 50001,
+      "verification": "reports/final_diagnostics_preview_020/graphics/verification.json",
+      "verification_sha256": "0cd68f0e14ac3c3fe0f9cacc613ed959540fd029ee1d31ca0bfde377c9d84906",
+      "visual_qa": "reports/final_diagnostics_preview_020/visual_qa.json",
+      "visual_qa_sha256": "3e7d13bc662550989587d7c09251ed40d8c6119157b8824d9c2b441f93622d5e",
+      "pdf_sha256": "7a9e977ea5c898f25b58a010e185e2ec812656a60a55c86245eb11f77f282c1d"
+    },
+    "scope": "Supplementary descriptive reporting with exact complete-final guards, all signed outcomes and explicit missing/empty denominators. The retained preview uses only the existing sealed twenty pilot markets. Synthetic fixture identifiers and plot generation add no market replications or raw-replay counts. No scientific/final-analysis/controller change or new inferential endpoint. Final production, final visual QA and manuscript integration remain outstanding."
   }
 }
