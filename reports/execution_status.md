@@ -1,3 +1,44 @@
+# Current continuation — verified final-manuscript preparation and seventy replays
+
+The preceding goal turn was **progress**: df95c8b clarified experiment scopes
+and the frozen final estimand. This turn prepares the missing final reporting
+path. The older renderer always describes a pilot; a separate builder now
+accepts only all 500 frozen final markets. It requires current sealed files,
+the frozen complete-sample assessment, numeric reporting and independent event
+reconstruction/aggregation audits, and byte-current raw replay. It revalidates
+before atomically publishing a new packet, checks copied figure bytes, refuses
+existing destinations and prohibits output inside scientific evidence.
+
+The packet retains six method outcomes, every primary/secondary contrast,
+lifecycle choices and terminal exclusions, empty deployment groups, 1/3/5-year
+event cohorts and separate final figure names. No economic sign controls
+selection or publication. **24 synthetic software controls** and the full
+**200-test suite** pass. Fixture identifiers and outcomes are not financial
+markets. A real default invocation correctly stops because `main_500` does
+not exist; no production packet or manuscript was written. The protocol is
+`final_manuscript_protocol.md`. Actual final-data execution and manuscript/PDF
+integration remain to be done. The live controller is unchanged.
+
+The first **70** pilot markets now have completed independent arithmetic
+replay. Their existing records total **617,620,264 scalar checks** and **9,136
+ghost pairs**, with maximum log-evidence discrepancy 1.78e-15. A fresh
+read-only revalidation confirms all seventy current input digests match after
+checkpoint compaction. This byte check adds no arithmetic replay counts or
+independent replications; the milestone is `full_v3_results/pilot70_replay_milestone.json`.
+
+At **2026-10-17T03:28:34.194240+02:00**, original PIDs 64355 and 91419 remain confirmed live.
+The checkpoint records **72/100 generated pilot markets**, **70/100 recorded complete
+independent replays** and **0/500 final markets**. Scientific source,
+configurations, the whole final-analysis freeze and preserved empirical-input
+hashes match. The **43-page PDF and all generated numerical manuscript inputs
+remain byte-identical** to df95c8b, so no PDF rebuild was needed. No job was
+restarted, no empirical work or remote push occurred. The overall paper goal
+remains active and incomplete.
+
+The following milestones are historical snapshots.
+
+---
+
 # Current continuation — coherent experiment scopes and final estimand
 
 The preceding goal turn was **progress**: f228038 added a classical Gaussian

@@ -413,3 +413,11 @@ The recorded launch and exact process/provenance gates are documented in
 `outputs/park_revive_full_v3/continuation_status.json`; confirm its PID is
 actually alive before relying on it. The retained checkpoint is
 `reports/full_v3_results/continuation_checkpoint.json`.
+
+After the complete final sample and its independent event-reconstruction audit
+exist, `scripts/build_final_manuscript_results.py` prepares a separate final
+manuscript packet. It requires all 500 frozen markets and byte-current replay,
+checks the frozen assessment, and retains every contrast regardless of sign.
+It refuses pilot samples and never rewrites the current paper. Exact inputs,
+commands and remaining PDF/editorial review are in
+[`reports/final_manuscript_protocol.md`](reports/final_manuscript_protocol.md).

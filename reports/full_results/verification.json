@@ -51,9 +51,9 @@
     "paper/sections/15_evidence_scope.tex": "94cc6c4df9b504d27a4c2d97455c1fdee368b29c4c5465fbe9cef7aadbff643e"
   },
   "scope": "Financial results remain first-ten v2 pilot snapshot only. Live v3 pilot and continuation are recorded separately; final study incomplete. Separate controlled lambda studies, costless scalar waiting theorem/diagnostic and directional moment-class theory included. Historical derivations excluded.",
-  "current_repository_tests_passed": 176,
-  "current_repository_test_report": "reports/full_test_results_with_power_envelope.txt",
-  "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 176-test suite includes numerical/scalar/lambda controls, fourteen snapshot-reporting, twelve final-assessment, nineteen continuation, twenty-four event-reporting and twenty-seven independent event-reconstruction controls, plus twenty-five Gaussian-envelope reporting/statistical controls. Synthetic fixtures are not market observations.",
+  "current_repository_tests_passed": 200,
+  "current_repository_test_report": "reports/full_test_results_with_final_packet.txt",
+  "tests_passed_scope": "Historical 44-test financial v2 snapshot. Current 200-test suite includes numerical/scalar/lambda controls, fourteen snapshot-reporting, twelve final-assessment, nineteen continuation, twenty-four event-reporting and twenty-seven independent event-reconstruction controls, plus twenty-five Gaussian-envelope reporting/statistical controls and twenty-four final-packet controls. Synthetic fixtures are not market observations.",
   "lambda_power_study": {
     "source_freeze_commit": "bbd619f",
     "source_hash": "77e1c52eaea8a3bf07bd43ce60a11549021ef674224673719f59b73213b7d7d6",
@@ -227,5 +227,18 @@
     "source_scope": "Manuscript count/unit mapping and frozen final estimand, not new simulations or arithmetic replay.",
     "final_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
     "generated_numeric_inputs_unchanged": true
+  },
+  "final_manuscript_packet_pipeline": {
+    "script": "scripts/build_final_manuscript_results.py",
+    "script_sha256": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c",
+    "protocol": "reports/final_manuscript_protocol.md",
+    "protocol_sha256": "8a77ab1c7afa68bf71abbb426565d25fe852b79af4d08a304920fa2fdb2b82e9",
+    "software_controls": 24,
+    "test_source_sha256": "bf378f04a77d7a8a01b68b28fda3e44a4b35a4f1ec5bd7d65af054f0230c4178",
+    "software_report": "reports/final_manuscript_packet_tests.txt",
+    "software_report_sha256": "ab588051175995b9ccd7dcc85b422c37ffde428b533239b3d68dbf5545efbf2b",
+    "production_readiness": "Not ready: complete main_500 snapshot is absent; default production invocation rejected before any packet or manuscript write.",
+    "production_packet_exists": false,
+    "scope": "Preparation and synthetic software controls only, including negative primary results, undefined empty groups, exact 500-ID membership, current audits/raw replay, mid-build changes and output immutability. The production packet, final data, PDF/editorial integration and publication-quality assessment remain outstanding. No new financial markets or modified scientific controller."
   }
 }

@@ -30,7 +30,8 @@
     "scripts/continue_full_study.py": "8f250cf46d8ab94d9d6ec993f692b658a67b128792490c8cc6b2b1d7d88ea062",
     "scripts/audit_full_event_snapshot.py": "d0b066ba8527f08b1dafcf512d1523d5909ab38c23d3e8a0cfd674d1c216aa59",
     "scripts/audit_full_event_adjudication.py": "c88da42496da91fdaa0e383fe9a90e66544294754e33fd665a3efdc18d68d724",
-    "scripts/gaussian_power_envelope.py": "09e7eb6523265159114ae6c314cc268b3ef78dcaf1ad712863a4b89f41a0fe3d"
+    "scripts/gaussian_power_envelope.py": "09e7eb6523265159114ae6c314cc268b3ef78dcaf1ad712863a4b89f41a0fe3d",
+    "scripts/build_final_manuscript_results.py": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c"
   },
   "scope": "Reporting-only reproducibility check. It does not rerun or alter scientific simulations.",
   "lambda_constant_table": {
@@ -174,5 +175,18 @@
     "source_scope": "Manuscript count/unit mapping and frozen final estimand, not new simulations or arithmetic replay.",
     "final_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
     "generated_numeric_inputs_unchanged": true
+  },
+  "final_manuscript_packet_pipeline": {
+    "script": "scripts/build_final_manuscript_results.py",
+    "script_sha256": "03222847c30f278f8495b8a2afe97ef856afc7495b6411040e7bf84e61262e4c",
+    "protocol": "reports/final_manuscript_protocol.md",
+    "protocol_sha256": "8a77ab1c7afa68bf71abbb426565d25fe852b79af4d08a304920fa2fdb2b82e9",
+    "software_controls": 24,
+    "test_source_sha256": "bf378f04a77d7a8a01b68b28fda3e44a4b35a4f1ec5bd7d65af054f0230c4178",
+    "software_report": "reports/final_manuscript_packet_tests.txt",
+    "software_report_sha256": "ab588051175995b9ccd7dcc85b422c37ffde428b533239b3d68dbf5545efbf2b",
+    "production_readiness": "Not ready: complete main_500 snapshot is absent; default production invocation rejected before any packet or manuscript write.",
+    "production_packet_exists": false,
+    "scope": "Preparation and synthetic software controls only, including negative primary results, undefined empty groups, exact 500-ID membership, current audits/raw replay, mid-build changes and output immutability. The production packet, final data, PDF/editorial integration and publication-quality assessment remain outstanding. No new financial markets or modified scientific controller."
   }
 }

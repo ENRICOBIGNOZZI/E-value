@@ -26,6 +26,7 @@ the full objective is complete.
 | Response-independent economic event assessment | Counterfactual continuations retain fast responses; separate batch positive-run reconstruction uses annual conditional-score arrays, flags and ghost continuations | First-twenty reconstruction reproduces 4,895 stable events, 483 unstable runs and 118 prompt selected responses confirmed after closure; full-size evidence pending and method-specific populations do not identify causal delay rankings |
 | Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing, cash-PARK/heteroscedastic Catoni/iid widths and explicit ENTRY utility-null versus joint mean/variance-null mapping; TV corollary distinguished from weak-topology continuity theorem | **Incomplete**; targeted audits improve attribution and hypothesis precision but do not prove priority |
 | Frozen large final study | Original pilot 3 retained; v1 full study superseded; v2 reached 19 completed plus one failed market; v3 recovery verified and full replay running; final 0/500 | **Not executed**; twenty mechanism markets do not fill these counts |
+| Complete-final manuscript generation | Separate exact-500 packet builder; source/assessment/numeric/event/raw-replay guards; 24 synthetic controls and current production rejection without a final snapshot | Prepared and tested; no production final packet or final-paper integration yet |
 | Reviewable manuscript and figures | 43-page compiled PDF; evidence-panel map; final economic estimand and timing explicit; count/unit/source audit and visual QA | Working draft; complete final study and publication review remain outstanding |
 
 The QP convergence failure at seed 50020 is corrected and independently audited.
@@ -34,7 +35,7 @@ complete markets (3,495 file pairs) and the failed seed's three sealed blocks
 (39 pairs). All compared data agree; configuration fields differ only by
 version label. Copied parameter/data corruption controls are detected. This
 audit adds no independent replications or arithmetic-replay counts.
-The first sixty v3 markets are complete and independently replayed;
+The first seventy v3 markets are complete and independently replayed;
 the latest generated and recorded replay counts are retained in
 `full_v3_results/pilot_live_checkpoint.json`.
 The next work is to finish the same entire 100-market v3 pilot replay and then
@@ -45,9 +46,9 @@ the draft makes no unqualified priority claim. These paths do not add financial 
 The 43-page draft also includes the separate lambda-selection study. Its
 independent audit checks 12,331,336 scalar values with score multiplication
 limited to the declared sixteen-path prefix per law. The repository suite has
-176 passing tests, including fourteen reporting-gate, twelve final-assessment,
+200 passing tests, including fourteen reporting-gate, twelve final-assessment,
 nineteen continuation, twenty-four event-reporting and twenty-seven
-event-reconstruction controls, plus twenty-five Gaussian-envelope controls. The fresh optimized-constant companion independently checks
+event-reconstruction controls, plus twenty-five Gaussian-envelope and twenty-four final-packet controls. The fresh optimized-constant companion independently checks
 20,497,504 scalar values, with sixteen-path score replay per law, and all
 twelve model-power calibrations pass. The numerical boundary correction replays the same pool,
 rather than adding replications or selecting favorable seeds.
