@@ -1,0 +1,204 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newcommand{\E}{\mathbb E}
+\newcommand{\F}{\mathcal F}
+\title{Economic authorization and statistical certification}
+\author{PARK--REVIVE research design note}
+\date{18 October 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status.} Proposed extension following the economic-selection
+discussion. This note supplies a target distinction and an experiment design;
+it reports no new backtest, simulation result, power guarantee or frozen
+numerical protocol. The six-method, 500-market study already running retains
+its original configuration, seed membership and analysis plan.
+
+\section{The economic object is a learned policy}
+For a common pre-trade allocation $b$, define
+\[
+ C(w,b)=c\|w-b\|_1+\frac{\eta}{2}(w-b)^\top\Lambda(w-b),
+ \qquad \Lambda\succeq0,
+\]
+and realized quadratic utility
+\[
+ u(w,b;A)=w^\top A-\frac{\gamma}{2}(w^\top A)^2-C(w,b).
+\]
+With common true moments and the same feasible constraints, the optimized
+value
+\[
+ V_t(S;b)=\sup_{\operatorname{supp}(w)\subseteq S}
+             \E[u(w,b;A_{t+1})\mid\F_t]
+\]
+cannot decrease when $S$ expands: the larger feasible set includes the
+smaller one. This observation assumes that adding a permitted feature does
+not itself impose a separate fixed participation charge. It does not imply
+monotonicity of the out-of-sample values of estimated policies:
+\[
+ \Delta_t(B,S)=
+ \E\!\left[
+ u(\widehat w_t(B),b^B_t;A_{t+1})
+ -u(\widehat w_t(S),b^S_t;A_{t+1})\mid\F_t\right].
+\]
+Estimation error, changes in allocation and the two cost states matter.
+Even estimated optimized training value is monotone under nested supports;
+its positive increment alone is therefore weak protection against overfit.
+
+The current full-study \texttt{Greedy} method is not a pure training-only
+economic selector. It fits allocations using the training history, but
+eligibility requires a positive accumulated OOS shadow-score mean, and
+annual priority ranks eligible moves by that mean. A method that initiates
+exposure from training estimates and estimation uncertainty would be an
+additional comparator.
+
+\section{Separate permission to trade from the tested null}
+A training-based forecast can authorize provisional exposure subject to a
+declared risk limit. An uncertainty adjustment must specify its estimation
+model, horizon and calibration before its new evaluation. A working posterior,
+bootstrap percentile or confidence bound does not acquire an OOS guarantee
+merely by being used as an economic gate.
+
+For a predictable pair of shadow policies, an e-process addresses the
+sequential null that its score has nonpositive conditional mean throughout
+the comparison. At individual level $a$, crossing $1/a$ controls rejection
+under that null, assuming the score moment contract. The threshold is $20$
+when $a=.05$ for one comparison; using it repeatedly across features and
+episodes does not by itself control a global false-authorization probability.
+
+Under the price-taking simulation contract, predictable provisional
+investment need not invalidate a shadow e-process that retains exactly the
+same policies, cost histories, filtration and valid moment bounds.
+Changing the reference, candidate, weights or cost state changes the tested
+object. The validity of the construction must then be checked for that
+object; previous capital cannot simply be relabeled as evidence for a
+different comparison. Neither a shadow rejection nor an economic forecast
+guarantees a positive future deployment gain in a changing market.
+
+\subsection*{Certification against cash does not certify an increase}
+Suppose the current allocation is $qw$, $0<q<1$, and compare increasing to
+$w$ against retaining $qw$ from that same state. Put
+\[
+ m_1=\E[w^\top A\mid\F_t],\quad
+ m_2=\E[(w^\top A)^2\mid\F_t],\quad
+ L_w=\|w\|_1,\quad K_w=w^\top\Lambda w.
+\]
+The conditional utility gain from the increase is
+\begin{align}
+ \Delta_{\mathrm{increase}}
+ &=(1-q)m_1-\frac{\gamma}{2}(1-q^2)m_2
+       -c(1-q)L_w-\frac{\eta}{2}(1-q)^2K_w. \label{eq:increase}
+\end{align}
+The gain from entering $w$ from cash is
+\[
+ \Delta_{\mathrm{entry}}
+ =m_1-\frac{\gamma}{2}m_2-cL_w-\frac{\eta}{2}K_w.
+\]
+Consequently
+\[
+ \Delta_{\mathrm{increase}}
+ =(1-q)\Delta_{\mathrm{entry}}
+   -\frac{\gamma}{2}q(1-q)m_2
+   +\frac{\eta}{2}q(1-q)K_w.
+\]
+For example, with no costs, $\gamma=1$, $m_1=.6$, $m_2=1$ and $q=.5$,
+full exposure has expected utility $.1$, half exposure has $.175$, and
+increasing exposure loses $.075$. These are admissible moments: a gross
+return with mean $.6$ and variance $.64$ has second moment $1$.
+
+Thus a certificate for full exposure versus cash does not establish that
+increasing a provisional position is beneficial. A favorable economic
+forecast for the increase must use \eqref{eq:increase}, or its general
+state-dependent analogue. If the increase is to carry its own statistical
+certification, its candidate/reference score needs an appropriate e-process
+and error allocation. Keeping the original cash comparison is useful as
+a diagnostic, with its original interpretation.
+
+\section{A comparison that isolates the decision to wait}
+The full-study Tail-minus-Greedy contrast compares complete adaptive funds.
+It includes different selected supports, allocation states and later moves,
+so it does not isolate the effect of waiting. Add a controlled mechanism
+experiment with the following common objects:
+\begin{enumerate}
+ \item Use the same training data and training-only candidate-selection rule
+ in both arms. Define the candidate allocation path $w_t$ and all subsequent
+ fitting dates identically, without using either arm's wealth or trading
+ state to change that common path.
+ \item Define a training uncertainty rule and a provisional fraction
+ $q\in[0,q_{\max}]$, with $q_{\max}<1$, before examining new results.
+ A rejected economic proposal has $q=0$ and remains in the experiment.
+ \item Run one common shadow candidate-versus-cash e-process using the
+ declared score and its own shadow costs. Define a common, predictable
+ full-exposure date from its crossing and any common economic gate.
+ A decision made after a return is first tradable on the following date.
+ \item The waiting arm holds cash before that date. The provisional arm
+ holds $qw_t$ before it. Both target $w_t$ afterwards. Each pays its own
+ actual costs, including the different transition costs at the increase.
+ The original shadow certificate remains a candidate-versus-cash
+ certificate in both arms; it is not labeled a certificate of $q\to1$.
+ \item Retain the complete evaluation horizon, including noncrossings,
+ rejected training proposals and losses. Use paired markets with common
+ shocks, and report separately the provisional losses and later outcomes.
+\end{enumerate}
+This experiment identifies an exposure-timing contrast for the specified
+common candidate path and evidence clock. It does not establish the
+performance of a general adaptive feature-selection algorithm. A separate
+extension could test the increase directly, but that changes the evidence
+clock and needs its own design and guarantees.
+
+\begin{proposition}[Realized utility accounting]
+Let $\theta^P_t,\theta^W_t$ be the provisional and waiting exposure fractions,
+$X_t=w_t^\top A_t$ the common full-target gross return, and $C^P_t,C^W_t$
+their actual trading costs. Their realized utility difference over $H$ dates
+is exactly
+\[
+ D_H=\sum_{t=1}^H
+ \left[(\theta^P_t-\theta^W_t)X_t
+ -\frac{\gamma}{2}\bigl((\theta^P_t)^2-(\theta^W_t)^2\bigr)X_t^2
+ -(C^P_t-C^W_t)\right].
+\]
+\end{proposition}
+\begin{proof}
+Substitute $\theta^P_tw_t$ and $\theta^W_tw_t$ into the utility definition
+and subtract, retaining each arm's own cost state.
+\end{proof}
+With $q$ fixed before the common deployment date $T$ and full exposure in
+both arms afterwards, the gross-return and quadratic-risk terms cancel for
+$t\ge T$. Under the repository's cost convention, whose state is the previous
+target allocation, costs also coincide after the deployment date. Costs
+before and at $T$ remain arm-specific. If $T>H$, including $T=\infty$, the
+pre-deployment contrast extends through all $H$ dates. Wealth compounding is
+a distinct outcome and is not this additive utility identity.
+
+\section{Outputs and implementation boundary}
+The primary mechanism outcome should be the paired net utility difference,
+with expected-benefit, realized gross-return, quadratic-risk and trading-cost
+components retained separately. Risk outcomes should include negative
+provisional utility, downside outcomes, drawdowns and insolvency under the
+same wealth convention; none is a type-I error guarantee. Report waiting
+durations and noncrossings without conditioning performance on certification.
+
+Before implementation and new evaluation, fix the uncertainty estimator and
+calibration, candidate-selection rule, provisional cap, investment horizon,
+review schedule, complete seed set, error allocation, outcome definitions
+and Monte Carlo analysis. The design follows observed pilot results and the
+user's proposal; it is not a pre-pilot registration. Reuse of existing market
+paths would be a paired extension, not additional independent market evidence.
+
+No new numerical superiority claim follows from this note. In particular,
+the question \emph{what benefit is forgone by waiting, and what downside is
+avoided?} requires the new controlled comparison; the existing adaptive fund
+contrast supplies complementary total-policy performance.
+
+\subsection*{Implementation references inspected}
+\noindent\path{research/park_revive_full/selection.py}:\\
+\texttt{Selector.refresh}, \texttt{eligible}, \texttt{choose};
+
+\noindent\path{research/park_revive_full/engine.py}:\\
+OOS score updates and annual decisions.
+
+\noindent\path{src/park_revive/policies.py}: previous-target cost state.
+
+\noindent\path{src/park_revive/costs.py}: common utility and cost definitions.
+\end{document}

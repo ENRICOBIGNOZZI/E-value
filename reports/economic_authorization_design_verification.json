@@ -1,0 +1,44 @@
+{
+  "captured_at": "2026-10-18T16:35:07.680926+02:00",
+  "kind": "economic_authorization_design_review",
+  "status": "proposed_extension_not_implemented_or_evaluated",
+  "source": "docs/design/economic_authorization.tex",
+  "source_sha256": "6bf062d5f37c76ce72bef4d8bd1e6c1f83dbec0cdc3c8a0685ff302c442576fb",
+  "pdf": "output/pdf/economic_authorization.pdf",
+  "pdf_sha256": "9df0266f131dd4c4852004b0b7584a3f9c321fef0f33ecc7772d4659f83d712b",
+  "pages": 3,
+  "compile_command": "tectonic docs/design/economic_authorization.tex --outdir output/pdf --keep-logs",
+  "compile_has_no_box_or_reference_warnings": true,
+  "all_three_pages_visually_inspected": true,
+  "rendered_page_sha256": {
+    "tmp/pdfs/economic-authorization/final-1.png": "91463eee9a8529010cda7f83b2308ba759a9c99a8fdee96d6f572c80573019c2",
+    "tmp/pdfs/economic-authorization/final-2.png": "d9ef512da24453bfc091fb88f13d92d42c8b334dba5905c878f18356dfaeb538",
+    "tmp/pdfs/economic-authorization/final-3.png": "7d1e265aaf4c88d95beca7f3e9140c43988d14c78bdbf90a0cf343c12c581a46"
+  },
+  "implementation_review": {
+    "research/park_revive_full/selection.py": "3b3ac92d0eb71e91e9eab449723ab3751a05de102bd77433aca2e0ba6854e35d",
+    "research/park_revive_full/engine.py": "73464db7335964a9082dcc861163a92b8c5b29a9c1bf1551f8b80b062a37dc8a",
+    "src/park_revive/policies.py": "40c38ed387e6f4276f0810806afb31b0691a7f05ff8f1c7b67eeb4592ab63be7",
+    "src/park_revive/costs.py": "8e47c027dfc30742bf74c2d2b6d1ffe06d29dafc86feccadc77c08b70bd50299"
+  },
+  "findings": [
+    "Current Greedy eligibility and ranking use OOS score means; it is not a training-only authorization comparator.",
+    "Positive optimized support-expansion value does not imply positive learned-policy OOS utility.",
+    "Candidate versus cash and increasing a provisional position have different utility nulls.",
+    "Controlled common-candidate/common-evidence-clock contrast isolates exposure timing, including arm-specific costs and noncrossings."
+  ],
+  "counterexample": {
+    "gamma": 1,
+    "m1": 0.6,
+    "m2": 1,
+    "q": 0.5,
+    "full_utility": 0.1,
+    "half_utility": 0.175,
+    "increase_utility": -0.075
+  },
+  "scientific_source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
+  "final_analysis_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
+  "frozen_science_configuration_and_analysis_validated": true,
+  "unchanged_current_manuscript_pdf_sha256": "7ac9d2ea6408c95ae98e4f7bbf64f95eadec8e02330678e9237fa37daa0692d6",
+  "scope": "Design and analytic accounting only. No new financial observations, empirical data, replay checks, numerical benchmark result, or changes to the running frozen 500-market study. Uncertainty calibration and numerical extension protocol remain to be specified before new evaluation."
+}
