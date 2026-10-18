@@ -1,0 +1,68 @@
+{
+  "complete": true,
+  "captured_at": "2026-10-18T20:02:32.998980+00:00",
+  "controller_pid": 86252,
+  "controller_identity": [
+    "Sun",
+    "Oct",
+    "18",
+    "22:00:09",
+    "2026",
+    "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/resume_remaining_final.py"
+  ],
+  "child_pid": 86400,
+  "child_identity": [
+    "Sun",
+    "Oct",
+    "18",
+    "22:01:16",
+    "2026",
+    "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_strategy.py --config /Users/enrico/Desktop/PHD/E-values/configs/full_main.json --output /Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v3/main --start-seed 60484 --count 7 --workers 1 --resume"
+  ],
+  "driver_sha256": "1bdf3a0994477c261a205683b409260edfa863b124303b042128774be4f378a6",
+  "status": {
+    "controller_pid": 86252,
+    "source_sha256": "1bdf3a0994477c261a205683b409260edfa863b124303b042128774be4f378a6",
+    "workers": 1,
+    "original_guard_gib": 2,
+    "startup_reserve_gib": 3,
+    "archived_failure_sha256": "f22fec11564eb92cfe16742b812d716435875e2cd9ae4c11f21e4b15859d6b1f",
+    "phase": "running_run_full_strategy.py",
+    "updated_at": "2026-10-18T20:01:16.118011+00:00",
+    "remaining_seeds": [
+      60484,
+      60485,
+      60486,
+      60487,
+      60488,
+      60489,
+      60490,
+      60491,
+      60492,
+      60493,
+      60494,
+      60495,
+      60496,
+      60497,
+      60498,
+      60499,
+      60500
+    ],
+    "child_pid": 86400,
+    "child_script": "run_full_strategy.py"
+  },
+  "prefix_verification": "reports/full_v3_results/final483_replay_milestone.json",
+  "prefix_verification_sha256": "0fcd09855436ab76dd8eea0b32c7b68f6aeae640b057be487943b5a142ec2710",
+  "compaction": {
+    "applied": true,
+    "seeds": [
+      60481,
+      60482,
+      60483
+    ],
+    "checkpoint_bytes": 22725508,
+    "preserved": "All input data, market/score/weight/event ledgers, numeric results and source/configuration manifests."
+  },
+  "free_bytes": 4060045312,
+  "scope": "Actual new recovery after the original disk-guard handles terminated, all 483 completed-market digests passed, and capacity recovered above the explicit 3 GiB startup reserve. Only seven live disk-error copies cleared after matching retained archives. Same 17 remaining seeds, one worker, original 2 GiB per-seed reserve and unchanged final analysis. No observation timeout restart or partial-final economic inference."
+}

@@ -1,3 +1,59 @@
+# Current continuation — 483 final markets verified; remaining 17 resumed
+
+The preceding goal turn was **progress**: commit 5c07ff9 integrated the separate
+100-market provisional-exposure experiment into the 51-page manuscript. The
+current turn is **progress**, with additional verified waits on actual handles.
+All first **483/500** final markets are complete and independently replayed.
+Their byte-current input digests match after verified-cache compaction and
+native filesystem compression. Existing replay records contain
+**4,261,509,522 scalar checks** and
+**61,919 ghost pairs**, maximum log-capital
+replay discrepancy **2.66e-15**. This digest validation
+adds no new checks or markets. Details are in
+full_v3_results/final483_replay_milestone.json.
+
+The previous recovery controller actually terminated at a second disk-reserve
+failure after generating seeds 60481--60483. Seven resource-error records for
+60484--60490 and the terminal controller status were archived under
+full_v3_recovery_20261018/disk_195259 before any retry. The three completed
+markets were independently replayed. Their **22,725,508 logical checkpoint
+bytes** were then released; every scientific ledger and provenance file remains.
+The earlier exact-QP initialization at seed 60469 remains an explicitly
+post-freeze numerical supplement, already disclosed in the manuscript.
+The unchanged base source hash alone does not describe its cached iterates.
+
+Native compression preserved every logical JSON/Parquet byte and all 480
+preceding replay digests: 622 JSON files saved **47,202,304 allocated bytes**;
+12,028 Parquet files saved **241,876,992 allocated bytes**. File allocation and
+free disk capacity are distinct; these savings do not guarantee future capacity.
+The Parquet wrapper reuses the existing tested atomic copier. Three separate
+CLI boundary-rejection checks pass; no full-suite rerun is claimed.
+
+At **2026-10-18T20:02:32.998980+00:00**, free capacity had recovered above the 3 GiB startup reserve.
+New controller **86252** passed all 483 current digest/source/configuration
+checks and started generation child **86400** on exactly **60484--60490**.
+The final ten follow, with independent replay, compaction, sealing, unchanged
+complete-sample assessment, event reconstruction and final packets. Only the
+matched live copies of the seven archived disk errors were cleared. The
+per-seed reserve remains 2 GiB, worker count one, and no seed is omitted.
+Actual live state is now
+outputs/park_revive_full_v3/remaining_recovery_status_20261018.json;
+confirm process identity before treating a status file as current. Both prior
+recovery status files are historical. The restart follows a confirmed terminal
+resource error and recovered capacity, never an observation timeout.
+
+The README now documents isolated reproduction of the completed provisional
+study and its independent replay, without overwriting retained results or
+runtime/hash bindings. The current paper, all numeric TeX and figures, the
+scientific implementation/configurations, final analysis and preserved empirical
+inputs are unchanged. The final economic result is not inspected at a prefix.
+All 500 markets, complete audits, actual final-manuscript integration and final
+scientific/rendered review remain required. The overall goal stays active.
+
+The following checkpoints are historical snapshots.
+
+---
+
 # Current continuation — first ten final markets fully replayed
 
 The preceding goal turn was **progress**: 5163854 consolidated the current

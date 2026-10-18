@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "source_sha256": "c5bf142e18e7f147b0affce10fdbe400b138f4aec760c9ecce2f6353a0b09441",
+  "checks": [
+    {
+      "case": "out_of_pool_count",
+      "rejected_before_compression": true
+    },
+    {
+      "case": "protected_existing_report",
+      "rejected_before_compression": true
+    },
+    {
+      "case": "protected_new_report",
+      "rejected_before_compression": true
+    }
+  ],
+  "scope": "Three command-line boundary rejection checks. Atomic byte-preserving copier unchanged and covered by the retained storage-compression controls; actual completed-prefix before/after digests are checked by the production transaction. No financial data or additional market replays."
+}

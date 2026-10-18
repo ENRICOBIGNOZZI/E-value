@@ -1,0 +1,22 @@
+{
+  "controller_pid": 60931,
+  "source_sha256": "31a6cc3fccd0d527ba745cf3f2ae17e6e9227a939f49bca8d65a125f5d671e41",
+  "initialization_profile_sha256": "41ca8a9d801729ce491d76e802c8147fb3d7170f131578e49e2d048ee5fb4fa8",
+  "workers": 1,
+  "phase": "stopped_on_error",
+  "updated_at": "2026-10-18T19:52:59.841168+00:00",
+  "verifier_pid": 59059,
+  "verifier_identity": [
+    "Sun",
+    "Oct",
+    "18",
+    "18:38:39",
+    "2026",
+    "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/verify_full_strategy.py --output outputs/park_revive_full_v3/main --seeds 60461 60462 60463 60464 60465 60466 60467 60468 60470 --resume"
+  ],
+  "recovered_seed": 60469,
+  "numerical_amendment": "Supplementary known-problem primal/dual initialization, declared after the final pool began; no objective, constraints, tolerances, iteration-budget or statistical changes.",
+  "child_pid": 68763,
+  "child_script": "run_full_strategy.py",
+  "error": "RuntimeError: run_full_strategy.py stopped with 1; see /Users/enrico/Desktop/PHD/E-values/tmp/full-v3-qp-recovery-20261018.log"
+}

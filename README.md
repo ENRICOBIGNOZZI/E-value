@@ -10,6 +10,13 @@ The supplied handoff is preserved unchanged under [`docs/spec/`](docs/spec/).
 Its operational instructions are reference material; the user's explicit restart
 and theory/simulation scope govern this reconstruction.
 
+The current 51-page draft also includes the separate completed 100-market
+provisional-exposure experiment. The original 500-market final fund study is
+still running. Its current recovery state is
+`outputs/park_revive_full_v3/remaining_recovery_status_20261018.json`; confirm the
+recorded process is alive before treating that state as current. Earlier
+continuation/status records below describe their original execution checkpoints.
+
 ## Reproduce
 
 ```sh
@@ -456,9 +463,9 @@ The original pilot has finished and the original controller has launched the
 final study once; do not run a second final job while that handle is live.
 
 The recorded launch and exact process/provenance gates are documented in
-`reports/full_continuation_protocol.md`. Live state is in
-`outputs/park_revive_full_v3/continuation_status.json`; confirm its PID is
-actually alive before relying on it. The retained checkpoint is
+`reports/full_continuation_protocol.md`. The original state file
+`outputs/park_revive_full_v3/continuation_status.json` is now historical.
+The retained checkpoint is
 `reports/full_v3_results/continuation_checkpoint.json`.
 
 After the complete final sample and its independent event-reconstruction audit
@@ -491,3 +498,64 @@ completed markets. It preserves every logical byte and input digest. A
 separate observer handles verified final prefixes without launching or
 restarting studies; the existing disk reserve is unchanged. See
 [`reports/storage_maintenance_protocol.md`](reports/storage_maintenance_protocol.md).
+
+## Provisional investment before certification
+
+The completed companion uses fresh seeds 70001--70100 and a candidate selected
+once from the initial training set. It compares cash waiting, economic exposure
+at 25%, provisional exposure followed by full authorization, and immediate full
+economic exposure. Every fund pays its own costs. The HAC standard-error penalty
+is a working economic adjustment; shadow full-versus-cash evidence does not
+certify the provisional-to-full increase. All 1,400 annual fitted targets bind
+at the leverage cap, so the experiment evaluates timing rather than adaptive
+position sizing or uncertainty calibration.
+
+The protocol was committed before these new outputs, after the earlier pilot:
+[`reports/economic_authorization_v1_protocol.json`](reports/economic_authorization_v1_protocol.json).
+All 100 markets have independent policy/cost/evidence arithmetic replay; two
+fixed identifiers also have independent full DGP/moment-certificate replay.
+Results and scope are in [`reports/economic_authorization_v1/`](reports/economic_authorization_v1/)
+and section 18 of the manuscript. The separate two-page report is
+[`output/pdf/economic_authorization_results.pdf`](output/pdf/economic_authorization_results.pdf).
+These 100 markets are not pooled with the pilot or original final study.
+
+Reproduce the numerical study and its independent replay in separate directories,
+preserving the retained report and its original runtime/hash bindings:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python extensions/economic_authorization/study.py --output tmp/economic-reproduction/markets --destination tmp/economic-reproduction/reports
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python extensions/economic_authorization/verify.py --output tmp/economic-reproduction/markets --destination tmp/economic-reproduction/reports
+# Compile the tracked manuscript and its retained numeric inputs/figures.
+.venv/bin/python scripts/build_paper.py
+```
+
+The study command recognizes completed, hash-current seed outputs. Runtime
+fields will differ on a rerun. The manuscript packet producer
+`scripts/build_economic_manuscript.py` checks the original report audit and raw
+ledger bindings before rebuilding its table/plot; those audit bindings must
+not be substituted with a rerun's timings or files.
+
+The original final study's preserved QP failure at seed 60469 and supplementary
+primal/dual initialization are recorded in
+[`reports/full_v3_recovery_20261018/qp_60469/`](reports/full_v3_recovery_20261018/qp_60469/).
+This is an explicitly post-freeze numerical amendment: objective, constraints,
+tolerances, iteration budget and original acceptance checks remain unchanged,
+but the base source hash alone does not cover the additional cached iterates.
+The one-off recovery driver requires the exact archived failure/checkpoint and
+is not a general fresh-run command. No seed is dropped.
+
+A subsequent actual disk-reserve stop and its seven untouched error records
+are preserved under `reports/full_v3_recovery_20261018/disk_195259/`.
+All first 483 markets are complete and independently replayed. The current
+`scripts/resume_remaining_final.py` first validates that entire prefix, the
+archived disk-only failures and at least 3 GiB of free startup capacity. It
+then resumes only seeds 60484--60500 with one worker and the original 2 GiB
+per-seed reserve, followed by the complete-sample audits and final packets.
+The earlier QP recovery status is historical. Neither recovery supplies
+complete-final evidence before all 500 markets and their audits finish.
+
+`scripts/compress_verified_parquet_storage.py` also permits native macOS
+compression of Parquet files in an explicit independently replayed final
+prefix. It uses the existing checked atomic copier and checks all replay
+input digests before and after. Files retain their exact logical contents
+and paths; no special decompression is needed by the reproduction pipeline.

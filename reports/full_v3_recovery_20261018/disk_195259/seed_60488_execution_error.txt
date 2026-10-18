@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/enrico/Desktop/PHD/E-values/scripts/run_full_strategy.py", line 45, in run_one
+    if shutil.disk_usage(output.parent).free<reserve*2**30:raise OSError('Insufficient free disk reserve')
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: Insufficient free disk reserve
