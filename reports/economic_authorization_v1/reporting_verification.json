@@ -1,24 +1,24 @@
 {
-  "captured_at": "2026-10-18T17:08:15.107497+02:00",
+  "captured_at": "2026-10-18T17:12:29.540223+02:00",
   "complete": true,
   "markets": 100,
   "methods": 4,
   "numeric_reporting_checks": 143,
   "maximum_reporting_error": 2.220446049250313e-16,
-  "source_sha256": "b7b5b9296c165dcf370f08d0084716e35501d6c424add29c64e5ee35faa6b281",
+  "source_sha256": "cc8a06487e73ec62e8c929aea2b356b58ead953a0a86a553fa9f196afb326d3d",
   "protocol_sha256": "534051f34bc9455d256254ebda22db3f8de1d168fa4060f46e1ae2e641c4c821",
   "replay_sha256": "2bbed00cc7cd2ced1fe2f162358ffb67c9a362cd2b98d94ae8d4d0ee6bdbc651",
   "pdf": "output/pdf/economic_authorization_results.pdf",
-  "pdf_sha256": "b2fe4e4f95f6f71fb4ab6586bdb5d64d6c78d599be533e1fa16c275d23d94068",
+  "pdf_sha256": "65c25771c88e1b5db4ff31dc1b16774559cd6cf17157ded2eb3b8e53c4aa0a43",
   "pages": 2,
   "both_pages_visually_inspected": true,
   "box_or_reference_warnings": false,
   "printed_utility_and_contrast_values_verified": true,
   "artifacts_sha256": {
     "reports/economic_authorization_v1/economic_authorization.png": "39bd4ac93b96c9202e3c6bba5e36c4aefb9875eb127b9a90ca35b9d562eb802c",
-    "reports/economic_authorization_v1/economic_authorization_results.tex": "dda673b6f41815e38adb734667111671f4cf4e83f05d3a65a2ff1a6c5d1ec51e",
-    "reports/economic_authorization_v1/interpretation.json": "f5e55f50eab5f461cc4aece11391f264ffdd8c4ed26b0c9a8404d46672ef2210",
-    "reports/economic_authorization_v1/lifecycle_counts.json": "c11667f25d54dd9afc1da754b405dd692b3bc7fb23ed162343e9f3b5d7beb6a3",
+    "reports/economic_authorization_v1/economic_authorization_results.tex": "6091feb26a61b3231a1d7785e5cc8d2c38ccb20fe08a784874ee3c9356be0010",
+    "reports/economic_authorization_v1/interpretation.json": "8f81861cc4cd216b8a9eef87a85d2a65e7daad8e696a539008c4be2b3100484c",
+    "reports/economic_authorization_v1/lifecycle_counts.json": "c6b0de505eecd8e46352e1757ddc51b70590807bf719ede48b392dd8b9c1f611",
     "reports/economic_authorization_v1/methods.csv": "da5d23e1a7425593a119d2d9f6f578fca8e1f84a4f054ffec3fe709405a54b38",
     "reports/economic_authorization_v1/paired_contrasts.csv": "d108369437be1a4eea8223640078358038b327f548e7d70690e66e4d24de9d9b",
     "reports/economic_authorization_v1/per_market.csv": "29443264b233784ae2a98aa885080ead1dfe94964f2f6e25e2f82288f90c6513",
@@ -29,8 +29,8 @@
     "reports/economic_authorization_v1/utility_decomposition.csv": "5a89b67a8313eea4a52113229ca49a25af61317bfc47fa9e8a8cf57e2baa8172"
   },
   "rendered_page_sha256": {
-    "tmp/pdfs/economic-authorization-results-page-1.png": "c439d8947d88d5e6e3f4be88724fcd81a04543e80c461409f087c8217588b82f",
-    "tmp/pdfs/economic-authorization-results-page-2.png": "d6eec58be57ee2955323c44fc3669b279dfa2f57d47e917f10b9414be845fbbf"
+    "tmp/pdfs/economic-authorization-results-final-1.png": "590989c751ddb847b732dba9ad1b6e01d2cbcade84840a2d0dc3ff34e49b8406",
+    "tmp/pdfs/economic-authorization-results-final-2.png": "4f765687985f09742687e1ea7946c3d65fb1fa0d56207d615bbb60b908a4c284"
   },
   "original_scientific_freezes_pass": true,
   "current_main_manuscript_unchanged": true,
@@ -39,5 +39,8 @@
     "data/README.md": "6f58e679eaa1722e2c19c38c10eb350acf1a6269d8609745412e6e8958152e68",
     "data/source_manifest_20261006.json": "090c36351221736976393614311f9be727a6a531b2475a9fd6181cb924c6a4be",
     "experiments/fetch_jkp.py": "a9cafb8b5752cf9a3ca7d5bc4def6ec2d1bb41b513ad15e610cec91af203f28a"
-  }
+  },
+  "all_1400_annual_target_caps_checked": true,
+  "calibration_and_adaptive_sizing_limitation_disclosed": true,
+  "numerical_tables_unchanged_by_reporting_refinement": true
 }

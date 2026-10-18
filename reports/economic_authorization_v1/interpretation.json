@@ -3,6 +3,9 @@
   "counts": {
     "markets": 100,
     "initial_provisional_entries": 100,
+    "annual_target_fits": 1400,
+    "annual_targets_at_leverage_cap": 1400,
+    "markets_with_changing_target": 0,
     "evidence_crossings": 38,
     "executed_full_exposure_authorizations": 35,
     "terminal_first_crossings": 3,
@@ -19,7 +22,7 @@
     "upper": 0.0104364587095116
   },
   "qualification": "35 markets executed the common full-exposure authorization. This crossing concerns the shadow candidate versus cash, not statistical certification of the increase from a provisional position.",
-  "source_sha256": "b7b5b9296c165dcf370f08d0084716e35501d6c424add29c64e5ee35faa6b281",
+  "source_sha256": "cc8a06487e73ec62e8c929aea2b356b58ead953a0a86a553fa9f196afb326d3d",
   "replay_sha256": "2bbed00cc7cd2ced1fe2f162358ffb67c9a362cd2b98d94ae8d4d0ee6bdbc651",
   "utility_decomposition_identity_checked_all_100": true,
   "financial_scope": "Controlled first-candidate exposure timing; candidate selected once using training only; not a general adaptive feature-selection fund."

@@ -34,7 +34,7 @@ def main():
     methods=pd.read_csv(REPORT/'methods.csv').set_index('method')
     contrasts=pd.read_csv(REPORT/'paired_contrasts.csv')
     primary=contrasts.loc[contrasts.primary].iloc[0]
-    wealth=[];components=[];initial=[];representative=None
+    wealth=[];components=[];initial=[];targets=[];target_changes=[];representative=None
     gamma=protocol['base_config']['gamma'];block=protocol['base_config']['block']
     for record in verification['records']:
         directory=OUTPUT/f"seed_{record['seed']}"
@@ -52,6 +52,9 @@ def main():
         components.append(dict(seed=record['seed'],gross=value[0],quadratic_risk=value[1],trading_cost=value[2],total=value.sum()))
         annual=json.loads((directory/'annual_decisions.json').read_text())
         initial.append(annual[0]['provisional_fraction']>0)
+        target_values=np.array([row['target'] for row in annual])
+        targets.extend(target_values.tolist())
+        target_changes.append(bool(np.any(target_values!=target_values[0])))
         if record['seed']==70001:
             representative=pd.DataFrame(dict(oos_day=np.arange(len(r)),candidate_return=r,shadow_target=d['shadow_weight'],log_e=d['log_e']))
             for a,name in enumerate(ARMS):
@@ -63,6 +66,9 @@ def main():
     representative.to_csv(REPORT/'representative_70001.csv',index=False)
     hybrid=data.loc[data.method=='Hybrid'].set_index('seed')
     counts=dict(markets=100,initial_provisional_entries=int(np.sum(initial)),
+                annual_target_fits=len(targets),
+                annual_targets_at_leverage_cap=int(np.sum(np.abs(targets)==protocol['base_config']['leverage'])),
+                markets_with_changing_target=int(np.sum(target_changes)),
                 evidence_crossings=int(np.sum(hybrid.first_cross_review>=0)),
                 executed_full_exposure_authorizations=int(np.sum(hybrid.deployment_day>=0)),
                 terminal_first_crossings=int(np.sum(hybrid.first_cross_review==3528)),
@@ -155,8 +161,8 @@ Method & Utility & MC SE & Mean wealth & Mean max DD\\\midrule
 \noindent Utility denotes mean daily quadratic utility net of actual costs,
 multiplied by 252. It is not annual return or certainty equivalent. Wealth
 and drawdown are separate compounded outcomes. The primary comparison is
-Hybrid minus Wait; all intervals below use the 100 paired markets and Student
-$t_{99}$, with no simultaneous-coverage claim.
+Hybrid minus Wait; the approximate pointwise Monte Carlo intervals below use
+the 100 paired markets and Student $t_{99}$, with no simultaneous-coverage claim.
 \begin{center}\small
 \begin{tabular}{lrr}\toprule
 Contrast & Mean & Pointwise 95\% interval\\\midrule
@@ -184,6 +190,13 @@ equal positions after a fund fails.
         f"The evaluator counted {counts['hybrid_negative_conditional_pre_deployment_days']} pre-deployment "
         "dates with negative conditional utility for Hybrid. These are descriptive downside measures, "
         "not type-I error guarantees or a causal claim about all adaptive selection policies."
+    ) + (
+        f" All {counts['annual_targets_at_leverage_cap']} of the {counts['annual_target_fits']} annual "
+        f"target fits were at the leverage cap, and {counts['markets_with_changing_target']} markets "
+        "changed their target over time. Thus the fitted uncertainty penalty did not produce "
+        "interior target sizes in this pool. These results evaluate exposure timing for the "
+        "selected positions; they do not validate the uncertainty calibration or establish "
+        "the benefit of adaptive position sizing."
     ) + r"""
 
 \paragraph{Independent verification.}

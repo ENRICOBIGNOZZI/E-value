@@ -76,6 +76,9 @@ with cash; it does not certify the increase from provisional exposure.
 35 markets executed the common full-exposure authorization; three first
 crossings occurred only at the terminal review. The new report retains the
 negative Hybrid-minus-EconomicFull contrast and all downside measures.
+All 1,400 annual fitted targets reached the leverage cap, with no within-market
+target changes: this pool evaluates exposure timing, not the calibration of
+the uncertainty penalty or the benefit of adaptive target sizing.
 Thirteen policy controls and five independent-replay controls passed in
 separate runs. These controls and the new market replays do not add to the
 earlier pilot or frozen final study's sample size. The original 500-market

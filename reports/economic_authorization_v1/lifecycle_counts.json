@@ -1,6 +1,9 @@
 {
   "markets": 100,
   "initial_provisional_entries": 100,
+  "annual_target_fits": 1400,
+  "annual_targets_at_leverage_cap": 1400,
+  "markets_with_changing_target": 0,
   "evidence_crossings": 38,
   "executed_full_exposure_authorizations": 35,
   "terminal_first_crossings": 3,
