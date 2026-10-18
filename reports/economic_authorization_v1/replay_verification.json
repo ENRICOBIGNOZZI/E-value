@@ -1,0 +1,1065 @@
+{
+  "complete": true,
+  "protocol_sha256": "534051f34bc9455d256254ebda22db3f8de1d168fa4060f46e1ae2e641c4c821",
+  "verifier_sha256": "c37b17012de0c1014c452531c871131e7186fa092629af1f3811ec972605f41c",
+  "arithmetic_replayed_markets": 100,
+  "scalar_checks": 7162380,
+  "maximum_absolute_errors": {
+    "training_candidate": 0.0,
+    "annual_training_n": 0.0,
+    "annual_mean": 0.0,
+    "annual_second": 0.0,
+    "annual_standard_error": 2.710505431213761e-20,
+    "annual_target": 0.0,
+    "annual_evidence_log_e": 1.4210854715202004e-14,
+    "annual_mean_score": 0.0,
+    "annual_previous_hybrid": 0.0,
+    "annual_provisional_fraction": 0.0,
+    "annual_full_forecast": 1.3877787807814457e-17,
+    "annual_increase_forecast": 1.0408340855860843e-17,
+    "arm_weight": 0.0,
+    "arm_cost": 0.0,
+    "arm_utility": 4.336808689942018e-19,
+    "arm_wealth": 0.0,
+    "shadow_weight": 0.0,
+    "shadow_cost": 0.0,
+    "log_e": 1.687538997430238e-14,
+    "summary_selected_index": 0.0,
+    "summary_annual_scaled_utility": 9.8879238130678e-17,
+    "summary_terminal_wealth": 4.440892098500626e-16,
+    "summary_maximum_drawdown": 9.8879238130678e-17,
+    "summary_annual_scaled_cost": 1.6940658945086007e-21,
+    "summary_cash_fraction": 0.0,
+    "summary_insolvent": 0.0,
+    "summary_deployment_day": 0.0,
+    "summary_first_cross_review": 0.0,
+    "summary_pre_deployment_utility": 9.71445146547012e-17,
+    "summary_pre_deployment_expected_utility": 9.71445146547012e-17,
+    "summary_pre_deployment_negative_days": 0.0,
+    "summary_pre_deployment_negative_conditional_days": 0.0,
+    "paired_decomposition": 6.776263578034403e-20,
+    "market_initial_training": 0.0,
+    "independent_public_second": 8.131516293641283e-20,
+    "independent_public_fourth": 3.1763735522036263e-22,
+    "market_selected_return": 0.0,
+    "market_conditional_mean": 0.0,
+    "market_conditional_second": 0.0
+  },
+  "market_replays": [
+    {
+      "seed": 70001,
+      "days": 3528,
+      "maximum_second_ratio": 0.011450497520387981,
+      "maximum_fourth_ratio": 5.5548673268652584e-05
+    },
+    {
+      "seed": 70002,
+      "days": 3528,
+      "maximum_second_ratio": 0.015326364413324968,
+      "maximum_fourth_ratio": 0.00010401676221771606
+    }
+  ],
+  "records": [
+    {
+      "seed": 70001,
+      "selected_index": 2,
+      "files": {
+        "ledger.npz": "7ef620115cbc181d5b3a6b9f4e378ee69d5dfb44e69615d56e2c3e14036d3547",
+        "annual_decisions.json": "e671dc773c5a691d65dfa4ddbb1af506bd5bdec33adaad39e65bab0063d0b5f9",
+        "summary.csv": "9c9d63a696a3bade9b48b56dbd54f0b3a1c1e4be864d4b27f9be86a57a36a0f7"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70002,
+      "selected_index": 38,
+      "files": {
+        "ledger.npz": "9c2c455c14a6c12cb206f9609067152ef3d73025262d48d0d31e2638a7105f0a",
+        "annual_decisions.json": "aeeb1bceace970433071cfcd4741ec85e76c578bddfca176760d27804b80cbdb",
+        "summary.csv": "a227ce757dda254c55eb888c03b605b73e991651fe8b22f36554c042398ed66d"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70003,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "d1046df482ca5702ed82c5d807774111b34e04f44d16f57f417df9c9587d5813",
+        "annual_decisions.json": "3d49528b21292e85b654eb1d06cf14b241d39c85ae0dc4c9a5c99c3174022646",
+        "summary.csv": "e8cd63914e3194ac7252a68911277f248732f64e0f98af558e9b70f9819b6732"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70004,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "27d828f548cb2112e942fa3b40a55069dd921949f0dd45209e56c22c1ac5c607",
+        "annual_decisions.json": "bccc4be6886b465d7ca62b9387e59f7e415c9dd081b3104b020c29c506e45bcf",
+        "summary.csv": "68a4243fd704b7c1c4e88a3441f530ed8c51f17c2e555306470354bb20989570"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70005,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "fcc850db1d1203ecf848029eb283539b651a2bd386d813b408aeae0ec3730356",
+        "annual_decisions.json": "25c7a0ac32d28a7d4aa9356d4fe96cc1756d6f9e84efb3020e41289c5b331995",
+        "summary.csv": "bfd214d4d27209ffcf76b6e76e7cbf07b2ece96129151b344b1dbe1ee5fc23e1"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70006,
+      "selected_index": 26,
+      "files": {
+        "ledger.npz": "c6536862aacf62ddbd4542a810f12729944d4ed7bde96e3fce73d46143412875",
+        "annual_decisions.json": "7d60a7767a4a052a554f40e5137194fcd57e086bb63454496b01ced301d5bcd5",
+        "summary.csv": "751dd62160d9cadd952be4e6fd5a7f55266c74da79d3c4811befa8f5afac7c08"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70007,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "1e6339fc093ae5d3783c41e809fdc6b05dde4fd3712cc6f2a2987bbf9d9806a0",
+        "annual_decisions.json": "9b190424d3b4289f17c02b103e012b572ee4b838fce3a6398fdc174adb7d55ad",
+        "summary.csv": "c8f378be9e0d7e0bb987999b29e282f1155d12461f80fca81e5a58497f866d14"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70008,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "f32eeed3958be17d4486169098fbad1b385f1e3b848936f70a57622a53bd6496",
+        "annual_decisions.json": "f19b08b154dcfa348fbba1c6bdbcc547689096c0addcb7e98cf3b8d340b9ae4e",
+        "summary.csv": "56facfd4c2db6fcaab2a6c679cd47cdb72405fc78d72647095399c464a01e610"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70009,
+      "selected_index": 90,
+      "files": {
+        "ledger.npz": "9711cfd3042708a3216f90780ca4e6e408030914ccd0d1296152455e69966977",
+        "annual_decisions.json": "d4f81d1cb1efef9c5077b55aa0d9f24565896b725f154f5628f6b1d789ccb5aa",
+        "summary.csv": "b6238a65de53003abbf1cddd223fece773d4231b9194b32da40449830079ede9"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70010,
+      "selected_index": 26,
+      "files": {
+        "ledger.npz": "c3e13fcfa633959f4a27eff3e76229301b9a1df5e8dcec64f7cb2f1ce49ba543",
+        "annual_decisions.json": "2badbdbb819307331b011cc89288197a26bae68b5b4daa0585f913c4565177e3",
+        "summary.csv": "47e2a4e38d078be9f9396a49bcb283423ce81f32b86d2ef7df24a140881e73fa"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70011,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "b779346a0e15c33939a3e07e14283e16e192cc73a220d9f66898bceaf6f77e20",
+        "annual_decisions.json": "8a73cb4c4282573dbadf1402d783e5157aef0918ca9d8f27fee1593941b215ff",
+        "summary.csv": "afe231bd7b6684d224fb7ba6749d65b0fa5cb849fe499392b46a6ab2a012dd33"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70012,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "a76bd3d0c9746370630d326e573ce758856151858dd8c24a78199154071cc150",
+        "annual_decisions.json": "330e26b57613f9f690d01e2d6d8aa3c4b1fad747cae4e9a1d4708f1b04b9065d",
+        "summary.csv": "b907e2943ab52fca0c79a16b57edd25a01bb1a5057416de78c1962bb428b53b0"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70013,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "6d09d69228f8eb64517085e81105f6744bc40d2bc84cb3a1a7f424ff9546f3c8",
+        "annual_decisions.json": "d0a3aa14dde89946ec9d9ee5378fa12e4e09a5450ccea7b7f0a1131aee14882a",
+        "summary.csv": "695bd35ac5a35c3e93be6eaa2f827c66bb8430e9547b95a9be4f6cb8da9d0f01"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70014,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "3d515e1349a69e40c10e6db25ca40e09c2a003850a53a46a64fdae35d3bee556",
+        "annual_decisions.json": "19e0b50cf5403385b6ba57af1359019ac1f2a7d3f51ace1c1d8bba6b373085b6",
+        "summary.csv": "4dc63c7b30794aad5ccb0ebef488b8cec4ad255012497395b0e5c0cea31c5edd"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70015,
+      "selected_index": 10,
+      "files": {
+        "ledger.npz": "d3becc65489c1aa3d1f7b8cd548edd5632b4028853b6f0a60690eea0a3e858c9",
+        "annual_decisions.json": "9d5992d5e1f7448c6e5154a8069d24476e7d025d6391dfe4becfb6532cadef3c",
+        "summary.csv": "30507abe3679d614b7c8914ce2fbefe916182e3df38f609f88f004f1506dda94"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70016,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "893ed92f88bb186b18b089d84d7bc0ca047720390f198f5df1d2e72b44854ca9",
+        "annual_decisions.json": "71c90392518f94b1c59f30afedff4b6bec6cb3b0f79ca6c3b57590ee914a14ac",
+        "summary.csv": "c0446baf1b188fa5e5c478ba324092375d1e1e4ffd6430f75a1169f8a3597e38"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70017,
+      "selected_index": 10,
+      "files": {
+        "ledger.npz": "b0b417c0005799fe866695dce508b7b6418111c2b28db0f4c6b6b3954d787a9a",
+        "annual_decisions.json": "50ea0cc20b058a1811a2405e782ba72694ce3c27c31b3d4633f0774044ba9146",
+        "summary.csv": "abe8653cd7a85d5ec9ff6165166d6ea72cd940c23f959eab2792429a575a6269"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70018,
+      "selected_index": 37,
+      "files": {
+        "ledger.npz": "50520219bd1b43c37de42e438baad33a751326b935583457f2f90ad4319d603b",
+        "annual_decisions.json": "5cdc3c57d1081541573e44f9742b717018dcfeb93c65970d3dee4b2b7e895b4c",
+        "summary.csv": "13c957a0862b6dfb24a3c0821c4f7fe5e52ffc671c48d07eabe64f34ae4708f2"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70019,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "9bb2bd368143ed8968d4e01282b6ad356c5481a4b38262cdb866c3d5bf1e03e2",
+        "annual_decisions.json": "31ce5941901196c5f0faa5eba39ad93a607c36a85d13d7bc922ce61607961aaa",
+        "summary.csv": "f436aec7be3b2475e3e6efade34b1291346400d0ffcb361c0730e53645b55cb0"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70020,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "530fbb1c53ac4da8583c517e1966e8acc6510770f10118754bf89e46c9a49ac9",
+        "annual_decisions.json": "0b07c00bc16ade6a8389649671e5b59c573d6b3734f470c362c549b5c171292f",
+        "summary.csv": "1091dffc0f46a317ef46fbc9ea56428a205c26a4db8c90dd0adc402932f14ad6"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70021,
+      "selected_index": 5,
+      "files": {
+        "ledger.npz": "be75e859d7b3e3682108047ba5290a2490832697040c7e0bb0406379a6a0ec65",
+        "annual_decisions.json": "09deb8f32ef0dd4ddafaf2a8ef10541c2b00b4d5e8e2212fbe50c4993ca7c6ab",
+        "summary.csv": "bc351f8ff56dc22af83bb3ca338e4db1be725341fa78b4920c3bcad5cb39feb7"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70022,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "f95aa15241144be74ae5456e0368cb1e19d43d4102cde6042d1c16b75397584f",
+        "annual_decisions.json": "db4d9edd5c2b3c4cee2329a7595b33e612f58ba379001e221c7aaae286f8aa63",
+        "summary.csv": "7132a5a85aa255be4d55b378ed6da20b04a1e3e29675d98866bd5c7c4568ce8e"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70023,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "4273e6f3a1c59a74448cb53d2c18d28fc306c00763fffd4a64a2ce25dbd33ba3",
+        "annual_decisions.json": "9c6c24a187bf2af80ccf0a7f37e23313a0fbe5349ccde841078c573508b5de5f",
+        "summary.csv": "65da98ebcababbf4beacb24ce0d6891a0fbd677d538a341d82674e96f83c9836"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70024,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "b006f739f158d03ad3f5b8d8a6510f5227bc1d2f4716db2401a69376714ac1d7",
+        "annual_decisions.json": "81dc1017c1e9c4232418c250d5f812b1d60b502418f8c2bc851b55ec1f5f3e90",
+        "summary.csv": "3a9bb32aaf6095f31487804e28dd28b229a824efc70158e43f8933bb3da96e8c"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70025,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "9c2486f4dbe5d354022e2a8a072114795ee458f9b952395a104bf49a8405df6a",
+        "annual_decisions.json": "61fa29172e6e98dd1b955bb0d5d44f1ef00becc223b2c5c251a2d317d8a6e07a",
+        "summary.csv": "c195d4cbe96e1863fa0368831bf2b312edc4ae8a7eaecbd11268f877dc3756bd"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70026,
+      "selected_index": 29,
+      "files": {
+        "ledger.npz": "5c0c8bb302c97b1bdf073560d60ed11a90f467456c2ba7a92bbf85db07f34ee1",
+        "annual_decisions.json": "8e130416331317a589c25ca720ae4ec3a0069d64919991d515e6b1ce1d5d7370",
+        "summary.csv": "0be3e3caab57e3a27b62a4c957d3cfed7d1ea4bfe9dd65da6f1e7ea1090da0d4"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70027,
+      "selected_index": 26,
+      "files": {
+        "ledger.npz": "a60c3a683f35b2b5a689cdf74cf83d8ddd88188a6731e895c810704d8252487c",
+        "annual_decisions.json": "ff24c77dee45140c7f6269fd72415598987212fcd4d1b53995fd1974c3f5460a",
+        "summary.csv": "a4ca4f632dd8e4c60ad8cc073eeaca04f55bf4ffde6e62d7d2800623375a9f95"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70028,
+      "selected_index": 37,
+      "files": {
+        "ledger.npz": "b54e484f7649942890a97a86256ad379918fb036a0f3dc9ff374ede0debf7558",
+        "annual_decisions.json": "8dde6ebc2cced8c6d7605ba9f3dcac61491629628667511caf8f39b68671c897",
+        "summary.csv": "0d7ddbe47f7df52fba0f980dcae925623c07db5e87f310de3f6b5e0278a76d23"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70029,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "de7bfb321c046126fb20c68a3cb17d92c03c9f0d9d9ed119a72dec666d83907a",
+        "annual_decisions.json": "5b1c094e55c8794ccd97bda83a6fd84303f770f81d6be8cbfc710ec73e1baaec",
+        "summary.csv": "de1a21f9369e1682a0819d242ad0a7ccb1dfe699a41d7e4a044cb1091576dcc9"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70030,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "b71ee12465f721aa25bc48e38b747a1f5522652901f2ed2ceea177e1396ba1c1",
+        "annual_decisions.json": "57a1312585588ce864929fe6740798ac2286f778c74f6558b8a2460878329c5f",
+        "summary.csv": "2978d4cf87998bce9dadd02977743e5abb7fc0669982a0a89c732c7cfaf234b5"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70031,
+      "selected_index": 96,
+      "files": {
+        "ledger.npz": "95ef538b4491e941d40c48eba08703604bde86e6efd3dd217ac715dc35c01f16",
+        "annual_decisions.json": "93281c5c7e98dacd14a3f52488bc61b19b18d802d7b0da0a67ae6cf5729b540e",
+        "summary.csv": "5d65993836b5cc727f59ae5692f1b5e3c92d9c57a06dd9d041db798c9998a7fa"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70032,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "090a37e8568f054e78c31f650bd89a1ee10ab0c65add376041e7e811f50b136a",
+        "annual_decisions.json": "535494d1fb841953f05db169a9c26e32de360ac60ee6806a986ee66d182d8639",
+        "summary.csv": "cb719300e36d35bf367bf4656c066ce4c38db1434c7835bc656bae4bcfeb5e8d"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70033,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "1907529e9aa312c100fa71e18d2de758f43722a5d9c556de83202a79ca709e70",
+        "annual_decisions.json": "cb7fd316f4289060118c65f7184fcdff32ad3536540faac7775833e2a8b9a76c",
+        "summary.csv": "90c4f4521f60b51b640fb83625c8d2fac22f9cd42a369588e3a567feef620a32"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70034,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "9684d80d67b315c559756a8e1184dc2c4bb3b7fbd979e0534932baae46de65d5",
+        "annual_decisions.json": "df99ff0397abaf415b323fdc1604c3c1a5713562e7e49cc373ce6440532f9c3b",
+        "summary.csv": "3e92b55feed04e7ac30145d1c5d747a7a5f6b33722cb284a4ada3c58f2de8392"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70035,
+      "selected_index": 37,
+      "files": {
+        "ledger.npz": "5fd127ca5fe46a44b540437840e79164ca5f05a9f0ded87974ae079954d9f13b",
+        "annual_decisions.json": "9ad199dd20a1d291b4f1c025acb08e887f3182ea0dd77f1f7ff0cf8bfb80bb2a",
+        "summary.csv": "e2a38caff8f2d3214ea739d2ef77db83b907f1368fbff4e586228841da3992bf"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70036,
+      "selected_index": 5,
+      "files": {
+        "ledger.npz": "e01fbde2b52ae5fafa3c8e2530b2b018e7d11318694065426c7093bbdb5e6c29",
+        "annual_decisions.json": "09e297d372d1ad33c4de8c54c00672345d69ee6ce102173e3b8ac9be3d76736a",
+        "summary.csv": "90daeb26860628055d7582b8ec62dc78c08a43bfa7f55e86c1af10f4654d0663"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70037,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "8060932d0cfed57e1886cab7cdb0102454d572cbc538983ed945bac9b7143942",
+        "annual_decisions.json": "56cb6a2c9bfb297fc1d4e91dc9aebfa9d7de11e400da8fe61cff1fb9a0b48a34",
+        "summary.csv": "c997cf8168bec76cd78d43a166f22d756e5cab076cdff6ee58d47214cf68077d"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70038,
+      "selected_index": 96,
+      "files": {
+        "ledger.npz": "17c5851cc6f48e9ac274b9967d86360a0e3a27c47742e5579094761078c83a07",
+        "annual_decisions.json": "3edb697018a353a7918f05d6ac401cf4deb1071476a203a30bb92d32010d1f8d",
+        "summary.csv": "546e2125008aa3b684d12032449c3148c327230174998cb188b512412966aa3a"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70039,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "809ff414228326ddaa29d1af5b07c0a68012fb93ad2a1150ca27ff6af0d058aa",
+        "annual_decisions.json": "4b3da50147e41ebc9e367758d3a8d8c5b8a9b8d4b82c8bc9b498edb484ebe53e",
+        "summary.csv": "992b6e4a368fa5801ca6285b896741d92fca7786580593f873a03c109c4efdcf"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70040,
+      "selected_index": 38,
+      "files": {
+        "ledger.npz": "a5ea6dcacb9caeb7556aa98c636f14ce1e34105647109efd4f7141f7c9eb80e4",
+        "annual_decisions.json": "d5ac5c1269737188d03244686814d652d36518c6e162158e910b7685edc88896",
+        "summary.csv": "ed2ec2ef9fee67a12b1fca348a9f5fc00297a3b8376fed5fc86fdf7879b51a37"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70041,
+      "selected_index": 98,
+      "files": {
+        "ledger.npz": "ba276445ef8b045b1429df5ce44d4243b4999807ee3a6d683b43c5a67d07dca8",
+        "annual_decisions.json": "f7ba396b3fc6506de2fd17470c531fb7b8e448ab7f3c73679964f8c334af1a7f",
+        "summary.csv": "fbc2e63d3cddd761fb846e6562bd6602b41b09bf630eb23c8207ca9b5c2b2a51"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70042,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "433d5f25d1ed7717c456fb0a45ee09c531c8c0f7a60395983a366d74f808b90d",
+        "annual_decisions.json": "7b0d0a74f796828476ce1fb2093269048c9ed3d2f0aa36d6debdcd7c3828d4cd",
+        "summary.csv": "0f3dae8d948af472cb3877e1fd78a23fe53baedc325be7fe90d4ac67ac600059"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70043,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "6e54f840b36891f08a443176cfd2d20c79cdecef390a39f06ef6731354ba5171",
+        "annual_decisions.json": "8de48f4139f420c462b1f227a992f588344163cd94c224e0ac45d126d8eac298",
+        "summary.csv": "ff8426970e6ed82b3141441a0cc127aba0bbf627a9b684da9419aff66bb5c09b"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70044,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "9c70257abcc1ac98afa9df40ed541b56568b3c9c1b200f2722293d6a828676d2",
+        "annual_decisions.json": "d00aadeb5607d7d93b5874e3f88a8163c74b99b9d7fbe2d580791fa71f5f9587",
+        "summary.csv": "bbba0485b5efd97b525e0b8ea1d1142626c8a41d06589b7b65605bda63e25a1c"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70045,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "e286fa66ad3445e18185240b71056cee5235865f64d56fa81e61d678a074cd95",
+        "annual_decisions.json": "247beea8fe344efbf38bea8684efd265876ad91d94fccd991847f1cb8976b4b1",
+        "summary.csv": "ee0eb4a97ec749afb5c5423c46211ccadcd1cd0ee815becc317f2a0e6e134773"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70046,
+      "selected_index": 20,
+      "files": {
+        "ledger.npz": "364ed8d157f95d7dde9149869906786c2805a67ad96d3a37acc43423c222be8a",
+        "annual_decisions.json": "19583433e3f0abc6df766fc3edf3f427a878e83aa0716308e4665df26054a4c4",
+        "summary.csv": "77e28425d88c134a6232d2c36d7325df107e43caac698451df13fc1abb7e93ee"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70047,
+      "selected_index": 29,
+      "files": {
+        "ledger.npz": "7e92da838b8232fc05981e63f483e602c3919df1784d9505b7d56dafe3e76b0c",
+        "annual_decisions.json": "857b7777e66427d7864d0d876f68e5ebc0f98d476bb633da85a93b11d8e13387",
+        "summary.csv": "23e46a502bf2ff75509a127de8e2e8f85708dd219070973e57949b739466b881"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70048,
+      "selected_index": 19,
+      "files": {
+        "ledger.npz": "6dceb9a7e9641b7aa5ff99b7223a9190734c9d65c3436466cee7de4e54d02b65",
+        "annual_decisions.json": "e17d272e5ff6f56afaca5a0c0bb18a76e6b96adf67dee9868bbd91a6163ffcc2",
+        "summary.csv": "1235aed9816dfe80cf2ecaf192c66c49e6b4bebf8c1cc92bae032073c6e3e23a"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70049,
+      "selected_index": 10,
+      "files": {
+        "ledger.npz": "879a1b7ee039d323e57bed13371b2b84ee93f7036ece96ad1f8f13e53eacc67f",
+        "annual_decisions.json": "6b7ea58c3ad61d384558d822590a231412687b7e905be8f920df03361657356a",
+        "summary.csv": "4d54ff5684c4dc7c5d439cbc0835e50297d41ebe9367960ccc57b653ea75b018"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70050,
+      "selected_index": 26,
+      "files": {
+        "ledger.npz": "9cebf5cdaa550aec3c31ef94501f9527b8f52e40636f262aef4fa7baa81e7140",
+        "annual_decisions.json": "49b035c25e019765c5b893231e16abf158718eeaea881b41f2a1ac9073b8ddd4",
+        "summary.csv": "fb651c09f5884a6e806ff5ea48122b5dc6bd177e4c6fbf4b22e34eb1cfede69d"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70051,
+      "selected_index": 38,
+      "files": {
+        "ledger.npz": "9b5905e702011b48f64b7a080f5d2f8b7e03a3d7530f6a56456a13655dc2a5a7",
+        "annual_decisions.json": "9d8af3432b818fa57f420763f3e36e5d77a7ef0259e2d9dcec6e157af061027c",
+        "summary.csv": "09dd41173cbb213d75b1b806482feef280e7a106e3c3a472e36282fedf1d8ab6"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70052,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "0d10a14ab208f9639ed833481de16183e39215e154cda05f94bfdf19cd803d0b",
+        "annual_decisions.json": "b7d2afb1ad40a829ff472f16db94000ab1f8a2adf59e8b946eb845f6baedaac3",
+        "summary.csv": "ef128d39c0de70e089fe6450d9720a85b6ba0eff003da4eb13457b56ca176254"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70053,
+      "selected_index": 39,
+      "files": {
+        "ledger.npz": "4052c5043f165c3248aa7f58c274d6915f414e51412fbf9d98a6990f4531a725",
+        "annual_decisions.json": "8cddc2740379dafb07844fa2261129cf84b258d4cbf54354f3f0ecaffd1bbae8",
+        "summary.csv": "f0e03a29fc5b7c4c11acce5fa3c152c72e58495825f108ce9ec332da15161587"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70054,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "86a0703d9e3e1a60c6d77c330b4417d6ce34e113b605bf6efd2795a6a57c3e81",
+        "annual_decisions.json": "d3c486460ec62b5c4aad15981954c191256d84085a418897d7ec1d08605a902a",
+        "summary.csv": "1e9cd8b340b10e5e88bce23508ed756117f65a342936a161519e6f26c70aec1f"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70055,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "ee6f2b18026a49a1d0d3a659817a81fb71768abf35f8489d2b141bf12d60d4eb",
+        "annual_decisions.json": "af40bd53e8a05a1bfc9d8e8952a7d3e506d42d32190773cb73ca07344204e4c3",
+        "summary.csv": "2b0a82fcb4aed337566f03629f4cc95e9ffbabf0099ca3ad3cd8a0db684affa3"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70056,
+      "selected_index": 38,
+      "files": {
+        "ledger.npz": "e6dc1bc34b42ad64f03a4ed64c63607323240fb36542ecc0d8aa9c3470e20a0b",
+        "annual_decisions.json": "c46cae7d357ed999f40a15c8271a506c6349d12fcdbf3c122bf0d899298b3445",
+        "summary.csv": "b2b635263a21013675654cb4893702dded0eac3658f12ce37d5656f8176e7b8b"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70057,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "d8cd2715493a0a4b83ba7fecde98350c0adfee0439c5a20683afa4110a6e5183",
+        "annual_decisions.json": "7bf10d0e2895cf71e7f728e2315a78a086f443b0415565a3e7c525cc5eb93a6b",
+        "summary.csv": "ef577d6446ab0397649ef669fb09ad72089c79a4856f8902cb4a38d6ce0de14d"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70058,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "bf529f243e1296fc9549d4a7a88bfff4bc32e6d8f09638560d7300271a8369a5",
+        "annual_decisions.json": "cd069ae6bf5279d0c0848da5c1e7876c17ad8171e64e24e34a646a6c25c485ab",
+        "summary.csv": "bd4e6102ff1aad476cddb6c320933c9a286342b0179ea9cfa69f9c2c8da96367"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70059,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "33a5ea1198a7a85b9f0cc6d225b91696a059a0bb820d9d37da6e12018f70295d",
+        "annual_decisions.json": "939fa26b03120d1c99b97937f9376fbb8cf4b96325c44eac2148d0d50d332057",
+        "summary.csv": "cef655e963b5185d86df9392fcdf95c6ef143fe5a12ea7da6e24e84ecc46e6bd"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70060,
+      "selected_index": 41,
+      "files": {
+        "ledger.npz": "67c4b633ecd41ab204c789210e4fe721dd673c7401f9ee78941bd5e2feabe4aa",
+        "annual_decisions.json": "e72d67e9ca32c7fab4353443fcd0e840571b8b7ea1e937d6b340918a3d5c8249",
+        "summary.csv": "ccf7eb7ac48345a4727981738cca3dc009afef65eaab85ca26b2c5fc70fa8611"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70061,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "ffd2efcf70cf7fddde97beda7d979ba0b321788f76b040ec69ed2494a4f8b968",
+        "annual_decisions.json": "32f25d93707ba2badacfadada24af3057247374d53f61b5552cb887cd1c30727",
+        "summary.csv": "9e7935f1f2e631a59fca6258790854f5475a363f561ce817a5224060eeec594b"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70062,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "1b801ed52a5ce7b0ac28bdc7eb80adae6b02b860ef1ef2b33d02636dbbeddea9",
+        "annual_decisions.json": "5d6535169a9a23a327660f31350172d6fe0456bfe08334fea4074818c7887b22",
+        "summary.csv": "d4b8c41ad9558582dfea28b538d3243e9afa8b7693fd61804c704db9d8509d73"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70063,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "f5848e1e86b67bb995320e0f64ee8a004481869f51134270e1685fab9b32216a",
+        "annual_decisions.json": "e7825519502a6a422f5139ced58657e20f3b639fde41f1ebdd77746b9d4d9417",
+        "summary.csv": "3c3fc5df9ec98684b570791a60be43b3b58eee71c44d9b7ab0b3c43c4af5a539"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70064,
+      "selected_index": 10,
+      "files": {
+        "ledger.npz": "47e0bafd02585942ed42499453ae7b165ac6a858764a139de991a4da69e6f290",
+        "annual_decisions.json": "7c5801bd008786abc96b1013ab2b7dcb84a8c53aa8de42d075e4271b7d81f196",
+        "summary.csv": "660812fc0e595cf7e754d0e8122fae1c0038703aff43843dfda50cc0f9b4f1a8"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70065,
+      "selected_index": 26,
+      "files": {
+        "ledger.npz": "729249dd3d50a97a6e32a87383c973f390013e234d5ac9bf09fa9392fa81598e",
+        "annual_decisions.json": "56a279e85aded63953d7b07768e8f6f47c2967929d05c7b56a372931c425deab",
+        "summary.csv": "103fd44865e2f5c0512bda792050d5da645de4e947cd0ed4cd0020c91a314d85"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70066,
+      "selected_index": 5,
+      "files": {
+        "ledger.npz": "cf7f0f2c89e4c92f630f477c409d0f6754aa7d184004d3340ba12e8211c5add4",
+        "annual_decisions.json": "62371bcfd8afb42dbed889e3b49672fe83f9385c9c2dc5f0f1add257e869e8df",
+        "summary.csv": "2646ad5fe0d333ce6efcd633a4d54d10afcb4af7b67a6653f4bf47bd1f7c3ae6"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70067,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "dd2a224f737e48f57bdff21e9f29ec845f8e83bd76109c6a19844aae57e29a80",
+        "annual_decisions.json": "4e3e96d537223f2a3ec3b63ee28e43517aa568bed1522a004df4cd7d078437ff",
+        "summary.csv": "35e872ba0a60f2abedf69c2716a3f7cc66a4f96ae0d24fc859e1cc705185192b"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70068,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "31697d39e4cb3b0bb3df73a906e7786e520e4c4005905dc8d49158c7b30f468e",
+        "annual_decisions.json": "f323f823c0e04fa2422e15a81429f231b42564554f035192e28de288946168ae",
+        "summary.csv": "fc8095b900be5b00dc38e37c86d9f2d5b61c9996e85079009631a26ef88f4e40"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70069,
+      "selected_index": 38,
+      "files": {
+        "ledger.npz": "746429148a408b470d0f705a0b0bcf02887e9af7565a5eb0c9c5b569955aa947",
+        "annual_decisions.json": "68081ce9fcbc1f0af751801e0d583f73888b7d1e510fe8b64e7da4102af7ebe0",
+        "summary.csv": "76496a8bb0e76765453f13309c90d5b1863c803d37bbbe15d994a85a6d1e215e"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70070,
+      "selected_index": 8,
+      "files": {
+        "ledger.npz": "710d55be78ace871b1a7d27d352bb1334de0f70bbb44b74799012b4811792933",
+        "annual_decisions.json": "102fcb437a4016628ee781367fc892a9a1a3f2e9a6f1a2deb4390b1bb13152ba",
+        "summary.csv": "ed4dda4ef13c3a7ba435fe358f4b7697f68a381ed0354aab088837cbb1d50319"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70071,
+      "selected_index": 26,
+      "files": {
+        "ledger.npz": "0fd1764ece5047fae038a066f6d76ae36cfe43983f1dda9e6847c6027f86fe6e",
+        "annual_decisions.json": "351596a1f8f17c50da78432b9833466ec76ddeb0f681a06d4ac8abd99a9a5be8",
+        "summary.csv": "c2999a5f9340d76102d87a5096acc7d9a954b0cd2f99e9405d438ff41d055531"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70072,
+      "selected_index": 44,
+      "files": {
+        "ledger.npz": "9ae3a190b19e1183586194879cbededecfac5fbb12ccb61416d177c382707692",
+        "annual_decisions.json": "c7925b618036d9cb47e1e70b1063883038ddb3be3995533d7dbdb5488bbafca9",
+        "summary.csv": "e4af237b8d6a3aa2c2da6ac5395fcbe80dfc4a61eb4481f008a1f2868753e1f4"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70073,
+      "selected_index": 10,
+      "files": {
+        "ledger.npz": "242ea4c9dcfd56dcc4f1e947bb43d92bf4962c742c89b4a28c1895548480d296",
+        "annual_decisions.json": "9fb110127508f5d8090a67ce3d971fa345d363fd7039aa077cea6be40214f8e9",
+        "summary.csv": "b5c7dd8ce9c63eed974f3d54a299745758954d79663d2077f62b6accd9b4c9a2"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70074,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "602200f227b563ccf138e1fafd8e494ded38ba8d4b5e10a183fafacb86e83b5e",
+        "annual_decisions.json": "170f67a13f5ab70b1611867747d17210f98c5fe5fe48aa09e44bb63faa9c9123",
+        "summary.csv": "e7ad06d3a6ed8e51939f6f1cfd870502ade08875b4d62f837666a87be638e14e"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70075,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "5cba9b6d6b50dadb9ad0ab41703a8cf6f8e66b62046f93179d37ac54e994d369",
+        "annual_decisions.json": "0c3e014c39b5833925773db43e9a32dbe96e4fa26af9c5ce28d58e70f4006304",
+        "summary.csv": "6521ca362bceec5fa0d77b70e0c992b8cf618018ece18a49bf1f0088fb8512b5"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70076,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "3440472ba067b508b75aebbbba47119ff83fa4539713e37ea8b409cd2c4fb054",
+        "annual_decisions.json": "60729b0a92c63dc2136cddc5712bcb5681a0284dceaeb092ea325d1cfebe68c6",
+        "summary.csv": "61c862cfafe07a3c528fdb8da59aa664c48ca770038a7fbc25ebf93cd00bd144"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70077,
+      "selected_index": 37,
+      "files": {
+        "ledger.npz": "25a2930ac89af40349e77bb62a921e41a63f0d5e235f31d9f3894c716d0335f6",
+        "annual_decisions.json": "09d2dba95adbe614822d1b5636e3cf86d72f27c897b95786e43b56994fb4c936",
+        "summary.csv": "2d31ed3de6a18dadeeef3b1b1ca727c923395118fe7ddfb9039e7914055e5164"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70078,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "2f934febaa3484cbe392f96f0cc2a66146f014b4b73214a8b1ad5e953e52ef8d",
+        "annual_decisions.json": "2b9c38508e96fd7bd831543d0256ef84c7e6a0af0ddcce68387434e130280b9a",
+        "summary.csv": "fc8b188d0d8114da47264b0c99ff0c9656bfa7921a239b435d93f2a4b72923eb"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70079,
+      "selected_index": 5,
+      "files": {
+        "ledger.npz": "71b82c29429af6282e2440f928e4c8c4f9b232898444feb61d457bfc25b6bd3f",
+        "annual_decisions.json": "22a8ee24fc83168588730238a328e17395c56794d3616974ca76a78a09199509",
+        "summary.csv": "d803187ceb1cb0e1f1db701744215399c82ae182b156d689f6f4f52aed982efb"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70080,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "9e7660d7aadd6951013b2606f810e7cd537bfd9f63c8bb895ad875fcd9bf77a8",
+        "annual_decisions.json": "b2594b88e873edfb0802f1ed06070b7bd0b209d0709b7ef49a2bdc6ade6fa717",
+        "summary.csv": "b45198c569f624eed280743591db6067086ef2857e89f79c2ed4bc201bbd5d2a"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70081,
+      "selected_index": 29,
+      "files": {
+        "ledger.npz": "db8cc2b03936249a781562ff56733aa3301ea47ae9f771cdea89591030509c35",
+        "annual_decisions.json": "c34749934ab74e8b8bfd632824ac7ef2d05b6a6076000582fc6bd51505b38de8",
+        "summary.csv": "941d8c7507440e9c9f92d28ef8e01022a36ad66be7edeab64aa29c2dacf27f3a"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70082,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "1418b2c500b45512f0afcc4d0a12b6941f1d2a1efd92120814155397f2861952",
+        "annual_decisions.json": "f7617ea04477ed0c470b8a5e904b5ccac5a94d272c348256ce25fd16cf607435",
+        "summary.csv": "b23468309a1e116229ec6e9c8dac2f235f5804bd38b4bdd935f1951fde4288db"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70083,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "feb05b859bc6ce7ab46f32bd241964d1db8942b06995e6aee4839e0667aaad57",
+        "annual_decisions.json": "0a72722b7494d8b1cd419979ad1de2c901473a5518e72adba7b8cb60bb8be07a",
+        "summary.csv": "894244dacbf90986b284405b9df369769f134ea89c3b2b5a98f586f63f02f26b"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70084,
+      "selected_index": 37,
+      "files": {
+        "ledger.npz": "fc2c2728426d25bafebe736d089f502570b9762372efaec390d7bf9330d6ab86",
+        "annual_decisions.json": "9e196f726b32796d034cf23f8f0581e19bda1bbc6e1f791e5ddc1141b7e9f122",
+        "summary.csv": "c83232655dcdeff49020272d53ae69ed5dd61010fe3742635b55052facba9be9"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70085,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "12977bcf64f632a7866c99cb0812af1c0075bd03785494f824849721512635ad",
+        "annual_decisions.json": "735e54bfa893f6cf9ce9918e54987b963ce163e1ceb51ed71d8610879c549f27",
+        "summary.csv": "c79bf906c51135879e3dc9a69becaba465bd80149f588ce196ae8b066d487d46"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70086,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "52b178901a85e352dfc6d41ef043845e80f638fa92242af2d7ef5db3afef45fd",
+        "annual_decisions.json": "990ad056e4208412b00cc053a832f372b6c99153a236cccf275f5019282b4295",
+        "summary.csv": "42db8330b986f7522f3adc0ccfb6dbe08cf4484e95625ba658dd0f4c15bd7757"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70087,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "9721a33c948d2ea7b093e6fdaa2dd0103a182a3e95f2a62d38e4cb88f8ef2c82",
+        "annual_decisions.json": "5e2837ca8472750aa74819d81baf9a456e538d3004bdd90926899fbc3ed767aa",
+        "summary.csv": "b9715f59d81f0b60f61dcb18ecf0a2a9a9078ae4f99e1beb1cb4fb7d568d2d80"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70088,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "807f4321f4a46f2a41a5636dfccd95f2ccc15fccabcc2bcd8b680dbc38d86a4a",
+        "annual_decisions.json": "8bb879e2fde0a0b26ac0f9d8e42cb388ca20e233801f41e120c6c3321aab3da3",
+        "summary.csv": "9f0e08da6beeca87798550fdd82df8f9c076dae29a83446a7528c6f3aba27db0"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70089,
+      "selected_index": 5,
+      "files": {
+        "ledger.npz": "8dfb82c9da96fe00525305a176ad8487a5c09dd9f01b88eae5a2031d34ec8f28",
+        "annual_decisions.json": "baf9c250e9d3384bbe20352c3a81340c6947511b7401506ce8e5555f608644c1",
+        "summary.csv": "b1b59564deea56851d41be5223b3ee2a3024d14e7d257addfbeac0011ba4d885"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70090,
+      "selected_index": 86,
+      "files": {
+        "ledger.npz": "72f18625c18a9a9cd5bdbbad892646dd65f139132dd11e0547a59a013c5237f8",
+        "annual_decisions.json": "42c5825ffddf0aac07f61ed74658a6984a02e876e2a4a07bce8147405f31a6f7",
+        "summary.csv": "ce3b5377ab906df683a3a466bdf2d13ee7ceec73f80586ce6aaf81d942add158"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70091,
+      "selected_index": 5,
+      "files": {
+        "ledger.npz": "ed4ac0383964578ef9c37e2fb66bfa0d3a06e7c89bf5eec8e46c92af52bb2873",
+        "annual_decisions.json": "a8ed3deb2705782c91e53448a7cd10fa039973e57306e92cd499ac56c6ac33a5",
+        "summary.csv": "b1b1159041a056b64ed67425411cfc2feaddb75aa60ed268075fd6443dd88c5b"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70092,
+      "selected_index": 29,
+      "files": {
+        "ledger.npz": "1e31e2999cce0c5fa6a85cf459b348c7536fb44586e5003b7347d638083e961e",
+        "annual_decisions.json": "fe0631c6aa3742a4d019c1d2bfdafa35f95cdeb2076a6e1f92cce5c484efa8c8",
+        "summary.csv": "78398dbe97311697d5a553d7ccb6b3ce6a92f4092c8bbdf3976a782276bab73c"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70093,
+      "selected_index": 27,
+      "files": {
+        "ledger.npz": "c9bfc9f41627bb3d21d70b65eecf80648b5b71fa1c58762fbbd4dceb0f41fd71",
+        "annual_decisions.json": "67e31a91f8e15e8cd07ce39f92dc5b114700ae968931b851ba8272217f722d49",
+        "summary.csv": "81fd952c2bb7c2146ec34c5c7b1497cb3d8f36d2f3cb1a5c8d7efb9a7f5d248d"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70094,
+      "selected_index": 31,
+      "files": {
+        "ledger.npz": "1cacfebb6d5f92f20cc2e0e4530f6786b62286b58a6421af3ba1e0523d2606b6",
+        "annual_decisions.json": "af82768d2d7810a5b8dff4b81aa36649cb3d1d1e2f200bb814cae9484d413f4a",
+        "summary.csv": "2c69bff685fffc092e8d4f01d587110a67f16a7b7f71e0f6db361f91a4080f4a"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70095,
+      "selected_index": 98,
+      "files": {
+        "ledger.npz": "898c28099248feaaa3723e6d638b08f93013c958cc604312956b141439a18bd5",
+        "annual_decisions.json": "b0d3be7bbdeaacab342fd794f290ab281de5e3c32e0cc1a321037bfc67ca851b",
+        "summary.csv": "26d90988eb5482e3995c81c022c20e35538a3d2096322d94a82c34b6103f9e7a"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70096,
+      "selected_index": 33,
+      "files": {
+        "ledger.npz": "db08d9d2484af5b6c03542c20dfc62f3ae09bc4a9eee9abb790822d2577e79c1",
+        "annual_decisions.json": "5963a95f07d19175cd14e8038705e39443dd4499f80296b7fc5ad943a726f102",
+        "summary.csv": "7482addb0a5cfceb964c60fce8c57130f9b5210d57040d1f468acdd771a7c5c0"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70097,
+      "selected_index": 3,
+      "files": {
+        "ledger.npz": "91a276848ff3b952117dd91a53d7edacf0a26e1c69cebdb45bde57fdc03c77d8",
+        "annual_decisions.json": "f4feb72b640646288cde9610d7142e66abe37561e00a7bd33be8659aa5c5b88d",
+        "summary.csv": "0e96685e0469e855418f7be9f0e177fae598d5dc9a755943edfaed5844e4dfd5"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70098,
+      "selected_index": 29,
+      "files": {
+        "ledger.npz": "eaa72faa3594150cf61225ffec5a7237be61500f0e54e8d8bcd4bfc5d223b90f",
+        "annual_decisions.json": "1bd4e275970bddd57a091e07542fe3ea32eca1ea5e30570ada2caf5151cc00ad",
+        "summary.csv": "963025c1294249f36a8bc2abe96874b812aa697edffedd438b012622abaaf8fc"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70099,
+      "selected_index": 20,
+      "files": {
+        "ledger.npz": "d000c3facd322fc55775d5cd62205c66fd71394f615fe7aef9b1658cbec2958f",
+        "annual_decisions.json": "ddaf8720aa4516412c8189ac015e72008d4624a0e9631b61c61ba031a3b0007a",
+        "summary.csv": "f66d90ec1f0d6fc6fc057cc7b7ecb9cdd51c269ae9e6c13ebc1b424cac1bf6b8"
+      },
+      "complete": true
+    },
+    {
+      "seed": 70100,
+      "selected_index": 94,
+      "files": {
+        "ledger.npz": "6d12e67a2a02d1d954a8c34e34a4cc6c8f075bd8c978fff427899dbbd137acf5",
+        "annual_decisions.json": "a0b69873e526437b4110152433f1d140042b5f68d633bdf451e85223895fac0f",
+        "summary.csv": "da504f71ef1bcb7c38995206c17287cf15db4f74343bcdb0016c988bae9777dd"
+      },
+      "complete": true
+    }
+  ],
+  "scope": "Independent policy/cost/evidence arithmetic replay for all 100 markets. Independent complete DGP and public-certificate replay for the first two deterministic seed identifiers; no new financial observations and no claim of replaying all 100 DGP paths."
+}

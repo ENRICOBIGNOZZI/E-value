@@ -1,0 +1,9 @@
+{
+  "captured_at": "2026-10-18T17:08:15.118465+02:00",
+  "passed": 5,
+  "elapsed_seconds": 3.38,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m pytest tests/test_economic_authorization_replay.py -q",
+  "verifier_sha256": "c37b17012de0c1014c452531c871131e7186fa092629af1f3811ec972605f41c",
+  "test_sha256": "5cd2f9bd20040c3384e3209237796c040a418aede61861d48aa4547734bdadea",
+  "scope": "Additional synthetic replay controls during new simulation generation: complete fixture, utility/cost/evidence tampering despite refreshed digests, premature authorization. Separate from the 13 pre-evaluation policy controls and from financial observations."
+}

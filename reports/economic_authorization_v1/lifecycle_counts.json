@@ -1,0 +1,9 @@
+{
+  "markets": 100,
+  "initial_provisional_entries": 100,
+  "evidence_crossings": 38,
+  "executed_full_exposure_authorizations": 35,
+  "terminal_first_crossings": 3,
+  "hybrid_negative_pre_deployment_utility_markets": 0,
+  "hybrid_negative_conditional_pre_deployment_days": 784
+}

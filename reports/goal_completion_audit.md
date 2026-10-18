@@ -6,7 +6,7 @@ the full objective is complete.
 
 | Requirement | Authoritative evidence | Assessment |
 |---|---|---|
-| Fresh repository with preserved empirical inputs | Git history, data SHA-256 inventory, current audit command | Complete locally; no remote push |
+| Fresh repository with preserved empirical inputs | Git history, data SHA-256 inventory, current audit command; tracked branch on origin | Complete locally and pushed to codex/park-revive-20261016 |
 | No empirical analysis in this phase | Current CLI, run protocols, untouched data files | Satisfied |
 | Economic objective and costs consistent | Shared cost/utility implementation; independent optimization tests; manuscript identities | Verified for reported designs |
 | T1–T4 assumptions/proofs and scope | Theory audit, full proofs, statistical and numerical checks | Verified within explicit assumptions; no general novelty claim |
@@ -22,13 +22,14 @@ the full objective is complete.
 | Reproducible numerical evidence | Saved score/certificate ledgers, independent vectorized replay, checkpoints, source/configuration hashes | Audited separately from proof validity |
 | Complete and version-consistent report membership | Strict snapshot gate, independent market-summary audit, JSON event aggregation and independent batch reconstruction of event labels | Complete hundred-market pilot sealed; 14,945 metric checks, 1,275,416 event-table numeric checks and 602,810 annual-mean checks. Complete pilot audits pass; final evidence pending |
 | Analysis fixed before final observations | Machine-readable final analysis plan, source hash and executable complete-sample assessment; explicit pilot diagnostic agrees with retained contrasts | Frozen after pilot inspection, before final outputs; final economic evidence still missing |
-| Continue complete experiment without manual relaunches | Live controller attached to the existing pilot; source/plan gates, complete-sample seals, independent reporting audits and process lock | Original pilot completed; original controller launched final PID 37346 once. First 10/500 generated and independently replayed, current digests verified after compaction; original driver confirmed generating seeds 60011–60020 |
+| Continue the complete experiment and preserve diagnosed failures | Original continuation and replay ledgers; full_v3_recovery_20261018/storage_stop_audit.json; run_economic_then_resume_final.py and actual recovery process | Original controller terminated at a documented disk-reserve failure. All 452 pre-recovery completed markets independently replayed. Exact historical errors archived before retrying the same remaining seeds; recovery uses one worker to reduce memory/swap demand, retaining numerical sources, settings, analysis and the original 2 GiB guard |
 | Full-strategy economic assessment | Six-method protocol frozen; all 100 v3 pilot markets complete, audited and displayed; separate final study running | **Incomplete**; do not require or presume a positive result |
 | Response-independent economic event assessment | Counterfactual continuations retain fast responses; separate batch positive-run reconstruction uses annual conditional-score arrays, flags and ghost continuations | Complete-pilot reconstruction reproduces 23,248 stable events, 2,206 unstable runs and 524 prompt selected responses confirmed after closure, including terminal choices. Final-size evidence pending; method-specific populations do not identify causal delay rankings |
 | Broad prior-art and novelty validation | Primary-source boundary includes sequential forecast comparison, direct horizon-aware testing, cash-PARK/heteroscedastic Catoni/iid widths, economic experimentation and log-growth/test-family clocks, portfolio estimation utility loss/static regret and logarithmic Gaussian/martingale averaging, plus explicit ENTRY utility-null versus joint mean/variance-null mapping; TV corollary distinguished from weak-topology continuity theorem | Current scoped primary-source positioning review complete in publication_claims_assessment.md; no chronological-priority claim. Final integrated scientific interpretation/review still pending |
 | Frozen large final study | Original baseline 3 retained; v1 superseded and v2 historical; all 100 v3 pilot markets complete/replayed. Separate final execution started | **Running, incomplete**; 500 complete final markets and replays still required |
 | Complete-final manuscript generation | Separate exact-500 packet builder; source/assessment/numeric/event/raw-replay guards; 24 synthetic controls, a visually checked three-page table-only software fixture, and production rejection without a final snapshot | Prepared and tested; no production final packet or final-paper integration yet |
-| Physical storage with scientific-byte preservation | Verified first-ninety native JSON transaction, unchanged current replay digests, separate live final-prefix observer and 28 failure/scheduling controls | Prepared and operating; no original producer/controller changes or reduced reserve; measured allocation is not a final-capacity guarantee |
+| Physical storage with scientific-byte preservation | Verified native JSON transactions through final prefix 450, unchanged replay digests, archived observer status and 28 failure/scheduling controls | Original observer stopped with its original controller; recovery retains verified-cache compaction and the 2 GiB reserve. No scientific bytes or original error evidence discarded; measured allocation is not a final-capacity guarantee |
+| Provisional economic authorization requested by the user | economic_authorization_v1_protocol.json committed before new outputs; four methods on fresh seeds 70001--70100; economic_authorization_v1/replay_verification.json; two-page results PDF | Complete controlled first-candidate experiment: all 100 markets and four methods retained, independent arithmetic replay of all 100 plus full market/certificate replay of two fixed seeds. Hybrid minus Wait is +0.00982758 in mean daily net utility times 252; Hybrid minus EconomicFull is -0.02911925. Both contrasts retained; main-paper integration remains pending |
 | Handoff test/output/graphics traceability | Twelve test groups mapped to actual functions; frozen numerical choices and output-name equivalents explicit; supplementary graphics builder with exact-500 gates and 23 controls | Implemented; eight-page sealed-twenty pilot preview visually verified. Complete-final diagnostics and paper integration remain pending |
 | Routine manuscript rebuild | Actual default build, 121 before/after input hashes, eight regression controls and 48 image-byte comparisons | Verified: default compiles current sources and preserves generated results; historical regeneration requires explicit legacy mode |
 | Reviewable manuscript and figures | 48-page compiled PDF with central theory before the financial experiments; evidence-panel map; final economic estimand and timing explicit; count/unit/source audit and visual QA | Working draft; complete final study and publication review remain outstanding |
@@ -41,8 +42,10 @@ version label. Copied parameter/data corruption controls are detected. This
 audit adds no independent replications or arithmetic-replay counts.
 All 100 v3 pilot markets are complete and independently replayed;
 all current input digests have been revalidated before/after manuscript formatting.
-The latest generated and recorded replay counts are retained in
-`full_v3_results/pilot_live_checkpoint.json`.
+The dated pilot checkpoint remains historical evidence. Current final counts
+come from actual seed status files and the independent arithmetic ledger;
+recovery process state is in
+`outputs/park_revive_full_v3/recovery_status_20261018.json`.
 The next work is to finish the separate final study, its complete-sample
 audits and manuscript integration. The paper now displays the complete
 hundred-market v3 pilot; first-ten v2 results remain historical repository evidence.
@@ -63,3 +66,18 @@ Neither numerical correction changes the economic design or excludes failed seed
 A standard spending proposition and post-hoc budget illustration now delimit
 search-wide safety; the main methods still use individual thresholds. The goal
 remains active. A negative economic result is a result, not a reason to retune.
+
+The user-requested provisional-exposure experiment is a separate completed
+100-market study. Its training uncertainty adjustment is a working HAC
+standard-error penalty, not a finite-sample or post-selection confidence
+guarantee. All four methods share a candidate selected once from training
+and a common fitting schedule. Its shadow certificate compares full exposure
+with cash; it does not certify the increase from provisional exposure.
+35 markets executed the common full-exposure authorization; three first
+crossings occurred only at the terminal review. The new report retains the
+negative Hybrid-minus-EconomicFull contrast and all downside measures.
+Thirteen policy controls and five independent-replay controls passed in
+separate runs. These controls and the new market replays do not add to the
+earlier pilot or frozen final study's sample size. The original 500-market
+assessment, both studies' integration into the main manuscript, and the
+final integrated scientific/visual review remain required.
