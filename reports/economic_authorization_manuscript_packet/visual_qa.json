@@ -1,0 +1,159 @@
+{
+  "complete": true,
+  "captured_at": "2026-10-18T17:06:25.069537+00:00",
+  "pdf": "paper/main.pdf",
+  "pdf_sha256": "2dca2b4208e331e7ee1aecc3b74d137e0eaa285e21425976a8513043d8ec0688",
+  "pages": 51,
+  "all_pages_rendered": true,
+  "all_five_contact_sheets_visually_inspected": true,
+  "individual_pages_visually_inspected": [
+    26,
+    36,
+    40,
+    41,
+    42,
+    43
+  ],
+  "visual_findings": "Legible tables, figures and mathematical text; no clipping, overlapping content or unintended blank pages.",
+  "box_or_reference_warnings": false,
+  "expected_engine_notice": "inputenc ignored with utf8 based engines",
+  "rendered_pages_sha256": {
+    "tmp/economic-integrated-paper-qa/page-01.png": "8c05894fe38e60b45750f5f35db5d9c51c92382484685317e84ebb3a937b08bf",
+    "tmp/economic-integrated-paper-qa/page-02.png": "adee674985f6af074b0cb639aa04e1b9489d26364455c6e5debd877d4167750d",
+    "tmp/economic-integrated-paper-qa/page-03.png": "a60090e5c12223d4a8b4b69805634dce9d1a1d68f6b78fba99467afa7f8515d9",
+    "tmp/economic-integrated-paper-qa/page-04.png": "c87046ed565dd8f676436e9dd177988515663279e601ddb664394f9c3ccc9725",
+    "tmp/economic-integrated-paper-qa/page-05.png": "3122800b841276ddc06d2f3fb90f4892544c1c1fdd76089a86194f36a7f56ee4",
+    "tmp/economic-integrated-paper-qa/page-06.png": "d279bbba0c6395f109ffb6a057fcce65915518865c82f2cc0c3021ada94c2877",
+    "tmp/economic-integrated-paper-qa/page-07.png": "2bce517632e13cc6ebdd5041d3c661cfb5936dc23cf64624024386bf09d5d89d",
+    "tmp/economic-integrated-paper-qa/page-08.png": "ad51f5e70a060e213dd012da8abb2e59a9f7b0a8ce7fb757a1b4006e0675a05d",
+    "tmp/economic-integrated-paper-qa/page-09.png": "1c03b0f837c3c60907e15c7daff89973f41b212f3a7a907bec1f58853400206b",
+    "tmp/economic-integrated-paper-qa/page-10.png": "dd14193f9e25d43077b9baed74d5cc9bbdb6b1e166514259137dab2ad8e6dd05",
+    "tmp/economic-integrated-paper-qa/page-11.png": "7dbec9271421e68d72fd2bcc5a392edca56856e56c896d80f92bf7e2a055cf5c",
+    "tmp/economic-integrated-paper-qa/page-12.png": "8cf98fadd8116cb62d0ae289772467e251a8d0c730a25ca9f9b90a8bf662872b",
+    "tmp/economic-integrated-paper-qa/page-13.png": "06f77e625b7e30387f37e3228d7c17304bef969722ec0033455fa8e21fb30e42",
+    "tmp/economic-integrated-paper-qa/page-14.png": "304161112f7bd65fb30578eb99ad323abaed9218efb9916b16e23a10bc024825",
+    "tmp/economic-integrated-paper-qa/page-15.png": "db84ee1ad0c700ca520473085e199337604bc30a8f45a4af61451c4e1b5d0cce",
+    "tmp/economic-integrated-paper-qa/page-16.png": "bd21766825e329084251285b00dd4197c8fa587cdf4a1bb62a794cf61c09e1b7",
+    "tmp/economic-integrated-paper-qa/page-17.png": "80d756027d8956cc9179544e910b23e981b073e0353e3fdd9b1e1bce0525f054",
+    "tmp/economic-integrated-paper-qa/page-18.png": "fd40d30e4fdd997c2dad53fd0232599eac43dce4b06a9a946ddd80128eabfbe2",
+    "tmp/economic-integrated-paper-qa/page-19.png": "f5da07ad8f6bc91e62c44dd81f0c73d02fb5a8d2b021a18589ea61cadf136c63",
+    "tmp/economic-integrated-paper-qa/page-20.png": "e2e9ed13c97c80263704f50c6dd9e6eb3fc3474b90aa75aea726cf30f4990e0f",
+    "tmp/economic-integrated-paper-qa/page-21.png": "44355432fa3cb4f18e741429bd372255e238fc14f4eb4d8d52a922e34b07169b",
+    "tmp/economic-integrated-paper-qa/page-22.png": "a37a9bbec0e7bc2df0588b323a7ce58f7956c4cc2747119b2d491838b4cfa63f",
+    "tmp/economic-integrated-paper-qa/page-23.png": "7737f15b0edce19ad8fba3b69a3d2b1e29c1717ad0ebfc7ef25a6fa95d4a8f7f",
+    "tmp/economic-integrated-paper-qa/page-24.png": "9774cb012326c15cccab4b85234dd404b01474b0e7c477cc5362a8ef35b3a463",
+    "tmp/economic-integrated-paper-qa/page-25.png": "a9acc094e5cd1db3597725bf80c7f7c3de315b374d92307e1af36d1e32757880",
+    "tmp/economic-integrated-paper-qa/page-26.png": "992e3672a3f3d16cf2f427b3f64dea78c647ababf540eeb9d9ec914d26c6d039",
+    "tmp/economic-integrated-paper-qa/page-27.png": "90bb03351219987ca309970923cf560b5718d31b66f209e2553e578e6d0ecf82",
+    "tmp/economic-integrated-paper-qa/page-28.png": "57fde6e10b5ecf94754a43615256d86efdf0f96b76d8f3be4ffb6d92318d88c4",
+    "tmp/economic-integrated-paper-qa/page-29.png": "48eba4deedcb901d00c7bfc2f986e77cb3ef7e5bd27a9db4e23e436eba2d2d47",
+    "tmp/economic-integrated-paper-qa/page-30.png": "e0b53ac87c141a4fcb892017e23c5b0188b0aa2a0c5c743d8214dcc26d815d24",
+    "tmp/economic-integrated-paper-qa/page-31.png": "1d09d65468605deb8f1c9bd8d4554cbaf279fa849d4673e8abf55189d3e1f139",
+    "tmp/economic-integrated-paper-qa/page-32.png": "27e2f763fa883f3a55357b9308ce2417d84afed173390e2bb6c1dd5ef92182d7",
+    "tmp/economic-integrated-paper-qa/page-33.png": "2d89143465e5a0bfc29c7df0f409d81d8e9fb76c2935e0a1ea0d2dd26316b476",
+    "tmp/economic-integrated-paper-qa/page-34.png": "9f54f9662216d16483dc063240e244dd065006166b3946530ef4beebc64c324d",
+    "tmp/economic-integrated-paper-qa/page-35.png": "ca61103b497d920176f32f2ebfe6e07854cf891151afcb70e82cba3258b528d6",
+    "tmp/economic-integrated-paper-qa/page-36.png": "2e25cd6726d19fb4319b89d76eccf5f18a1fce66c595db71f509250c029a3353",
+    "tmp/economic-integrated-paper-qa/page-37.png": "170caa6d122be15589eb91b40b8e95d46f282d622c9d142e97c9163f40d4c022",
+    "tmp/economic-integrated-paper-qa/page-38.png": "4fd31ddf76cd542d5e318da236dfece5d572d11002a4d67cbb1d89d2e43ee12e",
+    "tmp/economic-integrated-paper-qa/page-39.png": "4ca1cb7847079f29dfc13b40bbf5f0b2d5dcc6781b774659c10657e0e3936080",
+    "tmp/economic-integrated-paper-qa/page-40.png": "3ab1a3833983b8f001d246983b378cc8b482adb6c3e0498d7efbabdee653d279",
+    "tmp/economic-integrated-paper-qa/page-41.png": "4cd245eea9053056edaba465f7d57cd7ec11f738cd0bd73237fe22f3787f767a",
+    "tmp/economic-integrated-paper-qa/page-42.png": "298f662806f554c9037bf720693e8f39521be0d68b48e14a93b9423e6186a935",
+    "tmp/economic-integrated-paper-qa/page-43.png": "c67d03d27ed1c6a763b07f368f82e3dff931953a1c3f2a1b0cb230099bd27f75",
+    "tmp/economic-integrated-paper-qa/page-44.png": "41200965de97cf3f80cc7a5d7dabf1da8625f2fe3b0d7032b72b07369532a5c0",
+    "tmp/economic-integrated-paper-qa/page-45.png": "96996ce3ef0b07f8f78844ce3b02e6d947374dd0da81fc8202b2e5f70a0bb5d3",
+    "tmp/economic-integrated-paper-qa/page-46.png": "acbaa5f65b5a665e90d435cc0d0ea0671d39f6489cad4cab27db9fe5b2b9129e",
+    "tmp/economic-integrated-paper-qa/page-47.png": "b6dcb9a5f2cacba9bb1ba757828a00df43668745d84733eb3a8e24988bf55808",
+    "tmp/economic-integrated-paper-qa/page-48.png": "eda742858db32d62dab617134c431ff1389988db47817bb586ebbcdbfd2690ec",
+    "tmp/economic-integrated-paper-qa/page-49.png": "5177b447789f124e07a6227eae4b0f945088db356149e8ac677e1bb727c14516",
+    "tmp/economic-integrated-paper-qa/page-50.png": "0afd670f8fb51b28d2c465602635563a3c2946cbfa7df8816a891931c46cc2c4",
+    "tmp/economic-integrated-paper-qa/page-51.png": "eaf25a8277e255d549ac89ada194a4af833f70c9648d8c745c2ba32205c0b14b"
+  },
+  "contact_sheets_sha256": {
+    "tmp/economic-integrated-paper-qa/contact-1.png": "4f44608daf02e4686f8e4fc698d5749422c0aaa8e0c6aac01994d3abd015b906",
+    "tmp/economic-integrated-paper-qa/contact-2.png": "b8cba746e44f607206967152100914fde678ba63fb7638a09d715a8dfdd771e0",
+    "tmp/economic-integrated-paper-qa/contact-3.png": "028a286627d067690bebe28fa162bcf4e31fe719b78e1add3139dd4802900455",
+    "tmp/economic-integrated-paper-qa/contact-4.png": "c02ee456377e64bcc3977dca68e73d258bcb4ec67c648857feaf7069f3b594a5",
+    "tmp/economic-integrated-paper-qa/contact-5.png": "638421b1ed2f5ac58fd56c7a346fe905c4a4eb58f368a6cdce695481af60bb11"
+  },
+  "method_table_printed_values": [
+    {
+      "method": "EconomicFull",
+      "printed_values": [
+        "0.042602",
+        "0.001652",
+        "1.875",
+        "1.88"
+      ]
+    },
+    {
+      "method": "EconomicQuarter",
+      "printed_values": [
+        "0.010747",
+        "0.000412",
+        "1.165",
+        "0.47"
+      ]
+    },
+    {
+      "method": "Hybrid",
+      "printed_values": [
+        "0.013482",
+        "0.000805",
+        "1.217",
+        "0.63"
+      ]
+    },
+    {
+      "method": "Wait",
+      "printed_values": [
+        "0.003655",
+        "0.000581",
+        "1.057",
+        "0.25"
+      ]
+    }
+  ],
+  "two_printed_contrasts_and_intervals_match_audited_csv": true,
+  "source_packet_sha256": "60c69f0f00c68790490fe3933a6110018a536d1371592cc648e0817b1e3ac9cd",
+  "preservation": {
+    "preexisting_main_result_and_proof_environments_unchanged": 14,
+    "unchanged_preexisting_paper_files": [
+      "paper/figures/activity_evidence.png",
+      "paper/figures/controlled_tail_calibration.png",
+      "paper/figures/directional_frontier.png",
+      "paper/figures/equity_quantiles.png",
+      "paper/figures/first_entry_feasibility.png",
+      "paper/figures/full_strategy_evidence.png",
+      "paper/figures/full_strategy_paths.png",
+      "paper/figures/lambda_power.png",
+      "paper/figures/stationary_power.png",
+      "paper/figures/vanishing_gain.png",
+      "paper/generated_full_results.tex",
+      "paper/generated_gaussian_power_envelope.tex",
+      "paper/generated_lambda_constant_results.tex",
+      "paper/generated_lambda_results.tex",
+      "paper/generated_results.tex",
+      "paper/generated_tail_results.tex",
+      "paper/generated_vanishing_results.tex",
+      "paper/notes/vanishing_gain_draft.tex",
+      "paper/sections/06_horizon.tex",
+      "paper/sections/07_certified_tails.tex",
+      "paper/sections/08_global_safety.tex",
+      "paper/sections/10_lambda_power.tex",
+      "paper/sections/11_vanishing_gains.tex",
+      "paper/sections/12_vanishing_proofs.tex",
+      "paper/sections/13_directional_information.tex",
+      "paper/sections/14_directional_proofs.tex",
+      "paper/sections/16_multivariate_waiting.tex",
+      "paper/sections/17_multivariate_proofs.tex"
+    ],
+    "old_main_sha256": "6c6d0cf0fd3cbb5318d98d99ab743b3c20bf15e41801a01a58ea7f6f1f255bf9",
+    "new_main_sha256": "afea81dfa5eaa229eb7457c6777c8c692b93a580d3d31486bd51e97cf8d7cceb"
+  },
+  "unchanged_historical_csv_inputs_revalidated": true,
+  "original_scientific_freezes_pass": true,
+  "empirical_inputs_preserved": true,
+  "scope": "New 100-market companion integrated into the main manuscript; no new financial data or replay checks from formatting. Original 500-market final study remains incomplete. Its separately recorded post-freeze QP initialization supplements the unchanged base scientific source hash."
+}

@@ -21,7 +21,7 @@
 \newcommand{\supp}{\operatorname{supp}}\newcommand{\op}{\mathrm{op}}
 \title{Sequential Validation of Investment Policies:\\Trading Costs, Moment Information, and the Cost of Waiting}
 \author{Enrico Bignozzi}
-\date{Working draft --- 17 October 2026}
+\date{Working draft --- 18 October 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -46,6 +46,9 @@ estimating a quadratic-certificate bet, optimizing log growth and targeting
 deadline power. Controlled experiments and financial pilot paths separate
 validity, feasible certification and economic performance. A separately frozen
 stronger-moment extension allows entry but can require substantial waiting.
+A separate common-candidate experiment permits provisional exposure before
+certification. Under its financial design, this recovers utility relative to
+cash waiting; immediate full exposure attains greater utility and drawdown.
 The financial tests have individual guarantees; rejection certifies neither
 current profitability nor search-wide safety. Empirical applications are
 outside the current scope.
@@ -114,6 +117,9 @@ controlled study in Section~\ref{sec:lambda-power} distinguishes certificate,
 log-growth and deadline-power objectives; its predictable Bellman policy is
 not substituted into the financial experiment. Section~\ref{sec:full-strategy}
 assesses actual fund costs and waiting, separately from certification.
+Section~\ref{sec:economic-authorization} separately compares provisional
+investment with waiting on a common trained candidate. It retains the
+cash-comparison certificate's scope when exposure subsequently increases.
 
 The statistical ingredients build on Catoni-style confidence sequences
 \cite{wr} and the broader theory of safe anytime-valid inference \cite{savi}.
@@ -756,6 +762,7 @@ generated and linked to this section by the reproducible paper-building script.}
 \input{sections/07_certified_tails.tex}
 \input{sections/08_global_safety.tex}
 \input{sections/09_full_strategy.tex}
+\input{sections/18_economic_authorization.tex}
 
 \section{Discussion}
 Moment information and the evolution of the implemented policy jointly
@@ -800,6 +807,14 @@ Its working score model and one-dimensional evidence state do not describe
 the evolving financial policy pairs. Its power gain therefore does not
 establish better financial decisions or remove the cost of a conservative
 public risk envelope, a positive minimum-effect floor or changing regimes.
+
+The provisional-exposure companion separates permission to invest from
+statistical certification. Its common-candidate comparison recovers part of
+the utility forgone while waiting, but immediate full exposure performs
+better in utility and worse in average drawdown under that design.
+All fitted targets bind at the leverage cap in its executed pool. These
+observations address exposure timing; they do not validate uncertainty
+calibration or establish a benefit from adaptive target sizing.
 
 \appendix
 \begingroup\small

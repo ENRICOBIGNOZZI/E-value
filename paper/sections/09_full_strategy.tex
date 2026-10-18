@@ -33,6 +33,18 @@ is retained in the repository, without adding its repeated seeds to this
 sample. The separate final 500-market assessment remains outstanding.
 Versioned protocols and failure audits retain the full implementation history.
 
+During final execution, one recorded two-coordinate QP in market 60469
+exhausted the declared solver iterations. The market and its annual checkpoint
+were retained. A separately recorded successful solve of that identical
+numerical problem supplied primal and dual starting iterates for the original
+solver. Its objective, constraints, tolerances, iteration budget and
+original-unit KKT acceptance checks were unchanged. This supplementary
+initialization was declared after the failure, rather than registered before
+the final pool. Its source and cached-iterate hashes supplement the base
+source fingerprint in the execution record; the base hash alone does not
+describe that additional state. No market is dropped, and the statistical
+analysis and mathematical allocation problem retain their declared form.
+
 \subsection{The final economic estimand}
 The final analysis was fixed after inspecting the first-ten v2 and
 first-twenty v3 pilot results, before any final-market output. Comparator

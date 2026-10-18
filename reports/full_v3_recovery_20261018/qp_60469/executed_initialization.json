@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "seed": 60469,
+  "base_scientific_source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
+  "initializer_profile": "reports/full_v3_recovery_20261018/qp_60469/profile.json",
+  "initializer_profile_sha256": "41ca8a9d801729ce491d76e802c8147fb3d7170f131578e49e2d048ee5fb4fa8",
+  "initializer_sha256": "29a8261c73e853a849091323db4888da7c51071c5d1e2a732d3d7d36086314bb",
+  "driver_sha256": "31a6cc3fccd0d527ba745cf3f2ae17e6e9227a939f49bca8d65a125f5d671e41",
+  "calls": [
+    {
+      "problem_sha256": "4b17842493aab38d7340a212097845324856aa1a4817ec5e9cb92830312a9396",
+      "initial_x": [
+        0.9999999991512377,
+        -8.487622610779095e-10,
+        0.0036877914958490937,
+        -5.766573217165596e-28,
+        0.9999999991512377,
+        8.487622610779234e-10
+      ],
+      "initial_y": [
+        1.0,
+        0.4542704006490698,
+        0.0,
+        0.5457295993509301,
+        0.021174643586657726,
+        0.0,
+        0.0,
+        0.021174643586657726,
+        0.02117464358665784
+      ],
+      "initial_original_unit_kkt": {
+        "primal": 1.406207041340147e-23,
+        "stationarity": 1.1449174941446927e-20,
+        "complementarity": 7.674088052750152e-28,
+        "dual_sign": 0.0,
+        "duality_gap": 0.0
+      },
+      "unchanged_solver_settings": {
+        "eps_abs": 1e-10,
+        "eps_rel": 1e-10,
+        "max_iter": 300000,
+        "polishing": true,
+        "adaptive_rho": true
+      }
+    }
+  ],
+  "disclosure": "Declared after reproducible numerical failure on final seed 60469; supplementary execution provenance beyond the original base-source fingerprint. No financial endpoint, strategy setting, seed membership or effect threshold changed. This is not a pre-final initialization rule.",
+  "intervention": "Only the starting primal/dual iterates for the exact preserved QP: cache the successful same-parameter solution of that identical recorded numerical problem. The cache is independently checked against the original-unit KKT conditions before use. Original objective, constraints, solver, eps_abs=eps_rel=1e-10, max_iter=300000, polishing, adaptive rho and original KKT guards are unchanged."
+}
