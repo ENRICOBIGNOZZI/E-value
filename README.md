@@ -544,6 +544,26 @@ but the base source hash alone does not cover the additional cached iterates.
 The one-off recovery driver requires the exact archived failure/checkpoint and
 is not a general fresh-run command. No seed is dropped.
 
+The separate `scripts/reproduce_final_60469.py` can instead regenerate that
+market from its initial training year, using the declared exact-problem
+primal/dual cache. It accepts only a new directory under `tmp/`, verifies the
+frozen sources/profile/configuration/cache and runs the unchanged independent
+arithmetic replayer. The continuation lock prevents it from competing with
+the production study. Its 12 software controls pass; a complete fresh-market
+run and comparison with the retained financial ledgers are still pending.
+
+```sh
+# Read-only preflight; does not create its output or simulate a market.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/reproduce_final_60469.py --output tmp/final60469-fresh --check-only
+# After the current continuation releases its lock: fresh run and replay.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/reproduce_final_60469.py --output tmp/final60469-fresh
+```
+
+This repeated seed is not an additional independent market. Its reproduction
+receipt explicitly records the supplementary initialization and the fact that
+no annual checkpoint was loaded. Repeated invocations require a new output
+directory and do not overwrite canonical study files or previous reproductions.
+
 A subsequent actual disk-reserve stop and its seven untouched error records
 are preserved under `reports/full_v3_recovery_20261018/disk_195259/`.
 All first 483 markets are complete and independently replayed. The current

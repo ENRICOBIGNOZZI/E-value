@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "captured_at": "2026-10-18T20:07:07.515185+00:00",
+  "software_controls_passed": 12,
+  "elapsed_seconds": 4.66,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m pytest tests/test_final_60469_reproduction.py tests/test_qp_initialization_60469.py -q",
+  "new_reproduction_controls": 6,
+  "existing_initializer_controls": 6,
+  "read_only_cli_preflight_passes": true,
+  "actual_live_continuation_lock_rejection": true,
+  "rejected_run_created_no_output": true,
+  "script_sha256": "ddfc9bdaf9cb3c3c6a63aba0d3ac898da3a1efe7259da5a23b990deee7314aae",
+  "test_sha256": "d7f34715aea09d98e860e2ca5d84768e1589979fb86153acbdf0adab71a82fd2",
+  "profile_sha256": "41ca8a9d801729ce491d76e802c8147fb3d7170f131578e49e2d048ee5fb4fa8",
+  "fresh_financial_market_generated": false,
+  "scope": "Software/profile/KKT/output-isolation controls and two real CLI checks only. The full fresh 60469 simulation and comparison with canonical outputs remain pending until the final continuation releases its lock. No checkpoint loaded, new replication, extra market or final-evidence claim."
+}

@@ -1,3 +1,39 @@
+# Current continuation — fresh reproduction command for the numerical amendment
+
+The preceding goal turn was **progress** (3da1fb2): all 483 completed final
+markets were independently replayed and current digests validated, disk-only
+failures preserved, and only the remaining 17 markets resumed after capacity
+recovered. This turn adds a fresh-from-training reproduction entry point for
+seed 60469, outside the frozen scientific sources. The original one-off QP
+recovery required its archived annual checkpoint; the new command can generate
+that same market from training with the explicitly declared exact-problem
+primal/dual initialization, then invoke the unchanged independent replayer.
+
+Twelve combined controls pass in 4.66 seconds: six new output/profile-isolation
+controls plus six existing initializer/KKT controls. A real read-only CLI
+preflight succeeds. An attempted fresh-run invocation while the actual final
+continuation holds its lock is refused before creating output. These are
+software checks, not new financial observations or a full-suite rerun.
+The complete fresh financial execution and comparison with canonical ledgers
+are still pending; the command will wait for no process and must be invoked
+after the production lock is released. Reproduction never resumes a checkpoint
+or adds the repeated seed to a financial sample. Bindings are in
+final60469_reproduction_software_checks.json.
+
+At **2026-10-18T20:08:14.185801+00:00**, controller **86252** and generation child
+**86400** are both confirmed live on the same declared 60484--60490
+batch. Seed 60484 has completed generation; the independent verified prefix
+remains 483, as the next batch replay has not yet run. No job is restarted.
+The original scientific/configuration/final-analysis freeze and every current
+manuscript/PDF/figure hash match. No empirical analysis or partial-final
+financial inference occurs. All 500 complete final markets, audits, actual
+final integration, fresh numerical-amendment reproduction and final review
+remain outstanding. The overall goal stays active.
+
+The following checkpoints are historical snapshots.
+
+---
+
 # Current continuation — 483 final markets verified; remaining 17 resumed
 
 The preceding goal turn was **progress**: commit 5c07ff9 integrated the separate

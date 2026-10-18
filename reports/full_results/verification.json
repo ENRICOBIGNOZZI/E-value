@@ -847,5 +847,19 @@
     "launch_sha256": "0d47a63e4d4a1375fc616b7661bd9c5b073fbb8d2b3cd9f66d5a41e9635871ab",
     "driver_sha256": "1bdf3a0994477c261a205683b409260edfa863b124303b042128774be4f378a6",
     "scope": "Confirmed terminal resource failure. All error evidence retained before retry; only the 17 declared remaining markets resumed after 483 current replay digests and capacity passed. No mathematical/statistical/analysis amendment or excluded seed."
+  },
+  "final_market_fresh_reproduction": {
+    "script": "scripts/reproduce_final_60469.py",
+    "script_sha256": "ddfc9bdaf9cb3c3c6a63aba0d3ac898da3a1efe7259da5a23b990deee7314aae",
+    "software_checks": "reports/final60469_reproduction_software_checks.json",
+    "software_checks_sha256": "90a4626821953a653a000191a4cbd80923d6628f94951b4017b904716a9e1a05",
+    "combined_software_controls_passed": 12,
+    "new_output_profile_controls": 6,
+    "existing_initializer_controls": 6,
+    "read_only_cli_preflight_passes": true,
+    "actual_live_lock_rejection_passes": true,
+    "fresh_market_execution_complete": false,
+    "canonical_financial_ledger_comparison_complete": false,
+    "scope": "Isolated fresh-from-training reproduction of existing final seed 60469; same post-freeze numerical cache, original learner and independent replay. Software/preflight checks only; no new market generated, no added replication and no broad full-suite rerun. Actual fresh execution and canonical-ledger comparison remain pending after the final controller releases its lock."
   }
 }
