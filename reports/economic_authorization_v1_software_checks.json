@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-10-18T16:52:54.186566+02:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m pytest tests/test_economic_authorization.py -q",
+  "passed": 13,
+  "elapsed_seconds": 4.13,
+  "source_sha256": "6f98c55a5b21e1c5042fcdca4f9ede870b96370f2d4ab18b4b3d5d75479e07d9",
+  "test_source_sha256": "2c7484a233b3b9ccdb2857b28086e67e69b2376fe76b08e2b149fde68d63d29b",
+  "protocol_sha256": "534051f34bc9455d256254ebda22db3f8de1d168fa4060f46e1ae2e641c4c821",
+  "controls": "Training uncertainty penalty; provisional entry without evidence; increase forecast distinct from entry; own-state costs; absorbing insolvency; exact timing decomposition including noncrossings; oracle information separation; lagged annual action; output tamper detection.",
+  "scope": "Synthetic software controls, not financial simulation observations."
+}

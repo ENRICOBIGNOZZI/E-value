@@ -1,0 +1,33 @@
+{
+  "controller_pid": 91419,
+  "pilot_pid": 64355,
+  "workers": 2,
+  "source_sha256": "8f250cf46d8ab94d9d6ec993f692b658a67b128792490c8cc6b2b1d7d88ea062",
+  "analysis_plan_sha256": "e395d2f0be8d240b0c52d3bf41aa1d14850cdd23c9c1b76665e8fac216ee1609",
+  "phase": "stopped_on_error",
+  "updated_at": "2026-10-18T14:41:52.148300+00:00",
+  "pilot_identity": [
+    "Fri",
+    "Oct",
+    "16",
+    "22:56:50",
+    "2026",
+    "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/run_full_study.py pilot --count 100 --workers 2 --batch-size 10 --compact-verified-checkpoints"
+  ],
+  "observation_error": null,
+  "final_pid": 37346,
+  "final_command": [
+    "/Users/enrico/Desktop/PHD/E-values/.venv/bin/python",
+    "/Users/enrico/Desktop/PHD/E-values/scripts/run_full_study.py",
+    "main",
+    "--count",
+    "500",
+    "--workers",
+    "2",
+    "--batch-size",
+    "10",
+    "--compact-verified-checkpoints"
+  ],
+  "final_log": "/Users/enrico/Desktop/PHD/E-values/tmp/full-v3-final500.log",
+  "error": "RuntimeError: Final stage stopped with exit code 1; see /Users/enrico/Desktop/PHD/E-values/tmp/full-v3-final500.log"
+}

@@ -1,0 +1,17 @@
+{
+  "base_config": "configs/full_main.json",
+  "seeds": {"first": 70001, "count": 100},
+  "provisional_fraction": 0.25,
+  "uncertainty_z": 1.6448536269514722,
+  "hac_bandwidth": 20,
+  "forecast_holding_days": 252,
+  "effect_floor_daily": 1e-8,
+  "individual_alpha": 0.05,
+  "representative_seed": 70001,
+  "primary_contrast": ["Hybrid", "Wait"],
+  "outcome": "annual_scaled_utility",
+  "scope": "Controlled first-candidate exposure timing; candidate selected once using training only; not a general adaptive feature-selection fund.",
+  "uncertainty_interpretation": "Working HAC standard-error penalty; no finite-sample or post-selection confidence guarantee.",
+  "certification_interpretation": "Common shadow full candidate versus cash; not certification of the increase from provisional exposure.",
+  "analysis": "All 100 paired markets; two-sided pointwise Student 95% interval, df=99; other contrasts and downside summaries descriptive; no outcome-dependent tuning or exclusions."
+}

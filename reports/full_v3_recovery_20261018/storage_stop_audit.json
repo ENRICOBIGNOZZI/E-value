@@ -1,0 +1,53 @@
+{
+  "captured_at": "2026-10-18T16:52:54.252899+02:00",
+  "failure": "2 GiB free-disk reserve guard; before starting seeds 60453--60460",
+  "original_processes_terminal": true,
+  "complete_generated_markets": 452,
+  "complete_independently_replayed_markets": 452,
+  "errors_archived": [
+    {
+      "original": "outputs/park_revive_full_v3/main/seed_60453/execution_error.txt",
+      "archived": "reports/full_v3_recovery_20261018/seed_60453_execution_error.txt",
+      "sha256": "fdebcffbb7361e90a526da0af923e459484228d8398c113be32201867e28536f"
+    },
+    {
+      "original": "outputs/park_revive_full_v3/main/seed_60454/execution_error.txt",
+      "archived": "reports/full_v3_recovery_20261018/seed_60454_execution_error.txt",
+      "sha256": "fdebcffbb7361e90a526da0af923e459484228d8398c113be32201867e28536f"
+    },
+    {
+      "original": "outputs/park_revive_full_v3/main/seed_60455/execution_error.txt",
+      "archived": "reports/full_v3_recovery_20261018/seed_60455_execution_error.txt",
+      "sha256": "fdebcffbb7361e90a526da0af923e459484228d8398c113be32201867e28536f"
+    },
+    {
+      "original": "outputs/park_revive_full_v3/main/seed_60456/execution_error.txt",
+      "archived": "reports/full_v3_recovery_20261018/seed_60456_execution_error.txt",
+      "sha256": "fdebcffbb7361e90a526da0af923e459484228d8398c113be32201867e28536f"
+    },
+    {
+      "original": "outputs/park_revive_full_v3/main/seed_60457/execution_error.txt",
+      "archived": "reports/full_v3_recovery_20261018/seed_60457_execution_error.txt",
+      "sha256": "fdebcffbb7361e90a526da0af923e459484228d8398c113be32201867e28536f"
+    },
+    {
+      "original": "outputs/park_revive_full_v3/main/seed_60458/execution_error.txt",
+      "archived": "reports/full_v3_recovery_20261018/seed_60458_execution_error.txt",
+      "sha256": "fdebcffbb7361e90a526da0af923e459484228d8398c113be32201867e28536f"
+    },
+    {
+      "original": "outputs/park_revive_full_v3/main/seed_60459/execution_error.txt",
+      "archived": "reports/full_v3_recovery_20261018/seed_60459_execution_error.txt",
+      "sha256": "fdebcffbb7361e90a526da0af923e459484228d8398c113be32201867e28536f"
+    },
+    {
+      "original": "outputs/park_revive_full_v3/main/seed_60460/execution_error.txt",
+      "archived": "reports/full_v3_recovery_20261018/seed_60460_execution_error.txt",
+      "sha256": "fdebcffbb7361e90a526da0af923e459484228d8398c113be32201867e28536f"
+    }
+  ],
+  "scientific_source_unchanged": true,
+  "analysis_unchanged": true,
+  "free_bytes": 5090668544,
+  "next_action": "New compact 100-market economic authorization study first; then retry the same remaining original markets using one worker to reduce memory/swap pressure, retaining the 2 GiB guard, source, seeds, numerical rules, BLAS threads and analysis."
+}
