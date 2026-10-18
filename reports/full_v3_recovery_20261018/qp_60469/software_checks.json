@@ -1,0 +1,10 @@
+{
+  "captured_at": "2026-10-18T18:50:55.823296+02:00",
+  "passed": 6,
+  "elapsed_seconds": 0.61,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m pytest tests/test_qp_initialization_60469.py -q",
+  "initializer_sha256": "29a8261c73e853a849091323db4888da7c51071c5d1e2a732d3d7d36086314bb",
+  "test_sha256": "913e28491dc7f8280cb4c31b9224b27a10dc720ba9d9860416f9e4b5eb4ac73e",
+  "profile_sha256": "41ca8a9d801729ce491d76e802c8147fb3d7170f131578e49e2d048ee5fb4fa8",
+  "scope": "Numerical controls on the preserved exact failed QP, not new market replications. Signature binds coefficients; initial primal/dual cache passes independent original-unit feasibility/stationarity/complementarity/dual-sign/gap checks; original solver and its KKT guard accept it; different problems are unchanged; changed tolerances and invalid caches are refused. No canonical financial output was produced by the diagnostic attempts."
+}

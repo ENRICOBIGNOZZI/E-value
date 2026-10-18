@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-10-18T18:38:32.151333+02:00",
+  "seed": 60469,
+  "next_year": 12,
+  "config_hash": "0ff3d064e9bd5ac288beac85677e8d828a1ab028ed47a8d7e20bedc5f6137f83",
+  "source_hash": "0f599867fd34f2aac11b29c3bddca4689045ed2ff114d964636c49ee936ef6d3",
+  "checkpoint_sha256": "73813cbd2bab1eef77d66e1861c2d60ac9e1527cb3ec2da612ed604a4892340b",
+  "checkpoint_bytes": 8456492,
+  "copied_files_sha256": {
+    "config_frozen.json": "88ea72ed4ec1d1c00aad5840a643c78216db1b8a065c8def64bc8f80f327b792",
+    "source_manifest.json": "80f927a8c3fa9e5527efdad6ec28070663dcd2aee182458b3af731c8f8e13c84",
+    "execution_error.txt": "a7115c1b49291cc6ac4576c466f6fc20ef96e5d6b2c479926a3387139f06ede3",
+    "status.json": "24fb75cac56d1c7aa76a0941791314fbdbb9c8489f921876abaeae33d5be2c90"
+  },
+  "scope": "Preserved exact numerical convergence failure and annual checkpoint identity before diagnostic reproduction; no seed exclusion or change of statistical/economic settings."
+}

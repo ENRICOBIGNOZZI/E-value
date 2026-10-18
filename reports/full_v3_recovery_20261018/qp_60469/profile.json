@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-10-18T18:44:18.449476+02:00",
+  "seed": 60469,
+  "known_problem_sha256": "4b17842493aab38d7340a212097845324856aa1a4817ec5e9cb92830312a9396",
+  "base_config_sha256": "88ea72ed4ec1d1c00aad5840a643c78216db1b8a065c8def64bc8f80f327b792",
+  "captured_problem_sha256": "c0a74a8f4c609a1fdd900e3e35797c25378647076a9525235463994b6671ab8c",
+  "initializer_sha256": "29a8261c73e853a849091323db4888da7c51071c5d1e2a732d3d7d36086314bb",
+  "intervention": "Only the starting primal/dual iterates for the exact preserved QP: cache the successful same-parameter solution of that identical recorded numerical problem. The cache is independently checked against the original-unit KKT conditions before use. Original objective, constraints, solver, eps_abs=eps_rel=1e-10, max_iter=300000, polishing, adaptive rho and original KKT guards are unchanged.",
+  "disclosure": "Declared after reproducible numerical failure on final seed 60469; supplementary execution provenance beyond the original base-source fingerprint. No financial endpoint, strategy setting, seed membership or effect threshold changed. This is not a pre-final initialization rule.",
+  "initial_x": [
+    0.9999999991512377,
+    -8.487622610779095e-10,
+    0.0036877914958490937,
+    -5.766573217165596e-28,
+    0.9999999991512377,
+    8.487622610779234e-10
+  ],
+  "initial_y": [
+    1.0,
+    0.4542704006490698,
+    0.0,
+    0.5457295993509301,
+    0.021174643586657726,
+    0.0,
+    0.0,
+    0.021174643586657726,
+    0.02117464358665784
+  ],
+  "successful_iterates_sha256": "a12883b93dbc1dbefcc4d4b7bb88deec49f5e2316fb2f0886918c77387049e18"
+}

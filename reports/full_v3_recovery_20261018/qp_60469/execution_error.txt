@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/Users/enrico/Desktop/PHD/E-values/research/park_revive_full/optimization.py", line 28, in solve
+    try:result=super().solve(idx,b)
+               ~~~~~~~~~~~~~^^^^^^^
+  File "/Users/enrico/Desktop/PHD/E-values/src/park_revive/optimizer.py", line 80, in solve
+    raise RuntimeError(f'QP failed: {result.info.status}')
+RuntimeError: QP failed: solved inaccurate
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/enrico/Desktop/PHD/E-values/research/park_revive_full/optimization.py", line 34, in solve
+    try:result=super().solve(idx,b)
+               ~~~~~~~~~~~~~^^^^^^^
+  File "/Users/enrico/Desktop/PHD/E-values/src/park_revive/optimizer.py", line 80, in solve
+    raise RuntimeError(f'QP failed: {result.info.status}')
+RuntimeError: QP failed: solved inaccurate
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/enrico/Desktop/PHD/E-values/scripts/run_full_strategy.py", line 46, in run_one
+    result=run_seed(cfg,seed,directory,resume,stop)
+  File "/Users/enrico/Desktop/PHD/E-values/research/park_revive_full/engine.py", line 162, in run_seed
+    prepared={n:prepare_shadows(s,estimated,cfg) for n,s in selectors.items()}
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enrico/Desktop/PHD/E-values/research/park_revive_full/engine.py", line 71, in prepare_shadows
+    for c in comps:c.shadow.prepare(estimated)
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/enrico/Desktop/PHD/E-values/src/park_revive/policies.py", line 14, in prepare
+    solution = optimizer.solve(self.support,self.previous)
+  File "/Users/enrico/Desktop/PHD/E-values/research/park_revive_full/optimization.py", line 37, in solve
+    result=self.solve_in_basis_points(idx,b)
+  File "/Users/enrico/Desktop/PHD/E-values/research/park_revive_full/optimization.py", line 70, in solve_in_basis_points
+    raise RuntimeError(f'Preconditioned QP failed: {result.info.status}')
+RuntimeError: Preconditioned QP failed: maximum iterations reached
