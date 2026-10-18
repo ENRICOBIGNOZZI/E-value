@@ -1,0 +1,79 @@
+{
+  "complete": true,
+  "captured_at": "2026-10-18T20:18:53.327100+00:00",
+  "authorization": "User explicitly instructed: elimina tu uello che vuoi, in response to the disk-space question.",
+  "actions": [
+    {
+      "path": "/Users/enrico/Library/Caches/com.operasoftware.Opera/Default",
+      "action": "browser_cache_contents_cleared_first_pass",
+      "initial_scan_allocated_kib": 1176220,
+      "root_recreated_by_running_browser": true,
+      "first_pass_note": "rmtree removed cached contents; Opera recreated files before the empty root could be removed (ENOTEMPTY). Retained the recreated live cache directory."
+    },
+    {
+      "path": "/Users/enrico/.cache/markdown-pdf-m/chrome",
+      "action": "removed_regenerable_cache",
+      "allocated_bytes_before": 373354496,
+      "root_absent_after": true
+    },
+    {
+      "path": "/Users/enrico/Library/Caches/pip",
+      "action": "removed_regenerable_cache",
+      "allocated_bytes_before": 101220352,
+      "root_absent_after": true
+    },
+    {
+      "path": "/Users/enrico/Library/Caches/Homebrew",
+      "action": "removed_regenerable_cache",
+      "allocated_bytes_before": 86048768,
+      "root_absent_after": true
+    },
+    {
+      "path": "/Users/enrico/Library/Application Support/Code/CachedExtensionVSIXs",
+      "action": "removed_cache_children_older_than_24_hours",
+      "children_removed": [
+        "anthropic.claude-code-2.1.300-darwin-arm64",
+        "ms-python.python-2026.10.0-darwin-arm64",
+        "ms-python.vscode-python-envs-1.40.0-darwin-arm64",
+        "anthropic.claude-code-2.1.301-darwin-arm64",
+        "sixth.sixth-ai-0.4.1",
+        "github.vscode-pull-request-github-0.170.0",
+        "sixth.sixth-ai-0.4.0",
+        "ms-vscode.cpptools-1.35.4-darwin-arm64",
+        "bit.vscode-bit-1.2.31",
+        "reditorsupport.r-3.2.0",
+        "james-yu.latex-workshop-10.20.0",
+        ".trash",
+        "anthropic.claude-code-2.1.299-darwin-arm64",
+        "charliermarsh.ruff-2026.88.0-darwin-arm64",
+        "sixth.sixth-ai-0.4.4",
+        "eamodio.gitlens-19.4.0"
+      ],
+      "allocated_bytes_before": 521801728,
+      "installed_extensions_unchanged": true
+    },
+    {
+      "path": "/Users/enrico/Library/Application Support/Code/CachedData",
+      "action": "removed_cache_children_older_than_24_hours",
+      "children_removed": [
+        "7debcd0e2acdea1c52de81bf9ee1620444407dda",
+        "6f17636121051a53c88d3e605c491d22af2ba755",
+        "07f806f999227108933c2e30515b26eecc1fda74",
+        "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+        "645f29cc3176500b4b5762ba887cf2a7f0ffdf2c",
+        "04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1"
+      ],
+      "allocated_bytes_before": 116305920,
+      "installed_extensions_unchanged": true
+    }
+  ],
+  "filesystem_free_before_second_pass": 3221483520,
+  "filesystem_free_after": 4146061312,
+  "first_pass_exact_free_before_not_recorded": true,
+  "scope": "Regenerable caches only: Opera recreated its emptied cache root; three inactive download/package caches fully removed; downloaded VS Code extension packages and JavaScript bytecode older than 24 hours removed. Installed applications/extensions, research inputs, scientific ledgers, code and personal documents unchanged. Actual volume free-space delta also reflects concurrent OS activity.",
+  "additional_code_cache_free_before": 3508715520,
+  "original_scientific_freezes_pass": true,
+  "empirical_inputs_sha256_revalidated": true,
+  "current_manuscript_and_pdf_hashes_unchanged": true,
+  "post_cleanup_free_bytes": 4166635520
+}

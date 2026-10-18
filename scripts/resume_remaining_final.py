@@ -1,8 +1,9 @@
-"""Resume the 17 retained final markets after the archived second disk stop.
+"""Resume every remaining final market after an archived disk-only stop.
 
-Requires three GiB free and all preceding 483 independently replayed markets.
+Requires three GiB free and the entire preceding independently replayed prefix.
 Refuses live duplicate generators and preserves every archived failure.
 """
+import argparse
 from datetime import datetime, timezone
 import json
 import os
@@ -19,12 +20,19 @@ from seal_full_snapshot import validate_snapshot
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--prefix', type=int, required=True)
+    parser.add_argument('--failure-audit', type=Path, required=True)
+    args = parser.parse_args()
+    if not 1 <= args.prefix < 500:
+        parser.error('--prefix must be between 1 and 499')
     output = ROOT/'outputs/park_revive_full_v3/main'
-    archive = ROOT/'reports/full_v3_recovery_20261018/disk_195259/failure_audit.json'
+    archive = args.failure_audit.resolve()
     state_path = output.parent/'remaining_recovery_status_20261018.json'
     state = dict(controller_pid=os.getpid(), source_sha256=sha256(Path(__file__)),
                  workers=1, original_guard_gib=2, startup_reserve_gib=3,
-                 archived_failure_sha256=sha256(archive))
+                 archived_failure_sha256=sha256(archive), verified_prefix=args.prefix,
+                 archived_failure=str(archive))
     log = ROOT/'tmp/final-remaining-recovery-20261018.log'
     env = dict(os.environ, OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1')
 
@@ -46,13 +54,19 @@ def main():
 
     with exclusive_controller(output.parent/'.continuation.lock'):
         try:
+            update('validating_recovery_preconditions')
             _, freeze, protocol = validate_freezes(ROOT)
             refuse_existing_final_runner()
             free = shutil.disk_usage(ROOT).free
             if free < 3*2**30:
                 raise OSError('At least 3 GiB free required before recovery; original 2 GiB per-seed guard retained')
             failure = json.loads(archive.read_text())
-            if (failure['remaining_generation_seeds'] != list(range(60484,60501))
+            remaining = list(range(60001+args.prefix,60501))
+            if (failure.get('kind') != 'preserved_actual_disk_guard_stop'
+                    or failure.get('complete') is not True
+                    or failure.get('both_original_handles_terminal') is not True
+                    or failure['remaining_generation_seeds'] != remaining
+                    or failure['generated_final_markets'] != args.prefix
                     or failure['source_hash'] != freeze['scientific_source_hash']):
                 raise ValueError('Archived failure differs from the declared remaining pool')
             known = {row['original']: row for row in failure['errors_archived']}
@@ -63,15 +77,19 @@ def main():
                 if (sha256(ROOT/original) != row['sha256']
                         or sha256(ROOT/row['archived']) != row['sha256']):
                     raise ValueError('Original failure or archived copy changed')
-            records = validate_snapshot(output, list(range(60001,60484)),
+                if not (ROOT/original).read_text().endswith('OSError: Insufficient free disk reserve\n'):
+                    raise ValueError('Refusing to clear a failure that is not the exact disk guard')
+            records = validate_snapshot(output, list(range(60001,60001+args.prefix)),
                                         freeze['scientific_source_hash'], freeze['final_config'],
                                         ROOT/'scripts/verify_full_strategy.py')
             if shutil.disk_usage(ROOT).free < 3*2**30:
                 raise OSError('Free capacity fell below startup reserve during validation')
-            write_immutable(ROOT/'reports/full_v3_results/final483_replay_milestone.json', dict(
+            milestone = ROOT/f'reports/full_v3_results/final{args.prefix:03d}_replay_milestone.json'
+            prior_capture = json.loads(milestone.read_text())['captured_at'] if milestone.exists() else datetime.now(timezone.utc).isoformat()
+            write_immutable(milestone, dict(
                 complete=True, kind='verified_final_execution_prefix',
-                captured_at=datetime.now(timezone.utc).isoformat(), stage='main',
-                seeds=list(range(60001,60484)), complete_market_replays=483,
+                captured_at=prior_capture, stage='main',
+                seeds=list(range(60001,60001+args.prefix)), complete_market_replays=args.prefix,
                 declared_final_pool_size=500, scientific_source_hash=freeze['scientific_source_hash'],
                 final_config_sha256=sha256(ROOT/'configs/full_main.json'),
                 analysis_plan_sha256=sha256(ROOT/'reports/final_analysis_plan.json'),
@@ -89,10 +107,11 @@ def main():
                 'All current raw digests match after physical compression and verified-cache compaction. '
                 'Counts summarize existing independent replays, not new checks from this validation. '
                 'The post-freeze QP initialization remains explicitly supplementary. All 500 markets required.'))
-            update('recovering_archived_disk_stop', remaining_seeds=list(range(60484,60501)))
+            update('recovering_archived_disk_stop', remaining_seeds=remaining)
             for original in known:
                 (ROOT/original).unlink()
-            for first, count in [(60484,7), (60491,10)]:
+            for first in range(60001+args.prefix,60501,10):
+                count = min(10,60501-first)
                 validate_freezes(ROOT)
                 run('run_full_strategy.py', '--config', ROOT/'configs/full_main.json',
                     '--output', output, '--start-seed', first, '--count', count,

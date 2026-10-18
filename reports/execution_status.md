@@ -1,3 +1,52 @@
+# Current continuation — authorized cache cleanup; 485 verified final markets
+
+The preceding goal turn was **progress** (10b70e4): the isolated fresh-market
+reproducer and its 12 software controls were prepared. This turn is **progress**:
+two more generated markets (60484--60485) independently replayed, the subsequent
+actual disk-guard failure preserved, user-authorized regenerable caches cleared,
+and only the complete remaining 15-market suffix resumed after validation.
+The final verified prefix is now **485/500**, with
+**4,279,136,412 existing scalar replay checks** and
+**62,153 ghost pairs**. Every current raw digest
+matches after checkpoint compaction. Validation adds no market or replay count;
+no prefix economic result is computed. Milestone: full_v3_results/final485_replay_milestone.json.
+
+The previous controller and child actually terminated, with five exact
+resource errors on 60486--60490. Copies and stopped status were retained in
+full_v3_recovery_20261018/disk_after_60485 before clearing any live copy.
+The user explicitly authorized deletion to free disk space. Cleanup targeted
+six regenerable cache locations: Opera cache contents (the running browser
+recreated its cache root), downloaded Chromium, pip/Homebrew downloads, old
+VS Code extension-package downloads and JavaScript bytecode caches. Scientific
+inputs, all financial ledgers, installed apps/extensions and personal documents
+were preserved. Source/input/manuscript hashes pass. Details and scope are in
+user_authorized_cache_cleanup_20261018.json. Volume free-space changes also
+reflect OS activity and are not equated with summed file allocation sizes.
+
+The recovery driver now requires an explicit verified-prefix count and matching
+archived failure audit. It checks the exact disk-guard traceback and the entire
+current prefix, retains every remaining seed through 60500 and refuses invalid
+prefix values. Two real CLI boundary checks pass, with no new full-suite run.
+Both completed-market checkpoints were compacted only after independent replay,
+releasing **13,579,425 logical cache bytes** without removing any scientific ledger.
+At **2026-10-18T20:25:03.797842+00:00**, controller **89741** and child **89886** are
+confirmed live on exactly **60486--60495**, followed by the final five, with one
+worker and the original 2 GiB per-seed reserve. New startup capacity exceeded
+3 GiB; all 485 raw digests and the unchanged science/configuration/analysis
+freeze passed before launch. The current state remains
+outputs/park_revive_full_v3/remaining_recovery_status_20261018.json.
+
+The main paper and all figure/numeric-source/PDF hashes remain unchanged.
+The previous disk-stop and initialization records retain their original
+source/commit bindings. All 500 markets, complete audits and actual final-paper
+integration/review are still required, as is the already prepared isolated
+fresh reproduction after the continuation lock is released. No empirical
+analysis or favorable-seed selection occurs. The overall goal stays active.
+
+The following checkpoints are historical snapshots.
+
+---
+
 # Current continuation — fresh reproduction command for the numerical amendment
 
 The preceding goal turn was **progress** (3da1fb2): all 483 completed final

@@ -671,36 +671,48 @@
     "scope": "Bounded primary-source claim/assumption comparison; no exhaustive priority, acceptance or quality-rating claim. Complete final evidence and manuscript interpretation still required."
   },
   "verified_final_execution_prefix": {
-    "milestone": "reports/full_v3_results/final483_replay_milestone.json",
-    "milestone_sha256": "0fcd09855436ab76dd8eea0b32c7b68f6aeae640b057be487943b5a142ec2710",
+    "milestone": "reports/full_v3_results/final485_replay_milestone.json",
+    "milestone_sha256": "cb4c91a40f4b863dd2a382e6eb003b2a1a8dc9c1405e581779d8253407f671d3",
     "stage": "main",
-    "completed_and_replayed_markets": 483,
+    "completed_and_replayed_markets": 485,
     "frozen_final_pool_size": 500,
-    "all_483_current_digests_match_after_cache_compaction_and_filesystem_compression": true,
-    "scalar_checks_from_existing_replays": 4261509522,
-    "ghost_pairs_from_existing_replays": 61919,
+    "all_485_current_digests_match_after_cache_compaction": true,
+    "scalar_checks_from_existing_replays": 4279136412,
+    "ghost_pairs_from_existing_replays": 62153,
     "maximum_log_e_replay_error": 2.6645352591003757e-15,
-    "numerical_initialization_amendment": "reports/full_v3_recovery_20261018/qp_60469/executed_initialization.json",
-    "scope": "Verified execution prefix only, not complete final evidence or financial inference. Existing replays counted once. Post-freeze numerical initialization remains explicitly supplementary. All 500 markets still required.",
-    "historical_prefix_250": {
-      "milestone": "reports/full_v3_results/final250_replay_milestone.json",
-      "milestone_sha256": "719929ef75e2b70dc0025fc0f1ffe4edf379591e2da57c0c73611ce0385dc1bd",
+    "scope": "Execution prefix only; no complete final evidence or prefix financial inference. Existing independent replays counted once. Numerical initialization remains explicitly supplementary; all 500 markets required.",
+    "historical_prefix_483": {
+      "milestone": "reports/full_v3_results/final483_replay_milestone.json",
+      "milestone_sha256": "0fcd09855436ab76dd8eea0b32c7b68f6aeae640b057be487943b5a142ec2710",
       "stage": "main",
-      "completed_and_replayed_markets": 250,
+      "completed_and_replayed_markets": 483,
       "frozen_final_pool_size": 500,
-      "all_250_current_digests_match_after_cache_compaction_and_filesystem_compression": true,
-      "scalar_checks_from_existing_replays": 2206217798,
-      "ghost_pairs_from_existing_replays": 31937,
+      "all_483_current_digests_match_after_cache_compaction_and_filesystem_compression": true,
+      "scalar_checks_from_existing_replays": 4261509522,
+      "ghost_pairs_from_existing_replays": 61919,
       "maximum_log_e_replay_error": 2.6645352591003757e-15,
-      "removed_regenerable_checkpoint_bytes": 1617832281,
-      "filesystem_compression": {
-        "report": "reports/full_v3_results/json_storage_compression_main250.json",
-        "report_sha256": "53e806562112755ca55666ebfe7ae2d00d6d46af53ad8ec307b5eb9ee1ec3aaa",
-        "changed_files": 1009,
-        "allocated_bytes_reduction": 75735040,
-        "all_current_input_digests_preserved": true
-      },
-      "scope": "Operational first-250 final-market milestone, not a complete final study or economic analysis. Existing independently replayed records and current digests validated after checkpoint compaction and native filesystem compression. No new replay checks or markets added by this audit. All 500 declared markets remain required. Same controller and driver automatically started the next ten; no restart, retuning or partial-final inference. Physical allocation reduction is not a free-space or remaining-capacity guarantee."
+      "numerical_initialization_amendment": "reports/full_v3_recovery_20261018/qp_60469/executed_initialization.json",
+      "scope": "Verified execution prefix only, not complete final evidence or financial inference. Existing replays counted once. Post-freeze numerical initialization remains explicitly supplementary. All 500 markets still required.",
+      "historical_prefix_250": {
+        "milestone": "reports/full_v3_results/final250_replay_milestone.json",
+        "milestone_sha256": "719929ef75e2b70dc0025fc0f1ffe4edf379591e2da57c0c73611ce0385dc1bd",
+        "stage": "main",
+        "completed_and_replayed_markets": 250,
+        "frozen_final_pool_size": 500,
+        "all_250_current_digests_match_after_cache_compaction_and_filesystem_compression": true,
+        "scalar_checks_from_existing_replays": 2206217798,
+        "ghost_pairs_from_existing_replays": 31937,
+        "maximum_log_e_replay_error": 2.6645352591003757e-15,
+        "removed_regenerable_checkpoint_bytes": 1617832281,
+        "filesystem_compression": {
+          "report": "reports/full_v3_results/json_storage_compression_main250.json",
+          "report_sha256": "53e806562112755ca55666ebfe7ae2d00d6d46af53ad8ec307b5eb9ee1ec3aaa",
+          "changed_files": 1009,
+          "allocated_bytes_reduction": 75735040,
+          "all_current_input_digests_preserved": true
+        },
+        "scope": "Operational first-250 final-market milestone, not a complete final study or economic analysis. Existing independently replayed records and current digests validated after checkpoint compaction and native filesystem compression. No new replay checks or markets added by this audit. All 500 declared markets remain required. Same controller and driver automatically started the next ten; no restart, retuning or partial-final inference. Physical allocation reduction is not a free-space or remaining-capacity guarantee."
+      }
     }
   },
   "economic_authorization": {
@@ -846,7 +858,8 @@
     "launch": "reports/full_v3_recovery_20261018/disk_195259/recovery_launch.json",
     "launch_sha256": "0d47a63e4d4a1375fc616b7661bd9c5b073fbb8d2b3cd9f66d5a41e9635871ab",
     "driver_sha256": "1bdf3a0994477c261a205683b409260edfa863b124303b042128774be4f378a6",
-    "scope": "Confirmed terminal resource failure. All error evidence retained before retry; only the 17 declared remaining markets resumed after 483 current replay digests and capacity passed. No mathematical/statistical/analysis amendment or excluded seed."
+    "scope": "Confirmed terminal resource failure. All error evidence retained before retry; only the 17 declared remaining markets resumed after 483 current replay digests and capacity passed. No mathematical/statistical/analysis amendment or excluded seed.",
+    "historical": true
   },
   "final_market_fresh_reproduction": {
     "script": "scripts/reproduce_final_60469.py",
@@ -861,5 +874,23 @@
     "fresh_market_execution_complete": false,
     "canonical_financial_ledger_comparison_complete": false,
     "scope": "Isolated fresh-from-training reproduction of existing final seed 60469; same post-freeze numerical cache, original learner and independent replay. Software/preflight checks only; no new market generated, no added replication and no broad full-suite rerun. Actual fresh execution and canonical-ledger comparison remain pending after the final controller releases its lock."
+  },
+  "latest_disk_recovery": {
+    "failure_audit": "reports/full_v3_recovery_20261018/disk_after_60485/failure_audit.json",
+    "failure_audit_sha256": "8ee1889c9347cdb481c2794572eb98d71431a52b856824cdf09316619fee576f",
+    "launch": "reports/full_v3_recovery_20261018/disk_after_60485/recovery_launch.json",
+    "launch_sha256": "4462d3801a329dd92e477e04714b49762f057067c8d9960acfc3ada87f0fad58",
+    "driver": "scripts/resume_remaining_final.py",
+    "driver_sha256": "4aa7b3a5cb749b540bbe1f8e2e270f1f1cbc74dbd7c3fe1057b03f859561952c",
+    "boundary_checks": "reports/full_v3_recovery_20261018/disk_after_60485/resume_boundary_checks.json",
+    "boundary_checks_sha256": "2e89b0c67405edeb439eb11eed2dc272efdfe8907ed7d22f792092c7e665f3a0",
+    "scope": "Confirmed terminal resource failure, not numerical or statistical. All error evidence retained, first 485 independently replayed with current digests. Resumes the complete 15-market suffix after authorized cache cleanup and capacity validation. New prefix argument is operational and never changes the declared final sample size of 500."
+  },
+  "user_authorized_cache_cleanup": {
+    "report": "reports/user_authorized_cache_cleanup_20261018.json",
+    "report_sha256": "7cb01e370d7a8851c836e38a71fcdaa48097603115d6c381679bd6231f9283a4",
+    "regenerable_cache_locations": 6,
+    "scientific_sources_and_inputs_preserved": true,
+    "scope": "Browser/download/package and old editor caches only; installed apps/extensions, research inputs, original ledgers and current manuscript preserved. Opera recreated its cleared cache root. Recorded free capacity includes concurrent OS activity, so no exact total-volume savings claim."
   }
 }

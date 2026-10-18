@@ -564,15 +564,26 @@ receipt explicitly records the supplementary initialization and the fact that
 no annual checkpoint was loaded. Repeated invocations require a new output
 directory and do not overwrite canonical study files or previous reproductions.
 
-A subsequent actual disk-reserve stop and its seven untouched error records
-are preserved under `reports/full_v3_recovery_20261018/disk_195259/`.
-All first 483 markets are complete and independently replayed. The current
-`scripts/resume_remaining_final.py` first validates that entire prefix, the
-archived disk-only failures and at least 3 GiB of free startup capacity. It
-then resumes only seeds 60484--60500 with one worker and the original 2 GiB
-per-seed reserve, followed by the complete-sample audits and final packets.
-The earlier QP recovery status is historical. Neither recovery supplies
-complete-final evidence before all 500 markets and their audits finish.
+Actual disk-reserve stops are preserved under
+`reports/full_v3_recovery_20261018/disk_195259/` and `disk_after_60485/`.
+All first 485 markets are complete and independently replayed. The current
+`scripts/resume_remaining_final.py` requires an explicit verified-prefix count
+and archived failure audit. It validates the entire prefix, the exact disk-guard
+tracebacks and at least 3 GiB of free startup capacity before retrying every
+remaining declared market, with one worker and the original 2 GiB per-seed
+reserve. Complete-sample audits and final packets follow. The earlier QP
+recovery status is historical. A verified prefix does not supply complete-final
+evidence before all 500 markets and their audits finish.
+
+```sh
+# Same remaining pool, after the archived failure and resource recovery.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/resume_remaining_final.py --prefix 485 --failure-audit reports/full_v3_recovery_20261018/disk_after_60485/failure_audit.json
+```
+
+The user-authorized cache cleanup is recorded in
+`reports/user_authorized_cache_cleanup_20261018.json`. Only regenerable browser,
+download, package and old editor caches were selected; original scientific
+inputs and all financial evidence were retained and their hashes revalidated.
 
 `scripts/compress_verified_parquet_storage.py` also permits native macOS
 compression of Parquet files in an explicit independently replayed final

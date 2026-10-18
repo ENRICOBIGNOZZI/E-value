@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "captured_at": "2026-10-18T20:25:03.797842+00:00",
+  "controller_pid": 89741,
+  "controller_identity": [
+    "Sun",
+    "Oct",
+    "18",
+    "22:21:53",
+    "2026",
+    "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python scripts/resume_remaining_final.py --prefix 485 --failure-audit reports/full_v3_recovery_20261018/disk_after_60485/failure_audit.json"
+  ],
+  "child_pid": 89886,
+  "child_identity": [
+    "Sun",
+    "Oct",
+    "18",
+    "22:22:51",
+    "2026",
+    "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Users/enrico/Desktop/PHD/E-values/scripts/run_full_strategy.py --config /Users/enrico/Desktop/PHD/E-values/configs/full_main.json --output /Users/enrico/Desktop/PHD/E-values/outputs/park_revive_full_v3/main --start-seed 60486 --count 10 --workers 1 --resume"
+  ],
+  "status": {
+    "controller_pid": 89741,
+    "source_sha256": "4aa7b3a5cb749b540bbe1f8e2e270f1f1cbc74dbd7c3fe1057b03f859561952c",
+    "workers": 1,
+    "original_guard_gib": 2,
+    "startup_reserve_gib": 3,
+    "archived_failure_sha256": "8ee1889c9347cdb481c2794572eb98d71431a52b856824cdf09316619fee576f",
+    "verified_prefix": 485,
+    "archived_failure": "/Users/enrico/Desktop/PHD/E-values/reports/full_v3_recovery_20261018/disk_after_60485/failure_audit.json",
+    "phase": "running_run_full_strategy.py",
+    "updated_at": "2026-10-18T20:22:51.758632+00:00",
+    "remaining_seeds": [
+      60486,
+      60487,
+      60488,
+      60489,
+      60490,
+      60491,
+      60492,
+      60493,
+      60494,
+      60495,
+      60496,
+      60497,
+      60498,
+      60499,
+      60500
+    ],
+    "child_pid": 89886,
+    "child_script": "run_full_strategy.py"
+  },
+  "driver_sha256": "4aa7b3a5cb749b540bbe1f8e2e270f1f1cbc74dbd7c3fe1057b03f859561952c",
+  "prefix_verification": "reports/full_v3_results/final485_replay_milestone.json",
+  "prefix_verification_sha256": "cb4c91a40f4b863dd2a382e6eb003b2a1a8dc9c1405e581779d8253407f671d3",
+  "compaction": {
+    "applied": true,
+    "seeds": [
+      60484,
+      60485
+    ],
+    "checkpoint_bytes": 13579425,
+    "preserved": "All input data, market/score/weight/event ledgers, numeric results and source/configuration manifests."
+  },
+  "cache_cleanup": "reports/user_authorized_cache_cleanup_20261018.json",
+  "cache_cleanup_sha256": "7cb01e370d7a8851c836e38a71fcdaa48097603115d6c381679bd6231f9283a4",
+  "free_bytes": 2883194880,
+  "scope": "Actual recovery after confirmed terminal disk-only stop, explicit user-authorized regenerable-cache cleanup and complete-prefix validation. All 485 current replay digests match; only the five matched live disk-error copies cleared after archiving. All remaining 15 final seeds retained, original 2 GiB per-seed guard, one worker and unchanged mathematical/statistical/final-analysis settings. No timeout-based restart or partial-final financial inference."
+}

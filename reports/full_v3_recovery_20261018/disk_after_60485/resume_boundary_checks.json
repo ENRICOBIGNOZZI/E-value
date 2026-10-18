@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "source_sha256": "4aa7b3a5cb749b540bbe1f8e2e270f1f1cbc74dbd7c3fe1057b03f859561952c",
+  "checks": [
+    {
+      "prefix": 0,
+      "rejected_before_failure_audit_read": true
+    },
+    {
+      "prefix": 500,
+      "rejected_before_failure_audit_read": true
+    }
+  ],
+  "scope": "Two real CLI prefix-boundary rejection checks, not a full-suite run or market generation. Remaining pool is always the entire frozen final suffix; the production preflight independently validates the complete prefix and exact archived disk-only failures before clearing live markers."
+}
