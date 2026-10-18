@@ -1,3 +1,43 @@
+# Current continuation — exact fresh-market comparator prepared
+
+The preceding goal turn was a **verified wait** on the confirmed live final
+controller and generation child. This turn is **progress**: the same frozen
+run continues while the numerical-amendment reproduction gains an independently
+gated exact-artifact comparator. The comparison criterion is documented before
+any actual fresh repeated-market output is generated.
+
+Nine synthetic controls pass in 2.91 seconds. The success fixture compares
+193 declared core scientific-file pairs; this is a software fixture, not an
+actual market or extra replay count. Tampered scores/decisions/metrics, missing
+files on both sides, changed scientific status, an invalid runtime calendar,
+an unexpected block file and different initialization are rejected. Real CLI
+probes reject the absent complete-final bundle and a protected existing PDF
+destination without writing. No new full-suite run is claimed.
+
+Production comparison requires all 500 canonical markets, their current raw
+digests, numerical/event audits and unchanged complete-sample assessment through
+the existing final-manuscript evidence gate. It compares every scientific
+artifact exactly, retains the fourteen runtime-calendar rows, checks all other
+status fields and the original initialization calls, then rechecks both raw
+digests. Only elapsed times, checkpoint caches and distinct driver provenance
+are excluded explicitly. Full fresh execution and the actual comparison remain
+pending. A mismatch requires diagnosis/reporting, not a looser criterion or
+exclusion of the failed seed. Protocol and bindings are in
+final60469_reproduction_protocol.md and final60469_comparison_software_checks.json.
+
+At **2026-10-18T20:51:46.776097+00:00**, controller **89741** and generation child
+**89886** are confirmed live on the unchanged **60486--60495** batch.
+The independently verified final prefix remains **485/500** until that batch's
+replay finishes. No partial-final financial inference or outcome-based choice
+is made. Original scientific/configuration/final-analysis freezes and all
+manuscript/numeric-TeX/figure/PDF hashes match. The actual final 500-market
+assessment, fresh reproduction/comparison and final manuscript integration/
+review remain required. The goal stays active.
+
+The following checkpoints are historical snapshots.
+
+---
+
 # Current continuation — authorized cache cleanup; 485 verified final markets
 
 The preceding goal turn was **progress** (10b70e4): the isolated fresh-market

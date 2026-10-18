@@ -564,6 +564,16 @@ receipt explicitly records the supplementary initialization and the fact that
 no annual checkpoint was loaded. Repeated invocations require a new output
 directory and do not overwrite canonical study files or previous reproductions.
 
+After that fresh run and all canonical 500-market audits are complete, compare
+every scientific artifact with the original case:
+
+    .venv/bin/python scripts/compare_fresh_final_60469.py --fresh-output tmp/final60469-fresh --report reports/final60469_fresh_comparison.json
+
+The exact-comparison criterion and explicit timing/cache/provenance exclusions
+are in [reports/final60469_reproduction_protocol.md](reports/final60469_reproduction_protocol.md).
+Nine synthetic comparison controls pass; actual fresh equality is still pending.
+The production command rejects an incomplete final bundle and creates no report.
+
 Actual disk-reserve stops are preserved under
 `reports/full_v3_recovery_20261018/disk_195259/` and `disk_after_60485/`.
 All first 485 markets are complete and independently replayed. The current

@@ -873,7 +873,16 @@
     "actual_live_lock_rejection_passes": true,
     "fresh_market_execution_complete": false,
     "canonical_financial_ledger_comparison_complete": false,
-    "scope": "Isolated fresh-from-training reproduction of existing final seed 60469; same post-freeze numerical cache, original learner and independent replay. Software/preflight checks only; no new market generated, no added replication and no broad full-suite rerun. Actual fresh execution and canonical-ledger comparison remain pending after the final controller releases its lock."
+    "scope": "Isolated fresh-from-training reproduction of existing final seed 60469; same post-freeze numerical cache, original learner and independent replay. Software/preflight checks only; no new market generated, no added replication and no broad full-suite rerun. Actual fresh execution and canonical-ledger comparison remain pending after the final controller releases its lock.",
+    "comparison_script": "scripts/compare_fresh_final_60469.py",
+    "comparison_script_sha256": "071d521bc0695a0d4458afa5b476e4c0f0ce0cfdbcc2620cf4f7424c704ddb4b",
+    "comparison_protocol": "reports/final60469_reproduction_protocol.md",
+    "comparison_protocol_sha256": "b58cc6e78944112affa5c3f5230b6f6ac5bba5c7d080d1a200ae37029e897de3",
+    "comparison_software_checks": "reports/final60469_comparison_software_checks.json",
+    "comparison_software_checks_sha256": "e79a46653799d9342e8f9648a1fc68dd33d0e0e8cbf5ed17cf59ff564e48a2b2",
+    "comparison_synthetic_controls_passed": 9,
+    "comparison_actual_cli_rejections_passed": 2,
+    "comparison_criterion": "Exact logical bytes of every scientific artifact, with only explicit timing/checkpoint/driver-provenance exclusions. Full 500-market production bundle required; comparison is still unexecuted on real fresh data."
   },
   "latest_disk_recovery": {
     "failure_audit": "reports/full_v3_recovery_20261018/disk_after_60485/failure_audit.json",
